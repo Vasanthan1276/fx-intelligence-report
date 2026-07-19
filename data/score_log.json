@@ -1,0 +1,24 @@
+{
+  "model_version": "1.0-phase1",
+  "records": [
+    {
+      "date": "2026-07-17",
+      "scores": {
+        "JPY": 4.17,
+        "EUR": 3.12,
+        "USD": 2.61,
+        "MYR": 2.48,
+        "AUD": 1.84,
+        "GBP": 1.41
+      },
+      "recommendations": {
+        "JPY": "Buy",
+        "EUR": "Light Accumulate",
+        "USD": "Wait",
+        "MYR": "Wait",
+        "AUD": "Expensive",
+        "GBP": "Avoid"
+      }
+    }
+  ]
+}
