@@ -1,8 +1,3 @@
-Library
-/
-dashboard.py
-
-
 from __future__ import annotations
 
 import html
