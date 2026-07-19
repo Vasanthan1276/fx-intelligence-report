@@ -43,9 +43,9 @@ CURRENCY_CONFIG = {
     "MYR": {"name": "Malaysian Ringgit", "symbol": "RM", "unit": 1, "yf": "MYRSGD=X"},
 }
 
-MODEL_VERSION = "2.0-phase2a"
+MODEL_VERSION = "2.1-phase2b"
 
-# Phase 2A keeps the proven Phase 1B market model intact, then adds a macro-policy
+# Phase 2B keeps the proven Phase 1B market model intact, then separates a macro-policy
 # layer. With complete macro coverage, the final score is 70% market intelligence
 # and 30% macro-policy intelligence. If a macro source is temporarily unavailable,
 # its weight automatically falls away rather than forcing a neutral score into the
@@ -62,6 +62,50 @@ MACRO_WEIGHTS = {
     "inflation": 0.20,
 }
 MAX_MACRO_WEIGHT = 0.30
+
+# Phase 2B keeps the Opportunity Score separate from Buy Urgency. Opportunity
+# answers "is the rate attractive?" while urgency answers "how quickly could this
+# attractive window disappear?". Urgency influences the staged-buy action, but it
+# cannot turn an unattractive currency into a Buy by itself.
+URGENCY_WEIGHTS = {
+    "policy_direction": 0.35,
+    "price_reversal": 0.30,
+    "valuation_rarity": 0.20,
+    "event_setup": 0.15,
+}
+
+# Official 2026 monetary-policy decision dates. These are deliberately embedded
+# rather than scraped on every run, which keeps the GitHub Action reliable. The
+# dashboard exposes the calendar source and will show "calendar rollover needed"
+# after the final published date until the next annual schedule is added.
+POLICY_MEETING_CALENDAR = {
+    "USD": [
+        "2026-01-28", "2026-03-18", "2026-04-29", "2026-06-17",
+        "2026-07-29", "2026-09-16", "2026-10-28", "2026-12-09",
+    ],
+    "JPY": [
+        "2026-01-23", "2026-03-19", "2026-04-28", "2026-06-16",
+        "2026-07-31", "2026-09-18", "2026-10-30", "2026-12-18",
+    ],
+    "EUR": ["2026-07-23", "2026-09-10", "2026-10-29", "2026-12-17"],
+    "GBP": [
+        "2026-02-05", "2026-03-19", "2026-04-30", "2026-06-18",
+        "2026-07-30", "2026-09-17", "2026-11-05", "2026-12-17",
+    ],
+    "AUD": [
+        "2026-02-03", "2026-03-17", "2026-05-05", "2026-06-16",
+        "2026-08-11", "2026-09-29", "2026-11-03", "2026-12-08",
+    ],
+    "MYR": ["2026-01-22", "2026-03-05", "2026-05-07", "2026-07-09", "2026-09-03", "2026-11-05"],
+}
+POLICY_CALENDAR_SOURCES = {
+    "USD": "Federal Reserve FOMC calendar",
+    "JPY": "Bank of Japan MPM schedule",
+    "EUR": "ECB Governing Council calendar",
+    "GBP": "Bank of England MPC calendar",
+    "AUD": "Reserve Bank of Australia board schedule",
+    "MYR": "Bank Negara Malaysia MPC schedule",
+}
 
 # BIS monthly central-bank policy-rate series. The euro-area reference area is XM.
 BIS_POLICY_API = "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_CBPOL/1.0"
@@ -114,6 +158,17 @@ class CurrencySignal:
     macro_score: float
     macro_coverage_pct: int
     effective_macro_weight_pct: int
+    opportunity_score: float
+    buy_urgency_score: float
+    buy_urgency_label: str
+    event_risk_score: float
+    event_risk_label: str
+    next_policy_meeting_date: Optional[str]
+    days_to_policy_meeting: Optional[int]
+    policy_calendar_source: str
+    policy_direction_score: Optional[float]
+    policy_direction_label: str
+    urgency_component_scores: Dict[str, Optional[float]]
     recommendation: str
     suggested_action: str
     suggested_buy_pct: int
@@ -165,6 +220,7 @@ class CurrencySignal:
     validation_status: str
     drivers: List[str]
     macro_drivers: List[str]
+    urgency_drivers: List[str]
 
 
 def _http_get(url: str, params: Optional[dict] = None, timeout: int = 45) -> requests.Response:
@@ -454,6 +510,151 @@ def policy_direction_score(change_bps: Optional[float]) -> Optional[float]:
     return float(np.clip(2.5 + 2.5 * np.tanh(change_bps / 100.0), 0, 5))
 
 
+def policy_direction_label(score: Optional[float]) -> str:
+    if score is None:
+        return "Unavailable"
+    if score >= 4.1:
+        return "Strongly hawkish"
+    if score >= 3.1:
+        return "Hawkish"
+    if score > 1.9:
+        return "Broadly neutral"
+    if score > 0.9:
+        return "Dovish"
+    return "Strongly dovish"
+
+
+def next_policy_meeting(code: str, as_of=None) -> Dict[str, object]:
+    today = as_of or datetime.now(timezone.utc).date()
+    dates = []
+    for raw in POLICY_MEETING_CALENDAR.get(code, []):
+        try:
+            dates.append(pd.Timestamp(raw).date())
+        except Exception:
+            continue
+    upcoming = [item for item in dates if item >= today]
+    next_date = min(upcoming) if upcoming else None
+    days = None if next_date is None else (next_date - today).days
+    return {
+        "date": None if next_date is None else next_date.isoformat(),
+        "days": days,
+        "source": POLICY_CALENDAR_SOURCES.get(code, "Official central-bank calendar"),
+    }
+
+
+def event_risk_from_days(days: Optional[int]) -> Tuple[float, str]:
+    if days is None:
+        return 1.5, "Calendar rollover needed"
+    if days <= 3:
+        return 5.0, "Very high"
+    if days <= 7:
+        return 4.6, "High"
+    if days <= 14:
+        return 4.0, "Elevated"
+    if days <= 30:
+        return 3.3, "Moderate"
+    if days <= 60:
+        return 2.5, "Normal"
+    if days <= 90:
+        return 2.0, "Low"
+    return 1.5, "Very low"
+
+
+def buyer_strengthening_score(change_pct: Optional[float], scale: float) -> Optional[float]:
+    if change_pct is None or not math.isfinite(change_pct):
+        return None
+    # Positive SGD cost change means the foreign currency is becoming more expensive,
+    # which increases urgency for a buyer who already likes the valuation.
+    return float(np.clip(2.5 + 2.5 * np.tanh(change_pct / scale), 0, 5))
+
+
+def calculate_buy_urgency(
+    code: str,
+    percentile_5y: Optional[float],
+    change_7d: Optional[float],
+    change_30d: Optional[float],
+    policy: Dict[str, Optional[float]],
+) -> Dict[str, object]:
+    direction_6m = policy_direction_score(policy.get("change_6m_bps"))
+    direction_12m = policy_direction_score(policy.get("change_12m_bps"))
+    direction_score = None
+    if direction_6m is not None or direction_12m is not None:
+        direction_score = weighted_average([(direction_6m, 0.65), (direction_12m, 0.35)])
+
+    reversal_score = weighted_average([
+        (buyer_strengthening_score(change_7d, 1.5), 0.60),
+        (buyer_strengthening_score(change_30d, 3.0), 0.40),
+    ])
+
+    rarity_score = None
+    if percentile_5y is not None and math.isfinite(percentile_5y):
+        rarity_score = float(np.clip(5.0 * (1.0 - percentile_5y / 100.0), 0, 5))
+
+    meeting = next_policy_meeting(code)
+    event_risk_score, event_risk_label = event_risk_from_days(meeting.get("days"))
+    if direction_score is None:
+        event_setup_score = 2.5
+    else:
+        proximity = max(0.0, min(1.0, (event_risk_score - 1.5) / 3.5))
+        event_setup_score = 2.5 + (direction_score - 2.5) * proximity
+        event_setup_score = float(np.clip(event_setup_score, 0, 5))
+
+    components = {
+        "policy_direction": None if direction_score is None else round(float(direction_score), 2),
+        "price_reversal": round(float(reversal_score), 2),
+        "valuation_rarity": None if rarity_score is None else round(float(rarity_score), 2),
+        "event_setup": round(float(event_setup_score), 2),
+    }
+    urgency_score = weighted_average(
+        [(components[key], URGENCY_WEIGHTS[key]) for key in URGENCY_WEIGHTS],
+        default=2.5,
+    )
+    urgency_score = round(float(np.clip(urgency_score, 0, 5)), 2)
+
+    if urgency_score >= 4.25:
+        urgency_label = "Very high"
+    elif urgency_score >= 3.50:
+        urgency_label = "High"
+    elif urgency_score >= 2.75:
+        urgency_label = "Moderate"
+    elif urgency_score >= 2.00:
+        urgency_label = "Low"
+    else:
+        urgency_label = "Very low"
+
+    drivers = []
+    if direction_score is not None:
+        drivers.append(
+            f"Policy direction is {policy_direction_label(direction_score).lower()} based on the latest 6- and 12-month rate path."
+        )
+    if reversal_score >= 3.4:
+        drivers.append("Recent FX movement suggests the foreign currency is starting to strengthen, increasing purchase urgency.")
+    elif reversal_score <= 1.6:
+        drivers.append("Recent FX movement is still improving for an SGD buyer, so there is less pressure to chase the rate.")
+    else:
+        drivers.append("Recent FX movement is mixed and does not create a strong timing signal.")
+    if meeting.get("date") is not None:
+        drivers.append(
+            f"Next {POLICY_CALENDAR_SOURCES.get(code, 'policy')} event is in {meeting.get('days')} days ({meeting.get('date')}); event risk is {event_risk_label.lower()}."
+        )
+    else:
+        drivers.append("No later meeting is stored in the current calendar; refresh the annual schedule before the next policy cycle.")
+
+    return {
+        "score": urgency_score,
+        "label": urgency_label,
+        "components": components,
+        "policy_direction_score": None if direction_score is None else round(float(direction_score), 2),
+        "policy_direction_label": policy_direction_label(direction_score),
+        "event_risk_score": round(float(event_risk_score), 2),
+        "event_risk_label": event_risk_label,
+        "next_policy_meeting_date": meeting.get("date"),
+        "days_to_policy_meeting": meeting.get("days"),
+        "policy_calendar_source": meeting.get("source"),
+        "drivers": drivers[:3],
+    }
+
+
 def analyse_policy_series(series: Optional[pd.Series]) -> Dict[str, Optional[float]]:
     result: Dict[str, Optional[float]] = {
         "score": None,
@@ -479,15 +680,15 @@ def analyse_policy_series(series: Optional[pd.Series]) -> Dict[str, Optional[flo
 
     five_year = clean.loc[clean.index >= latest_date - pd.DateOffset(years=5)]
     rate_percentile = percentile_rank(five_year, current)
+    # Phase 2B deliberately keeps recent policy direction out of the Opportunity
+    # Score so that it is not double-counted. The macro backdrop uses the current
+    # policy-rate level relative to its own five-year history; recent tightening or
+    # easing is handled separately by the Buy Urgency model.
     level_score = None if rate_percentile is None else 5.0 * rate_percentile / 100.0
-    score = weighted_average([
-        (level_score, 0.45),
-        (policy_direction_score(change_6m_bps), 0.35),
-        (policy_direction_score(change_12m_bps), 0.20),
-    ])
+    score = level_score
 
     result.update({
-        "score": float(np.clip(score, 0, 5)),
+        "score": None if score is None else float(np.clip(score, 0, 5)),
         "rate": current,
         "change_6m_bps": change_6m_bps,
         "change_12m_bps": change_12m_bps,
@@ -782,18 +983,34 @@ def ordinal(value: float) -> str:
     return f"{number}{suffix}"
 
 
-def recommendation_from_score(score: float) -> Tuple[str, str, int]:
-    if score >= 4.5:
-        return "Exceptional Buy", "Buy a meaningful tranche now", 40
-    if score >= 4.0:
-        return "Buy", "Buy in stages", 30
-    if score >= 3.5:
-        return "Accumulate", "Start or continue gradual buying", 20
-    if score >= 3.0:
-        return "Light Accumulate", "Small tranche only", 10
-    if score >= 2.25:
+def recommendation_from_score(opportunity_score: float, urgency_score: float) -> Tuple[str, str, int]:
+    """Opportunity-first recommendation matrix for Phase 2B.
+
+    Urgency can accelerate or slow a staged purchase only when the underlying
+    opportunity is already reasonable. It cannot turn an expensive currency into
+    a Buy merely because that currency is strengthening.
+    """
+    if opportunity_score >= 4.5:
+        if urgency_score >= 3.75:
+            return "Exceptional Buy", "Buy a meaningful tranche now", 40
+        return "Strong Buy", "Buy in stages while value remains exceptional", 30
+    if opportunity_score >= 4.0:
+        if urgency_score >= 3.5:
+            return "Buy Now", "Start or accelerate staged buying", 30
+        return "Buy", "Buy in stages", 25
+    if opportunity_score >= 3.5:
+        if urgency_score >= 4.0:
+            return "Accumulate Now", "Start or continue gradual buying now", 20
+        if urgency_score >= 2.5:
+            return "Accumulate", "Start or continue gradual buying", 15
+        return "Patient Accumulate", "Small staged purchases; no need to rush", 10
+    if opportunity_score >= 3.0:
+        if urgency_score >= 4.0:
+            return "Light Accumulate", "Small tranche only before the window changes", 10
         return "Wait", "Wait for a better rate unless funds are needed", 0
-    if score >= 1.5:
+    if opportunity_score >= 2.25:
+        return "Wait", "Wait for a better rate unless funds are needed", 0
+    if opportunity_score >= 1.5:
         return "Expensive", "Avoid a large discretionary purchase", 0
     return "Avoid", "Poor accumulation zone", 0
 
@@ -820,7 +1037,7 @@ def confidence_score(
         else:
             confidence -= 5
 
-    # Phase 2A receives a modest confidence lift when the macro-policy layer has
+    # The model receives a modest confidence lift when the macro-policy layer has
     # broad coverage, while still recognising that macro forecasts are uncertain.
     if macro_coverage >= 0.95:
         confidence += 7
@@ -1001,9 +1218,18 @@ def analyse_currency(
     macro_score = float(macro["macro_score"])
     macro_coverage = float(macro["macro_coverage"])
     effective_macro_weight = MAX_MACRO_WEIGHT * macro_coverage
-    score = market_score * (1.0 - effective_macro_weight) + macro_score * effective_macro_weight
-    score = round(float(np.clip(score, 0, 5)), 2)
-    recommendation, action, buy_pct = recommendation_from_score(score)
+    opportunity_score = market_score * (1.0 - effective_macro_weight) + macro_score * effective_macro_weight
+    opportunity_score = round(float(np.clip(opportunity_score, 0, 5)), 2)
+
+    policy = macro.get("policy", {})
+    urgency = calculate_buy_urgency(
+        code=code,
+        percentile_5y=percentiles.get("5y"),
+        change_7d=change_7d,
+        change_30d=change_30d,
+        policy=policy,
+    )
+    recommendation, action, buy_pct = recommendation_from_score(opportunity_score, float(urgency["score"]))
 
     validation_rate = validation_rates.get(code)
     validation_diff = None
@@ -1031,7 +1257,6 @@ def analyse_currency(
     per_currency_unit_cost = current / unit
     inverse_per_sgd = 1.0 / per_currency_unit_cost
 
-    policy = macro.get("policy", {})
     macro_components = macro.get("components", {})
 
     return CurrencySignal(
@@ -1041,11 +1266,25 @@ def analyse_currency(
         unit=unit,
         rate_sgd=round(current, 6),
         inverse_per_sgd=round(inverse_per_sgd, 6),
-        score=score,
+        score=opportunity_score,
         market_score=market_score,
         macro_score=round(macro_score, 2),
         macro_coverage_pct=int(round(macro_coverage * 100)),
         effective_macro_weight_pct=int(round(effective_macro_weight * 100)),
+        opportunity_score=opportunity_score,
+        buy_urgency_score=float(urgency["score"]),
+        buy_urgency_label=str(urgency["label"]),
+        event_risk_score=float(urgency["event_risk_score"]),
+        event_risk_label=str(urgency["event_risk_label"]),
+        next_policy_meeting_date=urgency.get("next_policy_meeting_date"),
+        days_to_policy_meeting=urgency.get("days_to_policy_meeting"),
+        policy_calendar_source=str(urgency.get("policy_calendar_source", "Official central-bank calendar")),
+        policy_direction_score=urgency.get("policy_direction_score"),
+        policy_direction_label=str(urgency.get("policy_direction_label", "Unavailable")),
+        urgency_component_scores={
+            key: None if value is None else round(float(value), 2)
+            for key, value in urgency.get("components", {}).items()
+        },
         recommendation=recommendation,
         suggested_action=action,
         suggested_buy_pct=buy_pct,
@@ -1100,6 +1339,7 @@ def analyse_currency(
         validation_status=validation_status(validation_diff),
         drivers=market_drivers[:3],
         macro_drivers=macro_drivers,
+        urgency_drivers=list(urgency.get("drivers", [])),
     )
 
 
@@ -1166,6 +1406,26 @@ def write_macro_snapshot(
     (DATA_DIR / "macro_snapshot.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
+def write_policy_calendar_snapshot(signals: List[CurrencySignal]) -> None:
+    payload = {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "model_version": MODEL_VERSION,
+        "note": "Official 2026 decision dates embedded for reliable daily event-risk scoring.",
+        "sources": POLICY_CALENDAR_SOURCES,
+        "calendars": POLICY_MEETING_CALENDAR,
+        "next_events": {
+            signal.code: {
+                "next_policy_meeting_date": signal.next_policy_meeting_date,
+                "days_to_policy_meeting": signal.days_to_policy_meeting,
+                "event_risk_label": signal.event_risk_label,
+                "policy_calendar_source": signal.policy_calendar_source,
+            }
+            for signal in signals
+        },
+    }
+    (DATA_DIR / "policy_calendar.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
 def update_score_log(signals: List[CurrencySignal]) -> None:
     path = DATA_DIR / "score_log.json"
     if path.exists():
@@ -1181,6 +1441,10 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
     new_row = {
         "date": run_date,
         "scores": {signal.code: signal.score for signal in signals},
+        "opportunity_scores": {signal.code: signal.opportunity_score for signal in signals},
+        "buy_urgency_scores": {signal.code: signal.buy_urgency_score for signal in signals},
+        "event_risk_labels": {signal.code: signal.event_risk_label for signal in signals},
+        "next_policy_meeting_dates": {signal.code: signal.next_policy_meeting_date for signal in signals},
         "market_scores": {signal.code: signal.market_score for signal in signals},
         "macro_scores": {signal.code: signal.macro_score for signal in signals},
         "macro_coverage_pct": {signal.code: signal.macro_coverage_pct for signal in signals},
@@ -1246,7 +1510,7 @@ def main() -> None:
         "latest_market_date": latest_market_date,
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
-        "phase": "Phase 2A — market intelligence plus central-bank and macro scoring",
+        "phase": "Phase 2B — opportunity scoring plus FX-specific buy urgency and central-bank event risk",
         "primary_source": source_name,
         "policy_source": policy_source,
         "macro_source": macro_source,
@@ -1256,10 +1520,12 @@ def main() -> None:
             "combined_when_full_coverage": {"market": 1.0 - MAX_MACRO_WEIGHT, "macro": MAX_MACRO_WEIGHT},
             "market": MARKET_WEIGHTS,
             "macro": MACRO_WEIGHTS,
+            "buy_urgency": URGENCY_WEIGHTS,
         },
         "scoring_note": (
-            "The macro layer uses up to 30% of the final score. If a macro component is unavailable, "
-            "its effective weight is removed automatically and the market score carries more weight."
+            "The Opportunity Score keeps the Phase 2A market/macro model. Buy Urgency is a separate 0–5 score "
+            "using policy direction, recent price reversal, valuation rarity and proximity to the next official "
+            "central-bank meeting. Urgency changes staging advice but cannot turn a poor-value currency into a Buy."
         ),
         "important_note": (
             "This model ranks the attractiveness of converting SGD into foreign currency. "
@@ -1271,14 +1537,15 @@ def main() -> None:
     (DATA_DIR / "fx_signals.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
     write_market_history(series_map)
     write_macro_snapshot(signals, policy_status, imf_status, macro_snapshot)
+    write_policy_calendar_snapshot(signals)
     update_score_log(signals)
 
     print(f"Updated {len(signals)} currencies using {source_name}. Market date: {latest_market_date}")
     for signal in signals:
         print(
-            f"{signal.code}: {signal.score:.2f}/5 overall | "
-            f"market {signal.market_score:.2f} | macro {signal.macro_score:.2f} "
-            f"({signal.macro_coverage_pct}% coverage) — {signal.recommendation}"
+            f"{signal.code}: opportunity {signal.opportunity_score:.2f}/5 | "
+            f"urgency {signal.buy_urgency_score:.2f}/5 ({signal.buy_urgency_label}) | "
+            f"market {signal.market_score:.2f} | macro {signal.macro_score:.2f} — {signal.recommendation}"
         )
 
 

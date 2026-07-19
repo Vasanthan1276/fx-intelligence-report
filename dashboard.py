@@ -100,40 +100,50 @@ def outlook_text(current_year, current_value, next_year, next_value):
     return " · ".join(parts) if parts else "Unavailable"
 
 
+def urgency_class(score):
+    if score >= 4.0:
+        return "urgency-high"
+    if score >= 3.0:
+        return "urgency-elevated"
+    if score >= 2.0:
+        return "urgency-normal"
+    return "urgency-low"
+
+
+def meeting_text(item):
+    date = item.get("next_policy_meeting_date")
+    days = item.get("days_to_policy_meeting")
+    if not date:
+        return "Calendar rollover needed"
+    if days is None:
+        return date
+    if days == 0:
+        return f"{date} · today"
+    if days == 1:
+        return f"{date} · 1 day"
+    return f"{date} · {days} days"
+
+
 def build_currency_cards(currencies):
     cards = []
     for rank, item in enumerate(currencies, start=1):
-        market_drivers = "".join(
-            f"<li>{html.escape(driver)}</li>" for driver in item.get("drivers", [])
-        )
-        macro_drivers = "".join(
-            f"<li>{html.escape(driver)}</li>" for driver in item.get("macro_drivers", [])
-        )
+        market_drivers = "".join(f"<li>{html.escape(driver)}</li>" for driver in item.get("drivers", []))
+        macro_drivers = "".join(f"<li>{html.escape(driver)}</li>" for driver in item.get("macro_drivers", []))
+        urgency_drivers = "".join(f"<li>{html.escape(driver)}</li>" for driver in item.get("urgency_drivers", []))
         validation = item.get("validation_status", "Unavailable")
         validation_diff = item.get("validation_difference_pct")
-        validation_text = (
-            validation if validation_diff is None else f"{validation} · {validation_diff:.2f}% diff"
-        )
+        validation_text = validation if validation_diff is None else f"{validation} · {validation_diff:.2f}% diff"
         buy_pct = item.get("suggested_buy_pct", 0)
         allocation = f"Suggested tranche: {buy_pct}%" if buy_pct else "Suggested tranche: 0%"
         macro_coverage = item.get("macro_coverage_pct", 0)
         effective_macro_weight = item.get("effective_macro_weight_pct", 0)
+        urgency = item.get("buy_urgency_score", 2.5)
+        urgency_components = item.get("urgency_component_scores", {})
 
-        growth_outlook = outlook_text(
-            item.get("growth_current_year"),
-            item.get("growth_current_pct"),
-            item.get("growth_next_year"),
-            item.get("growth_next_pct"),
-        )
-        inflation_outlook = outlook_text(
-            item.get("inflation_current_year"),
-            item.get("inflation_current_pct"),
-            item.get("inflation_next_year"),
-            item.get("inflation_next_pct"),
-        )
+        growth_outlook = outlook_text(item.get("growth_current_year"), item.get("growth_current_pct"), item.get("growth_next_year"), item.get("growth_next_pct"))
+        inflation_outlook = outlook_text(item.get("inflation_current_year"), item.get("inflation_current_pct"), item.get("inflation_next_year"), item.get("inflation_next_pct"))
 
-        cards.append(
-            f"""
+        cards.append(f"""
         <article class="currency-card" data-code="{item['code']}" data-score="{item['score']}">
           <div class="card-topline">
             <div>
@@ -141,13 +151,26 @@ def build_currency_cards(currencies):
               <h2>{item['code']} <span>{html.escape(item['name'])}</span></h2>
             </div>
             <div class="score-ring {score_class(item['score'])}">
-              <strong>{item['score']:.2f}</strong><small>/ 5 overall</small>
+              <strong>{item['score']:.2f}</strong><small>/ 5 opportunity</small>
             </div>
           </div>
 
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="{score_class(item.get('market_score', item['score']))}">{item.get('market_score', item['score']):.2f}/5</strong></div>
-            <div><span>Macro & policy</span><strong class="{score_class(item.get('macro_score', 2.5))}">{item.get('macro_score', 2.5):.2f}/5</strong></div>
+            <div><span>Macro backdrop</span><strong class="{score_class(item.get('macro_score', 2.5))}">{item.get('macro_score', 2.5):.2f}/5</strong></div>
+          </div>
+
+          <div class="urgency-box {urgency_class(urgency)}">
+            <div class="urgency-head">
+              <div><span>Buy urgency</span><strong>{urgency:.2f}/5 · {html.escape(item.get('buy_urgency_label', '—'))}</strong></div>
+              <div class="urgency-pill">{html.escape(item.get('event_risk_label', '—'))} event risk</div>
+            </div>
+            <div class="urgency-grid">
+              <div><span>Policy direction</span><strong>{html.escape(item.get('policy_direction_label', 'Unavailable'))}</strong></div>
+              <div><span>Next policy event</span><strong>{html.escape(meeting_text(item))}</strong></div>
+              <div><span>Price reversal</span><strong>{fmt_number(urgency_components.get('price_reversal'), 2)}/5</strong></div>
+              <div><span>Valuation rarity</span><strong>{fmt_number(urgency_components.get('valuation_rarity'), 2)}/5</strong></div>
+            </div>
           </div>
 
           <div class="recommendation {recommendation_class(item['score'])}">{html.escape(item['recommendation'])}</div>
@@ -163,33 +186,18 @@ def build_currency_cards(currencies):
 
           <div class="macro-box">
             <div class="macro-head">
-              <div><span>Phase 2A macro intelligence</span><strong>{macro_coverage}% coverage</strong></div>
-              <div class="macro-weight">{effective_macro_weight}% of final score</div>
+              <div><span>Phase 2B macro backdrop</span><strong>{macro_coverage}% coverage</strong></div>
+              <div class="macro-weight">{effective_macro_weight}% of opportunity score</div>
             </div>
             <div class="macro-grid">
-              <div>
-                <span>Policy rate</span>
-                <strong>{policy_text(item)}</strong>
-                <small>6M {fmt_bps(item.get('policy_rate_6m_change_bps'))}</small>
-              </div>
-              <div>
-                <span>Real GDP growth</span>
-                <strong>{html.escape(growth_outlook)}</strong>
-                <small>IMF WEO</small>
-              </div>
-              <div>
-                <span>Inflation</span>
-                <strong>{html.escape(inflation_outlook)}</strong>
-                <small>IMF WEO</small>
-              </div>
+              <div><span>Policy rate</span><strong>{policy_text(item)}</strong><small>6M {fmt_bps(item.get('policy_rate_6m_change_bps'))}</small></div>
+              <div><span>Real GDP growth</span><strong>{html.escape(growth_outlook)}</strong><small>IMF WEO</small></div>
+              <div><span>Inflation</span><strong>{html.escape(inflation_outlook)}</strong><small>IMF WEO</small></div>
             </div>
           </div>
 
           <div class="zone-box">
-            <div class="zone-head">
-              <span>Current valuation zone</span>
-              <strong>{html.escape(item.get('zone_status', '—'))}</strong>
-            </div>
+            <div class="zone-head"><span>Current valuation zone</span><strong>{html.escape(item.get('zone_status', '—'))}</strong></div>
             <div class="zone-grid">
               <div><span>Buy zone</span><strong>≤ {level_text(item, item.get('buy_zone_upper_sgd'))}</strong></div>
               <div><span>Strong buy</span><strong>≤ {level_text(item, item.get('strong_buy_level_sgd'))}</strong></div>
@@ -200,50 +208,41 @@ def build_currency_cards(currencies):
           </div>
 
           <div class="action-box">
-            <div>
-              <span>Model action</span>
-              <strong>{html.escape(item['suggested_action'])}</strong>
-            </div>
+            <div><span>Model action</span><strong>{html.escape(item['suggested_action'])}</strong></div>
             <div class="allocation">{allocation}</div>
           </div>
 
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul>{market_drivers}</ul></div>
             <div><h4>Macro signals</h4><ul>{macro_drivers}</ul></div>
+            <div><h4>Timing & urgency</h4><ul>{urgency_drivers}</ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('{item['code']}')">View 5-year chart</button>
         </article>
-        """
-        )
+        """)
     return "\n".join(cards)
 
 
 def build_table_rows(currencies):
     rows = []
     for item in currencies:
-        growth = outlook_text(
-            item.get("growth_current_year"),
-            item.get("growth_current_pct"),
-            item.get("growth_next_year"),
-            item.get("growth_next_pct"),
-        )
-        rows.append(
-            f"""
+        rows.append(f"""
         <tr>
           <td><strong>{item['code']}</strong><span>{html.escape(item['name'])}</span></td>
-          <td><div class="table-score {score_class(item['score'])}">{item['score']:.2f}</div></td>
+          <td><div class="table-score {score_class(item['score'])}">{item['score']:.2f}</div><span>Opportunity</span></td>
+          <td><div class="table-score {urgency_class(item.get('buy_urgency_score', 2.5))}">{item.get('buy_urgency_score', 2.5):.2f}</div><span>{html.escape(item.get('buy_urgency_label', '—'))}</span></td>
           <td>{item.get('market_score', item['score']):.2f}</td>
           <td>{item.get('macro_score', 2.5):.2f}<span>{item.get('macro_coverage_pct', 0)}% coverage</span></td>
           <td><span class="table-rec {recommendation_class(item['score'])}">{html.escape(item['recommendation'])}</span></td>
           <td>{rate_text(item)}</td>
           <td>{fmt_number(item.get('percentile_5y'), 1)}%</td>
-          <td>{policy_text(item)}<span>6M {fmt_bps(item.get('policy_rate_6m_change_bps'))}</span></td>
-          <td>{html.escape(growth)}</td>
+          <td>{html.escape(item.get('policy_direction_label', 'Unavailable'))}<span>6M {fmt_bps(item.get('policy_rate_6m_change_bps'))}</span></td>
+          <td>{html.escape(meeting_text(item))}<span>{html.escape(item.get('policy_calendar_source', ''))}</span></td>
+          <td>{html.escape(item.get('event_risk_label', '—'))}<span>{fmt_number(item.get('event_risk_score'), 1)}/5</span></td>
           <td>{level_text(item, item.get('buy_zone_upper_sgd'))}<span>{html.escape(gap_text(item))}</span></td>
           <td>{item['confidence']}%</td>
         </tr>
-        """
-        )
+        """)
     return "\n".join(rows)
 
 
@@ -268,6 +267,8 @@ def main():
     best_market = best.get("market_score", best["score"])
     best_macro = best.get("macro_score", 2.5)
     best_macro_weight = best.get("effective_macro_weight_pct", 0)
+    best_urgency = best.get("buy_urgency_score", 2.5)
+    best_urgency_label = best.get("buy_urgency_label", "—")
     best_macro_driver = (
         best.get("macro_drivers", [""])[0]
         if best.get("macro_drivers")
@@ -370,6 +371,23 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .macro-grid span{{display:block;color:var(--muted);font-size:.66rem;margin-bottom:4px}}
 .macro-grid strong{{display:block;font-size:.76rem;line-height:1.35}}
 .macro-grid small{{display:block;color:#7188a2;font-size:.65rem;margin-top:3px}}
+.urgency-box{{border:1px solid #2b435c;border-radius:14px;padding:12px;margin-top:12px;background:#0a1625}}
+.urgency-box.urgency-high{{border-color:rgba(69,221,163,.55);background:rgba(20,73,60,.20)}}
+.urgency-box.urgency-elevated{{border-color:rgba(244,201,93,.55);background:rgba(91,72,23,.16)}}
+.urgency-box.urgency-normal{{border-color:#2b435c}}
+.urgency-box.urgency-low{{border-color:rgba(86,217,246,.30)}}
+.urgency-head{{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}}
+.urgency-head span{{display:block;color:var(--muted);font-size:.7rem}}
+.urgency-head strong{{display:block;margin-top:3px;font-size:.92rem}}
+.urgency-pill{{font-size:.66rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em;padding:6px 9px;border-radius:999px;background:#10243a;color:#d9e8f7;white-space:nowrap}}
+.urgency-grid{{display:grid;grid-template-columns:1fr 1fr;gap:8px}}
+.urgency-grid div{{background:rgba(5,15,27,.65);border:1px solid #1b3046;border-radius:10px;padding:8px}}
+.urgency-grid span{{display:block;color:var(--muted);font-size:.66rem;margin-bottom:3px}}
+.urgency-grid strong{{font-size:.74rem;line-height:1.3}}
+.urgency-high{{color:var(--green)}}
+.urgency-elevated{{color:var(--amber)}}
+.urgency-normal{{color:#c5d5e8}}
+.urgency-low{{color:var(--cyan)}}
 .zone-box{{margin:14px 0;background:#091421;border:1px solid #1d354d;border-radius:14px;padding:13px}}
 .zone-head{{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-bottom:10px;border-bottom:1px solid #1a2e43}}
 .zone-head span{{color:var(--muted);font-size:.72rem}}
@@ -383,7 +401,7 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .action-box span{{display:block;color:var(--muted);font-size:.72rem;margin-bottom:3px}}
 .action-box strong{{font-size:.9rem}}
 .allocation{{font-size:.75rem;font-weight:900;color:var(--cyan);white-space:nowrap}}
-.driver-columns{{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}}
+.driver-columns{{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}}
 .driver-columns>div{{background:#091421;border:1px solid #172b40;border-radius:12px;padding:10px}}
 .driver-columns h4{{font-size:.69rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 6px}}
 .driver-columns ul{{padding-left:16px;margin:0;color:#bfd0e4;font-size:.72rem;line-height:1.45}}
@@ -396,13 +414,13 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .chart-toolbar select{{background:#0a1523;color:var(--text);border:1px solid #2a4058;border-radius:10px;padding:9px 12px}}
 .chart-wrap{{height:380px}}
 .table-panel{{overflow:auto;background:rgba(13,24,40,.92);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}}
-table{{width:100%;border-collapse:collapse;min-width:1450px}}
+table{{width:100%;border-collapse:collapse;min-width:1750px}}
 th,td{{padding:14px 16px;border-bottom:1px solid #1b2c41;text-align:left;font-size:.82rem;vertical-align:top}}
 th{{position:sticky;top:0;background:#0d1928;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}}
 td span{{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}}
 .table-score{{font-weight:900;font-size:1rem}}
 .table-rec{{display:inline-block;padding:5px 8px;border-radius:999px;font-size:.7rem;font-weight:900}}
-.methodology{{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}}
+.methodology{{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}}
 .method-card{{background:rgba(13,24,40,.9);border:1px solid var(--line);border-radius:16px;padding:16px}}
 .method-card strong{{font-size:1.55rem;display:block;margin-bottom:6px;color:var(--cyan)}}
 .method-card span{{color:var(--muted);font-size:.8rem;line-height:1.5}}
@@ -410,16 +428,16 @@ td span{{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}}
 footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
 @media(max-width:1180px){{.cards{{grid-template-columns:repeat(2,minmax(0,1fr))}}.methodology{{grid-template-columns:repeat(3,1fr)}}}}
 @media(max-width:1050px){{.hero{{grid-template-columns:1fr}}.status-panel{{min-width:300px}}}}
-@media(max-width:680px){{.container{{padding:20px 14px 40px}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.driver-columns{{grid-template-columns:1fr}}}}
+@media(max-width:680px){{.container{{padding:20px 14px 40px}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}}}
 </style>
 </head>
 <body>
 <div class="container">
   <header class="topbar">
     <div>
-      <div class="eyebrow">Personal currency decision support · Phase 2A</div>
+      <div class="eyebrow">Personal currency decision support · Phase 2B</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">Ranks how attractive it is to convert Singapore dollars into foreign currencies. The overall 0–5 score now combines historical value and market timing with central-bank policy, growth and inflation intelligence.</p>
+      <p class="subtitle">Separates two questions: how attractive today's SGD conversion rate is, and how urgently an attractive buying window may need to be acted on. Opportunity and Buy Urgency are both scored from 0 to 5.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>{market_date}</strong></div>
@@ -427,6 +445,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <div><span>FX source</span><strong>{primary_source}</strong></div>
       <div><span>Policy source</span><strong>{policy_source}</strong></div>
       <div><span>Macro source</span><strong>{macro_source}</strong></div>
+      <div><span>Event calendars</span><strong>Official 2026 central-bank schedules</strong></div>
       <div><span>Cross-check</span><strong>{validation_source}</strong></div>
     </div>
   </header>
@@ -435,27 +454,31 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="hero-card">
       <h3>Best current opportunity</h3>
       <div class="hero-opportunity"><span>{best['code']}</span> · {html.escape(best['recommendation'])}</div>
-      <div class="hero-score"><strong>{best['score']:.2f}/5</strong><span>{rate_text(best)}</span></div>
+      <div class="hero-score"><strong>{best['score']:.2f}/5</strong><span>Opportunity · {rate_text(best)}</span></div>
       <div class="hero-split">
         <div>Market <strong>{best_market:.2f}/5</strong></div>
-        <div>Macro & policy <strong>{best_macro:.2f}/5</strong></div>
-        <div>Macro weight today <strong>{best_macro_weight}%</strong></div>
+        <div>Macro backdrop <strong>{best_macro:.2f}/5</strong></div>
+        <div>Buy urgency <strong>{best_urgency:.2f}/5 · {html.escape(best_urgency_label)}</strong></div>
+        <div>Macro weight <strong>{best_macro_weight}%</strong></div>
       </div>
       <p class="hero-copy">{html.escape(best['drivers'][0] if best.get('drivers') else best['suggested_action'])}</p>
       <p class="hero-macro">Macro view: {html.escape(best_macro_driver)}</p>
+      <p class="hero-macro">Timing view: {html.escape(best.get('urgency_drivers', ['No urgency signal available.'])[0])}</p>
     </div>
     <div class="hero-side">
       <h3>Suggested action</h3>
       <div class="big-action">{html.escape(best['suggested_action'])}</div>
       <p><strong>Current zone:</strong> {html.escape(best.get('zone_status', '—'))}<br>
       <strong>Buy-zone threshold:</strong> {level_text(best, best.get('buy_zone_upper_sgd'))}<br>
-      <strong>Strong-buy threshold:</strong> {level_text(best, best.get('strong_buy_level_sgd'))}</p>
-      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. The score is designed for staged buying rather than trying to predict one perfect FX bottom.</p>
+      <strong>Strong-buy threshold:</strong> {level_text(best, best.get('strong_buy_level_sgd'))}<br>
+      <strong>Buy urgency:</strong> {best_urgency:.2f}/5 · {html.escape(best_urgency_label)}<br>
+      <strong>Next policy event:</strong> {html.escape(meeting_text(best))} · {html.escape(best.get('event_risk_label', '—'))} risk</p>
+      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2B uses urgency to adjust staging, but a high urgency score cannot by itself turn poor value into a Buy.</p>
     </div>
   </section>
 
   <div class="section-header">
-    <div><h2>Currency opportunity ranking</h2><p>Highest combined Buy Score first. Market and macro scores remain visible separately.</p></div>
+    <div><h2>Currency opportunity ranking</h2><p>Highest Opportunity Score first. Buy Urgency is shown separately so attractive value is not confused with fear of missing a short-term move.</p></div>
   </div>
   <section class="cards">{cards_html}</section>
 
@@ -473,27 +496,28 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   </section>
 
   <div class="section-header">
-    <div><h2>Full scorecard</h2><p>Compare the combined score with the underlying market and macro intelligence.</p></div>
+    <div><h2>Full scorecard</h2><p>Compare Opportunity, Buy Urgency, market valuation, macro backdrop and the next central-bank event.</p></div>
   </div>
   <section class="table-panel">
     <table>
-      <thead><tr><th>Currency</th><th>Overall</th><th>Market</th><th>Macro</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Policy</th><th>GDP outlook</th><th>Buy zone</th><th>Confidence</th></tr></thead>
+      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Market</th><th>Macro</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Policy direction</th><th>Next meeting</th><th>Event risk</th><th>Buy zone</th><th>Confidence</th></tr></thead>
       <tbody>{rows_html}</tbody>
     </table>
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 2A scoring model</h2><p>The Phase 1B market model is preserved so we can later measure whether the macro layer improves real-world results.</p></div>
+    <div><h2>Phase 2B scoring model</h2><p>Opportunity measures value. Buy Urgency measures how quickly an attractive window may change. The recommendation matrix remains opportunity-first.</p></div>
   </div>
   <section class="methodology">
-    <div class="method-card"><strong>70%</strong><span>Market intelligence when all macro data is available: historical value, trend, momentum and volatility.</span></div>
-    <div class="method-card"><strong>30%</strong><span>Maximum macro-policy contribution to the final score. Missing data automatically reduces this weight.</span></div>
-    <div class="method-card"><strong>50%</strong><span>Within the macro score: foreign central-bank policy-rate level and recent direction.</span></div>
-    <div class="method-card"><strong>30%</strong><span>Within the macro score: IMF real-GDP growth outlook relative to Singapore.</span></div>
-    <div class="method-card"><strong>20%</strong><span>Within the macro score: IMF inflation outlook relative to Singapore.</span></div>
+    <div class="method-card"><strong>70%</strong><span>Market intelligence in the Opportunity Score when full macro data is available: historical value, trend, momentum and volatility.</span></div>
+    <div class="method-card"><strong>30%</strong><span>Maximum macro-backdrop contribution to Opportunity. Missing macro data automatically reduces this weight.</span></div>
+    <div class="method-card"><strong>35%</strong><span>Buy Urgency: central-bank policy direction. Hawkish rate momentum raises the risk that the foreign currency strengthens.</span></div>
+    <div class="method-card"><strong>30%</strong><span>Buy Urgency: recent FX price reversal. A currency starting to become more expensive increases timing pressure.</span></div>
+    <div class="method-card"><strong>20%</strong><span>Buy Urgency: valuation rarity. Exceptionally cheap five-year readings make the current opportunity more precious.</span></div>
+    <div class="method-card"><strong>15%</strong><span>Buy Urgency: policy-event setup, combining meeting proximity with the current policy direction.</span></div>
   </section>
 
-  <div class="notice"><strong>Important:</strong> The model does not invent a Singapore policy interest rate. Singapore monetary policy is exchange-rate-centred, so Phase 2A uses foreign central-bank policy rates while comparing IMF growth and inflation outlooks against Singapore. ECB reference rates are informational rates and may differ from the retail rate offered by your bank, card, money changer or transfer service. No score guarantees future currency direction.</div>
+  <div class="notice"><strong>Important:</strong> Buy Urgency is not a prediction that a currency will definitely strengthen. It is a timing aid applied only after the Opportunity Score is considered. The event calendar uses published 2026 decision dates from the relevant central banks and should be refreshed when new annual schedules are released. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
   <footer>Generated automatically by GitHub Actions · Last build {html.escape(generated)}</footer>
 </div>
 
