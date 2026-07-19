@@ -43,7 +43,7 @@ CURRENCY_CONFIG = {
     "MYR": {"name": "Malaysian Ringgit", "symbol": "RM", "unit": 1, "yf": "MYRSGD=X"},
 }
 
-MODEL_VERSION = "2.2-phase2c"
+MODEL_VERSION = "2.2-phase2c-baseline"
 
 # Phase 2C keeps the proven Phase 1B market model intact, then separates a macro-policy
 # layer. With complete macro coverage, the final score is 70% market intelligence
@@ -673,15 +673,20 @@ def forward_policy_bias(macro: Dict[str, object]) -> Dict[str, object]:
 
     drivers: List[str] = []
     if recent_path is not None:
-        drivers.append(f"Recent policy path points to {policy_direction_label(recent_path).lower()} conditions.")
+        drivers.append(
+            f"Recent policy trend: {policy_direction_label(recent_path)} — based on actual 6- and 12-month policy-rate changes."
+        )
+    drivers.append(
+        f"Model-implied forward policy bias: {label} — after considering recent policy trend, IMF inflation and growth outlook."
+    )
     if inflation_current is not None and inflation_next is not None:
         direction = "higher" if float(inflation_next) > float(inflation_current) else "lower"
         drivers.append(f"IMF inflation is projected {direction} next year, affecting future policy pressure.")
     if growth_current is not None and growth_next is not None:
         direction = "stronger" if float(growth_next) > float(growth_current) else "softer"
         drivers.append(f"IMF growth is projected {direction} next year, influencing the model-implied policy bias.")
-    if not drivers:
-        drivers.append("Insufficient macro inputs for a strong forward-policy signal; the model stays near neutral.")
+    if recent_path is None and inflation_current is None and growth_current is None:
+        drivers = ["Insufficient macro inputs for a strong forward-policy signal; the model stays near neutral."]
 
     return {
         "score": score,
@@ -1683,6 +1688,83 @@ def write_policy_calendar_snapshot(signals: List[CurrencySignal]) -> None:
     (DATA_DIR / "policy_calendar.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
+def load_previous_score_record(current_market_date: str) -> Optional[dict]:
+    """Return the latest logged market day strictly before the current market date.
+
+    Re-running the workflow on the same market day must not create a fake daily
+    comparison. This keeps the dashboard deltas anchored to the previous available
+    trading day rather than the previous GitHub Actions run.
+    """
+    path = DATA_DIR / "score_log.json"
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        records = payload.get("records", [])
+    except Exception:
+        return None
+
+    eligible = [
+        row for row in records
+        if row.get("date") and str(row.get("date")) < str(current_market_date)
+    ]
+    if not eligible:
+        return None
+    return sorted(eligible, key=lambda row: row.get("date", ""))[-1]
+
+
+def _score_delta(current: Optional[float], previous: Optional[float]) -> Optional[float]:
+    if current is None or previous is None:
+        return None
+    return round(float(current) - float(previous), 2)
+
+
+def attach_daily_changes(signals: List[CurrencySignal], current_market_date: str) -> Tuple[List[dict], Optional[str]]:
+    """Serialize signals and attach previous-market-day score changes for display."""
+    previous = load_previous_score_record(current_market_date)
+    previous_date = previous.get("date") if previous else None
+    serialized: List[dict] = []
+
+    for signal in signals:
+        item = asdict(signal)
+        code = signal.code
+        if previous:
+            item["daily_changes"] = {
+                "opportunity_score": _score_delta(
+                    signal.opportunity_score,
+                    (previous.get("opportunity_scores") or {}).get(code),
+                ),
+                "market_score": _score_delta(
+                    signal.market_score,
+                    (previous.get("market_scores") or {}).get(code),
+                ),
+                "macro_score": _score_delta(
+                    signal.macro_score,
+                    (previous.get("macro_scores") or {}).get(code),
+                ),
+                "forward_outlook_score": _score_delta(
+                    signal.forward_outlook_score,
+                    (previous.get("forward_outlook_scores") or {}).get(code),
+                ),
+                "buy_urgency_score": _score_delta(
+                    signal.buy_urgency_score,
+                    (previous.get("buy_urgency_scores") or {}).get(code),
+                ),
+            }
+        else:
+            item["daily_changes"] = {
+                "opportunity_score": None,
+                "market_score": None,
+                "macro_score": None,
+                "forward_outlook_score": None,
+                "buy_urgency_score": None,
+            }
+        item["previous_score_date"] = previous_date
+        serialized.append(item)
+
+    return serialized, previous_date
+
+
 def update_score_log(signals: List[CurrencySignal]) -> None:
     path = DATA_DIR / "score_log.json"
     if path.exists():
@@ -1697,6 +1779,7 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
     run_date = max(signal.data_date for signal in signals)
     new_row = {
         "date": run_date,
+        "model_version": MODEL_VERSION,
         "scores": {signal.code: signal.score for signal in signals},
         "opportunity_scores": {signal.code: signal.opportunity_score for signal in signals},
         "buy_urgency_scores": {signal.code: signal.buy_urgency_score for signal in signals},
@@ -1712,6 +1795,11 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
         "macro_coverage_pct": {signal.code: signal.macro_coverage_pct for signal in signals},
         "effective_macro_weight_pct": {signal.code: signal.effective_macro_weight_pct for signal in signals},
         "recommendations": {signal.code: signal.recommendation for signal in signals},
+        "suggested_buy_pct": {signal.code: signal.suggested_buy_pct for signal in signals},
+        "suggested_actions": {signal.code: signal.suggested_action for signal in signals},
+        "decision_confidence_labels": {signal.code: signal.decision_confidence_label for signal in signals},
+        "buy_urgency_labels": {signal.code: signal.buy_urgency_label for signal in signals},
+        "forward_outlook_labels": {signal.code: signal.forward_outlook_label for signal in signals},
         "rates_sgd": {signal.code: signal.rate_sgd for signal in signals},
         "buy_zone_upper_sgd": {signal.code: signal.buy_zone_upper_sgd for signal in signals},
         "zone_status": {signal.code: signal.zone_status for signal in signals},
@@ -1767,12 +1855,16 @@ def main() -> None:
     if all(value == "Unavailable" for value in imf_status.values()):
         macro_source = "IMF WEO unavailable for this run"
 
+    serialized_signals, previous_score_date = attach_daily_changes(signals, latest_market_date)
+
     payload = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "latest_market_date": latest_market_date,
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
-        "phase": "Phase 2C — forward policy bias, forward FX momentum and decision confidence",
+        "phase": "Phase 2C.1 — frozen baseline and daily score-change monitoring",
+        "baseline_frozen": True,
+        "previous_score_date": previous_score_date,
         "primary_source": source_name,
         "policy_source": policy_source,
         "macro_source": macro_source,
@@ -1788,16 +1880,16 @@ def main() -> None:
             "forward_outlook": FORWARD_OUTLOOK_WEIGHTS,
         },
         "scoring_note": (
-            "The Opportunity Score keeps the market/macro model. Phase 2C adds a separate Forward Outlook built from "
-            "a model-implied policy bias and forward FX momentum. Buy Urgency uses those forward signals plus valuation "
-            "rarity and event proximity. The policy bias is derived from BIS policy history and IMF forecast direction; "
-            "it is not a market-futures probability. Urgency still cannot turn poor value into a Buy."
+            "Phase 2C.1 freezes the Phase 2C scoring weights as the baseline for the observation period. The Opportunity "
+            "Score keeps the market/macro model, Forward Outlook combines model-implied policy bias and FX momentum, "
+            "and Buy Urgency uses those forward signals plus valuation rarity and event proximity. Daily score changes "
+            "compare against the previous available market day. No core scoring weights are changed in this baseline."
         ),
         "important_note": (
             "This model ranks the attractiveness of converting SGD into foreign currency. "
             "It is a decision-support tool, not a guarantee of future exchange-rate direction."
         ),
-        "currencies": [asdict(signal) for signal in signals],
+        "currencies": serialized_signals,
     }
 
     (DATA_DIR / "fx_signals.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")

@@ -32,6 +32,39 @@ def fmt_bps(value):
     return f"{sign}{value:.0f} bp"
 
 
+def score_delta_badge(item, key):
+    changes = item.get("daily_changes") or {}
+    value = changes.get(key)
+    previous_date = item.get("previous_score_date")
+    if value is None:
+        return '<span class="delta-badge delta-na">baseline</span>'
+    value = float(value)
+    if abs(value) < 0.005:
+        return f'<span class="delta-badge delta-flat" title="Change vs {html.escape(str(previous_date or "previous market day"))}">• 0.00</span>'
+    arrow = "▲" if value > 0 else "▼"
+    css = "delta-up" if value > 0 else "delta-down"
+    return (
+        f'<span class="delta-badge {css}" title="Change vs {html.escape(str(previous_date or "previous market day"))}">'
+        f'{arrow} {abs(value):.2f}</span>'
+    )
+
+
+def daily_change_summary(item):
+    previous_date = item.get("previous_score_date")
+    changes = item.get("daily_changes") or {}
+    if not previous_date or all(changes.get(key) is None for key in ("opportunity_score", "forward_outlook_score", "buy_urgency_score")):
+        return '<div class="daily-change-row baseline-row"><span>Daily score changes</span><strong>Baseline started · appears after the next new market day</strong></div>'
+    return (
+        '<div class="daily-change-row">'
+        f'<span>Change vs {html.escape(str(previous_date))}</span>'
+        '<strong>'
+        f'Opportunity {score_delta_badge(item, "opportunity_score")} '
+        f'Forward {score_delta_badge(item, "forward_outlook_score")} '
+        f'Urgency {score_delta_badge(item, "buy_urgency_score")}'
+        '</strong></div>'
+    )
+
+
 def score_class(score):
     if score >= 4.0:
         return "score-strong"
@@ -163,12 +196,14 @@ def build_currency_cards(currencies):
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="{score_class(item.get('market_score', item['score']))}">{item.get('market_score', item['score']):.2f}/5</strong></div>
             <div><span>Macro backdrop</span><strong class="{score_class(item.get('macro_score', 2.5))}">{item.get('macro_score', 2.5):.2f}/5</strong></div>
-            <div><span>Forward outlook</span><strong class="{score_class(forward_outlook)}">{forward_outlook:.2f}/5</strong></div>
+            <div><span>Forward outlook</span><strong class="{score_class(forward_outlook)}">{forward_outlook:.2f}/5 {score_delta_badge(item, 'forward_outlook_score')}</strong></div>
           </div>
+
+          {daily_change_summary(item)}
 
           <div class="urgency-box {urgency_class(urgency)}">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>{urgency:.2f}/5 · {html.escape(item.get('buy_urgency_label', '—'))}</strong></div>
+              <div><span>Buy urgency</span><strong>{urgency:.2f}/5 {score_delta_badge(item, 'buy_urgency_score')} · {html.escape(item.get('buy_urgency_label', '—'))}</strong></div>
               <div class="urgency-pill">{html.escape(item.get('event_risk_label', '—'))} event risk</div>
             </div>
             <div class="urgency-grid">
@@ -248,9 +283,9 @@ def build_table_rows(currencies):
         rows.append(f"""
         <tr>
           <td><strong>{item['code']}</strong><span>{html.escape(item['name'])}</span></td>
-          <td><div class="table-score {score_class(item['score'])}">{item['score']:.2f}</div><span>Opportunity</span></td>
-          <td><div class="table-score {urgency_class(item.get('buy_urgency_score', 2.5))}">{item.get('buy_urgency_score', 2.5):.2f}</div><span>{html.escape(item.get('buy_urgency_label', '—'))}</span></td>
-          <td>{item.get('forward_outlook_score', 2.5):.2f}<span>{html.escape(item.get('forward_outlook_label', '—'))}</span></td>
+          <td><div class="table-score {score_class(item['score'])}">{item['score']:.2f}</div><span>Opportunity {score_delta_badge(item, 'opportunity_score')}</span></td>
+          <td><div class="table-score {urgency_class(item.get('buy_urgency_score', 2.5))}">{item.get('buy_urgency_score', 2.5):.2f}</div><span>{html.escape(item.get('buy_urgency_label', '—'))} {score_delta_badge(item, 'buy_urgency_score')}</span></td>
+          <td>{item.get('forward_outlook_score', 2.5):.2f}<span>{html.escape(item.get('forward_outlook_label', '—'))} {score_delta_badge(item, 'forward_outlook_score')}</span></td>
           <td>{item.get('market_score', item['score']):.2f}</td>
           <td>{item.get('macro_score', 2.5):.2f}<span>{item.get('macro_coverage_pct', 0)}% coverage</span></td>
           <td>{item.get('forward_policy_score', 2.5):.2f}<span>{html.escape(item.get('forward_policy_label', '—'))}</span></td>
@@ -280,6 +315,8 @@ def main():
     macro_source = html.escape(data.get("macro_source", "Unavailable"))
     validation_source = html.escape(data.get("validation_source", "Unavailable"))
     model_version = html.escape(data.get("model_version", ""))
+    previous_score_date = data.get("previous_score_date")
+    comparison_text = html.escape(str(previous_score_date)) if previous_score_date else "Starts next new market day"
 
     cards_html = build_currency_cards(currencies)
     rows_html = build_table_rows(currencies)
@@ -299,7 +336,7 @@ def main():
         else "Macro-policy data is unavailable for this run."
     )
     best_forward_driver = (
-        best.get("forward_drivers", [""])[0]
+        " ".join(best.get("forward_drivers", [])[:2])
         if best.get("forward_drivers")
         else "Forward-looking inputs are unavailable for this run."
     )
@@ -355,6 +392,14 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .hero-split{{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0 4px}}
 .hero-split div{{background:#0a1727;border:1px solid #29445f;border-radius:12px;padding:9px 12px;color:var(--muted);font-size:.78rem}}
 .hero-split strong{{color:var(--text);margin-left:5px}}
+.delta-badge{{display:inline-flex;align-items:center;justify-content:center;margin-left:5px;padding:2px 6px;border-radius:999px;font-size:.62rem;font-weight:900;line-height:1.25;white-space:nowrap;vertical-align:middle;border:1px solid transparent}}
+.delta-up{{color:var(--cyan);background:rgba(86,217,246,.10);border-color:rgba(86,217,246,.28)}}
+.delta-down{{color:var(--amber);background:rgba(244,201,93,.10);border-color:rgba(244,201,93,.28)}}
+.delta-flat{{color:#aabbd0;background:rgba(170,187,208,.08);border-color:rgba(170,187,208,.2)}}
+.delta-na{{color:#758ca7;background:rgba(117,140,167,.08);border-color:rgba(117,140,167,.16)}}
+.daily-change-row{{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:9px;padding:8px 10px;border-radius:10px;border:1px dashed #29445f;background:rgba(7,16,29,.35);color:var(--muted);font-size:.68rem}}
+.daily-change-row strong{{color:var(--text);font-weight:700;display:flex;align-items:center;gap:3px;flex-wrap:wrap;justify-content:flex-end}}
+.baseline-row strong{{color:#8ca1ba}}
 .hero-copy{{color:#c7d8ec;line-height:1.6;max-width:760px}}
 .hero-macro{{color:#a9bdd4;line-height:1.55;font-size:.88rem;margin-top:8px}}
 .hero-side{{background:rgba(13,24,40,.9);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow)}}
@@ -467,20 +512,22 @@ td span{{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}}
 footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
 @media(max-width:1180px){{.cards{{grid-template-columns:repeat(2,minmax(0,1fr))}}.methodology{{grid-template-columns:repeat(3,1fr)}}.driver-columns{{grid-template-columns:repeat(2,1fr)}}}}
 @media(max-width:1050px){{.hero{{grid-template-columns:1fr}}.status-panel{{min-width:300px}}}}
-@media(max-width:680px){{.container{{padding:20px 14px 40px}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.forward-grid{{grid-template-columns:1fr}}.score-split{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}}}
+@media(max-width:680px){{.container{{padding:20px 14px 40px}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.forward-grid{{grid-template-columns:1fr}}.score-split{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}.daily-change-row{{align-items:flex-start;flex-direction:column}}.daily-change-row strong{{justify-content:flex-start}}}}
 </style>
 </head>
 <body>
 <div class="container">
   <header class="topbar">
     <div>
-      <div class="eyebrow">Personal currency decision support · Phase 2C</div>
+      <div class="eyebrow">Personal currency decision support · Phase 2C.1 baseline</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">Combines current opportunity, forward policy pressure, FX momentum and decision confidence to help stage SGD conversions. Opportunity, Forward Outlook and Buy Urgency are all scored from 0 to 5.</p>
+      <p class="subtitle">Phase 2C scoring is now frozen as the baseline for the monitoring period. The dashboard tracks current opportunity, forward policy pressure, FX momentum, decision confidence and day-to-day score changes without changing the core model weights.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>{market_date}</strong></div>
       <div><span>Model</span><strong>{model_version}</strong></div>
+      <div><span>Baseline status</span><strong>Core scoring frozen</strong></div>
+      <div><span>Score-change comparison</span><strong>{comparison_text}</strong></div>
       <div><span>FX source</span><strong>{primary_source}</strong></div>
       <div><span>Policy source</span><strong>{policy_source}</strong></div>
       <div><span>Macro source</span><strong>{macro_source}</strong></div>
@@ -494,15 +541,16 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="hero-card">
       <h3>Best current opportunity</h3>
       <div class="hero-opportunity"><span>{best['code']}</span> · {html.escape(best['recommendation'])}</div>
-      <div class="hero-score"><strong>{best['score']:.2f}/5</strong><span>Opportunity · {rate_text(best)}</span></div>
+      <div class="hero-score"><strong>{best['score']:.2f}/5</strong>{score_delta_badge(best, 'opportunity_score')}<span>Opportunity · {rate_text(best)}</span></div>
       <div class="hero-split">
         <div>Market <strong>{best_market:.2f}/5</strong></div>
         <div>Macro backdrop <strong>{best_macro:.2f}/5</strong></div>
-        <div>Forward outlook <strong>{best_forward:.2f}/5</strong></div>
-        <div>Buy urgency <strong>{best_urgency:.2f}/5 · {html.escape(best_urgency_label)}</strong></div>
+        <div>Forward outlook <strong>{best_forward:.2f}/5 {score_delta_badge(best, 'forward_outlook_score')}</strong></div>
+        <div>Buy urgency <strong>{best_urgency:.2f}/5 {score_delta_badge(best, 'buy_urgency_score')} · {html.escape(best_urgency_label)}</strong></div>
         <div>Decision confidence <strong>{best_decision_confidence}%</strong></div>
         <div>Signal agreement <strong>{best_signal_agreement}%</strong></div>
       </div>
+      {daily_change_summary(best)}
       <p class="hero-copy">{html.escape(best['drivers'][0] if best.get('drivers') else best['suggested_action'])}</p>
       <p class="hero-macro">Macro view: {html.escape(best_macro_driver)}</p>
       <p class="hero-macro">Forward view: {html.escape(best_forward_driver)}</p>
@@ -518,7 +566,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <strong>Buy urgency:</strong> {best_urgency:.2f}/5 · {html.escape(best_urgency_label)}<br>
       <strong>Decision confidence:</strong> {best_decision_confidence}% · {best_signal_agreement}% signal agreement<br>
       <strong>Next policy event:</strong> {html.escape(meeting_text(best))} · {html.escape(best.get('event_risk_label', '—'))} risk</p>
-      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C uses forward-looking signals to adjust urgency, but a high urgency score still cannot turn poor value into a Buy.</p>
+      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C.1 keeps the Phase 2C scoring logic frozen while daily score changes are monitored. A high urgency score still cannot turn poor value into a Buy.</p>
     </div>
   </section>
 
@@ -551,9 +599,11 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 2C scoring model</h2><p>Opportunity measures value. Forward Outlook estimates directional pressure. Buy Urgency decides how quickly an already-attractive window may need to be acted on.</p></div>
+    <div><h2>Phase 2C.1 frozen baseline model</h2><p>The core Phase 2C scoring weights are frozen for the observation period. Opportunity measures value, Forward Outlook estimates directional pressure, and Buy Urgency estimates timing pressure.</p></div>
   </div>
   <section class="methodology">
+    <div class="method-card"><strong>Frozen</strong><span>Phase 2C core weights are locked during the baseline observation period so later changes can be measured cleanly.</span></div>
+    <div class="method-card"><strong>Δ Daily</strong><span>Opportunity, Forward Outlook and Buy Urgency changes are compared with the previous available market day.</span></div>
     <div class="method-card"><strong>70%</strong><span>Market intelligence in the Opportunity Score when full macro data is available: historical value, trend, momentum and volatility.</span></div>
     <div class="method-card"><strong>30%</strong><span>Maximum macro-backdrop contribution to Opportunity. Missing macro data automatically reduces this weight.</span></div>
     <div class="method-card"><strong>45%</strong><span>Forward Outlook: model-implied policy bias from recent BIS policy paths plus IMF inflation and growth direction.</span></div>
@@ -565,7 +615,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="method-card"><strong>Confidence</strong><span>Decision confidence combines data quality, macro coverage and agreement across the major supportive signals.</span></div>
   </section>
 
-  <div class="notice"><strong>Important:</strong> The Phase 2C policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
+  <div class="notice"><strong>Baseline monitoring:</strong> Phase 2C.1 does not change the core scoring weights. Daily score deltas compare each new market date with the previous available market day, creating a clean baseline for the later Phase 3A evaluation.<br><br><strong>Important:</strong> The policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
   <footer>Generated automatically by GitHub Actions · Last build {html.escape(generated)}</footer>
 </div>
 
