@@ -1,5 +1,5 @@
 {
-  "model_version": "2.1-phase2b",
+  "model_version": "2.2-phase2c",
   "records": [
     {
       "date": "2026-07-17",
@@ -20,12 +20,52 @@
         "GBP": 1.7
       },
       "buy_urgency_scores": {
-        "JPY": 3.38,
-        "USD": 2.45,
-        "MYR": 2.03,
-        "EUR": 2.62,
-        "AUD": 3.07,
-        "GBP": 1.98
+        "JPY": 3.1,
+        "USD": 2.53,
+        "MYR": 2.12,
+        "EUR": 2.34,
+        "AUD": 2.55,
+        "GBP": 2.11
+      },
+      "forward_policy_scores": {
+        "JPY": 3.03,
+        "USD": 1.65,
+        "MYR": 2.46,
+        "EUR": 2.63,
+        "AUD": 2.97,
+        "GBP": 1.89
+      },
+      "forward_fx_momentum_scores": {
+        "JPY": 2.07,
+        "USD": 2.81,
+        "MYR": 1.96,
+        "EUR": 2.14,
+        "AUD": 2.36,
+        "GBP": 3.01
+      },
+      "forward_outlook_scores": {
+        "JPY": 2.5,
+        "USD": 2.29,
+        "MYR": 2.19,
+        "EUR": 2.36,
+        "AUD": 2.63,
+        "GBP": 2.51
+      },
+      "decision_confidence": {
+        "JPY": 80,
+        "USD": 87,
+        "MYR": 86,
+        "EUR": 90,
+        "AUD": 86,
+        "GBP": 85
+      },
+      "signal_agreement_pct": {
+        "JPY": 65,
+        "USD": 79,
+        "MYR": 77,
+        "EUR": 88,
+        "AUD": 76,
+        "GBP": 74
       },
       "event_risk_labels": {
         "JPY": "Elevated",
