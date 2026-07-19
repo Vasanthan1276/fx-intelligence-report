@@ -129,6 +129,7 @@ def build_currency_cards(currencies):
     for rank, item in enumerate(currencies, start=1):
         market_drivers = "".join(f"<li>{html.escape(driver)}</li>" for driver in item.get("drivers", []))
         macro_drivers = "".join(f"<li>{html.escape(driver)}</li>" for driver in item.get("macro_drivers", []))
+        forward_drivers = "".join(f"<li>{html.escape(driver)}</li>" for driver in item.get("forward_drivers", []))
         urgency_drivers = "".join(f"<li>{html.escape(driver)}</li>" for driver in item.get("urgency_drivers", []))
         validation = item.get("validation_status", "Unavailable")
         validation_diff = item.get("validation_difference_pct")
@@ -139,6 +140,10 @@ def build_currency_cards(currencies):
         effective_macro_weight = item.get("effective_macro_weight_pct", 0)
         urgency = item.get("buy_urgency_score", 2.5)
         urgency_components = item.get("urgency_component_scores", {})
+        forward_outlook = item.get("forward_outlook_score", 2.5)
+        decision_confidence = item.get("decision_confidence", item.get("confidence", 0))
+        decision_confidence_label = item.get("decision_confidence_label", item.get("confidence_label", "—"))
+        signal_agreement = item.get("signal_agreement_pct", 0)
 
         growth_outlook = outlook_text(item.get("growth_current_year"), item.get("growth_current_pct"), item.get("growth_next_year"), item.get("growth_next_pct"))
         inflation_outlook = outlook_text(item.get("inflation_current_year"), item.get("inflation_current_pct"), item.get("inflation_next_year"), item.get("inflation_next_pct"))
@@ -158,6 +163,7 @@ def build_currency_cards(currencies):
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="{score_class(item.get('market_score', item['score']))}">{item.get('market_score', item['score']):.2f}/5</strong></div>
             <div><span>Macro backdrop</span><strong class="{score_class(item.get('macro_score', 2.5))}">{item.get('macro_score', 2.5):.2f}/5</strong></div>
+            <div><span>Forward outlook</span><strong class="{score_class(forward_outlook)}">{forward_outlook:.2f}/5</strong></div>
           </div>
 
           <div class="urgency-box {urgency_class(urgency)}">
@@ -166,9 +172,9 @@ def build_currency_cards(currencies):
               <div class="urgency-pill">{html.escape(item.get('event_risk_label', '—'))} event risk</div>
             </div>
             <div class="urgency-grid">
-              <div><span>Policy direction</span><strong>{html.escape(item.get('policy_direction_label', 'Unavailable'))}</strong></div>
+              <div><span>Forward policy bias</span><strong>{html.escape(item.get('forward_policy_label', 'Unavailable'))}</strong></div>
+              <div><span>Forward FX momentum</span><strong>{html.escape(item.get('forward_fx_momentum_label', 'Unavailable'))}</strong></div>
               <div><span>Next policy event</span><strong>{html.escape(meeting_text(item))}</strong></div>
-              <div><span>Price reversal</span><strong>{fmt_number(urgency_components.get('price_reversal'), 2)}/5</strong></div>
               <div><span>Valuation rarity</span><strong>{fmt_number(urgency_components.get('valuation_rarity'), 2)}/5</strong></div>
             </div>
           </div>
@@ -180,19 +186,31 @@ def build_currency_cards(currencies):
           <div class="mini-grid">
             <div><span>1 month</span><strong>{fmt_pct(item.get('change_30d_pct'))}</strong></div>
             <div><span>5Y cost percentile</span><strong>{fmt_number(item.get('percentile_5y'), 1)}%</strong></div>
-            <div><span>Confidence</span><strong>{item['confidence']}% · {item['confidence_label']}</strong></div>
-            <div><span>Data check</span><strong>{validation_text}</strong></div>
+            <div><span>Decision confidence</span><strong>{decision_confidence}% · {html.escape(decision_confidence_label)}</strong></div>
+            <div><span>Signal agreement</span><strong>{signal_agreement}%</strong></div>
           </div>
 
           <div class="macro-box">
             <div class="macro-head">
-              <div><span>Phase 2B macro backdrop</span><strong>{macro_coverage}% coverage</strong></div>
+              <div><span>Macro backdrop</span><strong>{macro_coverage}% coverage</strong></div>
               <div class="macro-weight">{effective_macro_weight}% of opportunity score</div>
             </div>
             <div class="macro-grid">
               <div><span>Policy rate</span><strong>{policy_text(item)}</strong><small>6M {fmt_bps(item.get('policy_rate_6m_change_bps'))}</small></div>
               <div><span>Real GDP growth</span><strong>{html.escape(growth_outlook)}</strong><small>IMF WEO</small></div>
               <div><span>Inflation</span><strong>{html.escape(inflation_outlook)}</strong><small>IMF WEO</small></div>
+            </div>
+          </div>
+
+          <div class="forward-box">
+            <div class="forward-head">
+              <div><span>Phase 2C forward outlook</span><strong>{forward_outlook:.2f}/5 · {html.escape(item.get('forward_outlook_label', '—'))}</strong></div>
+              <div class="forward-note">Model-implied, not futures-implied</div>
+            </div>
+            <div class="forward-grid">
+              <div><span>Policy bias</span><strong>{item.get('forward_policy_score', 2.5):.2f}/5</strong><small>{html.escape(item.get('forward_policy_label', '—'))}</small></div>
+              <div><span>FX momentum</span><strong>{item.get('forward_fx_momentum_score', 2.5):.2f}/5</strong><small>{html.escape(item.get('forward_fx_momentum_label', '—'))}</small></div>
+              <div><span>Data quality</span><strong>{item.get('confidence', 0)}%</strong><small>{html.escape(item.get('confidence_label', '—'))}</small></div>
             </div>
           </div>
 
@@ -215,6 +233,7 @@ def build_currency_cards(currencies):
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul>{market_drivers}</ul></div>
             <div><h4>Macro signals</h4><ul>{macro_drivers}</ul></div>
+            <div><h4>Forward signals</h4><ul>{forward_drivers}</ul></div>
             <div><h4>Timing & urgency</h4><ul>{urgency_drivers}</ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('{item['code']}')">View 5-year chart</button>
@@ -231,20 +250,21 @@ def build_table_rows(currencies):
           <td><strong>{item['code']}</strong><span>{html.escape(item['name'])}</span></td>
           <td><div class="table-score {score_class(item['score'])}">{item['score']:.2f}</div><span>Opportunity</span></td>
           <td><div class="table-score {urgency_class(item.get('buy_urgency_score', 2.5))}">{item.get('buy_urgency_score', 2.5):.2f}</div><span>{html.escape(item.get('buy_urgency_label', '—'))}</span></td>
+          <td>{item.get('forward_outlook_score', 2.5):.2f}<span>{html.escape(item.get('forward_outlook_label', '—'))}</span></td>
           <td>{item.get('market_score', item['score']):.2f}</td>
           <td>{item.get('macro_score', 2.5):.2f}<span>{item.get('macro_coverage_pct', 0)}% coverage</span></td>
+          <td>{item.get('forward_policy_score', 2.5):.2f}<span>{html.escape(item.get('forward_policy_label', '—'))}</span></td>
+          <td>{item.get('forward_fx_momentum_score', 2.5):.2f}<span>{html.escape(item.get('forward_fx_momentum_label', '—'))}</span></td>
           <td><span class="table-rec {recommendation_class(item['score'])}">{html.escape(item['recommendation'])}</span></td>
           <td>{rate_text(item)}</td>
           <td>{fmt_number(item.get('percentile_5y'), 1)}%</td>
-          <td>{html.escape(item.get('policy_direction_label', 'Unavailable'))}<span>6M {fmt_bps(item.get('policy_rate_6m_change_bps'))}</span></td>
           <td>{html.escape(meeting_text(item))}<span>{html.escape(item.get('policy_calendar_source', ''))}</span></td>
           <td>{html.escape(item.get('event_risk_label', '—'))}<span>{fmt_number(item.get('event_risk_score'), 1)}/5</span></td>
           <td>{level_text(item, item.get('buy_zone_upper_sgd'))}<span>{html.escape(gap_text(item))}</span></td>
-          <td>{item['confidence']}%</td>
+          <td>{item.get('decision_confidence', item.get('confidence', 0))}%<span>{item.get('signal_agreement_pct', 0)}% agreement</span></td>
         </tr>
         """)
     return "\n".join(rows)
-
 
 def main():
     if not SIGNALS_PATH.exists():
@@ -269,10 +289,19 @@ def main():
     best_macro_weight = best.get("effective_macro_weight_pct", 0)
     best_urgency = best.get("buy_urgency_score", 2.5)
     best_urgency_label = best.get("buy_urgency_label", "—")
+    best_forward = best.get("forward_outlook_score", 2.5)
+    best_forward_label = best.get("forward_outlook_label", "—")
+    best_decision_confidence = best.get("decision_confidence", best.get("confidence", 0))
+    best_signal_agreement = best.get("signal_agreement_pct", 0)
     best_macro_driver = (
         best.get("macro_drivers", [""])[0]
         if best.get("macro_drivers")
         else "Macro-policy data is unavailable for this run."
+    )
+    best_forward_driver = (
+        best.get("forward_drivers", [""])[0]
+        if best.get("forward_drivers")
+        else "Forward-looking inputs are unavailable for this run."
     )
 
     html_page = f"""<!doctype html>
@@ -346,7 +375,7 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .score-ring strong{{font-size:1.24rem;line-height:1}}
 .score-ring small{{font-size:.57rem;color:var(--muted);margin-top:4px;text-align:center}}
 .score-strong{{color:var(--green)}}.score-good{{color:var(--lime)}}.score-neutral{{color:var(--amber)}}.score-weak{{color:var(--red)}}
-.score-split{{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:15px}}
+.score-split{{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:15px}}
 .score-split div{{background:#091421;border:1px solid #1a3047;border-radius:11px;padding:9px 10px}}
 .score-split span{{display:block;color:var(--muted);font-size:.68rem;margin-bottom:4px}}
 .score-split strong{{font-size:.9rem}}
@@ -362,6 +391,16 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .mini-grid span{{display:block;color:var(--muted);font-size:.72rem;margin-bottom:5px}}
 .mini-grid strong{{font-size:.82rem}}
 .macro-box{{margin:14px 0;background:linear-gradient(135deg,rgba(180,156,255,.07),rgba(86,217,246,.05));border:1px solid #2d3553;border-radius:15px;padding:13px}}
+.forward-box{{margin:14px 0;background:linear-gradient(135deg,rgba(69,221,163,.07),rgba(86,217,246,.05));border:1px solid #245044;border-radius:15px;padding:13px}}
+.forward-head{{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}}
+.forward-head span{{display:block;color:var(--muted);font-size:.7rem;margin-bottom:3px}}
+.forward-head strong{{font-size:.9rem}}
+.forward-note{{font-size:.68rem;font-weight:800;color:var(--green);text-align:right}}
+.forward-grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}}
+.forward-grid div{{background:#091421;border:1px solid #193b36;border-radius:11px;padding:9px}}
+.forward-grid span{{display:block;color:var(--muted);font-size:.66rem;margin-bottom:4px}}
+.forward-grid strong{{font-size:.82rem;display:block}}
+.forward-grid small{{display:block;color:#9eb7c9;font-size:.63rem;margin-top:3px;line-height:1.35}}
 .macro-head{{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:10px;border-bottom:1px solid #27334d}}
 .macro-head span{{display:block;color:var(--purple);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;font-weight:800}}
 .macro-head strong{{display:block;font-size:.78rem;margin-top:3px}}
@@ -401,7 +440,7 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .action-box span{{display:block;color:var(--muted);font-size:.72rem;margin-bottom:3px}}
 .action-box strong{{font-size:.9rem}}
 .allocation{{font-size:.75rem;font-weight:900;color:var(--cyan);white-space:nowrap}}
-.driver-columns{{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}}
+.driver-columns{{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:15px}}
 .driver-columns>div{{background:#091421;border:1px solid #172b40;border-radius:12px;padding:10px}}
 .driver-columns h4{{font-size:.69rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 6px}}
 .driver-columns ul{{padding-left:16px;margin:0;color:#bfd0e4;font-size:.72rem;line-height:1.45}}
@@ -414,7 +453,7 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .chart-toolbar select{{background:#0a1523;color:var(--text);border:1px solid #2a4058;border-radius:10px;padding:9px 12px}}
 .chart-wrap{{height:380px}}
 .table-panel{{overflow:auto;background:rgba(13,24,40,.92);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}}
-table{{width:100%;border-collapse:collapse;min-width:1750px}}
+table{{width:100%;border-collapse:collapse;min-width:2050px}}
 th,td{{padding:14px 16px;border-bottom:1px solid #1b2c41;text-align:left;font-size:.82rem;vertical-align:top}}
 th{{position:sticky;top:0;background:#0d1928;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}}
 td span{{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}}
@@ -426,18 +465,18 @@ td span{{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}}
 .method-card span{{color:var(--muted);font-size:.8rem;line-height:1.5}}
 .notice{{margin-top:26px;padding:18px 20px;border:1px solid #34435a;background:rgba(17,31,51,.7);border-radius:16px;color:#b9c9dc;font-size:.84rem;line-height:1.6}}
 footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
-@media(max-width:1180px){{.cards{{grid-template-columns:repeat(2,minmax(0,1fr))}}.methodology{{grid-template-columns:repeat(3,1fr)}}}}
+@media(max-width:1180px){{.cards{{grid-template-columns:repeat(2,minmax(0,1fr))}}.methodology{{grid-template-columns:repeat(3,1fr)}}.driver-columns{{grid-template-columns:repeat(2,1fr)}}}}
 @media(max-width:1050px){{.hero{{grid-template-columns:1fr}}.status-panel{{min-width:300px}}}}
-@media(max-width:680px){{.container{{padding:20px 14px 40px}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}}}
+@media(max-width:680px){{.container{{padding:20px 14px 40px}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.forward-grid{{grid-template-columns:1fr}}.score-split{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}}}
 </style>
 </head>
 <body>
 <div class="container">
   <header class="topbar">
     <div>
-      <div class="eyebrow">Personal currency decision support · Phase 2B</div>
+      <div class="eyebrow">Personal currency decision support · Phase 2C</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">Separates two questions: how attractive today's SGD conversion rate is, and how urgently an attractive buying window may need to be acted on. Opportunity and Buy Urgency are both scored from 0 to 5.</p>
+      <p class="subtitle">Combines current opportunity, forward policy pressure, FX momentum and decision confidence to help stage SGD conversions. Opportunity, Forward Outlook and Buy Urgency are all scored from 0 to 5.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>{market_date}</strong></div>
@@ -445,6 +484,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <div><span>FX source</span><strong>{primary_source}</strong></div>
       <div><span>Policy source</span><strong>{policy_source}</strong></div>
       <div><span>Macro source</span><strong>{macro_source}</strong></div>
+      <div><span>Forward layer</span><strong>BIS + IMF + FX trend model</strong></div>
       <div><span>Event calendars</span><strong>Official 2026 central-bank schedules</strong></div>
       <div><span>Cross-check</span><strong>{validation_source}</strong></div>
     </div>
@@ -458,11 +498,14 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <div class="hero-split">
         <div>Market <strong>{best_market:.2f}/5</strong></div>
         <div>Macro backdrop <strong>{best_macro:.2f}/5</strong></div>
+        <div>Forward outlook <strong>{best_forward:.2f}/5</strong></div>
         <div>Buy urgency <strong>{best_urgency:.2f}/5 · {html.escape(best_urgency_label)}</strong></div>
-        <div>Macro weight <strong>{best_macro_weight}%</strong></div>
+        <div>Decision confidence <strong>{best_decision_confidence}%</strong></div>
+        <div>Signal agreement <strong>{best_signal_agreement}%</strong></div>
       </div>
       <p class="hero-copy">{html.escape(best['drivers'][0] if best.get('drivers') else best['suggested_action'])}</p>
       <p class="hero-macro">Macro view: {html.escape(best_macro_driver)}</p>
+      <p class="hero-macro">Forward view: {html.escape(best_forward_driver)}</p>
       <p class="hero-macro">Timing view: {html.escape(best.get('urgency_drivers', ['No urgency signal available.'])[0])}</p>
     </div>
     <div class="hero-side">
@@ -471,14 +514,16 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <p><strong>Current zone:</strong> {html.escape(best.get('zone_status', '—'))}<br>
       <strong>Buy-zone threshold:</strong> {level_text(best, best.get('buy_zone_upper_sgd'))}<br>
       <strong>Strong-buy threshold:</strong> {level_text(best, best.get('strong_buy_level_sgd'))}<br>
+      <strong>Forward outlook:</strong> {best_forward:.2f}/5 · {html.escape(best_forward_label)}<br>
       <strong>Buy urgency:</strong> {best_urgency:.2f}/5 · {html.escape(best_urgency_label)}<br>
+      <strong>Decision confidence:</strong> {best_decision_confidence}% · {best_signal_agreement}% signal agreement<br>
       <strong>Next policy event:</strong> {html.escape(meeting_text(best))} · {html.escape(best.get('event_risk_label', '—'))} risk</p>
-      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2B uses urgency to adjust staging, but a high urgency score cannot by itself turn poor value into a Buy.</p>
+      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C uses forward-looking signals to adjust urgency, but a high urgency score still cannot turn poor value into a Buy.</p>
     </div>
   </section>
 
   <div class="section-header">
-    <div><h2>Currency opportunity ranking</h2><p>Highest Opportunity Score first. Buy Urgency is shown separately so attractive value is not confused with fear of missing a short-term move.</p></div>
+    <div><h2>Currency opportunity ranking</h2><p>Highest Opportunity Score first. Forward Outlook and Buy Urgency are shown separately so valuation is not confused with timing pressure.</p></div>
   </div>
   <section class="cards">{cards_html}</section>
 
@@ -496,28 +541,31 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   </section>
 
   <div class="section-header">
-    <div><h2>Full scorecard</h2><p>Compare Opportunity, Buy Urgency, market valuation, macro backdrop and the next central-bank event.</p></div>
+    <div><h2>Full scorecard</h2><p>Compare Opportunity, Forward Outlook, Buy Urgency, market valuation, macro backdrop, timing and decision confidence.</p></div>
   </div>
   <section class="table-panel">
     <table>
-      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Market</th><th>Macro</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Policy direction</th><th>Next meeting</th><th>Event risk</th><th>Buy zone</th><th>Confidence</th></tr></thead>
+      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Forward outlook</th><th>Market</th><th>Macro</th><th>Policy bias</th><th>FX momentum</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Next meeting</th><th>Event risk</th><th>Buy zone</th><th>Decision confidence</th></tr></thead>
       <tbody>{rows_html}</tbody>
     </table>
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 2B scoring model</h2><p>Opportunity measures value. Buy Urgency measures how quickly an attractive window may change. The recommendation matrix remains opportunity-first.</p></div>
+    <div><h2>Phase 2C scoring model</h2><p>Opportunity measures value. Forward Outlook estimates directional pressure. Buy Urgency decides how quickly an already-attractive window may need to be acted on.</p></div>
   </div>
   <section class="methodology">
     <div class="method-card"><strong>70%</strong><span>Market intelligence in the Opportunity Score when full macro data is available: historical value, trend, momentum and volatility.</span></div>
     <div class="method-card"><strong>30%</strong><span>Maximum macro-backdrop contribution to Opportunity. Missing macro data automatically reduces this weight.</span></div>
-    <div class="method-card"><strong>35%</strong><span>Buy Urgency: central-bank policy direction. Hawkish rate momentum raises the risk that the foreign currency strengthens.</span></div>
-    <div class="method-card"><strong>30%</strong><span>Buy Urgency: recent FX price reversal. A currency starting to become more expensive increases timing pressure.</span></div>
-    <div class="method-card"><strong>20%</strong><span>Buy Urgency: valuation rarity. Exceptionally cheap five-year readings make the current opportunity more precious.</span></div>
-    <div class="method-card"><strong>15%</strong><span>Buy Urgency: policy-event setup, combining meeting proximity with the current policy direction.</span></div>
+    <div class="method-card"><strong>45%</strong><span>Forward Outlook: model-implied policy bias from recent BIS policy paths plus IMF inflation and growth direction.</span></div>
+    <div class="method-card"><strong>55%</strong><span>Forward Outlook: FX momentum from 7-day, 30-day, 90-day and moving-average price structure.</span></div>
+    <div class="method-card"><strong>30%</strong><span>Buy Urgency: forward policy bias.</span></div>
+    <div class="method-card"><strong>30%</strong><span>Buy Urgency: forward FX momentum.</span></div>
+    <div class="method-card"><strong>20%</strong><span>Buy Urgency: valuation rarity.</span></div>
+    <div class="method-card"><strong>20%</strong><span>Buy Urgency: upcoming policy-event setup.</span></div>
+    <div class="method-card"><strong>Confidence</strong><span>Decision confidence combines data quality, macro coverage and agreement across the major supportive signals.</span></div>
   </section>
 
-  <div class="notice"><strong>Important:</strong> Buy Urgency is not a prediction that a currency will definitely strengthen. It is a timing aid applied only after the Opportunity Score is considered. The event calendar uses published 2026 decision dates from the relevant central banks and should be refreshed when new annual schedules are released. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
+  <div class="notice"><strong>Important:</strong> The Phase 2C policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
   <footer>Generated automatically by GitHub Actions · Last build {html.escape(generated)}</footer>
 </div>
 

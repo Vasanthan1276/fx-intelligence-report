@@ -43,9 +43,9 @@ CURRENCY_CONFIG = {
     "MYR": {"name": "Malaysian Ringgit", "symbol": "RM", "unit": 1, "yf": "MYRSGD=X"},
 }
 
-MODEL_VERSION = "2.1-phase2b"
+MODEL_VERSION = "2.2-phase2c"
 
-# Phase 2B keeps the proven Phase 1B market model intact, then separates a macro-policy
+# Phase 2C keeps the proven Phase 1B market model intact, then separates a macro-policy
 # layer. With complete macro coverage, the final score is 70% market intelligence
 # and 30% macro-policy intelligence. If a macro source is temporarily unavailable,
 # its weight automatically falls away rather than forcing a neutral score into the
@@ -63,15 +63,30 @@ MACRO_WEIGHTS = {
 }
 MAX_MACRO_WEIGHT = 0.30
 
-# Phase 2B keeps the Opportunity Score separate from Buy Urgency. Opportunity
-# answers "is the rate attractive?" while urgency answers "how quickly could this
-# attractive window disappear?". Urgency influences the staged-buy action, but it
-# cannot turn an unattractive currency into a Buy by itself.
+# Phase 2C keeps the Opportunity Score separate from Buy Urgency, but makes
+# urgency more forward-looking. The new forward layer is explicitly model-implied
+# from observable policy paths, IMF forecast direction and FX price behaviour; it
+# is NOT a market-futures probability model.
+FORWARD_POLICY_WEIGHTS = {
+    "recent_policy_path": 0.50,
+    "inflation_pressure": 0.30,
+    "growth_pressure": 0.20,
+}
+FORWARD_MOMENTUM_WEIGHTS = {
+    "7d_strengthening": 0.20,
+    "30d_strengthening": 0.30,
+    "90d_strengthening": 0.25,
+    "ma_structure": 0.25,
+}
+FORWARD_OUTLOOK_WEIGHTS = {
+    "policy_bias": 0.45,
+    "fx_momentum": 0.55,
+}
 URGENCY_WEIGHTS = {
-    "policy_direction": 0.35,
-    "price_reversal": 0.30,
+    "forward_policy_bias": 0.30,
+    "forward_fx_momentum": 0.30,
     "valuation_rarity": 0.20,
-    "event_setup": 0.15,
+    "event_setup": 0.20,
 }
 
 # Official 2026 monetary-policy decision dates. These are deliberately embedded
@@ -169,6 +184,16 @@ class CurrencySignal:
     policy_direction_score: Optional[float]
     policy_direction_label: str
     urgency_component_scores: Dict[str, Optional[float]]
+    forward_policy_score: float
+    forward_policy_label: str
+    forward_fx_momentum_score: float
+    forward_fx_momentum_label: str
+    forward_outlook_score: float
+    forward_outlook_label: str
+    forward_component_scores: Dict[str, Optional[float]]
+    decision_confidence: int
+    decision_confidence_label: str
+    signal_agreement_pct: int
     recommendation: str
     suggested_action: str
     suggested_buy_pct: int
@@ -221,6 +246,7 @@ class CurrencySignal:
     drivers: List[str]
     macro_drivers: List[str]
     urgency_drivers: List[str]
+    forward_drivers: List[str]
 
 
 def _http_get(url: str, params: Optional[dict] = None, timeout: int = 45) -> requests.Response:
@@ -568,23 +594,199 @@ def buyer_strengthening_score(change_pct: Optional[float], scale: float) -> Opti
     return float(np.clip(2.5 + 2.5 * np.tanh(change_pct / scale), 0, 5))
 
 
+def _directional_score(delta: Optional[float], scale: float) -> Optional[float]:
+    if delta is None or not math.isfinite(delta):
+        return None
+    return float(np.clip(2.5 + 2.5 * np.tanh(delta / scale), 0, 5))
+
+
+def forward_policy_bias(macro: Dict[str, object]) -> Dict[str, object]:
+    """Estimate forward policy pressure from existing official data.
+
+    This is deliberately labelled model-implied rather than market-implied. It
+    combines the recent BIS policy-rate path with the direction of IMF inflation
+    and growth forecasts. A higher score means a stronger tightening / currency-
+    supportive bias, which can increase urgency for an SGD buyer.
+    """
+    policy = macro.get("policy", {}) or {}
+    direction_6m = policy_direction_score(policy.get("change_6m_bps"))
+    direction_12m = policy_direction_score(policy.get("change_12m_bps"))
+    recent_path = None
+    if direction_6m is not None or direction_12m is not None:
+        recent_path = weighted_average([(direction_6m, 0.65), (direction_12m, 0.35)])
+
+    inflation_current = macro.get("inflation_current_pct")
+    inflation_next = macro.get("inflation_next_pct")
+    inflation_vs_sgd_next = macro.get("inflation_vs_sgd_next_pp")
+    inflation_path = None
+    if inflation_current is not None and inflation_next is not None:
+        inflation_path = _directional_score(float(inflation_next) - float(inflation_current), 1.5)
+    relative_inflation_pressure = _directional_score(
+        None if inflation_vs_sgd_next is None else float(inflation_vs_sgd_next),
+        2.5,
+    )
+    inflation_pressure = None
+    if inflation_path is not None or relative_inflation_pressure is not None:
+        inflation_pressure = weighted_average([
+            (inflation_path, 0.70),
+            (relative_inflation_pressure, 0.30),
+        ])
+
+    growth_current = macro.get("growth_current_pct")
+    growth_next = macro.get("growth_next_pct")
+    growth_vs_sgd_next = macro.get("growth_vs_sgd_next_pp")
+    growth_path = None
+    if growth_current is not None and growth_next is not None:
+        growth_path = _directional_score(float(growth_next) - float(growth_current), 2.0)
+    relative_growth_pressure = _directional_score(
+        None if growth_vs_sgd_next is None else float(growth_vs_sgd_next),
+        3.0,
+    )
+    growth_pressure = None
+    if growth_path is not None or relative_growth_pressure is not None:
+        growth_pressure = weighted_average([
+            (growth_path, 0.65),
+            (relative_growth_pressure, 0.35),
+        ])
+
+    components: Dict[str, Optional[float]] = {
+        "recent_policy_path": None if recent_path is None else round(float(recent_path), 2),
+        "inflation_pressure": None if inflation_pressure is None else round(float(inflation_pressure), 2),
+        "growth_pressure": None if growth_pressure is None else round(float(growth_pressure), 2),
+    }
+    score = weighted_average(
+        [(components[key], FORWARD_POLICY_WEIGHTS[key]) for key in FORWARD_POLICY_WEIGHTS],
+        default=2.5,
+    )
+    score = round(float(np.clip(score, 0, 5)), 2)
+
+    if score >= 4.10:
+        label = "Strong tightening bias"
+    elif score >= 3.10:
+        label = "Tightening bias"
+    elif score > 1.90:
+        label = "Balanced / uncertain"
+    elif score > 0.90:
+        label = "Easing bias"
+    else:
+        label = "Strong easing bias"
+
+    drivers: List[str] = []
+    if recent_path is not None:
+        drivers.append(f"Recent policy path points to {policy_direction_label(recent_path).lower()} conditions.")
+    if inflation_current is not None and inflation_next is not None:
+        direction = "higher" if float(inflation_next) > float(inflation_current) else "lower"
+        drivers.append(f"IMF inflation is projected {direction} next year, affecting future policy pressure.")
+    if growth_current is not None and growth_next is not None:
+        direction = "stronger" if float(growth_next) > float(growth_current) else "softer"
+        drivers.append(f"IMF growth is projected {direction} next year, influencing the model-implied policy bias.")
+    if not drivers:
+        drivers.append("Insufficient macro inputs for a strong forward-policy signal; the model stays near neutral.")
+
+    return {
+        "score": score,
+        "label": label,
+        "components": components,
+        "drivers": drivers[:3],
+    }
+
+
+def forward_fx_momentum(
+    current: float,
+    change_7d: Optional[float],
+    change_30d: Optional[float],
+    change_90d: Optional[float],
+    ma20: Optional[float],
+    ma50: Optional[float],
+) -> Dict[str, object]:
+    """Score whether the foreign currency appears to be strengthening versus SGD.
+
+    Higher means the SGD cost is rising / momentum is turning against the buyer,
+    which increases urgency when valuation is already attractive.
+    """
+    s7 = buyer_strengthening_score(change_7d, 1.5)
+    s30 = buyer_strengthening_score(change_30d, 3.0)
+    s90 = buyer_strengthening_score(change_90d, 6.0)
+
+    ma_scores: List[Tuple[Optional[float], float]] = []
+    if ma20 is not None and ma20 > 0:
+        ma_scores.append((buyer_strengthening_score((current / ma20 - 1.0) * 100.0, 2.0), 0.55))
+    if ma50 is not None and ma50 > 0:
+        ma_scores.append((buyer_strengthening_score((current / ma50 - 1.0) * 100.0, 3.5), 0.45))
+    ma_structure = weighted_average(ma_scores, default=2.5)
+
+    components: Dict[str, Optional[float]] = {
+        "7d_strengthening": None if s7 is None else round(float(s7), 2),
+        "30d_strengthening": None if s30 is None else round(float(s30), 2),
+        "90d_strengthening": None if s90 is None else round(float(s90), 2),
+        "ma_structure": round(float(ma_structure), 2),
+    }
+    score = weighted_average(
+        [(components[key], FORWARD_MOMENTUM_WEIGHTS[key]) for key in FORWARD_MOMENTUM_WEIGHTS],
+        default=2.5,
+    )
+    score = round(float(np.clip(score, 0, 5)), 2)
+
+    if score >= 4.10:
+        label = "Strong strengthening"
+    elif score >= 3.10:
+        label = "Strengthening"
+    elif score > 1.90:
+        label = "Mixed / range-bound"
+    elif score > 0.90:
+        label = "Weakening"
+    else:
+        label = "Strong weakening"
+
+    drivers = []
+    if score >= 3.1:
+        drivers.append("Recent price structure suggests the foreign currency is gaining strength against SGD.")
+    elif score <= 1.9:
+        drivers.append("Recent price structure still favours the SGD buyer, reducing the need to chase the rate.")
+    else:
+        drivers.append("Forward FX momentum is mixed and does not show a decisive reversal yet.")
+    if change_30d is not None:
+        direction = "more expensive" if change_30d > 0 else "cheaper"
+        drivers.append(f"Over one month the currency became {abs(change_30d):.2f}% {direction} in SGD terms.")
+
+    return {
+        "score": score,
+        "label": label,
+        "components": components,
+        "drivers": drivers[:2],
+    }
+
+
+def decision_confidence_score(
+    data_confidence: int,
+    macro_coverage: float,
+    support_scores: List[Optional[float]],
+) -> Tuple[int, str, int]:
+    valid = [float(v) for v in support_scores if v is not None and math.isfinite(v)]
+    if len(valid) < 3:
+        agreement = 50
+    else:
+        dispersion = float(np.std(valid))
+        agreement = int(round(np.clip(100.0 * (1.0 - dispersion / 2.5), 0, 100)))
+
+    confidence = int(round(
+        0.50 * data_confidence
+        + 0.35 * agreement
+        + 0.15 * (macro_coverage * 100.0)
+    ))
+    confidence = int(np.clip(confidence, 45, 95))
+    label = "High" if confidence >= 80 else "Medium" if confidence >= 65 else "Low"
+    return confidence, label, agreement
+
+
 def calculate_buy_urgency(
     code: str,
     percentile_5y: Optional[float],
-    change_7d: Optional[float],
-    change_30d: Optional[float],
-    policy: Dict[str, Optional[float]],
+    forward_policy: Dict[str, object],
+    forward_momentum: Dict[str, object],
 ) -> Dict[str, object]:
-    direction_6m = policy_direction_score(policy.get("change_6m_bps"))
-    direction_12m = policy_direction_score(policy.get("change_12m_bps"))
-    direction_score = None
-    if direction_6m is not None or direction_12m is not None:
-        direction_score = weighted_average([(direction_6m, 0.65), (direction_12m, 0.35)])
-
-    reversal_score = weighted_average([
-        (buyer_strengthening_score(change_7d, 1.5), 0.60),
-        (buyer_strengthening_score(change_30d, 3.0), 0.40),
-    ])
+    forward_policy_score = float(forward_policy.get("score", 2.5))
+    forward_momentum_score = float(forward_momentum.get("score", 2.5))
 
     rarity_score = None
     if percentile_5y is not None and math.isfinite(percentile_5y):
@@ -592,16 +794,15 @@ def calculate_buy_urgency(
 
     meeting = next_policy_meeting(code)
     event_risk_score, event_risk_label = event_risk_from_days(meeting.get("days"))
-    if direction_score is None:
-        event_setup_score = 2.5
-    else:
-        proximity = max(0.0, min(1.0, (event_risk_score - 1.5) / 3.5))
-        event_setup_score = 2.5 + (direction_score - 2.5) * proximity
-        event_setup_score = float(np.clip(event_setup_score, 0, 5))
+    proximity = max(0.0, min(1.0, (event_risk_score - 1.5) / 3.5))
+    # A nearby meeting matters more when the model already sees a tightening bias;
+    # an easing bias can reduce urgency instead of automatically creating fear.
+    event_setup_score = 2.5 + (forward_policy_score - 2.5) * proximity
+    event_setup_score = float(np.clip(event_setup_score, 0, 5))
 
     components = {
-        "policy_direction": None if direction_score is None else round(float(direction_score), 2),
-        "price_reversal": round(float(reversal_score), 2),
+        "forward_policy_bias": round(forward_policy_score, 2),
+        "forward_fx_momentum": round(forward_momentum_score, 2),
         "valuation_rarity": None if rarity_score is None else round(float(rarity_score), 2),
         "event_setup": round(float(event_setup_score), 2),
     }
@@ -622,17 +823,10 @@ def calculate_buy_urgency(
     else:
         urgency_label = "Very low"
 
-    drivers = []
-    if direction_score is not None:
-        drivers.append(
-            f"Policy direction is {policy_direction_label(direction_score).lower()} based on the latest 6- and 12-month rate path."
-        )
-    if reversal_score >= 3.4:
-        drivers.append("Recent FX movement suggests the foreign currency is starting to strengthen, increasing purchase urgency.")
-    elif reversal_score <= 1.6:
-        drivers.append("Recent FX movement is still improving for an SGD buyer, so there is less pressure to chase the rate.")
-    else:
-        drivers.append("Recent FX movement is mixed and does not create a strong timing signal.")
+    drivers = [
+        f"Forward policy bias is {str(forward_policy.get('label', 'uncertain')).lower()} (model-implied, not futures-implied).",
+        f"Forward FX momentum is {str(forward_momentum.get('label', 'mixed')).lower()} based on 7D/30D/90D price structure.",
+    ]
     if meeting.get("date") is not None:
         drivers.append(
             f"Next {POLICY_CALENDAR_SOURCES.get(code, 'policy')} event is in {meeting.get('days')} days ({meeting.get('date')}); event risk is {event_risk_label.lower()}."
@@ -644,8 +838,8 @@ def calculate_buy_urgency(
         "score": urgency_score,
         "label": urgency_label,
         "components": components,
-        "policy_direction_score": None if direction_score is None else round(float(direction_score), 2),
-        "policy_direction_label": policy_direction_label(direction_score),
+        "policy_direction_score": round(forward_policy_score, 2),
+        "policy_direction_label": str(forward_policy.get("label", "Unavailable")),
         "event_risk_score": round(float(event_risk_score), 2),
         "event_risk_label": event_risk_label,
         "next_policy_meeting_date": meeting.get("date"),
@@ -653,7 +847,6 @@ def calculate_buy_urgency(
         "policy_calendar_source": meeting.get("source"),
         "drivers": drivers[:3],
     }
-
 
 def analyse_policy_series(series: Optional[pd.Series]) -> Dict[str, Optional[float]]:
     result: Dict[str, Optional[float]] = {
@@ -680,7 +873,7 @@ def analyse_policy_series(series: Optional[pd.Series]) -> Dict[str, Optional[flo
 
     five_year = clean.loc[clean.index >= latest_date - pd.DateOffset(years=5)]
     rate_percentile = percentile_rank(five_year, current)
-    # Phase 2B deliberately keeps recent policy direction out of the Opportunity
+    # Phase 2C deliberately keeps recent policy direction out of the Opportunity
     # Score so that it is not double-counted. The macro backdrop uses the current
     # policy-rate level relative to its own five-year history; recent tightening or
     # easing is handled separately by the Buy Urgency model.
@@ -984,7 +1177,7 @@ def ordinal(value: float) -> str:
 
 
 def recommendation_from_score(opportunity_score: float, urgency_score: float) -> Tuple[str, str, int]:
-    """Opportunity-first recommendation matrix for Phase 2B.
+    """Opportunity-first recommendation matrix for Phase 2C.
 
     Urgency can accelerate or slow a staged purchase only when the underlying
     opportunity is already reasonable. It cannot turn an expensive currency into
@@ -1222,12 +1415,36 @@ def analyse_currency(
     opportunity_score = round(float(np.clip(opportunity_score, 0, 5)), 2)
 
     policy = macro.get("policy", {})
+    forward_policy = forward_policy_bias(macro)
+    forward_momentum = forward_fx_momentum(
+        current=current,
+        change_7d=change_7d,
+        change_30d=change_30d,
+        change_90d=change_90d,
+        ma20=ma20,
+        ma50=ma50,
+    )
+    forward_outlook_score = weighted_average([
+        (float(forward_policy["score"]), FORWARD_OUTLOOK_WEIGHTS["policy_bias"]),
+        (float(forward_momentum["score"]), FORWARD_OUTLOOK_WEIGHTS["fx_momentum"]),
+    ])
+    forward_outlook_score = round(float(np.clip(forward_outlook_score, 0, 5)), 2)
+    if forward_outlook_score >= 4.1:
+        forward_outlook_label = "Strongly supportive of buying sooner"
+    elif forward_outlook_score >= 3.1:
+        forward_outlook_label = "Supportive of buying sooner"
+    elif forward_outlook_score > 1.9:
+        forward_outlook_label = "Mixed / neutral"
+    elif forward_outlook_score > 0.9:
+        forward_outlook_label = "Supports waiting"
+    else:
+        forward_outlook_label = "Strongly supports waiting"
+
     urgency = calculate_buy_urgency(
         code=code,
         percentile_5y=percentiles.get("5y"),
-        change_7d=change_7d,
-        change_30d=change_30d,
-        policy=policy,
+        forward_policy=forward_policy,
+        forward_momentum=forward_momentum,
     )
     recommendation, action, buy_pct = recommendation_from_score(opportunity_score, float(urgency["score"]))
 
@@ -1237,6 +1454,18 @@ def analyse_currency(
         validation_diff = abs(validation_rate / current - 1.0) * 100.0
 
     confidence, confidence_label = confidence_score(series, validation_diff, macro_coverage)
+    decision_confidence, decision_confidence_label, signal_agreement = decision_confidence_score(
+        confidence,
+        macro_coverage,
+        [
+            historical_score,
+            timing_score,
+            mom_score,
+            macro_score,
+            float(forward_policy["score"]),
+            float(forward_momentum["score"]),
+        ],
+    )
 
     one_year = series.loc[series.index >= series.index[-1] - pd.DateOffset(years=1)]
     low_52w = float(one_year.min()) if not one_year.empty else None
@@ -1251,6 +1480,7 @@ def analyse_currency(
         annualized_vol,
     )
     macro_drivers = build_macro_drivers(code, macro)
+    forward_drivers = list(forward_policy.get("drivers", []))[:2] + list(forward_momentum.get("drivers", []))[:2]
 
     # inverse_per_sgd expresses how many units of the underlying currency S$1 buys.
     # Because JPY is displayed in units of 100, convert back to a one-unit basis first.
@@ -1285,6 +1515,24 @@ def analyse_currency(
             key: None if value is None else round(float(value), 2)
             for key, value in urgency.get("components", {}).items()
         },
+        forward_policy_score=round(float(forward_policy["score"]), 2),
+        forward_policy_label=str(forward_policy["label"]),
+        forward_fx_momentum_score=round(float(forward_momentum["score"]), 2),
+        forward_fx_momentum_label=str(forward_momentum["label"]),
+        forward_outlook_score=forward_outlook_score,
+        forward_outlook_label=forward_outlook_label,
+        forward_component_scores={
+            "policy_recent_path": forward_policy.get("components", {}).get("recent_policy_path"),
+            "policy_inflation_pressure": forward_policy.get("components", {}).get("inflation_pressure"),
+            "policy_growth_pressure": forward_policy.get("components", {}).get("growth_pressure"),
+            "momentum_7d": forward_momentum.get("components", {}).get("7d_strengthening"),
+            "momentum_30d": forward_momentum.get("components", {}).get("30d_strengthening"),
+            "momentum_90d": forward_momentum.get("components", {}).get("90d_strengthening"),
+            "momentum_ma_structure": forward_momentum.get("components", {}).get("ma_structure"),
+        },
+        decision_confidence=decision_confidence,
+        decision_confidence_label=decision_confidence_label,
+        signal_agreement_pct=signal_agreement,
         recommendation=recommendation,
         suggested_action=action,
         suggested_buy_pct=buy_pct,
@@ -1340,6 +1588,7 @@ def analyse_currency(
         drivers=market_drivers[:3],
         macro_drivers=macro_drivers,
         urgency_drivers=list(urgency.get("drivers", [])),
+        forward_drivers=forward_drivers[:4],
     )
 
 
@@ -1399,6 +1648,14 @@ def write_macro_snapshot(
                 "inflation_current_pct": signal.inflation_current_pct,
                 "inflation_next_year": signal.inflation_next_year,
                 "inflation_next_pct": signal.inflation_next_pct,
+                "forward_policy_score": signal.forward_policy_score,
+                "forward_policy_label": signal.forward_policy_label,
+                "forward_fx_momentum_score": signal.forward_fx_momentum_score,
+                "forward_fx_momentum_label": signal.forward_fx_momentum_label,
+                "forward_outlook_score": signal.forward_outlook_score,
+                "forward_outlook_label": signal.forward_outlook_label,
+                "decision_confidence": signal.decision_confidence,
+                "signal_agreement_pct": signal.signal_agreement_pct,
             }
             for signal in signals
         },
@@ -1443,6 +1700,11 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
         "scores": {signal.code: signal.score for signal in signals},
         "opportunity_scores": {signal.code: signal.opportunity_score for signal in signals},
         "buy_urgency_scores": {signal.code: signal.buy_urgency_score for signal in signals},
+        "forward_policy_scores": {signal.code: signal.forward_policy_score for signal in signals},
+        "forward_fx_momentum_scores": {signal.code: signal.forward_fx_momentum_score for signal in signals},
+        "forward_outlook_scores": {signal.code: signal.forward_outlook_score for signal in signals},
+        "decision_confidence": {signal.code: signal.decision_confidence for signal in signals},
+        "signal_agreement_pct": {signal.code: signal.signal_agreement_pct for signal in signals},
         "event_risk_labels": {signal.code: signal.event_risk_label for signal in signals},
         "next_policy_meeting_dates": {signal.code: signal.next_policy_meeting_date for signal in signals},
         "market_scores": {signal.code: signal.market_score for signal in signals},
@@ -1510,7 +1772,7 @@ def main() -> None:
         "latest_market_date": latest_market_date,
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
-        "phase": "Phase 2B — opportunity scoring plus FX-specific buy urgency and central-bank event risk",
+        "phase": "Phase 2C — forward policy bias, forward FX momentum and decision confidence",
         "primary_source": source_name,
         "policy_source": policy_source,
         "macro_source": macro_source,
@@ -1521,11 +1783,15 @@ def main() -> None:
             "market": MARKET_WEIGHTS,
             "macro": MACRO_WEIGHTS,
             "buy_urgency": URGENCY_WEIGHTS,
+            "forward_policy": FORWARD_POLICY_WEIGHTS,
+            "forward_momentum": FORWARD_MOMENTUM_WEIGHTS,
+            "forward_outlook": FORWARD_OUTLOOK_WEIGHTS,
         },
         "scoring_note": (
-            "The Opportunity Score keeps the Phase 2A market/macro model. Buy Urgency is a separate 0–5 score "
-            "using policy direction, recent price reversal, valuation rarity and proximity to the next official "
-            "central-bank meeting. Urgency changes staging advice but cannot turn a poor-value currency into a Buy."
+            "The Opportunity Score keeps the market/macro model. Phase 2C adds a separate Forward Outlook built from "
+            "a model-implied policy bias and forward FX momentum. Buy Urgency uses those forward signals plus valuation "
+            "rarity and event proximity. The policy bias is derived from BIS policy history and IMF forecast direction; "
+            "it is not a market-futures probability. Urgency still cannot turn poor value into a Buy."
         ),
         "important_note": (
             "This model ranks the attractiveness of converting SGD into foreign currency. "
