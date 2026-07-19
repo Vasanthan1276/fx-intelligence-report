@@ -43,13 +43,62 @@ CURRENCY_CONFIG = {
     "MYR": {"name": "Malaysian Ringgit", "symbol": "RM", "unit": 1, "yf": "MYRSGD=X"},
 }
 
-MODEL_VERSION = "1.1-phase1b"
-MODEL_WEIGHTS = {
+MODEL_VERSION = "2.0-phase2a"
+
+# Phase 2A keeps the proven Phase 1B market model intact, then adds a macro-policy
+# layer. With complete macro coverage, the final score is 70% market intelligence
+# and 30% macro-policy intelligence. If a macro source is temporarily unavailable,
+# its weight automatically falls away rather than forcing a neutral score into the
+# recommendation.
+MARKET_WEIGHTS = {
     "historical_value": 0.50,
     "trend_timing": 0.25,
     "momentum": 0.15,
     "volatility": 0.10,
 }
+MACRO_WEIGHTS = {
+    "policy": 0.50,
+    "growth": 0.30,
+    "inflation": 0.20,
+}
+MAX_MACRO_WEIGHT = 0.30
+
+# BIS monthly central-bank policy-rate series. The euro-area reference area is XM.
+BIS_POLICY_API = "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_CBPOL/1.0"
+POLICY_AREA_CODES = {
+    "USD": "US",
+    "JPY": "JP",
+    "EUR": "XM",
+    "GBP": "GB",
+    "AUD": "AU",
+    "MYR": "MY",
+}
+CENTRAL_BANK_NAMES = {
+    "USD": "Federal Reserve",
+    "JPY": "Bank of Japan",
+    "EUR": "European Central Bank",
+    "GBP": "Bank of England",
+    "AUD": "Reserve Bank of Australia",
+    "MYR": "Bank Negara Malaysia",
+}
+
+# IMF WEO DataMapper country / aggregate codes. Singapore is the relative macro
+# benchmark because the user is deciding when to convert SGD into foreign currency.
+IMF_COUNTRY_CODES = {
+    "USD": "USA",
+    "JPY": "JPN",
+    "EUR": "EUQ",
+    "GBP": "GBR",
+    "AUD": "AUS",
+    "MYR": "MYS",
+    "SGD": "SGP",
+}
+IMF_DATAMAPPER_BASES = [
+    "https://www.imf.org/external/datamapper/api/v2",
+    "https://www.imf.org/external/datamapper/api/v1",
+]
+IMF_GROWTH_INDICATOR = "NGDP_RPCH"
+IMF_INFLATION_INDICATOR = "PCPIPCH"
 
 
 @dataclass
@@ -61,6 +110,10 @@ class CurrencySignal:
     rate_sgd: float
     inverse_per_sgd: float
     score: float
+    market_score: float
+    macro_score: float
+    macro_coverage_pct: int
+    effective_macro_weight_pct: int
     recommendation: str
     suggested_action: str
     suggested_buy_pct: int
@@ -89,10 +142,29 @@ class CurrencySignal:
     distance_to_buy_zone_pct: Optional[float]
     zone_status: str
     component_scores: Dict[str, float]
+    macro_component_scores: Dict[str, Optional[float]]
+    policy_rate_pct: Optional[float]
+    policy_rate_6m_change_bps: Optional[float]
+    policy_rate_12m_change_bps: Optional[float]
+    policy_rate_percentile_5y: Optional[float]
+    policy_data_date: Optional[str]
+    growth_current_year: Optional[int]
+    growth_current_pct: Optional[float]
+    growth_next_year: Optional[int]
+    growth_next_pct: Optional[float]
+    growth_vs_sgd_current_pp: Optional[float]
+    growth_vs_sgd_next_pp: Optional[float]
+    inflation_current_year: Optional[int]
+    inflation_current_pct: Optional[float]
+    inflation_next_year: Optional[int]
+    inflation_next_pct: Optional[float]
+    inflation_vs_sgd_current_pp: Optional[float]
+    inflation_vs_sgd_next_pp: Optional[float]
     validation_rate_sgd: Optional[float]
     validation_difference_pct: Optional[float]
     validation_status: str
     drivers: List[str]
+    macro_drivers: List[str]
 
 
 def _http_get(url: str, params: Optional[dict] = None, timeout: int = 45) -> requests.Response:
@@ -220,6 +292,303 @@ def fetch_validation_rates() -> Dict[str, float]:
         except Exception as exc:
             print(f"Validation source failed for {code}: {exc}")
     return validation
+
+
+def fetch_bis_policy_series(years: int = 6) -> Tuple[Dict[str, pd.Series], Dict[str, str]]:
+    """Fetch monthly central-bank policy-rate history from the BIS.
+
+    A failure for one currency does not stop the full report. Missing policy data
+    simply reduces that currency's effective macro weight for the current run.
+    """
+    start_period = (pd.Timestamp.utcnow().normalize() - pd.DateOffset(years=years)).strftime("%Y-%m")
+    series_map: Dict[str, pd.Series] = {}
+    status: Dict[str, str] = {}
+
+    for code, area in POLICY_AREA_CODES.items():
+        try:
+            response = _http_get(
+                f"{BIS_POLICY_API}/M.{area}",
+                params={"format": "csvfile", "startPeriod": start_period},
+                timeout=60,
+            )
+            raw = pd.read_csv(io.StringIO(response.text))
+            required = {"TIME_PERIOD", "OBS_VALUE"}
+            if not required.issubset(raw.columns):
+                raise ValueError(f"Unexpected BIS columns: {list(raw.columns)}")
+
+            if "REF_AREA" in raw.columns:
+                filtered = raw.loc[raw["REF_AREA"].astype(str) == area].copy()
+                if not filtered.empty:
+                    raw = filtered
+
+            raw["TIME_PERIOD"] = pd.to_datetime(raw["TIME_PERIOD"].astype(str), errors="coerce")
+            raw["OBS_VALUE"] = pd.to_numeric(raw["OBS_VALUE"], errors="coerce")
+            raw = raw.dropna(subset=["TIME_PERIOD", "OBS_VALUE"])
+            if raw.empty:
+                raise ValueError("BIS response contained no usable observations")
+
+            series = (
+                raw.groupby("TIME_PERIOD")["OBS_VALUE"]
+                .last()
+                .astype(float)
+                .sort_index()
+            )
+            series_map[code] = series
+            status[code] = "Available"
+        except Exception as exc:
+            print(f"BIS policy-rate fetch failed for {code}: {exc}")
+            status[code] = f"Unavailable: {exc.__class__.__name__}"
+
+    return series_map, status
+
+
+def _extract_imf_values(payload: dict, indicator: str, code: str) -> Dict[int, float]:
+    """Extract a country-year series from common IMF DataMapper response shapes."""
+    candidates = []
+    values = payload.get("values") if isinstance(payload, dict) else None
+    if isinstance(values, dict):
+        indicator_block = values.get(indicator)
+        if isinstance(indicator_block, dict):
+            candidates.append(indicator_block.get(code))
+        candidates.append(values.get(code))
+
+    if isinstance(payload, dict):
+        indicator_block = payload.get(indicator)
+        if isinstance(indicator_block, dict):
+            candidates.append(indicator_block.get(code))
+
+    for candidate in candidates:
+        if not isinstance(candidate, dict):
+            continue
+        result: Dict[int, float] = {}
+        for year, value in candidate.items():
+            try:
+                year_int = int(str(year)[:4])
+                value_float = float(value)
+            except (TypeError, ValueError):
+                continue
+            if math.isfinite(value_float):
+                result[year_int] = value_float
+        if result:
+            return result
+    return {}
+
+
+def fetch_imf_indicator(indicator: str) -> Tuple[Dict[str, Dict[int, float]], str]:
+    """Fetch one IMF WEO indicator for all tracked economies plus Singapore."""
+    unique_codes = list(dict.fromkeys(IMF_COUNTRY_CODES.values()))
+    code_path = "/".join(unique_codes)
+    last_error: Optional[Exception] = None
+
+    for base in IMF_DATAMAPPER_BASES:
+        try:
+            response = _http_get(f"{base}/{indicator}/{code_path}", timeout=60)
+            payload = response.json()
+            result: Dict[str, Dict[int, float]] = {}
+            for fx_code, imf_code in IMF_COUNTRY_CODES.items():
+                result[fx_code] = _extract_imf_values(payload, indicator, imf_code)
+
+            if any(result.values()):
+                api_version = "v2" if base.endswith("/v2") else "v1 fallback"
+                return result, f"IMF WEO DataMapper {api_version}"
+            raise ValueError("IMF response contained no usable country series")
+        except Exception as exc:
+            last_error = exc
+            print(f"IMF DataMapper {indicator} fetch failed from {base}: {exc}")
+
+    raise RuntimeError(f"IMF DataMapper unavailable for {indicator}: {last_error}")
+
+
+def _year_value(series: Dict[int, float], year: int) -> Optional[float]:
+    value = series.get(year)
+    if value is None or not math.isfinite(value):
+        return None
+    return float(value)
+
+
+def fetch_imf_macro_snapshot() -> Tuple[Dict[str, dict], Dict[str, str]]:
+    """Fetch current-year and next-year IMF WEO growth and inflation projections.
+
+    The function is intentionally fail-soft. Growth and inflation are fetched
+    independently so one unavailable indicator does not suppress the other.
+    """
+    current_year = datetime.now(timezone.utc).year
+    next_year = current_year + 1
+    status = {"growth": "Unavailable", "inflation": "Unavailable"}
+
+    try:
+        growth, growth_source = fetch_imf_indicator(IMF_GROWTH_INDICATOR)
+        status["growth"] = growth_source
+    except Exception as exc:
+        print(f"IMF growth data unavailable: {exc}")
+        growth = {code: {} for code in IMF_COUNTRY_CODES}
+
+    try:
+        inflation, inflation_source = fetch_imf_indicator(IMF_INFLATION_INDICATOR)
+        status["inflation"] = inflation_source
+    except Exception as exc:
+        print(f"IMF inflation data unavailable: {exc}")
+        inflation = {code: {} for code in IMF_COUNTRY_CODES}
+
+    snapshot: Dict[str, dict] = {}
+    for code in IMF_COUNTRY_CODES:
+        snapshot[code] = {
+            "growth_current_year": current_year,
+            "growth_current_pct": _year_value(growth.get(code, {}), current_year),
+            "growth_next_year": next_year,
+            "growth_next_pct": _year_value(growth.get(code, {}), next_year),
+            "inflation_current_year": current_year,
+            "inflation_current_pct": _year_value(inflation.get(code, {}), current_year),
+            "inflation_next_year": next_year,
+            "inflation_next_pct": _year_value(inflation.get(code, {}), next_year),
+        }
+
+    return snapshot, status
+
+
+def policy_direction_score(change_bps: Optional[float]) -> Optional[float]:
+    if change_bps is None or not math.isfinite(change_bps):
+        return None
+    # Roughly +/-100 bp over the lookback produces a strong, but not absolute,
+    # directional signal. Tightening raises buy urgency; easing lowers it.
+    return float(np.clip(2.5 + 2.5 * np.tanh(change_bps / 100.0), 0, 5))
+
+
+def analyse_policy_series(series: Optional[pd.Series]) -> Dict[str, Optional[float]]:
+    result: Dict[str, Optional[float]] = {
+        "score": None,
+        "rate": None,
+        "change_6m_bps": None,
+        "change_12m_bps": None,
+        "percentile_5y": None,
+        "data_date": None,
+    }
+    if series is None:
+        return result
+
+    clean = series.dropna().sort_index()
+    if clean.empty:
+        return result
+
+    current = float(clean.iloc[-1])
+    latest_date = clean.index[-1]
+    six_month_old = value_at_or_before(clean, 183)
+    twelve_month_old = value_at_or_before(clean, 365)
+    change_6m_bps = None if six_month_old is None else (current - six_month_old) * 100.0
+    change_12m_bps = None if twelve_month_old is None else (current - twelve_month_old) * 100.0
+
+    five_year = clean.loc[clean.index >= latest_date - pd.DateOffset(years=5)]
+    rate_percentile = percentile_rank(five_year, current)
+    level_score = None if rate_percentile is None else 5.0 * rate_percentile / 100.0
+    score = weighted_average([
+        (level_score, 0.45),
+        (policy_direction_score(change_6m_bps), 0.35),
+        (policy_direction_score(change_12m_bps), 0.20),
+    ])
+
+    result.update({
+        "score": float(np.clip(score, 0, 5)),
+        "rate": current,
+        "change_6m_bps": change_6m_bps,
+        "change_12m_bps": change_12m_bps,
+        "percentile_5y": rate_percentile,
+        "data_date": pd.Timestamp(latest_date).date().isoformat(),
+    })
+    return result
+
+
+def relative_growth_score(foreign: Optional[float], singapore: Optional[float]) -> Optional[float]:
+    if foreign is None or singapore is None:
+        return None
+    differential = foreign - singapore
+    return float(np.clip(2.5 + 2.5 * np.tanh(differential / 2.5), 0, 5))
+
+
+def relative_inflation_score(foreign: Optional[float], singapore: Optional[float]) -> Optional[float]:
+    if foreign is None or singapore is None:
+        return None
+    # Higher inflation than Singapore is generally a headwind to the foreign
+    # currency's purchasing power. Lower relative inflation is supportive.
+    differential = foreign - singapore
+    return float(np.clip(2.5 - 2.5 * np.tanh(differential / 3.0), 0, 5))
+
+
+def analyse_macro_components(
+    code: str,
+    policy_series: Optional[pd.Series],
+    macro_snapshot: Dict[str, dict],
+) -> Dict[str, object]:
+    policy = analyse_policy_series(policy_series)
+    foreign = macro_snapshot.get(code, {})
+    singapore = macro_snapshot.get("SGD", {})
+
+    growth_current = foreign.get("growth_current_pct")
+    growth_next = foreign.get("growth_next_pct")
+    sg_growth_current = singapore.get("growth_current_pct")
+    sg_growth_next = singapore.get("growth_next_pct")
+    growth_current_score = relative_growth_score(growth_current, sg_growth_current)
+    growth_next_score = relative_growth_score(growth_next, sg_growth_next)
+    growth_score = weighted_average(
+        [(growth_current_score, 0.40), (growth_next_score, 0.60)],
+        default=2.5,
+    ) if any(v is not None for v in [growth_current_score, growth_next_score]) else None
+
+    inflation_current = foreign.get("inflation_current_pct")
+    inflation_next = foreign.get("inflation_next_pct")
+    sg_inflation_current = singapore.get("inflation_current_pct")
+    sg_inflation_next = singapore.get("inflation_next_pct")
+    inflation_current_score = relative_inflation_score(inflation_current, sg_inflation_current)
+    inflation_next_score = relative_inflation_score(inflation_next, sg_inflation_next)
+    inflation_score = weighted_average(
+        [(inflation_current_score, 0.40), (inflation_next_score, 0.60)],
+        default=2.5,
+    ) if any(v is not None for v in [inflation_current_score, inflation_next_score]) else None
+
+    components: Dict[str, Optional[float]] = {
+        "policy": None if policy["score"] is None else round(float(policy["score"]), 2),
+        "growth": None if growth_score is None else round(float(growth_score), 2),
+        "inflation": None if inflation_score is None else round(float(inflation_score), 2),
+    }
+
+    available_weight = sum(MACRO_WEIGHTS[key] for key, value in components.items() if value is not None)
+    macro_coverage = available_weight / sum(MACRO_WEIGHTS.values())
+    macro_score = weighted_average(
+        [(components[key], MACRO_WEIGHTS[key]) for key in MACRO_WEIGHTS],
+        default=2.5,
+    )
+
+    growth_vs_sgd_current = None
+    if growth_current is not None and sg_growth_current is not None:
+        growth_vs_sgd_current = float(growth_current) - float(sg_growth_current)
+    growth_vs_sgd_next = None
+    if growth_next is not None and sg_growth_next is not None:
+        growth_vs_sgd_next = float(growth_next) - float(sg_growth_next)
+
+    inflation_vs_sgd_current = None
+    if inflation_current is not None and sg_inflation_current is not None:
+        inflation_vs_sgd_current = float(inflation_current) - float(sg_inflation_current)
+    inflation_vs_sgd_next = None
+    if inflation_next is not None and sg_inflation_next is not None:
+        inflation_vs_sgd_next = float(inflation_next) - float(sg_inflation_next)
+
+    return {
+        "macro_score": round(float(np.clip(macro_score, 0, 5)), 2),
+        "macro_coverage": float(np.clip(macro_coverage, 0, 1)),
+        "components": components,
+        "policy": policy,
+        "growth_current_year": foreign.get("growth_current_year"),
+        "growth_current_pct": growth_current,
+        "growth_next_year": foreign.get("growth_next_year"),
+        "growth_next_pct": growth_next,
+        "growth_vs_sgd_current_pp": growth_vs_sgd_current,
+        "growth_vs_sgd_next_pp": growth_vs_sgd_next,
+        "inflation_current_year": foreign.get("inflation_current_year"),
+        "inflation_current_pct": inflation_current,
+        "inflation_next_year": foreign.get("inflation_next_year"),
+        "inflation_next_pct": inflation_next,
+        "inflation_vs_sgd_current_pp": inflation_vs_sgd_current,
+        "inflation_vs_sgd_next_pp": inflation_vs_sgd_next,
+    }
 
 
 def pct_change(series: pd.Series, periods: int) -> Optional[float]:
@@ -429,7 +798,11 @@ def recommendation_from_score(score: float) -> Tuple[str, str, int]:
     return "Avoid", "Poor accumulation zone", 0
 
 
-def confidence_score(series: pd.Series, validation_difference: Optional[float]) -> Tuple[int, str]:
+def confidence_score(
+    series: pd.Series,
+    validation_difference: Optional[float],
+    macro_coverage: float,
+) -> Tuple[int, str]:
     years = (series.index[-1] - series.index[0]).days / 365.25
     confidence = 60
     if years >= 5:
@@ -447,8 +820,16 @@ def confidence_score(series: pd.Series, validation_difference: Optional[float]) 
         else:
             confidence -= 5
 
-    # Phase 1 intentionally excludes macro/news/event intelligence, so cap confidence.
-    confidence = int(np.clip(confidence, 55, 85))
+    # Phase 2A receives a modest confidence lift when the macro-policy layer has
+    # broad coverage, while still recognising that macro forecasts are uncertain.
+    if macro_coverage >= 0.95:
+        confidence += 7
+    elif macro_coverage >= 0.70:
+        confidence += 4
+    elif macro_coverage >= 0.40:
+        confidence += 2
+
+    confidence = int(np.clip(confidence, 55, 92))
     label = "High" if confidence >= 80 else "Medium" if confidence >= 65 else "Low"
     return confidence, label
 
@@ -508,7 +889,68 @@ def build_drivers(
     return drivers[:4]
 
 
-def analyse_currency(code: str, series: pd.Series, validation_rates: Dict[str, float]) -> CurrencySignal:
+def build_macro_drivers(code: str, macro: Dict[str, object]) -> List[str]:
+    drivers: List[str] = []
+    policy = macro.get("policy", {})
+    policy_rate = policy.get("rate") if isinstance(policy, dict) else None
+    change_6m = policy.get("change_6m_bps") if isinstance(policy, dict) else None
+
+    if policy_rate is not None:
+        direction = "unchanged"
+        if change_6m is not None and change_6m >= 12.5:
+            direction = f"up {abs(change_6m):.0f} bp over 6 months"
+        elif change_6m is not None and change_6m <= -12.5:
+            direction = f"down {abs(change_6m):.0f} bp over 6 months"
+        drivers.append(
+            f"{CENTRAL_BANK_NAMES.get(code, 'Central bank')} policy rate is {policy_rate:.2f}% and {direction}."
+        )
+
+    growth_current = macro.get("growth_current_pct")
+    growth_next = macro.get("growth_next_pct")
+    growth_current_year = macro.get("growth_current_year")
+    growth_next_year = macro.get("growth_next_year")
+    growth_diff_next = macro.get("growth_vs_sgd_next_pp")
+    if growth_current is not None or growth_next is not None:
+        parts = []
+        if growth_current is not None:
+            parts.append(f"{growth_current_year}: {float(growth_current):.1f}%")
+        if growth_next is not None:
+            parts.append(f"{growth_next_year}: {float(growth_next):.1f}%")
+        comparison = ""
+        if growth_diff_next is not None:
+            relation = "above" if float(growth_diff_next) >= 0 else "below"
+            comparison = f", {abs(float(growth_diff_next)):.1f} pp {relation} Singapore next year"
+        drivers.append(f"IMF real-GDP growth outlook is {'; '.join(parts)}{comparison}.")
+
+    inflation_current = macro.get("inflation_current_pct")
+    inflation_next = macro.get("inflation_next_pct")
+    inflation_current_year = macro.get("inflation_current_year")
+    inflation_next_year = macro.get("inflation_next_year")
+    inflation_diff_next = macro.get("inflation_vs_sgd_next_pp")
+    if inflation_current is not None or inflation_next is not None:
+        parts = []
+        if inflation_current is not None:
+            parts.append(f"{inflation_current_year}: {float(inflation_current):.1f}%")
+        if inflation_next is not None:
+            parts.append(f"{inflation_next_year}: {float(inflation_next):.1f}%")
+        comparison = ""
+        if inflation_diff_next is not None:
+            relation = "above" if float(inflation_diff_next) >= 0 else "below"
+            comparison = f", {abs(float(inflation_diff_next)):.1f} pp {relation} Singapore next year"
+        drivers.append(f"IMF inflation outlook is {'; '.join(parts)}{comparison}.")
+
+    if not drivers:
+        drivers.append("Macro-policy data is temporarily unavailable; the final score falls back toward the market model.")
+    return drivers[:3]
+
+
+def analyse_currency(
+    code: str,
+    series: pd.Series,
+    validation_rates: Dict[str, float],
+    policy_series_map: Dict[str, pd.Series],
+    macro_snapshot: Dict[str, dict],
+) -> CurrencySignal:
     series = series.dropna().sort_index()
     if len(series) < 250:
         raise ValueError(f"Insufficient history for {code}: only {len(series)} observations")
@@ -548,8 +990,18 @@ def analyse_currency(code: str, series: pd.Series, validation_rates: Dict[str, f
         "momentum": round(mom_score, 2),
         "volatility": round(vol_score, 2),
     }
+    market_score = sum(component_scores[key] * MARKET_WEIGHTS[key] for key in MARKET_WEIGHTS)
+    market_score = round(float(np.clip(market_score, 0, 5)), 2)
 
-    score = sum(component_scores[key] * MODEL_WEIGHTS[key] for key in MODEL_WEIGHTS)
+    macro = analyse_macro_components(
+        code=code,
+        policy_series=policy_series_map.get(code),
+        macro_snapshot=macro_snapshot,
+    )
+    macro_score = float(macro["macro_score"])
+    macro_coverage = float(macro["macro_coverage"])
+    effective_macro_weight = MAX_MACRO_WEIGHT * macro_coverage
+    score = market_score * (1.0 - effective_macro_weight) + macro_score * effective_macro_weight
     score = round(float(np.clip(score, 0, 5)), 2)
     recommendation, action, buy_pct = recommendation_from_score(score)
 
@@ -558,13 +1010,13 @@ def analyse_currency(code: str, series: pd.Series, validation_rates: Dict[str, f
     if validation_rate is not None and current > 0:
         validation_diff = abs(validation_rate / current - 1.0) * 100.0
 
-    confidence, confidence_label = confidence_score(series, validation_diff)
+    confidence, confidence_label = confidence_score(series, validation_diff, macro_coverage)
 
     one_year = series.loc[series.index >= series.index[-1] - pd.DateOffset(years=1)]
     low_52w = float(one_year.min()) if not one_year.empty else None
     high_52w = float(one_year.max()) if not one_year.empty else None
 
-    drivers = build_drivers(
+    market_drivers = build_drivers(
         percentiles.get("5y"),
         change_30d,
         rsi,
@@ -572,11 +1024,15 @@ def analyse_currency(code: str, series: pd.Series, validation_rates: Dict[str, f
         ma200,
         annualized_vol,
     )
+    macro_drivers = build_macro_drivers(code, macro)
 
     # inverse_per_sgd expresses how many units of the underlying currency S$1 buys.
     # Because JPY is displayed in units of 100, convert back to a one-unit basis first.
     per_currency_unit_cost = current / unit
     inverse_per_sgd = 1.0 / per_currency_unit_cost
+
+    policy = macro.get("policy", {})
+    macro_components = macro.get("components", {})
 
     return CurrencySignal(
         code=code,
@@ -586,6 +1042,10 @@ def analyse_currency(code: str, series: pd.Series, validation_rates: Dict[str, f
         rate_sgd=round(current, 6),
         inverse_per_sgd=round(inverse_per_sgd, 6),
         score=score,
+        market_score=market_score,
+        macro_score=round(macro_score, 2),
+        macro_coverage_pct=int(round(macro_coverage * 100)),
+        effective_macro_weight_pct=int(round(effective_macro_weight * 100)),
         recommendation=recommendation,
         suggested_action=action,
         suggested_buy_pct=buy_pct,
@@ -614,10 +1074,32 @@ def analyse_currency(code: str, series: pd.Series, validation_rates: Dict[str, f
         distance_to_buy_zone_pct=None if distance_to_buy_zone is None else round(float(distance_to_buy_zone), 2),
         zone_status=zone_status,
         component_scores=component_scores,
+        macro_component_scores={
+            key: None if value is None else round(float(value), 2)
+            for key, value in macro_components.items()
+        },
+        policy_rate_pct=None if policy.get("rate") is None else round(float(policy["rate"]), 3),
+        policy_rate_6m_change_bps=None if policy.get("change_6m_bps") is None else round(float(policy["change_6m_bps"]), 1),
+        policy_rate_12m_change_bps=None if policy.get("change_12m_bps") is None else round(float(policy["change_12m_bps"]), 1),
+        policy_rate_percentile_5y=None if policy.get("percentile_5y") is None else round(float(policy["percentile_5y"]), 1),
+        policy_data_date=policy.get("data_date"),
+        growth_current_year=macro.get("growth_current_year"),
+        growth_current_pct=None if macro.get("growth_current_pct") is None else round(float(macro["growth_current_pct"]), 2),
+        growth_next_year=macro.get("growth_next_year"),
+        growth_next_pct=None if macro.get("growth_next_pct") is None else round(float(macro["growth_next_pct"]), 2),
+        growth_vs_sgd_current_pp=None if macro.get("growth_vs_sgd_current_pp") is None else round(float(macro["growth_vs_sgd_current_pp"]), 2),
+        growth_vs_sgd_next_pp=None if macro.get("growth_vs_sgd_next_pp") is None else round(float(macro["growth_vs_sgd_next_pp"]), 2),
+        inflation_current_year=macro.get("inflation_current_year"),
+        inflation_current_pct=None if macro.get("inflation_current_pct") is None else round(float(macro["inflation_current_pct"]), 2),
+        inflation_next_year=macro.get("inflation_next_year"),
+        inflation_next_pct=None if macro.get("inflation_next_pct") is None else round(float(macro["inflation_next_pct"]), 2),
+        inflation_vs_sgd_current_pp=None if macro.get("inflation_vs_sgd_current_pp") is None else round(float(macro["inflation_vs_sgd_current_pp"]), 2),
+        inflation_vs_sgd_next_pp=None if macro.get("inflation_vs_sgd_next_pp") is None else round(float(macro["inflation_vs_sgd_next_pp"]), 2),
         validation_rate_sgd=None if validation_rate is None else round(validation_rate, 6),
         validation_difference_pct=None if validation_diff is None else round(validation_diff, 2),
         validation_status=validation_status(validation_diff),
-        drivers=drivers,
+        drivers=market_drivers[:3],
+        macro_drivers=macro_drivers,
     )
 
 
@@ -644,6 +1126,46 @@ def write_market_history(series_map: Dict[str, pd.Series]) -> None:
     (DATA_DIR / "fx_history.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
+def write_macro_snapshot(
+    signals: List[CurrencySignal],
+    policy_status: Dict[str, str],
+    imf_status: Dict[str, str],
+    macro_snapshot: Dict[str, dict],
+) -> None:
+    payload = {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "model_version": MODEL_VERSION,
+        "policy_source": "BIS central bank policy rates",
+        "macro_source": "IMF World Economic Outlook via DataMapper",
+        "policy_status": policy_status,
+        "imf_status": imf_status,
+        "singapore_baseline": macro_snapshot.get("SGD", {}),
+        "currencies": {
+            signal.code: {
+                "macro_score": signal.macro_score,
+                "macro_coverage_pct": signal.macro_coverage_pct,
+                "effective_macro_weight_pct": signal.effective_macro_weight_pct,
+                "macro_component_scores": signal.macro_component_scores,
+                "policy_rate_pct": signal.policy_rate_pct,
+                "policy_rate_6m_change_bps": signal.policy_rate_6m_change_bps,
+                "policy_rate_12m_change_bps": signal.policy_rate_12m_change_bps,
+                "policy_rate_percentile_5y": signal.policy_rate_percentile_5y,
+                "policy_data_date": signal.policy_data_date,
+                "growth_current_year": signal.growth_current_year,
+                "growth_current_pct": signal.growth_current_pct,
+                "growth_next_year": signal.growth_next_year,
+                "growth_next_pct": signal.growth_next_pct,
+                "inflation_current_year": signal.inflation_current_year,
+                "inflation_current_pct": signal.inflation_current_pct,
+                "inflation_next_year": signal.inflation_next_year,
+                "inflation_next_pct": signal.inflation_next_pct,
+            }
+            for signal in signals
+        },
+    }
+    (DATA_DIR / "macro_snapshot.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
 def update_score_log(signals: List[CurrencySignal]) -> None:
     path = DATA_DIR / "score_log.json"
     if path.exists():
@@ -659,6 +1181,10 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
     new_row = {
         "date": run_date,
         "scores": {signal.code: signal.score for signal in signals},
+        "market_scores": {signal.code: signal.market_score for signal in signals},
+        "macro_scores": {signal.code: signal.macro_score for signal in signals},
+        "macro_coverage_pct": {signal.code: signal.macro_coverage_pct for signal in signals},
+        "effective_macro_weight_pct": {signal.code: signal.effective_macro_weight_pct for signal in signals},
         "recommendations": {signal.code: signal.recommendation for signal in signals},
         "rates_sgd": {signal.code: signal.rate_sgd for signal in signals},
         "buy_zone_upper_sgd": {signal.code: signal.buy_zone_upper_sgd for signal in signals},
@@ -681,19 +1207,60 @@ def main() -> None:
     series_map = build_sgd_cost_series(ecb)
     validation_rates = fetch_validation_rates()
 
-    signals = [analyse_currency(code, series_map[code], validation_rates) for code in CURRENCY_CONFIG]
+    # Macro sources are deliberately fail-soft: the FX report must still update if
+    # BIS or IMF has a temporary outage. Missing macro components automatically lose
+    # their weight for that run.
+    policy_series_map, policy_status = fetch_bis_policy_series(years=6)
+    try:
+        macro_snapshot, imf_status = fetch_imf_macro_snapshot()
+    except Exception as exc:
+        print(f"IMF macro layer unavailable: {exc}")
+        macro_snapshot = {code: {} for code in IMF_COUNTRY_CODES}
+        imf_status = {"growth": "Unavailable", "inflation": "Unavailable"}
+
+    signals = [
+        analyse_currency(
+            code,
+            series_map[code],
+            validation_rates,
+            policy_series_map,
+            macro_snapshot,
+        )
+        for code in CURRENCY_CONFIG
+    ]
     signals.sort(key=lambda item: item.score, reverse=True)
 
     latest_market_date = max(signal.data_date for signal in signals)
+    available_policy = sum(1 for value in policy_status.values() if value == "Available")
+    policy_source = (
+        f"BIS central bank policy rates ({available_policy}/{len(POLICY_AREA_CODES)} available)"
+        if available_policy
+        else "BIS policy data unavailable for this run"
+    )
+    macro_source = "IMF World Economic Outlook via DataMapper"
+    if all(value == "Unavailable" for value in imf_status.values()):
+        macro_source = "IMF WEO unavailable for this run"
+
     payload = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "latest_market_date": latest_market_date,
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
-        "phase": "Phase 1B — refined FX scoring and dynamic historical buy zones",
+        "phase": "Phase 2A — market intelligence plus central-bank and macro scoring",
         "primary_source": source_name,
+        "policy_source": policy_source,
+        "macro_source": macro_source,
+        "macro_source_status": imf_status,
         "validation_source": "Yahoo Finance market snapshot (validation only)" if validation_rates else "Unavailable",
-        "model_weights": MODEL_WEIGHTS,
+        "model_weights": {
+            "combined_when_full_coverage": {"market": 1.0 - MAX_MACRO_WEIGHT, "macro": MAX_MACRO_WEIGHT},
+            "market": MARKET_WEIGHTS,
+            "macro": MACRO_WEIGHTS,
+        },
+        "scoring_note": (
+            "The macro layer uses up to 30% of the final score. If a macro component is unavailable, "
+            "its effective weight is removed automatically and the market score carries more weight."
+        ),
         "important_note": (
             "This model ranks the attractiveness of converting SGD into foreign currency. "
             "It is a decision-support tool, not a guarantee of future exchange-rate direction."
@@ -703,11 +1270,16 @@ def main() -> None:
 
     (DATA_DIR / "fx_signals.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
     write_market_history(series_map)
+    write_macro_snapshot(signals, policy_status, imf_status, macro_snapshot)
     update_score_log(signals)
 
     print(f"Updated {len(signals)} currencies using {source_name}. Market date: {latest_market_date}")
     for signal in signals:
-        print(f"{signal.code}: {signal.score:.2f}/5 — {signal.recommendation}")
+        print(
+            f"{signal.code}: {signal.score:.2f}/5 overall | "
+            f"market {signal.market_score:.2f} | macro {signal.macro_score:.2f} "
+            f"({signal.macro_coverage_pct}% coverage) — {signal.recommendation}"
+        )
 
 
 if __name__ == "__main__":
