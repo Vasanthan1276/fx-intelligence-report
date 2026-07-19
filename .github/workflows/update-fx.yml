@@ -1,0 +1,46 @@
+name: Update FX Intelligence
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 16:30 UTC Monday-Friday = 00:30 Singapore time the following day.
+    # This runs after the ECB normally publishes its working-day reference rates.
+    - cron: "30 16 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update FX data and scores
+        run: python main.py
+
+      - name: Rebuild dashboard
+        run: python dashboard.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update FX intelligence data"
+            git push
+          fi
