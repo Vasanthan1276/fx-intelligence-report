@@ -1,3 +1,8 @@
+Library
+/
+dashboard.py
+
+
 from __future__ import annotations
 
 import html
@@ -57,6 +62,25 @@ def buying_power_text(item):
     return f"S$1 buys {item['inverse_per_sgd']:,.3f} {item['code']}"
 
 
+def level_text(item, value):
+    if value is None:
+        return "—"
+    unit = item["unit"]
+    symbol = html.escape(item["symbol"])
+    if unit == 1:
+        return f"S${value:,.4f}"
+    return f"S${value:,.4f} per {symbol}{unit}"
+
+
+def gap_text(item):
+    gap = item.get("distance_to_buy_zone_pct")
+    if gap is None:
+        return "—"
+    if gap <= 0:
+        return "In buy zone"
+    return f"Needs {gap:.1f}% better rate"
+
+
 def build_currency_cards(currencies):
     cards = []
     for rank, item in enumerate(currencies, start=1):
@@ -90,6 +114,20 @@ def build_currency_cards(currencies):
             <div><span>Data check</span><strong>{validation_text}</strong></div>
           </div>
 
+          <div class="zone-box">
+            <div class="zone-head">
+              <span>Current valuation zone</span>
+              <strong>{html.escape(item.get('zone_status', '—'))}</strong>
+            </div>
+            <div class="zone-grid">
+              <div><span>Buy zone</span><strong>≤ {level_text(item, item.get('buy_zone_upper_sgd'))}</strong></div>
+              <div><span>Strong buy</span><strong>≤ {level_text(item, item.get('strong_buy_level_sgd'))}</strong></div>
+              <div><span>Exceptional</span><strong>≤ {level_text(item, item.get('exceptional_buy_level_sgd'))}</strong></div>
+              <div><span>5Y fair value</span><strong>{level_text(item, item.get('fair_value_sgd'))}</strong></div>
+            </div>
+            <div class="zone-gap">{html.escape(gap_text(item))}</div>
+          </div>
+
           <div class="action-box">
             <div>
               <span>Model action</span>
@@ -116,6 +154,7 @@ def build_table_rows(currencies):
           <td>{rate_text(item)}</td>
           <td>{fmt_pct(item.get('change_30d_pct'))}</td>
           <td>{fmt_number(item.get('percentile_5y'), 1)}%</td>
+          <td>{level_text(item, item.get('buy_zone_upper_sgd'))}<span>{html.escape(gap_text(item))}</span></td>
           <td>{item['suggested_buy_pct']}%</td>
           <td>{item['confidence']}%</td>
         </tr>
@@ -212,6 +251,15 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .mini-grid div{{background:#091421;border:1px solid #182a3f;border-radius:13px;padding:11px}}
 .mini-grid span{{display:block;color:var(--muted);font-size:.72rem;margin-bottom:5px}}
 .mini-grid strong{{font-size:.86rem}}
+.zone-box{{margin:14px 0;background:#091421;border:1px solid #1d354d;border-radius:14px;padding:13px}}
+.zone-head{{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-bottom:10px;border-bottom:1px solid #1a2e43}}
+.zone-head span{{color:var(--muted);font-size:.72rem}}
+.zone-head strong{{font-size:.78rem;color:var(--cyan);text-align:right}}
+.zone-grid{{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}}
+.zone-grid div{{background:#0d1b2b;border:1px solid #1a2e43;border-radius:10px;padding:9px}}
+.zone-grid span{{display:block;color:var(--muted);font-size:.67rem;margin-bottom:4px}}
+.zone-grid strong{{font-size:.76rem}}
+.zone-gap{{margin-top:9px;color:#bcd0e6;font-size:.72rem;font-weight:700}}
 .action-box{{display:flex;justify-content:space-between;gap:12px;align-items:center;background:linear-gradient(135deg,rgba(86,217,246,.08),rgba(69,221,163,.06));border:1px solid #26445a;border-radius:14px;padding:13px 14px}}
 .action-box span{{display:block;color:var(--muted);font-size:.72rem;margin-bottom:3px}}
 .action-box strong{{font-size:.9rem}}
@@ -247,7 +295,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div>
       <div class="eyebrow">Personal currency decision support</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">Ranks when converting Singapore dollars into foreign currencies looks historically attractive. Scores run from 0 to 5, where a higher score means a more attractive buying zone for an SGD-based buyer.</p>
+      <p class="subtitle">Ranks how attractive it is to convert Singapore dollars into foreign currencies. Scores run from 0 to 5, where a higher score means a more attractive buying zone for an SGD-based buyer.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>{market_date}</strong></div>
@@ -267,6 +315,9 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="hero-side">
       <h3>Suggested action</h3>
       <div class="big-action">{html.escape(best['suggested_action'])}</div>
+      <p><strong>Current zone:</strong> {html.escape(best.get('zone_status', '—'))}<br>
+      <strong>Buy-zone threshold:</strong> {level_text(best, best.get('buy_zone_upper_sgd'))}<br>
+      <strong>Strong-buy threshold:</strong> {level_text(best, best.get('strong_buy_level_sgd'))}</p>
       <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. This is a staging guide, not a requirement to transact.</p>
     </div>
   </section>
@@ -294,19 +345,19 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   </div>
   <section class="table-panel">
     <table>
-      <thead><tr><th>Currency</th><th>Score</th><th>Signal</th><th>Current cost</th><th>1M move</th><th>5Y percentile</th><th>Suggested tranche</th><th>Confidence</th></tr></thead>
+      <thead><tr><th>Currency</th><th>Score</th><th>Signal</th><th>Current cost</th><th>1M move</th><th>5Y percentile</th><th>Buy zone</th><th>Suggested tranche</th><th>Confidence</th></tr></thead>
       <tbody>{rows_html}</tbody>
     </table>
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 1 scoring model</h2><p>The model is intentionally transparent and will be backtested before adding AI/news layers.</p></div>
+    <div><h2>Phase 1B scoring model</h2><p>The model is intentionally transparent. Buy zones are derived from the latest five-year SGD-cost distribution and will be backtested before adding macro/news layers.</p></div>
   </div>
   <section class="methodology">
-    <div class="method-card"><strong>55%</strong><span>Historical value: 1-year, 3-year and 5-year SGD cost percentiles.</span></div>
+    <div class="method-card"><strong>50%</strong><span>Historical value: 1-year, 3-year and 5-year SGD cost percentiles, with more weight on longer FX history.</span></div>
     <div class="method-card"><strong>25%</strong><span>Trend & timing: 20-, 50- and 200-day averages plus RSI.</span></div>
-    <div class="method-card"><strong>15%</strong><span>Momentum: recent direction of the foreign currency's SGD cost.</span></div>
-    <div class="method-card"><strong>5%</strong><span>Volatility: lower uncertainty receives a modest risk-quality boost.</span></div>
+    <div class="method-card"><strong>15%</strong><span>Momentum: recent direction of the foreign currency's SGD cost, with falling-knife protection.</span></div>
+    <div class="method-card"><strong>10%</strong><span>Volatility: steadier currencies receive a larger risk-quality contribution.</span></div>
   </section>
 
   <div class="notice"><strong>Important:</strong> ECB reference rates are informational reference rates, not the exact retail rate you will receive from a bank, card, money changer or transfer service. The Buy Score estimates relative attractiveness from an SGD buyer's perspective and does not guarantee that a currency will strengthen after purchase.</div>
@@ -316,7 +367,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
 <script>
 let historyData = null;
 let chart = null;
-const currencyMeta = {json.dumps({item['code']: {'name': item['name'], 'unit': item['unit'], 'symbol': item['symbol']} for item in currencies})};
+const currencyMeta = {json.dumps({item['code']: {'name': item['name'], 'unit': item['unit'], 'symbol': item['symbol'], 'buyZone': item.get('buy_zone_upper_sgd'), 'strongBuy': item.get('strong_buy_level_sgd'), 'exceptional': item.get('exceptional_buy_level_sgd'), 'fairValue': item.get('fair_value_sgd')} for item in currencies})};
 
 async function loadHistory() {{
   if (historyData) return historyData;
@@ -340,9 +391,17 @@ async function showCurrency(code, shouldScroll = true) {{
 
   const ctx = document.getElementById('fxChart');
   if (chart) chart.destroy();
+  const levelSeries = (value) => labels.map(() => value);
+  const datasets = [
+    {{label, data:values, borderWidth:2, pointRadius:0, tension:.16, borderColor:'#56d9f6', backgroundColor:'rgba(86,217,246,.10)', fill:true}}
+  ];
+  if (meta.buyZone !== null && meta.buyZone !== undefined) datasets.push({{label:'Buy-zone threshold', data:levelSeries(meta.buyZone), borderWidth:1.5, pointRadius:0, borderDash:[7,5], borderColor:'#a5e45b', fill:false}});
+  if (meta.strongBuy !== null && meta.strongBuy !== undefined) datasets.push({{label:'Strong-buy threshold', data:levelSeries(meta.strongBuy), borderWidth:1.5, pointRadius:0, borderDash:[4,5], borderColor:'#45dda3', fill:false}});
+  if (meta.exceptional !== null && meta.exceptional !== undefined) datasets.push({{label:'Exceptional threshold', data:levelSeries(meta.exceptional), borderWidth:1.2, pointRadius:0, borderDash:[2,5], borderColor:'#f4c95d', fill:false}});
+
   chart = new Chart(ctx, {{
     type:'line',
-    data:{{labels, datasets:[{{label, data:values, borderWidth:2, pointRadius:0, tension:.16, borderColor:'#56d9f6', backgroundColor:'rgba(86,217,246,.10)', fill:true}}]}},
+    data:{{labels, datasets}},
     options:{{
       responsive:true,
       maintainAspectRatio:false,
