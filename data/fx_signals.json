@@ -1,9 +1,11 @@
 {
-  "generated_at_utc": "2026-07-19T06:24:38.132882+00:00",
+  "generated_at_utc": "2026-07-19T06:33:50.977272+00:00",
   "latest_market_date": "2026-07-17",
   "base_currency": "SGD",
-  "model_version": "2.2-phase2c",
-  "phase": "Phase 2C \u2014 forward policy bias, forward FX momentum and decision confidence",
+  "model_version": "2.2-phase2c-baseline",
+  "phase": "Phase 2C.1 \u2014 frozen baseline and daily score-change monitoring",
+  "baseline_frozen": true,
+  "previous_score_date": null,
   "primary_source": "ECB Data Portal API",
   "policy_source": "BIS central bank policy rates (6/6 available)",
   "macro_source": "IMF World Economic Outlook via DataMapper",
@@ -50,7 +52,7 @@
       "fx_momentum": 0.55
     }
   },
-  "scoring_note": "The Opportunity Score keeps the market/macro model. Phase 2C adds a separate Forward Outlook built from a model-implied policy bias and forward FX momentum. Buy Urgency uses those forward signals plus valuation rarity and event proximity. The policy bias is derived from BIS policy history and IMF forecast direction; it is not a market-futures probability. Urgency still cannot turn poor value into a Buy.",
+  "scoring_note": "Phase 2C.1 freezes the Phase 2C scoring weights as the baseline for the observation period. The Opportunity Score keeps the market/macro model, Forward Outlook combines model-implied policy bias and FX momentum, and Buy Urgency uses those forward signals plus valuation rarity and event proximity. Daily score changes compare against the previous available market day. No core scoring weights are changed in this baseline.",
   "important_note": "This model ranks the attractiveness of converting SGD into foreign currency. It is a decision-support tool, not a guarantee of future exchange-rate direction.",
   "currencies": [
     {
@@ -173,11 +175,19 @@
         "Next Bank of Japan MPM schedule event is in 12 days (2026-07-31); event risk is elevated."
       ],
       "forward_drivers": [
-        "Recent policy path points to hawkish conditions.",
-        "IMF inflation is projected higher next year, affecting future policy pressure.",
+        "Recent policy trend: Hawkish \u2014 based on actual 6- and 12-month policy-rate changes.",
+        "Model-implied forward policy bias: Balanced / uncertain \u2014 after considering recent policy trend, IMF inflation and growth outlook.",
         "Forward FX momentum is mixed and does not show a decisive reversal yet.",
         "Over one month the currency became 0.66% cheaper in SGD terms."
-      ]
+      ],
+      "daily_changes": {
+        "opportunity_score": null,
+        "market_score": null,
+        "macro_score": null,
+        "forward_outlook_score": null,
+        "buy_urgency_score": null
+      },
+      "previous_score_date": null
     },
     {
       "code": "USD",
@@ -299,11 +309,19 @@
         "Next Federal Reserve FOMC calendar event is in 10 days (2026-07-29); event risk is elevated."
       ],
       "forward_drivers": [
-        "Recent policy path points to dovish conditions.",
-        "IMF inflation is projected lower next year, affecting future policy pressure.",
+        "Recent policy trend: Dovish \u2014 based on actual 6- and 12-month policy-rate changes.",
+        "Model-implied forward policy bias: Easing bias \u2014 after considering recent policy trend, IMF inflation and growth outlook.",
         "Forward FX momentum is mixed and does not show a decisive reversal yet.",
         "Over one month the currency became 0.61% more expensive in SGD terms."
-      ]
+      ],
+      "daily_changes": {
+        "opportunity_score": null,
+        "market_score": null,
+        "macro_score": null,
+        "forward_outlook_score": null,
+        "buy_urgency_score": null
+      },
+      "previous_score_date": null
     },
     {
       "code": "MYR",
@@ -425,11 +443,19 @@
         "Next Bank Negara Malaysia MPC schedule event is in 46 days (2026-09-03); event risk is normal."
       ],
       "forward_drivers": [
-        "Recent policy path points to broadly neutral conditions.",
-        "IMF inflation is projected higher next year, affecting future policy pressure.",
+        "Recent policy trend: Broadly neutral \u2014 based on actual 6- and 12-month policy-rate changes.",
+        "Model-implied forward policy bias: Balanced / uncertain \u2014 after considering recent policy trend, IMF inflation and growth outlook.",
         "Forward FX momentum is mixed and does not show a decisive reversal yet.",
         "Over one month the currency became 0.06% cheaper in SGD terms."
-      ]
+      ],
+      "daily_changes": {
+        "opportunity_score": null,
+        "market_score": null,
+        "macro_score": null,
+        "forward_outlook_score": null,
+        "buy_urgency_score": null
+      },
+      "previous_score_date": null
     },
     {
       "code": "EUR",
@@ -551,11 +577,19 @@
         "Next ECB Governing Council calendar event is in 4 days (2026-07-23); event risk is high."
       ],
       "forward_drivers": [
-        "Recent policy path points to hawkish conditions.",
-        "IMF inflation is projected lower next year, affecting future policy pressure.",
+        "Recent policy trend: Hawkish \u2014 based on actual 6- and 12-month policy-rate changes.",
+        "Model-implied forward policy bias: Balanced / uncertain \u2014 after considering recent policy trend, IMF inflation and growth outlook.",
         "Forward FX momentum is mixed and does not show a decisive reversal yet.",
         "Over one month the currency became 0.75% cheaper in SGD terms."
-      ]
+      ],
+      "daily_changes": {
+        "opportunity_score": null,
+        "market_score": null,
+        "macro_score": null,
+        "forward_outlook_score": null,
+        "buy_urgency_score": null
+      },
+      "previous_score_date": null
     },
     {
       "code": "AUD",
@@ -677,11 +711,19 @@
         "Next Reserve Bank of Australia board schedule event is in 23 days (2026-08-11); event risk is moderate."
       ],
       "forward_drivers": [
-        "Recent policy path points to hawkish conditions.",
-        "IMF inflation is projected lower next year, affecting future policy pressure.",
+        "Recent policy trend: Hawkish \u2014 based on actual 6- and 12-month policy-rate changes.",
+        "Model-implied forward policy bias: Balanced / uncertain \u2014 after considering recent policy trend, IMF inflation and growth outlook.",
         "Forward FX momentum is mixed and does not show a decisive reversal yet.",
         "Over one month the currency became 0.60% cheaper in SGD terms."
-      ]
+      ],
+      "daily_changes": {
+        "opportunity_score": null,
+        "market_score": null,
+        "macro_score": null,
+        "forward_outlook_score": null,
+        "buy_urgency_score": null
+      },
+      "previous_score_date": null
     },
     {
       "code": "GBP",
@@ -803,11 +845,19 @@
         "Next Bank of England MPC calendar event is in 11 days (2026-07-30); event risk is elevated."
       ],
       "forward_drivers": [
-        "Recent policy path points to dovish conditions.",
-        "IMF inflation is projected lower next year, affecting future policy pressure.",
+        "Recent policy trend: Dovish \u2014 based on actual 6- and 12-month policy-rate changes.",
+        "Model-implied forward policy bias: Easing bias \u2014 after considering recent policy trend, IMF inflation and growth outlook.",
         "Forward FX momentum is mixed and does not show a decisive reversal yet.",
         "Over one month the currency became 0.85% more expensive in SGD terms."
-      ]
+      ],
+      "daily_changes": {
+        "opportunity_score": null,
+        "market_score": null,
+        "macro_score": null,
+        "forward_outlook_score": null,
+        "buy_urgency_score": null
+      },
+      "previous_score_date": null
     }
   ]
 }

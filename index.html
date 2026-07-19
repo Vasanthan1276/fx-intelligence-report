@@ -49,6 +49,14 @@ h1{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacing
 .hero-split{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0 4px}
 .hero-split div{background:#0a1727;border:1px solid #29445f;border-radius:12px;padding:9px 12px;color:var(--muted);font-size:.78rem}
 .hero-split strong{color:var(--text);margin-left:5px}
+.delta-badge{display:inline-flex;align-items:center;justify-content:center;margin-left:5px;padding:2px 6px;border-radius:999px;font-size:.62rem;font-weight:900;line-height:1.25;white-space:nowrap;vertical-align:middle;border:1px solid transparent}
+.delta-up{color:var(--cyan);background:rgba(86,217,246,.10);border-color:rgba(86,217,246,.28)}
+.delta-down{color:var(--amber);background:rgba(244,201,93,.10);border-color:rgba(244,201,93,.28)}
+.delta-flat{color:#aabbd0;background:rgba(170,187,208,.08);border-color:rgba(170,187,208,.2)}
+.delta-na{color:#758ca7;background:rgba(117,140,167,.08);border-color:rgba(117,140,167,.16)}
+.daily-change-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:9px;padding:8px 10px;border-radius:10px;border:1px dashed #29445f;background:rgba(7,16,29,.35);color:var(--muted);font-size:.68rem}
+.daily-change-row strong{color:var(--text);font-weight:700;display:flex;align-items:center;gap:3px;flex-wrap:wrap;justify-content:flex-end}
+.baseline-row strong{color:#8ca1ba}
 .hero-copy{color:#c7d8ec;line-height:1.6;max-width:760px}
 .hero-macro{color:#a9bdd4;line-height:1.55;font-size:.88rem;margin-top:8px}
 .hero-side{background:rgba(13,24,40,.9);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow)}
@@ -161,20 +169,22 @@ td span{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}
 footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 @media(max-width:1180px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.methodology{grid-template-columns:repeat(3,1fr)}.driver-columns{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:1050px){.hero{grid-template-columns:1fr}.status-panel{min-width:300px}}
-@media(max-width:680px){.container{padding:20px 14px 40px}.topbar{display:block}.status-panel{margin-top:18px;min-width:0}.cards{grid-template-columns:1fr}.methodology{grid-template-columns:1fr}.chart-wrap{height:300px}.mini-grid{grid-template-columns:1fr 1fr}.urgency-grid{grid-template-columns:1fr}.forward-grid{grid-template-columns:1fr}.score-split{grid-template-columns:1fr}.driver-columns{grid-template-columns:1fr}}
+@media(max-width:680px){.container{padding:20px 14px 40px}.topbar{display:block}.status-panel{margin-top:18px;min-width:0}.cards{grid-template-columns:1fr}.methodology{grid-template-columns:1fr}.chart-wrap{height:300px}.mini-grid{grid-template-columns:1fr 1fr}.urgency-grid{grid-template-columns:1fr}.forward-grid{grid-template-columns:1fr}.score-split{grid-template-columns:1fr}.driver-columns{grid-template-columns:1fr}.daily-change-row{align-items:flex-start;flex-direction:column}.daily-change-row strong{justify-content:flex-start}}
 </style>
 </head>
 <body>
 <div class="container">
   <header class="topbar">
     <div>
-      <div class="eyebrow">Personal currency decision support · Phase 2C</div>
+      <div class="eyebrow">Personal currency decision support · Phase 2C.1 baseline</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">Combines current opportunity, forward policy pressure, FX momentum and decision confidence to help stage SGD conversions. Opportunity, Forward Outlook and Buy Urgency are all scored from 0 to 5.</p>
+      <p class="subtitle">Phase 2C scoring is now frozen as the baseline for the monitoring period. The dashboard tracks current opportunity, forward policy pressure, FX momentum, decision confidence and day-to-day score changes without changing the core model weights.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>2026-07-17</strong></div>
-      <div><span>Model</span><strong>2.2-phase2c</strong></div>
+      <div><span>Model</span><strong>2.2-phase2c-baseline</strong></div>
+      <div><span>Baseline status</span><strong>Core scoring frozen</strong></div>
+      <div><span>Score-change comparison</span><strong>Starts next new market day</strong></div>
       <div><span>FX source</span><strong>ECB Data Portal API</strong></div>
       <div><span>Policy source</span><strong>BIS central bank policy rates (6/6 available)</strong></div>
       <div><span>Macro source</span><strong>IMF World Economic Outlook via DataMapper</strong></div>
@@ -188,18 +198,19 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <div class="hero-card">
       <h3>Best current opportunity</h3>
       <div class="hero-opportunity"><span>JPY</span> · Accumulate</div>
-      <div class="hero-score"><strong>3.87/5</strong><span>Opportunity · ¥100 = S$0.7953</span></div>
+      <div class="hero-score"><strong>3.87/5</strong><span class="delta-badge delta-na">baseline</span><span>Opportunity · ¥100 = S$0.7953</span></div>
       <div class="hero-split">
         <div>Market <strong>4.17/5</strong></div>
         <div>Macro backdrop <strong>3.16/5</strong></div>
-        <div>Forward outlook <strong>2.50/5</strong></div>
-        <div>Buy urgency <strong>3.10/5 · Moderate</strong></div>
+        <div>Forward outlook <strong>2.50/5 <span class="delta-badge delta-na">baseline</span></strong></div>
+        <div>Buy urgency <strong>3.10/5 <span class="delta-badge delta-na">baseline</span> · Moderate</strong></div>
         <div>Decision confidence <strong>80%</strong></div>
         <div>Signal agreement <strong>65%</strong></div>
       </div>
+      <div class="daily-change-row baseline-row"><span>Daily score changes</span><strong>Baseline started · appears after the next new market day</strong></div>
       <p class="hero-copy">Historically attractive: current cost is in the cheapest 1% of the 5-year range.</p>
       <p class="hero-macro">Macro view: Bank of Japan policy rate is 1.00% and up 50 bp over 6 months.</p>
-      <p class="hero-macro">Forward view: Recent policy path points to hawkish conditions.</p>
+      <p class="hero-macro">Forward view: Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes. Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</p>
       <p class="hero-macro">Timing view: Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</p>
     </div>
     <div class="hero-side">
@@ -212,7 +223,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <strong>Buy urgency:</strong> 3.10/5 · Moderate<br>
       <strong>Decision confidence:</strong> 80% · 65% signal agreement<br>
       <strong>Next policy event:</strong> 2026-07-31 · 12 days · Elevated risk</p>
-      <p>15% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C uses forward-looking signals to adjust urgency, but a high urgency score still cannot turn poor value into a Buy.</p>
+      <p>15% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C.1 keeps the Phase 2C scoring logic frozen while daily score changes are monitored. A high urgency score still cannot turn poor value into a Buy.</p>
     </div>
   </section>
 
@@ -234,12 +245,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="score-strong">4.17/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-good">3.16/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-neutral">2.50/5</strong></div>
+            <div><span>Forward outlook</span><strong class="score-neutral">2.50/5 <span class="delta-badge delta-na">baseline</span></strong></div>
           </div>
+
+          <div class="daily-change-row baseline-row"><span>Daily score changes</span><strong>Baseline started · appears after the next new market day</strong></div>
 
           <div class="urgency-box urgency-elevated">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>3.10/5 · Moderate</strong></div>
+              <div><span>Buy urgency</span><strong>3.10/5 <span class="delta-badge delta-na">baseline</span> · Moderate</strong></div>
               <div class="urgency-pill">Elevated event risk</div>
             </div>
             <div class="urgency-grid">
@@ -304,7 +317,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 1% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Bank of Japan policy rate is 1.00% and up 50 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 0.7%; 2027: 0.6%, 2.1 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 2.2%; 2027: 2.3%, 0.4 pp above Singapore next year.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy path points to hawkish conditions.</li><li>IMF inflation is projected higher next year, affecting future policy pressure.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.66% cheaper in SGD terms.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.66% cheaper in SGD terms.</li></ul></div>
             <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>Next Bank of Japan MPM schedule event is in 12 days (2026-07-31); event risk is elevated.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('JPY')">View 5-year chart</button>
@@ -325,12 +338,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="score-good">3.05/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-weak">1.92/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-neutral">2.29/5</strong></div>
+            <div><span>Forward outlook</span><strong class="score-neutral">2.29/5 <span class="delta-badge delta-na">baseline</span></strong></div>
           </div>
+
+          <div class="daily-change-row baseline-row"><span>Daily score changes</span><strong>Baseline started · appears after the next new market day</strong></div>
 
           <div class="urgency-box urgency-normal">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.53/5 · Low</strong></div>
+              <div><span>Buy urgency</span><strong>2.53/5 <span class="delta-badge delta-na">baseline</span> · Low</strong></div>
               <div class="urgency-pill">Elevated event risk</div>
             </div>
             <div class="urgency-grid">
@@ -395,7 +410,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 18% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is above its 200-day average, reducing timing attractiveness.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Federal Reserve policy rate is 3.62% and down 25 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 2.3%; 2027: 2.1%, 0.6 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 3.2%; 2027: 2.1%, 0.2 pp above Singapore next year.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy path points to dovish conditions.</li><li>IMF inflation is projected lower next year, affecting future policy pressure.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.61% more expensive in SGD terms.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Dovish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Easing bias — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.61% more expensive in SGD terms.</li></ul></div>
             <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is easing bias (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>Next Federal Reserve FOMC calendar event is in 10 days (2026-07-29); event risk is elevated.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('USD')">View 5-year chart</button>
@@ -416,12 +431,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="score-neutral">2.46/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-good">3.09/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-weak">2.19/5</strong></div>
+            <div><span>Forward outlook</span><strong class="score-weak">2.19/5 <span class="delta-badge delta-na">baseline</span></strong></div>
           </div>
+
+          <div class="daily-change-row baseline-row"><span>Daily score changes</span><strong>Baseline started · appears after the next new market day</strong></div>
 
           <div class="urgency-box urgency-normal">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.12/5 · Low</strong></div>
+              <div><span>Buy urgency</span><strong>2.12/5 <span class="delta-badge delta-na">baseline</span> · Low</strong></div>
               <div class="urgency-pill">Normal event risk</div>
             </div>
             <div class="urgency-grid">
@@ -486,7 +503,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 71st cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Bank Negara Malaysia policy rate is 2.75% and unchanged.</li><li>IMF real-GDP growth outlook is 2026: 4.7%; 2027: 4.3%, 1.6 pp above Singapore next year.</li><li>IMF inflation outlook is 2026: 1.9%; 2027: 2.0%, 0.1 pp above Singapore next year.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy path points to broadly neutral conditions.</li><li>IMF inflation is projected higher next year, affecting future policy pressure.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.06% cheaper in SGD terms.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.06% cheaper in SGD terms.</li></ul></div>
             <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>Next Bank Negara Malaysia MPC schedule event is in 46 days (2026-09-03); event risk is normal.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('MYR')">View 5-year chart</button>
@@ -507,12 +524,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="score-neutral">2.89/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-weak">2.02/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-neutral">2.36/5</strong></div>
+            <div><span>Forward outlook</span><strong class="score-neutral">2.36/5 <span class="delta-badge delta-na">baseline</span></strong></div>
           </div>
+
+          <div class="daily-change-row baseline-row"><span>Daily score changes</span><strong>Baseline started · appears after the next new market day</strong></div>
 
           <div class="urgency-box urgency-normal">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.34/5 · Low</strong></div>
+              <div><span>Buy urgency</span><strong>2.34/5 <span class="delta-badge delta-na">baseline</span> · Low</strong></div>
               <div class="urgency-pill">High event risk</div>
             </div>
             <div class="urgency-grid">
@@ -577,7 +596,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 62nd cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>European Central Bank policy rate is 2.25% and up 25 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 1.3%; 2027: 1.4%, 1.3 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 3.4%; 2027: 2.8%, 0.9 pp above Singapore next year.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy path points to hawkish conditions.</li><li>IMF inflation is projected lower next year, affecting future policy pressure.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.75% cheaper in SGD terms.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.75% cheaper in SGD terms.</li></ul></div>
             <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>Next ECB Governing Council calendar event is in 4 days (2026-07-23); event risk is high.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('EUR')">View 5-year chart</button>
@@ -598,12 +617,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="score-weak">2.08/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-good">3.19/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-neutral">2.63/5</strong></div>
+            <div><span>Forward outlook</span><strong class="score-neutral">2.63/5 <span class="delta-badge delta-na">baseline</span></strong></div>
           </div>
+
+          <div class="daily-change-row baseline-row"><span>Daily score changes</span><strong>Baseline started · appears after the next new market day</strong></div>
 
           <div class="urgency-box urgency-normal">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.55/5 · Low</strong></div>
+              <div><span>Buy urgency</span><strong>2.55/5 <span class="delta-badge delta-na">baseline</span> · Low</strong></div>
               <div class="urgency-pill">Moderate event risk</div>
             </div>
             <div class="urgency-grid">
@@ -668,7 +689,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 60th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is above its 200-day average, reducing timing attractiveness.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Reserve Bank of Australia policy rate is 4.35% and up 75 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 2.0%; 2027: 1.7%, 1.0 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 4.0%; 2027: 3.2%, 1.3 pp above Singapore next year.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy path points to hawkish conditions.</li><li>IMF inflation is projected lower next year, affecting future policy pressure.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.60% cheaper in SGD terms.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.60% cheaper in SGD terms.</li></ul></div>
             <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>Next Reserve Bank of Australia board schedule event is in 23 days (2026-08-11); event risk is moderate.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('AUD')">View 5-year chart</button>
@@ -689,12 +710,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="score-split">
             <div><span>Market & valuation</span><strong class="score-weak">1.67/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-weak">1.78/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-neutral">2.51/5</strong></div>
+            <div><span>Forward outlook</span><strong class="score-neutral">2.51/5 <span class="delta-badge delta-na">baseline</span></strong></div>
           </div>
+
+          <div class="daily-change-row baseline-row"><span>Daily score changes</span><strong>Baseline started · appears after the next new market day</strong></div>
 
           <div class="urgency-box urgency-normal">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.11/5 · Low</strong></div>
+              <div><span>Buy urgency</span><strong>2.11/5 <span class="delta-badge delta-na">baseline</span> · Low</strong></div>
               <div class="urgency-pill">Elevated event risk</div>
             </div>
             <div class="urgency-grid">
@@ -759,7 +782,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 78th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is above its 200-day average, reducing timing attractiveness.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Bank of England policy rate is 3.75% and down 25 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 0.8%; 2027: 1.3%, 1.4 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 3.2%; 2027: 2.4%, 0.5 pp above Singapore next year.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy path points to dovish conditions.</li><li>IMF inflation is projected lower next year, affecting future policy pressure.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.85% more expensive in SGD terms.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Dovish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Easing bias — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.85% more expensive in SGD terms.</li></ul></div>
             <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is easing bias (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>Next Bank of England MPC calendar event is in 11 days (2026-07-30); event risk is elevated.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('GBP')">View 5-year chart</button>
@@ -788,9 +811,9 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <tbody>
         <tr>
           <td><strong>JPY</strong><span>Japanese Yen</span></td>
-          <td><div class="table-score score-good">3.87</div><span>Opportunity</span></td>
-          <td><div class="table-score urgency-elevated">3.10</div><span>Moderate</span></td>
-          <td>2.50<span>Mixed / neutral</span></td>
+          <td><div class="table-score score-good">3.87</div><span>Opportunity <span class="delta-badge delta-na">baseline</span></span></td>
+          <td><div class="table-score urgency-elevated">3.10</div><span>Moderate <span class="delta-badge delta-na">baseline</span></span></td>
+          <td>2.50<span>Mixed / neutral <span class="delta-badge delta-na">baseline</span></span></td>
           <td>4.17</td>
           <td>3.16<span>100% coverage</span></td>
           <td>3.03<span>Balanced / uncertain</span></td>
@@ -807,9 +830,9 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
         <tr>
           <td><strong>USD</strong><span>US Dollar</span></td>
-          <td><div class="table-score score-neutral">2.71</div><span>Opportunity</span></td>
-          <td><div class="table-score urgency-normal">2.53</div><span>Low</span></td>
-          <td>2.29<span>Mixed / neutral</span></td>
+          <td><div class="table-score score-neutral">2.71</div><span>Opportunity <span class="delta-badge delta-na">baseline</span></span></td>
+          <td><div class="table-score urgency-normal">2.53</div><span>Low <span class="delta-badge delta-na">baseline</span></span></td>
+          <td>2.29<span>Mixed / neutral <span class="delta-badge delta-na">baseline</span></span></td>
           <td>3.05</td>
           <td>1.92<span>100% coverage</span></td>
           <td>1.65<span>Easing bias</span></td>
@@ -826,9 +849,9 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
         <tr>
           <td><strong>MYR</strong><span>Malaysian Ringgit</span></td>
-          <td><div class="table-score score-neutral">2.65</div><span>Opportunity</span></td>
-          <td><div class="table-score urgency-normal">2.12</div><span>Low</span></td>
-          <td>2.19<span>Mixed / neutral</span></td>
+          <td><div class="table-score score-neutral">2.65</div><span>Opportunity <span class="delta-badge delta-na">baseline</span></span></td>
+          <td><div class="table-score urgency-normal">2.12</div><span>Low <span class="delta-badge delta-na">baseline</span></span></td>
+          <td>2.19<span>Mixed / neutral <span class="delta-badge delta-na">baseline</span></span></td>
           <td>2.46</td>
           <td>3.09<span>100% coverage</span></td>
           <td>2.46<span>Balanced / uncertain</span></td>
@@ -845,9 +868,9 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
         <tr>
           <td><strong>EUR</strong><span>Euro</span></td>
-          <td><div class="table-score score-neutral">2.63</div><span>Opportunity</span></td>
-          <td><div class="table-score urgency-normal">2.34</div><span>Low</span></td>
-          <td>2.36<span>Mixed / neutral</span></td>
+          <td><div class="table-score score-neutral">2.63</div><span>Opportunity <span class="delta-badge delta-na">baseline</span></span></td>
+          <td><div class="table-score urgency-normal">2.34</div><span>Low <span class="delta-badge delta-na">baseline</span></span></td>
+          <td>2.36<span>Mixed / neutral <span class="delta-badge delta-na">baseline</span></span></td>
           <td>2.89</td>
           <td>2.02<span>100% coverage</span></td>
           <td>2.63<span>Balanced / uncertain</span></td>
@@ -864,9 +887,9 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
         <tr>
           <td><strong>AUD</strong><span>Australian Dollar</span></td>
-          <td><div class="table-score score-neutral">2.41</div><span>Opportunity</span></td>
-          <td><div class="table-score urgency-normal">2.55</div><span>Low</span></td>
-          <td>2.63<span>Mixed / neutral</span></td>
+          <td><div class="table-score score-neutral">2.41</div><span>Opportunity <span class="delta-badge delta-na">baseline</span></span></td>
+          <td><div class="table-score urgency-normal">2.55</div><span>Low <span class="delta-badge delta-na">baseline</span></span></td>
+          <td>2.63<span>Mixed / neutral <span class="delta-badge delta-na">baseline</span></span></td>
           <td>2.08</td>
           <td>3.19<span>100% coverage</span></td>
           <td>2.97<span>Balanced / uncertain</span></td>
@@ -883,9 +906,9 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
         <tr>
           <td><strong>GBP</strong><span>British Pound</span></td>
-          <td><div class="table-score score-weak">1.70</div><span>Opportunity</span></td>
-          <td><div class="table-score urgency-normal">2.11</div><span>Low</span></td>
-          <td>2.51<span>Mixed / neutral</span></td>
+          <td><div class="table-score score-weak">1.70</div><span>Opportunity <span class="delta-badge delta-na">baseline</span></span></td>
+          <td><div class="table-score urgency-normal">2.11</div><span>Low <span class="delta-badge delta-na">baseline</span></span></td>
+          <td>2.51<span>Mixed / neutral <span class="delta-badge delta-na">baseline</span></span></td>
           <td>1.67</td>
           <td>1.78<span>100% coverage</span></td>
           <td>1.89<span>Easing bias</span></td>
@@ -903,9 +926,11 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 2C scoring model</h2><p>Opportunity measures value. Forward Outlook estimates directional pressure. Buy Urgency decides how quickly an already-attractive window may need to be acted on.</p></div>
+    <div><h2>Phase 2C.1 frozen baseline model</h2><p>The core Phase 2C scoring weights are frozen for the observation period. Opportunity measures value, Forward Outlook estimates directional pressure, and Buy Urgency estimates timing pressure.</p></div>
   </div>
   <section class="methodology">
+    <div class="method-card"><strong>Frozen</strong><span>Phase 2C core weights are locked during the baseline observation period so later changes can be measured cleanly.</span></div>
+    <div class="method-card"><strong>Δ Daily</strong><span>Opportunity, Forward Outlook and Buy Urgency changes are compared with the previous available market day.</span></div>
     <div class="method-card"><strong>70%</strong><span>Market intelligence in the Opportunity Score when full macro data is available: historical value, trend, momentum and volatility.</span></div>
     <div class="method-card"><strong>30%</strong><span>Maximum macro-backdrop contribution to Opportunity. Missing macro data automatically reduces this weight.</span></div>
     <div class="method-card"><strong>45%</strong><span>Forward Outlook: model-implied policy bias from recent BIS policy paths plus IMF inflation and growth direction.</span></div>
@@ -917,8 +942,8 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <div class="method-card"><strong>Confidence</strong><span>Decision confidence combines data quality, macro coverage and agreement across the major supportive signals.</span></div>
   </section>
 
-  <div class="notice"><strong>Important:</strong> The Phase 2C policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
-  <footer>Generated automatically by GitHub Actions · Last build 2026-07-19T06:24:38.132882+00:00</footer>
+  <div class="notice"><strong>Baseline monitoring:</strong> Phase 2C.1 does not change the core scoring weights. Daily score deltas compare each new market date with the previous available market day, creating a clean baseline for the later Phase 3A evaluation.<br><br><strong>Important:</strong> The policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
+  <footer>Generated automatically by GitHub Actions · Last build 2026-07-19T06:33:50.977272+00:00</footer>
 </div>
 
 <script>

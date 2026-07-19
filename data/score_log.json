@@ -1,8 +1,9 @@
 {
-  "model_version": "2.2-phase2c",
+  "model_version": "2.2-phase2c-baseline",
   "records": [
     {
       "date": "2026-07-17",
+      "model_version": "2.2-phase2c-baseline",
       "scores": {
         "JPY": 3.87,
         "USD": 2.71,
@@ -122,6 +123,46 @@
         "EUR": "Wait",
         "AUD": "Wait",
         "GBP": "Expensive"
+      },
+      "suggested_buy_pct": {
+        "JPY": 15,
+        "USD": 0,
+        "MYR": 0,
+        "EUR": 0,
+        "AUD": 0,
+        "GBP": 0
+      },
+      "suggested_actions": {
+        "JPY": "Start or continue gradual buying",
+        "USD": "Wait for a better rate unless funds are needed",
+        "MYR": "Wait for a better rate unless funds are needed",
+        "EUR": "Wait for a better rate unless funds are needed",
+        "AUD": "Wait for a better rate unless funds are needed",
+        "GBP": "Avoid a large discretionary purchase"
+      },
+      "decision_confidence_labels": {
+        "JPY": "High",
+        "USD": "High",
+        "MYR": "High",
+        "EUR": "High",
+        "AUD": "High",
+        "GBP": "High"
+      },
+      "buy_urgency_labels": {
+        "JPY": "Moderate",
+        "USD": "Low",
+        "MYR": "Low",
+        "EUR": "Low",
+        "AUD": "Low",
+        "GBP": "Low"
+      },
+      "forward_outlook_labels": {
+        "JPY": "Mixed / neutral",
+        "USD": "Mixed / neutral",
+        "MYR": "Mixed / neutral",
+        "EUR": "Mixed / neutral",
+        "AUD": "Mixed / neutral",
+        "GBP": "Mixed / neutral"
       },
       "rates_sgd": {
         "JPY": 0.795314,
