@@ -1,9 +1,17 @@
 {
-  "model_version": "1.1-phase1b",
+  "model_version": "2.0-phase2a",
   "records": [
     {
       "date": "2026-07-17",
       "scores": {
+        "JPY": 3.76,
+        "USD": 2.67,
+        "EUR": 2.66,
+        "MYR": 2.6,
+        "AUD": 2.33,
+        "GBP": 1.66
+      },
+      "market_scores": {
         "JPY": 4.17,
         "USD": 3.05,
         "EUR": 2.89,
@@ -11,12 +19,36 @@
         "AUD": 2.08,
         "GBP": 1.67
       },
+      "macro_scores": {
+        "JPY": 2.79,
+        "USD": 1.8,
+        "EUR": 2.13,
+        "MYR": 2.92,
+        "AUD": 2.9,
+        "GBP": 1.64
+      },
+      "macro_coverage_pct": {
+        "JPY": 100,
+        "USD": 100,
+        "EUR": 100,
+        "MYR": 100,
+        "AUD": 100,
+        "GBP": 100
+      },
+      "effective_macro_weight_pct": {
+        "JPY": 30,
+        "USD": 30,
+        "EUR": 30,
+        "MYR": 30,
+        "AUD": 30,
+        "GBP": 30
+      },
       "recommendations": {
-        "JPY": "Buy",
-        "USD": "Light Accumulate",
+        "JPY": "Accumulate",
+        "USD": "Wait",
         "EUR": "Wait",
         "MYR": "Wait",
-        "AUD": "Expensive",
+        "AUD": "Wait",
         "GBP": "Expensive"
       },
       "rates_sgd": {

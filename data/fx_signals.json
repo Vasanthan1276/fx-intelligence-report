@@ -1,17 +1,35 @@
 {
-  "generated_at_utc": "2026-07-19T05:28:33.345051+00:00",
+  "generated_at_utc": "2026-07-19T05:47:08.017016+00:00",
   "latest_market_date": "2026-07-17",
   "base_currency": "SGD",
-  "model_version": "1.1-phase1b",
-  "phase": "Phase 1B \u2014 refined FX scoring and dynamic historical buy zones",
+  "model_version": "2.0-phase2a",
+  "phase": "Phase 2A \u2014 market intelligence plus central-bank and macro scoring",
   "primary_source": "ECB Data Portal API",
+  "policy_source": "BIS central bank policy rates (6/6 available)",
+  "macro_source": "IMF World Economic Outlook via DataMapper",
+  "macro_source_status": {
+    "growth": "IMF WEO DataMapper v2",
+    "inflation": "IMF WEO DataMapper v2"
+  },
   "validation_source": "Yahoo Finance market snapshot (validation only)",
   "model_weights": {
-    "historical_value": 0.5,
-    "trend_timing": 0.25,
-    "momentum": 0.15,
-    "volatility": 0.1
+    "combined_when_full_coverage": {
+      "market": 0.7,
+      "macro": 0.3
+    },
+    "market": {
+      "historical_value": 0.5,
+      "trend_timing": 0.25,
+      "momentum": 0.15,
+      "volatility": 0.1
+    },
+    "macro": {
+      "policy": 0.5,
+      "growth": 0.3,
+      "inflation": 0.2
+    }
   },
+  "scoring_note": "The macro layer uses up to 30% of the final score. If a macro component is unavailable, its effective weight is removed automatically and the market score carries more weight.",
   "important_note": "This model ranks the attractiveness of converting SGD into foreign currency. It is a decision-support tool, not a guarantee of future exchange-rate direction.",
   "currencies": [
     {
@@ -21,12 +39,16 @@
       "unit": 100,
       "rate_sgd": 0.795314,
       "inverse_per_sgd": 125.736539,
-      "score": 4.17,
-      "recommendation": "Buy",
-      "suggested_action": "Buy in stages",
-      "suggested_buy_pct": 30,
-      "confidence": 78,
-      "confidence_label": "Medium",
+      "score": 3.76,
+      "market_score": 4.17,
+      "macro_score": 2.79,
+      "macro_coverage_pct": 100,
+      "effective_macro_weight_pct": 30,
+      "recommendation": "Accumulate",
+      "suggested_action": "Start or continue gradual buying",
+      "suggested_buy_pct": 20,
+      "confidence": 85,
+      "confidence_label": "High",
       "data_date": "2026-07-17",
       "change_1d_pct": 0.07,
       "change_7d_pct": -0.29,
@@ -55,6 +77,28 @@
         "momentum": 2.89,
         "volatility": 4.32
       },
+      "macro_component_scores": {
+        "policy": 4.26,
+        "growth": 0.66,
+        "inflation": 2.33
+      },
+      "policy_rate_pct": 1.0,
+      "policy_rate_6m_change_bps": 50.0,
+      "policy_rate_12m_change_bps": 50.0,
+      "policy_rate_percentile_5y": 100.0,
+      "policy_data_date": "2026-06-01",
+      "growth_current_year": 2026,
+      "growth_current_pct": 0.7,
+      "growth_next_year": 2027,
+      "growth_next_pct": 0.6,
+      "growth_vs_sgd_current_pp": -2.8,
+      "growth_vs_sgd_next_pp": -2.1,
+      "inflation_current_year": 2026,
+      "inflation_current_pct": 2.2,
+      "inflation_next_year": 2027,
+      "inflation_next_pct": 2.3,
+      "inflation_vs_sgd_current_pp": -0.1,
+      "inflation_vs_sgd_next_pp": 0.4,
       "validation_rate_sgd": 0.79,
       "validation_difference_pct": 0.67,
       "validation_status": "Good",
@@ -62,6 +106,11 @@
         "Historically attractive: current cost is in the cheapest 1% of the 5-year range.",
         "One-month price movement is relatively stable.",
         "Current cost is below its 200-day average, supporting longer-term value."
+      ],
+      "macro_drivers": [
+        "Bank of Japan policy rate is 1.00% and up 50 bp over 6 months.",
+        "IMF real-GDP growth outlook is 2026: 0.7%; 2027: 0.6%, 2.1 pp below Singapore next year.",
+        "IMF inflation outlook is 2026: 2.2%; 2027: 2.3%, 0.4 pp above Singapore next year."
       ]
     },
     {
@@ -71,11 +120,15 @@
       "unit": 1,
       "rate_sgd": 1.291211,
       "inverse_per_sgd": 0.774467,
-      "score": 3.05,
-      "recommendation": "Light Accumulate",
-      "suggested_action": "Small tranche only",
-      "suggested_buy_pct": 10,
-      "confidence": 82,
+      "score": 2.67,
+      "market_score": 3.05,
+      "macro_score": 1.8,
+      "macro_coverage_pct": 100,
+      "effective_macro_weight_pct": 30,
+      "recommendation": "Wait",
+      "suggested_action": "Wait for a better rate unless funds are needed",
+      "suggested_buy_pct": 0,
+      "confidence": 89,
       "confidence_label": "High",
       "data_date": "2026-07-17",
       "change_1d_pct": 0.16,
@@ -105,6 +158,28 @@
         "momentum": 2.27,
         "volatility": 4.88
       },
+      "macro_component_scores": {
+        "policy": 1.73,
+        "growth": 1.7,
+        "inflation": 2.11
+      },
+      "policy_rate_pct": 3.625,
+      "policy_rate_6m_change_bps": -25.0,
+      "policy_rate_12m_change_bps": -75.0,
+      "policy_rate_percentile_5y": 39.3,
+      "policy_data_date": "2026-06-01",
+      "growth_current_year": 2026,
+      "growth_current_pct": 2.3,
+      "growth_next_year": 2027,
+      "growth_next_pct": 2.1,
+      "growth_vs_sgd_current_pp": -1.2,
+      "growth_vs_sgd_next_pp": -0.6,
+      "inflation_current_year": 2026,
+      "inflation_current_pct": 3.2,
+      "inflation_next_year": 2027,
+      "inflation_next_pct": 2.1,
+      "inflation_vs_sgd_current_pp": 0.9,
+      "inflation_vs_sgd_next_pp": 0.2,
       "validation_rate_sgd": 1.2912,
       "validation_difference_pct": 0.0,
       "validation_status": "Excellent",
@@ -112,6 +187,11 @@
         "Historically attractive: current cost is in the cheapest 18% of the 5-year range.",
         "One-month price movement is relatively stable.",
         "Current cost is above its 200-day average, reducing timing attractiveness."
+      ],
+      "macro_drivers": [
+        "Federal Reserve policy rate is 3.62% and down 25 bp over 6 months.",
+        "IMF real-GDP growth outlook is 2026: 2.3%; 2027: 2.1%, 0.6 pp below Singapore next year.",
+        "IMF inflation outlook is 2026: 3.2%; 2027: 2.1%, 0.2 pp above Singapore next year."
       ]
     },
     {
@@ -121,11 +201,15 @@
       "unit": 1,
       "rate_sgd": 1.4765,
       "inverse_per_sgd": 0.677277,
-      "score": 2.89,
+      "score": 2.66,
+      "market_score": 2.89,
+      "macro_score": 2.13,
+      "macro_coverage_pct": 100,
+      "effective_macro_weight_pct": 30,
       "recommendation": "Wait",
       "suggested_action": "Wait for a better rate unless funds are needed",
       "suggested_buy_pct": 0,
-      "confidence": 82,
+      "confidence": 89,
       "confidence_label": "High",
       "data_date": "2026-07-17",
       "change_1d_pct": -0.12,
@@ -155,6 +239,28 @@
         "momentum": 2.75,
         "volatility": 5.0
       },
+      "macro_component_scores": {
+        "policy": 2.93,
+        "growth": 1.08,
+        "inflation": 1.71
+      },
+      "policy_rate_pct": 2.25,
+      "policy_rate_6m_change_bps": 25.0,
+      "policy_rate_12m_change_bps": 25.0,
+      "policy_rate_percentile_5y": 54.1,
+      "policy_data_date": "2026-06-01",
+      "growth_current_year": 2026,
+      "growth_current_pct": 1.3,
+      "growth_next_year": 2027,
+      "growth_next_pct": 1.4,
+      "growth_vs_sgd_current_pp": -2.2,
+      "growth_vs_sgd_next_pp": -1.3,
+      "inflation_current_year": 2026,
+      "inflation_current_pct": 3.4,
+      "inflation_next_year": 2027,
+      "inflation_next_pct": 2.8,
+      "inflation_vs_sgd_current_pp": 1.1,
+      "inflation_vs_sgd_next_pp": 0.9,
       "validation_rate_sgd": 1.4771,
       "validation_difference_pct": 0.04,
       "validation_status": "Excellent",
@@ -162,6 +268,11 @@
         "5-year valuation is mid-range at the 62nd cost percentile.",
         "One-month price movement is relatively stable.",
         "Current cost is below its 200-day average, supporting longer-term value."
+      ],
+      "macro_drivers": [
+        "European Central Bank policy rate is 2.25% and up 25 bp over 6 months.",
+        "IMF real-GDP growth outlook is 2026: 1.3%; 2027: 1.4%, 1.3 pp below Singapore next year.",
+        "IMF inflation outlook is 2026: 3.4%; 2027: 2.8%, 0.9 pp above Singapore next year."
       ]
     },
     {
@@ -171,11 +282,15 @@
       "unit": 1,
       "rate_sgd": 0.315316,
       "inverse_per_sgd": 3.171419,
-      "score": 2.46,
+      "score": 2.6,
+      "market_score": 2.46,
+      "macro_score": 2.92,
+      "macro_coverage_pct": 100,
+      "effective_macro_weight_pct": 30,
       "recommendation": "Wait",
       "suggested_action": "Wait for a better rate unless funds are needed",
       "suggested_buy_pct": 0,
-      "confidence": 82,
+      "confidence": 89,
       "confidence_label": "High",
       "data_date": "2026-07-17",
       "change_1d_pct": -0.39,
@@ -205,6 +320,28 @@
         "momentum": 2.81,
         "volatility": 4.51
       },
+      "macro_component_scores": {
+        "policy": 2.54,
+        "growth": 3.79,
+        "inflation": 2.58
+      },
+      "policy_rate_pct": 2.75,
+      "policy_rate_6m_change_bps": 0.0,
+      "policy_rate_12m_change_bps": -25.0,
+      "policy_rate_percentile_5y": 57.4,
+      "policy_data_date": "2026-06-01",
+      "growth_current_year": 2026,
+      "growth_current_pct": 4.7,
+      "growth_next_year": 2027,
+      "growth_next_pct": 4.3,
+      "growth_vs_sgd_current_pp": 1.2,
+      "growth_vs_sgd_next_pp": 1.6,
+      "inflation_current_year": 2026,
+      "inflation_current_pct": 1.9,
+      "inflation_next_year": 2027,
+      "inflation_next_pct": 2.0,
+      "inflation_vs_sgd_current_pp": -0.4,
+      "inflation_vs_sgd_next_pp": 0.1,
       "validation_rate_sgd": 0.3149,
       "validation_difference_pct": 0.13,
       "validation_status": "Excellent",
@@ -212,6 +349,11 @@
         "5-year valuation is mid-range at the 71st cost percentile.",
         "One-month price movement is relatively stable.",
         "Current cost is below its 200-day average, supporting longer-term value."
+      ],
+      "macro_drivers": [
+        "Bank Negara Malaysia policy rate is 2.75% and unchanged.",
+        "IMF real-GDP growth outlook is 2026: 4.7%; 2027: 4.3%, 1.6 pp above Singapore next year.",
+        "IMF inflation outlook is 2026: 1.9%; 2027: 2.0%, 0.1 pp above Singapore next year."
       ]
     },
     {
@@ -221,11 +363,15 @@
       "unit": 1,
       "rate_sgd": 0.900634,
       "inverse_per_sgd": 1.110328,
-      "score": 2.08,
-      "recommendation": "Expensive",
-      "suggested_action": "Avoid a large discretionary purchase",
+      "score": 2.33,
+      "market_score": 2.08,
+      "macro_score": 2.9,
+      "macro_coverage_pct": 100,
+      "effective_macro_weight_pct": 30,
+      "recommendation": "Wait",
+      "suggested_action": "Wait for a better rate unless funds are needed",
       "suggested_buy_pct": 0,
-      "confidence": 82,
+      "confidence": 89,
       "confidence_label": "High",
       "data_date": "2026-07-17",
       "change_1d_pct": -0.31,
@@ -255,6 +401,28 @@
         "momentum": 2.54,
         "volatility": 4.46
       },
+      "macro_component_scores": {
+        "policy": 4.41,
+        "growth": 1.39,
+        "inflation": 1.37
+      },
+      "policy_rate_pct": 4.35,
+      "policy_rate_6m_change_bps": 75.0,
+      "policy_rate_12m_change_bps": 50.0,
+      "policy_rate_percentile_5y": 100.0,
+      "policy_data_date": "2026-06-01",
+      "growth_current_year": 2026,
+      "growth_current_pct": 2.0,
+      "growth_next_year": 2027,
+      "growth_next_pct": 1.7,
+      "growth_vs_sgd_current_pp": -1.5,
+      "growth_vs_sgd_next_pp": -1.0,
+      "inflation_current_year": 2026,
+      "inflation_current_pct": 4.0,
+      "inflation_next_year": 2027,
+      "inflation_next_pct": 3.2,
+      "inflation_vs_sgd_current_pp": 1.7,
+      "inflation_vs_sgd_next_pp": 1.3,
       "validation_rate_sgd": 0.8994,
       "validation_difference_pct": 0.14,
       "validation_status": "Excellent",
@@ -262,6 +430,11 @@
         "5-year valuation is mid-range at the 60th cost percentile.",
         "One-month price movement is relatively stable.",
         "Current cost is above its 200-day average, reducing timing attractiveness."
+      ],
+      "macro_drivers": [
+        "Reserve Bank of Australia policy rate is 4.35% and up 75 bp over 6 months.",
+        "IMF real-GDP growth outlook is 2026: 2.0%; 2027: 1.7%, 1.0 pp below Singapore next year.",
+        "IMF inflation outlook is 2026: 4.0%; 2027: 3.2%, 1.3 pp above Singapore next year."
       ]
     },
     {
@@ -271,11 +444,15 @@
       "unit": 1,
       "rate_sgd": 1.735058,
       "inverse_per_sgd": 0.576349,
-      "score": 1.67,
+      "score": 1.66,
+      "market_score": 1.67,
+      "macro_score": 1.64,
+      "macro_coverage_pct": 100,
+      "effective_macro_weight_pct": 30,
       "recommendation": "Expensive",
       "suggested_action": "Avoid a large discretionary purchase",
       "suggested_buy_pct": 0,
-      "confidence": 82,
+      "confidence": 89,
       "confidence_label": "High",
       "data_date": "2026-07-17",
       "change_1d_pct": -0.38,
@@ -305,6 +482,28 @@
         "momentum": 2.13,
         "volatility": 4.75
       },
+      "macro_component_scores": {
+        "policy": 1.93,
+        "growth": 0.94,
+        "inflation": 1.96
+      },
+      "policy_rate_pct": 3.75,
+      "policy_rate_6m_change_bps": -25.0,
+      "policy_rate_12m_change_bps": -50.0,
+      "policy_rate_percentile_5y": 44.3,
+      "policy_data_date": "2026-06-01",
+      "growth_current_year": 2026,
+      "growth_current_pct": 0.8,
+      "growth_next_year": 2027,
+      "growth_next_pct": 1.3,
+      "growth_vs_sgd_current_pp": -2.7,
+      "growth_vs_sgd_next_pp": -1.4,
+      "inflation_current_year": 2026,
+      "inflation_current_pct": 3.2,
+      "inflation_next_year": 2027,
+      "inflation_next_pct": 2.4,
+      "inflation_vs_sgd_current_pp": 0.9,
+      "inflation_vs_sgd_next_pp": 0.5,
       "validation_rate_sgd": 1.7364,
       "validation_difference_pct": 0.08,
       "validation_status": "Excellent",
@@ -312,6 +511,11 @@
         "5-year valuation is mid-range at the 78th cost percentile.",
         "One-month price movement is relatively stable.",
         "Current cost is above its 200-day average, reducing timing attractiveness."
+      ],
+      "macro_drivers": [
+        "Bank of England policy rate is 3.75% and down 25 bp over 6 months.",
+        "IMF real-GDP growth outlook is 2026: 0.8%; 2027: 1.3%, 1.4 pp below Singapore next year.",
+        "IMF inflation outlook is 2026: 3.2%; 2027: 2.4%, 0.5 pp above Singapore next year."
       ]
     }
   ]
