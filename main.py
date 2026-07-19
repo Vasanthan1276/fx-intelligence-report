@@ -43,12 +43,12 @@ CURRENCY_CONFIG = {
     "MYR": {"name": "Malaysian Ringgit", "symbol": "RM", "unit": 1, "yf": "MYRSGD=X"},
 }
 
-MODEL_VERSION = "1.0-phase1"
+MODEL_VERSION = "1.1-phase1b"
 MODEL_WEIGHTS = {
-    "historical_value": 0.55,
+    "historical_value": 0.50,
     "trend_timing": 0.25,
     "momentum": 0.15,
-    "volatility": 0.05,
+    "volatility": 0.10,
 }
 
 
@@ -82,6 +82,12 @@ class CurrencySignal:
     ma200: Optional[float]
     rsi14: Optional[float]
     annualized_volatility_pct: Optional[float]
+    fair_value_sgd: Optional[float]
+    buy_zone_upper_sgd: Optional[float]
+    strong_buy_level_sgd: Optional[float]
+    exceptional_buy_level_sgd: Optional[float]
+    distance_to_buy_zone_pct: Optional[float]
+    zone_status: str
     component_scores: Dict[str, float]
     validation_rate_sgd: Optional[float]
     validation_difference_pct: Optional[float]
@@ -288,7 +294,8 @@ def historical_value_score(series: pd.Series) -> Tuple[float, Dict[str, Optional
         for key, pct in percentiles.items()
     }
     score = weighted_average(
-        [(scores["1y"], 0.50), (scores["3y"], 0.30), (scores["5y"], 0.20)]
+        # FX valuation benefits from a longer horizon, so 3Y/5Y history carries more weight.
+        [(scores["1y"], 0.25), (scores["3y"], 0.35), (scores["5y"], 0.40)]
     )
     return float(np.clip(score, 0, 5)), percentiles
 
@@ -319,10 +326,10 @@ def rsi_timing_score(rsi: Optional[float]) -> Optional[float]:
 
 def trend_timing_score(current: float, ma20: Optional[float], ma50: Optional[float], ma200: Optional[float], rsi: Optional[float]) -> float:
     return float(np.clip(weighted_average([
-        (relative_to_ma_score(current, ma20, 0.025), 0.35),
+        (relative_to_ma_score(current, ma20, 0.025), 0.25),
         (relative_to_ma_score(current, ma50, 0.040), 0.35),
-        (relative_to_ma_score(current, ma200, 0.080), 0.20),
-        (rsi_timing_score(rsi), 0.10),
+        (relative_to_ma_score(current, ma200, 0.080), 0.25),
+        (rsi_timing_score(rsi), 0.15),
     ]), 0, 5))
 
 
@@ -352,6 +359,58 @@ def volatility_score(series: pd.Series) -> Tuple[float, Optional[float]]:
     # Typical developed-market FX volatility often falls inside a broad single-digit to low-teens range.
     score = 5.0 - ((annualized - 3.0) / 12.0) * 4.0
     return float(np.clip(score, 1.0, 5.0)), annualized
+
+
+
+def calculate_buy_zones(series: pd.Series) -> Dict[str, Optional[float]]:
+    """Calculate transparent valuation thresholds from the latest five years.
+
+    Because the series is the SGD cost of buying foreign currency, lower values are
+    better for an SGD buyer. The thresholds are deliberately based on long-run
+    percentiles rather than short-term forecasts.
+    """
+    end = series.index[-1]
+    window = series.loc[series.index >= end - pd.DateOffset(years=5)].dropna()
+    if len(window) < 250:
+        return {
+            "exceptional_buy_level": None,
+            "strong_buy_level": None,
+            "buy_zone_upper": None,
+            "fair_value": None,
+        }
+
+    return {
+        "exceptional_buy_level": float(window.quantile(0.10)),
+        "strong_buy_level": float(window.quantile(0.20)),
+        "buy_zone_upper": float(window.quantile(0.35)),
+        "fair_value": float(window.quantile(0.50)),
+    }
+
+
+def zone_status_from_rate(current: float, zones: Dict[str, Optional[float]]) -> str:
+    exceptional = zones.get("exceptional_buy_level")
+    strong = zones.get("strong_buy_level")
+    buy = zones.get("buy_zone_upper")
+    fair = zones.get("fair_value")
+
+    if exceptional is not None and current <= exceptional:
+        return "Exceptional Value Zone"
+    if strong is not None and current <= strong:
+        return "Strong Buy Zone"
+    if buy is not None and current <= buy:
+        return "Buy Zone"
+    if fair is not None and current <= fair:
+        return "Fair / Accumulate Zone"
+    return "Above Fair Value"
+
+
+def ordinal(value: float) -> str:
+    number = int(round(value))
+    if 10 <= number % 100 <= 20:
+        suffix = "th"
+    else:
+        suffix = {1: "st", 2: "nd", 3: "rd"}.get(number % 10, "th")
+    return f"{number}{suffix}"
 
 
 def recommendation_from_score(score: float) -> Tuple[str, str, int]:
@@ -422,7 +481,7 @@ def build_drivers(
         elif percentile_5y >= 80:
             drivers.append(f"Historically expensive: current cost is in the highest {round(100 - percentile_5y)}% from the top of the 5-year range.")
         else:
-            drivers.append(f"5-year valuation is mid-range at the {round(percentile_5y)}th cost percentile.")
+            drivers.append(f"5-year valuation is mid-range at the {ordinal(percentile_5y)} cost percentile.")
 
     if change_30d is not None:
         if change_30d <= -2:
@@ -474,6 +533,14 @@ def analyse_currency(code: str, series: pd.Series, validation_rates: Dict[str, f
     timing_score = trend_timing_score(current, ma20, ma50, ma200, rsi)
     mom_score = momentum_score(change_7d, change_30d, rsi)
     vol_score, annualized_vol = volatility_score(series)
+    buy_zones = calculate_buy_zones(series)
+    zone_status = zone_status_from_rate(current, buy_zones)
+
+    buy_zone_upper = buy_zones.get("buy_zone_upper")
+    distance_to_buy_zone = None
+    if buy_zone_upper is not None and current > 0:
+        # Positive means the SGD cost would need to fall by this percentage to enter the buy zone.
+        distance_to_buy_zone = max(0.0, (current / buy_zone_upper - 1.0) * 100.0)
 
     component_scores = {
         "historical_value": round(historical_score, 2),
@@ -540,6 +607,12 @@ def analyse_currency(code: str, series: pd.Series, validation_rates: Dict[str, f
         ma200=None if ma200 is None else round(ma200, 6),
         rsi14=None if rsi is None else round(rsi, 1),
         annualized_volatility_pct=None if annualized_vol is None else round(annualized_vol, 2),
+        fair_value_sgd=None if buy_zones.get("fair_value") is None else round(float(buy_zones["fair_value"]), 6),
+        buy_zone_upper_sgd=None if buy_zones.get("buy_zone_upper") is None else round(float(buy_zones["buy_zone_upper"]), 6),
+        strong_buy_level_sgd=None if buy_zones.get("strong_buy_level") is None else round(float(buy_zones["strong_buy_level"]), 6),
+        exceptional_buy_level_sgd=None if buy_zones.get("exceptional_buy_level") is None else round(float(buy_zones["exceptional_buy_level"]), 6),
+        distance_to_buy_zone_pct=None if distance_to_buy_zone is None else round(float(distance_to_buy_zone), 2),
+        zone_status=zone_status,
         component_scores=component_scores,
         validation_rate_sgd=None if validation_rate is None else round(validation_rate, 6),
         validation_difference_pct=None if validation_diff is None else round(validation_diff, 2),
@@ -587,6 +660,9 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
         "date": run_date,
         "scores": {signal.code: signal.score for signal in signals},
         "recommendations": {signal.code: signal.recommendation for signal in signals},
+        "rates_sgd": {signal.code: signal.rate_sgd for signal in signals},
+        "buy_zone_upper_sgd": {signal.code: signal.buy_zone_upper_sgd for signal in signals},
+        "zone_status": {signal.code: signal.zone_status for signal in signals},
     }
 
     # Replace an existing entry for the same market date instead of duplicating it.
@@ -614,7 +690,7 @@ def main() -> None:
         "latest_market_date": latest_market_date,
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
-        "phase": "Phase 1 — valuation, trend, momentum and volatility",
+        "phase": "Phase 1B — refined FX scoring and dynamic historical buy zones",
         "primary_source": source_name,
         "validation_source": "Yahoo Finance market snapshot (validation only)" if validation_rates else "Unavailable",
         "model_weights": MODEL_WEIGHTS,
