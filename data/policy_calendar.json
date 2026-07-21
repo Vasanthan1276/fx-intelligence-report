@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-20T18:29:31.183529+00:00",
+  "generated_at_utc": "2026-07-21T17:54:01.585697+00:00",
   "model_version": "2.2-phase2c-baseline",
   "note": "Official 2026 decision dates embedded for reliable daily event-risk scoring.",
   "sources": {
@@ -69,37 +69,37 @@
   "next_events": {
     "JPY": {
       "next_policy_meeting_date": "2026-07-31",
-      "days_to_policy_meeting": 11,
+      "days_to_policy_meeting": 10,
       "event_risk_label": "Elevated",
       "policy_calendar_source": "Bank of Japan MPM schedule"
     },
     "USD": {
       "next_policy_meeting_date": "2026-07-29",
-      "days_to_policy_meeting": 9,
+      "days_to_policy_meeting": 8,
       "event_risk_label": "Elevated",
       "policy_calendar_source": "Federal Reserve FOMC calendar"
     },
     "EUR": {
       "next_policy_meeting_date": "2026-07-23",
-      "days_to_policy_meeting": 3,
+      "days_to_policy_meeting": 2,
       "event_risk_label": "Very high",
       "policy_calendar_source": "ECB Governing Council calendar"
     },
     "MYR": {
       "next_policy_meeting_date": "2026-09-03",
-      "days_to_policy_meeting": 45,
+      "days_to_policy_meeting": 44,
       "event_risk_label": "Normal",
       "policy_calendar_source": "Bank Negara Malaysia MPC schedule"
     },
     "AUD": {
       "next_policy_meeting_date": "2026-08-11",
-      "days_to_policy_meeting": 22,
+      "days_to_policy_meeting": 21,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "Reserve Bank of Australia board schedule"
     },
     "GBP": {
       "next_policy_meeting_date": "2026-07-30",
-      "days_to_policy_meeting": 10,
+      "days_to_policy_meeting": 9,
       "event_risk_label": "Elevated",
       "policy_calendar_source": "Bank of England MPC calendar"
     }
