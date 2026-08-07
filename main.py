@@ -50,7 +50,7 @@ CURRENCY_CONFIG = {
 }
 
 MODEL_VERSION = "2.2-phase2c-baseline"
-APP_RELEASE = "3.2-phase3a2-relevance-filtered"
+APP_RELEASE = "3.3-phase3a3-direction-semantics"
 PERFORMANCE_HORIZONS = (1, 5, 10, 20)
 PERFORMANCE_NEUTRAL_BAND_PCT = 0.10
 
@@ -189,7 +189,16 @@ NEWS_DIRECTIONAL_THRESHOLD_HIGH = 3.10
 NEWS_DIRECTIONAL_THRESHOLD_LOW = 1.90
 NEWS_NEUTRAL_BAND_PCT = 0.10
 
-# Phase 3A.2 retains several targeted searches but filters every result for direct relevance.
+# Phase 3A.3 request hardening. Successful GDELT responses are cached for a few
+# hours so the backup GitHub Actions run does not immediately repeat the same
+# burst of queries. Calls are also paced and 429 responses use a longer backoff.
+GDELT_CACHE_PATH = DATA_DIR / "gdelt_query_cache.json"
+GDELT_CACHE_TTL_MINUTES = 180
+GDELT_MIN_REQUEST_INTERVAL_SECONDS = 2.0
+_GDELT_LAST_REQUEST_MONOTONIC = 0.0
+_GDELT_RUN_STATS = {"cache_hits": 0, "api_calls": 0, "rate_limit_retries": 0}
+
+# Phase 3A.3 retains targeted searches but filters every result for direct relevance and pair semantics.
 # If the recent search is thin, it automatically widens the lookback to seven days.
 NEWS_QUERY_PLANS = {
     "USD": [
@@ -254,10 +263,21 @@ OFFICIAL_GDELT_DOMAINS = {
     "CHF": ["snb.ch"],
 }
 OFFICIAL_RELEVANCE_TERMS = (
-    "monetary policy", "interest rate", "interest rates", "policy rate", "inflation",
-    "economic outlook", "economy", "growth", "gdp", "employment", "labour", "labor",
-    "exchange rate", "currency", "dollar", "yen", "euro", "sterling", "pound",
-    "ringgit", "franc", "wage", "wages", "price stability", "rate decision",
+    "monetary policy", "interest rate", "interest rates", "policy rate", "rate decision",
+    "inflation", "consumer prices", "economic outlook", "growth", "gdp", "employment",
+    "unemployment", "labour market", "labor market", "wage", "wages", "price stability",
+    "exchange rate", "foreign exchange", "currency intervention", "fx intervention",
+    "financial conditions", "economic activity",
+)
+OFFICIAL_ADMIN_NOISE_PATTERNS = (
+    "meeting schedule", "schedule of monetary policy", "schedule of meetings", "calendar", "event schedule", "agenda", "accessibility",
+    "webcast", "conference registration", "seminar", "vacancy", "job opening",
+    "appointment", "procurement", "tender", "technical notice",
+)
+OFFICIAL_DECISION_OR_DATA_TERMS = (
+    "decision", "statement", "minutes", "summary of opinions", "outlook", "forecast",
+    "rate", "inflation", "consumer prices", "growth", "gdp", "employment", "unemployment",
+    "wages", "exchange rate", "foreign exchange", "intervention", "financial conditions",
 )
 
 # Headline-only directional lexicon. Positive means the foreign currency may
@@ -301,7 +321,7 @@ FX_SPECIALIST_NEWS_DOMAINS = {
     "investing.com", "fxstreet.com", "forexlive.com",
 }
 
-# Phase 3A.2 hard relevance gate. A media headline must clearly refer to the
+# Phase 3A.3 hard relevance gate. A media headline must clearly refer to the
 # target currency, target central bank, or the target economy in an FX-relevant
 # macro context. Generic exchange-rate tables and unrelated finance stories are
 # rejected before they can influence the shadow signal.
@@ -377,6 +397,20 @@ TARGET_DIRECTION_ALIASES = {
     "AUD": ("australian dollar", "aussie"),
     "MYR": ("malaysian ringgit", "ringgit"),
     "CHF": ("swiss franc", "franc"),
+}
+
+# Pair-aware aliases are intentionally more specific than the general headline
+# aliases above. This avoids treating every occurrence of "dollar" as USD when a
+# headline is actually discussing another dollar currency.
+CROSS_CURRENCY_ALIASES = {
+    "USD": ("us dollar", "u.s. dollar", "greenback", "usd"),
+    "JPY": ("japanese yen", "yen", "jpy"),
+    "EUR": ("euro", "eur"),
+    "GBP": ("sterling", "british pound", "gbp"),
+    "AUD": ("australian dollar", "aussie", "aud"),
+    "MYR": ("malaysian ringgit", "ringgit", "myr"),
+    "CHF": ("swiss franc", "franc", "chf"),
+    "SGD": ("singapore dollar", "singapore dollars", "sgd"),
 }
 
 POSITIVE_CURRENCY_VERBS = (
@@ -566,15 +600,32 @@ def _article_relevance(
     macro_hits = [term for term in NEWS_MACRO_TERMS if _contains_phrase(text, term)]
     fx_hits = [term for term in NEWS_FX_CONTEXT_TERMS if _contains_phrase(text, term)]
     noise_hits = [term for term in NEWS_NOISE_PATTERNS if _contains_phrase(text, term)]
+    official_topic_hits = [term for term in OFFICIAL_RELEVANCE_TERMS if _contains_phrase(text, term)]
+    official_admin_hits = [term for term in OFFICIAL_ADMIN_NOISE_PATTERNS if _contains_phrase(text, term)]
+    official_decision_hits = [term for term in OFFICIAL_DECISION_OR_DATA_TERMS if _contains_phrase(text, term)]
 
     target_official = official or _domain_in(domain, OFFICIAL_SOURCE_DOMAINS)
     high_quality = _domain_in(domain, HIGH_QUALITY_NEWS_DOMAINS) or _domain_in(domain, FX_SPECIALIST_NEWS_DOMAINS)
 
     reasons: List[str] = []
     score = 0
-    if target_official and (macro_hits or direct_hits or cb_hits):
-        score = 100
-        reasons.append("target official source")
+
+    # Phase 3A.3: an official-domain item is not automatically FX-relevant.
+    # Administrative calendars, accessibility notices and similar announcements
+    # are rejected unless the title/summary also contains a genuine policy,
+    # macro-data, rate, FX or economic decision/data signal.
+    if target_official:
+        if not official_topic_hits:
+            return False, 0, [], "official item lacks policy/macro/FX topic"
+        if official_admin_hits and not official_decision_hits:
+            return False, 0, [], f"official administrative item: {official_admin_hits[0]}"
+        score = 96
+        reasons.append("official policy/macro/FX content")
+        if cb_hits:
+            score = 100
+            reasons.append("target central bank")
+        elif direct_hits:
+            reasons.append("target currency/economy named")
     elif cb_hits:
         score = 92
         reasons.append("target central bank")
@@ -588,6 +639,8 @@ def _article_relevance(
         score = 74
         reasons.append("target currency + FX context")
 
+    # "Dollar" and "pound" are ambiguous terms. Require stronger contextual
+    # evidence unless the full target name or target central bank is present.
     if code in {"USD", "GBP"} and score < 86 and alias_hits:
         if not ((high_quality and fx_hits) or country_hits or cb_hits):
             score = 0
@@ -599,14 +652,91 @@ def _article_relevance(
         score -= 12
         reasons.append("noise penalty")
 
-    threshold = 62 if target_official else (68 if high_quality else 78)
+    threshold = 68 if target_official else (68 if high_quality else 78)
     if score < threshold:
         return False, score, reasons, "insufficient target relevance"
     return True, int(max(0, min(100, score))), reasons[:3], None
 
 
+def _cross_currency_direction(code: str, text: str) -> Optional[Tuple[float, str, List[str]]]:
+    """Interpret explicit pair relationships from the target currency's viewpoint.
+
+    Examples:
+      USD weakens against JPY -> JPY strengthening
+      GBP rises versus AUD -> AUD weakening
+      USD/SGD falls -> USD weakening
+    The score is intentionally moderate; it is one headline signal, not a forecast.
+    """
+    haystack = re.sub(r"\s+", " ", (text or "").lower()).strip()
+    if not haystack:
+        return None
+
+    positive_verbs = (
+        "strengthens", "strengthen", "rises", "rise", "gains", "gain", "rallies", "rally",
+        "climbs", "climb", "advances", "advance", "surges", "surge", "firms", "firm",
+        "outperforms", "outperform",
+    )
+    negative_verbs = (
+        "weakens", "weaken", "falls", "fall", "slides", "slide", "drops", "drop",
+        "declines", "decline", "slips", "slip", "retreats", "retreat", "underperforms",
+        "underperform",
+    )
+
+    # Ticker-pair semantics. In BASE/QUOTE, a rise means BASE strengthens relative
+    # to QUOTE; a fall means BASE weakens relative to QUOTE.
+    ticker_match = re.search(
+        r"\b([a-z]{3})\s*/\s*([a-z]{3})\b.{0,24}\b("
+        + "|".join(re.escape(v) for v in positive_verbs + negative_verbs)
+        + r")\b",
+        haystack,
+    )
+    if ticker_match:
+        base, quote, verb = ticker_match.groups()
+        base = base.upper()
+        quote = quote.upper()
+        if code in {base, quote} and base in CROSS_CURRENCY_ALIASES and quote in CROSS_CURRENCY_ALIASES:
+            sign = 1 if verb in positive_verbs else -1
+            target_sign = sign if code == base else -sign
+            score = 3.75 if target_sign > 0 else 1.25
+            direction = "strengthening" if target_sign > 0 else "weakening"
+            return score, direction, [f"pair-aware: {base}/{quote} {verb}"]
+
+    relation = r"(?:against|versus|vs\.?|relative to)"
+    for src_code, src_aliases in CROSS_CURRENCY_ALIASES.items():
+        for dst_code, dst_aliases in CROSS_CURRENCY_ALIASES.items():
+            if src_code == dst_code or code not in {src_code, dst_code}:
+                continue
+            for src_alias in src_aliases:
+                for dst_alias in dst_aliases:
+                    src = re.escape(src_alias)
+                    dst = re.escape(dst_alias)
+                    for verb in positive_verbs:
+                        pattern = rf"\b{src}\b.{{0,18}}\b{re.escape(verb)}\b.{{0,28}}\b{relation}\b.{{0,22}}\b{dst}\b"
+                        if re.search(pattern, haystack):
+                            target_sign = 1 if code == src_code else -1
+                            score = 3.75 if target_sign > 0 else 1.25
+                            direction = "strengthening" if target_sign > 0 else "weakening"
+                            return score, direction, [f"pair-aware: {src_code} {verb} vs {dst_code}"]
+                    for verb in negative_verbs:
+                        pattern = rf"\b{src}\b.{{0,18}}\b{re.escape(verb)}\b.{{0,28}}\b{relation}\b.{{0,22}}\b{dst}\b"
+                        if re.search(pattern, haystack):
+                            target_sign = -1 if code == src_code else 1
+                            score = 3.75 if target_sign > 0 else 1.25
+                            direction = "strengthening" if target_sign > 0 else "weakening"
+                            return score, direction, [f"pair-aware: {src_code} {verb} vs {dst_code}"]
+    return None
+
+
 def _headline_direction(code: str, title: str) -> Tuple[float, str, List[str]]:
     text = re.sub(r"\s+", " ", (title or "").lower()).strip()
+
+    # Explicit pair semantics take precedence over proximity-based keyword
+    # matching. This prevents "US dollar weakens against the Japanese yen" from
+    # being misread as yen weakness simply because "weakens" is close to "yen".
+    cross = _cross_currency_direction(code, text)
+    if cross is not None:
+        return cross
+
     positive = 0.0
     negative = 0.0
     hits: List[str] = []
@@ -762,8 +892,13 @@ def _is_recent_iso(seen_iso: Optional[str], days: int) -> bool:
 
 
 def _official_relevant(text: str) -> bool:
-    haystack = (text or "").lower()
-    return any(term in haystack for term in OFFICIAL_RELEVANCE_TERMS)
+    haystack = re.sub(r"\s+", " ", (text or "").lower()).strip()
+    if not any(_contains_phrase(haystack, term) for term in OFFICIAL_RELEVANCE_TERMS):
+        return False
+    admin_hits = [term for term in OFFICIAL_ADMIN_NOISE_PATTERNS if _contains_phrase(haystack, term)]
+    if admin_hits and not any(_contains_phrase(haystack, term) for term in OFFICIAL_DECISION_OR_DATA_TERMS):
+        return False
+    return True
 
 
 def _parse_official_feed(code: str, feed_name: str, feed_url: str) -> Tuple[List[dict], Optional[str]]:
@@ -846,6 +981,77 @@ def fetch_official_news_for_currency(code: str) -> Tuple[List[dict], List[str]]:
     return articles, errors
 
 
+def _load_gdelt_cache() -> dict:
+    try:
+        payload = json.loads(GDELT_CACHE_PATH.read_text(encoding="utf-8")) if GDELT_CACHE_PATH.exists() else {}
+        entries = payload.get("entries") or {}
+        return {"entries": entries if isinstance(entries, dict) else {}}
+    except Exception:
+        return {"entries": {}}
+
+
+def _save_gdelt_cache(cache: dict) -> None:
+    try:
+        entries = cache.get("entries") or {}
+        # Keep the file compact and deterministic.
+        if len(entries) > 180:
+            ranked = sorted(
+                entries.items(),
+                key=lambda kv: str((kv[1] or {}).get("fetched_at_utc") or ""),
+                reverse=True,
+            )[:180]
+            entries = dict(ranked)
+        GDELT_CACHE_PATH.write_text(
+            json.dumps({"updated_at_utc": datetime.now(timezone.utc).isoformat(), "entries": entries}, indent=2),
+            encoding="utf-8",
+        )
+    except Exception:
+        pass
+
+
+def _gdelt_cache_key(query: str, timespan: str) -> str:
+    return f"{timespan}|{query}"
+
+
+def _gdelt_cache_get(query: str, timespan: str) -> Optional[dict]:
+    cache = _load_gdelt_cache()
+    entry = (cache.get("entries") or {}).get(_gdelt_cache_key(query, timespan))
+    if not isinstance(entry, dict):
+        return None
+    fetched_at = entry.get("fetched_at_utc")
+    payload = entry.get("payload")
+    if not fetched_at or not isinstance(payload, dict):
+        return None
+    try:
+        ts = pd.Timestamp(fetched_at)
+        now = pd.Timestamp.now(tz="UTC")
+        age_minutes = (now - ts).total_seconds() / 60.0
+        if age_minutes < 0 or age_minutes > GDELT_CACHE_TTL_MINUTES:
+            return None
+    except Exception:
+        return None
+    _GDELT_RUN_STATS["cache_hits"] += 1
+    return payload
+
+
+def _gdelt_cache_put(query: str, timespan: str, payload: dict) -> None:
+    cache = _load_gdelt_cache()
+    cache.setdefault("entries", {})[_gdelt_cache_key(query, timespan)] = {
+        "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
+        "payload": payload,
+    }
+    _save_gdelt_cache(cache)
+
+
+def _pace_gdelt_request() -> None:
+    global _GDELT_LAST_REQUEST_MONOTONIC
+    now = time.monotonic()
+    elapsed = now - _GDELT_LAST_REQUEST_MONOTONIC if _GDELT_LAST_REQUEST_MONOTONIC else None
+    if elapsed is not None and elapsed < GDELT_MIN_REQUEST_INTERVAL_SECONDS:
+        time.sleep(GDELT_MIN_REQUEST_INTERVAL_SECONDS - elapsed)
+    _GDELT_LAST_REQUEST_MONOTONIC = time.monotonic()
+
+
 def fetch_gdelt_query(code: str, query: str, timespan: str, query_tag: str) -> Tuple[List[dict], Optional[str], int, int]:
     params = {
         "query": query,
@@ -855,19 +1061,34 @@ def fetch_gdelt_query(code: str, query: str, timespan: str, query_tag: str) -> T
         "sort": "HybridRel",
         "format": "json",
     }
+
+    payload = _gdelt_cache_get(query, timespan)
     last_error = None
-    payload = None
-    for attempt in range(3):
-        try:
-            response = _http_get(GDELT_DOC_API, params=params, timeout=25)
-            payload = response.json()
-            break
-        except Exception as exc:
-            last_error = exc
-            if attempt < 2:
-                time.sleep(2.0 * (attempt + 1))
     if payload is None:
-        return [], str(last_error)[:180] if last_error else "Unknown GDELT error", 0, 0
+        for attempt in range(3):
+            try:
+                _pace_gdelt_request()
+                _GDELT_RUN_STATS["api_calls"] += 1
+                response = _http_get(GDELT_DOC_API, params=params, timeout=30)
+                payload = response.json()
+                _gdelt_cache_put(query, timespan, payload)
+                break
+            except Exception as exc:
+                last_error = exc
+                status = getattr(getattr(exc, "response", None), "status_code", None)
+                if status == 429:
+                    _GDELT_RUN_STATS["rate_limit_retries"] += 1
+                    retry_after = getattr(getattr(exc, "response", None), "headers", {}).get("Retry-After")
+                    try:
+                        delay = max(6.0, float(retry_after))
+                    except Exception:
+                        delay = (7.0, 16.0, 30.0)[attempt]
+                else:
+                    delay = (3.0, 7.0, 15.0)[attempt]
+                if attempt < 2:
+                    time.sleep(delay)
+        if payload is None:
+            return [], str(last_error)[:180] if last_error else "Unknown GDELT error", 0, 0
 
     out: List[dict] = []
     retrieved = 0
@@ -1078,7 +1299,7 @@ def fetch_news_for_currency(code: str) -> Dict[str, object]:
         "articles": display_articles,
         "official_feed_errors": official_errors[:3],
         "query_errors": query_errors[:3],
-        "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
+        "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
     }
 
 
@@ -1086,6 +1307,7 @@ def fetch_news_shadow_snapshot() -> Tuple[Dict[str, dict], str]:
     snapshot: Dict[str, dict] = {}
     usable = 0
     thin = 0
+    _GDELT_RUN_STATS.update({"cache_hits": 0, "api_calls": 0, "rate_limit_retries": 0})
     for idx, code in enumerate(CURRENCY_CONFIG):
         result = fetch_news_for_currency(code)
         snapshot[code] = result
@@ -1095,10 +1317,12 @@ def fetch_news_shadow_snapshot() -> Tuple[Dict[str, dict], str]:
         elif quality == "Thin":
             thin += 1
         if idx < len(CURRENCY_CONFIG) - 1:
-            time.sleep(0.65)
+            time.sleep(0.35)
     source = (
-        f"Relevance-filtered GDELT + official central-bank communications "
-        f"({usable}/{len(CURRENCY_CONFIG)} usable; {thin} thin; {NEWS_LOOKBACK} + {NEWS_FALLBACK_LOOKBACK} fallback)"
+        f"Pair-aware relevance-filtered GDELT + official central-bank communications "
+        f"({usable}/{len(CURRENCY_CONFIG)} usable; {thin} thin; "
+        f"{_GDELT_RUN_STATS['api_calls']} API calls; {_GDELT_RUN_STATS['cache_hits']} cache hits; "
+        f"{_GDELT_RUN_STATS['rate_limit_retries']} rate-limit retries)"
     )
     return snapshot, source
 
@@ -1144,7 +1368,7 @@ def update_news_shadow_log(news_shadow: Dict[str, dict], signals: List[CurrencyS
     records = [r for r in records if r.get("run_date_sgt") != run_date_sgt]
     records.append(row)
     records = sorted(records, key=lambda r: r.get("run_date_sgt", ""))[-730:]
-    path.write_text(json.dumps({"phase": "3A.2-relevance-filtered-shadow", "records": records}, indent=2), encoding="utf-8")
+    path.write_text(json.dumps({"phase": "3A.3-direction-semantics-shadow", "records": records}, indent=2), encoding="utf-8")
 
 
 def _aggregate_shadow_performance(rows: List[dict]) -> dict:
@@ -1171,8 +1395,8 @@ def write_news_shadow_performance(series_map: Dict[str, pd.Series]) -> None:
         records = json.loads(log_path.read_text(encoding="utf-8")).get("records", [])
     except Exception:
         return
-    # Phase 3A.2 starts a clean validation series because headline relevance and
-    # direction classification changed materially from Phase 3A.1.
+    # Phase 3A.3 starts a clean validation series because pair-direction semantics
+    # and official-source admission changed materially from Phase 3A.2.
     records = [row for row in records if row.get("app_release") == APP_RELEASE]
     evaluations: List[dict] = []
     for row in records:
@@ -1222,12 +1446,12 @@ def write_news_shadow_performance(series_map: Dict[str, pd.Series]) -> None:
             by_currency[code][str(horizon)] = _aggregate_shadow_performance([r for r in hrows if r["currency"] == code])
     payload = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "phase": "Phase 3A.2 relevance-filtered shadow mode",
+        "phase": "Phase 3A.3 direction-semantics shadow mode",
         "app_release": APP_RELEASE,
         "horizons_trading_days": list(NEWS_SHADOW_HORIZONS),
         "directional_thresholds": {"strengthen_at_or_above": NEWS_DIRECTIONAL_THRESHOLD_HIGH, "weaken_at_or_below": NEWS_DIRECTIONAL_THRESHOLD_LOW},
         "neutral_move_band_pct": NEWS_NEUTRAL_BAND_PCT,
-        "definition": "Relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
+        "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
         "overall": overall,
         "by_currency": by_currency,
         "evaluations": evaluations[-5000:],
@@ -3003,7 +3227,7 @@ def main() -> None:
             }
             for code in CURRENCY_CONFIG
         }
-        news_source = "Phase 3A.2 news shadow unavailable for this run"
+        news_source = "Phase 3A.3 news shadow unavailable for this run"
 
     signals = [
         analyse_currency(
@@ -3044,13 +3268,13 @@ def main() -> None:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "run_date_sgt": news_run_date_sgt,
         "market_date": latest_market_date,
-        "phase": "Phase 3A.2 — relevance-filtered news/event shadow mode",
+        "phase": "Phase 3A.3 — direction semantics & source-quality shadow mode",
         "source": news_source,
         "lookback": NEWS_LOOKBACK,
         "fallback_lookback": NEWS_FALLBACK_LOOKBACK,
         "official_lookback_days": NEWS_OFFICIAL_LOOKBACK_DAYS,
         "shadow_only": True,
-        "note": "Relevance-filtered English-language headline and official central-bank intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
+        "note": "Pair-aware, relevance-filtered English-language headline and official central-bank intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
         "currencies": news_shadow,
     }
     (DATA_DIR / "news_shadow.json").write_text(json.dumps(current_news_payload, indent=2), encoding="utf-8")
@@ -3061,7 +3285,7 @@ def main() -> None:
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
         "app_release": APP_RELEASE,
-        "phase": "Phase 3A.2 — relevance-filtered news & event intelligence in shadow mode",
+        "phase": "Phase 3A.3 — direction semantics & source-quality news/event intelligence in shadow mode",
         "baseline_frozen": True,
         "shadow_mode": True,
         "news_run_date_sgt": news_run_date_sgt,
@@ -3082,8 +3306,8 @@ def main() -> None:
             "forward_outlook": FORWARD_OUTLOOK_WEIGHTS,
         },
         "scoring_note": (
-            "Phase 3A.2 keeps every Phase 2C baseline weight frozen. A separate relevance-filtered news/event layer applies a hard target-currency gate, "
-            "English-language filter, context-aware policy wording and minimum-evidence rule before any headline can enter the shadow signal. "
+            "Phase 3A.3 keeps every Phase 2C baseline weight frozen. A separate news/event layer applies a hard target-currency gate, pair-aware cross-currency direction semantics, "
+            "English-language filter, strict official-content relevance gate, context-aware policy wording and minimum-evidence rule before any headline can enter the shadow signal. "
             "It does not alter Opportunity, Forward Outlook, Buy Urgency, suggested tranche or recommendation. Shadow outcomes are evaluated "
             "independently at 1/5/10 trading-day horizons, and Thin/Unavailable coverage cannot become a directional call."
         ),
@@ -3104,7 +3328,7 @@ def main() -> None:
     write_news_shadow_performance(series_map)
 
     print(f"Updated {len(signals)} currencies using {source_name}. Market date: {latest_market_date}")
-    print(f"Phase 3A.2 shadow source: {news_source}. Shadow mode does not alter baseline recommendations.")
+    print(f"Phase 3A.3 shadow source: {news_source}. Shadow mode does not alter baseline recommendations.")
     for signal in signals:
         print(
             f"{signal.code}: opportunity {signal.opportunity_score:.2f}/5 | "
