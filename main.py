@@ -4,8 +4,11 @@ import io
 import json
 import math
 import os
+import re
+import time
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -46,7 +49,7 @@ CURRENCY_CONFIG = {
 }
 
 MODEL_VERSION = "2.2-phase2c-baseline"
-APP_RELEASE = "2.2-phase2c2-monitoring-chf"
+APP_RELEASE = "3.0-phase3a-shadow-news"
 PERFORMANCE_HORIZONS = (1, 5, 10, 20)
 PERFORMANCE_NEUTRAL_BAND_PCT = 0.10
 
@@ -170,6 +173,66 @@ IMF_GROWTH_INDICATOR = "NGDP_RPCH"
 IMF_INFLATION_INDICATOR = "PCPIPCH"
 
 
+# Phase 3A: news/event intelligence in SHADOW MODE.
+# This layer is deliberately observational. It does NOT change Opportunity,
+# Forward Outlook, Buy Urgency, suggested tranche, or the recommendation.
+# It is logged separately so we can later test whether it adds predictive value.
+GDELT_DOC_API = "https://api.gdeltproject.org/api/v2/doc/doc"
+NEWS_LOOKBACK = "72h"
+NEWS_MAX_ARTICLES = 20
+NEWS_SHADOW_HORIZONS = (1, 5, 10)
+NEWS_DIRECTIONAL_THRESHOLD_HIGH = 3.10
+NEWS_DIRECTIONAL_THRESHOLD_LOW = 1.90
+NEWS_NEUTRAL_BAND_PCT = 0.10
+
+NEWS_QUERIES = {
+    "USD": '("US dollar" OR "Federal Reserve" OR "Fed policy") (currency OR forex OR rates OR inflation OR economy)',
+    "JPY": '("Japanese yen" OR "Bank of Japan" OR "BOJ policy") (currency OR forex OR rates OR inflation OR economy)',
+    "EUR": '("euro currency" OR "European Central Bank" OR "ECB policy") (currency OR forex OR rates OR inflation OR economy)',
+    "GBP": '("British pound" OR sterling OR "Bank of England" OR "BOE policy") (currency OR forex OR rates OR inflation OR economy)',
+    "AUD": '("Australian dollar" OR "Reserve Bank of Australia" OR "RBA policy") (currency OR forex OR rates OR inflation OR economy)',
+    "MYR": '("Malaysian ringgit" OR "Bank Negara Malaysia" OR "BNM policy") (currency OR forex OR rates OR inflation OR economy)',
+    "CHF": '("Swiss franc" OR "Swiss National Bank" OR "SNB policy") (currency OR forex OR rates OR inflation OR economy)',
+}
+
+# Headline-only directional lexicon. Positive means the foreign currency may
+# strengthen (become more expensive in SGD terms); negative means weaken.
+NEWS_POSITIVE_PHRASES = {
+    "rate hike": 1.0, "rates hike": 1.0, "hikes rate": 1.0, "hikes rates": 1.0,
+    "hawkish": 0.9, "tightening": 0.7, "hike bets rise": 0.9, "hike odds rise": 0.9,
+    "cuts priced out": 0.8, "rate cuts priced out": 1.0, "inflation accelerates": 0.7,
+    "inflation hotter": 0.8, "inflation surprise": 0.5, "growth beats": 0.7,
+    "gdp beats": 0.7, "economy beats": 0.6, "stronger growth": 0.6,
+    "currency strengthens": 1.0, "currency rises": 0.9, "currency gains": 0.8,
+    "yen rises": 1.0, "yen strengthens": 1.0, "dollar rises": 0.9, "dollar strengthens": 1.0,
+    "euro rises": 0.9, "euro strengthens": 1.0, "sterling rises": 0.9, "pound rises": 0.9,
+    "franc rises": 0.9, "franc strengthens": 1.0, "ringgit rises": 0.9,
+    "australian dollar rises": 0.9, "safe haven demand": 0.7,
+}
+NEWS_NEGATIVE_PHRASES = {
+    "rate cut": 1.0, "rates cut": 1.0, "cuts rate": 1.0, "cuts rates": 1.0,
+    "dovish": 0.9, "easing": 0.7, "cut bets rise": 0.9, "cut odds rise": 0.9,
+    "hikes priced out": 0.8, "rate hikes priced out": 1.0, "inflation cools": 0.6,
+    "inflation slows": 0.6, "growth slows": 0.7, "gdp contracts": 0.9,
+    "recession": 0.8, "economic contraction": 0.8, "weaker growth": 0.6,
+    "currency weakens": 1.0, "currency falls": 0.9, "currency slides": 0.9,
+    "yen falls": 1.0, "yen weakens": 1.0, "dollar falls": 0.9, "dollar weakens": 1.0,
+    "euro falls": 0.9, "euro weakens": 1.0, "sterling falls": 0.9, "pound falls": 0.9,
+    "franc falls": 0.9, "franc weakens": 1.0, "ringgit falls": 0.9,
+    "australian dollar falls": 0.9,
+}
+
+OFFICIAL_SOURCE_DOMAINS = {
+    "federalreserve.gov", "boj.or.jp", "ecb.europa.eu", "bankofengland.co.uk",
+    "rba.gov.au", "bnm.gov.my", "snb.ch", "mas.gov.sg",
+}
+HIGH_QUALITY_NEWS_DOMAINS = {
+    "reuters.com", "bloomberg.com", "ft.com", "wsj.com", "cnbc.com",
+    "marketwatch.com", "nikkei.com", "channelnewsasia.com", "straitstimes.com",
+    "apnews.com", "bbc.com",
+}
+
+
 @dataclass
 class CurrencySignal:
     code: str
@@ -267,6 +330,342 @@ def _http_get(url: str, params: Optional[dict] = None, timeout: int = 45) -> req
     response = requests.get(url, params=params, headers=headers, timeout=timeout)
     response.raise_for_status()
     return response
+
+
+
+def _normalize_domain(value: str) -> str:
+    domain = (value or "").strip().lower()
+    domain = re.sub(r"^https?://", "", domain)
+    domain = domain.split("/")[0]
+    if domain.startswith("www."):
+        domain = domain[4:]
+    return domain
+
+
+def _parse_gdelt_date(value: object) -> Optional[str]:
+    if value in (None, ""):
+        return None
+    text = str(value).strip()
+    for fmt in ("%Y%m%dT%H%M%SZ", "%Y%m%d%H%M%S"):
+        try:
+            return datetime.strptime(text, fmt).replace(tzinfo=timezone.utc).isoformat()
+        except Exception:
+            pass
+    try:
+        ts = pd.to_datetime(text, utc=True, errors="coerce")
+        if pd.isna(ts):
+            return None
+        return ts.isoformat()
+    except Exception:
+        return None
+
+
+def _headline_direction(title: str) -> Tuple[float, str, List[str]]:
+    text = re.sub(r"\s+", " ", (title or "").lower()).strip()
+    positive = 0.0
+    negative = 0.0
+    hits: List[str] = []
+    for phrase, weight in NEWS_POSITIVE_PHRASES.items():
+        if phrase in text:
+            positive += float(weight)
+            hits.append(f"+{phrase}")
+    for phrase, weight in NEWS_NEGATIVE_PHRASES.items():
+        if phrase in text:
+            negative += float(weight)
+            hits.append(f"-{phrase}")
+    net = float(np.clip(positive - negative, -2.0, 2.0))
+    if abs(net) < 0.15:
+        return 2.5, "neutral", hits[:4]
+    score = float(np.clip(2.5 + 1.25 * net, 0, 5))
+    return score, ("strengthening" if net > 0 else "weakening"), hits[:4]
+
+
+def _source_weight(domain: str) -> float:
+    domain = _normalize_domain(domain)
+    if domain in OFFICIAL_SOURCE_DOMAINS or any(domain.endswith("." + d) for d in OFFICIAL_SOURCE_DOMAINS):
+        return 1.35
+    if domain in HIGH_QUALITY_NEWS_DOMAINS or any(domain.endswith("." + d) for d in HIGH_QUALITY_NEWS_DOMAINS):
+        return 1.18
+    return 1.0
+
+
+def _recency_weight(seen_iso: Optional[str]) -> float:
+    if not seen_iso:
+        return 0.85
+    try:
+        seen = pd.Timestamp(seen_iso)
+        now = pd.Timestamp.now(tz="UTC")
+        hours = max(0.0, (now - seen).total_seconds() / 3600.0)
+        if hours <= 18:
+            return 1.0
+        if hours <= 36:
+            return 0.90
+        if hours <= 72:
+            return 0.78
+        return 0.65
+    except Exception:
+        return 0.85
+
+
+def _news_bias_label(score: float, directional_count: int) -> str:
+    if directional_count == 0:
+        return "Insufficient directional signal"
+    if score >= 4.0:
+        return "Strong strengthening bias"
+    if score >= 3.1:
+        return "Strengthening bias"
+    if score <= 1.0:
+        return "Strong weakening bias"
+    if score <= 1.9:
+        return "Weakening bias"
+    return "Mixed / neutral"
+
+
+def fetch_gdelt_news_for_currency(code: str) -> Dict[str, object]:
+    query = NEWS_QUERIES[code]
+    params = {
+        "query": query,
+        "mode": "ArtList",
+        "maxrecords": NEWS_MAX_ARTICLES,
+        "timespan": NEWS_LOOKBACK,
+        "sort": "HybridRel",
+        "format": "json",
+    }
+    last_error = None
+    payload = None
+    for attempt in range(2):
+        try:
+            response = _http_get(GDELT_DOC_API, params=params, timeout=25)
+            payload = response.json()
+            break
+        except Exception as exc:
+            last_error = exc
+            if attempt == 0:
+                time.sleep(1.5)
+    if payload is None:
+        return {
+            "status": "Unavailable",
+            "score": 2.5,
+            "label": "Unavailable",
+            "confidence_pct": 0,
+            "article_count": 0,
+            "directional_article_count": 0,
+            "source_diversity": 0,
+            "agreement_pct": None,
+            "horizon": "Short term (1–10 trading days)",
+            "articles": [],
+            "error": str(last_error)[:180] if last_error else "Unknown GDELT error",
+        }
+
+    raw_articles = payload.get("articles") or payload.get("items") or []
+    deduped: List[dict] = []
+    seen_titles = set()
+    for raw in raw_articles:
+        title = str(raw.get("title") or "").strip()
+        url = str(raw.get("url") or "").strip()
+        if not title or not url:
+            continue
+        key = re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()[:180]
+        if key in seen_titles:
+            continue
+        seen_titles.add(key)
+        domain = _normalize_domain(str(raw.get("domain") or ""))
+        seen_iso = _parse_gdelt_date(raw.get("seendate") or raw.get("date"))
+        score, direction, hits = _headline_direction(title)
+        weight = _source_weight(domain) * _recency_weight(seen_iso)
+        deduped.append({
+            "title": title,
+            "url": url,
+            "domain": domain or "Unknown source",
+            "seen_utc": seen_iso,
+            "direction": direction,
+            "headline_score": round(score, 2),
+            "weight": round(weight, 3),
+            "signal_terms": hits,
+        })
+
+    directional = [a for a in deduped if a["direction"] != "neutral"]
+    if directional:
+        weighted_sum = sum(float(a["headline_score"]) * float(a["weight"]) for a in directional)
+        total_weight = sum(float(a["weight"]) for a in directional)
+        score = weighted_sum / total_weight if total_weight else 2.5
+    else:
+        score = 2.5
+    score = round(float(np.clip(score, 0, 5)), 2)
+
+    domains = {a["domain"] for a in deduped if a["domain"] and a["domain"] != "Unknown source"}
+    positive = sum(1 for a in directional if a["direction"] == "strengthening")
+    negative = sum(1 for a in directional if a["direction"] == "weakening")
+    agreement = None
+    if directional:
+        agreement = max(positive, negative) / len(directional)
+    coverage = min(1.0, len(directional) / 6.0)
+    diversity = min(1.0, len(domains) / 5.0)
+    agreement_component = 0.0 if agreement is None else max(0.0, min(1.0, (agreement - 0.5) * 2.0))
+    confidence = int(round(20 + 30 * coverage + 20 * diversity + 30 * agreement_component))
+    if len(directional) < 2:
+        confidence = min(confidence, 45)
+    confidence = int(np.clip(confidence, 0, 90))
+
+    # Prioritise directional, high-quality, recent stories for display.
+    display_articles = sorted(
+        deduped,
+        key=lambda a: (
+            1 if a["direction"] != "neutral" else 0,
+            float(a["weight"]),
+            a.get("seen_utc") or "",
+        ),
+        reverse=True,
+    )[:4]
+
+    return {
+        "status": "Available",
+        "score": score,
+        "label": _news_bias_label(score, len(directional)),
+        "confidence_pct": confidence,
+        "article_count": len(deduped),
+        "directional_article_count": len(directional),
+        "source_diversity": len(domains),
+        "agreement_pct": None if agreement is None else int(round(agreement * 100)),
+        "horizon": "Short term (1–10 trading days)",
+        "articles": display_articles,
+        "method": "GDELT headline-only heuristic shadow signal",
+    }
+
+
+def fetch_news_shadow_snapshot() -> Tuple[Dict[str, dict], str]:
+    snapshot: Dict[str, dict] = {}
+    available = 0
+    for idx, code in enumerate(CURRENCY_CONFIG):
+        result = fetch_gdelt_news_for_currency(code)
+        snapshot[code] = result
+        if result.get("status") == "Available":
+            available += 1
+        if idx < len(CURRENCY_CONFIG) - 1:
+            time.sleep(0.35)
+    source = f"GDELT DOC 2.0 headline shadow ({available}/{len(CURRENCY_CONFIG)} available, {NEWS_LOOKBACK})"
+    return snapshot, source
+
+
+def _shadow_direction(score: Optional[float]) -> str:
+    if score is None:
+        return "neutral"
+    value = float(score)
+    if value >= NEWS_DIRECTIONAL_THRESHOLD_HIGH:
+        return "strengthen"
+    if value <= NEWS_DIRECTIONAL_THRESHOLD_LOW:
+        return "weaken"
+    return "neutral"
+
+
+def update_news_shadow_log(news_shadow: Dict[str, dict], signals: List[CurrencySignal], market_date: str) -> None:
+    path = DATA_DIR / "news_shadow_log.json"
+    try:
+        records = json.loads(path.read_text(encoding="utf-8")).get("records", []) if path.exists() else []
+    except Exception:
+        records = []
+    run_date_sgt = datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
+    by_code = {signal.code: signal for signal in signals}
+    row = {
+        "run_date_sgt": run_date_sgt,
+        "market_date": market_date,
+        "app_release": APP_RELEASE,
+        "shadow_mode": True,
+        "news_scores": {code: news_shadow.get(code, {}).get("score") for code in CURRENCY_CONFIG},
+        "news_labels": {code: news_shadow.get(code, {}).get("label") for code in CURRENCY_CONFIG},
+        "news_confidence_pct": {code: news_shadow.get(code, {}).get("confidence_pct") for code in CURRENCY_CONFIG},
+        "directional_article_count": {code: news_shadow.get(code, {}).get("directional_article_count") for code in CURRENCY_CONFIG},
+        "article_count": {code: news_shadow.get(code, {}).get("article_count") for code in CURRENCY_CONFIG},
+        "rates_sgd": {code: by_code[code].rate_sgd for code in CURRENCY_CONFIG if code in by_code},
+    }
+    records = [r for r in records if r.get("run_date_sgt") != run_date_sgt]
+    records.append(row)
+    records = sorted(records, key=lambda r: r.get("run_date_sgt", ""))[-730:]
+    path.write_text(json.dumps({"phase": "3A-shadow", "records": records}, indent=2), encoding="utf-8")
+
+
+def _aggregate_shadow_performance(rows: List[dict]) -> dict:
+    if not rows:
+        return {"directional_calls": 0, "correct": 0, "incorrect": 0, "neutral_move": 0, "directional_accuracy_pct": None}
+    correct = sum(1 for r in rows if r["outcome"] == "correct")
+    incorrect = sum(1 for r in rows if r["outcome"] == "incorrect")
+    neutral_move = sum(1 for r in rows if r["outcome"] == "neutral_move")
+    decisive = correct + incorrect
+    return {
+        "directional_calls": len(rows),
+        "correct": correct,
+        "incorrect": incorrect,
+        "neutral_move": neutral_move,
+        "directional_accuracy_pct": None if decisive == 0 else round(correct / decisive * 100.0, 1),
+    }
+
+
+def write_news_shadow_performance(series_map: Dict[str, pd.Series]) -> None:
+    log_path = DATA_DIR / "news_shadow_log.json"
+    if not log_path.exists():
+        return
+    try:
+        records = json.loads(log_path.read_text(encoding="utf-8")).get("records", [])
+    except Exception:
+        return
+    evaluations: List[dict] = []
+    for row in records:
+        market_date = row.get("market_date")
+        if not market_date:
+            continue
+        scores = row.get("news_scores") or {}
+        confs = row.get("news_confidence_pct") or {}
+        rates = row.get("rates_sgd") or {}
+        for code, series in series_map.items():
+            score = scores.get(code)
+            direction = _shadow_direction(score)
+            entry_rate = rates.get(code)
+            if direction == "neutral" or entry_rate is None:
+                continue
+            for horizon in NEWS_SHADOW_HORIZONS:
+                future_date, future_rate = _future_trading_rate(series, market_date, horizon)
+                if future_rate is None:
+                    continue
+                change_pct = (float(future_rate) / float(entry_rate) - 1.0) * 100.0
+                if abs(change_pct) <= NEWS_NEUTRAL_BAND_PCT:
+                    outcome = "neutral_move"
+                else:
+                    actual = "strengthen" if change_pct > 0 else "weaken"
+                    outcome = "correct" if actual == direction else "incorrect"
+                evaluations.append({
+                    "run_date_sgt": row.get("run_date_sgt"),
+                    "market_date": market_date,
+                    "future_date": future_date,
+                    "currency": code,
+                    "horizon_trading_days": horizon,
+                    "shadow_score": score,
+                    "shadow_confidence_pct": confs.get(code),
+                    "predicted_direction": direction,
+                    "entry_rate_sgd": round(float(entry_rate), 6),
+                    "future_rate_sgd": round(float(future_rate), 6),
+                    "rate_change_pct": round(float(change_pct), 3),
+                    "outcome": outcome,
+                })
+    overall = {}
+    by_currency = {code: {} for code in CURRENCY_CONFIG}
+    for horizon in NEWS_SHADOW_HORIZONS:
+        hrows = [r for r in evaluations if r["horizon_trading_days"] == horizon]
+        overall[str(horizon)] = _aggregate_shadow_performance(hrows)
+        for code in CURRENCY_CONFIG:
+            by_currency[code][str(horizon)] = _aggregate_shadow_performance([r for r in hrows if r["currency"] == code])
+    payload = {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "phase": "Phase 3A shadow mode",
+        "app_release": APP_RELEASE,
+        "horizons_trading_days": list(NEWS_SHADOW_HORIZONS),
+        "directional_thresholds": {"strengthen_at_or_above": NEWS_DIRECTIONAL_THRESHOLD_HIGH, "weaken_at_or_below": NEWS_DIRECTIONAL_THRESHOLD_LOW},
+        "neutral_move_band_pct": NEWS_NEUTRAL_BAND_PCT,
+        "definition": "Shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Accuracy excludes future moves inside the neutral band.",
+        "overall": overall,
+        "by_currency": by_currency,
+        "evaluations": evaluations[-5000:],
+    }
+    (DATA_DIR / "news_shadow_performance.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
 def fetch_ecb_history(years: int = 7) -> Tuple[pd.DataFrame, str]:
@@ -1844,9 +2243,11 @@ def current_release_already_processed(latest_market_date: str) -> bool:
         existing = json.loads(path.read_text(encoding="utf-8"))
     except Exception:
         return False
+    today_sgt = datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
     return (
         str(existing.get("latest_market_date", "")) == str(latest_market_date)
         and existing.get("app_release") == APP_RELEASE
+        and existing.get("news_run_date_sgt") == today_sgt
     )
 
 
@@ -2020,6 +2421,21 @@ def main() -> None:
         macro_snapshot = {code: {} for code in IMF_COUNTRY_CODES}
         imf_status = {"growth": "Unavailable", "inflation": "Unavailable"}
 
+    try:
+        news_shadow, news_source = fetch_news_shadow_snapshot()
+    except Exception as exc:
+        print(f"Phase 3A news shadow unavailable: {exc}")
+        news_shadow = {
+            code: {
+                "status": "Unavailable", "score": 2.5, "label": "Unavailable",
+                "confidence_pct": 0, "article_count": 0, "directional_article_count": 0,
+                "source_diversity": 0, "agreement_pct": None,
+                "horizon": "Short term (1–10 trading days)", "articles": [],
+            }
+            for code in CURRENCY_CONFIG
+        }
+        news_source = "GDELT news shadow unavailable for this run"
+
     signals = [
         analyse_currency(
             code,
@@ -2044,6 +2460,29 @@ def main() -> None:
         macro_source = "IMF WEO unavailable for this run"
 
     serialized_signals, previous_score_date = attach_daily_changes(signals, latest_market_date)
+    for item in serialized_signals:
+        code = item.get("code")
+        shadow = dict(news_shadow.get(code, {}))
+        shadow["next_policy_event"] = item.get("next_policy_meeting_date")
+        shadow["days_to_policy_event"] = item.get("days_to_policy_meeting")
+        shadow["event_risk_label"] = item.get("event_risk_label")
+        shadow["event_calendar_source"] = item.get("policy_calendar_source")
+        item["shadow_news"] = shadow
+        news_shadow[code] = shadow
+
+    news_run_date_sgt = datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
+    current_news_payload = {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "run_date_sgt": news_run_date_sgt,
+        "market_date": latest_market_date,
+        "phase": "Phase 3A — news/event shadow mode",
+        "source": news_source,
+        "lookback": NEWS_LOOKBACK,
+        "shadow_only": True,
+        "note": "Headline-based directional intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
+        "currencies": news_shadow,
+    }
+    (DATA_DIR / "news_shadow.json").write_text(json.dumps(current_news_payload, indent=2), encoding="utf-8")
 
     payload = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -2051,8 +2490,11 @@ def main() -> None:
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
         "app_release": APP_RELEASE,
-        "phase": "Phase 2C.2 — frozen baseline, performance monitoring, terminology cleanup and CHF tracking",
+        "phase": "Phase 3A — news & event intelligence in shadow mode",
         "baseline_frozen": True,
+        "shadow_mode": True,
+        "news_run_date_sgt": news_run_date_sgt,
+        "news_event_source": news_source,
         "previous_score_date": previous_score_date,
         "primary_source": source_name,
         "policy_source": policy_source,
@@ -2069,9 +2511,9 @@ def main() -> None:
             "forward_outlook": FORWARD_OUTLOOK_WEIGHTS,
         },
         "scoring_note": (
-            "Phase 2C.2 keeps the Phase 2C scoring weights frozen as the baseline. Opportunity, Forward Outlook and "
-            "Buy Urgency are unchanged. The release adds retrospective 1/5/10/20 trading-day performance monitoring, "
-            "clearer historical-value terminology, duplicate-run protection for the backup workflow schedule, and adds CHF as a tracked currency without changing any scoring weights."
+            "Phase 3A keeps every Phase 2C baseline weight frozen. A separate GDELT headline-based news/event layer is "
+            "shown and logged in shadow mode only. It does not alter Opportunity, Forward Outlook, Buy Urgency, suggested "
+            "tranche or recommendation. Shadow outcomes are evaluated independently at 1/5/10 trading-day horizons."
         ),
         "important_note": (
             "This model ranks the attractiveness of converting SGD into foreign currency. "
@@ -2086,8 +2528,11 @@ def main() -> None:
     write_policy_calendar_snapshot(signals)
     update_score_log(signals)
     write_performance_report(series_map)
+    update_news_shadow_log(news_shadow, signals, latest_market_date)
+    write_news_shadow_performance(series_map)
 
     print(f"Updated {len(signals)} currencies using {source_name}. Market date: {latest_market_date}")
+    print(f"Phase 3A shadow source: {news_source}. Shadow mode does not alter baseline recommendations.")
     for signal in signals:
         print(
             f"{signal.code}: opportunity {signal.opportunity_score:.2f}/5 | "

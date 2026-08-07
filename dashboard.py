@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 SIGNALS_PATH = DATA_DIR / "fx_signals.json"
 PERFORMANCE_PATH = DATA_DIR / "performance.json"
+SHADOW_PERFORMANCE_PATH = DATA_DIR / "news_shadow_performance.json"
 OUTPUT_PATH = ROOT / "index.html"
 
 
@@ -158,6 +159,119 @@ def meeting_text(item):
     return f"{date} · {days} days"
 
 
+
+def shadow_class(score):
+    if score is None:
+        return "shadow-neutral"
+    score = float(score)
+    if score >= 3.1:
+        return "shadow-positive"
+    if score <= 1.9:
+        return "shadow-negative"
+    return "shadow-neutral"
+
+
+def safe_article_url(value):
+    url = str(value or "").strip()
+    if url.startswith("https://") or url.startswith("http://"):
+        return html.escape(url, quote=True)
+    return "#"
+
+
+def build_shadow_news_box(item):
+    shadow = item.get("shadow_news") or {}
+    score = float(shadow.get("score", 2.5) or 2.5)
+    label = shadow.get("label", "Unavailable")
+    confidence = int(shadow.get("confidence_pct", 0) or 0)
+    article_count = int(shadow.get("article_count", 0) or 0)
+    directional = int(shadow.get("directional_article_count", 0) or 0)
+    diversity = int(shadow.get("source_diversity", 0) or 0)
+    agreement = shadow.get("agreement_pct")
+    agreement_text = "—" if agreement is None else f"{agreement}%"
+    horizon = shadow.get("horizon", "Short term (1–10 trading days)")
+    event_date = shadow.get("next_policy_event")
+    event_days = shadow.get("days_to_policy_event")
+    event_risk = shadow.get("event_risk_label", "—")
+    if event_date and event_days is not None:
+        event_text = f"{event_date} · {event_days} days · {event_risk} risk"
+    elif event_date:
+        event_text = f"{event_date} · {event_risk} risk"
+    else:
+        event_text = "Calendar rollover needed"
+    articles = shadow.get("articles") or []
+    article_html = []
+    for article in articles[:4]:
+        title = html.escape(str(article.get("title") or "Untitled"))
+        domain = html.escape(str(article.get("domain") or "Unknown source"))
+        direction = html.escape(str(article.get("direction") or "neutral"))
+        url = safe_article_url(article.get("url"))
+        article_html.append(
+            f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>'
+            f'<span>{domain} · {direction}</span></li>'
+        )
+    articles_block = "".join(article_html) if article_html else '<li class="shadow-empty">No usable headlines returned for this run.</li>'
+    return f'''
+      <div class="shadow-box {shadow_class(score)}">
+        <div class="shadow-head">
+          <div><span>Phase 3A shadow intelligence</span><strong>{score:.2f}/5 · {html.escape(str(label))}</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>{confidence}%</strong></div>
+          <div><span>Directional headlines</span><strong>{directional}/{article_count}</strong></div>
+          <div><span>Source diversity</span><strong>{diversity}</strong></div>
+          <div><span>Directional agreement</span><strong>{agreement_text}</strong></div>
+        </div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> {html.escape(event_text)}<br>Impact horizon: {html.escape(str(horizon))}. This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines">{articles_block}</ul>
+      </div>
+    '''
+
+
+def shadow_performance_cell(stats):
+    if not stats or not stats.get("directional_calls"):
+        return '<span class="perf-pending">Pending</span>'
+    accuracy = stats.get("directional_accuracy_pct")
+    n = stats.get("directional_calls", 0)
+    correct = stats.get("correct", 0)
+    neutral = stats.get("neutral_move", 0)
+    accuracy_text = "—" if accuracy is None else f"{accuracy:.0f}% correct"
+    return f'<strong>{accuracy_text}</strong><span>{correct} correct · {neutral} neutral · n={n}</span>'
+
+
+def build_shadow_performance_section(performance, currencies):
+    if not performance:
+        return '''
+        <div class="section-header"><div><h2>Phase 3A shadow performance</h2><p>Directional performance will appear after shadow signals mature.</p></div></div>
+        <section class="performance-panel"><div class="perf-empty">Shadow performance data is not available yet.</div></section>
+        '''
+    overall = performance.get("overall", {})
+    by_currency = performance.get("by_currency", {})
+    cards = []
+    for horizon in (1, 5, 10):
+        stats = overall.get(str(horizon), {})
+        n = stats.get("directional_calls", 0)
+        accuracy = stats.get("directional_accuracy_pct")
+        accuracy_text = "Pending" if not n or accuracy is None else f"{accuracy:.0f}%"
+        detail = "No matured directional calls yet" if not n else f"{stats.get('correct', 0)} correct · {stats.get('incorrect', 0)} incorrect · n={n}"
+        cards.append(f'<div class="perf-card shadow-perf-card"><span>{horizon} trading day{"s" if horizon != 1 else ""}</span><strong>{accuracy_text}</strong><small>{html.escape(detail)}</small></div>')
+    rows = []
+    for item in currencies:
+        code = item["code"]
+        stats = by_currency.get(code, {})
+        rows.append(f'''<tr><td><strong>{code}</strong><span>{html.escape(item['name'])}</span></td><td>{shadow_performance_cell(stats.get('1'))}</td><td>{shadow_performance_cell(stats.get('5'))}</td><td>{shadow_performance_cell(stats.get('10'))}</td></tr>''')
+    neutral_band = performance.get("neutral_move_band_pct", 0.10)
+    return f'''
+    <div class="section-header"><div><h2>Phase 3A shadow performance</h2><p>Tests whether the separate news/event bias anticipated the later FX direction. It remains completely outside the frozen Phase 2C recommendation.</p></div></div>
+    <section class="performance-panel shadow-performance-panel">
+      <div class="performance-meta"><strong>Shadow-mode validation</strong><span>Only directional calls are scored. Future FX moves within ±{neutral_band:.2f}% are neutral and excluded from directional accuracy.</span></div>
+      <div class="perf-cards">{''.join(cards)}</div>
+      <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+      <div class="performance-note"><strong>Purpose:</strong> Phase 3A is an experiment. We are measuring whether headline/event intelligence adds leading information before allowing it to influence any model score.</div>
+    </section>
+    '''
+
+
 def build_currency_cards(currencies):
     cards = []
     for rank, item in enumerate(currencies, start=1):
@@ -214,6 +328,8 @@ def build_currency_cards(currencies):
               <div><span>Valuation rarity</span><strong>{fmt_number(urgency_components.get('valuation_rarity'), 2)}/5</strong></div>
             </div>
           </div>
+
+          {build_shadow_news_box(item)}
 
           <div class="recommendation {recommendation_class(item['score'])}">{html.escape(item['recommendation'])}</div>
           <div class="rate-primary">{rate_text(item)}</div>
@@ -287,6 +403,7 @@ def build_table_rows(currencies):
           <td><div class="table-score {score_class(item['score'])}">{item['score']:.2f}</div><span>Opportunity {score_delta_badge(item, 'opportunity_score')}</span></td>
           <td><div class="table-score {urgency_class(item.get('buy_urgency_score', 2.5))}">{item.get('buy_urgency_score', 2.5):.2f}</div><span>{html.escape(item.get('buy_urgency_label', '—'))} {score_delta_badge(item, 'buy_urgency_score')}</span></td>
           <td>{item.get('forward_outlook_score', 2.5):.2f}<span>{html.escape(item.get('forward_outlook_label', '—'))} {score_delta_badge(item, 'forward_outlook_score')}</span></td>
+          <td><div class="table-score {shadow_class((item.get('shadow_news') or {}).get('score', 2.5))}">{float((item.get('shadow_news') or {}).get('score', 2.5)):.2f}</div><span>{html.escape(str((item.get('shadow_news') or {}).get('label', 'Unavailable')))} · shadow</span></td>
           <td>{item.get('market_score', item['score']):.2f}</td>
           <td>{item.get('macro_score', 2.5):.2f}<span>{item.get('macro_coverage_pct', 0)}% coverage</span></td>
           <td>{item.get('forward_policy_score', 2.5):.2f}<span>{html.escape(item.get('forward_policy_label', '—'))}</span></td>
@@ -359,6 +476,12 @@ def main():
             performance = json.loads(PERFORMANCE_PATH.read_text(encoding="utf-8"))
         except Exception:
             performance = {}
+    shadow_performance = {}
+    if SHADOW_PERFORMANCE_PATH.exists():
+        try:
+            shadow_performance = json.loads(SHADOW_PERFORMANCE_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            shadow_performance = {}
     currencies = data["currencies"]
     best = currencies[0]
     generated = data.get("generated_at_utc", "")
@@ -367,14 +490,17 @@ def main():
     policy_source = html.escape(data.get("policy_source", "Unavailable"))
     macro_source = html.escape(data.get("macro_source", "Unavailable"))
     validation_source = html.escape(data.get("validation_source", "Unavailable"))
+    news_event_source = html.escape(data.get("news_event_source", "Unavailable"))
+    news_run_date_sgt = html.escape(data.get("news_run_date_sgt", ""))
     model_version = html.escape(data.get("model_version", ""))
-    app_release = html.escape(data.get("app_release", "2.2-phase2c2-monitoring"))
+    app_release = html.escape(data.get("app_release", "3.0-phase3a-shadow-news"))
     previous_score_date = data.get("previous_score_date")
     comparison_text = html.escape(str(previous_score_date)) if previous_score_date else "Starts next new market day"
 
     cards_html = build_currency_cards(currencies)
     rows_html = build_table_rows(currencies)
     performance_html = build_performance_section(performance, currencies)
+    shadow_performance_html = build_shadow_performance_section(shadow_performance, currencies)
 
     best_market = best.get("market_score", best["score"])
     best_macro = best.get("macro_score", 2.5)
@@ -385,6 +511,10 @@ def main():
     best_forward_label = best.get("forward_outlook_label", "—")
     best_decision_confidence = best.get("decision_confidence", best.get("confidence", 0))
     best_signal_agreement = best.get("signal_agreement_pct", 0)
+    best_shadow = best.get("shadow_news") or {}
+    best_shadow_score = float(best_shadow.get("score", 2.5) or 2.5)
+    best_shadow_label = str(best_shadow.get("label", "Unavailable"))
+    best_shadow_confidence = int(best_shadow.get("confidence_pct", 0) or 0)
     best_macro_driver = (
         best.get("macro_drivers", [""])[0]
         if best.get("macro_drivers")
@@ -547,6 +677,29 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .driver-columns li+li{{margin-top:5px}}
 .chart-button{{width:100%;margin-top:12px;background:#142a42;border:1px solid #274764;color:var(--text);border-radius:11px;padding:10px 12px;font-weight:800;cursor:pointer}}
 .chart-button:hover{{background:#1a3552}}
+.shadow-box{{margin:14px 0;padding:14px;border-radius:16px;background:rgba(180,156,255,.055);border:1px solid rgba(180,156,255,.24)}}
+.shadow-positive{{border-color:rgba(69,221,163,.34)}}
+.shadow-negative{{border-color:rgba(255,107,123,.34)}}
+.shadow-neutral{{border-color:rgba(180,156,255,.28)}}
+.shadow-head{{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}}
+.shadow-head span{{display:block;color:var(--muted);font-size:.72rem}}
+.shadow-head strong{{display:block;margin-top:3px;color:var(--purple)}}
+.shadow-positive .shadow-head strong{{color:var(--green)}}
+.shadow-negative .shadow-head strong{{color:var(--red)}}
+.shadow-pill{{font-size:.62rem;font-weight:900;letter-spacing:.08em;background:rgba(180,156,255,.12);color:#d7ccff;border:1px solid rgba(180,156,255,.25);padding:5px 8px;border-radius:999px;white-space:nowrap}}
+.shadow-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}}
+.shadow-grid div{{background:rgba(6,15,27,.48);border:1px solid #1c3048;border-radius:10px;padding:8px}}
+.shadow-grid span{{display:block;color:var(--muted);font-size:.62rem}}
+.shadow-grid strong{{display:block;margin-top:3px;font-size:.78rem}}
+.shadow-horizon{{margin-top:10px;color:#9db1c8;font-size:.7rem;line-height:1.5}}
+.shadow-headlines{{margin:9px 0 0;padding-left:17px}}
+.shadow-headlines li{{margin:7px 0;color:#b7c8db;font-size:.72rem;line-height:1.35}}
+.shadow-headlines a{{color:#dceaff;text-decoration:none}}
+.shadow-headlines a:hover{{color:var(--cyan);text-decoration:underline}}
+.shadow-headlines span{{display:block;color:#7189a5;font-size:.63rem;margin-top:2px}}
+.shadow-empty{{color:#7189a5!important}}
+.shadow-performance-panel{{border-color:rgba(180,156,255,.28)}}
+.shadow-perf-card{{background:rgba(180,156,255,.06)!important}}
 .performance-panel{{background:rgba(13,24,40,.92);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}}
 .performance-meta{{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:4px 2px 14px;color:var(--muted);font-size:.82rem}}
 .performance-meta strong{{color:var(--text)}}
@@ -583,16 +736,16 @@ td span{{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}}
 footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
 @media(max-width:1180px){{.cards{{grid-template-columns:repeat(2,minmax(0,1fr))}}.perf-cards{{grid-template-columns:repeat(2,1fr)}}.methodology{{grid-template-columns:repeat(3,1fr)}}.driver-columns{{grid-template-columns:repeat(2,1fr)}}}}
 @media(max-width:1050px){{.hero{{grid-template-columns:1fr}}.status-panel{{min-width:300px}}}}
-@media(max-width:680px){{.container{{padding:20px 14px 40px}}.perf-cards{{grid-template-columns:1fr}}.performance-meta{{flex-direction:column}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.forward-grid{{grid-template-columns:1fr}}.score-split{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}.daily-change-row{{align-items:flex-start;flex-direction:column}}.daily-change-row strong{{justify-content:flex-start}}}}
+@media(max-width:680px){{.container{{padding:20px 14px 40px}}.perf-cards{{grid-template-columns:1fr}}.performance-meta{{flex-direction:column}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.forward-grid{{grid-template-columns:1fr}}.shadow-grid{{grid-template-columns:1fr 1fr}}.score-split{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}.daily-change-row{{align-items:flex-start;flex-direction:column}}.daily-change-row strong{{justify-content:flex-start}}}}
 </style>
 </head>
 <body>
 <div class="container">
   <header class="topbar">
     <div>
-      <div class="eyebrow">Personal currency decision support · Phase 2C.2 monitoring · 7 currencies</div>
+      <div class="eyebrow">Personal currency decision support · Phase 3A shadow mode · 7 currencies</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">The Phase 2C scoring model remains frozen. This monitoring release adds retrospective 1/5/10/20 trading-day performance tracking, clearer historical-value labels and backup-run resilience without changing any core score weights.</p>
+      <p class="subtitle">The Phase 2C baseline remains frozen. Phase 3A adds a separate headline/event intelligence layer in shadow mode so we can test whether news signals lead FX moves before allowing them to influence recommendations.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>{market_date}</strong></div>
@@ -605,6 +758,8 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <div><span>Macro source</span><strong>{macro_source}</strong></div>
       <div><span>Forward layer</span><strong>BIS + IMF + FX trend model</strong></div>
       <div><span>Event calendars</span><strong>Official 2026 central-bank schedules</strong></div>
+      <div><span>News/event shadow</span><strong>{news_event_source}</strong></div>
+      <div><span>Shadow run (SGT)</span><strong>{news_run_date_sgt}</strong></div>
       <div><span>Cross-check</span><strong>{validation_source}</strong></div>
     </div>
   </header>
@@ -621,12 +776,14 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
         <div>Buy urgency <strong>{best_urgency:.2f}/5 {score_delta_badge(best, 'buy_urgency_score')} · {html.escape(best_urgency_label)}</strong></div>
         <div>Model/data quality <strong>{best_decision_confidence}%</strong></div>
         <div>Signal agreement <strong>{best_signal_agreement}%</strong></div>
+        <div>News/event shadow <strong>{best_shadow_score:.2f}/5 · {html.escape(best_shadow_label)}</strong></div>
       </div>
       {daily_change_summary(best)}
       <p class="hero-copy">{html.escape(best['drivers'][0] if best.get('drivers') else best['suggested_action'])}</p>
       <p class="hero-macro">Macro view: {html.escape(best_macro_driver)}</p>
       <p class="hero-macro">Forward view: {html.escape(best_forward_driver)}</p>
       <p class="hero-macro">Timing view: {html.escape(best.get('urgency_drivers', ['No urgency signal available.'])[0])}</p>
+      <p class="hero-macro">Phase 3A shadow: {best_shadow_score:.2f}/5 · {html.escape(best_shadow_label)} · {best_shadow_confidence}% headline confidence. This does not affect the action.</p>
     </div>
     <div class="hero-side">
       <h3>Suggested action</h3>
@@ -638,7 +795,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <strong>Buy urgency:</strong> {best_urgency:.2f}/5 · {html.escape(best_urgency_label)}<br>
       <strong>Model/data quality:</strong> {best_decision_confidence}% · {best_signal_agreement}% signal agreement<br>
       <strong>Next policy event:</strong> {html.escape(meeting_text(best))} · {html.escape(best.get('event_risk_label', '—'))} risk</p>
-      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C.2 keeps the Phase 2C scoring logic frozen while daily score changes and matured outcomes are monitored. A high urgency score still cannot turn poor value into a Buy.</p>
+      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 3A keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
     </div>
   </section>
 
@@ -648,6 +805,8 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   <section class="cards">{cards_html}</section>
 
   {performance_html}
+
+  {shadow_performance_html}
 
   <div class="section-header">
     <div><h2>Five-year SGD cost history</h2><p>Lower cost generally means better value for an SGD buyer.</p></div>
@@ -667,13 +826,13 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   </div>
   <section class="table-panel">
     <table>
-      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Forward outlook</th><th>Market</th><th>Macro</th><th>Policy bias</th><th>FX momentum</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Next meeting</th><th>Event risk</th><th>Historical value threshold</th><th>Model/data quality</th></tr></thead>
+      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Forward outlook</th><th>News/event shadow</th><th>Market</th><th>Macro</th><th>Policy bias</th><th>FX momentum</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Next meeting</th><th>Event risk</th><th>Historical value threshold</th><th>Model/data quality</th></tr></thead>
       <tbody>{rows_html}</tbody>
     </table>
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 2C frozen baseline model · 2C.2 monitoring release</h2><p>The core Phase 2C scoring weights are frozen for the observation period. Opportunity measures value, Forward Outlook estimates directional pressure, and Buy Urgency estimates timing pressure.</p></div>
+    <div><h2>Phase 3A shadow experiment · Phase 2C baseline remains frozen</h2><p>Phase 3A observes recent news and policy-event coverage alongside the frozen baseline. Shadow intelligence is measured independently and cannot change Opportunity, Forward Outlook, Buy Urgency or the recommendation.</p></div>
   </div>
   <section class="methodology">
     <div class="method-card"><strong>Frozen</strong><span>Phase 2C core weights are locked during the baseline observation period so later changes can be measured cleanly.</span></div>
@@ -687,9 +846,11 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: valuation rarity.</span></div>
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: upcoming policy-event setup.</span></div>
     <div class="method-card"><strong>Quality</strong><span>Model/data quality reflects history length, source validation and macro coverage. It is not a probability that the recommendation will be correct.</span></div>
+    <div class="method-card"><strong>Shadow</strong><span>GDELT headlines from the last 72 hours are screened for strengthening/weakening signals. Headline heuristics do not read full article text.</span></div>
+    <div class="method-card"><strong>0%</strong><span>Phase 3A news/event weight in the recommendation. It stays at zero until shadow-mode performance provides evidence that it adds value.</span></div>
   </section>
 
-  <div class="notice"><strong>Baseline monitoring:</strong> Phase 2C.2 does not change the core scoring weights. CHF has been added as the seventh tracked currency; its score history starts from the first CHF-enabled run, while the existing six currencies retain their earlier baseline history. Daily score deltas compare each new market date with the previous available market day, creating a clean baseline for the later Phase 3A evaluation. Retrospective performance is tracked separately and does not feed back into the score yet.<br><br><strong>Important:</strong> The policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
+  <div class="notice"><strong>Phase 3A shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The new GDELT layer uses recent headlines and official policy-event timing only as an observational signal. It is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> the news score is headline-based, not full-text or LLM analysis. It may miss nuance, conditional statements or cross-currency effects, and GDELT coverage can vary by source and geography. “Headline confidence” measures coverage, source diversity and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
   <footer>Generated automatically by GitHub Actions · Last build {html.escape(generated)}</footer>
 </div>
 
