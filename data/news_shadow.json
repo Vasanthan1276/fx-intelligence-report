@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-08-07T06:43:00.443366+00:00",
-  "run_date_sgt": "2026-08-07",
-  "market_date": "2026-08-06",
+  "generated_at_utc": "2026-08-07T17:42:50.528902+00:00",
+  "run_date_sgt": "2026-08-08",
+  "market_date": "2026-08-07",
   "phase": "Phase 3A.3 \u2014 direction semantics & source-quality shadow mode",
-  "source": "Pair-aware relevance-filtered GDELT + official central-bank communications (2/7 usable; 5 thin; 49 API calls; 0 cache hits; 32 rate-limit retries)",
+  "source": "Pair-aware relevance-filtered GDELT + official central-bank communications (0/7 usable; 6 thin; 56 API calls; 0 cache hits; 47 rate-limit retries)",
   "lookback": "96h",
   "fallback_lookback": "7d",
   "official_lookback_days": 10,
@@ -11,126 +11,31 @@
   "note": "Pair-aware, relevance-filtered English-language headline and official central-bank intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
   "currencies": {
     "USD": {
-      "status": "Available",
-      "coverage_quality": "Adequate",
-      "evidence_eligible": true,
-      "score": 2.02,
-      "label": "Mixed / neutral",
-      "confidence_pct": 62,
-      "article_count": 6,
-      "retrieved_article_count": 24,
-      "rejected_article_count": 17,
-      "directional_article_count": 3,
+      "status": "Unavailable",
+      "coverage_quality": "Unavailable",
+      "evidence_eligible": false,
+      "score": 2.5,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "retrieved_article_count": 0,
+      "rejected_article_count": 0,
+      "directional_article_count": 0,
       "official_directional_count": 0,
-      "media_directional_count": 3,
+      "media_directional_count": 0,
       "official_article_count": 0,
-      "media_article_count": 6,
-      "source_diversity": 6,
-      "agreement_pct": 67,
+      "media_article_count": 0,
+      "source_diversity": 0,
+      "agreement_pct": null,
       "query_attempts": 4,
-      "query_successes": 3,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
-      "articles": [
-        {
-          "title": "Fed Cook to Support Rate Hike if Disinflation Stalls",
-          "url": "https://cointelegraph.com/markets/feds-cook-warns-persistent-inflation-could-prompt-rate-hike",
-          "domain": "cointelegraph.com",
-          "seen_utc": "2026-08-06T07:45:00+00:00",
-          "direction": "strengthening",
-          "headline_score": 3.62,
-          "weight": 0.816,
-          "signal_terms": [
-            "+rate hike"
-          ],
-          "source_type": "media",
-          "source_name": "cointelegraph.com",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 92,
-          "relevance_reasons": [
-            "target central bank"
-          ]
-        },
-        {
-          "title": "Rupee slips to 95 . 28 against US dollar as oil , treasury yields remain elevated",
-          "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-slips-to-95-28-against-us-dollar-as-oil-treasury-yields-remain-elevated/articleshow/133021908.cms",
-          "domain": "timesofindia.indiatimes.com",
-          "seen_utc": "2026-08-07T06:00:00+00:00",
-          "direction": "weakening",
-          "headline_score": 1.25,
-          "weight": 0.897,
-          "signal_terms": [
-            "-us dollar slips"
-          ],
-          "source_type": "media",
-          "source_name": "timesofindia.indiatimes.com",
-          "official": false,
-          "query_tag": "plan-1:96h",
-          "relevance_score": 86,
-          "relevance_reasons": [
-            "target currency/economy named"
-          ]
-        },
-        {
-          "title": "Rupee Falls 9 Paise to 95 . 17 Against US Dollar in Early Trade",
-          "url": "https://www.deccanchronicle.com/business/economics/rupee-falls-9-paise-to-9517-against-us-dollar-in-early-trade-1976995",
-          "domain": "deccanchronicle.com",
-          "seen_utc": "2026-08-06T06:45:00+00:00",
-          "direction": "weakening",
-          "headline_score": 1.25,
-          "weight": 0.807,
-          "signal_terms": [
-            "-us dollar falls"
-          ],
-          "source_type": "media",
-          "source_name": "deccanchronicle.com",
-          "official": false,
-          "query_tag": "plan-1:96h",
-          "relevance_score": 86,
-          "relevance_reasons": [
-            "target currency/economy named"
-          ]
-        },
-        {
-          "title": "Asia shares pause for US jobs , oil extends gains",
-          "url": "https://www.perthnow.com.au/news/business/asia-shares-pause-for-us-jobs-oil-extends-gains-c-22690308",
-          "domain": "perthnow.com.au",
-          "seen_utc": "2026-08-07T03:15:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.884,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "perthnow.com.au",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 78,
-          "relevance_reasons": [
-            "target-country macro"
-          ]
-        },
-        {
-          "title": "Commodity Corner : Oil steadies , gold edges higher as markets await US jobs data",
-          "url": "https://www.moneycontrol.com/news/business/commodities/commodity-corner-oil-steadies-gold-edges-higher-as-markets-await-us-jobs-data-13994499.html",
-          "domain": "moneycontrol.com",
-          "seen_utc": "2026-08-05T03:30:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.689,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "moneycontrol.com",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 78,
-          "relevance_reasons": [
-            "target-country macro"
-          ]
-        }
-      ],
+      "articles": [],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Federal+Reserve%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22US+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrecord",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Federal+Reserve%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22US+inflation%22+OR+%22US+jobs%22+OR+%22US+GDP%22%29&mode=ArtList&maxrecords=12&"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-16",
@@ -139,24 +44,24 @@
       "event_calendar_source": "Federal Reserve FOMC calendar"
     },
     "JPY": {
-      "status": "Available",
-      "coverage_quality": "Strong",
-      "evidence_eligible": true,
-      "score": 2.92,
-      "label": "Mixed / neutral",
-      "confidence_pct": 79,
-      "article_count": 12,
-      "retrieved_article_count": 30,
-      "rejected_article_count": 16,
-      "directional_article_count": 3,
+      "status": "Thin",
+      "coverage_quality": "Thin",
+      "evidence_eligible": false,
+      "score": 2.5,
+      "label": "Relevant coverage / insufficient directional evidence",
+      "confidence_pct": 42,
+      "article_count": 9,
+      "retrieved_article_count": 18,
+      "rejected_article_count": 9,
+      "directional_article_count": 0,
       "official_directional_count": 0,
-      "media_directional_count": 3,
+      "media_directional_count": 0,
       "official_article_count": 6,
-      "media_article_count": 6,
-      "source_diversity": 6,
-      "agreement_pct": 67,
+      "media_article_count": 3,
+      "source_diversity": 3,
+      "agreement_pct": null,
       "query_attempts": 2,
-      "query_successes": 2,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -251,7 +156,9 @@
         }
       ],
       "official_feed_errors": [],
-      "query_errors": [],
+      "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Japanese+yen%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrec"
+      ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-18",
       "days_to_policy_event": 42,
@@ -264,19 +171,19 @@
       "evidence_eligible": false,
       "score": 2.5,
       "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 42,
-      "article_count": 4,
-      "retrieved_article_count": 13,
-      "rejected_article_count": 3,
+      "confidence_pct": 41,
+      "article_count": 1,
+      "retrieved_article_count": 1,
+      "rejected_article_count": 0,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
       "official_article_count": 1,
-      "media_article_count": 3,
-      "source_diversity": 4,
+      "media_article_count": 0,
+      "source_diversity": 1,
       "agreement_pct": null,
       "query_attempts": 3,
-      "query_successes": 1,
+      "query_successes": 0,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -297,66 +204,13 @@
             "official policy/macro/FX content",
             "target central bank"
           ]
-        },
-        {
-          "title": "Economic Watch : What is behind Q2 growth in euro area",
-          "url": "http://www.newzealandstar.com/news/279219476/economic-watch-what-is-behind-q2-growth-in-euro-area",
-          "domain": "newzealandstar.com",
-          "seen_utc": "2026-08-02T15:15:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.583,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "newzealandstar.com",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 86,
-          "relevance_reasons": [
-            "target currency/economy named"
-          ]
-        },
-        {
-          "title": "Euro area annual inflation up to 2 . 9 % | Hellenic Shipping News Worldwide",
-          "url": "https://www.hellenicshippingnews.com/euro-area-annual-inflation-up-to-2-9/",
-          "domain": "hellenicshippingnews.com",
-          "seen_utc": "2026-07-31T18:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.583,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "hellenicshippingnews.com",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 86,
-          "relevance_reasons": [
-            "target currency/economy named"
-          ]
-        },
-        {
-          "title": "Eurozone inflation hits 2 . 9 %: Which countries saw the biggest increases ?",
-          "url": "https://www.euronews.com/business/2026/07/31/eurozone-inflation-hits-29-which-countries-saw-the-biggest-increases",
-          "domain": "euronews.com",
-          "seen_utc": "2026-07-31T10:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.583,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "euronews.com",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 86,
-          "relevance_reasons": [
-            "target currency/economy named"
-          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
         "Expecting value: line 1 column 1 (char 0)",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22European+Central+Bank%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtLis"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22European+Central+Bank%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtLis",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22euro+area+inflation%22+OR+%22euro+area+growth%22+OR+%22eurozone+GDP%22%29&mode="
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-10",
@@ -368,21 +222,21 @@
       "status": "Thin",
       "coverage_quality": "Thin",
       "evidence_eligible": false,
-      "score": 2.5,
+      "score": 3.62,
       "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 41,
-      "article_count": 1,
-      "retrieved_article_count": 14,
-      "rejected_article_count": 13,
-      "directional_article_count": 0,
+      "confidence_pct": 42,
+      "article_count": 2,
+      "retrieved_article_count": 13,
+      "rejected_article_count": 11,
+      "directional_article_count": 1,
       "official_directional_count": 0,
-      "media_directional_count": 0,
+      "media_directional_count": 1,
       "official_article_count": 1,
-      "media_article_count": 0,
-      "source_diversity": 1,
-      "agreement_pct": null,
+      "media_article_count": 1,
+      "source_diversity": 2,
+      "agreement_pct": 100,
       "query_attempts": 3,
-      "query_successes": 2,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -403,11 +257,32 @@
             "official policy/macro/FX content",
             "target central bank"
           ]
+        },
+        {
+          "title": "House prices stall as mortgage rate hikes hit united kingdom property market and growth flatlines",
+          "url": "https://www.aol.co.uk/articles/house-prices-stall-mortgage-rate-075000000.html",
+          "domain": "aol.co.uk",
+          "seen_utc": "2026-08-07T08:30:00+00:00",
+          "direction": "strengthening",
+          "headline_score": 3.62,
+          "weight": 0.884,
+          "signal_terms": [
+            "+rate hike"
+          ],
+          "source_type": "media",
+          "source_name": "aol.co.uk",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 78,
+          "relevance_reasons": [
+            "target-country macro"
+          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+England%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28sterling+OR+%22British+pound%22%29+%28forex+OR+currency+OR+%22exchange+rate%22%29&",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22UK+inflation%22+OR+%22UK+wages%22+OR+%22UK+GDP%22%29&mode=ArtList&maxrecords=12"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-17",
@@ -422,18 +297,18 @@
       "score": 3.75,
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 42,
-      "article_count": 1,
-      "retrieved_article_count": 19,
-      "rejected_article_count": 18,
+      "article_count": 5,
+      "retrieved_article_count": 12,
+      "rejected_article_count": 7,
       "directional_article_count": 1,
       "official_directional_count": 0,
       "media_directional_count": 1,
       "official_article_count": 0,
-      "media_article_count": 1,
-      "source_diversity": 1,
+      "media_article_count": 5,
+      "source_diversity": 5,
       "agreement_pct": 100,
-      "query_attempts": 4,
-      "query_successes": 3,
+      "query_attempts": 3,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -443,23 +318,96 @@
           "seen_utc": "2026-08-06T21:45:00+00:00",
           "direction": "strengthening",
           "headline_score": 3.75,
-          "weight": 0.897,
+          "weight": 0.807,
           "signal_terms": [
             "+aussie supports"
           ],
           "source_type": "media",
           "source_name": "currencynews.co.uk",
           "official": false,
-          "query_tag": "plan-1:96h",
+          "query_tag": "plan-2:96h",
           "relevance_score": 86,
           "relevance_reasons": [
             "target currency/economy named"
+          ]
+        },
+        {
+          "title": "Week Ahead \u2013 US CPI Data , BoJ Summary and RBA Decision Take the Stage",
+          "url": "https://www.actionforex.com/contributors/fundamental-analysis/649932-week-ahead-us-cpi-data-boj-summary-and-rba-decision-take-the-stage/",
+          "domain": "actionforex.com",
+          "seen_utc": "2026-08-07T15:00:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.907,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "actionforex.com",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
+          ]
+        },
+        {
+          "title": "ANZ anticipating an RBA pause",
+          "url": "https://www.brokernews.com.au/news/breaking-news/anz-anticipating-an-rba-pause-289780.aspx",
+          "domain": "brokernews.com.au",
+          "seen_utc": "2026-08-07T07:00:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.907,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "brokernews.com.au",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
+          ]
+        },
+        {
+          "title": "Heads up RBA preview : Analysts see cash rate on hold at 4 . 35 % Tuesday",
+          "url": "https://investinglive.com/central-banks/heads-up-rba-preview-analysts-see-cash-rate-on-hold-at-4-35-tuesday/",
+          "domain": "investinglive.com",
+          "seen_utc": "2026-08-06T23:45:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.907,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "investinglive.com",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
+          ]
+        },
+        {
+          "title": "Australians defy RBA and continue to spend",
+          "url": "https://www.macrobusiness.com.au/2026/08/australians-defy-rba-and-continue-to-spend/",
+          "domain": "macrobusiness.com.au",
+          "seen_utc": "2026-08-05T03:00:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.707,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "macrobusiness.com.au",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
           ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Reserve+Bank+of+Australia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=Ar"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Australian+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&m",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-08-11",
@@ -475,8 +423,8 @@
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 31,
       "article_count": 1,
-      "retrieved_article_count": 14,
-      "rejected_article_count": 13,
+      "retrieved_article_count": 22,
+      "rejected_article_count": 21,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
@@ -500,7 +448,7 @@
           "source_type": "media",
           "source_name": "thestar.com.my",
           "official": false,
-          "query_tag": "plan-2:96h",
+          "query_tag": "plan-3:7d",
           "relevance_score": 78,
           "relevance_reasons": [
             "target-country macro"
@@ -509,7 +457,7 @@
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Malaysia+inflation%22+OR+%22Malaysia+growth%22+OR+%22Malaysia+GDP%22%29&mode=Ar",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+Negara+Malaysia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList",
         "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
@@ -522,44 +470,47 @@
       "status": "Thin",
       "coverage_quality": "Thin",
       "evidence_eligible": false,
-      "score": 2.5,
+      "score": 3.75,
       "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 31,
+      "confidence_pct": 42,
       "article_count": 1,
-      "retrieved_article_count": 18,
-      "rejected_article_count": 17,
-      "directional_article_count": 0,
+      "retrieved_article_count": 15,
+      "rejected_article_count": 14,
+      "directional_article_count": 1,
       "official_directional_count": 0,
-      "media_directional_count": 0,
+      "media_directional_count": 1,
       "official_article_count": 0,
       "media_article_count": 1,
       "source_diversity": 1,
-      "agreement_pct": null,
+      "agreement_pct": 100,
       "query_attempts": 4,
-      "query_successes": 3,
+      "query_successes": 2,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
-          "title": "Swiss annual inflation ticks down to 0 . 4 % in July",
-          "url": "https://finance.yahoo.com/economy/articles/swiss-annual-inflation-ticks-down-071027793.html",
-          "domain": "finance.yahoo.com",
-          "seen_utc": "2026-08-03T07:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.574,
-          "signal_terms": [],
+          "title": "Swiss Franc Rises Amid Uncertainty Over Hormuz Reopening",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69247460-swiss-franc-rises-amid-uncertainty-over-hormuz-reopening-020.htm",
+          "domain": "finanznachrichten.de",
+          "seen_utc": "2026-08-07T08:45:00+00:00",
+          "direction": "strengthening",
+          "headline_score": 3.75,
+          "weight": 0.897,
+          "signal_terms": [
+            "+swiss franc rises"
+          ],
           "source_type": "media",
-          "source_name": "finance.yahoo.com",
+          "source_name": "finanznachrichten.de",
           "official": false,
-          "query_tag": "plan-2:96h",
-          "relevance_score": 78,
+          "query_tag": "plan-1:96h",
+          "relevance_score": 86,
           "relevance_reasons": [
-            "target-country macro"
+            "target currency/economy named"
           ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Switzerland+inflation%22+OR+%22Swiss+growth%22+OR+%22Switzerland+GDP%22%29&mode",
         "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",

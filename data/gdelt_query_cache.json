@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-08-07T06:42:04.969685+00:00",
+  "updated_at_utc": "2026-08-07T17:40:52.513908+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-08-07T06:26:44.391749+00:00",
@@ -256,7 +256,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-08-07T06:29:24.526982+00:00",
+      "fetched_at_utc": "2026-08-07T17:28:28.202602+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -387,7 +387,7 @@
       }
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-07T06:30:28.189944+00:00",
+      "fetched_at_utc": "2026-08-07T17:29:56.132999+00:00",
       "payload": {
         "articles": [
           {
@@ -993,7 +993,7 @@
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-08-07T06:37:51.122344+00:00",
+      "fetched_at_utc": "2026-08-07T17:38:11.451900+00:00",
       "payload": {
         "articles": [
           {
@@ -1147,7 +1147,7 @@
       }
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-08-07T06:41:11.711949+00:00",
+      "fetched_at_utc": "2026-08-07T17:40:36.926848+00:00",
       "payload": {
         "articles": [
           {
@@ -1211,6 +1211,16 @@
             "sourcecountry": "Qatar"
           },
           {
+            "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69247460-swiss-franc-rises-amid-uncertainty-over-hormuz-reopening-020.htm",
+            "url_mobile": "",
+            "title": "Swiss Franc Rises Amid Uncertainty Over Hormuz Reopening",
+            "seendate": "20260807T084500Z",
+            "socialimage": "https://www.finanznachrichten.de/content/g/fb.png",
+            "domain": "finanznachrichten.de",
+            "language": "English",
+            "sourcecountry": "Germany"
+          },
+          {
             "url": "https://english.news.cn/20260804/2036e5c0889e43ff945374d4c3148ee9/c.html",
             "url_mobile": "",
             "title": "Market exchange rates in China -- Aug . 4 - Xinhua",
@@ -1241,16 +1251,6 @@
             "sourcecountry": ""
           },
           {
-            "url": "https://www.bankier.pl/wiadomosc/Bedzie-nowy-deal-z-Iranem-Zloty-reaguje-pozytywnie-kurs-euro-w-dol-9177020.html",
-            "url_mobile": "",
-            "title": "B\u0119dzie nowy \u201e deal  z Iranem ? Z\u0142oty reaguje pozytywnie , kurs euro w d\u00f3\u0142",
-            "seendate": "20260803T073000Z",
-            "socialimage": "https://galeria.bankier.pl/p/2/a/eb4989e72bdbf8-948-568-6-66-1185-711.jpg",
-            "domain": "bankier.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
             "url": "https://en.shafaqna.com/468584/innovative-swiss-plan-to-support-exporters/",
             "url_mobile": "",
             "title": "Innovative Swiss plan to support exporters \u2013 Shafaqna English | International Shia News & Fatwas",
@@ -1261,31 +1261,31 @@
             "sourcecountry": "Saudi Arabia"
           },
           {
-            "url": "https://finance.yahoo.com/markets/currencies/articles/eur-usd-usd-chf-gbp-135942600.html",
+            "url": "https://www.vedomosti.ru/investments/news/2026/08/07/1219605-zoloto-4400",
             "url_mobile": "",
-            "title": "EUR / USD , USD / CHF , and GBP / USD Short - Term Forecast for 05 / 08 / 2026",
-            "seendate": "20260806T221500Z",
-            "socialimage": "https://s.yimg.com/lo/mysterio/api/A0C0F36BB5BDF9B95AA9FA64557A23962C98EDE671672EE7E1D87758FFEA2C30/subgraphmysterio/resizefill_w1200_h800;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Ffx_empire_176%2F720691919a6d33e42a47b0b556f5211d",
-            "domain": "finance.yahoo.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "title": "\u0426\u0435\u043d\u0430 \u0437\u043e\u043b\u043e\u0442\u0430 \u043f\u0440\u0435\u0432\u044b\u0441\u0438\u043b\u0430 $4400 \u0432\u043f\u0435\u0440\u0432\u044b\u0435 \u0441 17 \u0438\u044e\u043d\u044f",
+            "seendate": "20260807T150000Z",
+            "socialimage": "https://sharing.vedomosti.ru/1786109412/vedomosti.ru/investments/news/2026/08/07/1219605-zoloto-4400.jpg",
+            "domain": "vedomosti.ru",
+            "language": "Russian",
+            "sourcecountry": "Russia"
           }
         ]
       }
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-07T06:41:49.239655+00:00",
+      "fetched_at_utc": "2026-08-07T17:40:52.513887+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://finance.yahoo.com/economy/articles/swiss-annual-inflation-ticks-down-071027793.html",
+            "url": "https://thecorner.eu/financial-markets/debt-issuance-linked-to-investment-in-ai-could-reach-200000-m-by-2026-say-pictet/127245/",
             "url_mobile": "",
-            "title": "Swiss annual inflation ticks down to 0 . 4 % in July",
-            "seendate": "20260803T074500Z",
-            "socialimage": "https://s.yimg.com/lo/mysterio/api/8EC4CC975E7DE26ADA8E2430F96BCDB9EC00003F32C7BB1D0238A1841507A64C/subgraphmysterio/resizefill_w1200_h785;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F32ea0acb949e6c57ee24b40b75ba1598",
-            "domain": "finance.yahoo.com",
+            "title": "Debt issuance linked to investment in AI could reach $200 , 000 M by 2026 , say Pictet",
+            "seendate": "20260807T113000Z",
+            "socialimage": "https://thecorner.eu/wp-content/uploads/2026/08/inteligencia-artificial_1932x1087_rev-1.jpg",
+            "domain": "thecorner.eu",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Spain"
           },
           {
             "url": "https://www.bilanz.ch/invest/hypothekarzinsen-in-der-schweiz-steigen-seit-juli-deutlich/1rdt86f",
@@ -1343,6 +1343,387 @@
             "domain": "wgospodarce.pl",
             "language": "Polish",
             "sourcecountry": "Poland"
+          }
+        ]
+      }
+    },
+    "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
+      "fetched_at_utc": "2026-08-07T17:34:25.918633+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.bangkokpost.com/thailand/pr/3296370/central-bank-policy-its-impact-on-the-currency-market",
+            "url_mobile": "",
+            "title": "Bangkok Post - Central Bank Policy : Its Impact on the Currency Market",
+            "seendate": "20260805T040000Z",
+            "socialimage": "https://static.bangkokpost.com/media/content/20260804/c1_3296370_700.png",
+            "domain": "bangkokpost.com",
+            "language": "English",
+            "sourcecountry": "Thailand"
+          },
+          {
+            "url": "https://www.express.co.uk/finance/personalfinance/2236898/uk-house-pirces-flatline-july-2026-lloyds",
+            "url_mobile": "https://www.express.co.uk/finance/personalfinance/2236898/uk-house-pirces-flatline-july-2026-lloyds/amp",
+            "title": "House prices stall as mortgage rate hikes hit property market | Personal Finance | Finance",
+            "seendate": "20260807T083000Z",
+            "socialimage": "https://cdn.images.express.co.uk/img/dynamic/23/1200x630/7082546.jpg",
+            "domain": "express.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.aol.co.uk/articles/house-prices-stall-mortgage-rate-075000000.html",
+            "url_mobile": "",
+            "title": "House prices stall as mortgage rate hikes hit united kingdom property market and growth flatlines",
+            "seendate": "20260807T083000Z",
+            "socialimage": "https://hermes.media.static.aol.com/media/2026/08/07/4f126d3c-ee75-3f2a-9209-d472ca0c9848/49a19021-b0cd-4cfb-be5d-000c8b1e9be8.jpg",
+            "domain": "aol.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://thestarphoenix.com/press-releases/business-wire/northern-trust-pension-universe-data-canadian-pension-plan-returns-rise-in-q2/",
+            "url_mobile": "",
+            "title": "Northern Trust Pension Universe Data : Canadian Pension Plan Returns Rise in Q2",
+            "seendate": "20260806T180000Z",
+            "socialimage": "https://mms.businesswire.com/media/20260806985081/en/507644/3/Northern_Trust_Left_Center.jpg",
+            "domain": "thestarphoenix.com",
+            "language": "English",
+            "sourcecountry": "Canada"
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-nfp-064558902.html",
+            "url_mobile": "",
+            "title": "US Dollar Price Forecast : NFP Week Keeps DXY , EUR / USD and GBP / USD in Focus",
+            "seendate": "20260806T183000Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/CFC1D014BCDC6C269F629940F930D35E19001484E00D0B6273BAC4184BC92984/subgraphmysterio/resizefill_w1200_h800;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Ffx_empire_176%2Fa15d510a2eb3d2f99704a3fcde7b892a",
+            "domain": "finance.yahoo.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.dailymail.com/money/mortgageshome/article-16029955/First-time-buyers-eye-cheaper-tracker-mortgages-fixed-rates-rise.html",
+            "url_mobile": "",
+            "title": "First - time buyers eye cheaper tracker mortgages as fixed rates rise",
+            "seendate": "20260805T154500Z",
+            "socialimage": "https://i.dailymail.com/1s/2026/08/05/11/110449991-0-image-m-18_1785923875977.jpg",
+            "domain": "dailymail.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.bucksfreepress.co.uk/news/national/26444100.uk-house-prices-stagnant-amid-high-mortgage-costs/",
+            "url_mobile": "",
+            "title": "UK house prices stagnant amid high mortgage costs",
+            "seendate": "20260807T083000Z",
+            "socialimage": "https://www.bucksfreepress.co.uk/resources/images/21285637.jpg?type=og-image",
+            "domain": "bucksfreepress.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.investorschronicle.co.uk/content/430f1d31-ff8b-476f-a19c-796aa239bfab",
+            "url_mobile": "",
+            "title": "How the Fed lost its credibility",
+            "seendate": "20260806T194500Z",
+            "socialimage": "https://d2iztrg3kgqpue.cloudfront.net/production/1e636ff8-82f5-4fbd-ac3c-78e7324cc8d5.png",
+            "domain": "investorschronicle.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.agoravox.fr/tribune-libre/article/2014-andrew-haldane-le-spleen-du-270989",
+            "url_mobile": "https://amp.agoravox.fr/tribune-libre/article/2014-andrew-haldane-le-spleen-du-270989",
+            "title": "2014 - Andrew Haldane , le spleen du banquier central \u00e0 mi - chemin sur les marches du pouvoir",
+            "seendate": "20260803T180000Z",
+            "socialimage": "https://www.agoravox.fr/local/cache-vignettes/L476xH354/escalier_MILNE_073-d7ebc.png",
+            "domain": "agoravox.fr",
+            "language": "French",
+            "sourcecountry": "France"
+          },
+          {
+            "url": "https://funds-europe.com/the-rising-threat-of-real-yields/",
+            "url_mobile": "",
+            "title": "The rising threat of real yields",
+            "seendate": "20260804T134500Z",
+            "socialimage": "https://funds-europe.com/wp-content/uploads/2026/08/bhatia-ashok-1.jpg",
+            "domain": "funds-europe.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.cityam.com/el-nino-heatwaves-to-fuel-inflation-next-year/",
+            "url_mobile": "",
+            "title": "El Nino heatwaves to  fuel inflation next year  ",
+            "seendate": "20260807T141500Z",
+            "socialimage": "https://www.cityam.com/wp-content/uploads/2026/08/01KYN855QM2B2WAG7RY6KK00PJ-e1786106124220.jpg",
+            "domain": "cityam.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.yourlocalguardian.co.uk/news/national/26444100.uk-house-prices-stagnant-amid-high-mortgage-costs/",
+            "url_mobile": "",
+            "title": "UK house prices stagnant amid high mortgage costs",
+            "seendate": "20260807T073000Z",
+            "socialimage": "https://www.yourlocalguardian.co.uk/resources/images/21285637.jpg?type=og-image",
+            "domain": "yourlocalguardian.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          }
+        ]
+      }
+    },
+    "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
+      "fetched_at_utc": "2026-08-07T17:36:44.616993+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://finance.yahoo.com/economy/articles/australia-household-spending-posts-solid-023445409.html",
+            "url_mobile": "",
+            "title": "Australia household spending posts solid June gain as EV sales jump",
+            "seendate": "20260804T031500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/A316F4D3DFD630B2A0914DA34F2F1B036575442C74BF673B41EB496E6BED942B/subgraphmysterio/resizefill_w1200_h801;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F9a318ce45579af8b0db08c44887f578b",
+            "domain": "finance.yahoo.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.macrobusiness.com.au/2026/08/australians-defy-rba-and-continue-to-spend/",
+            "url_mobile": "",
+            "title": "Australians defy RBA and continue to spend",
+            "seendate": "20260805T030000Z",
+            "socialimage": "https://api.macrobusiness.com.au/wp-content/uploads/2024/09/bullock-chalmers.png",
+            "domain": "macrobusiness.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.brokernews.com.au/news/breaking-news/anz-anticipating-an-rba-pause-289780.aspx",
+            "url_mobile": "",
+            "title": "ANZ anticipating an RBA pause",
+            "seendate": "20260807T070000Z",
+            "socialimage": "https://cdn-res.keymedia.com/cms/images/ab/kell_639216751511674203.jpg",
+            "domain": "brokernews.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.sbs.com.au/news/article/rba-interest-rates-decision-august-2026-inflation-jobs-spending/1l996wgp0",
+            "url_mobile": "",
+            "title": "  Dont bank on it : Three factors shaping next week interest rates decision",
+            "seendate": "20260806T063000Z",
+            "socialimage": "https://sbs-au-brightspot.s3.ap-southeast-2.amazonaws.com/da/f5/402cf37747939e8754beddab0a27/20260624174141124247-original.jpg",
+            "domain": "sbs.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.933thedrive.com/2026/08/03/australia-household-spending-posts-solid-june-gain-as-ev-sales-jump/",
+            "url_mobile": "",
+            "title": "Australia household spending posts solid June gain as EV sales jump",
+            "seendate": "20260804T041500Z",
+            "socialimage": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-08/04/2026-08-04T023445Z_1_LYNXMPEM73041_RTROPTP_3_COLES-RESULTS.JPG",
+            "domain": "933thedrive.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.currencynews.co.uk/forecast/20260806-46754_pound-to-australian-dollar-forecast-strong-trade-data-supports-aussie.html",
+            "url_mobile": "",
+            "title": "Pound to Australian Dollar Forecast : Strong Trade Data Supports Aussie",
+            "seendate": "20260806T214500Z",
+            "socialimage": "",
+            "domain": "currencynews.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://investinglive.com/news/australia-household-spending-beats-up-0-8-in-june-expected-0-2-prior-1-3/",
+            "url_mobile": "",
+            "title": "Australia household spending beats , up 0 . 8 % in June ( expected +0 . 2 %, prior +1 . 3 %) ",
+            "seendate": "20260804T024500Z",
+            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/AUD%20up%20on%20the%20data%2004%20August%202026-featured-1785808021.jpg",
+            "domain": "investinglive.com",
+            "language": "English",
+            "sourcecountry": ""
+          },
+          {
+            "url": "http://www.econotimes.com/Asia-Roundup-Yen-remains-in-focus-after-US-Japan-FX-intervention-Asia-shres-move-higher-Gold-edges-higher-Oil-ticks-up-August-4th2026-1748538",
+            "url_mobile": "",
+            "title": "Asia Roundup : Yen remains in focus after US - Japan FX intervention , Asia shres move higher , Gold edges higher , Oil ticks up - August 4th , 2026",
+            "seendate": "20260805T044500Z",
+            "socialimage": "https://www.econotimes.com/assets/images/econotimes/metaDefault2.png",
+            "domain": "econotimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.actionforex.com/contributors/fundamental-analysis/649932-week-ahead-us-cpi-data-boj-summary-and-rba-decision-take-the-stage/",
+            "url_mobile": "",
+            "title": "Week Ahead \u2013 US CPI Data , BoJ Summary and RBA Decision Take the Stage",
+            "seendate": "20260807T150000Z",
+            "socialimage": "https://www.actionforex.com/wp-content/uploads/2021/11/f-inflation48.jpg",
+            "domain": "actionforex.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://investinglive.com/central-banks/heads-up-rba-preview-analysts-see-cash-rate-on-hold-at-4-35-tuesday/",
+            "url_mobile": "",
+            "title": "Heads up RBA preview : Analysts see cash rate on hold at 4 . 35 % Tuesday",
+            "seendate": "20260806T234500Z",
+            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/rba%20rate%20hike%20history%2007%20August%202026-featured-1786051808.jpg",
+            "domain": "investinglive.com",
+            "language": "English",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://www.actionforex.com/action-insight/market-overview/649628-aud-usd-is-rising-why-isnt-it-rising-faster/",
+            "url_mobile": "",
+            "title": "AUD / USD Is Rising . Why Isnt It Rising Faster ? ",
+            "seendate": "20260805T111500Z",
+            "socialimage": "https://www.actionforex.com/wp-content/uploads/2020/03/f-aud115.jpg",
+            "domain": "actionforex.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://channellife.com.au/story/fintech-australia-unveils-intersekt-2026-programme",
+            "url_mobile": "",
+            "title": "FinTech Australia unveils Intersekt 2026 programme",
+            "seendate": "20260807T040000Z",
+            "socialimage": "https://channellife.com.au/uploads/story/2026/08/07/compatible_freya-smith-and-rehan-d-almeida-story-314370.jpg",
+            "domain": "channellife.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          }
+        ]
+      }
+    },
+    "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
+      "fetched_at_utc": "2026-08-07T17:39:24.617145+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/06/malaysia039s-2q-growth-039should-be-okay039-says-amir-hamzah",
+            "url_mobile": "",
+            "title": "Malaysia 2Q growth  should be okay , says Amir Hamzah",
+            "seendate": "20260806T063000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/06/4046149.jpg",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.enanyang.my/news/20260804/Nation/1337853",
+            "url_mobile": "",
+            "title": "\u96ea\u5dde\u7ecf\u6d4e\u6301\u7eed\u6269\u5f20 \u963f\u7c73\u9c81\u4e01 : 2030\u5e74\u78346125\u4ebf\u5927\u5173",
+            "seendate": "20260804T090000Z",
+            "socialimage": "https://vega.enanyang.my/wp-content/uploads/2026/08/260804_amirudin_1a9227.jpg",
+            "domain": "enanyang.my",
+            "language": "Chinese",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://ent.ycwb.com/2026-08/06/content_54260040.htm",
+            "url_mobile": "",
+            "title": "\u5531\u4f5c\u65b0\u4ebaKaelyn\u9996\u652f\u4e3b\u6253\u6b4c \u300a Up & Down \u300b \u4e0a\u7ebf \uff0c \u6e29\u67d4\u58f0\u7ebf\u7597\u6108\u90fd\u5e02\u5fc3\u7075",
+            "seendate": "20260806T090000Z",
+            "socialimage": "https://ent.ycwb.com/pic/2026-08/06/54260040_052f5ba8-a1ae-4007-8cbf-56eb9270a088copy.jpg",
+            "domain": "ent.ycwb.com",
+            "language": "Chinese",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.orientaldaily.com.my/news/business/2026/08/03/837826",
+            "url_mobile": "",
+            "title": "\u9a6c\u516d\u7532\u6d77\u5ce1\u82e5\u53d7\u963b \u5927\u9a6c\u7ecf\u6d4e\u6050\u906d\u91cd\u521b \uff1f | \u8d22\u7ecf",
+            "seendate": "20260803T030000Z",
+            "socialimage": "https://www.orientaldaily.com.my/storage/resize_cache/images/uploads/news-cover/_1x_1_8.jpg/b5ed789614c286bc36565f7bc79a5db4.jpg",
+            "domain": "orientaldaily.com.my",
+            "language": "Chinese",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/03/the-noise-of-oil-prices",
+            "url_mobile": "",
+            "title": "The noise of oil prices",
+            "seendate": "20260802T194500Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/01/4038167.jpg",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://ec.ltn.com.tw/article/breakingnews/5526026",
+            "url_mobile": "https://ec.ltn.com.tw/amp/article/breakingnews/5526026",
+            "title": "\u66fe\u8fce\u5408\u5317\u4eac\u64a4\u56de\u8cf4\u7e3d\u7d71\u5c08\u6a5f\u98db\u8d8a\u8a31\u53ef \u9019\u570b59\u5104\u6551\u547d\u9322\u906dIMF\u51cd\u7d50\u6158\u4e86",
+            "seendate": "20260802T090000Z",
+            "socialimage": "https://img.ltn.com.tw/Upload/business/page/800/2026/08/02/phpsjEUgm.jpg",
+            "domain": "ec.ltn.com.tw",
+            "language": "Chinese",
+            "sourcecountry": "Taiwan"
+          },
+          {
+            "url": "https://china.qianlong.com/2026/0807/8708611.shtml",
+            "url_mobile": "",
+            "title": "\u89c6\u9891\u4e28\u5355\u65e5\u7968\u623f\u8fde\u7eed\u200c27\u5929\u200c\u7834\u4ebf\u5143 \uff01 \u7535\u5f71+  \u6fc0\u53d1\u6d88\u8d39\u65b0\u6d3b\u529b - \u5343\u9f99\u7f51 \u00b7 \u4e2d\u56fd\u9996\u90fd\u7f51",
+            "seendate": "20260806T201500Z",
+            "socialimage": "",
+            "domain": "china.qianlong.com",
+            "language": "Chinese",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.zaobao.com.sg/entertainment/story20260804-9468642",
+            "url_mobile": "",
+            "title": " \u3010 \u661f\u661f\u9668\u843d \u3011 \u845b\u5170\u66fe\u6253\u8d25\u4e24\u5343\u4eba\u95ef\u597d\u83b1\u575e \u300a \u75af\u72c2\u5bcc\u8c6a \u300b \u7528\u5979\u8fd9\u4e24\u9996\u6b4c",
+            "seendate": "20260804T104500Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/zaobao/2cc74a21acbda366186299af94c60d7dba491bbe74cf6a0168348393e1749b56",
+            "domain": "zaobao.com.sg",
+            "language": "Chinese",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "http://www.malaysiasun.com/news/279225015/fitch-sees-malaysian-banks-credit-profiles-remaining-resilient",
+            "url_mobile": "",
+            "title": "Fitch sees Malaysian bank credit profiles remaining resilient",
+            "seendate": "20260806T221500Z",
+            "socialimage": "",
+            "domain": "malaysiasun.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "http://www.bruneinews.net/news/279225015/fitch-sees-malaysian-banks-credit-profiles-remaining-resilient",
+            "url_mobile": "",
+            "title": "Fitch sees Malaysian bank credit profiles remaining resilient",
+            "seendate": "20260806T180000Z",
+            "socialimage": "",
+            "domain": "bruneinews.net",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://english.news.cn/20260806/b892e034c17941de9307aeb05f6f0e29/c.html",
+            "url_mobile": "",
+            "title": "Fitch sees Malaysian bank credit profiles remaining resilient - Xinhua",
+            "seendate": "20260806T150000Z",
+            "socialimage": "",
+            "domain": "english.news.cn",
+            "language": "English",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/07/exports-to-remain-resilient",
+            "url_mobile": "",
+            "title": "Exports to remain resilient",
+            "seendate": "20260807T004500Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/07/4047885.jpeg",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
           }
         ]
       }
