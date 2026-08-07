@@ -178,6 +178,17 @@ def safe_article_url(value):
     return "#"
 
 
+def coverage_class(value):
+    value = str(value or "Unavailable").lower()
+    if value == "strong":
+        return "coverage-strong"
+    if value == "adequate":
+        return "coverage-adequate"
+    if value == "thin":
+        return "coverage-thin"
+    return "coverage-unavailable"
+
+
 def build_shadow_news_box(item):
     shadow = item.get("shadow_news") or {}
     score = float(shadow.get("score", 2.5) or 2.5)
@@ -185,7 +196,12 @@ def build_shadow_news_box(item):
     confidence = int(shadow.get("confidence_pct", 0) or 0)
     article_count = int(shadow.get("article_count", 0) or 0)
     directional = int(shadow.get("directional_article_count", 0) or 0)
+    official_count = int(shadow.get("official_article_count", 0) or 0)
+    media_count = int(shadow.get("media_article_count", 0) or 0)
     diversity = int(shadow.get("source_diversity", 0) or 0)
+    coverage_quality = str(shadow.get("coverage_quality", "Unavailable"))
+    query_attempts = int(shadow.get("query_attempts", 0) or 0)
+    query_successes = int(shadow.get("query_successes", 0) or 0)
     agreement = shadow.get("agreement_pct")
     agreement_text = "—" if agreement is None else f"{agreement}%"
     horizon = shadow.get("horizon", "Short term (1–10 trading days)")
@@ -198,35 +214,50 @@ def build_shadow_news_box(item):
         event_text = f"{event_date} · {event_risk} risk"
     else:
         event_text = "Calendar rollover needed"
+
     articles = shadow.get("articles") or []
     article_html = []
-    for article in articles[:4]:
+    for article in articles[:5]:
         title = html.escape(str(article.get("title") or "Untitled"))
         domain = html.escape(str(article.get("domain") or "Unknown source"))
         direction = html.escape(str(article.get("direction") or "neutral"))
+        source_type = str(article.get("source_type") or "media")
+        source_name = html.escape(str(article.get("source_name") or domain))
+        source_badge = "Official" if source_type == "official" else "Media"
         url = safe_article_url(article.get("url"))
         article_html.append(
             f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>'
-            f'<span>{domain} · {direction}</span></li>'
+            f'<span><b>{source_badge}</b> · {source_name} · {direction}</span></li>'
         )
-    articles_block = "".join(article_html) if article_html else '<li class="shadow-empty">No usable headlines returned for this run.</li>'
+    articles_block = "".join(article_html) if article_html else '<li class="shadow-empty">No usable recent items returned for this run.</li>'
+
+    coverage_note = (
+        "Directional calls are eligible for validation."
+        if coverage_quality in {"Strong", "Adequate"}
+        else "Coverage is too thin for a validated directional call; the displayed score remains observational only."
+    )
+
     return f'''
       <div class="shadow-box {shadow_class(score)}">
         <div class="shadow-head">
-          <div><span>Phase 3A shadow intelligence</span><strong>{score:.2f}/5 · {html.escape(str(label))}</strong></div>
+          <div><span>Phase 3A.1 coverage-hardened shadow intelligence</span><strong>{score:.2f}/5 · {html.escape(str(label))}</strong></div>
           <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="coverage-row">
+          <span>Coverage quality</span><strong class="coverage-badge {coverage_class(coverage_quality)}">{html.escape(coverage_quality)}</strong>
+          <small>{query_successes}/{query_attempts} media queries successful</small>
         </div>
         <div class="shadow-grid">
           <div><span>Headline confidence</span><strong>{confidence}%</strong></div>
-          <div><span>Directional headlines</span><strong>{directional}/{article_count}</strong></div>
-          <div><span>Source diversity</span><strong>{diversity}</strong></div>
-          <div><span>Directional agreement</span><strong>{agreement_text}</strong></div>
+          <div><span>Directional items</span><strong>{directional}/{article_count}</strong></div>
+          <div><span>Official items</span><strong>{official_count}</strong></div>
+          <div><span>Media items</span><strong>{media_count}</strong></div>
         </div>
-        <div class="shadow-horizon"><strong>Event watch:</strong> {html.escape(event_text)}<br>Impact horizon: {html.escape(str(horizon))}. This layer does <strong>not</strong> alter the recommendation.</div>
+        <div class="shadow-secondary">Source diversity: <strong>{diversity}</strong> · Directional agreement: <strong>{agreement_text}</strong></div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> {html.escape(event_text)}<br>Impact horizon: {html.escape(str(horizon))}. {html.escape(coverage_note)} This layer does <strong>not</strong> alter the recommendation.</div>
         <ul class="shadow-headlines">{articles_block}</ul>
       </div>
     '''
-
 
 def shadow_performance_cell(stats):
     if not stats or not stats.get("directional_calls"):
@@ -242,7 +273,7 @@ def shadow_performance_cell(stats):
 def build_shadow_performance_section(performance, currencies):
     if not performance:
         return '''
-        <div class="section-header"><div><h2>Phase 3A shadow performance</h2><p>Directional performance will appear after shadow signals mature.</p></div></div>
+        <div class="section-header"><div><h2>Phase 3A.1 shadow performance</h2><p>Directional performance will appear after shadow signals mature.</p></div></div>
         <section class="performance-panel"><div class="perf-empty">Shadow performance data is not available yet.</div></section>
         '''
     overall = performance.get("overall", {})
@@ -262,12 +293,12 @@ def build_shadow_performance_section(performance, currencies):
         rows.append(f'''<tr><td><strong>{code}</strong><span>{html.escape(item['name'])}</span></td><td>{shadow_performance_cell(stats.get('1'))}</td><td>{shadow_performance_cell(stats.get('5'))}</td><td>{shadow_performance_cell(stats.get('10'))}</td></tr>''')
     neutral_band = performance.get("neutral_move_band_pct", 0.10)
     return f'''
-    <div class="section-header"><div><h2>Phase 3A shadow performance</h2><p>Tests whether the separate news/event bias anticipated the later FX direction. It remains completely outside the frozen Phase 2C recommendation.</p></div></div>
+    <div class="section-header"><div><h2>Phase 3A.1 shadow performance</h2><p>Tests whether the separate news/event bias anticipated the later FX direction. It remains completely outside the frozen Phase 2C recommendation.</p></div></div>
     <section class="performance-panel shadow-performance-panel">
       <div class="performance-meta"><strong>Shadow-mode validation</strong><span>Only directional calls are scored. Future FX moves within ±{neutral_band:.2f}% are neutral and excluded from directional accuracy.</span></div>
       <div class="perf-cards">{''.join(cards)}</div>
       <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
-      <div class="performance-note"><strong>Purpose:</strong> Phase 3A is an experiment. We are measuring whether headline/event intelligence adds leading information before allowing it to influence any model score.</div>
+      <div class="performance-note"><strong>Purpose:</strong> Phase 3A.1 is an experiment. We are measuring whether headline/event intelligence adds leading information before allowing it to influence any model score.</div>
     </section>
     '''
 
@@ -493,7 +524,7 @@ def main():
     news_event_source = html.escape(data.get("news_event_source", "Unavailable"))
     news_run_date_sgt = html.escape(data.get("news_run_date_sgt", ""))
     model_version = html.escape(data.get("model_version", ""))
-    app_release = html.escape(data.get("app_release", "3.0-phase3a-shadow-news"))
+    app_release = html.escape(data.get("app_release", "3.1-phase3a1-coverage-hardened"))
     previous_score_date = data.get("previous_score_date")
     comparison_text = html.escape(str(previous_score_date)) if previous_score_date else "Starts next new market day"
 
@@ -691,6 +722,16 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .shadow-grid div{{background:rgba(6,15,27,.48);border:1px solid #1c3048;border-radius:10px;padding:8px}}
 .shadow-grid span{{display:block;color:var(--muted);font-size:.62rem}}
 .shadow-grid strong{{display:block;margin-top:3px;font-size:.78rem}}
+.coverage-row{{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0 10px;padding:8px 9px;border-radius:10px;background:rgba(6,15,27,.42);border:1px solid #1c3048;color:var(--muted);font-size:.66rem}}
+.coverage-row strong{{font-size:.66rem}}
+.coverage-row small{{margin-left:auto;color:#7189a5}}
+.coverage-badge{{display:inline-flex;padding:3px 7px;border-radius:999px;border:1px solid transparent;text-transform:uppercase;letter-spacing:.06em}}
+.coverage-strong{{color:var(--green);background:rgba(69,221,163,.10);border-color:rgba(69,221,163,.28)}}
+.coverage-adequate{{color:var(--lime);background:rgba(165,228,91,.10);border-color:rgba(165,228,91,.25)}}
+.coverage-thin{{color:var(--amber);background:rgba(244,201,93,.10);border-color:rgba(244,201,93,.25)}}
+.coverage-unavailable{{color:var(--red);background:rgba(255,107,123,.10);border-color:rgba(255,107,123,.25)}}
+.shadow-secondary{{margin-top:8px;color:#8197b1;font-size:.66rem}}
+.shadow-secondary strong{{color:#c8d7e8}}
 .shadow-horizon{{margin-top:10px;color:#9db1c8;font-size:.7rem;line-height:1.5}}
 .shadow-headlines{{margin:9px 0 0;padding-left:17px}}
 .shadow-headlines li{{margin:7px 0;color:#b7c8db;font-size:.72rem;line-height:1.35}}
@@ -743,9 +784,9 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
 <div class="container">
   <header class="topbar">
     <div>
-      <div class="eyebrow">Personal currency decision support · Phase 3A shadow mode · 7 currencies</div>
+      <div class="eyebrow">Personal currency decision support · Phase 3A.1 coverage-hardened shadow mode · 7 currencies</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">The Phase 2C baseline remains frozen. Phase 3A adds a separate headline/event intelligence layer in shadow mode so we can test whether news signals lead FX moves before allowing them to influence recommendations.</p>
+      <p class="subtitle">The Phase 2C baseline remains frozen. Phase 3A.1 hardens the separate news/event shadow layer with multi-query media coverage, official central-bank communications and explicit coverage-quality controls.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>{market_date}</strong></div>
@@ -783,7 +824,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <p class="hero-macro">Macro view: {html.escape(best_macro_driver)}</p>
       <p class="hero-macro">Forward view: {html.escape(best_forward_driver)}</p>
       <p class="hero-macro">Timing view: {html.escape(best.get('urgency_drivers', ['No urgency signal available.'])[0])}</p>
-      <p class="hero-macro">Phase 3A shadow: {best_shadow_score:.2f}/5 · {html.escape(best_shadow_label)} · {best_shadow_confidence}% headline confidence. This does not affect the action.</p>
+      <p class="hero-macro">Phase 3A.1 shadow: {best_shadow_score:.2f}/5 · {html.escape(best_shadow_label)} · {best_shadow_confidence}% headline confidence. This does not affect the action.</p>
     </div>
     <div class="hero-side">
       <h3>Suggested action</h3>
@@ -795,7 +836,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <strong>Buy urgency:</strong> {best_urgency:.2f}/5 · {html.escape(best_urgency_label)}<br>
       <strong>Model/data quality:</strong> {best_decision_confidence}% · {best_signal_agreement}% signal agreement<br>
       <strong>Next policy event:</strong> {html.escape(meeting_text(best))} · {html.escape(best.get('event_risk_label', '—'))} risk</p>
-      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 3A keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
+      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 3A.1 keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
     </div>
   </section>
 
@@ -832,7 +873,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 3A shadow experiment · Phase 2C baseline remains frozen</h2><p>Phase 3A observes recent news and policy-event coverage alongside the frozen baseline. Shadow intelligence is measured independently and cannot change Opportunity, Forward Outlook, Buy Urgency or the recommendation.</p></div>
+    <div><h2>Phase 3A.1 coverage experiment · Phase 2C baseline remains frozen</h2><p>Phase 3A.1 observes recent media, official central-bank communications and policy-event coverage alongside the frozen baseline. Shadow intelligence is measured independently and cannot change Opportunity, Forward Outlook, Buy Urgency or the recommendation.</p></div>
   </div>
   <section class="methodology">
     <div class="method-card"><strong>Frozen</strong><span>Phase 2C core weights are locked during the baseline observation period so later changes can be measured cleanly.</span></div>
@@ -847,10 +888,10 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: upcoming policy-event setup.</span></div>
     <div class="method-card"><strong>Quality</strong><span>Model/data quality reflects history length, source validation and macro coverage. It is not a probability that the recommendation will be correct.</span></div>
     <div class="method-card"><strong>Shadow</strong><span>GDELT headlines from the last 72 hours are screened for strengthening/weakening signals. Headline heuristics do not read full article text.</span></div>
-    <div class="method-card"><strong>0%</strong><span>Phase 3A news/event weight in the recommendation. It stays at zero until shadow-mode performance provides evidence that it adds value.</span></div>
+    <div class="method-card"><strong>0%</strong><span>Phase 3A.1 news/event weight in the recommendation. It stays at zero until shadow-mode performance provides evidence that it adds value.</span></div>
   </section>
 
-  <div class="notice"><strong>Phase 3A shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The new GDELT layer uses recent headlines and official policy-event timing only as an observational signal. It is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> the news score is headline-based, not full-text or LLM analysis. It may miss nuance, conditional statements or cross-currency effects, and GDELT coverage can vary by source and geography. “Headline confidence” measures coverage, source diversity and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
+  <div class="notice"><strong>Phase 3A.1 shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The shadow layer now combines several simpler GDELT searches with official central-bank RSS/domain communications. Coverage is explicitly classified as Strong, Adequate, Thin or Unavailable. Thin/Unavailable coverage cannot become a validated directional call. The shadow layer is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> scoring is still headline/summary heuristic analysis rather than full-text or LLM interpretation. It may miss nuance, conditional statements or cross-currency effects. “Headline confidence” measures data coverage, source diversity, official-source participation and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
   <footer>Generated automatically by GitHub Actions · Last build {html.escape(generated)}</footer>
 </div>
 

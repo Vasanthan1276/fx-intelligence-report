@@ -6,6 +6,7 @@ import math
 import os
 import re
 import time
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
@@ -49,7 +50,7 @@ CURRENCY_CONFIG = {
 }
 
 MODEL_VERSION = "2.2-phase2c-baseline"
-APP_RELEASE = "3.0-phase3a-shadow-news"
+APP_RELEASE = "3.1-phase3a1-coverage-hardened"
 PERFORMANCE_HORIZONS = (1, 5, 10, 20)
 PERFORMANCE_NEUTRAL_BAND_PCT = 0.10
 
@@ -178,22 +179,86 @@ IMF_INFLATION_INDICATOR = "PCPIPCH"
 # Forward Outlook, Buy Urgency, suggested tranche, or the recommendation.
 # It is logged separately so we can later test whether it adds predictive value.
 GDELT_DOC_API = "https://api.gdeltproject.org/api/v2/doc/doc"
-NEWS_LOOKBACK = "72h"
-NEWS_MAX_ARTICLES = 20
+NEWS_LOOKBACK = "96h"
+NEWS_FALLBACK_LOOKBACK = "7d"
+NEWS_OFFICIAL_LOOKBACK_DAYS = 10
+NEWS_MAX_ARTICLES_PER_QUERY = 12
+NEWS_TARGET_ARTICLES = 10
 NEWS_SHADOW_HORIZONS = (1, 5, 10)
 NEWS_DIRECTIONAL_THRESHOLD_HIGH = 3.10
 NEWS_DIRECTIONAL_THRESHOLD_LOW = 1.90
 NEWS_NEUTRAL_BAND_PCT = 0.10
 
-NEWS_QUERIES = {
-    "USD": '("US dollar" OR "Federal Reserve" OR "Fed policy") (currency OR forex OR rates OR inflation OR economy)',
-    "JPY": '("Japanese yen" OR "Bank of Japan" OR "BOJ policy") (currency OR forex OR rates OR inflation OR economy)',
-    "EUR": '("euro currency" OR "European Central Bank" OR "ECB policy") (currency OR forex OR rates OR inflation OR economy)',
-    "GBP": '("British pound" OR sterling OR "Bank of England" OR "BOE policy") (currency OR forex OR rates OR inflation OR economy)',
-    "AUD": '("Australian dollar" OR "Reserve Bank of Australia" OR "RBA policy") (currency OR forex OR rates OR inflation OR economy)',
-    "MYR": '("Malaysian ringgit" OR "Bank Negara Malaysia" OR "BNM policy") (currency OR forex OR rates OR inflation OR economy)',
-    "CHF": '("Swiss franc" OR "Swiss National Bank" OR "SNB policy") (currency OR forex OR rates OR inflation OR economy)',
+# Phase 3A.1 uses several simpler searches instead of one complex GDELT query.
+# If the recent search is thin, it automatically widens the lookback to seven days.
+NEWS_QUERY_PLANS = {
+    "USD": [
+        '"US dollar" (forex OR currency OR "exchange rate")',
+        '"Federal Reserve" (rates OR inflation OR policy OR economy)',
+        '("US inflation" OR "US jobs" OR "US GDP")',
+    ],
+    "JPY": [
+        '"Japanese yen" (forex OR currency OR "exchange rate")',
+        '"Bank of Japan" (rates OR inflation OR policy OR economy)',
+        '("Japan inflation" OR "Japan wages" OR "Japan GDP")',
+    ],
+    "EUR": [
+        '"euro" (forex OR currency OR "exchange rate")',
+        '"European Central Bank" (rates OR inflation OR policy OR economy)',
+        '("euro area inflation" OR "euro area growth" OR "eurozone GDP")',
+    ],
+    "GBP": [
+        '(sterling OR "British pound") (forex OR currency OR "exchange rate")',
+        '"Bank of England" (rates OR inflation OR policy OR economy)',
+        '("UK inflation" OR "UK wages" OR "UK GDP")',
+    ],
+    "AUD": [
+        '"Australian dollar" (forex OR currency OR "exchange rate")',
+        '"Reserve Bank of Australia" (rates OR inflation OR policy OR economy)',
+        '("Australia inflation" OR "Australia jobs" OR "Australia GDP")',
+    ],
+    "MYR": [
+        '"Malaysian ringgit" (forex OR currency OR "exchange rate")',
+        '"Bank Negara Malaysia" (rates OR inflation OR policy OR economy)',
+        '("Malaysia inflation" OR "Malaysia growth" OR "Malaysia GDP")',
+    ],
+    "CHF": [
+        '"Swiss franc" (forex OR currency OR "exchange rate")',
+        '"Swiss National Bank" (rates OR inflation OR policy OR economy)',
+        '("Switzerland inflation" OR "Swiss growth" OR "Switzerland GDP")',
+    ],
 }
+
+# Official central-bank RSS feeds provide a second source independent of general
+# media coverage. MYR uses an official-domain GDELT fallback because BNM does not
+# expose a stable public RSS endpoint in this project.
+OFFICIAL_NEWS_FEEDS = {
+    "USD": [("Federal Reserve monetary policy", "https://www.federalreserve.gov/feeds/press_monetary.xml")],
+    "JPY": [("Bank of Japan updates", "https://www.boj.or.jp/en/rss/whatsnew.xml")],
+    "EUR": [("ECB press releases and speeches", "https://www.ecb.europa.eu/rss/press.html")],
+    "GBP": [
+        ("Bank of England news", "https://www.bankofengland.co.uk/rss/news"),
+        ("Bank of England speeches", "https://www.bankofengland.co.uk/rss/speeches"),
+    ],
+    "AUD": [("RBA media releases", "https://www.rba.gov.au/rss/rss-cb-media-releases.xml")],
+    "MYR": [],
+    "CHF": [("SNB press releases", "https://www.snb.ch/public/rss/en/pressrel")],
+}
+OFFICIAL_GDELT_DOMAINS = {
+    "USD": ["federalreserve.gov"],
+    "JPY": ["boj.or.jp"],
+    "EUR": ["ecb.europa.eu"],
+    "GBP": ["bankofengland.co.uk"],
+    "AUD": ["rba.gov.au"],
+    "MYR": ["financialmarkets.bnm.gov.my", "bnm.gov.my"],
+    "CHF": ["snb.ch"],
+}
+OFFICIAL_RELEVANCE_TERMS = (
+    "monetary policy", "interest rate", "interest rates", "policy rate", "inflation",
+    "economic outlook", "economy", "growth", "gdp", "employment", "labour", "labor",
+    "exchange rate", "currency", "dollar", "yen", "euro", "sterling", "pound",
+    "ringgit", "franc", "wage", "wages", "price stability", "rate decision",
+)
 
 # Headline-only directional lexicon. Positive means the foreign currency may
 # strengthen (become more expensive in SGD terms); negative means weaken.
@@ -325,7 +390,7 @@ class CurrencySignal:
 def _http_get(url: str, params: Optional[dict] = None, timeout: int = 45) -> requests.Response:
     headers = {
         "User-Agent": "V-FX-Intelligence/1.0 (+GitHub Actions)",
-        "Accept": "text/csv,application/json;q=0.9,*/*;q=0.8",
+        "Accept": "text/csv,application/json,application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.8",
     }
     response = requests.get(url, params=params, headers=headers, timeout=timeout)
     response.raise_for_status()
@@ -421,13 +486,130 @@ def _news_bias_label(score: float, directional_count: int) -> str:
     return "Mixed / neutral"
 
 
-def fetch_gdelt_news_for_currency(code: str) -> Dict[str, object]:
-    query = NEWS_QUERIES[code]
+def _strip_markup(value: object) -> str:
+    text = str(value or "")
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"&nbsp;", " ", text, flags=re.I)
+    text = re.sub(r"&amp;", "&", text, flags=re.I)
+    text = re.sub(r"&quot;", '"', text, flags=re.I)
+    text = re.sub(r"&#39;|&apos;", "'", text, flags=re.I)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _article_key(title: str, url: str = "") -> str:
+    clean = re.sub(r"[^a-z0-9]+", " ", (title or "").lower()).strip()
+    if clean:
+        return clean[:220]
+    return (url or "").strip().lower()[:220]
+
+
+def _parse_feed_date(value: object) -> Optional[str]:
+    if value in (None, ""):
+        return None
+    try:
+        ts = pd.to_datetime(str(value), utc=True, errors="coerce")
+        if pd.isna(ts):
+            return None
+        return ts.isoformat()
+    except Exception:
+        return None
+
+
+def _is_recent_iso(seen_iso: Optional[str], days: int) -> bool:
+    if not seen_iso:
+        return True
+    try:
+        seen = pd.Timestamp(seen_iso)
+        now = pd.Timestamp.now(tz="UTC")
+        return (now - seen).total_seconds() <= days * 86400
+    except Exception:
+        return True
+
+
+def _official_relevant(text: str) -> bool:
+    haystack = (text or "").lower()
+    return any(term in haystack for term in OFFICIAL_RELEVANCE_TERMS)
+
+
+def _parse_official_feed(feed_name: str, feed_url: str) -> Tuple[List[dict], Optional[str]]:
+    try:
+        response = _http_get(feed_url, timeout=25)
+        root = ET.fromstring(response.content)
+    except Exception as exc:
+        return [], str(exc)[:180]
+
+    entries = list(root.findall(".//item"))
+    if not entries:
+        entries = list(root.findall(".//{*}entry"))
+
+    articles: List[dict] = []
+    for entry in entries[:40]:
+        def first_text(names: Tuple[str, ...]) -> str:
+            for name in names:
+                node = entry.find(name)
+                if node is None:
+                    node = entry.find(f"{{*}}{name}")
+                if node is not None and node.text:
+                    return node.text.strip()
+            return ""
+
+        title = _strip_markup(first_text(("title",)))
+        summary = _strip_markup(first_text(("description", "summary", "content")))
+        link = first_text(("link",))
+        if not link:
+            link_node = entry.find("link") or entry.find("{*}link")
+            if link_node is not None:
+                link = str(link_node.attrib.get("href") or "").strip()
+        seen_raw = first_text(("pubDate", "published", "updated", "date"))
+        seen_iso = _parse_feed_date(seen_raw)
+        combined = f"{title}. {summary}".strip()
+        if not title or not _is_recent_iso(seen_iso, NEWS_OFFICIAL_LOOKBACK_DAYS):
+            continue
+        if not _official_relevant(combined):
+            continue
+        score, direction, hits = _headline_direction(combined)
+        domain = _normalize_domain(feed_url)
+        weight = 1.45 * _recency_weight(seen_iso)
+        articles.append({
+            "title": title,
+            "url": link or feed_url,
+            "domain": domain,
+            "seen_utc": seen_iso,
+            "direction": direction,
+            "headline_score": round(score, 2),
+            "weight": round(weight, 3),
+            "signal_terms": hits,
+            "source_type": "official",
+            "source_name": feed_name,
+            "official": True,
+            "query_tag": "official-feed",
+        })
+    return articles, None
+
+
+def fetch_official_news_for_currency(code: str) -> Tuple[List[dict], List[str]]:
+    articles: List[dict] = []
+    errors: List[str] = []
+    seen = set()
+    for feed_name, feed_url in OFFICIAL_NEWS_FEEDS.get(code, []):
+        fetched, error = _parse_official_feed(feed_name, feed_url)
+        if error:
+            errors.append(f"{feed_name}: {error}")
+        for article in fetched:
+            key = _article_key(article.get("title", ""), article.get("url", ""))
+            if key in seen:
+                continue
+            seen.add(key)
+            articles.append(article)
+    return articles, errors
+
+
+def fetch_gdelt_query(query: str, timespan: str, query_tag: str) -> Tuple[List[dict], Optional[str]]:
     params = {
         "query": query,
         "mode": "ArtList",
-        "maxrecords": NEWS_MAX_ARTICLES,
-        "timespan": NEWS_LOOKBACK,
+        "maxrecords": NEWS_MAX_ARTICLES_PER_QUERY,
+        "timespan": timespan,
         "sort": "HybridRel",
         "format": "json",
     }
@@ -441,39 +623,22 @@ def fetch_gdelt_news_for_currency(code: str) -> Dict[str, object]:
         except Exception as exc:
             last_error = exc
             if attempt == 0:
-                time.sleep(1.5)
+                time.sleep(1.0)
     if payload is None:
-        return {
-            "status": "Unavailable",
-            "score": 2.5,
-            "label": "Unavailable",
-            "confidence_pct": 0,
-            "article_count": 0,
-            "directional_article_count": 0,
-            "source_diversity": 0,
-            "agreement_pct": None,
-            "horizon": "Short term (1–10 trading days)",
-            "articles": [],
-            "error": str(last_error)[:180] if last_error else "Unknown GDELT error",
-        }
+        return [], str(last_error)[:180] if last_error else "Unknown GDELT error"
 
-    raw_articles = payload.get("articles") or payload.get("items") or []
-    deduped: List[dict] = []
-    seen_titles = set()
-    for raw in raw_articles:
+    out: List[dict] = []
+    for raw in payload.get("articles") or payload.get("items") or []:
         title = str(raw.get("title") or "").strip()
         url = str(raw.get("url") or "").strip()
         if not title or not url:
             continue
-        key = re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()[:180]
-        if key in seen_titles:
-            continue
-        seen_titles.add(key)
         domain = _normalize_domain(str(raw.get("domain") or ""))
         seen_iso = _parse_gdelt_date(raw.get("seendate") or raw.get("date"))
         score, direction, hits = _headline_direction(title)
+        official = domain in OFFICIAL_SOURCE_DOMAINS or any(domain.endswith("." + d) for d in OFFICIAL_SOURCE_DOMAINS)
         weight = _source_weight(domain) * _recency_weight(seen_iso)
-        deduped.append({
+        out.append({
             "title": title,
             "url": url,
             "domain": domain or "Unknown source",
@@ -482,9 +647,97 @@ def fetch_gdelt_news_for_currency(code: str) -> Dict[str, object]:
             "headline_score": round(score, 2),
             "weight": round(weight, 3),
             "signal_terms": hits,
+            "source_type": "official" if official else "media",
+            "source_name": domain or "GDELT media",
+            "official": official,
+            "query_tag": query_tag,
         })
+    return out, None
 
-    directional = [a for a in deduped if a["direction"] != "neutral"]
+
+def _coverage_quality(article_count: int, directional_count: int, diversity: int, official_count: int) -> str:
+    if article_count <= 0:
+        return "Unavailable"
+    if (article_count >= 8 and directional_count >= 3 and diversity >= 3) or (official_count >= 1 and article_count >= 6 and directional_count >= 3):
+        return "Strong"
+    if (article_count >= 5 and directional_count >= 2) or (official_count >= 1 and article_count >= 3 and directional_count >= 1):
+        return "Adequate"
+    return "Thin"
+
+
+def fetch_news_for_currency(code: str) -> Dict[str, object]:
+    official_articles, official_errors = fetch_official_news_for_currency(code)
+    all_articles: List[dict] = list(official_articles)
+    seen_keys = {_article_key(a.get("title", ""), a.get("url", "")) for a in all_articles}
+    query_attempts = 0
+    query_successes = 0
+    query_errors: List[str] = []
+
+    for idx, query in enumerate(NEWS_QUERY_PLANS[code]):
+        timespan = NEWS_LOOKBACK if idx < 2 else NEWS_FALLBACK_LOOKBACK
+        fetched, error = fetch_gdelt_query(query, timespan, f"plan-{idx + 1}:{timespan}")
+        query_attempts += 1
+        if error:
+            query_errors.append(error)
+        else:
+            query_successes += 1
+        for article in fetched:
+            key = _article_key(article.get("title", ""), article.get("url", ""))
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+            all_articles.append(article)
+        if len(all_articles) >= NEWS_TARGET_ARTICLES and idx >= 1:
+            break
+        if idx < len(NEWS_QUERY_PLANS[code]) - 1:
+            time.sleep(0.18)
+
+    # Official-domain fallback is especially important for MYR, but also helps if
+    # a central-bank RSS feed was empty or temporarily unavailable.
+    if len(all_articles) < NEWS_TARGET_ARTICLES or not official_articles:
+        for domain in OFFICIAL_GDELT_DOMAINS.get(code, [])[:2]:
+            query = f'(inflation OR "monetary policy" OR "interest rate" OR economy) domainis:{domain}'
+            fetched, error = fetch_gdelt_query(query, NEWS_FALLBACK_LOOKBACK, f"official-domain:{domain}")
+            query_attempts += 1
+            if error:
+                query_errors.append(error)
+            else:
+                query_successes += 1
+            for article in fetched:
+                article["official"] = True
+                article["source_type"] = "official"
+                key = _article_key(article.get("title", ""), article.get("url", ""))
+                if key in seen_keys:
+                    continue
+                seen_keys.add(key)
+                all_articles.append(article)
+            if any(a.get("official") for a in all_articles):
+                break
+            time.sleep(0.15)
+
+    # Keep the most relevant/recent items and prevent one domain overwhelming the set.
+    domain_counts: Dict[str, int] = {}
+    ranked = sorted(
+        all_articles,
+        key=lambda a: (
+            1 if a.get("official") else 0,
+            1 if a.get("direction") != "neutral" else 0,
+            float(a.get("weight", 1.0)),
+            a.get("seen_utc") or "",
+        ),
+        reverse=True,
+    )
+    deduped: List[dict] = []
+    for article in ranked:
+        domain = str(article.get("domain") or "Unknown source")
+        if domain_counts.get(domain, 0) >= 4 and not article.get("official"):
+            continue
+        domain_counts[domain] = domain_counts.get(domain, 0) + 1
+        deduped.append(article)
+        if len(deduped) >= 24:
+            break
+
+    directional = [a for a in deduped if a.get("direction") != "neutral"]
     if directional:
         weighted_sum = sum(float(a["headline_score"]) * float(a["weight"]) for a in directional)
         total_weight = sum(float(a["weight"]) for a in directional)
@@ -493,61 +746,94 @@ def fetch_gdelt_news_for_currency(code: str) -> Dict[str, object]:
         score = 2.5
     score = round(float(np.clip(score, 0, 5)), 2)
 
-    domains = {a["domain"] for a in deduped if a["domain"] and a["domain"] != "Unknown source"}
-    positive = sum(1 for a in directional if a["direction"] == "strengthening")
-    negative = sum(1 for a in directional if a["direction"] == "weakening")
-    agreement = None
-    if directional:
-        agreement = max(positive, negative) / len(directional)
-    coverage = min(1.0, len(directional) / 6.0)
-    diversity = min(1.0, len(domains) / 5.0)
-    agreement_component = 0.0 if agreement is None else max(0.0, min(1.0, (agreement - 0.5) * 2.0))
-    confidence = int(round(20 + 30 * coverage + 20 * diversity + 30 * agreement_component))
-    if len(directional) < 2:
-        confidence = min(confidence, 45)
-    confidence = int(np.clip(confidence, 0, 90))
+    domains = {a["domain"] for a in deduped if a.get("domain") and a.get("domain") != "Unknown source"}
+    official_count = sum(1 for a in deduped if a.get("official"))
+    media_count = max(0, len(deduped) - official_count)
+    positive = sum(1 for a in directional if a.get("direction") == "strengthening")
+    negative = sum(1 for a in directional if a.get("direction") == "weakening")
+    agreement = None if not directional else max(positive, negative) / len(directional)
+    coverage_quality = _coverage_quality(len(deduped), len(directional), len(domains), official_count)
 
-    # Prioritise directional, high-quality, recent stories for display.
+    coverage_component = min(1.0, len(directional) / 6.0)
+    diversity_component = min(1.0, len(domains) / 5.0)
+    official_component = min(1.0, official_count / 2.0)
+    agreement_component = 0.0 if agreement is None else max(0.0, min(1.0, (agreement - 0.5) * 2.0))
+    confidence = int(round(15 + 25 * coverage_component + 15 * diversity_component + 15 * official_component + 30 * agreement_component))
+    if coverage_quality == "Strong":
+        confidence = int(np.clip(confidence, 55, 90))
+    elif coverage_quality == "Adequate":
+        confidence = int(np.clip(confidence, 40, 78))
+    elif coverage_quality == "Thin":
+        confidence = int(np.clip(confidence, 10, 45))
+    else:
+        confidence = 0
+
+    if coverage_quality == "Unavailable":
+        label = "Unavailable"
+    elif coverage_quality == "Thin" and not directional:
+        label = "Thin coverage / no directional signal"
+    else:
+        label = _news_bias_label(score, len(directional))
+
     display_articles = sorted(
         deduped,
         key=lambda a: (
-            1 if a["direction"] != "neutral" else 0,
-            float(a["weight"]),
+            1 if a.get("official") else 0,
+            1 if a.get("direction") != "neutral" else 0,
+            float(a.get("weight", 1.0)),
             a.get("seen_utc") or "",
         ),
         reverse=True,
-    )[:4]
+    )[:5]
 
     return {
-        "status": "Available",
+        "status": "Available" if coverage_quality in {"Strong", "Adequate"} else coverage_quality,
+        "coverage_quality": coverage_quality,
         "score": score,
-        "label": _news_bias_label(score, len(directional)),
+        "label": label,
         "confidence_pct": confidence,
         "article_count": len(deduped),
         "directional_article_count": len(directional),
+        "official_article_count": official_count,
+        "media_article_count": media_count,
         "source_diversity": len(domains),
         "agreement_pct": None if agreement is None else int(round(agreement * 100)),
+        "query_attempts": query_attempts,
+        "query_successes": query_successes,
         "horizon": "Short term (1–10 trading days)",
         "articles": display_articles,
-        "method": "GDELT headline-only heuristic shadow signal",
+        "official_feed_errors": official_errors[:3],
+        "query_errors": query_errors[:3],
+        "method": "GDELT multi-query + official central-bank communication shadow signal",
     }
 
 
 def fetch_news_shadow_snapshot() -> Tuple[Dict[str, dict], str]:
     snapshot: Dict[str, dict] = {}
-    available = 0
+    usable = 0
+    thin = 0
     for idx, code in enumerate(CURRENCY_CONFIG):
-        result = fetch_gdelt_news_for_currency(code)
+        result = fetch_news_for_currency(code)
         snapshot[code] = result
-        if result.get("status") == "Available":
-            available += 1
+        quality = result.get("coverage_quality")
+        if quality in {"Strong", "Adequate"}:
+            usable += 1
+        elif quality == "Thin":
+            thin += 1
         if idx < len(CURRENCY_CONFIG) - 1:
-            time.sleep(0.35)
-    source = f"GDELT DOC 2.0 headline shadow ({available}/{len(CURRENCY_CONFIG)} available, {NEWS_LOOKBACK})"
+            time.sleep(0.25)
+    source = (
+        f"GDELT multi-query + official central-bank communications "
+        f"({usable}/{len(CURRENCY_CONFIG)} usable; {thin} thin; {NEWS_LOOKBACK} + {NEWS_FALLBACK_LOOKBACK} fallback)"
+    )
     return snapshot, source
 
-
-def _shadow_direction(score: Optional[float]) -> str:
+def _shadow_direction(score: Optional[float], coverage_quality: Optional[str] = None, confidence_pct: Optional[float] = None) -> str:
+    # Thin/unavailable coverage is never treated as a validated directional call.
+    if coverage_quality is not None and coverage_quality not in {"Strong", "Adequate"}:
+        return "neutral"
+    if confidence_pct is not None and float(confidence_pct) < 40:
+        return "neutral"
     if score is None:
         return "neutral"
     value = float(score)
@@ -574,6 +860,8 @@ def update_news_shadow_log(news_shadow: Dict[str, dict], signals: List[CurrencyS
         "news_scores": {code: news_shadow.get(code, {}).get("score") for code in CURRENCY_CONFIG},
         "news_labels": {code: news_shadow.get(code, {}).get("label") for code in CURRENCY_CONFIG},
         "news_confidence_pct": {code: news_shadow.get(code, {}).get("confidence_pct") for code in CURRENCY_CONFIG},
+        "news_coverage_quality": {code: news_shadow.get(code, {}).get("coverage_quality") for code in CURRENCY_CONFIG},
+        "official_article_count": {code: news_shadow.get(code, {}).get("official_article_count") for code in CURRENCY_CONFIG},
         "directional_article_count": {code: news_shadow.get(code, {}).get("directional_article_count") for code in CURRENCY_CONFIG},
         "article_count": {code: news_shadow.get(code, {}).get("article_count") for code in CURRENCY_CONFIG},
         "rates_sgd": {code: by_code[code].rate_sgd for code in CURRENCY_CONFIG if code in by_code},
@@ -581,7 +869,7 @@ def update_news_shadow_log(news_shadow: Dict[str, dict], signals: List[CurrencyS
     records = [r for r in records if r.get("run_date_sgt") != run_date_sgt]
     records.append(row)
     records = sorted(records, key=lambda r: r.get("run_date_sgt", ""))[-730:]
-    path.write_text(json.dumps({"phase": "3A-shadow", "records": records}, indent=2), encoding="utf-8")
+    path.write_text(json.dumps({"phase": "3A.1-coverage-hardened-shadow", "records": records}, indent=2), encoding="utf-8")
 
 
 def _aggregate_shadow_performance(rows: List[dict]) -> dict:
@@ -608,6 +896,9 @@ def write_news_shadow_performance(series_map: Dict[str, pd.Series]) -> None:
         records = json.loads(log_path.read_text(encoding="utf-8")).get("records", [])
     except Exception:
         return
+    # Phase 3A.1 starts a clean validation series because the coverage methodology
+    # changed materially from Phase 3A.
+    records = [row for row in records if row.get("app_release") == APP_RELEASE]
     evaluations: List[dict] = []
     for row in records:
         market_date = row.get("market_date")
@@ -615,10 +906,11 @@ def write_news_shadow_performance(series_map: Dict[str, pd.Series]) -> None:
             continue
         scores = row.get("news_scores") or {}
         confs = row.get("news_confidence_pct") or {}
+        coverage = row.get("news_coverage_quality") or {}
         rates = row.get("rates_sgd") or {}
         for code, series in series_map.items():
             score = scores.get(code)
-            direction = _shadow_direction(score)
+            direction = _shadow_direction(score, coverage.get(code), confs.get(code))
             entry_rate = rates.get(code)
             if direction == "neutral" or entry_rate is None:
                 continue
@@ -655,12 +947,12 @@ def write_news_shadow_performance(series_map: Dict[str, pd.Series]) -> None:
             by_currency[code][str(horizon)] = _aggregate_shadow_performance([r for r in hrows if r["currency"] == code])
     payload = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "phase": "Phase 3A shadow mode",
+        "phase": "Phase 3A.1 coverage-hardened shadow mode",
         "app_release": APP_RELEASE,
         "horizons_trading_days": list(NEWS_SHADOW_HORIZONS),
         "directional_thresholds": {"strengthen_at_or_above": NEWS_DIRECTIONAL_THRESHOLD_HIGH, "weaken_at_or_below": NEWS_DIRECTIONAL_THRESHOLD_LOW},
         "neutral_move_band_pct": NEWS_NEUTRAL_BAND_PCT,
-        "definition": "Shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Accuracy excludes future moves inside the neutral band.",
+        "definition": "Coverage-hardened shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage with sufficient confidence can become a directional call; accuracy excludes future moves inside the neutral band.",
         "overall": overall,
         "by_currency": by_currency,
         "evaluations": evaluations[-5000:],
@@ -2428,13 +2720,13 @@ def main() -> None:
         news_shadow = {
             code: {
                 "status": "Unavailable", "score": 2.5, "label": "Unavailable",
-                "confidence_pct": 0, "article_count": 0, "directional_article_count": 0,
-                "source_diversity": 0, "agreement_pct": None,
+                "confidence_pct": 0, "coverage_quality": "Unavailable", "article_count": 0, "directional_article_count": 0,
+                "official_article_count": 0, "media_article_count": 0, "source_diversity": 0, "agreement_pct": None,
                 "horizon": "Short term (1–10 trading days)", "articles": [],
             }
             for code in CURRENCY_CONFIG
         }
-        news_source = "GDELT news shadow unavailable for this run"
+        news_source = "Phase 3A.1 news shadow unavailable for this run"
 
     signals = [
         analyse_currency(
@@ -2475,11 +2767,13 @@ def main() -> None:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "run_date_sgt": news_run_date_sgt,
         "market_date": latest_market_date,
-        "phase": "Phase 3A — news/event shadow mode",
+        "phase": "Phase 3A.1 — coverage-hardened news/event shadow mode",
         "source": news_source,
         "lookback": NEWS_LOOKBACK,
+        "fallback_lookback": NEWS_FALLBACK_LOOKBACK,
+        "official_lookback_days": NEWS_OFFICIAL_LOOKBACK_DAYS,
         "shadow_only": True,
-        "note": "Headline-based directional intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
+        "note": "Coverage-hardened headline and official central-bank intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
         "currencies": news_shadow,
     }
     (DATA_DIR / "news_shadow.json").write_text(json.dumps(current_news_payload, indent=2), encoding="utf-8")
@@ -2490,7 +2784,7 @@ def main() -> None:
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
         "app_release": APP_RELEASE,
-        "phase": "Phase 3A — news & event intelligence in shadow mode",
+        "phase": "Phase 3A.1 — coverage-hardened news & event intelligence in shadow mode",
         "baseline_frozen": True,
         "shadow_mode": True,
         "news_run_date_sgt": news_run_date_sgt,
@@ -2511,9 +2805,10 @@ def main() -> None:
             "forward_outlook": FORWARD_OUTLOOK_WEIGHTS,
         },
         "scoring_note": (
-            "Phase 3A keeps every Phase 2C baseline weight frozen. A separate GDELT headline-based news/event layer is "
-            "shown and logged in shadow mode only. It does not alter Opportunity, Forward Outlook, Buy Urgency, suggested "
-            "tranche or recommendation. Shadow outcomes are evaluated independently at 1/5/10 trading-day horizons."
+            "Phase 3A.1 keeps every Phase 2C baseline weight frozen. A separate coverage-hardened news/event layer combines "
+            "multiple GDELT searches with official central-bank communications and is shown/logged in shadow mode only. It does "
+            "not alter Opportunity, Forward Outlook, Buy Urgency, suggested tranche or recommendation. Shadow outcomes are "
+            "evaluated independently at 1/5/10 trading-day horizons, and Thin/Unavailable coverage cannot become a directional call."
         ),
         "important_note": (
             "This model ranks the attractiveness of converting SGD into foreign currency. "
@@ -2532,7 +2827,7 @@ def main() -> None:
     write_news_shadow_performance(series_map)
 
     print(f"Updated {len(signals)} currencies using {source_name}. Market date: {latest_market_date}")
-    print(f"Phase 3A shadow source: {news_source}. Shadow mode does not alter baseline recommendations.")
+    print(f"Phase 3A.1 shadow source: {news_source}. Shadow mode does not alter baseline recommendations.")
     for signal in signals:
         print(
             f"{signal.code}: opportunity {signal.opportunity_score:.2f}/5 | "
