@@ -3,12 +3,19 @@ name: Update FX Intelligence
 on:
   workflow_dispatch:
   schedule:
-    # 16:30 UTC Monday-Friday = 00:30 Singapore time the following day.
-    # This runs after the ECB normally publishes its working-day reference rates.
+    # Primary run: 16:30 UTC Monday-Friday = 00:30 Singapore time the following day.
     - cron: "30 16 * * 1-5"
+    # Backup run one hour later. main.py exits as a no-op when the same market date
+    # has already been processed by this monitoring release, so a successful primary
+    # run will not create a second data commit.
+    - cron: "30 17 * * 1-5"
 
 permissions:
   contents: write
+
+concurrency:
+  group: fx-intelligence-update
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -27,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Update FX data and scores
+      - name: Update FX data, scores and performance
         run: python main.py
 
       - name: Rebuild dashboard
@@ -39,7 +46,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data index.html
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No changes to commit. Primary run may already have processed this market date."
           else
             git commit -m "Update FX intelligence data"
             git push
