@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 SIGNALS_PATH = DATA_DIR / "fx_signals.json"
+PERFORMANCE_PATH = DATA_DIR / "performance.json"
 OUTPUT_PATH = ROOT / "index.html"
 
 
@@ -113,7 +114,7 @@ def gap_text(item):
     if gap is None:
         return "—"
     if gap <= 0:
-        return "In buy zone"
+        return "In attractive historical-value range"
     return f"Needs {gap:.1f}% better rate"
 
 
@@ -221,7 +222,7 @@ def build_currency_cards(currencies):
           <div class="mini-grid">
             <div><span>1 month</span><strong>{fmt_pct(item.get('change_30d_pct'))}</strong></div>
             <div><span>5Y cost percentile</span><strong>{fmt_number(item.get('percentile_5y'), 1)}%</strong></div>
-            <div><span>Decision confidence</span><strong>{decision_confidence}% · {html.escape(decision_confidence_label)}</strong></div>
+            <div><span>Model/data quality</span><strong>{decision_confidence}% · {html.escape(decision_confidence_label)}</strong></div>
             <div><span>Signal agreement</span><strong>{signal_agreement}%</strong></div>
           </div>
 
@@ -250,11 +251,11 @@ def build_currency_cards(currencies):
           </div>
 
           <div class="zone-box">
-            <div class="zone-head"><span>Current valuation zone</span><strong>{html.escape(item.get('zone_status', '—'))}</strong></div>
+            <div class="zone-head"><span>Historical valuation</span><strong>{html.escape(item.get('zone_status', '—'))}</strong></div>
             <div class="zone-grid">
-              <div><span>Buy zone</span><strong>≤ {level_text(item, item.get('buy_zone_upper_sgd'))}</strong></div>
-              <div><span>Strong buy</span><strong>≤ {level_text(item, item.get('strong_buy_level_sgd'))}</strong></div>
-              <div><span>Exceptional</span><strong>≤ {level_text(item, item.get('exceptional_buy_level_sgd'))}</strong></div>
+              <div><span>Attractive historical value</span><strong>≤ {level_text(item, item.get('buy_zone_upper_sgd'))}</strong></div>
+              <div><span>Strong historical value</span><strong>≤ {level_text(item, item.get('strong_buy_level_sgd'))}</strong></div>
+              <div><span>Exceptional historical value</span><strong>≤ {level_text(item, item.get('exceptional_buy_level_sgd'))}</strong></div>
               <div><span>5Y fair value</span><strong>{level_text(item, item.get('fair_value_sgd'))}</strong></div>
             </div>
             <div class="zone-gap">{html.escape(gap_text(item))}</div>
@@ -301,11 +302,63 @@ def build_table_rows(currencies):
         """)
     return "\n".join(rows)
 
+
+def performance_cell(stats):
+    if not stats or not stats.get("matured_signals"):
+        return '<span class="perf-pending">Pending</span>'
+    helpful_rate = stats.get("helpful_rate_pct")
+    avg = stats.get("average_action_benefit_pct")
+    n = stats.get("matured_signals", 0)
+    helpful = "—" if helpful_rate is None else f"{helpful_rate:.0f}% helpful"
+    avg_text = "—" if avg is None else f"{avg:+.2f}% avg benefit"
+    return f'<strong>{helpful}</strong><span>{avg_text} · n={n}</span>'
+
+
+def build_performance_section(performance, currencies):
+    if not performance:
+        return '''
+        <div class="section-header"><div><h2>Baseline performance</h2><p>Performance tracking will appear after the updated workflow creates data/performance.json.</p></div></div>
+        <section class="performance-panel"><div class="perf-empty">Performance data is not available yet.</div></section>
+        '''
+    overall = performance.get("overall", {})
+    by_currency = performance.get("by_currency", {})
+    observations = performance.get("baseline_observations", 0)
+    summary_cards = []
+    for horizon in (1, 5, 10, 20):
+        stats = overall.get(str(horizon), {})
+        matured = stats.get("matured_signals", 0)
+        helpful = stats.get("helpful_rate_pct")
+        avg = stats.get("average_action_benefit_pct")
+        helpful_text = "Pending" if not matured or helpful is None else f"{helpful:.0f}%"
+        avg_text = "No matured signals yet" if not matured or avg is None else f"{avg:+.2f}% average action benefit · n={matured}"
+        summary_cards.append(f'<div class="perf-card"><span>{horizon} trading day{"s" if horizon != 1 else ""}</span><strong>{helpful_text}</strong><small>{html.escape(avg_text)}</small></div>')
+    rows = []
+    for item in currencies:
+        code = item["code"]
+        stats = by_currency.get(code, {})
+        rows.append(f'''<tr><td><strong>{code}</strong><span>{html.escape(item['name'])}</span></td><td>{performance_cell(stats.get('1'))}</td><td>{performance_cell(stats.get('5'))}</td><td>{performance_cell(stats.get('10'))}</td><td>{performance_cell(stats.get('20'))}</td></tr>''')
+    neutral_band = performance.get("neutral_band_pct", 0.10)
+    return f'''
+    <div class="section-header"><div><h2>Baseline performance</h2><p>Retrospective check of whether following each historical Buy/Accumulate or Wait/Avoid action was helpful after 1, 5, 10 and 20 trading days.</p></div></div>
+    <section class="performance-panel">
+      <div class="performance-meta"><strong>{observations} baseline market-day observations</strong><span>Helpful rate excludes moves within ±{neutral_band:.2f}% as neutral. This is monitoring evidence, not a forecast-accuracy probability.</span></div>
+      <div class="perf-cards">{''.join(summary_cards)}</div>
+      <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th><th>20D</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+      <div class="performance-note"><strong>How to read it:</strong> positive average action benefit means the model's practical action beat the opposite choice in SGD-cost terms over that horizon. For Buy/Accumulate, a later higher FX cost counts as helpful; for Wait/Avoid, a later lower FX cost counts as helpful.</div>
+    </section>
+    '''
+
 def main():
     if not SIGNALS_PATH.exists():
         raise FileNotFoundError("Run main.py first so data/fx_signals.json exists.")
 
     data = json.loads(SIGNALS_PATH.read_text(encoding="utf-8"))
+    performance = {}
+    if PERFORMANCE_PATH.exists():
+        try:
+            performance = json.loads(PERFORMANCE_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            performance = {}
     currencies = data["currencies"]
     best = currencies[0]
     generated = data.get("generated_at_utc", "")
@@ -315,11 +368,13 @@ def main():
     macro_source = html.escape(data.get("macro_source", "Unavailable"))
     validation_source = html.escape(data.get("validation_source", "Unavailable"))
     model_version = html.escape(data.get("model_version", ""))
+    app_release = html.escape(data.get("app_release", "2.2-phase2c2-monitoring"))
     previous_score_date = data.get("previous_score_date")
     comparison_text = html.escape(str(previous_score_date)) if previous_score_date else "Starts next new market day"
 
     cards_html = build_currency_cards(currencies)
     rows_html = build_table_rows(currencies)
+    performance_html = build_performance_section(performance, currencies)
 
     best_market = best.get("market_score", best["score"])
     best_macro = best.get("macro_score", 2.5)
@@ -492,6 +547,22 @@ h1{{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacin
 .driver-columns li+li{{margin-top:5px}}
 .chart-button{{width:100%;margin-top:12px;background:#142a42;border:1px solid #274764;color:var(--text);border-radius:11px;padding:10px 12px;font-weight:800;cursor:pointer}}
 .chart-button:hover{{background:#1a3552}}
+.performance-panel{{background:rgba(13,24,40,.92);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}}
+.performance-meta{{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:4px 2px 14px;color:var(--muted);font-size:.82rem}}
+.performance-meta strong{{color:var(--text)}}
+.perf-cards{{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}}
+.perf-card{{background:#091421;border:1px solid #1a3047;border-radius:14px;padding:13px}}
+.perf-card span{{display:block;color:var(--muted);font-size:.72rem;margin-bottom:5px}}
+.perf-card strong{{display:block;font-size:1.45rem;color:var(--cyan)}}
+.perf-card small{{display:block;color:#9fb3ca;margin-top:5px;line-height:1.35}}
+.performance-table-wrap{{overflow:auto;border:1px solid #1b2e45;border-radius:14px}}
+.performance-table{{width:100%;border-collapse:collapse;min-width:760px}}
+.performance-table th,.performance-table td{{padding:12px 14px;border-bottom:1px solid #172a40;text-align:left;vertical-align:top}}
+.performance-table th{{color:#9eb3ca;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;background:#091421}}
+.performance-table td>strong{{display:block;color:var(--text)}}
+.performance-table td>span{{display:block;color:var(--muted);font-size:.72rem;margin-top:4px}}
+.perf-pending{{color:#758ca7!important}}
+.performance-note{{margin-top:14px;padding:12px 14px;border-radius:12px;background:rgba(86,217,246,.06);border:1px solid rgba(86,217,246,.18);color:#a9bdd4;line-height:1.55;font-size:.8rem}}
 .chart-panel{{background:rgba(13,24,40,.94);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow);scroll-margin-top:16px}}
 .chart-toolbar{{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}}
 .chart-toolbar h3{{margin:0}}
@@ -510,22 +581,23 @@ td span{{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}}
 .method-card span{{color:var(--muted);font-size:.8rem;line-height:1.5}}
 .notice{{margin-top:26px;padding:18px 20px;border:1px solid #34435a;background:rgba(17,31,51,.7);border-radius:16px;color:#b9c9dc;font-size:.84rem;line-height:1.6}}
 footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
-@media(max-width:1180px){{.cards{{grid-template-columns:repeat(2,minmax(0,1fr))}}.methodology{{grid-template-columns:repeat(3,1fr)}}.driver-columns{{grid-template-columns:repeat(2,1fr)}}}}
+@media(max-width:1180px){{.cards{{grid-template-columns:repeat(2,minmax(0,1fr))}}.perf-cards{{grid-template-columns:repeat(2,1fr)}}.methodology{{grid-template-columns:repeat(3,1fr)}}.driver-columns{{grid-template-columns:repeat(2,1fr)}}}}
 @media(max-width:1050px){{.hero{{grid-template-columns:1fr}}.status-panel{{min-width:300px}}}}
-@media(max-width:680px){{.container{{padding:20px 14px 40px}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.forward-grid{{grid-template-columns:1fr}}.score-split{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}.daily-change-row{{align-items:flex-start;flex-direction:column}}.daily-change-row strong{{justify-content:flex-start}}}}
+@media(max-width:680px){{.container{{padding:20px 14px 40px}}.perf-cards{{grid-template-columns:1fr}}.performance-meta{{flex-direction:column}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.forward-grid{{grid-template-columns:1fr}}.score-split{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}.daily-change-row{{align-items:flex-start;flex-direction:column}}.daily-change-row strong{{justify-content:flex-start}}}}
 </style>
 </head>
 <body>
 <div class="container">
   <header class="topbar">
     <div>
-      <div class="eyebrow">Personal currency decision support · Phase 2C.1 baseline</div>
+      <div class="eyebrow">Personal currency decision support · Phase 2C.2 monitoring · 7 currencies</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">Phase 2C scoring is now frozen as the baseline for the monitoring period. The dashboard tracks current opportunity, forward policy pressure, FX momentum, decision confidence and day-to-day score changes without changing the core model weights.</p>
+      <p class="subtitle">The Phase 2C scoring model remains frozen. This monitoring release adds retrospective 1/5/10/20 trading-day performance tracking, clearer historical-value labels and backup-run resilience without changing any core score weights.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>{market_date}</strong></div>
       <div><span>Model</span><strong>{model_version}</strong></div>
+      <div><span>Monitoring release</span><strong>{app_release}</strong></div>
       <div><span>Baseline status</span><strong>Core scoring frozen</strong></div>
       <div><span>Score-change comparison</span><strong>{comparison_text}</strong></div>
       <div><span>FX source</span><strong>{primary_source}</strong></div>
@@ -547,7 +619,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
         <div>Macro backdrop <strong>{best_macro:.2f}/5</strong></div>
         <div>Forward outlook <strong>{best_forward:.2f}/5 {score_delta_badge(best, 'forward_outlook_score')}</strong></div>
         <div>Buy urgency <strong>{best_urgency:.2f}/5 {score_delta_badge(best, 'buy_urgency_score')} · {html.escape(best_urgency_label)}</strong></div>
-        <div>Decision confidence <strong>{best_decision_confidence}%</strong></div>
+        <div>Model/data quality <strong>{best_decision_confidence}%</strong></div>
         <div>Signal agreement <strong>{best_signal_agreement}%</strong></div>
       </div>
       {daily_change_summary(best)}
@@ -559,14 +631,14 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="hero-side">
       <h3>Suggested action</h3>
       <div class="big-action">{html.escape(best['suggested_action'])}</div>
-      <p><strong>Current zone:</strong> {html.escape(best.get('zone_status', '—'))}<br>
-      <strong>Buy-zone threshold:</strong> {level_text(best, best.get('buy_zone_upper_sgd'))}<br>
-      <strong>Strong-buy threshold:</strong> {level_text(best, best.get('strong_buy_level_sgd'))}<br>
+      <p><strong>Historical valuation:</strong> {html.escape(best.get('zone_status', '—'))}<br>
+      <strong>Attractive-value threshold:</strong> {level_text(best, best.get('buy_zone_upper_sgd'))}<br>
+      <strong>Strong-value threshold:</strong> {level_text(best, best.get('strong_buy_level_sgd'))}<br>
       <strong>Forward outlook:</strong> {best_forward:.2f}/5 · {html.escape(best_forward_label)}<br>
       <strong>Buy urgency:</strong> {best_urgency:.2f}/5 · {html.escape(best_urgency_label)}<br>
-      <strong>Decision confidence:</strong> {best_decision_confidence}% · {best_signal_agreement}% signal agreement<br>
+      <strong>Model/data quality:</strong> {best_decision_confidence}% · {best_signal_agreement}% signal agreement<br>
       <strong>Next policy event:</strong> {html.escape(meeting_text(best))} · {html.escape(best.get('event_risk_label', '—'))} risk</p>
-      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C.1 keeps the Phase 2C scoring logic frozen while daily score changes are monitored. A high urgency score still cannot turn poor value into a Buy.</p>
+      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C.2 keeps the Phase 2C scoring logic frozen while daily score changes and matured outcomes are monitored. A high urgency score still cannot turn poor value into a Buy.</p>
     </div>
   </section>
 
@@ -574,6 +646,8 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div><h2>Currency opportunity ranking</h2><p>Highest Opportunity Score first. Forward Outlook and Buy Urgency are shown separately so valuation is not confused with timing pressure.</p></div>
   </div>
   <section class="cards">{cards_html}</section>
+
+  {performance_html}
 
   <div class="section-header">
     <div><h2>Five-year SGD cost history</h2><p>Lower cost generally means better value for an SGD buyer.</p></div>
@@ -589,17 +663,17 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   </section>
 
   <div class="section-header">
-    <div><h2>Full scorecard</h2><p>Compare Opportunity, Forward Outlook, Buy Urgency, market valuation, macro backdrop, timing and decision confidence.</p></div>
+    <div><h2>Full scorecard</h2><p>Compare Opportunity, Forward Outlook, Buy Urgency, market valuation, macro backdrop, timing and model/data quality.</p></div>
   </div>
   <section class="table-panel">
     <table>
-      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Forward outlook</th><th>Market</th><th>Macro</th><th>Policy bias</th><th>FX momentum</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Next meeting</th><th>Event risk</th><th>Buy zone</th><th>Decision confidence</th></tr></thead>
+      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Forward outlook</th><th>Market</th><th>Macro</th><th>Policy bias</th><th>FX momentum</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Next meeting</th><th>Event risk</th><th>Historical value threshold</th><th>Model/data quality</th></tr></thead>
       <tbody>{rows_html}</tbody>
     </table>
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 2C.1 frozen baseline model</h2><p>The core Phase 2C scoring weights are frozen for the observation period. Opportunity measures value, Forward Outlook estimates directional pressure, and Buy Urgency estimates timing pressure.</p></div>
+    <div><h2>Phase 2C frozen baseline model · 2C.2 monitoring release</h2><p>The core Phase 2C scoring weights are frozen for the observation period. Opportunity measures value, Forward Outlook estimates directional pressure, and Buy Urgency estimates timing pressure.</p></div>
   </div>
   <section class="methodology">
     <div class="method-card"><strong>Frozen</strong><span>Phase 2C core weights are locked during the baseline observation period so later changes can be measured cleanly.</span></div>
@@ -612,10 +686,10 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="method-card"><strong>30%</strong><span>Buy Urgency: forward FX momentum.</span></div>
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: valuation rarity.</span></div>
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: upcoming policy-event setup.</span></div>
-    <div class="method-card"><strong>Confidence</strong><span>Decision confidence combines data quality, macro coverage and agreement across the major supportive signals.</span></div>
+    <div class="method-card"><strong>Quality</strong><span>Model/data quality reflects history length, source validation and macro coverage. It is not a probability that the recommendation will be correct.</span></div>
   </section>
 
-  <div class="notice"><strong>Baseline monitoring:</strong> Phase 2C.1 does not change the core scoring weights. Daily score deltas compare each new market date with the previous available market day, creating a clean baseline for the later Phase 3A evaluation.<br><br><strong>Important:</strong> The policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
+  <div class="notice"><strong>Baseline monitoring:</strong> Phase 2C.2 does not change the core scoring weights. CHF has been added as the seventh tracked currency; its score history starts from the first CHF-enabled run, while the existing six currencies retain their earlier baseline history. Daily score deltas compare each new market date with the previous available market day, creating a clean baseline for the later Phase 3A evaluation. Retrospective performance is tracked separately and does not feed back into the score yet.<br><br><strong>Important:</strong> The policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
   <footer>Generated automatically by GitHub Actions · Last build {html.escape(generated)}</footer>
 </div>
 
@@ -652,9 +726,9 @@ async function showCurrency(code, shouldScroll = true) {{
   const datasets = [
     {{label, data:values, borderWidth:2, pointRadius:0, tension:.16, borderColor:'#56d9f6', backgroundColor:'rgba(86,217,246,.10)', fill:true}}
   ];
-  if (meta.buyZone !== null && meta.buyZone !== undefined) datasets.push({{label:'Buy-zone threshold', data:levelSeries(meta.buyZone), borderWidth:1.5, pointRadius:0, borderDash:[7,5], borderColor:'#a5e45b', fill:false}});
-  if (meta.strongBuy !== null && meta.strongBuy !== undefined) datasets.push({{label:'Strong-buy threshold', data:levelSeries(meta.strongBuy), borderWidth:1.5, pointRadius:0, borderDash:[4,5], borderColor:'#45dda3', fill:false}});
-  if (meta.exceptional !== null && meta.exceptional !== undefined) datasets.push({{label:'Exceptional threshold', data:levelSeries(meta.exceptional), borderWidth:1.2, pointRadius:0, borderDash:[2,5], borderColor:'#f4c95d', fill:false}});
+  if (meta.buyZone !== null && meta.buyZone !== undefined) datasets.push({{label:'Attractive-value threshold', data:levelSeries(meta.buyZone), borderWidth:1.5, pointRadius:0, borderDash:[7,5], borderColor:'#a5e45b', fill:false}});
+  if (meta.strongBuy !== null && meta.strongBuy !== undefined) datasets.push({{label:'Strong-value threshold', data:levelSeries(meta.strongBuy), borderWidth:1.5, pointRadius:0, borderDash:[4,5], borderColor:'#45dda3', fill:false}});
+  if (meta.exceptional !== null && meta.exceptional !== undefined) datasets.push({{label:'Exceptional historical-value threshold', data:levelSeries(meta.exceptional), borderWidth:1.2, pointRadius:0, borderDash:[2,5], borderColor:'#f4c95d', fill:false}});
 
   chart = new Chart(ctx, {{
     type:'line',

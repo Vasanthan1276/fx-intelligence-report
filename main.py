@@ -3,6 +3,7 @@ from __future__ import annotations
 import io
 import json
 import math
+import os
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,7 +25,7 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # ECB SDMX series structure:
 # FREQ.CURRENCY.CURRENCY_DENOM.EXR_TYPE.EXR_SUFFIX
-ECB_CURRENCIES = ["USD", "JPY", "GBP", "AUD", "MYR", "SGD"]
+ECB_CURRENCIES = ["USD", "JPY", "GBP", "AUD", "MYR", "CHF", "SGD"]
 ECB_QUERY = "+".join(ECB_CURRENCIES)
 ECB_API_URL = (
     "https://data-api.ecb.europa.eu/service/data/EXR/"
@@ -41,9 +42,13 @@ CURRENCY_CONFIG = {
     "GBP": {"name": "British Pound", "symbol": "£", "unit": 1, "yf": "GBPSGD=X"},
     "AUD": {"name": "Australian Dollar", "symbol": "A$", "unit": 1, "yf": "AUDSGD=X"},
     "MYR": {"name": "Malaysian Ringgit", "symbol": "RM", "unit": 1, "yf": "MYRSGD=X"},
+    "CHF": {"name": "Swiss Franc", "symbol": "CHF", "unit": 1, "yf": "CHFSGD=X"},
 }
 
 MODEL_VERSION = "2.2-phase2c-baseline"
+APP_RELEASE = "2.2-phase2c2-monitoring-chf"
+PERFORMANCE_HORIZONS = (1, 5, 10, 20)
+PERFORMANCE_NEUTRAL_BAND_PCT = 0.10
 
 # Phase 2C keeps the proven Phase 1B market model intact, then separates a macro-policy
 # layer. With complete macro coverage, the final score is 70% market intelligence
@@ -112,6 +117,7 @@ POLICY_MEETING_CALENDAR = {
         "2026-08-11", "2026-09-29", "2026-11-03", "2026-12-08",
     ],
     "MYR": ["2026-01-22", "2026-03-05", "2026-05-07", "2026-07-09", "2026-09-03", "2026-11-05"],
+    "CHF": ["2026-03-19", "2026-06-18", "2026-09-24", "2026-12-10"],
 }
 POLICY_CALENDAR_SOURCES = {
     "USD": "Federal Reserve FOMC calendar",
@@ -120,6 +126,7 @@ POLICY_CALENDAR_SOURCES = {
     "GBP": "Bank of England MPC calendar",
     "AUD": "Reserve Bank of Australia board schedule",
     "MYR": "Bank Negara Malaysia MPC schedule",
+    "CHF": "Swiss National Bank monetary policy assessment schedule",
 }
 
 # BIS monthly central-bank policy-rate series. The euro-area reference area is XM.
@@ -131,6 +138,7 @@ POLICY_AREA_CODES = {
     "GBP": "GB",
     "AUD": "AU",
     "MYR": "MY",
+    "CHF": "CH",
 }
 CENTRAL_BANK_NAMES = {
     "USD": "Federal Reserve",
@@ -139,6 +147,7 @@ CENTRAL_BANK_NAMES = {
     "GBP": "Bank of England",
     "AUD": "Reserve Bank of Australia",
     "MYR": "Bank Negara Malaysia",
+    "CHF": "Swiss National Bank",
 }
 
 # IMF WEO DataMapper country / aggregate codes. Singapore is the relative macro
@@ -150,6 +159,7 @@ IMF_COUNTRY_CODES = {
     "GBP": "GBR",
     "AUD": "AUS",
     "MYR": "MYS",
+    "CHF": "CHE",
     "SGD": "SGP",
 }
 IMF_DATAMAPPER_BASES = [
@@ -263,7 +273,7 @@ def fetch_ecb_history(years: int = 7) -> Tuple[pd.DataFrame, str]:
     """Fetch official ECB daily reference rates and return a wide dataframe.
 
     ECB rates are quoted as units of foreign currency per EUR.
-    The returned dataframe is indexed by date and contains USD/JPY/GBP/AUD/MYR/SGD.
+    The returned dataframe is indexed by date and contains USD/JPY/GBP/AUD/MYR/CHF/SGD.
     """
     start_period = (pd.Timestamp.utcnow().normalize() - pd.DateOffset(years=years)).date().isoformat()
 
@@ -327,6 +337,7 @@ def validate_ecb_dataframe(df: pd.DataFrame) -> None:
         "GBP": (0.4, 1.5),
         "AUD": (0.8, 3.0),
         "MYR": (2.0, 8.0),
+        "CHF": (0.5, 1.8),
         "SGD": (0.8, 3.0),
     }
     for code, (low, high) in plausibility.items():
@@ -1162,14 +1173,14 @@ def zone_status_from_rate(current: float, zones: Dict[str, Optional[float]]) -> 
     fair = zones.get("fair_value")
 
     if exceptional is not None and current <= exceptional:
-        return "Exceptional Value Zone"
+        return "Exceptional Historical Value"
     if strong is not None and current <= strong:
-        return "Strong Buy Zone"
+        return "Strong Historical Value"
     if buy is not None and current <= buy:
-        return "Buy Zone"
+        return "Attractive Historical Value"
     if fair is not None and current <= fair:
-        return "Fair / Accumulate Zone"
-    return "Above Fair Value"
+        return "Near Historical Fair Value"
+    return "Above Historical Fair Value"
 
 
 def ordinal(value: float) -> str:
@@ -1780,6 +1791,7 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
     new_row = {
         "date": run_date,
         "model_version": MODEL_VERSION,
+        "app_release": APP_RELEASE,
         "scores": {signal.code: signal.score for signal in signals},
         "opportunity_scores": {signal.code: signal.opportunity_score for signal in signals},
         "buy_urgency_scores": {signal.code: signal.buy_urgency_score for signal in signals},
@@ -1816,9 +1828,185 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
     )
 
 
+
+def current_release_already_processed(latest_market_date: str) -> bool:
+    """Avoid duplicate work/commits when the backup schedule sees the same market day.
+
+    The user can force a same-day refresh by setting FX_FORCE_REFRESH=1 in the
+    workflow environment or when running locally.
+    """
+    if os.environ.get("FX_FORCE_REFRESH", "").strip().lower() in {"1", "true", "yes"}:
+        return False
+    path = DATA_DIR / "fx_signals.json"
+    if not path.exists():
+        return False
+    try:
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return False
+    return (
+        str(existing.get("latest_market_date", "")) == str(latest_market_date)
+        and existing.get("app_release") == APP_RELEASE
+    )
+
+
+def _recommendation_family(recommendation: str, suggested_buy_pct: Optional[float]) -> str:
+    """Map recommendations to the practical action whose later outcome we evaluate."""
+    if suggested_buy_pct is not None and float(suggested_buy_pct) > 0:
+        return "buy"
+    buy_words = ("buy", "accumulate")
+    if any(word in (recommendation or "").lower() for word in buy_words):
+        return "buy"
+    return "wait"
+
+
+def _future_trading_rate(series: pd.Series, signal_date: str, horizon: int) -> Tuple[Optional[str], Optional[float]]:
+    clean = series.dropna().sort_index()
+    if clean.empty:
+        return None, None
+    idx = pd.DatetimeIndex(clean.index).normalize()
+    signal_ts = pd.Timestamp(signal_date).normalize()
+    pos = int(idx.searchsorted(signal_ts, side="left"))
+    if pos >= len(idx):
+        return None, None
+    # Score-log dates should be exact market dates. If not, start from the first
+    # available market observation after the logged date rather than inventing a rate.
+    target = pos + int(horizon)
+    if target >= len(idx):
+        return None, None
+    target_ts = idx[target]
+    value = clean.iloc[target]
+    return target_ts.date().isoformat(), float(value)
+
+
+def _aggregate_performance(rows: List[dict]) -> dict:
+    if not rows:
+        return {
+            "matured_signals": 0,
+            "helpful": 0,
+            "neutral": 0,
+            "unhelpful": 0,
+            "helpful_rate_pct": None,
+            "average_action_benefit_pct": None,
+            "median_action_benefit_pct": None,
+        }
+    helpful = sum(1 for row in rows if row["outcome"] == "helpful")
+    neutral = sum(1 for row in rows if row["outcome"] == "neutral")
+    unhelpful = sum(1 for row in rows if row["outcome"] == "unhelpful")
+    directional = helpful + unhelpful
+    benefits = [float(row["action_benefit_pct"]) for row in rows]
+    return {
+        "matured_signals": len(rows),
+        "helpful": helpful,
+        "neutral": neutral,
+        "unhelpful": unhelpful,
+        "helpful_rate_pct": None if directional == 0 else round(helpful / directional * 100.0, 1),
+        "average_action_benefit_pct": round(float(np.mean(benefits)), 3),
+        "median_action_benefit_pct": round(float(np.median(benefits)), 3),
+    }
+
+
+def write_performance_report(series_map: Dict[str, pd.Series]) -> None:
+    """Evaluate matured baseline signals at 1/5/10/20 trading-day horizons.
+
+    A positive `action_benefit_pct` means following the model's practical action
+    (buy/accumulate now versus wait) was cheaper than doing the opposite over that
+    horizon. This is retrospective monitoring, not a probability forecast.
+    """
+    log_path = DATA_DIR / "score_log.json"
+    if not log_path.exists():
+        return
+    try:
+        records = json.loads(log_path.read_text(encoding="utf-8")).get("records", [])
+    except Exception:
+        return
+
+    baseline_records = [row for row in records if row.get("model_version") == MODEL_VERSION]
+    evaluations: List[dict] = []
+
+    for row in baseline_records:
+        signal_date = row.get("date")
+        if not signal_date:
+            continue
+        recommendations = row.get("recommendations") or {}
+        suggested_buy = row.get("suggested_buy_pct") or {}
+        rates = row.get("rates_sgd") or {}
+        opportunity = row.get("opportunity_scores") or row.get("scores") or {}
+        urgency = row.get("buy_urgency_scores") or {}
+        forward = row.get("forward_outlook_scores") or {}
+
+        for code, series in series_map.items():
+            entry_rate = rates.get(code)
+            if entry_rate is None:
+                continue
+            recommendation = str(recommendations.get(code, ""))
+            family = _recommendation_family(recommendation, suggested_buy.get(code))
+            for horizon in PERFORMANCE_HORIZONS:
+                future_date, future_rate = _future_trading_rate(series, signal_date, horizon)
+                if future_rate is None:
+                    continue
+                rate_change_pct = (float(future_rate) / float(entry_rate) - 1.0) * 100.0
+                # For a buy signal, a later higher SGD cost means buying earlier helped.
+                # For a wait signal, a later lower SGD cost means waiting helped.
+                action_benefit_pct = rate_change_pct if family == "buy" else -rate_change_pct
+                if action_benefit_pct > PERFORMANCE_NEUTRAL_BAND_PCT:
+                    outcome = "helpful"
+                elif action_benefit_pct < -PERFORMANCE_NEUTRAL_BAND_PCT:
+                    outcome = "unhelpful"
+                else:
+                    outcome = "neutral"
+                evaluations.append({
+                    "signal_date": signal_date,
+                    "future_date": future_date,
+                    "currency": code,
+                    "horizon_trading_days": horizon,
+                    "recommendation": recommendation,
+                    "action_family": family,
+                    "suggested_buy_pct": suggested_buy.get(code),
+                    "entry_rate_sgd": round(float(entry_rate), 6),
+                    "future_rate_sgd": round(float(future_rate), 6),
+                    "rate_change_pct": round(float(rate_change_pct), 3),
+                    "action_benefit_pct": round(float(action_benefit_pct), 3),
+                    "outcome": outcome,
+                    "opportunity_score": opportunity.get(code),
+                    "forward_outlook_score": forward.get(code),
+                    "buy_urgency_score": urgency.get(code),
+                })
+
+    overall = {}
+    by_currency = {code: {} for code in CURRENCY_CONFIG}
+    for horizon in PERFORMANCE_HORIZONS:
+        hrows = [row for row in evaluations if row["horizon_trading_days"] == horizon]
+        overall[str(horizon)] = _aggregate_performance(hrows)
+        for code in CURRENCY_CONFIG:
+            crows = [row for row in hrows if row["currency"] == code]
+            by_currency[code][str(horizon)] = _aggregate_performance(crows)
+
+    payload = {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "model_version": MODEL_VERSION,
+        "app_release": APP_RELEASE,
+        "neutral_band_pct": PERFORMANCE_NEUTRAL_BAND_PCT,
+        "baseline_observations": len(baseline_records),
+        "horizons_trading_days": list(PERFORMANCE_HORIZONS),
+        "definition": (
+            "Positive action benefit means the practical model action beat the opposite action in SGD cost terms. "
+            "Buy/accumulate signals benefit when the foreign currency later costs more SGD; wait/avoid signals benefit "
+            "when it later costs less SGD. Outcomes within the neutral band are treated as neutral."
+        ),
+        "overall": overall,
+        "by_currency": by_currency,
+        "evaluations": evaluations[-5000:],
+    }
+    (DATA_DIR / "performance.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
 def main() -> None:
     ecb, source_name = fetch_ecb_history(years=7)
     series_map = build_sgd_cost_series(ecb)
+    latest_market_date_precheck = max(series.index.max() for series in series_map.values()).date().isoformat()
+    if current_release_already_processed(latest_market_date_precheck):
+        print(f"No new market date for {APP_RELEASE}: {latest_market_date_precheck}. Backup run is a no-op.")
+        return
     validation_rates = fetch_validation_rates()
 
     # Macro sources are deliberately fail-soft: the FX report must still update if
@@ -1862,7 +2050,8 @@ def main() -> None:
         "latest_market_date": latest_market_date,
         "base_currency": "SGD",
         "model_version": MODEL_VERSION,
-        "phase": "Phase 2C.1 — frozen baseline and daily score-change monitoring",
+        "app_release": APP_RELEASE,
+        "phase": "Phase 2C.2 — frozen baseline, performance monitoring, terminology cleanup and CHF tracking",
         "baseline_frozen": True,
         "previous_score_date": previous_score_date,
         "primary_source": source_name,
@@ -1880,10 +2069,9 @@ def main() -> None:
             "forward_outlook": FORWARD_OUTLOOK_WEIGHTS,
         },
         "scoring_note": (
-            "Phase 2C.1 freezes the Phase 2C scoring weights as the baseline for the observation period. The Opportunity "
-            "Score keeps the market/macro model, Forward Outlook combines model-implied policy bias and FX momentum, "
-            "and Buy Urgency uses those forward signals plus valuation rarity and event proximity. Daily score changes "
-            "compare against the previous available market day. No core scoring weights are changed in this baseline."
+            "Phase 2C.2 keeps the Phase 2C scoring weights frozen as the baseline. Opportunity, Forward Outlook and "
+            "Buy Urgency are unchanged. The release adds retrospective 1/5/10/20 trading-day performance monitoring, "
+            "clearer historical-value terminology, duplicate-run protection for the backup workflow schedule, and adds CHF as a tracked currency without changing any scoring weights."
         ),
         "important_note": (
             "This model ranks the attractiveness of converting SGD into foreign currency. "
@@ -1897,6 +2085,7 @@ def main() -> None:
     write_macro_snapshot(signals, policy_status, imf_status, macro_snapshot)
     write_policy_calendar_snapshot(signals)
     update_score_log(signals)
+    write_performance_report(series_map)
 
     print(f"Updated {len(signals)} currencies using {source_name}. Market date: {latest_market_date}")
     for signal in signals:
