@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-07T04:55:37.011315+00:00",
+  "generated_at_utc": "2026-08-07T05:13:37.121344+00:00",
   "model_version": "2.2-phase2c-baseline",
-  "app_release": "2.2-phase2c2-monitoring-chf",
+  "app_release": "3.0-phase3a-shadow-news",
   "neutral_band_pct": 0.1,
   "baseline_observations": 15,
   "horizons_trading_days": [

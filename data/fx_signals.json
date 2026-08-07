@@ -1,11 +1,14 @@
 {
-  "generated_at_utc": "2026-08-07T04:55:36.744034+00:00",
+  "generated_at_utc": "2026-08-07T05:13:36.857662+00:00",
   "latest_market_date": "2026-08-06",
   "base_currency": "SGD",
   "model_version": "2.2-phase2c-baseline",
-  "app_release": "2.2-phase2c2-monitoring-chf",
-  "phase": "Phase 2C.2 \u2014 frozen baseline, performance monitoring, terminology cleanup and CHF tracking",
+  "app_release": "3.0-phase3a-shadow-news",
+  "phase": "Phase 3A \u2014 news & event intelligence in shadow mode",
   "baseline_frozen": true,
+  "shadow_mode": true,
+  "news_run_date_sgt": "2026-08-07",
+  "news_event_source": "GDELT DOC 2.0 headline shadow (3/7 available, 72h)",
   "previous_score_date": "2026-08-05",
   "primary_source": "ECB Data Portal API",
   "policy_source": "BIS central bank policy rates (7/7 available)",
@@ -53,7 +56,7 @@
       "fx_momentum": 0.55
     }
   },
-  "scoring_note": "Phase 2C.2 keeps the Phase 2C scoring weights frozen as the baseline. Opportunity, Forward Outlook and Buy Urgency are unchanged. The release adds retrospective 1/5/10/20 trading-day performance monitoring, clearer historical-value terminology, duplicate-run protection for the backup workflow schedule, and adds CHF as a tracked currency without changing any scoring weights.",
+  "scoring_note": "Phase 3A keeps every Phase 2C baseline weight frozen. A separate GDELT headline-based news/event layer is shown and logged in shadow mode only. It does not alter Opportunity, Forward Outlook, Buy Urgency, suggested tranche or recommendation. Shadow outcomes are evaluated independently at 1/5/10 trading-day horizons.",
   "important_note": "This model ranks the attractiveness of converting SGD into foreign currency. It is a decision-support tool, not a guarantee of future exchange-rate direction.",
   "currencies": [
     {
@@ -157,7 +160,7 @@
       "inflation_next_pct": 2.1,
       "inflation_vs_sgd_current_pp": 0.9,
       "inflation_vs_sgd_next_pp": 0.2,
-      "validation_rate_sgd": 1.28202,
+      "validation_rate_sgd": 1.28197,
       "validation_difference_pct": 0.01,
       "validation_status": "Excellent",
       "drivers": [
@@ -188,7 +191,24 @@
         "forward_outlook_score": 0.18,
         "buy_urgency_score": 0.12
       },
-      "previous_score_date": "2026-08-05"
+      "previous_score_date": "2026-08-05",
+      "shadow_news": {
+        "status": "Unavailable",
+        "score": 2.5,
+        "label": "Unavailable",
+        "confidence_pct": 0,
+        "article_count": 0,
+        "directional_article_count": 0,
+        "source_diversity": 0,
+        "agreement_pct": null,
+        "horizon": "Short term (1\u201310 trading days)",
+        "articles": [],
+        "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22US+dollar%22+OR+%22Federal+Reserve%22+OR+%22Fed+policy%22%29+%28currency+OR+for",
+        "next_policy_event": "2026-09-16",
+        "days_to_policy_event": 40,
+        "event_risk_label": "Normal",
+        "event_calendar_source": "Federal Reserve FOMC calendar"
+      }
     },
     {
       "code": "JPY",
@@ -233,13 +253,13 @@
         "momentum_90d": 2.68,
         "momentum_ma_structure": 3.98
       },
-      "decision_confidence": 75,
+      "decision_confidence": 77,
       "decision_confidence_label": "Medium",
       "signal_agreement_pct": 55,
       "recommendation": "Wait",
       "suggested_action": "Wait for a better rate unless funds are needed",
       "suggested_buy_pct": 0,
-      "confidence": 81,
+      "confidence": 85,
       "confidence_label": "High",
       "data_date": "2026-08-06",
       "change_1d_pct": -0.1,
@@ -291,9 +311,9 @@
       "inflation_next_pct": 2.3,
       "inflation_vs_sgd_current_pp": -0.1,
       "inflation_vs_sgd_next_pp": 0.4,
-      "validation_rate_sgd": 0.804,
-      "validation_difference_pct": 1.02,
-      "validation_status": "Watch",
+      "validation_rate_sgd": 0.805,
+      "validation_difference_pct": 0.9,
+      "validation_status": "Good",
       "drivers": [
         "Historically attractive: current cost is in the cheapest 9% of the 5-year range.",
         "One-month price movement is relatively stable.",
@@ -322,7 +342,24 @@
         "forward_outlook_score": -0.12,
         "buy_urgency_score": -0.09
       },
-      "previous_score_date": "2026-08-05"
+      "previous_score_date": "2026-08-05",
+      "shadow_news": {
+        "status": "Unavailable",
+        "score": 2.5,
+        "label": "Unavailable",
+        "confidence_pct": 0,
+        "article_count": 0,
+        "directional_article_count": 0,
+        "source_diversity": 0,
+        "agreement_pct": null,
+        "horizon": "Short term (1\u201310 trading days)",
+        "articles": [],
+        "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Japanese+yen%22+OR+%22Bank+of+Japan%22+OR+%22BOJ+policy%22%29+%28currency+OR+fo",
+        "next_policy_event": "2026-09-18",
+        "days_to_policy_event": 42,
+        "event_risk_label": "Normal",
+        "event_calendar_source": "Bank of Japan MPM schedule"
+      }
     },
     {
       "code": "MYR",
@@ -425,8 +462,8 @@
       "inflation_next_pct": 2.0,
       "inflation_vs_sgd_current_pp": -0.4,
       "inflation_vs_sgd_next_pp": 0.1,
-      "validation_rate_sgd": 0.3129,
-      "validation_difference_pct": 0.19,
+      "validation_rate_sgd": 0.313,
+      "validation_difference_pct": 0.16,
       "validation_status": "Excellent",
       "drivers": [
         "5-year valuation is mid-range at the 68th cost percentile.",
@@ -456,7 +493,67 @@
         "forward_outlook_score": 0.13,
         "buy_urgency_score": 0.08
       },
-      "previous_score_date": "2026-08-05"
+      "previous_score_date": "2026-08-05",
+      "shadow_news": {
+        "status": "Available",
+        "score": 1.62,
+        "label": "Weakening bias",
+        "confidence_pct": 45,
+        "article_count": 12,
+        "directional_article_count": 1,
+        "source_diversity": 8,
+        "agreement_pct": 100,
+        "horizon": "Short term (1\u201310 trading days)",
+        "articles": [
+          {
+            "title": "Forex index hits record high , Asian stocks rise as easing Middle East fears cool oil",
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/05/forex-index-hits-record-high-asian-stocks-rise-as-easing-middle-east-fears-cool-oil",
+            "domain": "thestar.com.my",
+            "seen_utc": "2026-08-05T09:30:00+00:00",
+            "direction": "weakening",
+            "headline_score": 1.62,
+            "weight": 0.78,
+            "signal_terms": [
+              "-easing"
+            ]
+          },
+          {
+            "title": "Currency exchange rates in Pakistan today \u2013 7 August 2026",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/",
+            "domain": "pakobserver.net",
+            "seen_utc": "2026-08-07T04:45:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          },
+          {
+            "title": "Malaysia 2Q growth  should be okay , says Amir Hamzah",
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/06/malaysia039s-2q-growth-039should-be-okay039-says-amir-hamzah",
+            "domain": "thestar.com.my",
+            "seen_utc": "2026-08-06T06:30:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 0.9,
+            "signal_terms": []
+          },
+          {
+            "title": "Market exchange rates in China -- Aug . 6 - Xinhua",
+            "url": "https://english.news.cn/20260806/1e2b2e2ec75e479da37937f5a4518581/c.html",
+            "domain": "english.news.cn",
+            "seen_utc": "2026-08-06T03:30:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 0.9,
+            "signal_terms": []
+          }
+        ],
+        "method": "GDELT headline-only heuristic shadow signal",
+        "next_policy_event": "2026-09-03",
+        "days_to_policy_event": 27,
+        "event_risk_label": "Moderate",
+        "event_calendar_source": "Bank Negara Malaysia MPC schedule"
+      }
     },
     {
       "code": "CHF",
@@ -559,8 +656,8 @@
       "inflation_next_pct": 0.5,
       "inflation_vs_sgd_current_pp": -1.8,
       "inflation_vs_sgd_next_pp": -1.4,
-      "validation_rate_sgd": 1.5772,
-      "validation_difference_pct": 0.39,
+      "validation_rate_sgd": 1.5773,
+      "validation_difference_pct": 0.38,
       "validation_status": "Excellent",
       "drivers": [
         "5-year valuation is mid-range at the 77th cost percentile.",
@@ -590,7 +687,24 @@
         "forward_outlook_score": null,
         "buy_urgency_score": null
       },
-      "previous_score_date": "2026-08-05"
+      "previous_score_date": "2026-08-05",
+      "shadow_news": {
+        "status": "Unavailable",
+        "score": 2.5,
+        "label": "Unavailable",
+        "confidence_pct": 0,
+        "article_count": 0,
+        "directional_article_count": 0,
+        "source_diversity": 0,
+        "agreement_pct": null,
+        "horizon": "Short term (1\u201310 trading days)",
+        "articles": [],
+        "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Swiss+franc%22+OR+%22Swiss+National+Bank%22+OR+%22SNB+policy%22%29+%28currency+",
+        "next_policy_event": "2026-09-24",
+        "days_to_policy_event": 48,
+        "event_risk_label": "Normal",
+        "event_calendar_source": "Swiss National Bank monetary policy assessment schedule"
+      }
     },
     {
       "code": "EUR",
@@ -693,8 +807,8 @@
       "inflation_next_pct": 2.8,
       "inflation_vs_sgd_current_pp": 1.1,
       "inflation_vs_sgd_next_pp": 0.9,
-      "validation_rate_sgd": 1.47727,
-      "validation_difference_pct": 0.17,
+      "validation_rate_sgd": 1.4771,
+      "validation_difference_pct": 0.18,
       "validation_status": "Excellent",
       "drivers": [
         "5-year valuation is mid-range at the 64th cost percentile.",
@@ -724,7 +838,65 @@
         "forward_outlook_score": -0.1,
         "buy_urgency_score": -0.05
       },
-      "previous_score_date": "2026-08-05"
+      "previous_score_date": "2026-08-05",
+      "shadow_news": {
+        "status": "Available",
+        "score": 2.5,
+        "label": "Insufficient directional signal",
+        "confidence_pct": 40,
+        "article_count": 17,
+        "directional_article_count": 0,
+        "source_diversity": 14,
+        "agreement_pct": null,
+        "horizon": "Short term (1\u201310 trading days)",
+        "articles": [
+          {
+            "title": "Dollar Slides on Stock Strength and Weakness in US Economic Reports",
+            "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-slides-stock-strength-weakness-143553919.html",
+            "domain": "finance.yahoo.com",
+            "seen_utc": "2026-08-06T22:30:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          },
+          {
+            "title": "December Euro Currency Futures Present a Buying Opportunity . What to Know .",
+            "url": "https://finance.yahoo.com/markets/currencies/articles/december-euro-currency-futures-present-141606398.html",
+            "domain": "finance.yahoo.com",
+            "seen_utc": "2026-08-06T22:30:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          },
+          {
+            "title": "Northern Trust Pension Universe Data : Canadian Pension Plan Returns Rise in Q2",
+            "url": "https://thestarphoenix.com/press-releases/business-wire/northern-trust-pension-universe-data-canadian-pension-plan-returns-rise-in-q2/",
+            "domain": "thestarphoenix.com",
+            "seen_utc": "2026-08-06T18:00:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          },
+          {
+            "title": "Devisen : Euro gibt etwas nach - aber weiter \u00fcber 1 , 15 US - Dollar",
+            "url": "https://www.finanzen.net/nachricht/devisen/devisen-euro-gibt-etwas-nach-aber-weiter-ueber-1-15-us-dollar-15853520",
+            "domain": "finanzen.net",
+            "seen_utc": "2026-08-06T15:15:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          }
+        ],
+        "method": "GDELT headline-only heuristic shadow signal",
+        "next_policy_event": "2026-09-10",
+        "days_to_policy_event": 34,
+        "event_risk_label": "Normal",
+        "event_calendar_source": "ECB Governing Council calendar"
+      }
     },
     {
       "code": "AUD",
@@ -827,7 +999,7 @@
       "inflation_next_pct": 3.2,
       "inflation_vs_sgd_current_pp": 1.7,
       "inflation_vs_sgd_next_pp": 1.3,
-      "validation_rate_sgd": 0.9008,
+      "validation_rate_sgd": 0.90075,
       "validation_difference_pct": 0.23,
       "validation_status": "Excellent",
       "drivers": [
@@ -858,7 +1030,24 @@
         "forward_outlook_score": -0.07,
         "buy_urgency_score": -0.03
       },
-      "previous_score_date": "2026-08-05"
+      "previous_score_date": "2026-08-05",
+      "shadow_news": {
+        "status": "Unavailable",
+        "score": 2.5,
+        "label": "Unavailable",
+        "confidence_pct": 0,
+        "article_count": 0,
+        "directional_article_count": 0,
+        "source_diversity": 0,
+        "agreement_pct": null,
+        "horizon": "Short term (1\u201310 trading days)",
+        "articles": [],
+        "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Australian+dollar%22+OR+%22Reserve+Bank+of+Australia%22+OR+%22RBA+policy%22%29+",
+        "next_policy_event": "2026-08-11",
+        "days_to_policy_event": 4,
+        "event_risk_label": "High",
+        "event_calendar_source": "Reserve Bank of Australia board schedule"
+      }
     },
     {
       "code": "GBP",
@@ -992,7 +1181,65 @@
         "forward_outlook_score": -0.01,
         "buy_urgency_score": 0.03
       },
-      "previous_score_date": "2026-08-05"
+      "previous_score_date": "2026-08-05",
+      "shadow_news": {
+        "status": "Available",
+        "score": 2.5,
+        "label": "Insufficient directional signal",
+        "confidence_pct": 40,
+        "article_count": 18,
+        "directional_article_count": 0,
+        "source_diversity": 12,
+        "agreement_pct": null,
+        "horizon": "Short term (1\u201310 trading days)",
+        "articles": [
+          {
+            "title": "Currency exchange rates in Pakistan today \u2013 7 August 2026",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/",
+            "domain": "pakobserver.net",
+            "seen_utc": "2026-08-07T04:45:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          },
+          {
+            "title": "Pound - Canadian Dollar Forecast : BofA Sees Near - Term CAD Weakness",
+            "url": "https://www.currencynews.co.uk/forecast/20260806-46756_pound-canadian-dollar-forecast-bofa-sees-near-term-cad-weakness.html",
+            "domain": "currencynews.co.uk",
+            "seen_utc": "2026-08-06T23:45:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          },
+          {
+            "title": "EUR / USD , USD / CHF , and GBP / USD Short - Term Forecast for 05 / 08 / 2026",
+            "url": "https://finance.yahoo.com/markets/currencies/articles/eur-usd-usd-chf-gbp-135942600.html",
+            "domain": "finance.yahoo.com",
+            "seen_utc": "2026-08-06T22:15:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          },
+          {
+            "title": "Pound Sterling to Rupee Forecast : RBI Support Puts 127 . 60 in Focus",
+            "url": "https://www.currencynews.co.uk/forecast/20260806-46755_pound-sterling-to-rupee-forecast-rbi-support-puts-127-60-in-focus.html",
+            "domain": "currencynews.co.uk",
+            "seen_utc": "2026-08-06T21:45:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 1.0,
+            "signal_terms": []
+          }
+        ],
+        "method": "GDELT headline-only heuristic shadow signal",
+        "next_policy_event": "2026-09-17",
+        "days_to_policy_event": 41,
+        "event_risk_label": "Normal",
+        "event_calendar_source": "Bank of England MPC calendar"
+      }
     }
   ]
 }

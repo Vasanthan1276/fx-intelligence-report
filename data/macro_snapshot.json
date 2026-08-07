@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-07T04:55:36.812938+00:00",
+  "generated_at_utc": "2026-08-07T05:13:36.925221+00:00",
   "model_version": "2.2-phase2c-baseline",
   "policy_source": "BIS central bank policy rates",
   "macro_source": "IMF World Economic Outlook via DataMapper",
@@ -86,7 +86,7 @@
       "forward_fx_momentum_label": "Strengthening",
       "forward_outlook_score": 3.37,
       "forward_outlook_label": "Supportive of buying sooner",
-      "decision_confidence": 75,
+      "decision_confidence": 77,
       "signal_agreement_pct": 55
     },
     "MYR": {

@@ -1,0 +1,65 @@
+{
+  "phase": "3A-shadow",
+  "records": [
+    {
+      "run_date_sgt": "2026-08-07",
+      "market_date": "2026-08-06",
+      "app_release": "3.0-phase3a-shadow-news",
+      "shadow_mode": true,
+      "news_scores": {
+        "USD": 2.5,
+        "JPY": 2.5,
+        "EUR": 2.5,
+        "GBP": 2.5,
+        "AUD": 2.5,
+        "MYR": 1.62,
+        "CHF": 2.5
+      },
+      "news_labels": {
+        "USD": "Unavailable",
+        "JPY": "Unavailable",
+        "EUR": "Insufficient directional signal",
+        "GBP": "Insufficient directional signal",
+        "AUD": "Unavailable",
+        "MYR": "Weakening bias",
+        "CHF": "Unavailable"
+      },
+      "news_confidence_pct": {
+        "USD": 0,
+        "JPY": 0,
+        "EUR": 40,
+        "GBP": 40,
+        "AUD": 0,
+        "MYR": 45,
+        "CHF": 0
+      },
+      "directional_article_count": {
+        "USD": 0,
+        "JPY": 0,
+        "EUR": 0,
+        "GBP": 0,
+        "AUD": 0,
+        "MYR": 1,
+        "CHF": 0
+      },
+      "article_count": {
+        "USD": 0,
+        "JPY": 0,
+        "EUR": 17,
+        "GBP": 18,
+        "AUD": 0,
+        "MYR": 12,
+        "CHF": 0
+      },
+      "rates_sgd": {
+        "USD": 1.2821,
+        "JPY": 0.812318,
+        "EUR": 1.4798,
+        "GBP": 1.72662,
+        "AUD": 0.902868,
+        "MYR": 0.31351,
+        "CHF": 1.583351
+      }
+    }
+  ]
+}

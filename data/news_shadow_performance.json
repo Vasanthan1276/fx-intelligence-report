@@ -1,0 +1,203 @@
+{
+  "generated_at_utc": "2026-08-07T05:13:37.126260+00:00",
+  "phase": "Phase 3A shadow mode",
+  "app_release": "3.0-phase3a-shadow-news",
+  "horizons_trading_days": [
+    1,
+    5,
+    10
+  ],
+  "directional_thresholds": {
+    "strengthen_at_or_above": 3.1,
+    "weaken_at_or_below": 1.9
+  },
+  "neutral_move_band_pct": 0.1,
+  "definition": "Shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Accuracy excludes future moves inside the neutral band.",
+  "overall": {
+    "1": {
+      "directional_calls": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "neutral_move": 0,
+      "directional_accuracy_pct": null
+    },
+    "5": {
+      "directional_calls": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "neutral_move": 0,
+      "directional_accuracy_pct": null
+    },
+    "10": {
+      "directional_calls": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "neutral_move": 0,
+      "directional_accuracy_pct": null
+    }
+  },
+  "by_currency": {
+    "USD": {
+      "1": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "5": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "10": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      }
+    },
+    "JPY": {
+      "1": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "5": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "10": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      }
+    },
+    "EUR": {
+      "1": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "5": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "10": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      }
+    },
+    "GBP": {
+      "1": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "5": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "10": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      }
+    },
+    "AUD": {
+      "1": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "5": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "10": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      }
+    },
+    "MYR": {
+      "1": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "5": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "10": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      }
+    },
+    "CHF": {
+      "1": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "5": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      },
+      "10": {
+        "directional_calls": 0,
+        "correct": 0,
+        "incorrect": 0,
+        "neutral_move": 0,
+        "directional_accuracy_pct": null
+      }
+    }
+  },
+  "evaluations": []
+}

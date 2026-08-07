@@ -1,0 +1,256 @@
+{
+  "generated_at_utc": "2026-08-07T05:13:36.857257+00:00",
+  "run_date_sgt": "2026-08-07",
+  "market_date": "2026-08-06",
+  "phase": "Phase 3A \u2014 news/event shadow mode",
+  "source": "GDELT DOC 2.0 headline shadow (3/7 available, 72h)",
+  "lookback": "72h",
+  "shadow_only": true,
+  "note": "Headline-based directional intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
+  "currencies": {
+    "USD": {
+      "status": "Unavailable",
+      "score": 2.5,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "directional_article_count": 0,
+      "source_diversity": 0,
+      "agreement_pct": null,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [],
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22US+dollar%22+OR+%22Federal+Reserve%22+OR+%22Fed+policy%22%29+%28currency+OR+for",
+      "next_policy_event": "2026-09-16",
+      "days_to_policy_event": 40,
+      "event_risk_label": "Normal",
+      "event_calendar_source": "Federal Reserve FOMC calendar"
+    },
+    "JPY": {
+      "status": "Unavailable",
+      "score": 2.5,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "directional_article_count": 0,
+      "source_diversity": 0,
+      "agreement_pct": null,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [],
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Japanese+yen%22+OR+%22Bank+of+Japan%22+OR+%22BOJ+policy%22%29+%28currency+OR+fo",
+      "next_policy_event": "2026-09-18",
+      "days_to_policy_event": 42,
+      "event_risk_label": "Normal",
+      "event_calendar_source": "Bank of Japan MPM schedule"
+    },
+    "EUR": {
+      "status": "Available",
+      "score": 2.5,
+      "label": "Insufficient directional signal",
+      "confidence_pct": 40,
+      "article_count": 17,
+      "directional_article_count": 0,
+      "source_diversity": 14,
+      "agreement_pct": null,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [
+        {
+          "title": "Dollar Slides on Stock Strength and Weakness in US Economic Reports",
+          "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-slides-stock-strength-weakness-143553919.html",
+          "domain": "finance.yahoo.com",
+          "seen_utc": "2026-08-06T22:30:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        },
+        {
+          "title": "December Euro Currency Futures Present a Buying Opportunity . What to Know .",
+          "url": "https://finance.yahoo.com/markets/currencies/articles/december-euro-currency-futures-present-141606398.html",
+          "domain": "finance.yahoo.com",
+          "seen_utc": "2026-08-06T22:30:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        },
+        {
+          "title": "Northern Trust Pension Universe Data : Canadian Pension Plan Returns Rise in Q2",
+          "url": "https://thestarphoenix.com/press-releases/business-wire/northern-trust-pension-universe-data-canadian-pension-plan-returns-rise-in-q2/",
+          "domain": "thestarphoenix.com",
+          "seen_utc": "2026-08-06T18:00:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        },
+        {
+          "title": "Devisen : Euro gibt etwas nach - aber weiter \u00fcber 1 , 15 US - Dollar",
+          "url": "https://www.finanzen.net/nachricht/devisen/devisen-euro-gibt-etwas-nach-aber-weiter-ueber-1-15-us-dollar-15853520",
+          "domain": "finanzen.net",
+          "seen_utc": "2026-08-06T15:15:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        }
+      ],
+      "method": "GDELT headline-only heuristic shadow signal",
+      "next_policy_event": "2026-09-10",
+      "days_to_policy_event": 34,
+      "event_risk_label": "Normal",
+      "event_calendar_source": "ECB Governing Council calendar"
+    },
+    "GBP": {
+      "status": "Available",
+      "score": 2.5,
+      "label": "Insufficient directional signal",
+      "confidence_pct": 40,
+      "article_count": 18,
+      "directional_article_count": 0,
+      "source_diversity": 12,
+      "agreement_pct": null,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [
+        {
+          "title": "Currency exchange rates in Pakistan today \u2013 7 August 2026",
+          "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/",
+          "domain": "pakobserver.net",
+          "seen_utc": "2026-08-07T04:45:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        },
+        {
+          "title": "Pound - Canadian Dollar Forecast : BofA Sees Near - Term CAD Weakness",
+          "url": "https://www.currencynews.co.uk/forecast/20260806-46756_pound-canadian-dollar-forecast-bofa-sees-near-term-cad-weakness.html",
+          "domain": "currencynews.co.uk",
+          "seen_utc": "2026-08-06T23:45:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        },
+        {
+          "title": "EUR / USD , USD / CHF , and GBP / USD Short - Term Forecast for 05 / 08 / 2026",
+          "url": "https://finance.yahoo.com/markets/currencies/articles/eur-usd-usd-chf-gbp-135942600.html",
+          "domain": "finance.yahoo.com",
+          "seen_utc": "2026-08-06T22:15:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        },
+        {
+          "title": "Pound Sterling to Rupee Forecast : RBI Support Puts 127 . 60 in Focus",
+          "url": "https://www.currencynews.co.uk/forecast/20260806-46755_pound-sterling-to-rupee-forecast-rbi-support-puts-127-60-in-focus.html",
+          "domain": "currencynews.co.uk",
+          "seen_utc": "2026-08-06T21:45:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        }
+      ],
+      "method": "GDELT headline-only heuristic shadow signal",
+      "next_policy_event": "2026-09-17",
+      "days_to_policy_event": 41,
+      "event_risk_label": "Normal",
+      "event_calendar_source": "Bank of England MPC calendar"
+    },
+    "AUD": {
+      "status": "Unavailable",
+      "score": 2.5,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "directional_article_count": 0,
+      "source_diversity": 0,
+      "agreement_pct": null,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [],
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Australian+dollar%22+OR+%22Reserve+Bank+of+Australia%22+OR+%22RBA+policy%22%29+",
+      "next_policy_event": "2026-08-11",
+      "days_to_policy_event": 4,
+      "event_risk_label": "High",
+      "event_calendar_source": "Reserve Bank of Australia board schedule"
+    },
+    "MYR": {
+      "status": "Available",
+      "score": 1.62,
+      "label": "Weakening bias",
+      "confidence_pct": 45,
+      "article_count": 12,
+      "directional_article_count": 1,
+      "source_diversity": 8,
+      "agreement_pct": 100,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [
+        {
+          "title": "Forex index hits record high , Asian stocks rise as easing Middle East fears cool oil",
+          "url": "https://www.thestar.com.my/business/business-news/2026/08/05/forex-index-hits-record-high-asian-stocks-rise-as-easing-middle-east-fears-cool-oil",
+          "domain": "thestar.com.my",
+          "seen_utc": "2026-08-05T09:30:00+00:00",
+          "direction": "weakening",
+          "headline_score": 1.62,
+          "weight": 0.78,
+          "signal_terms": [
+            "-easing"
+          ]
+        },
+        {
+          "title": "Currency exchange rates in Pakistan today \u2013 7 August 2026",
+          "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/",
+          "domain": "pakobserver.net",
+          "seen_utc": "2026-08-07T04:45:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.0,
+          "signal_terms": []
+        },
+        {
+          "title": "Malaysia 2Q growth  should be okay , says Amir Hamzah",
+          "url": "https://www.thestar.com.my/business/business-news/2026/08/06/malaysia039s-2q-growth-039should-be-okay039-says-amir-hamzah",
+          "domain": "thestar.com.my",
+          "seen_utc": "2026-08-06T06:30:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.9,
+          "signal_terms": []
+        },
+        {
+          "title": "Market exchange rates in China -- Aug . 6 - Xinhua",
+          "url": "https://english.news.cn/20260806/1e2b2e2ec75e479da37937f5a4518581/c.html",
+          "domain": "english.news.cn",
+          "seen_utc": "2026-08-06T03:30:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.9,
+          "signal_terms": []
+        }
+      ],
+      "method": "GDELT headline-only heuristic shadow signal",
+      "next_policy_event": "2026-09-03",
+      "days_to_policy_event": 27,
+      "event_risk_label": "Moderate",
+      "event_calendar_source": "Bank Negara Malaysia MPC schedule"
+    },
+    "CHF": {
+      "status": "Unavailable",
+      "score": 2.5,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "directional_article_count": 0,
+      "source_diversity": 0,
+      "agreement_pct": null,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [],
+      "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Swiss+franc%22+OR+%22Swiss+National+Bank%22+OR+%22SNB+policy%22%29+%28currency+",
+      "next_policy_event": "2026-09-24",
+      "days_to_policy_event": 48,
+      "event_risk_label": "Normal",
+      "event_calendar_source": "Swiss National Bank monetary policy assessment schedule"
+    }
+  }
+}

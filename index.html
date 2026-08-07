@@ -149,6 +149,29 @@ h1{font-size:clamp(2rem,4vw,3.7rem);line-height:1;margin:0 0 10px;letter-spacing
 .driver-columns li+li{margin-top:5px}
 .chart-button{width:100%;margin-top:12px;background:#142a42;border:1px solid #274764;color:var(--text);border-radius:11px;padding:10px 12px;font-weight:800;cursor:pointer}
 .chart-button:hover{background:#1a3552}
+.shadow-box{margin:14px 0;padding:14px;border-radius:16px;background:rgba(180,156,255,.055);border:1px solid rgba(180,156,255,.24)}
+.shadow-positive{border-color:rgba(69,221,163,.34)}
+.shadow-negative{border-color:rgba(255,107,123,.34)}
+.shadow-neutral{border-color:rgba(180,156,255,.28)}
+.shadow-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}
+.shadow-head span{display:block;color:var(--muted);font-size:.72rem}
+.shadow-head strong{display:block;margin-top:3px;color:var(--purple)}
+.shadow-positive .shadow-head strong{color:var(--green)}
+.shadow-negative .shadow-head strong{color:var(--red)}
+.shadow-pill{font-size:.62rem;font-weight:900;letter-spacing:.08em;background:rgba(180,156,255,.12);color:#d7ccff;border:1px solid rgba(180,156,255,.25);padding:5px 8px;border-radius:999px;white-space:nowrap}
+.shadow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.shadow-grid div{background:rgba(6,15,27,.48);border:1px solid #1c3048;border-radius:10px;padding:8px}
+.shadow-grid span{display:block;color:var(--muted);font-size:.62rem}
+.shadow-grid strong{display:block;margin-top:3px;font-size:.78rem}
+.shadow-horizon{margin-top:10px;color:#9db1c8;font-size:.7rem;line-height:1.5}
+.shadow-headlines{margin:9px 0 0;padding-left:17px}
+.shadow-headlines li{margin:7px 0;color:#b7c8db;font-size:.72rem;line-height:1.35}
+.shadow-headlines a{color:#dceaff;text-decoration:none}
+.shadow-headlines a:hover{color:var(--cyan);text-decoration:underline}
+.shadow-headlines span{display:block;color:#7189a5;font-size:.63rem;margin-top:2px}
+.shadow-empty{color:#7189a5!important}
+.shadow-performance-panel{border-color:rgba(180,156,255,.28)}
+.shadow-perf-card{background:rgba(180,156,255,.06)!important}
 .performance-panel{background:rgba(13,24,40,.92);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}
 .performance-meta{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:4px 2px 14px;color:var(--muted);font-size:.82rem}
 .performance-meta strong{color:var(--text)}
@@ -185,21 +208,21 @@ td span{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}
 footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 @media(max-width:1180px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.perf-cards{grid-template-columns:repeat(2,1fr)}.methodology{grid-template-columns:repeat(3,1fr)}.driver-columns{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:1050px){.hero{grid-template-columns:1fr}.status-panel{min-width:300px}}
-@media(max-width:680px){.container{padding:20px 14px 40px}.perf-cards{grid-template-columns:1fr}.performance-meta{flex-direction:column}.topbar{display:block}.status-panel{margin-top:18px;min-width:0}.cards{grid-template-columns:1fr}.methodology{grid-template-columns:1fr}.chart-wrap{height:300px}.mini-grid{grid-template-columns:1fr 1fr}.urgency-grid{grid-template-columns:1fr}.forward-grid{grid-template-columns:1fr}.score-split{grid-template-columns:1fr}.driver-columns{grid-template-columns:1fr}.daily-change-row{align-items:flex-start;flex-direction:column}.daily-change-row strong{justify-content:flex-start}}
+@media(max-width:680px){.container{padding:20px 14px 40px}.perf-cards{grid-template-columns:1fr}.performance-meta{flex-direction:column}.topbar{display:block}.status-panel{margin-top:18px;min-width:0}.cards{grid-template-columns:1fr}.methodology{grid-template-columns:1fr}.chart-wrap{height:300px}.mini-grid{grid-template-columns:1fr 1fr}.urgency-grid{grid-template-columns:1fr}.forward-grid{grid-template-columns:1fr}.shadow-grid{grid-template-columns:1fr 1fr}.score-split{grid-template-columns:1fr}.driver-columns{grid-template-columns:1fr}.daily-change-row{align-items:flex-start;flex-direction:column}.daily-change-row strong{justify-content:flex-start}}
 </style>
 </head>
 <body>
 <div class="container">
   <header class="topbar">
     <div>
-      <div class="eyebrow">Personal currency decision support · Phase 2C.2 monitoring · 7 currencies</div>
+      <div class="eyebrow">Personal currency decision support · Phase 3A shadow mode · 7 currencies</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">The Phase 2C scoring model remains frozen. This monitoring release adds retrospective 1/5/10/20 trading-day performance tracking, clearer historical-value labels and backup-run resilience without changing any core score weights.</p>
+      <p class="subtitle">The Phase 2C baseline remains frozen. Phase 3A adds a separate headline/event intelligence layer in shadow mode so we can test whether news signals lead FX moves before allowing them to influence recommendations.</p>
     </div>
     <div class="status-panel">
       <div><span>Market data</span><strong>2026-08-06</strong></div>
       <div><span>Model</span><strong>2.2-phase2c-baseline</strong></div>
-      <div><span>Monitoring release</span><strong>2.2-phase2c2-monitoring-chf</strong></div>
+      <div><span>Monitoring release</span><strong>3.0-phase3a-shadow-news</strong></div>
       <div><span>Baseline status</span><strong>Core scoring frozen</strong></div>
       <div><span>Score-change comparison</span><strong>2026-08-05</strong></div>
       <div><span>FX source</span><strong>ECB Data Portal API</strong></div>
@@ -207,6 +230,8 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <div><span>Macro source</span><strong>IMF World Economic Outlook via DataMapper</strong></div>
       <div><span>Forward layer</span><strong>BIS + IMF + FX trend model</strong></div>
       <div><span>Event calendars</span><strong>Official 2026 central-bank schedules</strong></div>
+      <div><span>News/event shadow</span><strong>GDELT DOC 2.0 headline shadow (3/7 available, 72h)</strong></div>
+      <div><span>Shadow run (SGT)</span><strong>2026-08-07</strong></div>
       <div><span>Cross-check</span><strong>Yahoo Finance market snapshot (validation only)</strong></div>
     </div>
   </header>
@@ -223,12 +248,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         <div>Buy urgency <strong>2.57/5 <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.12</span> · Low</strong></div>
         <div>Model/data quality <strong>84%</strong></div>
         <div>Signal agreement <strong>69%</strong></div>
+        <div>News/event shadow <strong>2.50/5 · Unavailable</strong></div>
       </div>
       <div class="daily-change-row"><span>Change vs 2026-08-05</span><strong>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.07</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.18</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.12</span></strong></div>
       <p class="hero-copy">Historically attractive: current cost is in the cheapest 10% of the 5-year range.</p>
       <p class="hero-macro">Macro view: Federal Reserve policy rate is 3.62% and unchanged.</p>
       <p class="hero-macro">Forward view: Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes. Model-implied forward policy bias: Easing bias — after considering recent policy trend, IMF inflation and growth outlook.</p>
       <p class="hero-macro">Timing view: Forward policy bias is easing bias (model-implied, not futures-implied).</p>
+      <p class="hero-macro">Phase 3A shadow: 2.50/5 · Unavailable · 0% headline confidence. This does not affect the action.</p>
     </div>
     <div class="hero-side">
       <h3>Suggested action</h3>
@@ -240,7 +267,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <strong>Buy urgency:</strong> 2.57/5 · Low<br>
       <strong>Model/data quality:</strong> 84% · 69% signal agreement<br>
       <strong>Next policy event:</strong> 2026-09-16 · 40 days · Normal risk</p>
-      <p>0% of your planned discretionary conversion is the model's current suggested first tranche. Phase 2C.2 keeps the Phase 2C scoring logic frozen while daily score changes and matured outcomes are monitored. A high urgency score still cannot turn poor value into a Buy.</p>
+      <p>0% of your planned discretionary conversion is the model's current suggested first tranche. Phase 3A keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
     </div>
   </section>
 
@@ -279,6 +306,23 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
               <div><span>Valuation rarity</span><strong>4.52/5</strong></div>
             </div>
           </div>
+
+          
+      <div class="shadow-box shadow-neutral">
+        <div class="shadow-head">
+          <div><span>Phase 3A shadow intelligence</span><strong>2.50/5 · Unavailable</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>0%</strong></div>
+          <div><span>Directional headlines</span><strong>0/0</strong></div>
+          <div><span>Source diversity</span><strong>0</strong></div>
+          <div><span>Directional agreement</span><strong>—</strong></div>
+        </div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-09-16 · 40 days · Normal risk<br>Impact horizon: Short term (1–10 trading days). This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li class="shadow-empty">No usable headlines returned for this run.</li></ul>
+      </div>
+    
 
           <div class="recommendation rec-accumulate">Wait</div>
           <div class="rate-primary">US$1 = S$1.2821</div>
@@ -373,6 +417,23 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             </div>
           </div>
 
+          
+      <div class="shadow-box shadow-neutral">
+        <div class="shadow-head">
+          <div><span>Phase 3A shadow intelligence</span><strong>2.50/5 · Unavailable</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>0%</strong></div>
+          <div><span>Directional headlines</span><strong>0/0</strong></div>
+          <div><span>Source diversity</span><strong>0</strong></div>
+          <div><span>Directional agreement</span><strong>—</strong></div>
+        </div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-09-18 · 42 days · Normal risk<br>Impact horizon: Short term (1–10 trading days). This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li class="shadow-empty">No usable headlines returned for this run.</li></ul>
+      </div>
+    
+
           <div class="recommendation rec-wait">Wait</div>
           <div class="rate-primary">¥100 = S$0.8123</div>
           <div class="rate-secondary">S$1 buys 123.104 JPY</div>
@@ -380,7 +441,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="mini-grid">
             <div><span>1 month</span><strong>+1.84%</strong></div>
             <div><span>5Y cost percentile</span><strong>9.4%</strong></div>
-            <div><span>Model/data quality</span><strong>75% · Medium</strong></div>
+            <div><span>Model/data quality</span><strong>77% · Medium</strong></div>
             <div><span>Signal agreement</span><strong>55%</strong></div>
           </div>
 
@@ -404,7 +465,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             <div class="forward-grid">
               <div><span>Policy bias</span><strong>2.85/5</strong><small>Balanced / uncertain</small></div>
               <div><span>FX momentum</span><strong>3.80/5</strong><small>Strengthening</small></div>
-              <div><span>Data quality</span><strong>81%</strong><small>High</small></div>
+              <div><span>Data quality</span><strong>85%</strong><small>High</small></div>
             </div>
           </div>
 
@@ -465,6 +526,23 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
               <div><span>Valuation rarity</span><strong>1.60/5</strong></div>
             </div>
           </div>
+
+          
+      <div class="shadow-box shadow-negative">
+        <div class="shadow-head">
+          <div><span>Phase 3A shadow intelligence</span><strong>1.62/5 · Weakening bias</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>45%</strong></div>
+          <div><span>Directional headlines</span><strong>1/12</strong></div>
+          <div><span>Source diversity</span><strong>8</strong></div>
+          <div><span>Directional agreement</span><strong>100%</strong></div>
+        </div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-09-03 · 27 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li><a href="https://www.thestar.com.my/business/business-news/2026/08/05/forex-index-hits-record-high-asian-stocks-rise-as-easing-middle-east-fears-cool-oil" target="_blank" rel="noopener noreferrer">Forex index hits record high , Asian stocks rise as easing Middle East fears cool oil</a><span>thestar.com.my · weakening</span></li><li><a href="https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/" target="_blank" rel="noopener noreferrer">Currency exchange rates in Pakistan today – 7 August 2026</a><span>pakobserver.net · neutral</span></li><li><a href="https://www.thestar.com.my/business/business-news/2026/08/06/malaysia039s-2q-growth-039should-be-okay039-says-amir-hamzah" target="_blank" rel="noopener noreferrer">Malaysia 2Q growth  should be okay , says Amir Hamzah</a><span>thestar.com.my · neutral</span></li><li><a href="https://english.news.cn/20260806/1e2b2e2ec75e479da37937f5a4518581/c.html" target="_blank" rel="noopener noreferrer">Market exchange rates in China -- Aug . 6 - Xinhua</a><span>english.news.cn · neutral</span></li></ul>
+      </div>
+    
 
           <div class="recommendation rec-wait">Wait</div>
           <div class="rate-primary">RM1 = S$0.3135</div>
@@ -559,6 +637,23 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             </div>
           </div>
 
+          
+      <div class="shadow-box shadow-neutral">
+        <div class="shadow-head">
+          <div><span>Phase 3A shadow intelligence</span><strong>2.50/5 · Unavailable</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>0%</strong></div>
+          <div><span>Directional headlines</span><strong>0/0</strong></div>
+          <div><span>Source diversity</span><strong>0</strong></div>
+          <div><span>Directional agreement</span><strong>—</strong></div>
+        </div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-09-24 · 48 days · Normal risk<br>Impact horizon: Short term (1–10 trading days). This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li class="shadow-empty">No usable headlines returned for this run.</li></ul>
+      </div>
+    
+
           <div class="recommendation rec-wait">Wait</div>
           <div class="rate-primary">CHF1 = S$1.5834</div>
           <div class="rate-secondary">S$1 buys 0.632 CHF</div>
@@ -651,6 +746,23 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
               <div><span>Valuation rarity</span><strong>1.78/5</strong></div>
             </div>
           </div>
+
+          
+      <div class="shadow-box shadow-neutral">
+        <div class="shadow-head">
+          <div><span>Phase 3A shadow intelligence</span><strong>2.50/5 · Insufficient directional signal</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>40%</strong></div>
+          <div><span>Directional headlines</span><strong>0/17</strong></div>
+          <div><span>Source diversity</span><strong>14</strong></div>
+          <div><span>Directional agreement</span><strong>—</strong></div>
+        </div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-09-10 · 34 days · Normal risk<br>Impact horizon: Short term (1–10 trading days). This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li><a href="https://finance.yahoo.com/markets/currencies/articles/dollar-slides-stock-strength-weakness-143553919.html" target="_blank" rel="noopener noreferrer">Dollar Slides on Stock Strength and Weakness in US Economic Reports</a><span>finance.yahoo.com · neutral</span></li><li><a href="https://finance.yahoo.com/markets/currencies/articles/december-euro-currency-futures-present-141606398.html" target="_blank" rel="noopener noreferrer">December Euro Currency Futures Present a Buying Opportunity . What to Know .</a><span>finance.yahoo.com · neutral</span></li><li><a href="https://thestarphoenix.com/press-releases/business-wire/northern-trust-pension-universe-data-canadian-pension-plan-returns-rise-in-q2/" target="_blank" rel="noopener noreferrer">Northern Trust Pension Universe Data : Canadian Pension Plan Returns Rise in Q2</a><span>thestarphoenix.com · neutral</span></li><li><a href="https://www.finanzen.net/nachricht/devisen/devisen-euro-gibt-etwas-nach-aber-weiter-ueber-1-15-us-dollar-15853520" target="_blank" rel="noopener noreferrer">Devisen : Euro gibt etwas nach - aber weiter über 1 , 15 US - Dollar</a><span>finanzen.net · neutral</span></li></ul>
+      </div>
+    
 
           <div class="recommendation rec-wait">Wait</div>
           <div class="rate-primary">€1 = S$1.4798</div>
@@ -745,6 +857,23 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             </div>
           </div>
 
+          
+      <div class="shadow-box shadow-neutral">
+        <div class="shadow-head">
+          <div><span>Phase 3A shadow intelligence</span><strong>2.50/5 · Unavailable</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>0%</strong></div>
+          <div><span>Directional headlines</span><strong>0/0</strong></div>
+          <div><span>Source diversity</span><strong>0</strong></div>
+          <div><span>Directional agreement</span><strong>—</strong></div>
+        </div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-08-11 · 4 days · High risk<br>Impact horizon: Short term (1–10 trading days). This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li class="shadow-empty">No usable headlines returned for this run.</li></ul>
+      </div>
+    
+
           <div class="recommendation rec-wait">Wait</div>
           <div class="rate-primary">A$1 = S$0.9029</div>
           <div class="rate-secondary">S$1 buys 1.108 AUD</div>
@@ -838,6 +967,23 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             </div>
           </div>
 
+          
+      <div class="shadow-box shadow-neutral">
+        <div class="shadow-head">
+          <div><span>Phase 3A shadow intelligence</span><strong>2.50/5 · Insufficient directional signal</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>40%</strong></div>
+          <div><span>Directional headlines</span><strong>0/18</strong></div>
+          <div><span>Source diversity</span><strong>12</strong></div>
+          <div><span>Directional agreement</span><strong>—</strong></div>
+        </div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-09-17 · 41 days · Normal risk<br>Impact horizon: Short term (1–10 trading days). This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li><a href="https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/" target="_blank" rel="noopener noreferrer">Currency exchange rates in Pakistan today – 7 August 2026</a><span>pakobserver.net · neutral</span></li><li><a href="https://www.currencynews.co.uk/forecast/20260806-46756_pound-canadian-dollar-forecast-bofa-sees-near-term-cad-weakness.html" target="_blank" rel="noopener noreferrer">Pound - Canadian Dollar Forecast : BofA Sees Near - Term CAD Weakness</a><span>currencynews.co.uk · neutral</span></li><li><a href="https://finance.yahoo.com/markets/currencies/articles/eur-usd-usd-chf-gbp-135942600.html" target="_blank" rel="noopener noreferrer">EUR / USD , USD / CHF , and GBP / USD Short - Term Forecast for 05 / 08 / 2026</a><span>finance.yahoo.com · neutral</span></li><li><a href="https://www.currencynews.co.uk/forecast/20260806-46755_pound-sterling-to-rupee-forecast-rbi-support-puts-127-60-in-focus.html" target="_blank" rel="noopener noreferrer">Pound Sterling to Rupee Forecast : RBI Support Puts 127 . 60 in Focus</a><span>currencynews.co.uk · neutral</span></li></ul>
+      </div>
+    
+
           <div class="recommendation rec-avoid">Expensive</div>
           <div class="rate-primary">£1 = S$1.7266</div>
           <div class="rate-secondary">S$1 buys 0.579 GBP</div>
@@ -909,6 +1055,16 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     </section>
     
 
+  
+    <div class="section-header"><div><h2>Phase 3A shadow performance</h2><p>Tests whether the separate news/event bias anticipated the later FX direction. It remains completely outside the frozen Phase 2C recommendation.</p></div></div>
+    <section class="performance-panel shadow-performance-panel">
+      <div class="performance-meta"><strong>Shadow-mode validation</strong><span>Only directional calls are scored. Future FX moves within ±0.10% are neutral and excluded from directional accuracy.</span></div>
+      <div class="perf-cards"><div class="perf-card shadow-perf-card"><span>1 trading day</span><strong>Pending</strong><small>No matured directional calls yet</small></div><div class="perf-card shadow-perf-card"><span>5 trading days</span><strong>Pending</strong><small>No matured directional calls yet</small></div><div class="perf-card shadow-perf-card"><span>10 trading days</span><strong>Pending</strong><small>No matured directional calls yet</small></div></div>
+      <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th></tr></thead><tbody><tr><td><strong>USD</strong><span>US Dollar</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>JPY</strong><span>Japanese Yen</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>MYR</strong><span>Malaysian Ringgit</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>CHF</strong><span>Swiss Franc</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>EUR</strong><span>Euro</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>AUD</strong><span>Australian Dollar</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>GBP</strong><span>British Pound</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr></tbody></table></div>
+      <div class="performance-note"><strong>Purpose:</strong> Phase 3A is an experiment. We are measuring whether headline/event intelligence adds leading information before allowing it to influence any model score.</div>
+    </section>
+    
+
   <div class="section-header">
     <div><h2>Five-year SGD cost history</h2><p>Lower cost generally means better value for an SGD buyer.</p></div>
   </div>
@@ -927,13 +1083,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   </div>
   <section class="table-panel">
     <table>
-      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Forward outlook</th><th>Market</th><th>Macro</th><th>Policy bias</th><th>FX momentum</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Next meeting</th><th>Event risk</th><th>Historical value threshold</th><th>Model/data quality</th></tr></thead>
+      <thead><tr><th>Currency</th><th>Opportunity</th><th>Urgency</th><th>Forward outlook</th><th>News/event shadow</th><th>Market</th><th>Macro</th><th>Policy bias</th><th>FX momentum</th><th>Signal</th><th>Current cost</th><th>5Y percentile</th><th>Next meeting</th><th>Event risk</th><th>Historical value threshold</th><th>Model/data quality</th></tr></thead>
       <tbody>
         <tr>
           <td><strong>USD</strong><span>US Dollar</span></td>
           <td><div class="table-score score-good">3.19</div><span>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.07</span></span></td>
           <td><div class="table-score urgency-normal">2.57</div><span>Low <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.12</span></span></td>
           <td>2.02<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.18</span></span></td>
+          <td><div class="table-score shadow-neutral">2.50</div><span>Unavailable · shadow</span></td>
           <td>3.74</td>
           <td>1.92<span>100% coverage</span></td>
           <td>1.84<span>Easing bias</span></td>
@@ -953,6 +1110,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <td><div class="table-score score-neutral">2.96</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.03</span></span></td>
           <td><div class="table-score urgency-elevated">3.42</div><span>Moderate <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.09</span></span></td>
           <td>3.37<span>Supportive of buying sooner <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.12</span></span></td>
+          <td><div class="table-score shadow-neutral">2.50</div><span>Unavailable · shadow</span></td>
           <td>2.87</td>
           <td>3.16<span>100% coverage</span></td>
           <td>2.85<span>Balanced / uncertain</span></td>
@@ -963,7 +1121,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <td>2026-09-18 · 42 days<span>Bank of Japan MPM schedule</span></td>
           <td>Normal<span>2.5/5</span></td>
           <td>S$0.8847 per ¥100<span>In attractive historical-value range</span></td>
-          <td>75%<span>55% agreement</span></td>
+          <td>77%<span>55% agreement</span></td>
         </tr>
         
 
@@ -972,6 +1130,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <td><div class="table-score score-neutral">2.82</div><span>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.07</span></span></td>
           <td><div class="table-score urgency-normal">2.07</div><span>Low <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.08</span></span></td>
           <td>2.02<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.13</span></span></td>
+          <td><div class="table-score shadow-negative">1.62</div><span>Weakening bias · shadow</span></td>
           <td>2.71</td>
           <td>3.09<span>100% coverage</span></td>
           <td>2.57<span>Balanced / uncertain</span></td>
@@ -991,6 +1150,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <td><div class="table-score score-neutral">2.69</div><span>Opportunity <span class="delta-badge delta-na">baseline</span></span></td>
           <td><div class="table-score urgency-low">1.95</div><span>Very low <span class="delta-badge delta-na">baseline</span></span></td>
           <td>2.02<span>Mixed / neutral <span class="delta-badge delta-na">baseline</span></span></td>
+          <td><div class="table-score shadow-neutral">2.50</div><span>Unavailable · shadow</span></td>
           <td>2.90</td>
           <td>2.20<span>100% coverage</span></td>
           <td>2.31<span>Balanced / uncertain</span></td>
@@ -1010,6 +1170,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <td><div class="table-score score-neutral">2.43</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.04</span></span></td>
           <td><div class="table-score urgency-normal">2.43</div><span>Low <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.05</span></span></td>
           <td>2.61<span>Mixed / neutral <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.10</span></span></td>
+          <td><div class="table-score shadow-neutral">2.50</div><span>Insufficient directional signal · shadow</span></td>
           <td>2.61</td>
           <td>2.02<span>100% coverage</span></td>
           <td>2.63<span>Balanced / uncertain</span></td>
@@ -1029,6 +1190,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <td><div class="table-score score-neutral">2.33</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.05</span></span></td>
           <td><div class="table-score urgency-normal">2.66</div><span>Low <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.03</span></span></td>
           <td>2.81<span>Mixed / neutral <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.07</span></span></td>
+          <td><div class="table-score shadow-neutral">2.50</div><span>Unavailable · shadow</span></td>
           <td>1.96</td>
           <td>3.19<span>100% coverage</span></td>
           <td>2.97<span>Balanced / uncertain</span></td>
@@ -1048,6 +1210,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <td><div class="table-score score-weak">2.13</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.05</span></span></td>
           <td><div class="table-score urgency-normal">2.19</div><span>Low <span class="delta-badge delta-up" title="Change vs 2026-08-05">▲ 0.03</span></span></td>
           <td>2.34<span>Mixed / neutral <span class="delta-badge delta-down" title="Change vs 2026-08-05">▼ 0.01</span></span></td>
+          <td><div class="table-score shadow-neutral">2.50</div><span>Insufficient directional signal · shadow</span></td>
           <td>2.28</td>
           <td>1.78<span>100% coverage</span></td>
           <td>2.09<span>Balanced / uncertain</span></td>
@@ -1065,7 +1228,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   </section>
 
   <div class="section-header">
-    <div><h2>Phase 2C frozen baseline model · 2C.2 monitoring release</h2><p>The core Phase 2C scoring weights are frozen for the observation period. Opportunity measures value, Forward Outlook estimates directional pressure, and Buy Urgency estimates timing pressure.</p></div>
+    <div><h2>Phase 3A shadow experiment · Phase 2C baseline remains frozen</h2><p>Phase 3A observes recent news and policy-event coverage alongside the frozen baseline. Shadow intelligence is measured independently and cannot change Opportunity, Forward Outlook, Buy Urgency or the recommendation.</p></div>
   </div>
   <section class="methodology">
     <div class="method-card"><strong>Frozen</strong><span>Phase 2C core weights are locked during the baseline observation period so later changes can be measured cleanly.</span></div>
@@ -1079,10 +1242,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: valuation rarity.</span></div>
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: upcoming policy-event setup.</span></div>
     <div class="method-card"><strong>Quality</strong><span>Model/data quality reflects history length, source validation and macro coverage. It is not a probability that the recommendation will be correct.</span></div>
+    <div class="method-card"><strong>Shadow</strong><span>GDELT headlines from the last 72 hours are screened for strengthening/weakening signals. Headline heuristics do not read full article text.</span></div>
+    <div class="method-card"><strong>0%</strong><span>Phase 3A news/event weight in the recommendation. It stays at zero until shadow-mode performance provides evidence that it adds value.</span></div>
   </section>
 
-  <div class="notice"><strong>Baseline monitoring:</strong> Phase 2C.2 does not change the core scoring weights. CHF has been added as the seventh tracked currency; its score history starts from the first CHF-enabled run, while the existing six currencies retain their earlier baseline history. Daily score deltas compare each new market date with the previous available market day, creating a clean baseline for the later Phase 3A evaluation. Retrospective performance is tracked separately and does not feed back into the score yet.<br><br><strong>Important:</strong> The policy bias is <strong>model-implied, not market-futures-implied</strong>. It uses the observed BIS policy-rate path together with IMF inflation and growth forecast direction, while the FX momentum layer uses recent SGD conversion-rate behaviour. Buy Urgency remains a timing aid applied only after Opportunity is considered. Singapore monetary policy is exchange-rate-centred, so the model does not invent an SGD policy rate. Retail FX rates may differ from ECB reference rates and no score guarantees future currency direction.</div>
-  <footer>Generated automatically by GitHub Actions · Last build 2026-08-07T04:55:36.744034+00:00</footer>
+  <div class="notice"><strong>Phase 3A shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The new GDELT layer uses recent headlines and official policy-event timing only as an observational signal. It is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> the news score is headline-based, not full-text or LLM analysis. It may miss nuance, conditional statements or cross-currency effects, and GDELT coverage can vary by source and geography. “Headline confidence” measures coverage, source diversity and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
+  <footer>Generated automatically by GitHub Actions · Last build 2026-08-07T05:13:36.857662+00:00</footer>
 </div>
 
 <script>
