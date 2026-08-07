@@ -2636,7 +2636,7 @@
     {
       "date": "2026-08-06",
       "model_version": "2.2-phase2c-baseline",
-      "app_release": "3.1-phase3a1-coverage-hardened",
+      "app_release": "3.2-phase3a2-relevance-filtered",
       "scores": {
         "USD": 3.19,
         "JPY": 2.96,

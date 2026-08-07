@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-07T05:38:31.205343+00:00",
+  "generated_at_utc": "2026-08-07T06:06:44.037199+00:00",
   "model_version": "2.2-phase2c-baseline",
-  "app_release": "3.1-phase3a1-coverage-hardened",
+  "app_release": "3.2-phase3a2-relevance-filtered",
   "neutral_band_pct": 0.1,
   "baseline_observations": 15,
   "horizons_trading_days": [

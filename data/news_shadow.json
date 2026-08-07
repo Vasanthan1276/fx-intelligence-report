@@ -1,127 +1,67 @@
 {
-  "generated_at_utc": "2026-08-07T05:38:30.960504+00:00",
+  "generated_at_utc": "2026-08-07T06:06:43.848738+00:00",
   "run_date_sgt": "2026-08-07",
   "market_date": "2026-08-06",
-  "phase": "Phase 3A.1 \u2014 coverage-hardened news/event shadow mode",
-  "source": "GDELT multi-query + official central-bank communications (1/7 usable; 6 thin; 96h + 7d fallback)",
+  "phase": "Phase 3A.2 \u2014 relevance-filtered news/event shadow mode",
+  "source": "Relevance-filtered GDELT + official central-bank communications (1/7 usable; 5 thin; 96h + 7d fallback)",
   "lookback": "96h",
   "fallback_lookback": "7d",
   "official_lookback_days": 10,
   "shadow_only": true,
-  "note": "Coverage-hardened headline and official central-bank intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
+  "note": "Relevance-filtered English-language headline and official central-bank intelligence is observational and does not alter any frozen Phase 2C score or recommendation.",
   "currencies": {
     "USD": {
-      "status": "Thin",
-      "coverage_quality": "Thin",
+      "status": "Unavailable",
+      "coverage_quality": "Unavailable",
+      "evidence_eligible": false,
       "score": 2.5,
-      "label": "Thin coverage / no directional signal",
-      "confidence_pct": 30,
-      "article_count": 11,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "retrieved_article_count": 0,
+      "rejected_article_count": 0,
       "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
       "official_article_count": 0,
-      "media_article_count": 11,
-      "source_diversity": 10,
+      "media_article_count": 0,
+      "source_diversity": 0,
       "agreement_pct": null,
-      "query_attempts": 3,
-      "query_successes": 1,
+      "query_attempts": 4,
+      "query_successes": 0,
       "horizon": "Short term (1\u201310 trading days)",
-      "articles": [
-        {
-          "title": "Currency exchange rates in Pakistan today \u2013 7 August 2026",
-          "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/",
-          "domain": "pakobserver.net",
-          "seen_utc": "2026-08-07T04:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.0,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "pakobserver.net",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "Rupee Falls 9 Paise to 95 . 17 Against US Dollar in Early Trade",
-          "url": "https://www.deccanchronicle.com/business/economics/rupee-falls-9-paise-to-9517-against-us-dollar-in-early-trade-1976995",
-          "domain": "deccanchronicle.com",
-          "seen_utc": "2026-08-06T06:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.9,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "deccanchronicle.com",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "Forex reserves fall for second month",
-          "url": "https://www.taipeitimes.com/News/biz/archives/2026/08/06/2003862001",
-          "domain": "taipeitimes.com",
-          "seen_utc": "2026-08-05T17:15:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.78,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "taipeitimes.com",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "FNCR ( B ) deposits have been robust , but RBI has no plan to close special window early",
-          "url": "https://www.businesstoday.in/industry/banks/story/fncr-b-deposits-have-been-robust-but-rbi-has-no-plan-to-close-special-window-early-547430-2026-08-05",
-          "domain": "businesstoday.in",
-          "seen_utc": "2026-08-05T12:30:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.78,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "businesstoday.in",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "Currency exchange rates in Pakistan today \u2013 5 August 2026",
-          "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-5-august-2026/",
-          "domain": "pakobserver.net",
-          "seen_utc": "2026-08-05T04:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.78,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "pakobserver.net",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        }
-      ],
+      "articles": [],
       "official_feed_errors": [],
       "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22US+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrecord",
         "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Federal+Reserve%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22US+inflation%22+OR+%22US+jobs%22+OR+%22US+GDP%22%29&mode=ArtList&maxrecords=12&"
       ],
-      "method": "GDELT multi-query + official central-bank communication shadow signal",
+      "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
       "next_policy_event": "2026-09-16",
       "days_to_policy_event": 40,
       "event_risk_label": "Normal",
       "event_calendar_source": "Federal Reserve FOMC calendar"
     },
     "JPY": {
-      "status": "Thin",
-      "coverage_quality": "Thin",
-      "score": 2.5,
-      "label": "Thin coverage / no directional signal",
-      "confidence_pct": 33,
-      "article_count": 5,
-      "directional_article_count": 0,
-      "official_article_count": 5,
-      "media_article_count": 0,
-      "source_diversity": 1,
-      "agreement_pct": null,
-      "query_attempts": 4,
-      "query_successes": 0,
+      "status": "Available",
+      "coverage_quality": "Strong",
+      "evidence_eligible": true,
+      "score": 1.25,
+      "label": "Weakening bias",
+      "confidence_pct": 90,
+      "article_count": 7,
+      "retrieved_article_count": 16,
+      "rejected_article_count": 8,
+      "directional_article_count": 3,
+      "official_directional_count": 0,
+      "media_directional_count": 3,
+      "official_article_count": 4,
+      "media_article_count": 3,
+      "source_diversity": 4,
+      "agreement_pct": 100,
+      "query_attempts": 2,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -136,21 +76,11 @@
           "source_type": "official",
           "source_name": "Bank of Japan updates",
           "official": true,
-          "query_tag": "official-feed"
-        },
-        {
-          "title": "Timetable and Schedule of U.S. Dollar Funds-Supplying Operations (August-December 2026)",
-          "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr260731a.pdf",
-          "domain": "boj.or.jp",
-          "seen_utc": "2026-07-31T08:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.943,
-          "signal_terms": [],
-          "source_type": "official",
-          "source_name": "Bank of Japan updates",
-          "official": true,
-          "query_tag": "official-feed"
+          "query_tag": "official-feed",
+          "relevance_score": 100,
+          "relevance_reasons": [
+            "target official source"
+          ]
         },
         {
           "title": "Statement on Monetary Policy",
@@ -164,7 +94,11 @@
           "source_type": "official",
           "source_name": "Bank of Japan updates",
           "official": true,
-          "query_tag": "official-feed"
+          "query_tag": "official-feed",
+          "relevance_score": 100,
+          "relevance_reasons": [
+            "target official source"
+          ]
         },
         {
           "title": "Scheduled Dates of Monetary Policy Meetings in 2027",
@@ -178,7 +112,11 @@
           "source_type": "official",
           "source_name": "Bank of Japan updates",
           "official": true,
-          "query_tag": "official-feed"
+          "query_tag": "official-feed",
+          "relevance_score": 100,
+          "relevance_reasons": [
+            "target official source"
+          ]
         },
         {
           "title": "Average Contract Interest Rates on Loans and Discounts (June)",
@@ -192,16 +130,38 @@
           "source_type": "official",
           "source_name": "Bank of Japan updates",
           "official": true,
-          "query_tag": "official-feed"
+          "query_tag": "official-feed",
+          "relevance_score": 100,
+          "relevance_reasons": [
+            "target official source"
+          ]
+        },
+        {
+          "title": "US dollar weakens sharply against the Japanese yen : NPR",
+          "url": "https://www.npr.org/2026/08/03/g-s1-136866/us-dollar-japanese-yen-market-interventions",
+          "domain": "npr.org",
+          "seen_utc": "2026-08-03T09:45:00+00:00",
+          "direction": "weakening",
+          "headline_score": 1.25,
+          "weight": 0.583,
+          "signal_terms": [
+            "-japanese yen weakens"
+          ],
+          "source_type": "media",
+          "source_name": "npr.org",
+          "official": false,
+          "query_tag": "plan-1:96h",
+          "relevance_score": 86,
+          "relevance_reasons": [
+            "target currency/economy named"
+          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Japanese+yen%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrec",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+Japan%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxrec",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Japan+inflation%22+OR+%22Japan+wages%22+OR+%22Japan+GDP%22%29&mode=ArtList&maxr"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+Japan%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxrec"
       ],
-      "method": "GDELT multi-query + official central-bank communication shadow signal",
+      "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
       "next_policy_event": "2026-09-18",
       "days_to_policy_event": 42,
       "event_risk_label": "Normal",
@@ -210,17 +170,22 @@
     "EUR": {
       "status": "Thin",
       "coverage_quality": "Thin",
+      "evidence_eligible": false,
       "score": 2.5,
-      "label": "Thin coverage / no directional signal",
-      "confidence_pct": 45,
-      "article_count": 14,
+      "label": "Relevant coverage / insufficient directional evidence",
+      "confidence_pct": 42,
+      "article_count": 6,
+      "retrieved_article_count": 26,
+      "rejected_article_count": 14,
       "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
       "official_article_count": 2,
-      "media_article_count": 12,
-      "source_diversity": 13,
+      "media_article_count": 4,
+      "source_diversity": 5,
       "agreement_pct": null,
-      "query_attempts": 2,
-      "query_successes": 1,
+      "query_attempts": 3,
+      "query_successes": 2,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -235,7 +200,11 @@
           "source_type": "official",
           "source_name": "ECB press releases and speeches",
           "official": true,
-          "query_tag": "official-feed"
+          "query_tag": "official-feed",
+          "relevance_score": 100,
+          "relevance_reasons": [
+            "target official source"
+          ]
         },
         {
           "title": "ECB wage tracker at 2.7% in Q1 2027, indicating stable negotiated wage pressures",
@@ -249,74 +218,95 @@
           "source_type": "official",
           "source_name": "ECB press releases and speeches",
           "official": true,
-          "query_tag": "official-feed"
+          "query_tag": "official-feed",
+          "relevance_score": 100,
+          "relevance_reasons": [
+            "target official source"
+          ]
         },
         {
-          "title": "Northern Trust Pension Universe Data : Canadian Pension Plan Returns Rise in Q2",
-          "url": "https://thestarphoenix.com/press-releases/business-wire/northern-trust-pension-universe-data-canadian-pension-plan-returns-rise-in-q2/",
-          "domain": "thestarphoenix.com",
-          "seen_utc": "2026-08-06T18:00:00+00:00",
+          "title": "High energy prices drive energy - related home renovations , ECB reports",
+          "url": "https://aa.com.tr/en/economy/high-energy-prices-drive-energy-related-home-renovations-ecb-reports/4018899",
+          "domain": "aa.com.tr",
+          "seen_utc": "2026-08-05T10:45:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 1.0,
+          "weight": 0.707,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "thestarphoenix.com",
+          "source_name": "aa.com.tr",
           "official": false,
-          "query_tag": "plan-2:96h"
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
+          ]
         },
         {
-          "title": "\u03a5\u03c8\u03b7\u03bb\u03cc \u03b5\u03c0\u03c4\u03ac \u03b5\u03b2\u03b4\u03bf\u03bc\u03ac\u03b4\u03c9\u03bd \u03b1\u03b3\u03b3\u03af\u03b6\u03b5\u03b9 \u03c4\u03bf \u03b5\u03c5\u03c1\u03ce",
-          "url": "https://www.euro2day.gr/markets/exchange/article-market/2363388/ypshlo-epta-evdomadon-aggizei-to-eyro.html",
-          "domain": "euro2day.gr",
-          "seen_utc": "2026-08-06T11:15:00+00:00",
+          "title": "Economic Watch : What is behind Q2 growth in euro area",
+          "url": "http://www.newzealandstar.com/news/279219476/economic-watch-what-is-behind-q2-growth-in-euro-area",
+          "domain": "newzealandstar.com",
+          "seen_utc": "2026-08-02T15:15:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.9,
+          "weight": 0.583,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "euro2day.gr",
+          "source_name": "newzealandstar.com",
           "official": false,
-          "query_tag": "plan-2:96h"
+          "query_tag": "plan-3:7d",
+          "relevance_score": 86,
+          "relevance_reasons": [
+            "target currency/economy named"
+          ]
         },
         {
-          "title": "Yen drifts after intervention whirlwind ; Iran optimism dents dollar",
-          "url": "https://www.asiaone.com:443/money/yen-drifts-after-intervention-whirlwind-iran-optimism-dents-dollar",
-          "domain": "asiaone.com",
-          "seen_utc": "2026-08-05T12:45:00+00:00",
+          "title": "Euro area annual inflation up to 2 . 9 % | Hellenic Shipping News Worldwide",
+          "url": "https://www.hellenicshippingnews.com/euro-area-annual-inflation-up-to-2-9/",
+          "domain": "hellenicshippingnews.com",
+          "seen_utc": "2026-07-31T18:45:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.78,
+          "weight": 0.583,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "asiaone.com",
+          "source_name": "hellenicshippingnews.com",
           "official": false,
-          "query_tag": "plan-2:96h"
+          "query_tag": "plan-3:7d",
+          "relevance_score": 86,
+          "relevance_reasons": [
+            "target currency/economy named"
+          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "Expecting value: line 1 column 1 (char 0)"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22euro%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrecords=12&"
       ],
-      "method": "GDELT multi-query + official central-bank communication shadow signal",
+      "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
       "next_policy_event": "2026-09-10",
       "days_to_policy_event": 34,
       "event_risk_label": "Normal",
       "event_calendar_source": "ECB Governing Council calendar"
     },
     "GBP": {
-      "status": "Available",
-      "coverage_quality": "Adequate",
-      "score": 1.5,
-      "label": "Weakening bias",
-      "confidence_pct": 72,
-      "article_count": 13,
-      "directional_article_count": 1,
+      "status": "Thin",
+      "coverage_quality": "Thin",
+      "evidence_eligible": false,
+      "score": 2.5,
+      "label": "Relevant coverage / insufficient directional evidence",
+      "confidence_pct": 41,
+      "article_count": 1,
+      "retrieved_article_count": 13,
+      "rejected_article_count": 12,
+      "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
       "official_article_count": 1,
-      "media_article_count": 12,
-      "source_diversity": 13,
-      "agreement_pct": 100,
-      "query_attempts": 2,
+      "media_article_count": 0,
+      "source_diversity": 1,
+      "agreement_pct": null,
+      "query_attempts": 3,
       "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
@@ -332,72 +322,19 @@
           "source_type": "official",
           "source_name": "Bank of England news",
           "official": true,
-          "query_tag": "official-feed"
-        },
-        {
-          "title": "UK recession warning if Strait of Hormuz stays closed",
-          "url": "https://bmmagazine.co.uk/finance/ey-uk-faces-recession-in-2027-if-strait-of-hormuz-stays-shut/",
-          "domain": "bmmagazine.co.uk",
-          "seen_utc": "2026-08-04T14:00:00+00:00",
-          "direction": "weakening",
-          "headline_score": 1.5,
-          "weight": 0.78,
-          "signal_terms": [
-            "-recession"
-          ],
-          "source_type": "media",
-          "source_name": "bmmagazine.co.uk",
-          "official": false,
-          "query_tag": "plan-2:96h"
-        },
-        {
-          "title": "How the Fed lost its credibility",
-          "url": "https://www.investorschronicle.co.uk/content/430f1d31-ff8b-476f-a19c-796aa239bfab",
-          "domain": "investorschronicle.co.uk",
-          "seen_utc": "2026-08-06T19:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.0,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "investorschronicle.co.uk",
-          "official": false,
-          "query_tag": "plan-2:96h"
-        },
-        {
-          "title": "US Dollar Price Forecast : NFP Week Keeps DXY , EUR / USD and GBP / USD in Focus",
-          "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-nfp-064558902.html",
-          "domain": "finance.yahoo.com",
-          "seen_utc": "2026-08-06T18:30:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.0,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "finance.yahoo.com",
-          "official": false,
-          "query_tag": "plan-2:96h"
-        },
-        {
-          "title": "Northern Trust Pension Universe Data : Canadian Pension Plan Returns Rise in Q2",
-          "url": "https://thestarphoenix.com/press-releases/business-wire/northern-trust-pension-universe-data-canadian-pension-plan-returns-rise-in-q2/",
-          "domain": "thestarphoenix.com",
-          "seen_utc": "2026-08-06T18:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.0,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "thestarphoenix.com",
-          "official": false,
-          "query_tag": "plan-2:96h"
+          "query_tag": "official-feed",
+          "relevance_score": 100,
+          "relevance_reasons": [
+            "target official source"
+          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28sterling+OR+%22British+pound%22%29+%28forex+OR+currency+OR+%22exchange+rate%22%29&"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+England%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22UK+inflation%22+OR+%22UK+wages%22+OR+%22UK+GDP%22%29&mode=ArtList&maxrecords=12"
       ],
-      "method": "GDELT multi-query + official central-bank communication shadow signal",
+      "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
       "next_policy_event": "2026-09-17",
       "days_to_policy_event": 41,
       "event_risk_label": "Normal",
@@ -406,95 +343,50 @@
     "AUD": {
       "status": "Thin",
       "coverage_quality": "Thin",
-      "score": 2.5,
-      "label": "Thin coverage / no directional signal",
-      "confidence_pct": 30,
-      "article_count": 12,
-      "directional_article_count": 0,
+      "evidence_eligible": false,
+      "score": 3.75,
+      "label": "Relevant coverage / insufficient directional evidence",
+      "confidence_pct": 42,
+      "article_count": 1,
+      "retrieved_article_count": 19,
+      "rejected_article_count": 18,
+      "directional_article_count": 1,
+      "official_directional_count": 0,
+      "media_directional_count": 1,
       "official_article_count": 0,
-      "media_article_count": 12,
-      "source_diversity": 7,
-      "agreement_pct": null,
-      "query_attempts": 3,
-      "query_successes": 2,
+      "media_article_count": 1,
+      "source_diversity": 1,
+      "agreement_pct": 100,
+      "query_attempts": 4,
+      "query_successes": 3,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
-        {
-          "title": "Currency exchange rates in Pakistan today \u2013 7 August 2026",
-          "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/",
-          "domain": "pakobserver.net",
-          "seen_utc": "2026-08-07T04:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.0,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "pakobserver.net",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
         {
           "title": "Pound to Australian Dollar Forecast : Strong Trade Data Supports Aussie",
           "url": "https://www.currencynews.co.uk/forecast/20260806-46754_pound-to-australian-dollar-forecast-strong-trade-data-supports-aussie.html",
           "domain": "currencynews.co.uk",
           "seen_utc": "2026-08-06T21:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.0,
-          "signal_terms": [],
+          "direction": "strengthening",
+          "headline_score": 3.75,
+          "weight": 0.897,
+          "signal_terms": [
+            "+aussie supports"
+          ],
           "source_type": "media",
           "source_name": "currencynews.co.uk",
           "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "\u0426\u0411 \u0420\u0424 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b \u043d\u0430 7 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 2026 \u0433\u043e\u0434\u0430 \u043a\u0443\u0440\u0441\u044b \u0438\u043d\u043e\u0441\u0442\u0440\u0430\u043d\u043d\u044b\u0445 \u0432\u0430\u043b\u044e\u0442 \u043a \u0440\u0443\u0431\u043b\u044e",
-          "url": "https://www.akm.ru/news/tsb_rf_ustanovil_na_7_avgusta_2026_goda_kursy_inostrannykh_valyut_k_rublyu/",
-          "domain": "akm.ru",
-          "seen_utc": "2026-08-06T18:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.0,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "akm.ru",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "International Trade in Goods , June 2026",
-          "url": "https://www.abs.gov.au/statistics/economy/international-trade/international-trade-goods/jun-2026",
-          "domain": "abs.gov.au",
-          "seen_utc": "2026-08-06T03:30:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.9,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "abs.gov.au",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "Market exchange rates in China -- Aug . 6 - Xinhua",
-          "url": "https://english.news.cn/20260806/1e2b2e2ec75e479da37937f5a4518581/c.html",
-          "domain": "english.news.cn",
-          "seen_utc": "2026-08-06T03:30:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.9,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "english.news.cn",
-          "official": false,
-          "query_tag": "plan-1:96h"
+          "query_tag": "plan-1:96h",
+          "relevance_score": 86,
+          "relevance_reasons": [
+            "target currency/economy named"
+          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
         "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Reserve+Bank+of+Australia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=Ar"
       ],
-      "method": "GDELT multi-query + official central-bank communication shadow signal",
+      "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
       "next_policy_event": "2026-08-11",
       "days_to_policy_event": 4,
       "event_risk_label": "High",
@@ -503,49 +395,24 @@
     "MYR": {
       "status": "Thin",
       "coverage_quality": "Thin",
-      "score": 1.62,
-      "label": "Weakening bias",
-      "confidence_pct": 45,
-      "article_count": 13,
-      "directional_article_count": 1,
+      "evidence_eligible": false,
+      "score": 2.5,
+      "label": "Relevant coverage / insufficient directional evidence",
+      "confidence_pct": 35,
+      "article_count": 2,
+      "retrieved_article_count": 22,
+      "rejected_article_count": 20,
+      "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
       "official_article_count": 0,
-      "media_article_count": 13,
-      "source_diversity": 8,
-      "agreement_pct": 100,
+      "media_article_count": 2,
+      "source_diversity": 2,
+      "agreement_pct": null,
       "query_attempts": 4,
       "query_successes": 3,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
-        {
-          "title": "Forex index hits record high , Asian stocks rise as easing Middle East fears cool oil",
-          "url": "https://www.thestar.com.my/business/business-news/2026/08/05/forex-index-hits-record-high-asian-stocks-rise-as-easing-middle-east-fears-cool-oil",
-          "domain": "thestar.com.my",
-          "seen_utc": "2026-08-05T09:30:00+00:00",
-          "direction": "weakening",
-          "headline_score": 1.62,
-          "weight": 0.78,
-          "signal_terms": [
-            "-easing"
-          ],
-          "source_type": "media",
-          "source_name": "thestar.com.my",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "Currency exchange rates in Pakistan today \u2013 7 August 2026",
-          "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-7-august-2026/",
-          "domain": "pakobserver.net",
-          "seen_utc": "2026-08-07T04:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.0,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "pakobserver.net",
-          "official": false,
-          "query_tag": "plan-1:96h"
-        },
         {
           "title": "Malaysia 2Q growth  should be okay , says Amir Hamzah",
           "url": "https://www.thestar.com.my/business/business-news/2026/08/06/malaysia039s-2q-growth-039should-be-okay039-says-amir-hamzah",
@@ -553,47 +420,41 @@
           "seen_utc": "2026-08-06T06:30:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.9,
+          "weight": 0.795,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "thestar.com.my",
           "official": false,
-          "query_tag": "plan-2:96h"
+          "query_tag": "plan-3:7d",
+          "relevance_score": 78,
+          "relevance_reasons": [
+            "target-country macro"
+          ]
         },
         {
-          "title": "Market exchange rates in China -- Aug . 6 - Xinhua",
-          "url": "https://english.news.cn/20260806/1e2b2e2ec75e479da37937f5a4518581/c.html",
-          "domain": "english.news.cn",
-          "seen_utc": "2026-08-06T03:30:00+00:00",
+          "title": "Malaysia MSME economy grows 5 . 7 pct in 2025 , outpacing overall GDP",
+          "url": "http://www.malaysiasun.com/news/279217187/malaysia-msme-economy-grows-57-pct-in-2025-outpacing-overall-gdp",
+          "domain": "malaysiasun.com",
+          "seen_utc": "2026-07-31T08:45:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.9,
+          "weight": 0.574,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "english.news.cn",
+          "source_name": "malaysiasun.com",
           "official": false,
-          "query_tag": "plan-1:96h"
-        },
-        {
-          "title": "Maybank joins MA BLOOM initiative to advance programmable cross - border settlements",
-          "url": "https://www.thestar.com.my/business/business-news/2026/08/06/maybank-joins-mas039-bloom-initiative-to-advance-programmable-cross-border-settlements",
-          "domain": "thestar.com.my",
-          "seen_utc": "2026-08-06T02:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.9,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "thestar.com.my",
-          "official": false,
-          "query_tag": "plan-1:96h"
+          "query_tag": "plan-3:7d",
+          "relevance_score": 78,
+          "relevance_reasons": [
+            "target-country macro"
+          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+Negara+Malaysia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList"
       ],
-      "method": "GDELT multi-query + official central-bank communication shadow signal",
+      "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
       "next_policy_event": "2026-09-03",
       "days_to_policy_event": 27,
       "event_risk_label": "Moderate",
@@ -602,95 +463,46 @@
     "CHF": {
       "status": "Thin",
       "coverage_quality": "Thin",
+      "evidence_eligible": false,
       "score": 2.5,
-      "label": "Thin coverage / no directional signal",
-      "confidence_pct": 30,
-      "article_count": 6,
+      "label": "Relevant coverage / insufficient directional evidence",
+      "confidence_pct": 31,
+      "article_count": 1,
+      "retrieved_article_count": 15,
+      "rejected_article_count": 14,
       "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
       "official_article_count": 0,
-      "media_article_count": 6,
-      "source_diversity": 6,
+      "media_article_count": 1,
+      "source_diversity": 1,
       "agreement_pct": null,
       "query_attempts": 4,
-      "query_successes": 3,
+      "query_successes": 4,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
-          "title": "Hypothekarzinsen in der Schweiz steigen seit Juli deutlich",
-          "url": "https://www.bilanz.ch/invest/hypothekarzinsen-in-der-schweiz-steigen-seit-juli-deutlich/1rdt86f",
-          "domain": "bilanz.ch",
-          "seen_utc": "2026-08-06T17:15:00+00:00",
+          "title": "Swiss annual inflation ticks down to 0 . 4 % in July",
+          "url": "https://finance.yahoo.com/economy/articles/swiss-annual-inflation-ticks-down-071027793.html",
+          "domain": "finance.yahoo.com",
+          "seen_utc": "2026-08-03T07:45:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 1.0,
+          "weight": 0.574,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "bilanz.ch",
+          "source_name": "finance.yahoo.com",
           "official": false,
-          "query_tag": "plan-2:96h"
-        },
-        {
-          "title": "\u7f8e\u570b\u6578\u64da\u905c\u9810\u671f\u62d6\u7d2f\u806f\u6e96\u6703\u5347\u606f\u62bc\u6ce8 \u745e\u58eb\u6cd5\u90ce\u8d70\u5f37 \u65e5\u5713\u5340\u9593\u76e4\u6574",
-          "url": "https://n.yam.com/Article/20260806745874",
-          "domain": "n.yam.com",
-          "seen_utc": "2026-08-06T00:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.9,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "n.yam.com",
-          "official": false,
-          "query_tag": "plan-3:7d"
-        },
-        {
-          "title": "Applied Optoelectronics ( NASDAQ : AAOI ) Shares Gap Down \u2013 Here What Happened",
-          "url": "https://www.tickerreport.com/banking-finance/13528345/applied-optoelectronics-nasdaqaaoi-shares-gap-down-heres-what-happened.html",
-          "domain": "tickerreport.com",
-          "seen_utc": "2026-08-03T17:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.65,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "tickerreport.com",
-          "official": false,
-          "query_tag": "plan-2:96h"
-        },
-        {
-          "title": "Rynek konsumuje TACO",
-          "url": "https://wgospodarce.pl/analizy/157546-rynek-konsumuje-taco",
-          "domain": "wgospodarce.pl",
-          "seen_utc": "2026-08-03T16:30:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.65,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "wgospodarce.pl",
-          "official": false,
-          "query_tag": "plan-3:7d"
-        },
-        {
-          "title": "Inflation Schweiz : Teuerung sinkt im Juli auf 0 , 4 Prozent",
-          "url": "https://www.fuw.ch/inflation-schweiz-teuerung-sinkt-im-juli-auf-0-4-prozent-145348177723",
-          "domain": "fuw.ch",
-          "seen_utc": "2026-08-03T08:30:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.65,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "fuw.ch",
-          "official": false,
-          "query_tag": "plan-3:7d"
+          "query_tag": "plan-2:96h",
+          "relevance_score": 78,
+          "relevance_reasons": [
+            "target-country macro"
+          ]
         }
       ],
       "official_feed_errors": [],
-      "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Swiss+franc%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxreco"
-      ],
-      "method": "GDELT multi-query + official central-bank communication shadow signal",
+      "query_errors": [],
+      "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
       "next_policy_event": "2026-09-24",
       "days_to_policy_event": 48,
       "event_risk_label": "Normal",

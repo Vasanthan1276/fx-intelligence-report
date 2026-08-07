@@ -1,50 +1,59 @@
 {
-  "phase": "3A.1-coverage-hardened-shadow",
+  "phase": "3A.2-relevance-filtered-shadow",
   "records": [
     {
       "run_date_sgt": "2026-08-07",
       "market_date": "2026-08-06",
-      "app_release": "3.1-phase3a1-coverage-hardened",
+      "app_release": "3.2-phase3a2-relevance-filtered",
       "shadow_mode": true,
       "news_scores": {
         "USD": 2.5,
-        "JPY": 2.5,
+        "JPY": 1.25,
         "EUR": 2.5,
-        "GBP": 1.5,
-        "AUD": 2.5,
-        "MYR": 1.62,
+        "GBP": 2.5,
+        "AUD": 3.75,
+        "MYR": 2.5,
         "CHF": 2.5
       },
       "news_labels": {
-        "USD": "Thin coverage / no directional signal",
-        "JPY": "Thin coverage / no directional signal",
-        "EUR": "Thin coverage / no directional signal",
-        "GBP": "Weakening bias",
-        "AUD": "Thin coverage / no directional signal",
-        "MYR": "Weakening bias",
-        "CHF": "Thin coverage / no directional signal"
+        "USD": "Unavailable",
+        "JPY": "Weakening bias",
+        "EUR": "Relevant coverage / insufficient directional evidence",
+        "GBP": "Relevant coverage / insufficient directional evidence",
+        "AUD": "Relevant coverage / insufficient directional evidence",
+        "MYR": "Relevant coverage / insufficient directional evidence",
+        "CHF": "Relevant coverage / insufficient directional evidence"
       },
       "news_confidence_pct": {
-        "USD": 30,
-        "JPY": 33,
-        "EUR": 45,
-        "GBP": 72,
-        "AUD": 30,
-        "MYR": 45,
-        "CHF": 30
+        "USD": 0,
+        "JPY": 90,
+        "EUR": 42,
+        "GBP": 41,
+        "AUD": 42,
+        "MYR": 35,
+        "CHF": 31
       },
       "news_coverage_quality": {
-        "USD": "Thin",
-        "JPY": "Thin",
+        "USD": "Unavailable",
+        "JPY": "Strong",
         "EUR": "Thin",
-        "GBP": "Adequate",
+        "GBP": "Thin",
         "AUD": "Thin",
         "MYR": "Thin",
         "CHF": "Thin"
       },
+      "news_evidence_eligible": {
+        "USD": false,
+        "JPY": true,
+        "EUR": false,
+        "GBP": false,
+        "AUD": false,
+        "MYR": false,
+        "CHF": false
+      },
       "official_article_count": {
         "USD": 0,
-        "JPY": 5,
+        "JPY": 4,
         "EUR": 2,
         "GBP": 1,
         "AUD": 0,
@@ -53,21 +62,21 @@
       },
       "directional_article_count": {
         "USD": 0,
-        "JPY": 0,
+        "JPY": 3,
         "EUR": 0,
-        "GBP": 1,
-        "AUD": 0,
-        "MYR": 1,
+        "GBP": 0,
+        "AUD": 1,
+        "MYR": 0,
         "CHF": 0
       },
       "article_count": {
-        "USD": 11,
-        "JPY": 5,
-        "EUR": 14,
-        "GBP": 13,
-        "AUD": 12,
-        "MYR": 13,
-        "CHF": 6
+        "USD": 0,
+        "JPY": 7,
+        "EUR": 6,
+        "GBP": 1,
+        "AUD": 1,
+        "MYR": 2,
+        "CHF": 1
       },
       "rates_sgd": {
         "USD": 1.2821,
