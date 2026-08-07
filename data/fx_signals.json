@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-08-07T06:06:43.849281+00:00",
+  "generated_at_utc": "2026-08-07T06:43:00.444137+00:00",
   "latest_market_date": "2026-08-06",
   "base_currency": "SGD",
   "model_version": "2.2-phase2c-baseline",
-  "app_release": "3.2-phase3a2-relevance-filtered",
-  "phase": "Phase 3A.2 \u2014 relevance-filtered news & event intelligence in shadow mode",
+  "app_release": "3.3-phase3a3-direction-semantics",
+  "phase": "Phase 3A.3 \u2014 direction semantics & source-quality news/event intelligence in shadow mode",
   "baseline_frozen": true,
   "shadow_mode": true,
   "news_run_date_sgt": "2026-08-07",
-  "news_event_source": "Relevance-filtered GDELT + official central-bank communications (1/7 usable; 5 thin; 96h + 7d fallback)",
+  "news_event_source": "Pair-aware relevance-filtered GDELT + official central-bank communications (2/7 usable; 5 thin; 49 API calls; 0 cache hits; 32 rate-limit retries)",
   "previous_score_date": "2026-08-05",
   "primary_source": "ECB Data Portal API",
   "policy_source": "BIS central bank policy rates (7/7 available)",
@@ -56,7 +56,7 @@
       "fx_momentum": 0.55
     }
   },
-  "scoring_note": "Phase 3A.2 keeps every Phase 2C baseline weight frozen. A separate relevance-filtered news/event layer applies a hard target-currency gate, English-language filter, context-aware policy wording and minimum-evidence rule before any headline can enter the shadow signal. It does not alter Opportunity, Forward Outlook, Buy Urgency, suggested tranche or recommendation. Shadow outcomes are evaluated independently at 1/5/10 trading-day horizons, and Thin/Unavailable coverage cannot become a directional call.",
+  "scoring_note": "Phase 3A.3 keeps every Phase 2C baseline weight frozen. A separate news/event layer applies a hard target-currency gate, pair-aware cross-currency direction semantics, English-language filter, strict official-content relevance gate, context-aware policy wording and minimum-evidence rule before any headline can enter the shadow signal. It does not alter Opportunity, Forward Outlook, Buy Urgency, suggested tranche or recommendation. Shadow outcomes are evaluated independently at 1/5/10 trading-day horizons, and Thin/Unavailable coverage cannot become a directional call.",
   "important_note": "This model ranks the attractiveness of converting SGD into foreign currency. It is a decision-support tool, not a guarantee of future exchange-rate direction.",
   "currencies": [
     {
@@ -160,8 +160,8 @@
       "inflation_next_pct": 2.1,
       "inflation_vs_sgd_current_pp": 0.9,
       "inflation_vs_sgd_next_pp": 0.2,
-      "validation_rate_sgd": 1.28191,
-      "validation_difference_pct": 0.01,
+      "validation_rate_sgd": 1.2817,
+      "validation_difference_pct": 0.03,
       "validation_status": "Excellent",
       "drivers": [
         "Historically attractive: current cost is in the cheapest 10% of the 5-year range.",
@@ -193,33 +193,128 @@
       },
       "previous_score_date": "2026-08-05",
       "shadow_news": {
-        "status": "Unavailable",
-        "coverage_quality": "Unavailable",
-        "evidence_eligible": false,
-        "score": 2.5,
-        "label": "Unavailable",
-        "confidence_pct": 0,
-        "article_count": 0,
-        "retrieved_article_count": 0,
-        "rejected_article_count": 0,
-        "directional_article_count": 0,
+        "status": "Available",
+        "coverage_quality": "Adequate",
+        "evidence_eligible": true,
+        "score": 2.02,
+        "label": "Mixed / neutral",
+        "confidence_pct": 62,
+        "article_count": 6,
+        "retrieved_article_count": 24,
+        "rejected_article_count": 17,
+        "directional_article_count": 3,
         "official_directional_count": 0,
-        "media_directional_count": 0,
+        "media_directional_count": 3,
         "official_article_count": 0,
-        "media_article_count": 0,
-        "source_diversity": 0,
-        "agreement_pct": null,
+        "media_article_count": 6,
+        "source_diversity": 6,
+        "agreement_pct": 67,
         "query_attempts": 4,
-        "query_successes": 0,
+        "query_successes": 3,
         "horizon": "Short term (1\u201310 trading days)",
-        "articles": [],
+        "articles": [
+          {
+            "title": "Fed Cook to Support Rate Hike if Disinflation Stalls",
+            "url": "https://cointelegraph.com/markets/feds-cook-warns-persistent-inflation-could-prompt-rate-hike",
+            "domain": "cointelegraph.com",
+            "seen_utc": "2026-08-06T07:45:00+00:00",
+            "direction": "strengthening",
+            "headline_score": 3.62,
+            "weight": 0.816,
+            "signal_terms": [
+              "+rate hike"
+            ],
+            "source_type": "media",
+            "source_name": "cointelegraph.com",
+            "official": false,
+            "query_tag": "plan-3:7d",
+            "relevance_score": 92,
+            "relevance_reasons": [
+              "target central bank"
+            ]
+          },
+          {
+            "title": "Rupee slips to 95 . 28 against US dollar as oil , treasury yields remain elevated",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-slips-to-95-28-against-us-dollar-as-oil-treasury-yields-remain-elevated/articleshow/133021908.cms",
+            "domain": "timesofindia.indiatimes.com",
+            "seen_utc": "2026-08-07T06:00:00+00:00",
+            "direction": "weakening",
+            "headline_score": 1.25,
+            "weight": 0.897,
+            "signal_terms": [
+              "-us dollar slips"
+            ],
+            "source_type": "media",
+            "source_name": "timesofindia.indiatimes.com",
+            "official": false,
+            "query_tag": "plan-1:96h",
+            "relevance_score": 86,
+            "relevance_reasons": [
+              "target currency/economy named"
+            ]
+          },
+          {
+            "title": "Rupee Falls 9 Paise to 95 . 17 Against US Dollar in Early Trade",
+            "url": "https://www.deccanchronicle.com/business/economics/rupee-falls-9-paise-to-9517-against-us-dollar-in-early-trade-1976995",
+            "domain": "deccanchronicle.com",
+            "seen_utc": "2026-08-06T06:45:00+00:00",
+            "direction": "weakening",
+            "headline_score": 1.25,
+            "weight": 0.807,
+            "signal_terms": [
+              "-us dollar falls"
+            ],
+            "source_type": "media",
+            "source_name": "deccanchronicle.com",
+            "official": false,
+            "query_tag": "plan-1:96h",
+            "relevance_score": 86,
+            "relevance_reasons": [
+              "target currency/economy named"
+            ]
+          },
+          {
+            "title": "Asia shares pause for US jobs , oil extends gains",
+            "url": "https://www.perthnow.com.au/news/business/asia-shares-pause-for-us-jobs-oil-extends-gains-c-22690308",
+            "domain": "perthnow.com.au",
+            "seen_utc": "2026-08-07T03:15:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 0.884,
+            "signal_terms": [],
+            "source_type": "media",
+            "source_name": "perthnow.com.au",
+            "official": false,
+            "query_tag": "plan-3:7d",
+            "relevance_score": 78,
+            "relevance_reasons": [
+              "target-country macro"
+            ]
+          },
+          {
+            "title": "Commodity Corner : Oil steadies , gold edges higher as markets await US jobs data",
+            "url": "https://www.moneycontrol.com/news/business/commodities/commodity-corner-oil-steadies-gold-edges-higher-as-markets-await-us-jobs-data-13994499.html",
+            "domain": "moneycontrol.com",
+            "seen_utc": "2026-08-05T03:30:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 0.689,
+            "signal_terms": [],
+            "source_type": "media",
+            "source_name": "moneycontrol.com",
+            "official": false,
+            "query_tag": "plan-3:7d",
+            "relevance_score": 78,
+            "relevance_reasons": [
+              "target-country macro"
+            ]
+          }
+        ],
         "official_feed_errors": [],
         "query_errors": [
-          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22US+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrecord",
-          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Federal+Reserve%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr",
-          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22US+inflation%22+OR+%22US+jobs%22+OR+%22US+GDP%22%29&mode=ArtList&maxrecords=12&"
+          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Federal+Reserve%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr"
         ],
-        "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
+        "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
         "next_policy_event": "2026-09-16",
         "days_to_policy_event": 40,
         "event_risk_label": "Normal",
@@ -363,21 +458,21 @@
         "status": "Available",
         "coverage_quality": "Strong",
         "evidence_eligible": true,
-        "score": 1.25,
-        "label": "Weakening bias",
-        "confidence_pct": 90,
-        "article_count": 7,
-        "retrieved_article_count": 16,
-        "rejected_article_count": 8,
+        "score": 2.92,
+        "label": "Mixed / neutral",
+        "confidence_pct": 79,
+        "article_count": 12,
+        "retrieved_article_count": 30,
+        "rejected_article_count": 16,
         "directional_article_count": 3,
         "official_directional_count": 0,
         "media_directional_count": 3,
-        "official_article_count": 4,
-        "media_article_count": 3,
-        "source_diversity": 4,
-        "agreement_pct": 100,
+        "official_article_count": 6,
+        "media_article_count": 6,
+        "source_diversity": 6,
+        "agreement_pct": 67,
         "query_attempts": 2,
-        "query_successes": 1,
+        "query_successes": 2,
         "horizon": "Short term (1\u201310 trading days)",
         "articles": [
           {
@@ -387,15 +482,33 @@
             "seen_utc": "2026-08-04T23:50:00+00:00",
             "direction": "neutral",
             "headline_score": 2.5,
-            "weight": 1.131,
+            "weight": 1.124,
             "signal_terms": [],
             "source_type": "official",
             "source_name": "Bank of Japan updates",
             "official": true,
             "query_tag": "official-feed",
-            "relevance_score": 100,
+            "relevance_score": 96,
             "relevance_reasons": [
-              "target official source"
+              "official policy/macro/FX content"
+            ]
+          },
+          {
+            "title": "Outlook for Economic Activity and Prices (July 2026, full text)",
+            "url": "http://www.boj.or.jp/en/mopo/outlook/gor2607b.pdf",
+            "domain": "boj.or.jp",
+            "seen_utc": "2026-08-03T05:00:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 0.937,
+            "signal_terms": [],
+            "source_type": "official",
+            "source_name": "Bank of Japan updates",
+            "official": true,
+            "query_tag": "official-feed",
+            "relevance_score": 96,
+            "relevance_reasons": [
+              "official policy/macro/FX content"
             ]
           },
           {
@@ -405,15 +518,33 @@
             "seen_utc": "2026-07-31T04:25:00+00:00",
             "direction": "neutral",
             "headline_score": 2.5,
-            "weight": 0.943,
+            "weight": 0.937,
             "signal_terms": [],
             "source_type": "official",
             "source_name": "Bank of Japan updates",
             "official": true,
             "query_tag": "official-feed",
-            "relevance_score": 100,
+            "relevance_score": 96,
             "relevance_reasons": [
-              "target official source"
+              "official policy/macro/FX content"
+            ]
+          },
+          {
+            "title": "Outlook for Economic Activity and Prices (July 2026, The Bank's View)",
+            "url": "http://www.boj.or.jp/en/mopo/outlook/gor2607a.pdf",
+            "domain": "boj.or.jp",
+            "seen_utc": "2026-07-31T04:25:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 0.937,
+            "signal_terms": [],
+            "source_type": "official",
+            "source_name": "Bank of Japan updates",
+            "official": true,
+            "query_tag": "official-feed",
+            "relevance_score": 96,
+            "relevance_reasons": [
+              "official policy/macro/FX content"
             ]
           },
           {
@@ -423,61 +554,21 @@
             "seen_utc": "2026-07-31T03:11:00+00:00",
             "direction": "neutral",
             "headline_score": 2.5,
-            "weight": 0.943,
+            "weight": 0.937,
             "signal_terms": [],
             "source_type": "official",
             "source_name": "Bank of Japan updates",
             "official": true,
             "query_tag": "official-feed",
-            "relevance_score": 100,
+            "relevance_score": 96,
             "relevance_reasons": [
-              "target official source"
-            ]
-          },
-          {
-            "title": "Average Contract Interest Rates on Loans and Discounts (June)",
-            "url": "http://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2606.pdf",
-            "domain": "boj.or.jp",
-            "seen_utc": "2026-07-28T23:50:00+00:00",
-            "direction": "neutral",
-            "headline_score": 2.5,
-            "weight": 0.943,
-            "signal_terms": [],
-            "source_type": "official",
-            "source_name": "Bank of Japan updates",
-            "official": true,
-            "query_tag": "official-feed",
-            "relevance_score": 100,
-            "relevance_reasons": [
-              "target official source"
-            ]
-          },
-          {
-            "title": "US dollar weakens sharply against the Japanese yen : NPR",
-            "url": "https://www.npr.org/2026/08/03/g-s1-136866/us-dollar-japanese-yen-market-interventions",
-            "domain": "npr.org",
-            "seen_utc": "2026-08-03T09:45:00+00:00",
-            "direction": "weakening",
-            "headline_score": 1.25,
-            "weight": 0.583,
-            "signal_terms": [
-              "-japanese yen weakens"
-            ],
-            "source_type": "media",
-            "source_name": "npr.org",
-            "official": false,
-            "query_tag": "plan-1:96h",
-            "relevance_score": 86,
-            "relevance_reasons": [
-              "target currency/economy named"
+              "official policy/macro/FX content"
             ]
           }
         ],
         "official_feed_errors": [],
-        "query_errors": [
-          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+Japan%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxrec"
-        ],
-        "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
+        "query_errors": [],
+        "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
         "next_policy_event": "2026-09-18",
         "days_to_policy_event": 42,
         "event_risk_label": "Normal",
@@ -585,8 +676,8 @@
       "inflation_next_pct": 2.0,
       "inflation_vs_sgd_current_pp": -0.4,
       "inflation_vs_sgd_next_pp": 0.1,
-      "validation_rate_sgd": 0.313,
-      "validation_difference_pct": 0.16,
+      "validation_rate_sgd": 0.3131,
+      "validation_difference_pct": 0.13,
       "validation_status": "Excellent",
       "drivers": [
         "5-year valuation is mid-range at the 68th cost percentile.",
@@ -623,19 +714,19 @@
         "evidence_eligible": false,
         "score": 2.5,
         "label": "Relevant coverage / insufficient directional evidence",
-        "confidence_pct": 35,
-        "article_count": 2,
-        "retrieved_article_count": 22,
-        "rejected_article_count": 20,
+        "confidence_pct": 31,
+        "article_count": 1,
+        "retrieved_article_count": 14,
+        "rejected_article_count": 13,
         "directional_article_count": 0,
         "official_directional_count": 0,
         "media_directional_count": 0,
         "official_article_count": 0,
-        "media_article_count": 2,
-        "source_diversity": 2,
+        "media_article_count": 1,
+        "source_diversity": 1,
         "agreement_pct": null,
         "query_attempts": 4,
-        "query_successes": 3,
+        "query_successes": 2,
         "horizon": "Short term (1\u201310 trading days)",
         "articles": [
           {
@@ -650,25 +741,7 @@
             "source_type": "media",
             "source_name": "thestar.com.my",
             "official": false,
-            "query_tag": "plan-3:7d",
-            "relevance_score": 78,
-            "relevance_reasons": [
-              "target-country macro"
-            ]
-          },
-          {
-            "title": "Malaysia MSME economy grows 5 . 7 pct in 2025 , outpacing overall GDP",
-            "url": "http://www.malaysiasun.com/news/279217187/malaysia-msme-economy-grows-57-pct-in-2025-outpacing-overall-gdp",
-            "domain": "malaysiasun.com",
-            "seen_utc": "2026-07-31T08:45:00+00:00",
-            "direction": "neutral",
-            "headline_score": 2.5,
-            "weight": 0.574,
-            "signal_terms": [],
-            "source_type": "media",
-            "source_name": "malaysiasun.com",
-            "official": false,
-            "query_tag": "plan-3:7d",
+            "query_tag": "plan-2:96h",
             "relevance_score": 78,
             "relevance_reasons": [
               "target-country macro"
@@ -677,9 +750,10 @@
         ],
         "official_feed_errors": [],
         "query_errors": [
-          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+Negara+Malaysia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList"
+          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Malaysia+inflation%22+OR+%22Malaysia+growth%22+OR+%22Malaysia+GDP%22%29&mode=Ar",
+          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
         ],
-        "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
+        "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
         "next_policy_event": "2026-09-03",
         "days_to_policy_event": 27,
         "event_risk_label": "Moderate",
@@ -787,8 +861,8 @@
       "inflation_next_pct": 0.5,
       "inflation_vs_sgd_current_pp": -1.8,
       "inflation_vs_sgd_next_pp": -1.4,
-      "validation_rate_sgd": 1.5773,
-      "validation_difference_pct": 0.38,
+      "validation_rate_sgd": 1.5784,
+      "validation_difference_pct": 0.31,
       "validation_status": "Excellent",
       "drivers": [
         "5-year valuation is mid-range at the 77th cost percentile.",
@@ -827,8 +901,8 @@
         "label": "Relevant coverage / insufficient directional evidence",
         "confidence_pct": 31,
         "article_count": 1,
-        "retrieved_article_count": 15,
-        "rejected_article_count": 14,
+        "retrieved_article_count": 18,
+        "rejected_article_count": 17,
         "directional_article_count": 0,
         "official_directional_count": 0,
         "media_directional_count": 0,
@@ -837,7 +911,7 @@
         "source_diversity": 1,
         "agreement_pct": null,
         "query_attempts": 4,
-        "query_successes": 4,
+        "query_successes": 3,
         "horizon": "Short term (1\u201310 trading days)",
         "articles": [
           {
@@ -860,8 +934,10 @@
           }
         ],
         "official_feed_errors": [],
-        "query_errors": [],
-        "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
+        "query_errors": [
+          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
+        ],
+        "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
         "next_policy_event": "2026-09-24",
         "days_to_policy_event": 48,
         "event_risk_label": "Normal",
@@ -969,8 +1045,8 @@
       "inflation_next_pct": 2.8,
       "inflation_vs_sgd_current_pp": 1.1,
       "inflation_vs_sgd_next_pp": 0.9,
-      "validation_rate_sgd": 1.4774,
-      "validation_difference_pct": 0.16,
+      "validation_rate_sgd": 1.47688,
+      "validation_difference_pct": 0.2,
       "validation_status": "Excellent",
       "drivers": [
         "5-year valuation is mid-range at the 64th cost percentile.",
@@ -1008,38 +1084,20 @@
         "score": 2.5,
         "label": "Relevant coverage / insufficient directional evidence",
         "confidence_pct": 42,
-        "article_count": 6,
-        "retrieved_article_count": 26,
-        "rejected_article_count": 14,
+        "article_count": 4,
+        "retrieved_article_count": 13,
+        "rejected_article_count": 3,
         "directional_article_count": 0,
         "official_directional_count": 0,
         "media_directional_count": 0,
-        "official_article_count": 2,
-        "media_article_count": 4,
-        "source_diversity": 5,
+        "official_article_count": 1,
+        "media_article_count": 3,
+        "source_diversity": 4,
         "agreement_pct": null,
         "query_attempts": 3,
-        "query_successes": 2,
+        "query_successes": 1,
         "horizon": "Short term (1\u201310 trading days)",
         "articles": [
-          {
-            "title": "Digital euro app to incorporate highest accessibility standards",
-            "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260730~3b3bfbb565.en.html",
-            "domain": "ecb.europa.eu",
-            "seen_utc": "2026-07-30T08:00:00+00:00",
-            "direction": "neutral",
-            "headline_score": 2.5,
-            "weight": 0.943,
-            "signal_terms": [],
-            "source_type": "official",
-            "source_name": "ECB press releases and speeches",
-            "official": true,
-            "query_tag": "official-feed",
-            "relevance_score": 100,
-            "relevance_reasons": [
-              "target official source"
-            ]
-          },
           {
             "title": "ECB wage tracker at 2.7% in Q1 2027, indicating stable negotiated wage pressures",
             "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260729~4ad7508d8a.en.html",
@@ -1055,24 +1113,7 @@
             "query_tag": "official-feed",
             "relevance_score": 100,
             "relevance_reasons": [
-              "target official source"
-            ]
-          },
-          {
-            "title": "High energy prices drive energy - related home renovations , ECB reports",
-            "url": "https://aa.com.tr/en/economy/high-energy-prices-drive-energy-related-home-renovations-ecb-reports/4018899",
-            "domain": "aa.com.tr",
-            "seen_utc": "2026-08-05T10:45:00+00:00",
-            "direction": "neutral",
-            "headline_score": 2.5,
-            "weight": 0.707,
-            "signal_terms": [],
-            "source_type": "media",
-            "source_name": "aa.com.tr",
-            "official": false,
-            "query_tag": "plan-2:96h",
-            "relevance_score": 92,
-            "relevance_reasons": [
+              "official policy/macro/FX content",
               "target central bank"
             ]
           },
@@ -1111,13 +1152,32 @@
             "relevance_reasons": [
               "target currency/economy named"
             ]
+          },
+          {
+            "title": "Eurozone inflation hits 2 . 9 %: Which countries saw the biggest increases ?",
+            "url": "https://www.euronews.com/business/2026/07/31/eurozone-inflation-hits-29-which-countries-saw-the-biggest-increases",
+            "domain": "euronews.com",
+            "seen_utc": "2026-07-31T10:00:00+00:00",
+            "direction": "neutral",
+            "headline_score": 2.5,
+            "weight": 0.583,
+            "signal_terms": [],
+            "source_type": "media",
+            "source_name": "euronews.com",
+            "official": false,
+            "query_tag": "plan-3:7d",
+            "relevance_score": 86,
+            "relevance_reasons": [
+              "target currency/economy named"
+            ]
           }
         ],
         "official_feed_errors": [],
         "query_errors": [
-          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22euro%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrecords=12&"
+          "Expecting value: line 1 column 1 (char 0)",
+          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22European+Central+Bank%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtLis"
         ],
-        "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
+        "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
         "next_policy_event": "2026-09-10",
         "days_to_policy_event": 34,
         "event_risk_label": "Normal",
@@ -1225,7 +1285,7 @@
       "inflation_next_pct": 3.2,
       "inflation_vs_sgd_current_pp": 1.7,
       "inflation_vs_sgd_next_pp": 1.3,
-      "validation_rate_sgd": 0.90117,
+      "validation_rate_sgd": 0.90114,
       "validation_difference_pct": 0.19,
       "validation_status": "Excellent",
       "drivers": [
@@ -1303,7 +1363,7 @@
         "query_errors": [
           "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Reserve+Bank+of+Australia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=Ar"
         ],
-        "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
+        "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
         "next_policy_event": "2026-08-11",
         "days_to_policy_event": 4,
         "event_risk_label": "High",
@@ -1411,8 +1471,8 @@
       "inflation_next_pct": 2.4,
       "inflation_vs_sgd_current_pp": 0.9,
       "inflation_vs_sgd_next_pp": 0.5,
-      "validation_rate_sgd": 1.72441,
-      "validation_difference_pct": 0.13,
+      "validation_rate_sgd": 1.72458,
+      "validation_difference_pct": 0.12,
       "validation_status": "Excellent",
       "drivers": [
         "5-year valuation is mid-range at the 68th cost percentile.",
@@ -1451,8 +1511,8 @@
         "label": "Relevant coverage / insufficient directional evidence",
         "confidence_pct": 41,
         "article_count": 1,
-        "retrieved_article_count": 13,
-        "rejected_article_count": 12,
+        "retrieved_article_count": 14,
+        "rejected_article_count": 13,
         "directional_article_count": 0,
         "official_directional_count": 0,
         "media_directional_count": 0,
@@ -1461,7 +1521,7 @@
         "source_diversity": 1,
         "agreement_pct": null,
         "query_attempts": 3,
-        "query_successes": 1,
+        "query_successes": 2,
         "horizon": "Short term (1\u201310 trading days)",
         "articles": [
           {
@@ -1479,16 +1539,16 @@
             "query_tag": "official-feed",
             "relevance_score": 100,
             "relevance_reasons": [
-              "target official source"
+              "official policy/macro/FX content",
+              "target central bank"
             ]
           }
         ],
         "official_feed_errors": [],
         "query_errors": [
-          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+England%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr",
-          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22UK+inflation%22+OR+%22UK+wages%22+OR+%22UK+GDP%22%29&mode=ArtList&maxrecords=12"
+          "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+England%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr"
         ],
-        "method": "Target relevance gate + context-aware headline classifier + official central-bank sources",
+        "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
         "next_policy_event": "2026-09-17",
         "days_to_policy_event": 41,
         "event_risk_label": "Normal",

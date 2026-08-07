@@ -1,14 +1,14 @@
 {
-  "phase": "3A.2-relevance-filtered-shadow",
+  "phase": "3A.3-direction-semantics-shadow",
   "records": [
     {
       "run_date_sgt": "2026-08-07",
       "market_date": "2026-08-06",
-      "app_release": "3.2-phase3a2-relevance-filtered",
+      "app_release": "3.3-phase3a3-direction-semantics",
       "shadow_mode": true,
       "news_scores": {
-        "USD": 2.5,
-        "JPY": 1.25,
+        "USD": 2.02,
+        "JPY": 2.92,
         "EUR": 2.5,
         "GBP": 2.5,
         "AUD": 3.75,
@@ -16,8 +16,8 @@
         "CHF": 2.5
       },
       "news_labels": {
-        "USD": "Unavailable",
-        "JPY": "Weakening bias",
+        "USD": "Mixed / neutral",
+        "JPY": "Mixed / neutral",
         "EUR": "Relevant coverage / insufficient directional evidence",
         "GBP": "Relevant coverage / insufficient directional evidence",
         "AUD": "Relevant coverage / insufficient directional evidence",
@@ -25,16 +25,16 @@
         "CHF": "Relevant coverage / insufficient directional evidence"
       },
       "news_confidence_pct": {
-        "USD": 0,
-        "JPY": 90,
+        "USD": 62,
+        "JPY": 79,
         "EUR": 42,
         "GBP": 41,
         "AUD": 42,
-        "MYR": 35,
+        "MYR": 31,
         "CHF": 31
       },
       "news_coverage_quality": {
-        "USD": "Unavailable",
+        "USD": "Adequate",
         "JPY": "Strong",
         "EUR": "Thin",
         "GBP": "Thin",
@@ -43,7 +43,7 @@
         "CHF": "Thin"
       },
       "news_evidence_eligible": {
-        "USD": false,
+        "USD": true,
         "JPY": true,
         "EUR": false,
         "GBP": false,
@@ -53,15 +53,15 @@
       },
       "official_article_count": {
         "USD": 0,
-        "JPY": 4,
-        "EUR": 2,
+        "JPY": 6,
+        "EUR": 1,
         "GBP": 1,
         "AUD": 0,
         "MYR": 0,
         "CHF": 0
       },
       "directional_article_count": {
-        "USD": 0,
+        "USD": 3,
         "JPY": 3,
         "EUR": 0,
         "GBP": 0,
@@ -70,12 +70,12 @@
         "CHF": 0
       },
       "article_count": {
-        "USD": 0,
-        "JPY": 7,
-        "EUR": 6,
+        "USD": 6,
+        "JPY": 12,
+        "EUR": 4,
         "GBP": 1,
         "AUD": 1,
-        "MYR": 2,
+        "MYR": 1,
         "CHF": 1
       },
       "rates_sgd": {

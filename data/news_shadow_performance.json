@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-07T06:06:44.041117+00:00",
-  "phase": "Phase 3A.2 relevance-filtered shadow mode",
-  "app_release": "3.2-phase3a2-relevance-filtered",
+  "generated_at_utc": "2026-08-07T06:43:00.715650+00:00",
+  "phase": "Phase 3A.3 direction-semantics shadow mode",
+  "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
     1,
     5,
@@ -12,7 +12,7 @@
     "weaken_at_or_below": 1.9
   },
   "neutral_move_band_pct": 0.1,
-  "definition": "Relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
+  "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
   "overall": {
     "1": {
       "directional_calls": 0,
