@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-08-13T17:49:45.817969+00:00",
+  "generated_at_utc": "2026-08-14T17:47:51.539634+00:00",
   "model_version": "2.2-phase2c-baseline",
   "app_release": "3.3-phase3a3-direction-semantics",
   "neutral_band_pct": 0.1,
-  "baseline_observations": 20,
+  "baseline_observations": 21,
   "horizons_trading_days": [
     1,
     5,
@@ -13,289 +13,289 @@
   "definition": "Positive action benefit means the practical model action beat the opposite action in SGD cost terms. Buy/accumulate signals benefit when the foreign currency later costs more SGD; wait/avoid signals benefit when it later costs less SGD. Outcomes within the neutral band are treated as neutral.",
   "overall": {
     "1": {
-      "matured_signals": 119,
-      "helpful": 39,
-      "neutral": 55,
-      "unhelpful": 25,
-      "helpful_rate_pct": 60.9,
-      "average_action_benefit_pct": 0.024,
-      "median_action_benefit_pct": 0.039
+      "matured_signals": 126,
+      "helpful": 41,
+      "neutral": 57,
+      "unhelpful": 28,
+      "helpful_rate_pct": 59.4,
+      "average_action_benefit_pct": 0.021,
+      "median_action_benefit_pct": 0.038
     },
     "5": {
-      "matured_signals": 91,
-      "helpful": 45,
-      "neutral": 18,
-      "unhelpful": 28,
-      "helpful_rate_pct": 61.6,
-      "average_action_benefit_pct": 0.271,
-      "median_action_benefit_pct": 0.092
+      "matured_signals": 98,
+      "helpful": 48,
+      "neutral": 20,
+      "unhelpful": 30,
+      "helpful_rate_pct": 61.5,
+      "average_action_benefit_pct": 0.257,
+      "median_action_benefit_pct": 0.093
     },
     "10": {
-      "matured_signals": 60,
-      "helpful": 35,
+      "matured_signals": 66,
+      "helpful": 37,
       "neutral": 7,
-      "unhelpful": 18,
-      "helpful_rate_pct": 66.0,
-      "average_action_benefit_pct": 0.545,
-      "median_action_benefit_pct": 0.589
+      "unhelpful": 22,
+      "helpful_rate_pct": 62.7,
+      "average_action_benefit_pct": 0.494,
+      "median_action_benefit_pct": 0.503
     },
     "20": {
-      "matured_signals": 0,
-      "helpful": 0,
+      "matured_signals": 6,
+      "helpful": 4,
       "neutral": 0,
-      "unhelpful": 0,
-      "helpful_rate_pct": null,
-      "average_action_benefit_pct": null,
-      "median_action_benefit_pct": null
+      "unhelpful": 2,
+      "helpful_rate_pct": 66.7,
+      "average_action_benefit_pct": 0.421,
+      "median_action_benefit_pct": 0.54
     }
   },
   "by_currency": {
     "USD": {
       "1": {
-        "matured_signals": 19,
-        "helpful": 4,
+        "matured_signals": 20,
+        "helpful": 5,
         "neutral": 14,
         "unhelpful": 1,
-        "helpful_rate_pct": 80.0,
-        "average_action_benefit_pct": 0.045,
-        "median_action_benefit_pct": 0.032
+        "helpful_rate_pct": 83.3,
+        "average_action_benefit_pct": 0.051,
+        "median_action_benefit_pct": 0.038
       },
       "5": {
-        "matured_signals": 15,
+        "matured_signals": 16,
+        "helpful": 12,
+        "neutral": 2,
+        "unhelpful": 2,
+        "helpful_rate_pct": 85.7,
+        "average_action_benefit_pct": 0.282,
+        "median_action_benefit_pct": 0.204
+      },
+      "10": {
+        "matured_signals": 11,
         "helpful": 11,
-        "neutral": 2,
-        "unhelpful": 2,
-        "helpful_rate_pct": 84.6,
-        "average_action_benefit_pct": 0.286,
-        "median_action_benefit_pct": 0.192
-      },
-      "10": {
-        "matured_signals": 10,
-        "helpful": 10,
         "neutral": 0,
         "unhelpful": 0,
         "helpful_rate_pct": 100.0,
-        "average_action_benefit_pct": 0.756,
-        "median_action_benefit_pct": 0.736
+        "average_action_benefit_pct": 0.735,
+        "median_action_benefit_pct": 0.717
       },
       "20": {
-        "matured_signals": 0,
-        "helpful": 0,
-        "neutral": 0,
-        "unhelpful": 0,
-        "helpful_rate_pct": null,
-        "average_action_benefit_pct": null,
-        "median_action_benefit_pct": null
-      }
-    },
-    "JPY": {
-      "1": {
-        "matured_signals": 19,
-        "helpful": 7,
-        "neutral": 7,
-        "unhelpful": 5,
-        "helpful_rate_pct": 58.3,
-        "average_action_benefit_pct": 0.032,
-        "median_action_benefit_pct": 0.067
-      },
-      "5": {
-        "matured_signals": 15,
-        "helpful": 9,
-        "neutral": 1,
-        "unhelpful": 5,
-        "helpful_rate_pct": 64.3,
-        "average_action_benefit_pct": 1.074,
-        "median_action_benefit_pct": 1.133
-      },
-      "10": {
-        "matured_signals": 10,
-        "helpful": 10,
-        "neutral": 0,
-        "unhelpful": 0,
-        "helpful_rate_pct": 100.0,
-        "average_action_benefit_pct": 2.233,
-        "median_action_benefit_pct": 2.472
-      },
-      "20": {
-        "matured_signals": 0,
-        "helpful": 0,
-        "neutral": 0,
-        "unhelpful": 0,
-        "helpful_rate_pct": null,
-        "average_action_benefit_pct": null,
-        "median_action_benefit_pct": null
-      }
-    },
-    "EUR": {
-      "1": {
-        "matured_signals": 19,
-        "helpful": 7,
-        "neutral": 9,
-        "unhelpful": 3,
-        "helpful_rate_pct": 70.0,
-        "average_action_benefit_pct": -0.0,
-        "median_action_benefit_pct": 0.047
-      },
-      "5": {
-        "matured_signals": 15,
-        "helpful": 6,
-        "neutral": 2,
-        "unhelpful": 7,
-        "helpful_rate_pct": 46.2,
-        "average_action_benefit_pct": -0.08,
-        "median_action_benefit_pct": -0.041
-      },
-      "10": {
-        "matured_signals": 10,
-        "helpful": 0,
-        "neutral": 2,
-        "unhelpful": 8,
-        "helpful_rate_pct": 0.0,
-        "average_action_benefit_pct": -0.351,
-        "median_action_benefit_pct": -0.432
-      },
-      "20": {
-        "matured_signals": 0,
-        "helpful": 0,
-        "neutral": 0,
-        "unhelpful": 0,
-        "helpful_rate_pct": null,
-        "average_action_benefit_pct": null,
-        "median_action_benefit_pct": null
-      }
-    },
-    "GBP": {
-      "1": {
-        "matured_signals": 19,
-        "helpful": 7,
-        "neutral": 7,
-        "unhelpful": 5,
-        "helpful_rate_pct": 58.3,
-        "average_action_benefit_pct": 0.024,
-        "median_action_benefit_pct": 0.037
-      },
-      "5": {
-        "matured_signals": 15,
-        "helpful": 5,
-        "neutral": 3,
-        "unhelpful": 7,
-        "helpful_rate_pct": 41.7,
-        "average_action_benefit_pct": 0.061,
-        "median_action_benefit_pct": -0.093
-      },
-      "10": {
-        "matured_signals": 10,
-        "helpful": 3,
-        "neutral": 1,
-        "unhelpful": 6,
-        "helpful_rate_pct": 33.3,
-        "average_action_benefit_pct": -0.085,
-        "median_action_benefit_pct": -0.147
-      },
-      "20": {
-        "matured_signals": 0,
-        "helpful": 0,
-        "neutral": 0,
-        "unhelpful": 0,
-        "helpful_rate_pct": null,
-        "average_action_benefit_pct": null,
-        "median_action_benefit_pct": null
-      }
-    },
-    "AUD": {
-      "1": {
-        "matured_signals": 19,
-        "helpful": 7,
-        "neutral": 5,
-        "unhelpful": 7,
-        "helpful_rate_pct": 50.0,
-        "average_action_benefit_pct": -0.013,
-        "median_action_benefit_pct": -0.008
-      },
-      "5": {
-        "matured_signals": 15,
-        "helpful": 5,
-        "neutral": 5,
-        "unhelpful": 5,
-        "helpful_rate_pct": 50.0,
-        "average_action_benefit_pct": -0.006,
-        "median_action_benefit_pct": -0.006
-      },
-      "10": {
-        "matured_signals": 10,
-        "helpful": 2,
-        "neutral": 4,
-        "unhelpful": 4,
-        "helpful_rate_pct": 33.3,
-        "average_action_benefit_pct": -0.068,
-        "median_action_benefit_pct": -0.066
-      },
-      "20": {
-        "matured_signals": 0,
-        "helpful": 0,
-        "neutral": 0,
-        "unhelpful": 0,
-        "helpful_rate_pct": null,
-        "average_action_benefit_pct": null,
-        "median_action_benefit_pct": null
-      }
-    },
-    "MYR": {
-      "1": {
-        "matured_signals": 19,
-        "helpful": 4,
-        "neutral": 12,
-        "unhelpful": 3,
-        "helpful_rate_pct": 57.1,
-        "average_action_benefit_pct": 0.035,
-        "median_action_benefit_pct": -0.001
-      },
-      "5": {
-        "matured_signals": 15,
-        "helpful": 8,
-        "neutral": 5,
-        "unhelpful": 2,
-        "helpful_rate_pct": 80.0,
-        "average_action_benefit_pct": 0.276,
-        "median_action_benefit_pct": 0.142
-      },
-      "10": {
-        "matured_signals": 10,
-        "helpful": 10,
-        "neutral": 0,
-        "unhelpful": 0,
-        "helpful_rate_pct": 100.0,
-        "average_action_benefit_pct": 0.782,
-        "median_action_benefit_pct": 0.785
-      },
-      "20": {
-        "matured_signals": 0,
-        "helpful": 0,
-        "neutral": 0,
-        "unhelpful": 0,
-        "helpful_rate_pct": null,
-        "average_action_benefit_pct": null,
-        "median_action_benefit_pct": null
-      }
-    },
-    "CHF": {
-      "1": {
-        "matured_signals": 5,
-        "helpful": 3,
-        "neutral": 1,
-        "unhelpful": 1,
-        "helpful_rate_pct": 75.0,
-        "average_action_benefit_pct": 0.102,
-        "median_action_benefit_pct": 0.166
-      },
-      "5": {
         "matured_signals": 1,
         "helpful": 1,
         "neutral": 0,
         "unhelpful": 0,
         "helpful_rate_pct": 100.0,
-        "average_action_benefit_pct": 0.51,
-        "median_action_benefit_pct": 0.51
+        "average_action_benefit_pct": 1.014,
+        "median_action_benefit_pct": 1.014
+      }
+    },
+    "JPY": {
+      "1": {
+        "matured_signals": 20,
+        "helpful": 7,
+        "neutral": 8,
+        "unhelpful": 5,
+        "helpful_rate_pct": 58.3,
+        "average_action_benefit_pct": 0.029,
+        "median_action_benefit_pct": 0.064
+      },
+      "5": {
+        "matured_signals": 16,
+        "helpful": 10,
+        "neutral": 1,
+        "unhelpful": 5,
+        "helpful_rate_pct": 66.7,
+        "average_action_benefit_pct": 1.046,
+        "median_action_benefit_pct": 1.113
+      },
+      "10": {
+        "matured_signals": 11,
+        "helpful": 10,
+        "neutral": 0,
+        "unhelpful": 1,
+        "helpful_rate_pct": 90.9,
+        "average_action_benefit_pct": 2.009,
+        "median_action_benefit_pct": 2.285
+      },
+      "20": {
+        "matured_signals": 1,
+        "helpful": 1,
+        "neutral": 0,
+        "unhelpful": 0,
+        "helpful_rate_pct": 100.0,
+        "average_action_benefit_pct": 1.065,
+        "median_action_benefit_pct": 1.065
+      }
+    },
+    "EUR": {
+      "1": {
+        "matured_signals": 20,
+        "helpful": 7,
+        "neutral": 9,
+        "unhelpful": 4,
+        "helpful_rate_pct": 63.6,
+        "average_action_benefit_pct": -0.007,
+        "median_action_benefit_pct": 0.037
+      },
+      "5": {
+        "matured_signals": 16,
+        "helpful": 6,
+        "neutral": 3,
+        "unhelpful": 7,
+        "helpful_rate_pct": 46.2,
+        "average_action_benefit_pct": -0.079,
+        "median_action_benefit_pct": -0.051
+      },
+      "10": {
+        "matured_signals": 11,
+        "helpful": 0,
+        "neutral": 2,
+        "unhelpful": 9,
+        "helpful_rate_pct": 0.0,
+        "average_action_benefit_pct": -0.336,
+        "median_action_benefit_pct": -0.381
+      },
+      "20": {
+        "matured_signals": 1,
+        "helpful": 0,
+        "neutral": 0,
+        "unhelpful": 1,
+        "helpful_rate_pct": 0.0,
+        "average_action_benefit_pct": -0.129,
+        "median_action_benefit_pct": -0.129
+      }
+    },
+    "GBP": {
+      "1": {
+        "matured_signals": 20,
+        "helpful": 7,
+        "neutral": 7,
+        "unhelpful": 6,
+        "helpful_rate_pct": 53.8,
+        "average_action_benefit_pct": 0.014,
+        "median_action_benefit_pct": 0.013
+      },
+      "5": {
+        "matured_signals": 16,
+        "helpful": 5,
+        "neutral": 3,
+        "unhelpful": 8,
+        "helpful_rate_pct": 38.5,
+        "average_action_benefit_pct": 0.031,
+        "median_action_benefit_pct": -0.123
+      },
+      "10": {
+        "matured_signals": 11,
+        "helpful": 3,
+        "neutral": 1,
+        "unhelpful": 7,
+        "helpful_rate_pct": 30.0,
+        "average_action_benefit_pct": -0.107,
+        "median_action_benefit_pct": -0.157
+      },
+      "20": {
+        "matured_signals": 1,
+        "helpful": 1,
+        "neutral": 0,
+        "unhelpful": 0,
+        "helpful_rate_pct": 100.0,
+        "average_action_benefit_pct": 0.284,
+        "median_action_benefit_pct": 0.284
+      }
+    },
+    "AUD": {
+      "1": {
+        "matured_signals": 20,
+        "helpful": 7,
+        "neutral": 5,
+        "unhelpful": 8,
+        "helpful_rate_pct": 46.7,
+        "average_action_benefit_pct": -0.025,
+        "median_action_benefit_pct": -0.034
+      },
+      "5": {
+        "matured_signals": 16,
+        "helpful": 5,
+        "neutral": 5,
+        "unhelpful": 6,
+        "helpful_rate_pct": 45.5,
+        "average_action_benefit_pct": -0.028,
+        "median_action_benefit_pct": -0.024
+      },
+      "10": {
+        "matured_signals": 11,
+        "helpful": 2,
+        "neutral": 4,
+        "unhelpful": 5,
+        "helpful_rate_pct": 28.6,
+        "average_action_benefit_pct": -0.096,
+        "median_action_benefit_pct": -0.068
+      },
+      "20": {
+        "matured_signals": 1,
+        "helpful": 0,
+        "neutral": 0,
+        "unhelpful": 1,
+        "helpful_rate_pct": 0.0,
+        "average_action_benefit_pct": -0.503,
+        "median_action_benefit_pct": -0.503
+      }
+    },
+    "MYR": {
+      "1": {
+        "matured_signals": 20,
+        "helpful": 5,
+        "neutral": 12,
+        "unhelpful": 3,
+        "helpful_rate_pct": 62.5,
+        "average_action_benefit_pct": 0.04,
+        "median_action_benefit_pct": -0.001
+      },
+      "5": {
+        "matured_signals": 16,
+        "helpful": 8,
+        "neutral": 6,
+        "unhelpful": 2,
+        "helpful_rate_pct": 80.0,
+        "average_action_benefit_pct": 0.265,
+        "median_action_benefit_pct": 0.118
+      },
+      "10": {
+        "matured_signals": 11,
+        "helpful": 11,
+        "neutral": 0,
+        "unhelpful": 0,
+        "helpful_rate_pct": 100.0,
+        "average_action_benefit_pct": 0.758,
+        "median_action_benefit_pct": 0.78
+      },
+      "20": {
+        "matured_signals": 1,
+        "helpful": 1,
+        "neutral": 0,
+        "unhelpful": 0,
+        "helpful_rate_pct": 100.0,
+        "average_action_benefit_pct": 0.797,
+        "median_action_benefit_pct": 0.797
+      }
+    },
+    "CHF": {
+      "1": {
+        "matured_signals": 6,
+        "helpful": 3,
+        "neutral": 2,
+        "unhelpful": 1,
+        "helpful_rate_pct": 75.0,
+        "average_action_benefit_pct": 0.094,
+        "median_action_benefit_pct": 0.123
+      },
+      "5": {
+        "matured_signals": 2,
+        "helpful": 2,
+        "neutral": 0,
+        "unhelpful": 0,
+        "helpful_rate_pct": 100.0,
+        "average_action_benefit_pct": 0.454,
+        "median_action_benefit_pct": 0.454
       },
       "10": {
         "matured_signals": 0,
@@ -371,6 +371,23 @@
     },
     {
       "signal_date": "2026-07-17",
+      "future_date": "2026-08-14",
+      "currency": "USD",
+      "horizon_trading_days": 20,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.291211,
+      "future_rate_sgd": 1.278119,
+      "rate_change_pct": -1.014,
+      "action_benefit_pct": 1.014,
+      "outcome": "helpful",
+      "opportunity_score": 2.71,
+      "forward_outlook_score": 2.29,
+      "buy_urgency_score": 2.53
+    },
+    {
+      "signal_date": "2026-07-17",
       "future_date": "2026-07-20",
       "currency": "JPY",
       "horizon_trading_days": 1,
@@ -415,6 +432,23 @@
       "future_rate_sgd": 0.80188,
       "rate_change_pct": 0.826,
       "action_benefit_pct": 0.826,
+      "outcome": "helpful",
+      "opportunity_score": 3.87,
+      "forward_outlook_score": 2.5,
+      "buy_urgency_score": 3.1
+    },
+    {
+      "signal_date": "2026-07-17",
+      "future_date": "2026-08-14",
+      "currency": "JPY",
+      "horizon_trading_days": 20,
+      "recommendation": "Accumulate",
+      "action_family": "buy",
+      "suggested_buy_pct": 15,
+      "entry_rate_sgd": 0.795314,
+      "future_rate_sgd": 0.803784,
+      "rate_change_pct": 1.065,
+      "action_benefit_pct": 1.065,
       "outcome": "helpful",
       "opportunity_score": 3.87,
       "forward_outlook_score": 2.5,
@@ -473,6 +507,23 @@
     },
     {
       "signal_date": "2026-07-17",
+      "future_date": "2026-08-14",
+      "currency": "EUR",
+      "horizon_trading_days": 20,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.4765,
+      "future_rate_sgd": 1.4784,
+      "rate_change_pct": 0.129,
+      "action_benefit_pct": -0.129,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.63,
+      "forward_outlook_score": 2.36,
+      "buy_urgency_score": 2.34
+    },
+    {
+      "signal_date": "2026-07-17",
       "future_date": "2026-07-20",
       "currency": "GBP",
       "horizon_trading_days": 1,
@@ -517,6 +568,23 @@
       "future_rate_sgd": 1.724493,
       "rate_change_pct": -0.609,
       "action_benefit_pct": 0.609,
+      "outcome": "helpful",
+      "opportunity_score": 1.7,
+      "forward_outlook_score": 2.51,
+      "buy_urgency_score": 2.11
+    },
+    {
+      "signal_date": "2026-07-17",
+      "future_date": "2026-08-14",
+      "currency": "GBP",
+      "horizon_trading_days": 20,
+      "recommendation": "Expensive",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.735058,
+      "future_rate_sgd": 1.730135,
+      "rate_change_pct": -0.284,
+      "action_benefit_pct": 0.284,
       "outcome": "helpful",
       "opportunity_score": 1.7,
       "forward_outlook_score": 2.51,
@@ -575,6 +643,23 @@
     },
     {
       "signal_date": "2026-07-17",
+      "future_date": "2026-08-14",
+      "currency": "AUD",
+      "horizon_trading_days": 20,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.900634,
+      "future_rate_sgd": 0.905161,
+      "rate_change_pct": 0.503,
+      "action_benefit_pct": -0.503,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.41,
+      "forward_outlook_score": 2.63,
+      "buy_urgency_score": 2.55
+    },
+    {
+      "signal_date": "2026-07-17",
       "future_date": "2026-07-20",
       "currency": "MYR",
       "horizon_trading_days": 1,
@@ -619,6 +704,23 @@
       "future_rate_sgd": 0.314427,
       "rate_change_pct": -0.282,
       "action_benefit_pct": 0.282,
+      "outcome": "helpful",
+      "opportunity_score": 2.65,
+      "forward_outlook_score": 2.19,
+      "buy_urgency_score": 2.12
+    },
+    {
+      "signal_date": "2026-07-17",
+      "future_date": "2026-08-14",
+      "currency": "MYR",
+      "horizon_trading_days": 20,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.315316,
+      "future_rate_sgd": 0.312803,
+      "rate_change_pct": -0.797,
+      "action_benefit_pct": 0.797,
       "outcome": "helpful",
       "opportunity_score": 2.65,
       "forward_outlook_score": 2.19,
@@ -3414,6 +3516,23 @@
     },
     {
       "signal_date": "2026-07-31",
+      "future_date": "2026-08-14",
+      "currency": "USD",
+      "horizon_trading_days": 10,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.284893,
+      "future_rate_sgd": 1.278119,
+      "rate_change_pct": -0.527,
+      "action_benefit_pct": 0.527,
+      "outcome": "helpful",
+      "opportunity_score": 3.1,
+      "forward_outlook_score": 1.89,
+      "buy_urgency_score": 2.45
+    },
+    {
+      "signal_date": "2026-07-31",
       "future_date": "2026-08-03",
       "currency": "JPY",
       "horizon_trading_days": 1,
@@ -3441,6 +3560,23 @@
       "future_rate_sgd": 0.808968,
       "rate_change_pct": 0.884,
       "action_benefit_pct": -0.884,
+      "outcome": "unhelpful",
+      "opportunity_score": 3.4,
+      "forward_outlook_score": 3.06,
+      "buy_urgency_score": 3.4
+    },
+    {
+      "signal_date": "2026-07-31",
+      "future_date": "2026-08-14",
+      "currency": "JPY",
+      "horizon_trading_days": 10,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.80188,
+      "future_rate_sgd": 0.803784,
+      "rate_change_pct": 0.237,
+      "action_benefit_pct": -0.237,
       "outcome": "unhelpful",
       "opportunity_score": 3.4,
       "forward_outlook_score": 3.06,
@@ -3482,6 +3618,23 @@
     },
     {
       "signal_date": "2026-07-31",
+      "future_date": "2026-08-14",
+      "currency": "EUR",
+      "horizon_trading_days": 10,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.4757,
+      "future_rate_sgd": 1.4784,
+      "rate_change_pct": 0.183,
+      "action_benefit_pct": -0.183,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.57,
+      "forward_outlook_score": 2.57,
+      "buy_urgency_score": 2.44
+    },
+    {
+      "signal_date": "2026-07-31",
       "future_date": "2026-08-03",
       "currency": "GBP",
       "horizon_trading_days": 1,
@@ -3510,6 +3663,23 @@
       "rate_change_pct": -0.102,
       "action_benefit_pct": 0.102,
       "outcome": "helpful",
+      "opportunity_score": 2.18,
+      "forward_outlook_score": 2.32,
+      "buy_urgency_score": 2.19
+    },
+    {
+      "signal_date": "2026-07-31",
+      "future_date": "2026-08-14",
+      "currency": "GBP",
+      "horizon_trading_days": 10,
+      "recommendation": "Expensive",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.724493,
+      "future_rate_sgd": 1.730135,
+      "rate_change_pct": 0.327,
+      "action_benefit_pct": -0.327,
+      "outcome": "unhelpful",
       "opportunity_score": 2.18,
       "forward_outlook_score": 2.32,
       "buy_urgency_score": 2.19
@@ -3550,6 +3720,23 @@
     },
     {
       "signal_date": "2026-07-31",
+      "future_date": "2026-08-14",
+      "currency": "AUD",
+      "horizon_trading_days": 10,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.901742,
+      "future_rate_sgd": 0.905161,
+      "rate_change_pct": 0.379,
+      "action_benefit_pct": -0.379,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.37,
+      "forward_outlook_score": 2.77,
+      "buy_urgency_score": 2.63
+    },
+    {
+      "signal_date": "2026-07-31",
       "future_date": "2026-08-03",
       "currency": "MYR",
       "horizon_trading_days": 1,
@@ -3577,6 +3764,23 @@
       "future_rate_sgd": 0.313096,
       "rate_change_pct": -0.423,
       "action_benefit_pct": 0.423,
+      "outcome": "helpful",
+      "opportunity_score": 2.76,
+      "forward_outlook_score": 2.11,
+      "buy_urgency_score": 2.09
+    },
+    {
+      "signal_date": "2026-07-31",
+      "future_date": "2026-08-14",
+      "currency": "MYR",
+      "horizon_trading_days": 10,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.314427,
+      "future_rate_sgd": 0.312803,
+      "rate_change_pct": -0.517,
+      "action_benefit_pct": 0.517,
       "outcome": "helpful",
       "opportunity_score": 2.76,
       "forward_outlook_score": 2.11,
@@ -4451,6 +4655,23 @@
     },
     {
       "signal_date": "2026-08-07",
+      "future_date": "2026-08-14",
+      "currency": "USD",
+      "horizon_trading_days": 5,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.280884,
+      "future_rate_sgd": 1.278119,
+      "rate_change_pct": -0.216,
+      "action_benefit_pct": 0.216,
+      "outcome": "helpful",
+      "opportunity_score": 3.26,
+      "forward_outlook_score": 1.99,
+      "buy_urgency_score": 2.56
+    },
+    {
+      "signal_date": "2026-08-07",
       "future_date": "2026-08-10",
       "currency": "JPY",
       "horizon_trading_days": 1,
@@ -4461,6 +4682,23 @@
       "future_rate_sgd": 0.806557,
       "rate_change_pct": -0.298,
       "action_benefit_pct": 0.298,
+      "outcome": "helpful",
+      "opportunity_score": 3.15,
+      "forward_outlook_score": 3.16,
+      "buy_urgency_score": 3.32
+    },
+    {
+      "signal_date": "2026-08-07",
+      "future_date": "2026-08-14",
+      "currency": "JPY",
+      "horizon_trading_days": 5,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.808968,
+      "future_rate_sgd": 0.803784,
+      "rate_change_pct": -0.641,
+      "action_benefit_pct": 0.641,
       "outcome": "helpful",
       "opportunity_score": 3.15,
       "forward_outlook_score": 3.16,
@@ -4485,6 +4723,23 @@
     },
     {
       "signal_date": "2026-08-07",
+      "future_date": "2026-08-14",
+      "currency": "EUR",
+      "horizon_trading_days": 5,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.4775,
+      "future_rate_sgd": 1.4784,
+      "rate_change_pct": 0.061,
+      "action_benefit_pct": -0.061,
+      "outcome": "neutral",
+      "opportunity_score": 2.53,
+      "forward_outlook_score": 2.56,
+      "buy_urgency_score": 2.42
+    },
+    {
+      "signal_date": "2026-08-07",
       "future_date": "2026-08-10",
       "currency": "GBP",
       "horizon_trading_days": 1,
@@ -4495,6 +4750,23 @@
       "future_rate_sgd": 1.727926,
       "rate_change_pct": 0.302,
       "action_benefit_pct": -0.302,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.33,
+      "forward_outlook_score": 2.23,
+      "buy_urgency_score": 2.18
+    },
+    {
+      "signal_date": "2026-08-07",
+      "future_date": "2026-08-14",
+      "currency": "GBP",
+      "horizon_trading_days": 5,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.722731,
+      "future_rate_sgd": 1.730135,
+      "rate_change_pct": 0.43,
+      "action_benefit_pct": -0.43,
       "outcome": "unhelpful",
       "opportunity_score": 2.33,
       "forward_outlook_score": 2.23,
@@ -4519,6 +4791,23 @@
     },
     {
       "signal_date": "2026-08-07",
+      "future_date": "2026-08-14",
+      "currency": "AUD",
+      "horizon_trading_days": 5,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.901794,
+      "future_rate_sgd": 0.905161,
+      "rate_change_pct": 0.373,
+      "action_benefit_pct": -0.373,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.38,
+      "forward_outlook_score": 2.71,
+      "buy_urgency_score": 2.61
+    },
+    {
+      "signal_date": "2026-08-07",
       "future_date": "2026-08-10",
       "currency": "MYR",
       "horizon_trading_days": 1,
@@ -4529,6 +4818,23 @@
       "future_rate_sgd": 0.312804,
       "rate_change_pct": -0.093,
       "action_benefit_pct": 0.093,
+      "outcome": "neutral",
+      "opportunity_score": 2.87,
+      "forward_outlook_score": 2.01,
+      "buy_urgency_score": 2.07
+    },
+    {
+      "signal_date": "2026-08-07",
+      "future_date": "2026-08-14",
+      "currency": "MYR",
+      "horizon_trading_days": 5,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.313096,
+      "future_rate_sgd": 0.312803,
+      "rate_change_pct": -0.094,
+      "action_benefit_pct": 0.094,
       "outcome": "neutral",
       "opportunity_score": 2.87,
       "forward_outlook_score": 2.01,
@@ -4547,6 +4853,23 @@
       "rate_change_pct": 0.143,
       "action_benefit_pct": -0.143,
       "outcome": "unhelpful",
+      "opportunity_score": 2.73,
+      "forward_outlook_score": 1.95,
+      "buy_urgency_score": 1.91
+    },
+    {
+      "signal_date": "2026-08-07",
+      "future_date": "2026-08-14",
+      "currency": "CHF",
+      "horizon_trading_days": 5,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.580721,
+      "future_rate_sgd": 1.574441,
+      "rate_change_pct": -0.397,
+      "action_benefit_pct": 0.397,
+      "outcome": "helpful",
       "opportunity_score": 2.73,
       "forward_outlook_score": 1.95,
       "buy_urgency_score": 1.91
@@ -4907,6 +5230,125 @@
       "opportunity_score": 2.77,
       "forward_outlook_score": 1.9,
       "buy_urgency_score": 1.89
+    },
+    {
+      "signal_date": "2026-08-13",
+      "future_date": "2026-08-14",
+      "currency": "USD",
+      "horizon_trading_days": 1,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.280128,
+      "future_rate_sgd": 1.278119,
+      "rate_change_pct": -0.157,
+      "action_benefit_pct": 0.157,
+      "outcome": "helpful",
+      "opportunity_score": 3.26,
+      "forward_outlook_score": 1.97,
+      "buy_urgency_score": 2.56
+    },
+    {
+      "signal_date": "2026-08-13",
+      "future_date": "2026-08-14",
+      "currency": "JPY",
+      "horizon_trading_days": 1,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.80345,
+      "future_rate_sgd": 0.803784,
+      "rate_change_pct": 0.042,
+      "action_benefit_pct": -0.042,
+      "outcome": "neutral",
+      "opportunity_score": 3.48,
+      "forward_outlook_score": 2.63,
+      "buy_urgency_score": 3.06
+    },
+    {
+      "signal_date": "2026-08-13",
+      "future_date": "2026-08-14",
+      "currency": "EUR",
+      "horizon_trading_days": 1,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.4765,
+      "future_rate_sgd": 1.4784,
+      "rate_change_pct": 0.129,
+      "action_benefit_pct": -0.129,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.57,
+      "forward_outlook_score": 2.5,
+      "buy_urgency_score": 2.4
+    },
+    {
+      "signal_date": "2026-08-13",
+      "future_date": "2026-08-14",
+      "currency": "GBP",
+      "horizon_trading_days": 1,
+      "recommendation": "Expensive",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.727103,
+      "future_rate_sgd": 1.730135,
+      "rate_change_pct": 0.176,
+      "action_benefit_pct": -0.176,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.14,
+      "forward_outlook_score": 2.38,
+      "buy_urgency_score": 2.2
+    },
+    {
+      "signal_date": "2026-08-13",
+      "future_date": "2026-08-14",
+      "currency": "AUD",
+      "horizon_trading_days": 1,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.902727,
+      "future_rate_sgd": 0.905161,
+      "rate_change_pct": 0.27,
+      "action_benefit_pct": -0.27,
+      "outcome": "unhelpful",
+      "opportunity_score": 2.37,
+      "forward_outlook_score": 2.73,
+      "buy_urgency_score": 2.55
+    },
+    {
+      "signal_date": "2026-08-13",
+      "future_date": "2026-08-14",
+      "currency": "MYR",
+      "horizon_trading_days": 1,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 0.313223,
+      "future_rate_sgd": 0.312803,
+      "rate_change_pct": -0.134,
+      "action_benefit_pct": 0.134,
+      "outcome": "helpful",
+      "opportunity_score": 2.8,
+      "forward_outlook_score": 2.12,
+      "buy_urgency_score": 2.12
+    },
+    {
+      "signal_date": "2026-08-13",
+      "future_date": "2026-08-14",
+      "currency": "CHF",
+      "horizon_trading_days": 1,
+      "recommendation": "Wait",
+      "action_family": "wait",
+      "suggested_buy_pct": 0,
+      "entry_rate_sgd": 1.575269,
+      "future_rate_sgd": 1.574441,
+      "rate_change_pct": -0.053,
+      "action_benefit_pct": 0.053,
+      "outcome": "neutral",
+      "opportunity_score": 2.78,
+      "forward_outlook_score": 1.9,
+      "buy_urgency_score": 1.9
     }
   ]
 }
