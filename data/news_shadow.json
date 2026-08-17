@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-08-14T17:47:51.173135+00:00",
-  "run_date_sgt": "2026-08-15",
-  "market_date": "2026-08-14",
+  "generated_at_utc": "2026-08-17T17:16:43.412097+00:00",
+  "run_date_sgt": "2026-08-18",
+  "market_date": "2026-08-17",
   "phase": "Phase 3A.3 \u2014 direction semantics & source-quality shadow mode",
-  "source": "Pair-aware relevance-filtered GDELT + official central-bank communications (0/7 usable; 6 thin; 54 API calls; 0 cache hits; 41 rate-limit retries)",
+  "source": "Pair-aware relevance-filtered GDELT + official central-bank communications (0/7 usable; 4 thin; 60 API calls; 0 cache hits; 47 rate-limit retries)",
   "lookback": "96h",
   "fallback_lookback": "7d",
   "official_lookback_days": 10,
@@ -17,18 +17,18 @@
       "score": 3.62,
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 42,
-      "article_count": 4,
-      "retrieved_article_count": 24,
-      "rejected_article_count": 20,
+      "article_count": 6,
+      "retrieved_article_count": 36,
+      "rejected_article_count": 30,
       "directional_article_count": 1,
       "official_directional_count": 0,
       "media_directional_count": 1,
       "official_article_count": 0,
-      "media_article_count": 4,
-      "source_diversity": 4,
+      "media_article_count": 6,
+      "source_diversity": 5,
       "agreement_pct": 100,
       "query_attempts": 4,
-      "query_successes": 2,
+      "query_successes": 4,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -38,7 +38,7 @@
           "seen_utc": "2026-08-12T17:00:00+00:00",
           "direction": "strengthening",
           "headline_score": 3.62,
-          "weight": 0.689,
+          "weight": 0.574,
           "signal_terms": [
             "+rate hike"
           ],
@@ -52,21 +52,57 @@
           ]
         },
         {
-          "title": "Fed analysis shows return to stock - bond correlation of 1990s",
-          "url": "https://www.americanbanker.com/news/fed-analysis-shows-return-to-stock-bond-correlation-of-1990s",
-          "domain": "americanbanker.com",
-          "seen_utc": "2026-08-12T00:30:00+00:00",
+          "title": "Gold looks to Fed minutes , housing , PMI data for direction next week",
+          "url": "http://www.kitco.com/news/article/2026-08-14/gold-looks-fed-minutes-housing-pmi-data-direction-next-week",
+          "domain": "kitco.com",
+          "seen_utc": "2026-08-14T20:45:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
           "weight": 0.707,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "americanbanker.com",
+          "source_name": "kitco.com",
           "official": false,
           "query_tag": "plan-2:96h",
           "relevance_score": 92,
           "relevance_reasons": [
             "target central bank"
+          ]
+        },
+        {
+          "title": "Rupee falls 17 paise to 95 . 59 against US dollar in early trade",
+          "url": "https://www.thehindubusinessline.com/markets/forex/rupee-falls-17-paise-to-9559-against-us-dollar-in-early-trade/article71354914.ece",
+          "domain": "thehindubusinessline.com",
+          "seen_utc": "2026-08-17T07:30:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.897,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "thehindubusinessline.com",
+          "official": false,
+          "query_tag": "plan-1:96h",
+          "relevance_score": 86,
+          "relevance_reasons": [
+            "target currency/economy named"
+          ]
+        },
+        {
+          "title": "Rupee falls 17 paise to 95 . 59 against US dollar as FCNR swap deadline weighs down sentiment",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-falls-17-paise-to-95-59-against-us-dollar-as-fcnr-swap-deadline-weighs-down-sentiment/articleshow/133286610.cms",
+          "domain": "timesofindia.indiatimes.com",
+          "seen_utc": "2026-08-17T05:15:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.897,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "timesofindia.indiatimes.com",
+          "official": false,
+          "query_tag": "plan-1:96h",
+          "relevance_score": 86,
+          "relevance_reasons": [
+            "target currency/economy named"
           ]
         },
         {
@@ -76,7 +112,7 @@
           "seen_utc": "2026-08-12T03:15:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.689,
+          "weight": 0.574,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "timesofindia.indiatimes.com",
@@ -86,35 +122,14 @@
           "relevance_reasons": [
             "target-country macro"
           ]
-        },
-        {
-          "title": "Gold slips from two - month high as focus shifts to US inflation",
-          "url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-slips-two-month-high-focus-shifts-us-inflation",
-          "domain": "businesstimes.com.sg",
-          "seen_utc": "2026-08-12T01:15:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.689,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "businesstimes.com.sg",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 78,
-          "relevance_reasons": [
-            "target-country macro"
-          ]
         }
       ],
       "official_feed_errors": [],
-      "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22US+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrecord",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
-      ],
+      "query_errors": [],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-16",
-      "days_to_policy_event": 33,
-      "event_risk_label": "Normal",
+      "days_to_policy_event": 30,
+      "event_risk_label": "Moderate",
       "event_calendar_source": "Federal Reserve FOMC calendar"
     },
     "JPY": {
@@ -124,20 +139,38 @@
       "score": 2.5,
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 42,
-      "article_count": 4,
-      "retrieved_article_count": 27,
-      "rejected_article_count": 23,
+      "article_count": 3,
+      "retrieved_article_count": 15,
+      "rejected_article_count": 12,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
       "official_article_count": 3,
-      "media_article_count": 1,
-      "source_diversity": 2,
+      "media_article_count": 0,
+      "source_diversity": 1,
       "agreement_pct": null,
-      "query_attempts": 2,
-      "query_successes": 2,
+      "query_attempts": 3,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
+        {
+          "title": "Highlights of the Outlook for Economic Activity and Prices (July 2026)",
+          "url": "http://www.boj.or.jp/en/mopo/outlook/highlight/ten202607.htm",
+          "domain": "boj.or.jp",
+          "seen_utc": "2026-08-17T08:00:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.441,
+          "signal_terms": [],
+          "source_type": "official",
+          "source_name": "Bank of Japan updates",
+          "official": true,
+          "query_tag": "official-feed",
+          "relevance_score": 96,
+          "relevance_reasons": [
+            "official policy/macro/FX content"
+          ]
+        },
         {
           "title": "(Research Paper) What Prevents Productivity Gains from Translating into Wages: Lessons from Japan's Deflationary Period",
           "url": "http://www.boj.or.jp/en/research/wps_rev/wps_2026/wp26e12.htm",
@@ -145,7 +178,7 @@
           "seen_utc": "2026-08-14T07:00:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 1.441,
+          "weight": 0.937,
           "signal_terms": [],
           "source_type": "official",
           "source_name": "Bank of Japan updates",
@@ -173,49 +206,16 @@
           "relevance_reasons": [
             "official policy/macro/FX content"
           ]
-        },
-        {
-          "title": "Minutes of the Monetary Policy Meeting on June 15 and 16, 2026",
-          "url": "http://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260616.pdf",
-          "domain": "boj.or.jp",
-          "seen_utc": "2026-08-04T23:50:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.937,
-          "signal_terms": [],
-          "source_type": "official",
-          "source_name": "Bank of Japan updates",
-          "official": true,
-          "query_tag": "official-feed",
-          "relevance_score": 96,
-          "relevance_reasons": [
-            "official policy/macro/FX content"
-          ]
-        },
-        {
-          "title": "Global Market | Bank of Japan could raise rates in September , eye faster hikes : Reports",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-bank-of-japan-could-raise-rates-in-september-eye-faster-hikes-reports/articleshow/133235665.cms",
-          "domain": "economictimes.indiatimes.com",
-          "seen_utc": "2026-08-14T10:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.907,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "economictimes.indiatimes.com",
-          "official": false,
-          "query_tag": "plan-2:96h",
-          "relevance_score": 92,
-          "relevance_reasons": [
-            "target central bank"
-          ]
         }
       ],
       "official_feed_errors": [],
-      "query_errors": [],
+      "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Japanese+yen%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrec",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+Japan%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxrec"
+      ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-18",
-      "days_to_policy_event": 35,
+      "days_to_policy_event": 32,
       "event_risk_label": "Normal",
       "event_calendar_source": "Bank of Japan MPM schedule"
     },
@@ -248,7 +248,7 @@
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-10",
-      "days_to_policy_event": 27,
+      "days_to_policy_event": 24,
       "event_risk_label": "Moderate",
       "event_calendar_source": "ECB Governing Council calendar"
     },
@@ -258,19 +258,19 @@
       "evidence_eligible": false,
       "score": 2.5,
       "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 41,
-      "article_count": 1,
-      "retrieved_article_count": 1,
-      "rejected_article_count": 0,
+      "confidence_pct": 42,
+      "article_count": 3,
+      "retrieved_article_count": 13,
+      "rejected_article_count": 2,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
       "official_article_count": 1,
-      "media_article_count": 0,
-      "source_diversity": 1,
+      "media_article_count": 2,
+      "source_diversity": 3,
       "agreement_pct": null,
       "query_attempts": 3,
-      "query_successes": 0,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -290,176 +290,18 @@
           "relevance_reasons": [
             "official policy/macro/FX content"
           ]
-        }
-      ],
-      "official_feed_errors": [],
-      "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28sterling+OR+%22British+pound%22%29+%28forex+OR+currency+OR+%22exchange+rate%22%29&",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+England%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22UK+inflation%22+OR+%22UK+wages%22+OR+%22UK+GDP%22%29&mode=ArtList&maxrecords=12"
-      ],
-      "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
-      "next_policy_event": "2026-09-17",
-      "days_to_policy_event": 34,
-      "event_risk_label": "Normal",
-      "event_calendar_source": "Bank of England MPC calendar"
-    },
-    "AUD": {
-      "status": "Thin",
-      "coverage_quality": "Thin",
-      "evidence_eligible": false,
-      "score": 2.5,
-      "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 42,
-      "article_count": 14,
-      "retrieved_article_count": 24,
-      "rejected_article_count": 10,
-      "directional_article_count": 0,
-      "official_directional_count": 0,
-      "media_directional_count": 0,
-      "official_article_count": 0,
-      "media_article_count": 14,
-      "source_diversity": 13,
-      "agreement_pct": null,
-      "query_attempts": 3,
-      "query_successes": 2,
-      "horizon": "Short term (1\u201310 trading days)",
-      "articles": [
-        {
-          "title": "RBA says housing tax changes make interest rate rise less likely",
-          "url": "https://www.afr.com/policy/economy/housing-tax-changes-make-interest-rate-rise-less-likely-rba-20260813-p60o10",
-          "domain": "afr.com",
-          "seen_utc": "2026-08-13T07:15:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.816,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "afr.com",
-          "official": false,
-          "query_tag": "plan-2:96h",
-          "relevance_score": 92,
-          "relevance_reasons": [
-            "target central bank"
-          ]
         },
         {
-          "title": "RBA interest rates : Markets and traders whipsawed by tough talking RBA governor Michele Bullock",
-          "url": "https://www.afr.com/markets/debt-markets/markets-whipsawed-by-tough-talking-rba-governor-20260810-p60n13",
-          "domain": "afr.com",
-          "seen_utc": "2026-08-11T08:45:00+00:00",
+          "title": "What impact will July energy price hike have on united kingdom inflation figures ?",
+          "url": "https://www.kentonline.co.uk/news/national/what-impact-will-july-s-energy-price-hike-have-on-uk-inflation-figures-170599/",
+          "domain": "kentonline.co.uk",
+          "seen_utc": "2026-08-16T09:30:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.589,
+          "weight": 0.795,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "afr.com",
-          "official": false,
-          "query_tag": "plan-2:96h",
-          "relevance_score": 92,
-          "relevance_reasons": [
-            "target central bank"
-          ]
-        },
-        {
-          "title": "Reserve Bank of Australia : Cash rate holds at 4 . 35 per cent again | The Canberra Times",
-          "url": "https://www.canberratimes.com.au/story/9327841/reserve-bank-of-australia-cash-rate-holds-at-435-per-cent-again/",
-          "domain": "canberratimes.com.au",
-          "seen_utc": "2026-08-11T07:15:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.589,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "canberratimes.com.au",
-          "official": false,
-          "query_tag": "plan-2:96h",
-          "relevance_score": 92,
-          "relevance_reasons": [
-            "target central bank"
-          ]
-        },
-        {
-          "title": "Reserve Bank of Australia : Cash rate holds at 4 . 35 per cent again | The Examiner",
-          "url": "https://www.examiner.com.au/story/9327841/reserve-bank-of-australia-cash-rate-holds-at-435-per-cent-again/",
-          "domain": "examiner.com.au",
-          "seen_utc": "2026-08-11T07:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.589,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "examiner.com.au",
-          "official": false,
-          "query_tag": "plan-2:96h",
-          "relevance_score": 92,
-          "relevance_reasons": [
-            "target central bank"
-          ]
-        },
-        {
-          "title": "FxWirePro : AUD / USD range bound ahead of RBA policy decision",
-          "url": "http://www.econotimes.com/FxWirePro-AUD-USD-range-bound-ahead-of-RBA-policy-decision-1749144",
-          "domain": "econotimes.com",
-          "seen_utc": "2026-08-11T07:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.589,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "econotimes.com",
-          "official": false,
-          "query_tag": "plan-2:96h",
-          "relevance_score": 92,
-          "relevance_reasons": [
-            "target central bank"
-          ]
-        }
-      ],
-      "official_feed_errors": [],
-      "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
-      ],
-      "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
-      "next_policy_event": "2026-09-29",
-      "days_to_policy_event": 46,
-      "event_risk_label": "Normal",
-      "event_calendar_source": "Reserve Bank of Australia board schedule"
-    },
-    "MYR": {
-      "status": "Thin",
-      "coverage_quality": "Thin",
-      "evidence_eligible": false,
-      "score": 3.25,
-      "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 42,
-      "article_count": 8,
-      "retrieved_article_count": 11,
-      "rejected_article_count": 3,
-      "directional_article_count": 1,
-      "official_directional_count": 0,
-      "media_directional_count": 1,
-      "official_article_count": 0,
-      "media_article_count": 8,
-      "source_diversity": 5,
-      "agreement_pct": 100,
-      "query_attempts": 3,
-      "query_successes": 2,
-      "horizon": "Short term (1\u201310 trading days)",
-      "articles": [
-        {
-          "title": "Malaysia central bank upbeat as Q2 growth beats expectations",
-          "url": "https://www.businesstimes.com.sg/international/asean/malaysias-central-bank-upbeat-q2-growth-beats-expectations",
-          "domain": "businesstimes.com.sg",
-          "seen_utc": "2026-08-14T07:00:00+00:00",
-          "direction": "strengthening",
-          "headline_score": 3.25,
-          "weight": 0.884,
-          "signal_terms": [
-            "+growth beats"
-          ],
-          "source_type": "media",
-          "source_name": "businesstimes.com.sg",
+          "source_name": "kentonline.co.uk",
           "official": false,
           "query_tag": "plan-2:96h",
           "relevance_score": 78,
@@ -468,18 +310,100 @@
           ]
         },
         {
-          "title": "Ringgit firmer against US$ on stronger - than - expected GDP growth",
-          "url": "https://www.thestar.com.my/business/business-news/2026/08/14/ringgit-firmer-against-us-on-stronger-than-expected-gdp-growth",
-          "domain": "thestar.com.my",
-          "seen_utc": "2026-08-14T12:00:00+00:00",
+          "title": "New united kingdom cost of living crisis looms with soaring energy bills forecast to lift inflation",
+          "url": "https://www.theguardian.com/business/2026/aug/16/new-uk-cost-of-living-crisis-looms-rising-energy-bills-inflation",
+          "domain": "theguardian.com",
+          "seen_utc": "2026-08-16T05:30:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.897,
+          "weight": 0.795,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "theguardian.com",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 78,
+          "relevance_reasons": [
+            "target-country macro"
+          ]
+        }
+      ],
+      "official_feed_errors": [],
+      "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28sterling+OR+%22British+pound%22%29+%28forex+OR+currency+OR+%22exchange+rate%22%29&",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22UK+inflation%22+OR+%22UK+wages%22+OR+%22UK+GDP%22%29&mode=ArtList&maxrecords=12"
+      ],
+      "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
+      "next_policy_event": "2026-09-17",
+      "days_to_policy_event": 31,
+      "event_risk_label": "Normal",
+      "event_calendar_source": "Bank of England MPC calendar"
+    },
+    "AUD": {
+      "status": "Unavailable",
+      "coverage_quality": "Unavailable",
+      "evidence_eligible": false,
+      "score": 2.5,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "retrieved_article_count": 22,
+      "rejected_article_count": 22,
+      "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
+      "official_article_count": 0,
+      "media_article_count": 0,
+      "source_diversity": 0,
+      "agreement_pct": null,
+      "query_attempts": 4,
+      "query_successes": 3,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [],
+      "official_feed_errors": [],
+      "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Reserve+Bank+of+Australia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=Ar"
+      ],
+      "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
+      "next_policy_event": "2026-09-29",
+      "days_to_policy_event": 43,
+      "event_risk_label": "Normal",
+      "event_calendar_source": "Reserve Bank of Australia board schedule"
+    },
+    "MYR": {
+      "status": "Thin",
+      "coverage_quality": "Thin",
+      "evidence_eligible": false,
+      "score": 2.5,
+      "label": "Relevant coverage / insufficient directional evidence",
+      "confidence_pct": 42,
+      "article_count": 7,
+      "retrieved_article_count": 16,
+      "rejected_article_count": 9,
+      "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
+      "official_article_count": 0,
+      "media_article_count": 7,
+      "source_diversity": 5,
+      "agreement_pct": null,
+      "query_attempts": 4,
+      "query_successes": 2,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [
+        {
+          "title": "Ringgit opens higher against major , Asean currencies ahead of 2Q GDP announcement",
+          "url": "https://www.thestar.com.my/business/business-news/2026/08/14/ringgit-opens-higher-against-major-asean-currencies-ahead-of-2q-gdp-announcement",
+          "domain": "thestar.com.my",
+          "seen_utc": "2026-08-14T02:45:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.583,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "thestar.com.my",
           "official": false,
-          "query_tag": "plan-2:96h",
+          "query_tag": "plan-3:7d",
           "relevance_score": 86,
           "relevance_reasons": [
             "target currency/economy named"
@@ -492,22 +416,22 @@
           "seen_utc": "2026-08-13T11:45:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.807,
+          "weight": 0.583,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "thestar.com.my",
           "official": false,
-          "query_tag": "plan-2:96h",
+          "query_tag": "plan-3:7d",
           "relevance_score": 86,
           "relevance_reasons": [
             "target currency/economy named"
           ]
         },
         {
-          "title": "Economists upbeat on Malaysia 2026 outlook after 6 % 2Q GDP growth",
-          "url": "https://www.thestar.com.my/business/business-news/2026/08/14/economists-upbeat-on-malaysia039s-2026-outlook-after-6-2q-gdp-growth",
+          "title": "Malaysia July inflation eases to 1 . 8 % - DOSM",
+          "url": "https://www.thestar.com.my/business/business-news/2026/08/17/malaysia039s-july-inflation-eases-to-18---dosm",
           "domain": "thestar.com.my",
-          "seen_utc": "2026-08-14T12:00:00+00:00",
+          "seen_utc": "2026-08-17T07:15:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
           "weight": 0.884,
@@ -515,73 +439,41 @@
           "source_type": "media",
           "source_name": "thestar.com.my",
           "official": false,
-          "query_tag": "plan-2:96h",
+          "query_tag": "plan-3:7d",
           "relevance_score": 78,
           "relevance_reasons": [
             "target-country macro"
           ]
         },
         {
-          "title": "Malaysia GDP Growth Exceeds Estimate",
-          "url": "https://www.finanzen.ch/nachrichten/zinsen/malaysia-gdp-growth-exceeds-estimate-1036458668",
-          "domain": "finanzen.ch",
-          "seen_utc": "2026-08-14T08:45:00+00:00",
+          "title": "Malaysia Inflation Eases to 1 . 8 % in July , Below Forecast",
+          "url": "http://www.econotimes.com/Malaysia-Inflation-Eases-to-18-in-July-Below-Forecast-1749623",
+          "domain": "econotimes.com",
+          "seen_utc": "2026-08-17T06:00:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
           "weight": 0.884,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "finanzen.ch",
+          "source_name": "econotimes.com",
           "official": false,
-          "query_tag": "plan-2:96h",
+          "query_tag": "plan-3:7d",
           "relevance_score": 78,
           "relevance_reasons": [
             "target-country macro"
           ]
-        }
-      ],
-      "official_feed_errors": [],
-      "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Malaysian+ringgit%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&m"
-      ],
-      "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
-      "next_policy_event": "2026-09-03",
-      "days_to_policy_event": 20,
-      "event_risk_label": "Moderate",
-      "event_calendar_source": "Bank Negara Malaysia MPC schedule"
-    },
-    "CHF": {
-      "status": "Thin",
-      "coverage_quality": "Thin",
-      "evidence_eligible": false,
-      "score": 2.5,
-      "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 31,
-      "article_count": 1,
-      "retrieved_article_count": 9,
-      "rejected_article_count": 8,
-      "directional_article_count": 0,
-      "official_directional_count": 0,
-      "media_directional_count": 0,
-      "official_article_count": 0,
-      "media_article_count": 1,
-      "source_diversity": 1,
-      "agreement_pct": null,
-      "query_attempts": 4,
-      "query_successes": 3,
-      "horizon": "Short term (1\u201310 trading days)",
-      "articles": [
+        },
         {
-          "title": "Swiss GDP Surges 1 . 5 % in Q2 as Industry Drives Growth",
-          "url": "https://www.actionforex.com/live-comments/650610-swiss-gdp-surges-1-5-in-q2-as-industry-drives-growth/",
-          "domain": "actionforex.com",
-          "seen_utc": "2026-08-14T09:00:00+00:00",
+          "title": "Malaysia economy powers ahead as exports drive 6 % growth in Q2 2026 : DOSM",
+          "url": "https://www.humanresourcesonline.net/malaysia-s-economy-powers-ahead-as-exports-drive-6-growth-in-q2-2026-dosm",
+          "domain": "humanresourcesonline.net",
+          "seen_utc": "2026-08-17T02:30:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
           "weight": 0.884,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "actionforex.com",
+          "source_name": "humanresourcesonline.net",
           "official": false,
           "query_tag": "plan-3:7d",
           "relevance_score": 78,
@@ -592,11 +484,45 @@
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Swiss+franc%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxreco"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+Negara+Malaysia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
+      ],
+      "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
+      "next_policy_event": "2026-09-03",
+      "days_to_policy_event": 17,
+      "event_risk_label": "Moderate",
+      "event_calendar_source": "Bank Negara Malaysia MPC schedule"
+    },
+    "CHF": {
+      "status": "Unavailable",
+      "coverage_quality": "Unavailable",
+      "evidence_eligible": false,
+      "score": 2.5,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "retrieved_article_count": 0,
+      "rejected_article_count": 0,
+      "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
+      "official_article_count": 0,
+      "media_article_count": 0,
+      "source_diversity": 0,
+      "agreement_pct": null,
+      "query_attempts": 4,
+      "query_successes": 0,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [],
+      "official_feed_errors": [],
+      "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Swiss+franc%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxreco",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Swiss+National+Bank%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Switzerland+inflation%22+OR+%22Swiss+growth%22+OR+%22Switzerland+GDP%22%29&mode"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-24",
-      "days_to_policy_event": 41,
+      "days_to_policy_event": 38,
       "event_risk_label": "Normal",
       "event_calendar_source": "Swiss National Bank monetary policy assessment schedule"
     }
