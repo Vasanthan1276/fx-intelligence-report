@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-17T17:16:43.482690+00:00",
+  "generated_at_utc": "2026-08-18T17:21:25.443030+00:00",
   "model_version": "2.2-phase2c-baseline",
   "note": "Official 2026 decision dates embedded for reliable daily event-risk scoring.",
   "sources": {
@@ -76,44 +76,44 @@
   "next_events": {
     "JPY": {
       "next_policy_meeting_date": "2026-09-18",
-      "days_to_policy_meeting": 32,
+      "days_to_policy_meeting": 31,
       "event_risk_label": "Normal",
       "policy_calendar_source": "Bank of Japan MPM schedule"
     },
     "USD": {
       "next_policy_meeting_date": "2026-09-16",
-      "days_to_policy_meeting": 30,
+      "days_to_policy_meeting": 29,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "Federal Reserve FOMC calendar"
     },
     "CHF": {
       "next_policy_meeting_date": "2026-09-24",
-      "days_to_policy_meeting": 38,
+      "days_to_policy_meeting": 37,
       "event_risk_label": "Normal",
       "policy_calendar_source": "Swiss National Bank monetary policy assessment schedule"
     },
     "MYR": {
       "next_policy_meeting_date": "2026-09-03",
-      "days_to_policy_meeting": 17,
+      "days_to_policy_meeting": 16,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "Bank Negara Malaysia MPC schedule"
     },
     "EUR": {
       "next_policy_meeting_date": "2026-09-10",
-      "days_to_policy_meeting": 24,
+      "days_to_policy_meeting": 23,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "ECB Governing Council calendar"
     },
     "AUD": {
       "next_policy_meeting_date": "2026-09-29",
-      "days_to_policy_meeting": 43,
+      "days_to_policy_meeting": 42,
       "event_risk_label": "Normal",
       "policy_calendar_source": "Reserve Bank of Australia board schedule"
     },
     "GBP": {
       "next_policy_meeting_date": "2026-09-17",
-      "days_to_policy_meeting": 31,
-      "event_risk_label": "Normal",
+      "days_to_policy_meeting": 30,
+      "event_risk_label": "Moderate",
       "policy_calendar_source": "Bank of England MPC calendar"
     }
   }

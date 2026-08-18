@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-08-17T17:11:43.054163+00:00",
+  "updated_at_utc": "2026-08-18T17:16:11.590951+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-08-17T16:56:30.398095+00:00",
@@ -129,7 +129,7 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-08-17T16:58:38.138894+00:00",
+      "fetched_at_utc": "2026-08-18T17:01:34.801003+00:00",
       "payload": {
         "articles": [
           {
@@ -161,16 +161,6 @@
             "domain": "bworldonline.com",
             "language": "English",
             "sourcecountry": "Philippines"
-          },
-          {
-            "url": "https://dailypioneer.com/news/stock-markets-end-marginally-higher-on-spike-in-crude-oil-prices",
-            "url_mobile": "",
-            "title": "Sensex Gains 43 Points , Nifty Ends Flat as Crude Oil Prices Rise",
-            "seendate": "20260811T080000Z",
-            "socialimage": "https://dailypioneer.com/uploads/2026/story/images/big/stock-markets-end-marginally-higher-on-spike-in-crude-oil-prices-2026-08-11.jpg",
-            "domain": "dailypioneer.com",
-            "language": "English",
-            "sourcecountry": "India"
           },
           {
             "url": "https://www.proactiveinvestors.co.uk/companies/news/1096920/ftse-100-live-uk-blue-chips-flat-ahead-of-quiet-wall-street-open-1096920.html",
@@ -233,16 +223,6 @@
             "sourcecountry": "Turkey"
           },
           {
-            "url": "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-11-august-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/liveblog/133141107.cms",
-            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-11-august-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/amp_liveblog/133141107.cms",
-            "title": "Stock Market Today Live Updates : BSE Sensex , NSE Nifty50 expected to open in red as crude prices hold near weekly highs",
-            "seendate": "20260811T040000Z",
-            "socialimage": "https://static.toiimg.com/thumb/msid-133141107,width-1280,height-720,imgsize-2096393,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-            "domain": "timesofindia.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
             "url": "https://www.turkiyegazetesi.com.tr/ekonomi/kritik-abd-verisi-aciklandi-altinin-piyasa-tepkisi-ne-oldu-1808772",
             "url_mobile": "",
             "title": "Kritik ABD verisi a\u00e7\u0131kland\u0131 ! Alt\u0131n\u0131n piyasa tepkisi ne oldu ? ",
@@ -251,137 +231,157 @@
             "domain": "turkiyegazetesi.com.tr",
             "language": "Turkish",
             "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://www.gercekgundem.com/ekonomi/altin-ve-piyasalar-icin-kritik-saat-gozler-abd-enflasyon-verisinde-576616",
+            "url_mobile": "https://www.gercekgundem.com/amp/ekonomi/altin-ve-piyasalar-icin-kritik-saat-gozler-abd-enflasyon-verisinde-576616",
+            "title": "Alt\u0131n ve Piyasalar \u0130\u00e7in Kritik Saat : G\u00f6zler ABD Enflasyon Verisinde",
+            "seendate": "20260812T091500Z",
+            "socialimage": "https://img.gercekgundem.com/rcman/Cw1280h720q95gc/storage/files/images/2026/08/12/altin-ve-piyasalar-icin-kritik-saat-gozler-abd-enflasyon-verisinde-gryb.jpg",
+            "domain": "gercekgundem.com",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://www.haberler.com/haber/abd-enflasyon-verisi-aciklandi-son-dakika-abd-20139103-haberi/",
+            "url_mobile": "https://www.haberler.com/amp/abd-enflasyon-verisi-aciklandi-son-dakika-abd-20139103-haberi/",
+            "title": "ABD enflasyon verisi a\u00e7\u0131kland\u0131 SON DAK\u0130KA ! T\u00dcFE ABD enflasyon verisi ne oldu ? ",
+            "seendate": "20260812T131500Z",
+            "socialimage": "https://foto.haberler.com/haber/2026/08/12/abd-enflasyon-verisi-aciklandi-son-dakika-abd_e786027478_amp.jpg",
+            "domain": "haberler.com",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
           }
         ]
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-08-17T16:59:12.202740+00:00",
+      "fetched_at_utc": "2026-08-18T17:02:26.586761+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-08-14T17:32:54.281450+00:00",
+      "fetched_at_utc": "2026-08-18T17:03:31.123271+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-12-august-2026/",
+            "url": "https://www.vetogate.com/5713968",
             "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 12 August 2026",
-            "seendate": "20260812T041500Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/08/currency.webp",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
+            "title": "31 . 71 \u062c\u0646\u064a\u0647 \u060c \u0633\u0639\u0631 \u0627\u0644\u0640 100 \u064a\u0646 \u064a\u0627\u0628\u0627\u0646\u064a \u0641\u064a \u0628\u0646\u0643 \u0645\u0635\u0631 \u0645\u0633\u0627\u0621 \u0627\u0644\u064a\u0648\u0645",
+            "seendate": "20260816T164500Z",
+            "socialimage": "",
+            "domain": "vetogate.com",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
           },
           {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-13-august-2026/",
+            "url": "https://navbharattimes.indiatimes.com/business/business-news/india-forex-demand-shifts-beyond-metros-tier-2-tier-3-cities-take-53-per-cent-share/articleshow/133266034.cms",
+            "url_mobile": "https://navbharattimes.indiatimes.com/business/business-news/india-forex-demand-shifts-beyond-metros-tier-2-tier-3-cities-take-53-per-cent-share/amp_articleshow/133266034.cms",
+            "title": "India Forex Demand : \u092e\u0939\u093e\u0928\u0917\u0930\u094b\u0902 \u0915\u094b \u092a\u091b\u093e\u0921\u093c \u091b\u094b\u091f\u0947 \u0936\u0939\u0930 \u0928\u093f\u0915\u0932\u0947 \u0906\u0917\u0947 , \u0921\u0949\u0932\u0930 - \u092f\u0942\u0930\u094b \u091c\u0948\u0938\u0940 \u0935\u093f\u0926\u0947\u0936\u0940 \u0915\u0930\u0947\u0902\u0938\u0940 \u0915\u0940 \u0907\u0938\u0932\u093f\u090f \u092c\u0922\u093c\u0940 \u0921\u093f\u092e\u093e\u0902\u0921",
+            "seendate": "20260815T181500Z",
+            "socialimage": "https://static.langimg.com/nbt/thumb/133266185/forex-demand.jpg?imgsize=154567&resizemode=75",
+            "domain": "navbharattimes.indiatimes.com",
+            "language": "Hindi",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-14-august-2026/",
             "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 13 August 2026",
-            "seendate": "20260813T050000Z",
+            "title": "Currency exchange rates in Pakistan today \u2013 14 August 2026",
+            "seendate": "20260815T051500Z",
             "socialimage": "https://pakobserver.net/wp-content/uploads/2025/01/how-much-foreign-currency-an-individual-can-buy-per-day-in-pakistan-pakobserver-654526.jpg",
             "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.stiripesurse.ro/euro-trades-at-ron-52436-1_3912208",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-18-august-2026/",
             "url_mobile": "",
-            "title": "Euro trades at RON 5 . 2436",
-            "seendate": "20260814T114500Z",
-            "socialimage": "https://www.stiripesurse.ro/media/images/202409/1600x900/media-172682823326260900.webp",
+            "title": "Currency exchange rates in Pakistan today \u2013 18 August 2026",
+            "seendate": "20260818T043000Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/05/dollar-riyal-and-other-currency-exchange-rates-in-pakistan-today-26-may-2026-pakobserver-756848.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.stiripesurse.ro/euro-trades-at-ron-52442_3913013",
+            "url_mobile": "",
+            "title": "Euro trades at RON 5 . 2442",
+            "seendate": "20260818T123000Z",
+            "socialimage": "https://www.stiripesurse.ro/media/images/202505/1600x900/media-174652709945130900.webp",
             "domain": "stiripesurse.ro",
             "language": "English",
             "sourcecountry": "Romania"
           },
           {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-12-08-2026-7317548723447904a.html",
+            "url": "https://timesofoman.com/article/175664-tier-2-tier-3-cities-account-for-53-of-indias-forex-demand-report",
             "url_mobile": "",
-            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 12 . 08 . 2026",
-            "seendate": "20260812T083000Z",
-            "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
-            "domain": "money.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-13-08-2026-7318086288595136a.html",
-            "url_mobile": "",
-            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 13 . 08 . 2026",
-            "seendate": "20260813T181500Z",
-            "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
-            "domain": "money.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
-            "url": "https://www.bankingnews.gr/diethni/articles/893368/the-yen-sinks-back-toward-160-historic-intervention-by-us-japan-fails%20title=",
-            "url_mobile": "",
-            "title": "The yen sinks back toward 160 \u2013 Historic intervention by US , Japan fails",
-            "seendate": "20260812T104500Z",
-            "socialimage": "https://www.bankingnews.gr/media/k2/items/cache/4833e95b29addd71a60f321a7dd06e9c_XL.jpg",
-            "domain": "bankingnews.gr",
+            "title": "Tier - 2 , Tier - 3 cities account for 53 % of India forex demand : Report",
+            "seendate": "20260816T080000Z",
+            "socialimage": "https://shabiba.eu-central-1.linodeobjects.com/2026/08/1786857142-1786857142-6ejojbgjk2aw-700x400.jpeg",
+            "domain": "timesofoman.com",
             "language": "English",
-            "sourcecountry": "Greece"
+            "sourcecountry": "Oman"
           },
           {
-            "url": "https://english.news.cn/20260812/aaaf424b64f543f2b740c5281db1ec2a/c.html",
+            "url": "https://economictimes.indiatimes.com/news/india/tier-2-tier-3-cities-account-for-53-of-indias-forex-demand-report/articleshow/133264446.cms",
+            "url_mobile": "https://m.economictimes.com/news/india/tier-2-tier-3-cities-account-for-53-of-indias-forex-demand-report/amp_articleshow/133264446.cms",
+            "title": "Tier - 2 , Tier - 3 cities account for 53 % of India forex demand : Report",
+            "seendate": "20260815T150000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-133264452,width-1200,height-630,imgsize-123664,overlay-economictimes/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.thehindubusinessline.com/markets/forex/tier-2-tier-3-cities-account-for-53-of-indias-forex-demand-report/article71349965.ece",
+            "url_mobile": "https://www.thehindubusinessline.com/markets/forex/tier-2-tier-3-cities-account-for-53-of-indias-forex-demand-report/article71349965.ece/amp/",
+            "title": "Tier - 2 , Tier - 3 cities account for 53 % of India forex demand : Report",
+            "seendate": "20260815T160000Z",
+            "socialimage": "https://bl-i.thgim.com/public/incoming/37r764/article71350046.ece/alternates/LANDSCAPE_1200/03BLMounting-exG4QGB8A5B.3.jpg.jpg",
+            "domain": "thehindubusinessline.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://news.webindia123.com/news/Articles/Business/20260815/4487604.html",
             "url_mobile": "",
-            "title": "Market exchange rates in China -- Aug . 12 - Xinhua",
-            "seendate": "20260812T024500Z",
+            "title": "Tier - 2 , Tier - 3 cities account for 53 % of India forex demand : Report",
+            "seendate": "20260815T153000Z",
             "socialimage": "",
-            "domain": "english.news.cn",
+            "domain": "news.webindia123.com",
             "language": "English",
-            "sourcecountry": ""
+            "sourcecountry": "India"
           },
           {
-            "url": "https://theconversation.com/why-the-aussie-dollar-is-climbing-back-towards-a-36-year-high-against-the-yen-289480",
+            "url": "https://aninews.in/news/business/tier-2-tier-3-cities-account-for-53-of-indias-forex-demand-report20260815191953/",
             "url_mobile": "",
-            "title": "Why the Aussie dollar is climbing back towards a 36 - year high against the yen",
-            "seendate": "20260812T011500Z",
-            "socialimage": "https://images.theconversation.com/files/753225/original/file-20260811-50-et0uch.jpg?ixlib=rb-4.1.1&rect=0%2C1035%2C6200%2C3100&q=45&auto=format&fit=crop",
-            "domain": "theconversation.com",
+            "title": "Tier - 2 , Tier - 3 cities account for 53 % of India forex demand : Report",
+            "seendate": "20260815T180000Z",
+            "socialimage": "",
+            "domain": "aninews.in",
             "language": "English",
-            "sourcecountry": "Australia"
+            "sourcecountry": "India"
           },
           {
-            "url": "https://www.ntvbd.com/economy/news-1786325",
-            "url_mobile": "https://www.ntvbd.com/economy/news-1786325?amp",
-            "title": "\u0986\u099c \u0995\u09a4 \u099f\u09be\u0995\u09be\u09df \u09ae\u09bf\u09b2\u099b\u09c7 \u09a1\u09b2\u09be\u09b0 - \u0987\u0989\u09b0\u09cb - \u09b0\u09c1\u09aa\u09bf",
-            "seendate": "20260812T091500Z",
-            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_23m/public/images/2026/08/12/ttaakaa_riyyel_ddlaar.jpg",
-            "domain": "ntvbd.com",
-            "language": "Bengali",
-            "sourcecountry": "Bangladesh"
+            "url": "https://www.nayaindia.com/business/foreign-exchange-reserves-increased-by-14-billion-to-707-billion/520566.html",
+            "url_mobile": "https://www.nayaindia.com/business/foreign-exchange-reserves-increased-by-14-billion-to-707-billion/520566.html?amp=1",
+            "title": "\u0935\u093f\u0926\u0947\u0936\u0940 \u092e\u0941\u0926\u094d\u0930\u093e \u092d\u0902\u0921\u093e\u0930 14 \u0905\u0930\u092c \u0921\u0949\u0932\u0930 \u092c\u0922\u093c\u0915\u0930 707 \u0905\u0930\u092c \u0921\u0949\u0932\u0930 \u092a\u0930 - Naya India - Hindi News , Latest Hindi News , Breaking News , Hindi Samachar",
+            "seendate": "20260815T163000Z",
+            "socialimage": "https://www.nayaindia.com/wp-content/uploads/2026/08/Foreign-Exchange-Reserves-Increased-By-14-Billion-To-707-Billion.jpg",
+            "domain": "nayaindia.com",
+            "language": "Hindi",
+            "sourcecountry": "India"
           },
           {
-            "url": "https://www.ntvbd.com/economy/news-1786957",
-            "url_mobile": "https://www.ntvbd.com/economy/news-1786957?amp",
-            "title": "\u0986\u099c \u0995\u09a4 \u099f\u09be\u0995\u09be\u09df \u09ae\u09bf\u09b2\u099b\u09c7 \u09a1\u09b2\u09be\u09b0 - \u0987\u0989\u09b0\u09cb - \u09b0\u09c1\u09aa\u09bf",
-            "seendate": "20260813T061500Z",
-            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_23m/public/images/2026/08/13/dollar555.jpg",
-            "domain": "ntvbd.com",
-            "language": "Bengali",
-            "sourcecountry": "Bangladesh"
-          },
-          {
-            "url": "https://finance.yahoo.com/markets/currencies/articles/yen-sinks-us-japan-intervention-154533274.html",
+            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-17-08-2026-7319318306531456a.html",
             "url_mobile": "",
-            "title": "Yen sinks as US - Japan intervention unravels",
-            "seendate": "20260812T001500Z",
-            "socialimage": "https://s.yimg.com/lo/mysterio/api/91A766A3CB6F846E338383630FCB34F2C001140CE0A9160FBCBC6722C0700382/subgraphmysterio/resizefill_w1200_h752;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_telegraph_258%2F6aee8ac88ef982feb9067b0ced9c6ee8",
-            "domain": "finance.yahoo.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://b24.am/finance/463077.html",
-            "url_mobile": "https://b24.am/finance/463077.html?amp",
-            "title": "\u0534\u0578\u056c\u0561\u0580\u056b \u0583\u0578\u056d\u0561\u0580\u056a\u0565\u0584\u0576 \u0561\u0573\u0565\u056c \u0567 , \u0565\u057e\u0580\u0578\u0576 \u0578\u0582 \u0578\u057d\u056f\u0578\u0582 \u0563\u056b\u0576\u0576 \u055d \u0576\u057e\u0561\u0566\u0565\u056c . \u0540\u0540 \u053f\u0532 , 11 / 08 / 2026",
-            "seendate": "20260811T170000Z",
-            "socialimage": "https://b24.am/pub/uploads/2009/08/100000Dram.jpg",
-            "domain": "b24.am",
-            "language": "Armenian",
-            "sourcecountry": "Armenia"
+            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 17 . 08 . 2026",
+            "seendate": "20260817T053000Z",
+            "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
+            "domain": "money.pl",
+            "language": "Polish",
+            "sourcecountry": "Poland"
           }
         ]
       }
@@ -768,7 +768,7 @@
       }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-08-13T17:40:45.505048+00:00",
+      "fetched_at_utc": "2026-08-18T17:10:38.424042+00:00",
       "payload": {
         "articles": [
           {
@@ -780,6 +780,16 @@
             "domain": "theguardian.com",
             "language": "English",
             "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://finance.yahoo.com/economy/articles/uk-wage-growth-lags-iran-093511035.html",
+            "url_mobile": "",
+            "title": "UK wage growth lags as Iran war weighs on cost of living",
+            "seendate": "20260818T104500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/BC52D52E6CCC5AF9919F714963831102078E2B81EEA9BACDE14D5DB063CD1D82/subgraphmysterio/resizefill_w1200_h675;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Feuronews_us_articles_576%2F04059f9795b09c4578b96f16a14af3ad.jpg",
+            "domain": "finance.yahoo.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
             "url": "https://www.tradingsat.com/actualites/marches-financiers/royaume-uni-le-pib-augmente-a-nouveau-au-2e-trimestre-1168530.html",
@@ -795,9 +805,19 @@
       }
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-08-17T17:08:00.907017+00:00",
+      "fetched_at_utc": "2026-08-18T17:10:58.018471+00:00",
       "payload": {
         "articles": [
+          {
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-18-august-2026/",
+            "url_mobile": "",
+            "title": "Currency exchange rates in Pakistan today \u2013 18 August 2026",
+            "seendate": "20260818T043000Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/05/dollar-riyal-and-other-currency-exchange-rates-in-pakistan-today-26-may-2026-pakobserver-756848.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
           {
             "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-14-august-2026/",
             "url_mobile": "",
@@ -813,6 +833,16 @@
             "url_mobile": "",
             "title": "Currency Exchange Rates in Pakistan Today",
             "seendate": "20260817T061500Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://en.dailypakistan.com.pk/18-Aug-2026/currency-exchange-rates-in-pakistan-today-18-august-2026",
+            "url_mobile": "",
+            "title": "Currency Exchange Rates in Pakistan Today",
+            "seendate": "20260818T054500Z",
             "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
             "domain": "en.dailypakistan.com.pk",
             "language": "English",
@@ -839,34 +869,14 @@
             "sourcecountry": "Philippines"
           },
           {
-            "url": "https://www.mvariety.com/business/business_news/dollar-treads-water-as-fed-hike-bets-pared-on-benign-us-inflation/article_b2f1160a-e9ab-41de-b34b-6232898be02b.html",
+            "url": "https://investinglive.com/forex/morgan-stanley-targets-eur-aud-at-1-53-backs-aussie-dollar-carry-trade/",
             "url_mobile": "",
-            "title": "Dollar treads water as Fed hike bets pared on benign US inflation",
-            "seendate": "20260814T011500Z",
-            "socialimage": "https://bloximages.newyork1.vip.townnews.com/mvariety.com/content/tncms/assets/v3/editorial/a/01/a0156e83-e73e-4053-89f7-83fe2fa57a43/6a7d7fddac87f.image.png?crop=881%2C463%2C0%2C57",
-            "domain": "mvariety.com",
+            "title": "Morgan Stanley targets EUR / AUD at 1 . 53 , backs Aussie dollar carry trade",
+            "seendate": "20260817T230000Z",
+            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/euraud%20forecast%20Morgan%20Stanley%2018%20August%202026-featured-1787005313.jpg",
+            "domain": "investinglive.com",
             "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://finance.yahoo.com/markets/currencies/articles/yens-slide-weekly-loss-prompts-014746575.html",
-            "url_mobile": "",
-            "title": "Yen slide to weekly loss prompts bets for another intervention",
-            "seendate": "20260814T021500Z",
-            "socialimage": "https://s.yimg.com/lo/mysterio/api/2B8A3BAF3AACDBFA5EF5CF3DF1CABA4E8C920F6B6F895710D9590EACB0D4E4FA/subgraphmysterio/resizefill_w1200_h785;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2Fa050c1c99e08ee232c91528cba7a3b3c.jpg",
-            "domain": "finance.yahoo.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://dunyanews.tv/en/Business/967875-yens-slide-to-weekly-loss-prompts-bets-for-another-intervention",
-            "url_mobile": "https://dunyanews.tv/amp/english/967875.php",
-            "title": "Yen slide to weekly loss prompts bets for another intervention",
-            "seendate": "20260814T041500Z",
-            "socialimage": "https://img.dunyanews.tv/news/2026/August/08-14-26/news_big_images/967875_38697915.jpg",
-            "domain": "dunyanews.tv",
-            "language": "English",
-            "sourcecountry": "Pakistan"
+            "sourcecountry": ""
           },
           {
             "url": "https://www.akm.ru/news/tsb_rf_ustanovil_na_15_avgusta_2026_goda_kursy_inostrannykh_valyut_k_rublyu/",
@@ -889,16 +899,6 @@
             "sourcecountry": "Mexico"
           },
           {
-            "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/yens-slide-to-weekly-loss-prompts-bets-for-another-intervention/articleshow/133227134.cms",
-            "url_mobile": "https://m.economictimes.com/markets/forex/forex-news/yens-slide-to-weekly-loss-prompts-bets-for-another-intervention/amp_articleshow/133227134.cms",
-            "title": "Yen slide to weekly loss prompts bets for another intervention",
-            "seendate": "20260814T024500Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-133227144,width-1200,height-630,imgsize-136816,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
             "url": "https://www.eleconomista.com.mx/mercados/peso-mexicano-rompe-piso-17-unidades-20260816-828568.html",
             "url_mobile": "https://www.eleconomista.com.mx/amp/mercados/peso-mexicano-rompe-piso-17-unidades-20260816-828568.html",
             "title": "Peso mexicano rompe el piso de las 17 unidades",
@@ -909,14 +909,24 @@
             "sourcecountry": "Mexico"
           },
           {
-            "url": "https://metrohk.com.hk/%E8%B2%A1%E7%B6%93/%E7%BE%8E%E9%9B%B6%E5%94%AE%E6%95%B8%E6%93%9A%E9%81%9C%E9%A0%90%E6%9C%9F-%E7%BE%8E%E5%85%83%E6%8C%87%E6%95%B8%E5%89%B5%E4%B8%80%E5%91%A8%E4%BD%8E%E4%BD%8D-cc125a",
+            "url": "https://sbr.com.sg/markets-investing/news/straits-trading-narrows-loss-727-111m-in-h1",
             "url_mobile": "",
-            "title": "\u7f8e\u96f6\u552e\u6578\u64da\u905c\u9810\u671f \u7f8e\u5143\u6307\u6578\u5275\u4e00\u5468\u4f4e\u4f4d\uff5cMETROHK . com . hk",
-            "seendate": "20260815T013000Z",
-            "socialimage": "",
-            "domain": "metrohk.com.hk",
-            "language": "Chinese",
-            "sourcecountry": "Hong Kong"
+            "title": "Straits Trading narrows loss by 72 . 7 % to $11 . 1m in H1",
+            "seendate": "20260818T054500Z",
+            "socialimage": "https://sbr.com.sg/s3/files/styles/opengraph/public/2026-08/pexels-rdne-8369695.jpg?h=d186ac64&itok=uGjUAFkR",
+            "domain": "sbr.com.sg",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://www.freemalaysiatoday.com/category/business/2026/08/18/dollar-edges-lower-against-euro-as-markets-trim-us-rate-hike-bets",
+            "url_mobile": "",
+            "title": "Dollar edges lower against euro as markets trim US rate hike bets",
+            "seendate": "20260818T021500Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2025/06/8cf9f2bb-dollar_1_1600x1000_1.webp",
+            "domain": "freemalaysiatoday.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
           }
         ]
       }
@@ -1029,11 +1039,11 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-08-17T17:09:34.892040+00:00",
+      "fetched_at_utc": "2026-08-18T17:13:31.793238+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-08-17T17:10:09.894411+00:00",
+      "fetched_at_utc": "2026-08-18T17:14:04.400836+00:00",
       "payload": {
         "articles": [
           {
@@ -1042,6 +1052,16 @@
             "title": "Currency exchange rates in Pakistan today \u2013 14 August 2026",
             "seendate": "20260815T051500Z",
             "socialimage": "https://pakobserver.net/wp-content/uploads/2025/01/how-much-foreign-currency-an-individual-can-buy-per-day-in-pakistan-pakobserver-654526.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-18-august-2026/",
+            "url_mobile": "",
+            "title": "Currency exchange rates in Pakistan today \u2013 18 August 2026",
+            "seendate": "20260818T043000Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/05/dollar-riyal-and-other-currency-exchange-rates-in-pakistan-today-26-may-2026-pakobserver-756848.jpg",
             "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
@@ -1067,6 +1087,16 @@
             "sourcecountry": "Pakistan"
           },
           {
+            "url": "https://en.dailypakistan.com.pk/18-Aug-2026/currency-exchange-rates-in-pakistan-today-18-august-2026",
+            "url_mobile": "",
+            "title": "Currency Exchange Rates in Pakistan Today",
+            "seendate": "20260818T054500Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
             "url": "https://www.arabnews.com/node/2654848/business-economy",
             "url_mobile": "https://www.arabnews.com/node/2654848/amp",
             "title": "Sukuk liquidity nears pre - war levels as recovery remains uneven : Fitch",
@@ -1075,6 +1105,26 @@
             "domain": "arabnews.com",
             "language": "English",
             "sourcecountry": "Saudi Arabia"
+          },
+          {
+            "url": "https://www.moneycontrol.com/news/business/markets/first-tick-top-global-cues-to-watch-in-today-s-trade-210-14007795.html",
+            "url_mobile": "https://www.moneycontrol.com/news/business/markets/first-tick-top-global-cues-to-watch-in-today-s-trade-210-14007795.html/amp",
+            "title": "First Tick : Top global cues to watch in today trade",
+            "seendate": "20260818T024500Z",
+            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/03/20260314033855_sensex_nifty_stock_markets.jpg",
+            "domain": "moneycontrol.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.investegate.co.uk/announcement/rns/aseana-properties-ltd---aspl/half-year-results/9727883",
+            "url_mobile": "",
+            "title": "Half - year Results | Company Announcement",
+            "seendate": "20260818T141500Z",
+            "socialimage": "",
+            "domain": "investegate.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
           }
         ]
       }
@@ -1682,19 +1732,9 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-08-17T17:11:43.054141+00:00",
+      "fetched_at_utc": "2026-08-18T17:16:11.590930+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "http://www.econotimes.com/Malaysia-Inflation-Eases-to-18-in-July-Below-Forecast-1749623",
-            "url_mobile": "",
-            "title": "Malaysia Inflation Eases to 1 . 8 % in July , Below Forecast",
-            "seendate": "20260817T060000Z",
-            "socialimage": "https://f1.econotimes.com/2015/08/eerd0bu11k.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
           {
             "url": "https://www.enanyang.my/news/20260814/Finance/1347935",
             "url_mobile": "",
@@ -1704,6 +1744,16 @@
             "domain": "enanyang.my",
             "language": "Chinese",
             "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "http://www.econotimes.com/Malaysia-Inflation-Eases-to-18-in-July-Below-Forecast-1749623",
+            "url_mobile": "",
+            "title": "Malaysia Inflation Eases to 1 . 8 % in July , Below Forecast",
+            "seendate": "20260817T060000Z",
+            "socialimage": "https://f1.econotimes.com/2015/08/eerd0bu11k.jpg",
+            "domain": "econotimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
             "url": "https://www.humanresourcesonline.net/malaysia-s-economy-powers-ahead-as-exports-drive-6-growth-in-q2-2026-dosm",
@@ -1756,14 +1806,14 @@
             "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://www.orientaldaily.com.my/news/east-malaysia/2026/08/11/839922",
+            "url": "https://www.theepochtimes.com/business/is-this-market-overbought-and-due-for-a-correction-6076535",
             "url_mobile": "",
-            "title": "2024\u5e74\u6536\u5165\u8fbe142\u4ebf \u7802\u8d22\u52a1\u8868\u73b0\u50b2\u89c6\u5168\u56fd | \u4e1c\u9a6c | \u5730\u65b9",
-            "seendate": "20260811T134500Z",
-            "socialimage": "https://www.orientaldaily.com.my/storage/resize_cache/images/uploads/news-cover/2026/AUG_2026/20260811/67.jpeg/d4205f6c21e18d451f41f3d19b38464c.jpeg",
-            "domain": "orientaldaily.com.my",
-            "language": "Chinese",
-            "sourcecountry": "Malaysia"
+            "title": "Is This Market Overbought and Due for a Correction ? ",
+            "seendate": "20260818T164500Z",
+            "socialimage": "https://img.theepochtimes.com/assets/uploads/2024/01/30/id5576939-GettyImages-1258278653-1080x720.jpeg",
+            "domain": "theepochtimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
             "url": "https://www.thestar.com.my/business/business-news/2026/08/13/ringgit-closes-almost-unchanged-vs-us-ahead-of-2q-gdp-announcement",
@@ -1813,7 +1863,7 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-17T16:57:34.632405+00:00",
+      "fetched_at_utc": "2026-08-18T17:01:11.784894+00:00",
       "payload": {
         "articles": [
           {
@@ -1827,241 +1877,241 @@
             "sourcecountry": "China"
           },
           {
-            "url": "https://katu.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T021500Z",
-            "socialimage": "https://katu.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "katu.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818000018",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000018",
+            "title": " [ \ub274\uc2a4\ud54c \uc774 \uc2dc\uac01 PICK ] \ud2b8\ub7fc\ud504  \uae40\uc815\uc740 \ub300\ud654 \uc694\uccad\uc5d0 \uc751\ub2f5  \u5916",
+            "seendate": "20260817T231500Z",
+            "socialimage": "https://img.newspim.com/news/2026/08/18/2608180738007200_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://wpde.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T021500Z",
-            "socialimage": "https://wpde.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "wpde.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818000026",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000026",
+            "title": "\ubc31\uc885\uc6d0 TBK \uc18c\uc2a4 , \u7f8e\uc11c \uc9c1\uc811 \uc0dd\uc0b0\ud55c\ub2e4 \u2026 \ubd81\ubbf8 \uacf5\uae09 \uac70\uc810 \uad6c\ucd95 \ub098\uc11c",
+            "seendate": "20260817T231500Z",
+            "socialimage": "https://img.newspim.com/news/2026/08/18/2608180757128880_710_tc.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://wjla.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T010000Z",
-            "socialimage": "https://wjla.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "wjla.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818000013",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000013",
+            "title": " [ \ubbf8\uad6d \ud2b9\uc9d5\uc8fc ] \uc6b0\ubc84 , \uc9d1\ub77c\uc778\uacfc \uc190\uc7a1\uace0 \ubbf8\uad6d\uc11c \uc6b0\ubc84\uc774\uce20 \ub4dc\ub860 \ubc30\uc1a1",
+            "seendate": "20260817T231500Z",
+            "socialimage": "https://img.newspim.com/news/2026/08/18/2608180637565230_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://wlos.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T043000Z",
-            "socialimage": "https://wlos.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "wlos.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818000011",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000011",
+            "title": " [ \ucc44\uad8c / \uc678\ud658 ] AI\u767c \ucc28\uc785 \u00b7 \uc7ac\uc815 \uc6b0\ub824\uc5d0 \u7f8e 30\ub144\ubb3c \uad6d\ucc44\uae08\ub9ac  \uaed1\ucda9 ... \ub2ec\ub7ec \uc57d\uc138",
+            "seendate": "20260817T231500Z",
+            "socialimage": "https://img.newspim.com/news/2021/05/21/2105210442513010_465_tc.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://13wham.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T044500Z",
-            "socialimage": "https://13wham.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "13wham.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260817000193",
+            "url_mobile": "https://m.newspim.com/news/view/20260817000193",
+            "title": " [ \uc624\ub298\ub0a0\uc528 ] \ucda9\uccad \u00b7 \ub0a8\ubd80 \uacf3\uacf3 \uc18c\ub098\uae30 \u2026 \ud55c\ub0ae 33\ub3c4",
+            "seendate": "20260817T231500Z",
+            "socialimage": "https://img.newspim.com/news/2026/07/20/260720131219379_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://wwmt.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T033000Z",
-            "socialimage": "https://wwmt.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "wwmt.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818000017",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000017",
+            "title": " [ \ube0c\ub77c\uc9c8\uc99d\uc2dc ] \ub300\uc120 \u00b7 \uc7ac\uc815 \ubd88\ud655\uc2e4\uc131\uc5d0 \uc9c0\uc815\ud559\ub9ac\uc2a4\ud06c\uae4c\uc9c0 \u2026 10\uac70\ub798\uc77c\uc9f8 \ud558\ub77d",
+            "seendate": "20260817T231500Z",
+            "socialimage": "https://img.newspim.com/news/2021/10/21/2110211120341040_623_tc.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://abc6onyourside.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T013000Z",
-            "socialimage": "https://abc6onyourside.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "abc6onyourside.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818000024",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000024",
+            "title": "\u4e2d 1\uc120\ub3c4\uc2dc \uae30\uc874 \uc8fc\ud0dd 5\uac1c\uc6d4\uc9f8 \uc0c1\uc2b9 , \uad11\uc800\uc6b0 \uc0c1\uc2b9\ud3ed \ucd5c\ub300",
+            "seendate": "20260817T231500Z",
+            "socialimage": "https://img.newspim.com/news/2026/08/18/2608180755271960_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://katv.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T043000Z",
-            "socialimage": "https://katv.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "katv.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818001020",
+            "url_mobile": "https://m.newspim.com/news/view/20260818001020",
+            "title": "\ube44\ud22c\uc5d4 , \ucd5c\ub300\uc8fc\uc8fc \uc2a4\ud2b8\ub808\uc9c01\ud638\uc870\ud569\uc73c\ub85c \ubcc0\uacbd",
+            "seendate": "20260818T064500Z",
+            "socialimage": "https://img.newspim.com/news/2024/08/20/2408200959441770_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://wcyb.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T050000Z",
-            "socialimage": "https://wcyb.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "wcyb.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818001014",
+            "url_mobile": "https://m.newspim.com/news/view/20260818001014",
+            "title": "\ud53c\uc2a4\ud53c\uc2a4\uc2a4\ud29c\ub514\uc624 , \uc0c1\ud558\uc774 \uc548\ud478\ub8e8\uc5d0 \uccab \ub300\ud615 \ud50c\ub798\uadf8\uc2ed \ucd9c\uc810",
+            "seendate": "20260818T064500Z",
+            "socialimage": "https://img.newspim.com/news/2026/04/08/2604081627330750_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://turnto10.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T041500Z",
-            "socialimage": "https://turnto10.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "turnto10.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818000929",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000929",
+            "title": "\uc2a4\ub9c8\ud2b8\ud0a4\ud37c , \uc18c\ud654\ud328\uce58 \ud0d1\uc7ac \uc2e0\uc81c\ud488 \ucd9c\uc2dc ... \uc804\uae30\ud654\uc7ac \uc6d0\ucc9c \ucc28\ub2e8  ",
+            "seendate": "20260818T064500Z",
+            "socialimage": "https://img.newspim.com/news/2026/08/18/2608181428103510_410_tc.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://kfdm.com/news/nation-world/fact-check-team-why-one-inflation-report-can-move-wall-street-rate-borrowing-price-consumers-housing-food-energy",
-            "url_mobile": "",
-            "title": "Fact Check Team : Why one inflation report can move Wall Street",
-            "seendate": "20260814T013000Z",
-            "socialimage": "https://kfdm.com/resources/media2/16x9/6000/1320/0x1/90/16c6ad10-4e3a-441d-9da6-c3f01fb9f3e8-GettyImages2289192346.jpg",
-            "domain": "kfdm.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://www.newspim.com/news/view/20260818000988",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000988",
+            "title": "\ubbf8\ub798\uc5d0\uc14b\ubc15\ud604\uc8fc\uc7ac\ub2e8 , \u4e2d \uc120\uc804 \ubc29\ubb38\ud574  \uae00\ub85c\ubc8c \ubb38\ud654\uccb4\ud5d8\ub2e8  \uc131\ub8cc",
+            "seendate": "20260818T064500Z",
+            "socialimage": "https://img.newspim.com/news/2026/08/18/2608181458268400_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           }
         ]
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-13T17:36:55.841609+00:00",
+      "fetched_at_utc": "2026-08-18T17:06:26.819024+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://alfajertv.com/cocktail/economy/738392.html",
+            "url": "https://www.elwatannews.com/news/details/8341738",
             "url_mobile": "",
-            "title": "\u062a\u0628\u0627\u064a\u0646 \u0633\u064a\u0627\u0633\u0627\u062a \u0627\u0644\u0628\u0646\u0648\u0643 \u0627\u0644\u0645\u0631\u0643\u0632\u064a\u0629 \u0641\u064a \u0639\u0627\u0645 2026 : \u0627\u0644\u0645\u0648\u0636\u0648\u0639 \u0627\u0644\u0643\u0644\u064a \u0627\u0644\u0630\u064a \u064a\u062c\u0628 \u0639\u0644\u0649 \u0643\u0644 \u0645\u062a\u062f\u0627\u0648\u0644 \u0641\u0647\u0645\u0647 \u2013 \u062a\u0644\u0641\u0632\u064a\u0648\u0646 \u0627\u0644\u0641\u062c\u0631",
-            "seendate": "20260810T130000Z",
-            "socialimage": "https://alfajertv.com/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-10-at-12.28.44-PM.jpeg",
-            "domain": "alfajertv.com",
+            "title": "\u0645\u062d\u0644\u0644 \u0627\u0642\u062a\u0635\u0627\u062f\u064a : \u0627\u0644\u062a\u0636\u062e\u0645 \u064a\u062f\u0641\u0639 \u0627\u0644\u0628\u0646\u0648\u0643 \u0627\u0644\u0643\u0628\u064a\u0631\u0629 \u0646\u062d\u0648 \u062a\u063a\u064a\u064a\u0631 \u0627\u0644\u0633\u064a\u0627\u0633\u0627\u062a \u0627\u0644\u0646\u0642\u062f\u064a\u0629",
+            "seendate": "20260818T140000Z",
+            "socialimage": "https://media.elwatannews.com/media/img/Large/2026/8/18/2026_8_18_16_37_8_293.png",
+            "domain": "elwatannews.com",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
+          },
+          {
+            "url": "https://www.aljazeera.net/ebusiness/2026/8/16/inflation-banks-interest-rates",
+            "url_mobile": "https://www.aljazeera.net/amp/ebusiness/2026/8/16/inflation-banks-interest-rates",
+            "title": "\u0627\u0644\u062a\u0636\u062e\u0645 \u064a\u0631\u062a\u0641\u0639 \u0648\u0633\u0637 \u0627\u0633\u062a\u0639\u062f\u0627\u062f \u0627\u0644\u0628\u0646\u0648\u0643 \u0627\u0644\u0645\u0631\u0643\u0632\u064a\u0629 \u0644\u0631\u0641\u0639 \u0627\u0644\u0641\u0627\u0626\u062f\u0629 | \u0627\u0642\u062a\u0635\u0627\u062f",
+            "seendate": "20260816T210000Z",
+            "socialimage": "https://www.aljazeera.net/wp-content/uploads/2026/06/getty_6a269596df-1780913558.jpg",
+            "domain": "aljazeera.net",
             "language": "Arabic",
             "sourcecountry": "Israel"
           },
           {
-            "url": "https://www.emaratalyoum.com/business/arab-and-inter/2026-08-10-1.2072802",
-            "url_mobile": "https://www.emaratalyoum.com/business/arab-and-inter/2026-08-10-1.2072802?ot=ot.AMPPageLayout",
-            "title": " \u00ab JustMarkets \u00bb: \u062a\u0628\u0627\u064a\u0646 \u0633\u064a\u0627\u0633\u0627\u062a \u0627\u0644\u0628\u0646\u0648\u0643 \u0627\u0644\u0645\u0631\u0643\u0632\u064a\u0629 \u0641\u064a \u0639\u0627\u0645 2026 .. \u0627\u0644\u0645\u0648\u0636\u0648\u0639 \u0627\u0644\u0643\u0644\u064a \u0627\u0644\u0630\u064a \u064a\u062c\u0628 \u0639\u0644\u0649 \u0643\u0644 \u0645\u062a\u062f\u0627\u0648\u0644 \u0641\u0647\u0645\u0647",
-            "seendate": "20260810T130000Z",
-            "socialimage": "https://www.emaratalyoum.com/polopoly_fs/1.2072805.1786362809!/image/image.jpeg",
-            "domain": "emaratalyoum.com",
+            "url": "https://www.arabtimesonline.com/news/kuwait-gold-rides-global-wave-to-kd-436/",
+            "url_mobile": "",
+            "title": "Kuwait gold rides global wave to KD 43 . 6",
+            "seendate": "20260817T000000Z",
+            "socialimage": "https://www.arabtimesonline.com/arabtimes/uploads/images/2026/08/16/thumbs/400x400/139026.jpg",
+            "domain": "arabtimesonline.com",
+            "language": "English",
+            "sourcecountry": "Kuwait"
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-softer-070021827.html",
+            "url_mobile": "",
+            "title": "US Dollar Price Forecast : Softer PPI Boosts Fed Cut Bets \u2013 Can EUR / USD and GBP / USD Rally ? ",
+            "seendate": "20260815T091500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/BBCCA8C7606D6C4DCFF1DBA2A46FF79706D0217E46E1A79CABB271609F710656/subgraphmysterio/resizefill_w1200_h800;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Ffx_empire_176%2F666425ca521b1883fdc5bbd51e30d589.jpg",
+            "domain": "finance.yahoo.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.lykavitos.gr/news/economy/ekt-83-ton-oikonomologon-vlepei-ayksisi-epitokion",
+            "url_mobile": "https://www.lykavitos.gr/news/economy/ekt-83-ton-oikonomologon-vlepei-ayksisi-epitokion/amp",
+            "title": "\u0395\u039a\u03a4 : 83 % \u03c4\u03c9\u03bd \u03bf\u03b9\u03ba\u03bf\u03bd\u03bf\u03bc\u03bf\u03bb\u03cc\u03b3\u03c9\u03bd \u03b2\u03bb\u03ad\u03c0\u03b5\u03b9 \u03b1\u03cd\u03be\u03b7\u03c3\u03b7 \u03b5\u03c0\u03b9\u03c4\u03bf\u03ba\u03af\u03c9\u03bd",
+            "seendate": "20260814T230000Z",
+            "socialimage": "https://www.lykavitos.gr/sites/default/files/styles/social_image/public/2023-04/EKT-eurwpaiki-kentriki-trapeza-15.jpg?itok=yMZ6G6Io",
+            "domain": "lykavitos.gr",
+            "language": "Greek",
+            "sourcecountry": "Greece"
+          },
+          {
+            "url": "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/se-ypsila-18etias-to-kostos-daneismou-ton-megalon/",
+            "url_mobile": "https://www.in.gr/2026/08/17/economy/diethnis-oikonomia/se-ypsila-18etias-to-kostos-daneismou-ton-megalon/amp/",
+            "title": "\u03a3\u03b5 \u03c5\u03c8\u03b7\u03bb\u03ac 18\u03b5\u03c4\u03af\u03b1\u03c2 \u03c4\u03bf \u03ba\u03cc\u03c3\u03c4\u03bf\u03c2 \u03b4\u03b1\u03bd\u03b5\u03b9\u03c3\u03bc\u03bf\u03cd \u03c4\u03c9\u03bd \u00ab \u03bc\u03b5\u03b3\u03ac\u03bb\u03c9\u03bd \u00bb ",
+            "seendate": "20260817T193000Z",
+            "socialimage": "https://www.in.gr/wp-content/uploads/2026/08/ibrahim-boran-bnW9O5ZOys4-unsplash-1200x800.jpg",
+            "domain": "in.gr",
+            "language": "Greek",
+            "sourcecountry": "Greece"
+          },
+          {
+            "url": "https://www.newsit.gr/oikonomia/finance/ta-omologa-germanias-kai-gallias-xtypane-kampanaki-stin-eyrozoni/4752530/",
+            "url_mobile": "https://www.newsit.gr/oikonomia/finance/ta-omologa-germanias-kai-gallias-xtypane-kampanaki-stin-eyrozoni/4752530/amp/",
+            "title": "\u03a4\u03b1 \u03bf\u03bc\u03cc\u03bb\u03bf\u03b3\u03b1 \u0393\u03b5\u03c1\u03bc\u03b1\u03bd\u03af\u03b1\u03c2 \u03ba\u03b1\u03b9 \u0393\u03b1\u03bb\u03bb\u03af\u03b1\u03c2 \u03c7\u03c4\u03c5\u03c0\u03ac\u03bd\u03b5 \u00ab \u03ba\u03b1\u03bc\u03c0\u03b1\u03bd\u03ac\u03ba\u03b9 \u00bb \u03c3\u03c4\u03b7\u03bd \u0395\u03c5\u03c1\u03c9\u03b6\u03ce\u03bd\u03b7",
+            "seendate": "20260818T060000Z",
+            "socialimage": "https://www.newsit.gr/wp-content/uploads/2026/08/istock-1168372533-1-1200x630.jpg",
+            "domain": "newsit.gr",
+            "language": "Greek",
+            "sourcecountry": "Greece"
+          },
+          {
+            "url": "https://ru.euronews.com/business/2026/08/18/european-bond-yields-reached-multi-year-highs-due-to-inflation-fears-linked-to-the-war-in",
+            "url_mobile": "",
+            "title": "\u0414\u043e\u0445\u043e\u0434\u043d\u043e\u0441\u0442\u0438 \u0435\u0432\u0440\u043e\u0431\u043e\u043d\u0434\u043e\u0432 \u043d\u0430 \u043c\u043d\u043e\u0433\u043e\u043b\u0435\u0442\u043d\u0438\u0445 \u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c\u0430\u0445 \u0438\u0437 \u2011 \u0437\u0430 \u0438\u043d\u0444\u043b\u044f\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u0440\u0438\u0441\u043a\u043e\u0432 \u0432\u043e\u0439\u043d\u044b \u0441 \u0418\u0440\u0430\u043d\u043e\u043c",
+            "seendate": "20260818T120000Z",
+            "socialimage": "https://images.euronews.com/articles/stories/09/87/84/22/1200x675_cmsv2_87c84369-e239-5437-a884-77e69f30c73b-9878422.jpg",
+            "domain": "ru.euronews.com",
+            "language": "Russian",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://arabic.euronews.com/business/2026/08/18/european-bond-yields-reached-multi-year-highs-due-to-inflation-fears-linked-to-the-war-in",
+            "url_mobile": "",
+            "title": "\u0639\u0648\u0627\u0626\u062f \u0627\u0644\u0633\u0646\u062f\u0627\u062a \u0627\u0644\u0623\u0648\u0631\u0648\u0628\u064a\u0629 \u062a\u0631\u062a\u0641\u0639 \u0644\u0623\u0639\u0644\u0649 \u0645\u0633\u062a\u0648\u064a\u0627\u062a\u0647\u0627 \u0645\u0646\u0630 \u0623\u0639\u0648\u0627\u0645 \u0628\u0633\u0628\u0628 \u0645\u062e\u0627\u0648\u0641 \u062a\u0636\u062e\u0645 \u0645\u0646 \u062d\u0631\u0628 \u0625\u064a\u0631\u0627\u0646",
+            "seendate": "20260818T143000Z",
+            "socialimage": "https://images.euronews.com/articles/stories/09/87/84/22/1200x675_cmsv2_87c84369-e239-5437-a884-77e69f30c73b-9878422.jpg",
+            "domain": "arabic.euronews.com",
             "language": "Arabic",
-            "sourcecountry": "United Arab Emirates"
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://www.riotimesonline.com/germany-italy-core-inflation/",
-            "url_mobile": "",
-            "title": "Germany and Italy Share the Euro but Not the Same Inflation",
-            "seendate": "20260813T113000Z",
-            "socialimage": "https://www.riotimesonline.com/wp-content/uploads/2025/09/EBC.jpg",
-            "domain": "riotimesonline.com",
-            "language": "English",
-            "sourcecountry": "Brazil"
+            "url": "https://www.dw.com/sr/su%C5%A1a-pa-onda-skupo%C4%87a-i-inflacija/a-78405885",
+            "url_mobile": "https://amp.dw.com/sr/su%C5%A1a-pa-onda-skupo%C4%87a-i-inflacija/a-78405885",
+            "title": "Su\u0161a - pa onda skupo\u0107a i inflacija",
+            "seendate": "20260818T060000Z",
+            "socialimage": "https://static.dw.com/image/78364830_6.jpg",
+            "domain": "dw.com",
+            "language": "Serbian",
+            "sourcecountry": "Germany"
           },
           {
-            "url": "https://www.morningstar.com/economy/will-ecb-raise-interest-rates-again-2026-cut-them-2027",
+            "url": "https://www.taxydromos.gr/diethni/1355510/gia-kindyno-megalis-ayxisis-plithorismoy-kai-chreoys-exaitias-ton-amyntikon-dapanon-stin-eyropi-proeidopoiei-i-ekt/",
             "url_mobile": "",
-            "title": "Will the ECB Raise Interest Rates Again in 2026 , but Cut Them in 2027 ? ",
-            "seendate": "20260813T141500Z",
-            "socialimage": "https://media.morningstar.com/resizer/v2/P7E2DXOMOFFU7PFHBY7N2DOUJQ.png?auth=4b211f8a75eec3d72ba221cd1fa7d7c19c51159550a32ac9294db92b23096261&quality=80&focal=1423,707",
-            "domain": "morningstar.com",
-            "language": "English",
-            "sourcecountry": "China"
+            "title": "\u0393\u03b9\u03b1 \u03ba\u03af\u03bd\u03b4\u03c5\u03bd\u03bf \u03b1\u03cd\u03be\u03b7\u03c3\u03b7\u03c2 \u03c0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03bf\u03cd \u03ba\u03b1\u03b9 \u03c7\u03c1\u03ad\u03bf\u03c5\u03c2 \u03b5\u03be\u03b1\u03b9\u03c4\u03af\u03b1\u03c2 \u03c4\u03c9\u03bd \u03b1\u03bc\u03c5\u03bd\u03c4\u03b9\u03ba\u03ce\u03bd \u03b4\u03b1\u03c0\u03b1\u03bd\u03ce\u03bd \u03c0\u03c1\u03bf\u03b5\u03b9\u03b4\u03bf\u03c0\u03bf\u03b9\u03b5\u03af \u03b7 \u0395\u039a\u03a4",
+            "seendate": "20260817T210000Z",
+            "socialimage": "https://www.taxydromos.gr/wp-content/uploads/2026/08/ChatGPT-Image-17-%CE%91%CF%85%CE%B3-2026-09_50_54-%CE%BC.%CE%BC-1200x630.png",
+            "domain": "taxydromos.gr",
+            "language": "Greek",
+            "sourcecountry": "Greece"
           },
           {
-            "url": "https://www.novinky.cz/clanek/ekonomika-jen-znovu-oslabuje-zasah-usa-a-japonska-rychle-ztraci-ucinek-40592081",
+            "url": "https://www.merkur.de/wirtschaft/inflation-in-deutschland-prozent-und-die-rueckkehr-des-oelpreisschocks-zr-94443886.html",
             "url_mobile": "",
-            "title": "Jen znovu oslabuje , z\u00e1sah united states a Japonska rychle ztr\u00e1c\u00ed \u00fa\u010dinek",
-            "seendate": "20260812T163000Z",
-            "socialimage": "https://d15-a.sdn.cz/d_15/c_img_QM_z/fwJIq/japonsky-jen-jen-japonsko-mena.jpeg?fl=cro,0,242,4667,2625%7Cres,1200,,1%7Cjpg,80,,1",
-            "domain": "novinky.cz",
-            "language": "Czech",
-            "sourcecountry": "Czech Republic"
-          },
-          {
-            "url": "https://www.theguardian.com/business/live/2026/aug/11/oil-prices-rise-gold-hits-two-month-high-trump-makes-new-deal-demands-iran-live-updates",
-            "url_mobile": "",
-            "title": "Oil prices rise and gold hits two - month high after Trump makes new deal demands on Iran \u2013 business live",
-            "seendate": "20260811T071500Z",
-            "socialimage": "https://i.guim.co.uk/img/media/1a3f40bf33675928aa27bb725be47eac23c82560/421_0_4662_3729/master/4662.jpg?&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=5666c7d12bf71ab014da2cd353060d40",
-            "domain": "theguardian.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.investor.bg/a/539-banki-i-zastrahovateli/435037-norvezhkata-tsentralna-banka-zapazva-lihvite-bez-promyana-no-ochakva-povisheniya-v-badeshte",
-            "url_mobile": "",
-            "title": "\u041d\u043e\u0440\u0432\u0435\u0436\u043a\u0430\u0442\u0430 \u0446\u0435\u043d\u0442\u0440\u0430\u043b\u043d\u0430 \u0431\u0430\u043d\u043a\u0430 \u0437\u0430\u043f\u0430\u0437\u0432\u0430 \u043b\u0438\u0445\u0432\u0438\u0442\u0435 \u0431\u0435\u0437 \u043f\u0440\u043e\u043c\u044f\u043d\u0430 , \u043d\u043e \u043e\u0447\u0430\u043a\u0432\u0430 \u043f\u043e\u0432\u0438\u0448\u0435\u043d\u0438\u044f \u0432 \u0431\u044a\u0434\u0435\u0449\u0435",
-            "seendate": "20260813T103000Z",
-            "socialimage": "https://www.investor.bg/media/files/resized/article/1280x720/97b/d07e6a3390fe7fae67f81e37c06ef97b-464106420.jpg",
-            "domain": "investor.bg",
-            "language": "Bulgarian",
-            "sourcecountry": "Bulgaria"
-          },
-          {
-            "url": "https://en.shafaqna.com/470632/ecb-to-raise-interest-rates/",
-            "url_mobile": "",
-            "title": "ECB to raise interest rates \u2013 Shafaqna English | International Shia News & Fatwas",
-            "seendate": "20260813T111500Z",
+            "title": "Inflation in Deutschland : 2 , 8 Prozent und die R\u00fcckkehr des \u00d6lpreisschocks",
+            "seendate": "20260814T171500Z",
             "socialimage": "",
-            "domain": "en.shafaqna.com",
-            "language": "English",
-            "sourcecountry": "Saudi Arabia"
-          },
-          {
-            "url": "https://www.theage.com.au/business/markets/trump-bought-japan-some-time-but-the-alarm-bells-are-ringing-20260810-p60mtw.html",
-            "url_mobile": "",
-            "title": "Japan currency : Trump buys Japan time but he hasnt",
-            "seendate": "20260810T023000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.4139%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/d08c413182998f3a557e8c5788cea7175ea45ec3",
-            "domain": "theage.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.irishtimes.com/business/2026/08/13/irish-inflation-unchanged-at-34-amid-uncertainty-of-middle-east-peace-deal/",
-            "url_mobile": "",
-            "title": "Irish inflation unchanged at 3 . 4 % amid uncertainty of Middle East peace deal",
-            "seendate": "20260813T114500Z",
-            "socialimage": "https://www.irishtimes.com/resizer/v2/7QQGIVOKQNGCHPUVUH7YRBG7V4.jpg?smart=true&auth=f8835a1f34c6922733a8b91aff850f2620184d2a84d48560e860f0404f1595d7",
-            "domain": "irishtimes.com",
-            "language": "English",
-            "sourcecountry": "Ireland"
-          },
-          {
-            "url": "https://www.maariv.co.il/economy/international/article-1354523",
-            "url_mobile": "",
-            "title": "\u05d4\u05d7\u05d5\u05dd \u05de\u05db\u05d4 \u05d1\u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 : \u05de\u05d0\u05d5\u05ea \u05de\u05d9\u05dc\u05d9\u05d0\u05e8\u05d3\u05d9 \u05d0\u05d9\u05e8\u05d5 \u05db\u05d1\u05e8 \u05d9\u05e8\u05d3\u05d5 \u05dc\u05d8\u05de\u05d9\u05d5\u05df",
-            "seendate": "20260810T220000Z",
-            "socialimage": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1110405",
-            "domain": "maariv.co.il",
-            "language": "Hebrew",
-            "sourcecountry": "Israel"
-          },
-          {
-            "url": "https://www.diepresse.com/41171176/studie-oesterreich-bei-arbeitskosten-im-eu-spitzenfeld",
-            "url_mobile": "",
-            "title": "Studie : \u00d6sterreich bei Arbeitskosten im EU - Spitzenfeld",
-            "seendate": "20260813T111500Z",
-            "socialimage": "https://img.diepresse.com/public/incoming/xgyqs0-THEMENBILD-PAKET-ARBEITBAU/alternates/WEBP_WIDE_1200/THEMENBILD-PAKET%20ARBEITBAU",
-            "domain": "diepresse.com",
+            "domain": "merkur.de",
             "language": "German",
-            "sourcecountry": "Austria"
+            "sourcecountry": "Germany"
           }
         ]
       }
@@ -2092,7 +2142,7 @@
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
-      "fetched_at_utc": "2026-08-17T17:01:48.440061+00:00",
+      "fetched_at_utc": "2026-08-18T17:05:11.457139+00:00",
       "payload": {
         "articles": [
           {
