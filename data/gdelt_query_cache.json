@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-08-19T17:16:28.939519+00:00",
+  "updated_at_utc": "2026-08-20T17:23:15.426021+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-08-17T16:56:30.398095+00:00",
@@ -129,45 +129,15 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-08-19T16:59:04.350122+00:00",
+      "fetched_at_utc": "2026-08-20T17:04:08.234576+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://bworldonline.com/banking-finance/2026/08/13/769817/peso-rebounds-vs-dollar-on-expectations-of-soft-us-consumer-inflation/",
-            "url_mobile": "",
-            "title": "Peso rebounds vs dollar on expectations of soft US consumer inflation",
-            "seendate": "20260812T170000Z",
-            "socialimage": "https://bworldonline.com/wp-content/uploads/2021/10/Peso-currency-1.jpg",
-            "domain": "bworldonline.com",
-            "language": "English",
-            "sourcecountry": "Philippines"
-          },
-          {
-            "url": "https://www.proactiveinvestors.co.uk/companies/news/1096920/ftse-100-live-uk-blue-chips-as-wall-street-opens-higher-us-inflation-print-damps-rate-hike-fears-1096920.html",
-            "url_mobile": "",
-            "title": "FTSE 100 Live : united kingdom blue - chips as Wall Street opens higher ; US inflation print damps rate hike fears",
-            "seendate": "20260812T170000Z",
-            "socialimage": "https://cdn.proactiveinvestors.com/eyJidWNrZXQiOiJwYS1jZG4iLCJrZXkiOiJ1cGxvYWRcL05ld3NcL0ltYWdlXC8yMDI2XzA4XC9zaHV0dGVyc3RvY2stMTU2NTYyNDI3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0Ijo2MzAsImZpdCI6ImNvdmVyIn19fQ==",
-            "domain": "proactiveinvestors.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
           {
             "url": "https://economictimes.indiatimes.com/nri/latest-updates/indian-embassy-seeks-urgent-legal-assistance-for-citizens-facing-challenges-in-mongolia/articleshow/133300365.cms",
             "url_mobile": "https://m.economictimes.com/nri/latest-updates/indian-embassy-seeks-urgent-legal-assistance-for-citizens-facing-challenges-in-mongolia/amp_articleshow/133300365.cms",
             "title": "Indian Embassy seeks urgent legal assistance for citizens facing challenges in Mongolia",
             "seendate": "20260817T160000Z",
             "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1443848,resizemode-75,msid-133300365/nri/latest-updates/indian-embassy-seeks-urgent-legal-assistance-for-citizens-facing-challenges-in-mongolia.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/tech/technology/shein-loses-uk-copyright-lawsuit-against-rival-temu-over-photos-of-clothing/articleshow/133207175.cms",
-            "url_mobile": "https://m.economictimes.com/tech/technology/shein-loses-uk-copyright-lawsuit-against-rival-temu-over-photos-of-clothing/amp_articleshow/133207175.cms",
-            "title": "Shein loses united kingdom copyright lawsuit against rival Temu over photos of clothing",
-            "seendate": "20260813T103000Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-42964,resizemode-75,msid-133207175/tech/technology/shein-loses-uk-copyright-lawsuit-against-rival-temu-over-photos-of-clothing.jpg",
             "domain": "economictimes.indiatimes.com",
             "language": "English",
             "sourcecountry": "India"
@@ -183,74 +153,104 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/black-box-secures-131-million-data-centre-order-from-u-s-hyperscaler/articleshow/133199665.cms",
-            "url_mobile": "https://m.economictimes.com/tech/artificial-intelligence/black-box-secures-131-million-data-centre-order-from-u-s-hyperscaler/amp_articleshow/133199665.cms",
-            "title": "Black Box : Black Box secures $131 million data centre order from U . S . hyperscaler",
-            "seendate": "20260813T064500Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-65205,resizemode-75,msid-133199665/tech/artificial-intelligence/black-box-secures-131-million-data-centre-order-from-u-s-hyperscaler.jpg",
+            "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-scales-back-funding-guarantee-for-ohio-openai-data-centre-wsj/articleshow/133253982.cms",
+            "url_mobile": "https://m.economictimes.com/tech/technology/nvidia-scales-back-funding-guarantee-for-ohio-openai-data-centre-wsj/amp_articleshow/133253982.cms",
+            "title": "Nvidia scales back funding guarantee for Ohio OpenAI data centre : WSJ",
+            "seendate": "20260815T033000Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-125632,resizemode-75,msid-133253982/tech/technology/nvidia-scales-back-funding-guarantee-for-ohio-openai-data-centre-wsj.jpg",
             "domain": "economictimes.indiatimes.com",
             "language": "English",
             "sourcecountry": "India"
           },
           {
-            "url": "https://www.haberturk.com/bilgi/foto/canli-altin-fiyatlari-13-agustos-2026-persembe-bugun-guncel-tam-yarim-cumhuriyet-ceyrek-ve-gram-altin-fiyatlari-ne-kadar-kac-tl-oldu-3905231",
-            "url_mobile": "",
-            "title": "CANLI ALTIN F\u0130YATLARI | 13 A\u011fustos 2026 Per\u015fembe bug\u00fcn g\u00fcncel tam , yar\u0131m , Cumhuriyet , \u00e7eyrek ve gram alt\u0131n fiyatlar\u0131 ne kadar , ka\u00e7 TL oldu ? ",
-            "seendate": "20260813T044500Z",
-            "socialimage": "",
-            "domain": "haberturk.com",
+            "url": "https://economictimes.indiatimes.com/opinion/just-in-jest/independence-day-2026-order-of-the-empire-wheres-the-empire/articleshow/133248710.cms",
+            "url_mobile": "https://m.economictimes.com/opinion/just-in-jest/independence-day-2026-order-of-the-empire-wheres-the-empire/amp_articleshow/133248710.cms",
+            "title": "Order of the empire ? Where the empire ? - The Economic Times",
+            "seendate": "20260814T184500Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-67340,resizemode-75,msid-133248710/opinion/just-in-jest/independence-day-2026-order-of-the-empire-wheres-the-empire.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.thehindubusinessline.com/opinion/us-ai-infrastructure-bet-and-lessons-for-india/article71342183.ece",
+            "url_mobile": "https://www.thehindubusinessline.com/opinion/us-ai-infrastructure-bet-and-lessons-for-india/article71342183.ece/amp/",
+            "title": "U AI infrastructure bet and lessons for India - The HinduBusinessLine",
+            "seendate": "20260814T014500Z",
+            "socialimage": "https://bl-i.thgim.com/public/incoming/ig5rxc/article71342247.ece/alternates/LANDSCAPE_1200/Telangana-set-tG28GAV3CP.3.jpg.jpg",
+            "domain": "thehindubusinessline.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/tech/technology/ecommerce-order-volumes-up-31-during-independence-day-sales/articleshow/133277675.cms",
+            "url_mobile": "https://m.economictimes.com/tech/technology/ecommerce-order-volumes-up-31-during-independence-day-sales/amp_articleshow/133277675.cms",
+            "title": "Ecommerce order volumes up 31 % during Independence Day sales",
+            "seendate": "20260816T160000Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-72810,resizemode-75,msid-133277675/tech/technology/ecommerce-order-volumes-up-31-during-independence-day-sales.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea/articleshow/133337688.cms",
+            "url_mobile": "https://m.economictimes.com/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea/amp_articleshow/133337688.cms",
+            "title": "China rocket recovery : China recovers rocket stage on land for first time , after earlier recovery at sea",
+            "seendate": "20260819T054500Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-8052775,resizemode-75,msid-133337688/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/tech/technology/paypal-in-talks-with-stripe-and-private-equity-firm-over-sale-report/articleshow/133253761.cms",
+            "url_mobile": "https://m.economictimes.com/tech/technology/paypal-in-talks-with-stripe-and-private-equity-firm-over-sale-report/amp_articleshow/133253761.cms",
+            "title": "PayPal in talks with Stripe and private equity firm over sale : report",
+            "seendate": "20260815T014500Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-48864,resizemode-75,msid-133253761/tech/technology/paypal-in-talks-with-stripe-and-private-equity-firm-over-sale-report.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/tech/startups/us-rocket-company-astra-space-seeks-to-raise-250-million-in-comeback-bid/articleshow/133241760.cms",
+            "url_mobile": "https://m.economictimes.com/tech/startups/us-rocket-company-astra-space-seeks-to-raise-250-million-in-comeback-bid/amp_articleshow/133241760.cms",
+            "title": "US rocket company Astra Space seeks to raise $250 million in comeback bid",
+            "seendate": "20260814T133000Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1968208,resizemode-75,msid-133241760/tech/startups/us-rocket-company-astra-space-seeks-to-raise-250-million-in-comeback-bid.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/tech/technology/amazon-reinstates-binding-arbitration-bars-class-action-lawsuits/articleshow/133253950.cms",
+            "url_mobile": "https://m.economictimes.com/tech/technology/amazon-reinstates-binding-arbitration-bars-class-action-lawsuits/amp_articleshow/133253950.cms",
+            "title": "Amazon reinstates binding arbitration , bars class - action lawsuits",
+            "seendate": "20260815T033000Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-131788,resizemode-75,msid-133253950/tech/technology/amazon-reinstates-binding-arbitration-bars-class-action-lawsuits.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://ekonomi.haber7.com/ekonomi/haber/3651221-fedden-gelecek-karar-altinin-yonunu-degistirebilir",
+            "url_mobile": "https://m.haber7.com/amphtml/ekonomi/haber/3651221-fedden-gelecek-karar-altinin-yonunu-degistirebilir",
+            "title": "Fedden gelecek karar alt\u0131n\u0131n y\u00f6n\u00fcn\u00fc de\u011fi\u015ftirebilir ! - Ekonomi Haberleri EKONOM\u0130",
+            "seendate": "20260814T084500Z",
+            "socialimage": "https://i12.haber7.net/haber/haber7/og_image/2026/33/fedden_gelecek_karar_altinin_yonunu_degistirebilir_1786696139_5411.jpg",
+            "domain": "ekonomi.haber7.com",
             "language": "Turkish",
             "sourcecountry": "Turkey"
           },
           {
-            "url": "https://economictimes.indiatimes.com/tech/technology/chinas-jd-com-tops-quarterly-revenue-estimates/articleshow/133208610.cms",
-            "url_mobile": "https://m.economictimes.com/tech/technology/chinas-jd-com-tops-quarterly-revenue-estimates/amp_articleshow/133208610.cms",
-            "title": "China JD . com tops quarterly revenue estimates - The Economic Times",
-            "seendate": "20260813T111500Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-107552,resizemode-75,msid-133208610/tech/technology/chinas-jd-com-tops-quarterly-revenue-estimates.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/tech/technology/swiggy-says-one-in-every-seven-food-orders-now-comes-from-99-store/articleshow/133210559.cms",
-            "url_mobile": "https://m.economictimes.com/tech/technology/swiggy-says-one-in-every-seven-food-orders-now-comes-from-99-store/amp_articleshow/133210559.cms",
-            "title": "Swiggy says one in every seven food orders now comes from 99 Store",
-            "seendate": "20260813T123000Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-258384,resizemode-75,msid-133210559/tech/technology/swiggy-says-one-in-every-seven-food-orders-now-comes-from-99-store.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/tech/technology/china-chip-designer-kiwimoore-plans-hong-kong-ipo-at-2-billion-valuation/articleshow/133205401.cms",
-            "url_mobile": "https://m.economictimes.com/tech/technology/china-chip-designer-kiwimoore-plans-hong-kong-ipo-at-2-billion-valuation/amp_articleshow/133205401.cms",
-            "title": "China chip designer Kiwimoore plans Hong Kong IPO at $2 billion valuation",
-            "seendate": "20260813T110000Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-103784,resizemode-75,msid-133205401/tech/technology/china-chip-designer-kiwimoore-plans-hong-kong-ipo-at-2-billion-valuation.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/tech/startups/t-hub-launches-founder-fellowship-blueprint-for-deeptech-startups/articleshow/133213966.cms",
-            "url_mobile": "https://m.economictimes.com/tech/startups/t-hub-launches-founder-fellowship-blueprint-for-deeptech-startups/amp_articleshow/133213966.cms",
-            "title": "T - Hub launches founder fellowship  Blueprint  for deeptech startups",
-            "seendate": "20260813T143000Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-10548,resizemode-75,msid-133213966/tech/startups/t-hub-launches-founder-fellowship-blueprint-for-deeptech-startups.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/tech/funding/home-cleaning-products-startup-scrubsy-raises-rs-27-crore-from-v3-ventures/articleshow/133199108.cms",
-            "url_mobile": "https://m.economictimes.com/tech/funding/home-cleaning-products-startup-scrubsy-raises-rs-27-crore-from-v3-ventures/amp_articleshow/133199108.cms",
-            "title": "Scrubsy : Home - cleaning products startup Scrubsy raises Rs 27 crore from V3 Ventures",
-            "seendate": "20260813T061500Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1118794,resizemode-75,msid-133199108/tech/funding/home-cleaning-products-startup-scrubsy-raises-rs-27-crore-from-v3-ventures.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
+            "url": "https://www.portfolio.hu/gazdasag/20260817/fontos-konjunkturaadatok-hete-jon-856596",
+            "url_mobile": "",
+            "title": "Fontos konjunkt\u00faraadatok hete j\u00f6n",
+            "seendate": "20260817T061500Z",
+            "socialimage": "https://pcdn.hu/articles/images-xl/e/b/_/eb-europai-bizottsag-europai-unio-eu-621467.jpg",
+            "domain": "portfolio.hu",
+            "language": "Hungarian",
+            "sourcecountry": "Hungary"
           }
         ]
       }
@@ -514,7 +514,7 @@
       }
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
-      "fetched_at_utc": "2026-08-19T17:05:52.933062+00:00",
+      "fetched_at_utc": "2026-08-20T17:11:12.506636+00:00",
       "payload": {
         "articles": [
           {
@@ -522,26 +522,6 @@
             "url_mobile": "",
             "title": "Economia e finanza : gli avvenimenti di VENERDI  14 agosto",
             "seendate": "20260813T211500Z",
-            "socialimage": "",
-            "domain": "borsaitaliana.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/economia-e-finanza-gli-avvenimenti-di-venerdi--14-agosto-nRC_12082026_1933_522278149.html",
-            "url_mobile": "",
-            "title": "Economia e finanza : gli avvenimenti di VENERDI  14 agosto",
-            "seendate": "20260812T213000Z",
-            "socialimage": "",
-            "domain": "borsaitaliana.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/economia-e-finanza-gli-avvenimenti-di-venerdi--14-agosto-nRC_13082026_0720_7103277.html",
-            "url_mobile": "",
-            "title": "Economia e finanza : gli avvenimenti di VENERDI  14 agosto",
-            "seendate": "20260813T071500Z",
             "socialimage": "",
             "domain": "borsaitaliana.it",
             "language": "Italian",
@@ -636,6 +616,26 @@
             "domain": "karjalainen.fi",
             "language": "Finnish",
             "sourcecountry": "Finland"
+          },
+          {
+            "url": "https://www.sb.by/articles/litva-stala-vtoroy-v-es-po-urovnyu-godovoy-inflyatsii-v-iyule.html",
+            "url_mobile": "https://www.sb.by/articles/litva-stala-vtoroy-v-es-po-urovnyu-godovoy-inflyatsii-v-iyule.html?amp=1",
+            "title": "\u041b\u0438\u0442\u0432\u0430 \u0441\u0442\u0430\u043b\u0430 \u0432\u0442\u043e\u0440\u043e\u0439 \u0432 \u0415\u0421 \u043f\u043e \u0443\u0440\u043e\u0432\u043d\u044e \u0433\u043e\u0434\u043e\u0432\u043e\u0439 \u0438\u043d\u0444\u043b\u044f\u0446\u0438\u0438 \u0432 \u0438\u044e\u043b\u0435 \u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u044c \u0434\u043e\u0441\u0442\u0438\u0433 5 , 4 % ",
+            "seendate": "20260820T101500Z",
+            "socialimage": "https://io.sb.by/storage01/iblock/06f/06faba8288aea5f87f38dbd0a2208372/6be23f638e16195a01ab26b00be92885.jpg",
+            "domain": "sb.by",
+            "language": "Russian",
+            "sourcecountry": "Belarus"
+          },
+          {
+            "url": "http://www.reporter.gr/diethnh/diethneis-eidhseis/683051-evrozoni-to-aep-afksithike-kata-0-4-to-v-trimino-2026",
+            "url_mobile": "",
+            "title": "\u0395\u03c5\u03c1\u03c9\u03b6\u03ce\u03bd\u03b7 : \u03a4\u03bf \u0391\u0395\u03a0 \u03b1\u03c5\u03be\u03ae\u03b8\u03b7\u03ba\u03b5 \u03ba\u03b1\u03c4\u03ac 0 , 4 % \u03c4\u03bf \u03b2  \u03c4\u03c1\u03af\u03bc\u03b7\u03bd\u03bf 2026",
+            "seendate": "20260814T111500Z",
+            "socialimage": "https://www.reporter.gr/media/k2/items/cache/01e0e91824b0eb9344c7cf50ea50cc04_L.jpg",
+            "domain": "reporter.gr",
+            "language": "Greek",
+            "sourcecountry": "Greece"
           }
         ]
       }
@@ -1498,19 +1498,9 @@
       }
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-19T17:07:10.259572+00:00",
+      "fetched_at_utc": "2026-08-20T17:12:46.916578+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.okaz.com.sa/economy/na/2261499",
-            "url_mobile": "https://www.okaz.com.sa/ampArticle/2261499",
-            "title": "\u062a\u0633\u0627\u0631\u0639 \u0627\u0644\u062a\u0636\u062e\u0645 \u0641\u064a \u0628\u0631\u064a\u0637\u0627\u0646\u064a\u0627 \u0628\u0633\u0628\u0628 \u0646\u0642\u0635 \u0631\u0642\u0627\u0626\u0642 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-            "seendate": "20260816T084500Z",
-            "socialimage": "https://www.okaz.com.sa/okaz/uploads/images/2026/08/16/2751224.webp",
-            "domain": "okaz.com.sa",
-            "language": "Arabic",
-            "sourcecountry": "Saudi Arabia"
-          },
           {
             "url": "https://www.dostor.org/5672500",
             "url_mobile": "",
@@ -1532,42 +1522,12 @@
             "sourcecountry": "Lebanon"
           },
           {
-            "url": "https://www.theguardian.com/business/2026/aug/16/new-uk-cost-of-living-crisis-looms-rising-energy-bills-inflation",
-            "url_mobile": "",
-            "title": "New united kingdom cost of living crisis looms with soaring energy bills forecast to lift inflation",
-            "seendate": "20260816T053000Z",
-            "socialimage": "https://i.guim.co.uk/img/media/40e2709d6ab1818cac0173dac8116cdbf673d354/398_0_2703_2162/master/2703.jpg?&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ae32a68caca8d4fc27af6be39db5f61e",
-            "domain": "theguardian.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.aol.co.uk/articles/uk-cost-living-crisis-looms-050016000.html",
-            "url_mobile": "",
-            "title": "New united kingdom cost of living crisis looms with soaring energy bills forecast to lift inflation",
-            "seendate": "20260816T061500Z",
-            "socialimage": "https://hermes.media.static.aol.com/media/2026/08/16/371cb041-c3df-39da-a282-5765ea3b5ad5/2109cacd-1855-4aa2-bd4c-e6ae11a49414.jpg",
-            "domain": "aol.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
             "url": "https://moneyweek.com/economy/inside-the-bank-of-england-moneyweek-talks",
             "url_mobile": "",
             "title": "Inside the Bank of England : Gold vaults and  giant  bank notes",
             "seendate": "20260819T080000Z",
             "socialimage": "https://cdn.mos.cms.futurecdn.net/UiUdAkkaiPvxcBqmajyCkh-1280-80.jpg",
             "domain": "moneyweek.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.kentonline.co.uk/news/national/what-impact-will-july-s-energy-price-hike-have-on-uk-inflation-figures-170599/",
-            "url_mobile": "",
-            "title": "What impact will July energy price hike have on united kingdom inflation figures ? ",
-            "seendate": "20260816T093000Z",
-            "socialimage": "https://www.kentonline.co.uk/_media/img/QTYZ8JZ7CCSWEBUURPXO.jpg",
-            "domain": "kentonline.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           },
@@ -1582,6 +1542,16 @@
             "sourcecountry": "United Kingdom"
           },
           {
+            "url": "https://oilprice.com/Energy/Energy-General/UK-Inflation-Jumps-to-29-as-Energy-Bills-Bite.html",
+            "url_mobile": "https://oilprice.com/Energy/Energy-General/UK-Inflation-Jumps-to-29-as-Energy-Bills-Bite.amp.html",
+            "title": "UK Inflation Jumps to 2 . 9 % as Energy Bills Bite",
+            "seendate": "20260819T203000Z",
+            "socialimage": "https://d32r1sh890xpii.cloudfront.net/article/1200x675/2026-08-19_uy7l0rqeqx.jpg",
+            "domain": "oilprice.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
             "url": "https://www.aol.co.uk/articles/uk-inflation-jumps-2-9-070834000.html",
             "url_mobile": "",
             "title": "UK inflation jumps to 2 . 9 % in blow to Burnham cost of living push",
@@ -1592,32 +1562,62 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.edp24.co.uk/news/national/26468214.impact-will-julys-energy-price-hike-uk-inflation-figures/",
+            "url": "https://www.theargus.co.uk/news/national/26475165.energy-price-cap-hike-set-send-july-inflation-surging/",
             "url_mobile": "",
-            "title": "What impact will July energy price hike have on united kingdom inflation figures ? ",
-            "seendate": "20260816T100000Z",
-            "socialimage": "https://www.edp24.co.uk/resources/images/20940178.jpg?type=og-image",
-            "domain": "edp24.co.uk",
+            "title": "Energy price cap hike set to send July inflation surging",
+            "seendate": "20260818T153000Z",
+            "socialimage": "https://www.theargus.co.uk/resources/images/21336647.jpg?type=og-image",
+            "domain": "theargus.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.bournemouthecho.co.uk/news/national/26468214.impact-will-julys-energy-price-hike-uk-inflation-figures/",
+            "url": "https://www.salisburyjournal.co.uk/news/national/26475165.energy-price-cap-hike-set-send-july-inflation-surging/",
             "url_mobile": "",
-            "title": "What impact will July energy price hike have on united kingdom inflation figures ? ",
-            "seendate": "20260816T093000Z",
-            "socialimage": "https://www.bournemouthecho.co.uk/resources/images/20940178.jpg?type=og-image",
-            "domain": "bournemouthecho.co.uk",
+            "title": "Energy price cap hike set to send July inflation surging",
+            "seendate": "20260818T153000Z",
+            "socialimage": "https://www.salisburyjournal.co.uk/resources/images/21336647.jpg?type=og-image",
+            "domain": "salisburyjournal.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.thetelegraphandargus.co.uk/news/national/26468214.impact-will-julys-energy-price-hike-uk-inflation-figures/",
+            "url": "https://www.eadt.co.uk/news/national/26475165.energy-price-cap-hike-set-send-july-inflation-surging/",
             "url_mobile": "",
-            "title": "What impact will July energy price hike have on united kingdom inflation figures ? ",
-            "seendate": "20260816T101500Z",
-            "socialimage": "https://www.thetelegraphandargus.co.uk/resources/images/20940178.jpg?type=og-image",
-            "domain": "thetelegraphandargus.co.uk",
+            "title": "Energy price cap hike set to send July inflation surging",
+            "seendate": "20260818T161500Z",
+            "socialimage": "https://www.eadt.co.uk/resources/images/21336647.jpg?type=og-image",
+            "domain": "eadt.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.lbc.co.uk/article/20d8fcb3399547c692d99c6e04bb3612-5HjdgFy_2/",
+            "url_mobile": "",
+            "title": "Energy price cap hike set to send July inflation surging",
+            "seendate": "20260818T163000Z",
+            "socialimage": "https://images.globalplayer.com/images/835865?crop=16_9&signature=b-3zfHm1Xqc8zRO016io_Q6NZ3Q=",
+            "domain": "lbc.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "http://www.econotimes.com/FxWirePro-GBP-NZD-downside-pressure-builds-key-support-level-in-focus-1749955",
+            "url_mobile": "",
+            "title": "FxWirePro : GBP / NZD downside pressure builds , key support level in focus",
+            "seendate": "20260820T001500Z",
+            "socialimage": "https://f1.econotimes.com/2026/08/qgqjxfm14a.jpg",
+            "domain": "econotimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.oxfordmail.co.uk/news/national/26475165.energy-price-cap-hike-set-send-july-inflation-surging/",
+            "url_mobile": "",
+            "title": "Energy price cap hike set to send July inflation surging",
+            "seendate": "20260818T154500Z",
+            "socialimage": "https://www.oxfordmail.co.uk/resources/images/21336647.jpg?type=og-image",
+            "domain": "oxfordmail.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           }
@@ -1625,128 +1625,128 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-14T17:41:25.405206+00:00",
+      "fetched_at_utc": "2026-08-20T17:14:49.340666+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/australia-central-bank-holds-rates-steady-keeps-hike-table",
+            "url": "https://finance.yahoo.com/economy/articles/australia-jobless-rate-hits-near-022035239.html",
             "url_mobile": "",
-            "title": "Australia central bank holds rates steady , keeps hike on table",
-            "seendate": "20260811T071500Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/b221753976d6552994daf01e1e53a1fecfc52a4b9a62fe6e5512e8dcb5075b85?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "http://www.australianherald.com/news/279233894/australia-central-bank-keeps-interest-rates-at-435",
-            "url_mobile": "",
-            "title": "Australia central bank keeps interest rates at 4 . 35 % ",
-            "seendate": "20260811T134500Z",
-            "socialimage": "",
-            "domain": "australianherald.com",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.afr.com/policy/economy/housing-tax-changes-make-interest-rate-rise-less-likely-rba-20260813-p60o10",
-            "url_mobile": "",
-            "title": "RBA says housing tax changes make interest rate rise less likely",
-            "seendate": "20260813T071500Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.5051%2C$multiply_2%2C$ratio_1.777778%2C$width_1059%2C$x_394%2C$y_165/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/17b679c2ea8c4634877a99da12929d6de76a9646",
-            "domain": "afr.com",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.brokernews.com.au/news/breaking-news/the-rba-makes-latest-rate-call-289794.aspx",
-            "url_mobile": "",
-            "title": "The RBA makes latest rate call",
-            "seendate": "20260811T053000Z",
-            "socialimage": "https://cdn-res.keymedia.com/cms/images/ab/kell_639220195153155361.png",
-            "domain": "brokernews.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.afr.com/markets/debt-markets/markets-whipsawed-by-tough-talking-rba-governor-20260810-p60n13",
-            "url_mobile": "",
-            "title": "RBA interest rates : Markets and traders whipsawed by tough talking RBA governor Michele Bullock",
-            "seendate": "20260811T084500Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.1887%2C$multiply_4%2C$ratio_1.777778%2C$width_1059%2C$x_183%2C$y_184/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/f42472d6c48b53a44679ea33791402df01c95216",
-            "domain": "afr.com",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.theepochtimes.com/world/commonwealth-bank-posts-10-9-billion-profit-warns-of-slowing-economy-6074072",
-            "url_mobile": "",
-            "title": "Commonwealth Bank Posts Near $11 Billion Profit , Warns of Slowing Economy",
-            "seendate": "20260812T044500Z",
-            "socialimage": "https://img.theepochtimes.com/assets/uploads/2026/08/12/id6074080-GettyImages-2229091528-1.jpg",
-            "domain": "theepochtimes.com",
+            "title": "Australia jobless rate hits near five - year high of 4 . 5 % in July",
+            "seendate": "20260820T024500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/D36F141958D21259D4070429EE718CE5166218B048B7FBA383FEAB292C5D59B1/subgraphmysterio/resizefill_w1200_h870;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2Fe27750a24d9709b3aeb13ad497a4c686.jpg",
+            "domain": "finance.yahoo.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.canberratimes.com.au/story/9327841/reserve-bank-of-australia-cash-rate-holds-at-435-per-cent-again/",
+            "url": "https://investinglive.com/central-banks/rba-dep-gov-hauser-says-inflation-is-too-high-monetary-policy-needs-to-bring-it-down/",
             "url_mobile": "",
-            "title": "Reserve Bank of Australia : Cash rate holds at 4 . 35 per cent again | The Canberra Times",
-            "seendate": "20260811T071500Z",
-            "socialimage": "https://www.canberratimes.com.au/images/transform/v1/crop/frm/230199405/33a087cf-1dbc-4ae2-a381-26f7351c0d67.jpg/r0_377_5392_3208_w1200_h630_fmax.jpg",
-            "domain": "canberratimes.com.au",
+            "title": "RBA dep Gov Hauser says inflation is too high , monetary policy needs to bring it down",
+            "seendate": "20260819T071500Z",
+            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/AUD%20catching%20a%20bid19%20August%202026-featured-1787107667-featured-1787107859.jpg",
+            "domain": "investinglive.com",
+            "language": "English",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://www.afr.com/policy/economy/jobless-rate-unexpectedly-rises-to-4-5pc-20260819-p60pth",
+            "url_mobile": "",
+            "title": "Australian unemployment rate rises to 4 . 5 per cent as labour market cools",
+            "seendate": "20260820T040000Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.2811%2C$multiply_3%2C$ratio_1.777778%2C$width_1059%2C$x_67%2C$y_340/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/e18cb1c97da17ae37e39727895d60efae52387c6",
+            "domain": "afr.com",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.theguardian.com/business/live/2026/aug/11/oil-prices-rise-gold-hits-two-month-high-trump-makes-new-deal-demands-iran-live-updates",
+            "url": "https://www.933thedrive.com/2026/08/19/australia-jobless-rate-hits-near-five-year-high-of-4-5-in-july/",
             "url_mobile": "",
-            "title": "Oil prices rise and gold hits two - month high after Trump makes new deal demands on Iran \u2013 business live",
-            "seendate": "20260811T071500Z",
-            "socialimage": "https://i.guim.co.uk/img/media/1a3f40bf33675928aa27bb725be47eac23c82560/421_0_4662_3729/master/4662.jpg?&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=5666c7d12bf71ab014da2cd353060d40",
-            "domain": "theguardian.com",
+            "title": "Australia jobless rate hits near five - year high of 4 . 5 % in July",
+            "seendate": "20260820T041500Z",
+            "socialimage": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-08/20/2026-08-20T022035Z_1_LYNXMPEM7J02N_RTROPTP_3_AUSTRALIA-ECONOMY-CAFES.JPG",
+            "domain": "933thedrive.com",
             "language": "English",
-            "sourcecountry": "United Kingdom"
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/greenback-steadies-after-benign-us-inflation-curbs-fed-rate-hike-bets",
+            "url": "https://www.933thedrive.com/2026/08/18/rbas-hauser-warns-of-rate-hike-if-inflation-risks-crystallize/",
             "url_mobile": "",
-            "title": "Greenback steadies after benign US inflation curbs Fed rate hike bets",
-            "seendate": "20260813T131500Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/51c7b35ceaeb05a78d3d8bef9902fe6c7409d2d90885f462b6ed55ebf2f34528?&f=webp",
-            "domain": "businesstimes.com.sg",
+            "title": "RBA Hauser warns of rate hike if inflation risks crystallize",
+            "seendate": "20260819T034500Z",
+            "socialimage": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-08/19/2026-08-19T025627Z_1_LYNXMPEM7I04N_RTROPTP_3_AUSTRALIA-ECONOMY-RATES.JPG",
+            "domain": "933thedrive.com",
             "language": "English",
-            "sourcecountry": "Singapore"
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://www.examiner.com.au/story/9327841/reserve-bank-of-australia-cash-rate-holds-at-435-per-cent-again/",
+            "url": "https://www.investmentnews.com/equities/franklin-templeton-stays-bullish-on-equities-as-earnings-growth-tops-20/267831",
             "url_mobile": "",
-            "title": "Reserve Bank of Australia : Cash rate holds at 4 . 35 per cent again | The Examiner",
-            "seendate": "20260811T070000Z",
-            "socialimage": "https://www.examiner.com.au/images/transform/v1/crop/frm/230199405/33a087cf-1dbc-4ae2-a381-26f7351c0d67.jpg/r0_377_5392_3208_w1200_h630_fmax.jpg",
-            "domain": "examiner.com.au",
+            "title": "Franklin Templeton stays bullish on equities as earnings growth tops 20 % ",
+            "seendate": "20260817T140000Z",
+            "socialimage": "https://cdn-res.keymedia.com/cms/images/in/gene_638779484761222992.png",
+            "domain": "investmentnews.com",
             "language": "English",
-            "sourcecountry": "Australia"
+            "sourcecountry": "United States"
           },
           {
-            "url": "http://www.econotimes.com/FxWirePro-AUD-USD-range-bound-ahead-of-RBA-policy-decision-1749144",
+            "url": "https://www.dailymail.com/news/article-16065689/unemployment-rates-australia-rba.html",
+            "url_mobile": "https://www.dailymail.com/news/article-16065689/amp/unemployment-rates-australia-rba.html",
+            "title": "Australia unemployment rises as economy slows - but there an interest rate upside to the sobering news",
+            "seendate": "20260820T151500Z",
+            "socialimage": "https://i.dailymail.com/1s/2026/08/20/03/110742693-0-image-m-43_1787191448247.jpg",
+            "domain": "dailymail.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.econotimes.com/Australian-Consumer-Sentiment-Jumps-6-in-August-as-Rate-Outlook-Improves-1749730",
             "url_mobile": "",
-            "title": "FxWirePro : AUD / USD range bound ahead of RBA policy decision",
-            "seendate": "20260811T070000Z",
-            "socialimage": "https://f1.econotimes.com/2026/08/zwalijc66o.jpg",
+            "title": "Australian Consumer Sentiment Jumps 6 % in August as Rate Outlook Improves",
+            "seendate": "20260818T061500Z",
+            "socialimage": "https://f1.econotimes.com/2026/04/2xhrup2jd3.jpg",
             "domain": "econotimes.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.hellenicshippingnews.com/asia-stocks-climb-as-samsung-leads-tech-gains-singapore-stocks-hit-record-high/",
+            "url": "https://www.brokernews.com.au/news/breaking-news/unemployment-rises-slightly-289834.aspx",
             "url_mobile": "",
-            "title": "Asia stocks climb as Samsung leads tech gains ; Singapore stocks hit record high",
-            "seendate": "20260811T111500Z",
-            "socialimage": "",
-            "domain": "hellenicshippingnews.com",
+            "title": "Unemployment rises slightly",
+            "seendate": "20260820T034500Z",
+            "socialimage": "https://cdn-res.keymedia.com/cms/images/ab/kell_639227891392600044.jpg",
+            "domain": "brokernews.com.au",
             "language": "English",
-            "sourcecountry": "China"
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/articles/morning-bid-long-bessent-put-043153433.html",
+            "url_mobile": "",
+            "title": "Morning Bid : How long can this Bessent put last ? ",
+            "seendate": "20260820T051500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/ED7C8FFE59B1E69D3BCFC9A87038760708E94B900ECA162B76760EE50285E4DC/subgraphmysterio/resizefill_w1200_h800;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F896da30fdc8d9808cf5e995e7c8f10a4.jpg",
+            "domain": "finance.yahoo.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.geelongadvertiser.com.au/business/work/australian-pay-rises-wiped-out-as-costofliving-outpaces-wage-growth/news-story/b4997d6402cfa6c0677faa1880cb3edd?nk=44da28f87171ea4fbced9f10475f83a9-1787109392",
+            "url_mobile": "https://www.geelongadvertiser.com.au/business/work/australian-pay-rises-wiped-out-as-costofliving-outpaces-wage-growth/news-story/b4997d6402cfa6c0677faa1880cb3edd?amp",
+            "title": "Inflation , interest rates : Wages up but Australians lose ground",
+            "seendate": "20260819T033000Z",
+            "socialimage": "https://content.api.news/v3/images/bin/0daf733df3e0810f8156944cf627a871",
+            "domain": "geelongadvertiser.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.cairnspost.com.au/business/work/australian-pay-rises-wiped-out-as-costofliving-outpaces-wage-growth/news-story/b4997d6402cfa6c0677faa1880cb3edd?nk=040bd859f71226cf5f0def9ee9eb0ddf-1787110319",
+            "url_mobile": "",
+            "title": "Inflation , interest rates : Wages up but Australians lose ground",
+            "seendate": "20260819T034500Z",
+            "socialimage": "https://content.api.news/v3/images/bin/0daf733df3e0810f8156944cf627a871",
+            "domain": "cairnspost.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
           }
         ]
       }
@@ -1883,18 +1883,88 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-18T17:01:11.784894+00:00",
+      "fetched_at_utc": "2026-08-20T17:03:29.200016+00:00",
       "payload": {
         "articles": [
           {
-            "url": "http://www.kitco.com/news/article/2026-08-14/gold-looks-fed-minutes-housing-pmi-data-direction-next-week",
+            "url": "https://www.newsway.co.kr/news/view?ud=2026082008471951488",
             "url_mobile": "",
-            "title": "Gold looks to Fed minutes , housing , PMI data for direction next week",
-            "seendate": "20260814T204500Z",
-            "socialimage": "https://image-api.prod.kitco.com/image/fa0bd869-7de4-4fab-82ea-493a1d9885ff.png?top=0.15981657608696&left=0&.68036684783&scale_width=1920&token=719dad258adf8d458114477dd29e3a521402b921a1599a2d39fffb2ee425b46c",
-            "domain": "kitco.com",
+            "title": "  \ubb3c\uac00 \uc548 \ub0b4\ub824\uac00\uba74 \uae08\ub9ac \uc62c\ub824\uc57c ... 7\uc6d4 \uc5f0\uc900 \uc758\uc0ac\ub85d \uacf5\uac1c",
+            "seendate": "20260820T001500Z",
+            "socialimage": "https://nimage.newsway.co.kr/photo/2026/05/13/20260513000006_1200.jpg",
+            "domain": "newsway.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://newsway.co.kr/news/view?ud=2026082008471951488",
+            "url_mobile": "",
+            "title": "  \ubb3c\uac00 \uc548 \ub0b4\ub824\uac00\uba74 \uae08\ub9ac \uc62c\ub824\uc57c ... 7\uc6d4 \uc5f0\uc900 \uc758\uc0ac\ub85d \uacf5\uac1c",
+            "seendate": "20260820T034500Z",
+            "socialimage": "https://nimage.newsway.co.kr/photo/2026/05/13/20260513000006_1200.jpg",
+            "domain": "newsway.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://biz.heraldcorp.com/article/10845964",
+            "url_mobile": "",
+            "title": "7\uc6d4 FOMC \uc758\uc0ac\ub85d  \uc704\uc6d0 \ub2e4\uc218 , \ubb3c\uac00 \uc548 \uc7a1\ud788\uba74 \uae08\ub9ac \ub354 \uc62c\ub824\uc57c  ",
+            "seendate": "20260819T213000Z",
+            "socialimage": "https://wimg.heraldcorp.com/news/cms/2026/08/20/rcv.YNA.20260807.PRU20260807124701009_T1.jpg",
+            "domain": "biz.heraldcorp.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.theglobeandmail.com/business/commentary/article-bond-yields-rise-best-when-fed-chair-kevin-warsh-says-nothing-at-all/",
+            "url_mobile": "",
+            "title": "Bond yields rise best when Fed chair Kevin Warsh says nothing at all",
+            "seendate": "20260819T214500Z",
+            "socialimage": "https://www.theglobeandmail.com/resizer/v2/EHCP24FNYVBWLGNDI6F5BHUIJ4.JPG?auth=59fb72ffc7fbd4f2b6983c88b2aa13bacf75229f4aae8c79a62a56a7e4f6d1d9&quality=80&smart=true",
+            "domain": "theglobeandmail.com",
             "language": "English",
-            "sourcecountry": "China"
+            "sourcecountry": "Canada"
+          },
+          {
+            "url": "https://www.etoday.co.kr/news/view/2616142",
+            "url_mobile": "https://m.etoday.co.kr/news/view/2616142",
+            "title": "\ubbf8 \uc5f0\uc900 \ub2e4\uc218 \uc704\uc6d0  \ubb3c\uac00 \uc548 \ub0b4\ub824\uac00\uba74 \uae08\ub9ac \uc62c\ub824\uc57c  \u22ef\uc778\ud558\ub860\uc740 \uc2e4\uc885",
+            "seendate": "20260819T234500Z",
+            "socialimage": "https://img.etoday.co.kr/pto_db/2026/08/20260820072541_2375434_1200_800.jpg",
+            "domain": "etoday.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/news/international/global-trends/trump-urges-fed-to-cut-interest-rates-says-they-are-so-afraid-of-inflation/articleshow/133361700.cms",
+            "url_mobile": "https://m.economictimes.com/news/international/global-trends/trump-urges-fed-to-cut-interest-rates-says-they-are-so-afraid-of-inflation/amp_articleshow/133361700.cms",
+            "title": "Trump urges Fed to cut interest rates , says  they are so afraid of inflation  ",
+            "seendate": "20260820T024500Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-133361781,width-1200,height-630,imgsize-98090,overlay-economictimes/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.newsway.co.kr/news/view?ud=2026082009291178039",
+            "url_mobile": "",
+            "title": "  \uae08\ub9ac \uc65c \uc548 \ub0b4\ub824 ?... 7\uc6d4 \uc5f0\uc900 \uc758\uc0ac\ub85d \uacf5\uac1c\ub418\uc790 \ud130\uc9c4 \ud2b8\ub7fc\ud504\uc758 \ubd88\ub9cc",
+            "seendate": "20260820T051500Z",
+            "socialimage": "https://nimage.newsway.co.kr/photo/2026/06/11/20260611000015_1200.jpg",
+            "domain": "newsway.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://newsway.co.kr/news/view?ud=2026082009291178039",
+            "url_mobile": "",
+            "title": "  \uae08\ub9ac \uc65c \uc548 \ub0b4\ub824 ?... 7\uc6d4 \uc5f0\uc900 \uc758\uc0ac\ub85d \uacf5\uac1c\ub418\uc790 \ud130\uc9c4 \ud2b8\ub7fc\ud504\uc758 \ubd88\ub9cc",
+            "seendate": "20260820T034500Z",
+            "socialimage": "https://nimage.newsway.co.kr/photo/2026/06/11/20260611000015_1200.jpg",
+            "domain": "newsway.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
             "url": "https://www.newspim.com/news/view/20260818000018",
@@ -1932,76 +2002,6 @@
             "title": " [ \ucc44\uad8c / \uc678\ud658 ] AI\u767c \ucc28\uc785 \u00b7 \uc7ac\uc815 \uc6b0\ub824\uc5d0 \u7f8e 30\ub144\ubb3c \uad6d\ucc44\uae08\ub9ac  \uaed1\ucda9 ... \ub2ec\ub7ec \uc57d\uc138",
             "seendate": "20260817T231500Z",
             "socialimage": "https://img.newspim.com/news/2021/05/21/2105210442513010_465_tc.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newspim.com/news/view/20260817000193",
-            "url_mobile": "https://m.newspim.com/news/view/20260817000193",
-            "title": " [ \uc624\ub298\ub0a0\uc528 ] \ucda9\uccad \u00b7 \ub0a8\ubd80 \uacf3\uacf3 \uc18c\ub098\uae30 \u2026 \ud55c\ub0ae 33\ub3c4",
-            "seendate": "20260817T231500Z",
-            "socialimage": "https://img.newspim.com/news/2026/07/20/260720131219379_t1.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newspim.com/news/view/20260818000017",
-            "url_mobile": "https://m.newspim.com/news/view/20260818000017",
-            "title": " [ \ube0c\ub77c\uc9c8\uc99d\uc2dc ] \ub300\uc120 \u00b7 \uc7ac\uc815 \ubd88\ud655\uc2e4\uc131\uc5d0 \uc9c0\uc815\ud559\ub9ac\uc2a4\ud06c\uae4c\uc9c0 \u2026 10\uac70\ub798\uc77c\uc9f8 \ud558\ub77d",
-            "seendate": "20260817T231500Z",
-            "socialimage": "https://img.newspim.com/news/2021/10/21/2110211120341040_623_tc.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newspim.com/news/view/20260818000024",
-            "url_mobile": "https://m.newspim.com/news/view/20260818000024",
-            "title": "\u4e2d 1\uc120\ub3c4\uc2dc \uae30\uc874 \uc8fc\ud0dd 5\uac1c\uc6d4\uc9f8 \uc0c1\uc2b9 , \uad11\uc800\uc6b0 \uc0c1\uc2b9\ud3ed \ucd5c\ub300",
-            "seendate": "20260817T231500Z",
-            "socialimage": "https://img.newspim.com/news/2026/08/18/2608180755271960_t1.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newspim.com/news/view/20260818001020",
-            "url_mobile": "https://m.newspim.com/news/view/20260818001020",
-            "title": "\ube44\ud22c\uc5d4 , \ucd5c\ub300\uc8fc\uc8fc \uc2a4\ud2b8\ub808\uc9c01\ud638\uc870\ud569\uc73c\ub85c \ubcc0\uacbd",
-            "seendate": "20260818T064500Z",
-            "socialimage": "https://img.newspim.com/news/2024/08/20/2408200959441770_t1.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newspim.com/news/view/20260818001014",
-            "url_mobile": "https://m.newspim.com/news/view/20260818001014",
-            "title": "\ud53c\uc2a4\ud53c\uc2a4\uc2a4\ud29c\ub514\uc624 , \uc0c1\ud558\uc774 \uc548\ud478\ub8e8\uc5d0 \uccab \ub300\ud615 \ud50c\ub798\uadf8\uc2ed \ucd9c\uc810",
-            "seendate": "20260818T064500Z",
-            "socialimage": "https://img.newspim.com/news/2026/04/08/2604081627330750_t1.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newspim.com/news/view/20260818000929",
-            "url_mobile": "https://m.newspim.com/news/view/20260818000929",
-            "title": "\uc2a4\ub9c8\ud2b8\ud0a4\ud37c , \uc18c\ud654\ud328\uce58 \ud0d1\uc7ac \uc2e0\uc81c\ud488 \ucd9c\uc2dc ... \uc804\uae30\ud654\uc7ac \uc6d0\ucc9c \ucc28\ub2e8  ",
-            "seendate": "20260818T064500Z",
-            "socialimage": "https://img.newspim.com/news/2026/08/18/2608181428103510_410_tc.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newspim.com/news/view/20260818000988",
-            "url_mobile": "https://m.newspim.com/news/view/20260818000988",
-            "title": "\ubbf8\ub798\uc5d0\uc14b\ubc15\ud604\uc8fc\uc7ac\ub2e8 , \u4e2d \uc120\uc804 \ubc29\ubb38\ud574  \uae00\ub85c\ubc8c \ubb38\ud654\uccb4\ud5d8\ub2e8  \uc131\ub8cc",
-            "seendate": "20260818T064500Z",
-            "socialimage": "https://img.newspim.com/news/2026/08/18/2608181458268400_t1.jpg",
             "domain": "newspim.com",
             "language": "Korean",
             "sourcecountry": "South Korea"
@@ -2154,7 +2154,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-08-19T17:16:28.939496+00:00",
+      "fetched_at_utc": "2026-08-20T17:23:15.426001+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
