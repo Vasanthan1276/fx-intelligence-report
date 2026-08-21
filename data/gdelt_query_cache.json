@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-08-20T17:23:15.426021+00:00",
+  "updated_at_utc": "2026-08-21T17:18:37.819146+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-08-17T16:56:30.398095+00:00",
@@ -129,7 +129,7 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-08-20T17:04:08.234576+00:00",
+      "fetched_at_utc": "2026-08-21T17:04:42.826271+00:00",
       "payload": {
         "articles": [
           {
@@ -138,16 +138,6 @@
             "title": "Indian Embassy seeks urgent legal assistance for citizens facing challenges in Mongolia",
             "seendate": "20260817T160000Z",
             "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1443848,resizemode-75,msid-133300365/nri/latest-updates/indian-embassy-seeks-urgent-legal-assistance-for-citizens-facing-challenges-in-mongolia.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/tech/technology/instagram-introduces-new-wordmark-after-a-decade-logo-to-be-unchanged/articleshow/133220673.cms",
-            "url_mobile": "https://m.economictimes.com/tech/technology/instagram-introduces-new-wordmark-after-a-decade-logo-to-be-unchanged/amp_articleshow/133220673.cms",
-            "title": "Instagram introduces new wordmark after a decade , logo to be unchanged",
-            "seendate": "20260813T181500Z",
-            "socialimage": "",
             "domain": "economictimes.indiatimes.com",
             "language": "English",
             "sourcecountry": "India"
@@ -173,12 +163,12 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://www.thehindubusinessline.com/opinion/us-ai-infrastructure-bet-and-lessons-for-india/article71342183.ece",
-            "url_mobile": "https://www.thehindubusinessline.com/opinion/us-ai-infrastructure-bet-and-lessons-for-india/article71342183.ece/amp/",
-            "title": "U AI infrastructure bet and lessons for India - The HinduBusinessLine",
-            "seendate": "20260814T014500Z",
-            "socialimage": "https://bl-i.thgim.com/public/incoming/ig5rxc/article71342247.ece/alternates/LANDSCAPE_1200/Telangana-set-tG28GAV3CP.3.jpg.jpg",
-            "domain": "thehindubusinessline.com",
+            "url": "https://economictimes.indiatimes.com/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea/articleshow/133337688.cms",
+            "url_mobile": "https://m.economictimes.com/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea/amp_articleshow/133337688.cms",
+            "title": "China rocket recovery : China recovers rocket stage on land for first time , after earlier recovery at sea",
+            "seendate": "20260819T054500Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-8052775,resizemode-75,msid-133337688/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea.jpg",
+            "domain": "economictimes.indiatimes.com",
             "language": "English",
             "sourcecountry": "India"
           },
@@ -188,16 +178,6 @@
             "title": "Ecommerce order volumes up 31 % during Independence Day sales",
             "seendate": "20260816T160000Z",
             "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-72810,resizemode-75,msid-133277675/tech/technology/ecommerce-order-volumes-up-31-during-independence-day-sales.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea/articleshow/133337688.cms",
-            "url_mobile": "https://m.economictimes.com/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea/amp_articleshow/133337688.cms",
-            "title": "China rocket recovery : China recovers rocket stage on land for first time , after earlier recovery at sea",
-            "seendate": "20260819T054500Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-8052775,resizemode-75,msid-133337688/tech/technology/china-recovers-rocket-stage-on-land-for-first-time-after-earlier-recovery-at-sea.jpg",
             "domain": "economictimes.indiatimes.com",
             "language": "English",
             "sourcecountry": "India"
@@ -213,16 +193,6 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://economictimes.indiatimes.com/tech/startups/us-rocket-company-astra-space-seeks-to-raise-250-million-in-comeback-bid/articleshow/133241760.cms",
-            "url_mobile": "https://m.economictimes.com/tech/startups/us-rocket-company-astra-space-seeks-to-raise-250-million-in-comeback-bid/amp_articleshow/133241760.cms",
-            "title": "US rocket company Astra Space seeks to raise $250 million in comeback bid",
-            "seendate": "20260814T133000Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1968208,resizemode-75,msid-133241760/tech/startups/us-rocket-company-astra-space-seeks-to-raise-250-million-in-comeback-bid.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
             "url": "https://economictimes.indiatimes.com/tech/technology/amazon-reinstates-binding-arbitration-bars-class-action-lawsuits/articleshow/133253950.cms",
             "url_mobile": "https://m.economictimes.com/tech/technology/amazon-reinstates-binding-arbitration-bars-class-action-lawsuits/amp_articleshow/133253950.cms",
             "title": "Amazon reinstates binding arbitration , bars class - action lawsuits",
@@ -233,16 +203,6 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://ekonomi.haber7.com/ekonomi/haber/3651221-fedden-gelecek-karar-altinin-yonunu-degistirebilir",
-            "url_mobile": "https://m.haber7.com/amphtml/ekonomi/haber/3651221-fedden-gelecek-karar-altinin-yonunu-degistirebilir",
-            "title": "Fedden gelecek karar alt\u0131n\u0131n y\u00f6n\u00fcn\u00fc de\u011fi\u015ftirebilir ! - Ekonomi Haberleri EKONOM\u0130",
-            "seendate": "20260814T084500Z",
-            "socialimage": "https://i12.haber7.net/haber/haber7/og_image/2026/33/fedden_gelecek_karar_altinin_yonunu_degistirebilir_1786696139_5411.jpg",
-            "domain": "ekonomi.haber7.com",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
             "url": "https://www.portfolio.hu/gazdasag/20260817/fontos-konjunkturaadatok-hete-jon-856596",
             "url_mobile": "",
             "title": "Fontos konjunkt\u00faraadatok hete j\u00f6n",
@@ -251,12 +211,52 @@
             "domain": "portfolio.hu",
             "language": "Hungarian",
             "sourcecountry": "Hungary"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/opinion/et-editorial/with-a-friend-like-this-who-needs-/articleshow/133328494.cms",
+            "url_mobile": "https://m.economictimes.com/opinion/et-editorial/with-a-friend-like-this-who-needs-/amp_articleshow/133328494.cms",
+            "title": "With a friend like this , who needs ...? - The Economic Times",
+            "seendate": "20260818T174500Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-124908,resizemode-75,msid-133328494/opinion/et-editorial/with-a-friend-like-this-who-needs-.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/tech/technology/theyll-have-to-comply-with-indian-law-govt-official-on-xs-takedown-visibility-push/articleshow/133326602.cms",
+            "url_mobile": "https://m.economictimes.com/tech/technology/theyll-have-to-comply-with-indian-law-govt-official-on-xs-takedown-visibility-push/amp_articleshow/133326602.cms",
+            "title": "Theyll have to comply with Indian law : Govt official on X takedown visibility push",
+            "seendate": "20260818T161500Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-34760,resizemode-75,msid-133326602/tech/technology/theyll-have-to-comply-with-indian-law-govt-official-on-xs-takedown-visibility-push.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/chip-designer-velaura-ai-valued-at-more-than-1-billion-in-funding-round/articleshow/133340425.cms",
+            "url_mobile": "https://m.economictimes.com/tech/artificial-intelligence/chip-designer-velaura-ai-valued-at-more-than-1-billion-in-funding-round/amp_articleshow/133340425.cms",
+            "title": "Chip designer Velaura AI valued at more than $1 billion in funding round",
+            "seendate": "20260819T080000Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-29702,resizemode-75,msid-133340425/tech/artificial-intelligence/chip-designer-velaura-ai-valued-at-more-than-1-billion-in-funding-round.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/nri/study/odisha-govt-launches-scholarship-scheme-for-sc-st-students-seeking-to-study-abroad/articleshow/133321162.cms",
+            "url_mobile": "https://m.economictimes.com/nri/study/odisha-govt-launches-scholarship-scheme-for-sc-st-students-seeking-to-study-abroad/amp_articleshow/133321162.cms",
+            "title": "Odisha govt launches scholarship scheme for SC , ST students seeking to study abroad",
+            "seendate": "20260818T123000Z",
+            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-48874,resizemode-75,msid-133321162/nri/study/odisha-govt-launches-scholarship-scheme-for-sc-st-students-seeking-to-study-abroad.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
           }
         ]
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-08-19T16:59:38.114353+00:00",
+      "fetched_at_utc": "2026-08-21T17:05:07.061377+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -387,146 +387,136 @@
       }
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-14T17:33:55.762219+00:00",
+      "fetched_at_utc": "2026-08-21T17:06:24.384082+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.business-standard.com/finance/news/rbi-turns-upbeat-as-worst-of-west-asia-war-shock-recedes-demand-holds-up-126081300635_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/finance/news/rbi-turns-upbeat-as-worst-of-west-asia-war-shock-recedes-demand-holds-up-126081300635_1.html",
-            "title": "RBI turns upbeat as worst of West Asia war shock recedes , demand holds up",
-            "seendate": "20260813T060000Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/05/thumb/fitandfill/1200X628/1785935876-9525.jpg",
-            "domain": "business-standard.com",
+            "url": "https://aa.com.tr/en/economy/japan-s-slowing-growth-fuels-policy-divide-between-tokyo-bank-of-japan/4029669",
+            "url_mobile": "",
+            "title": "Japan slowing growth fuels policy divide between Tokyo , Bank of Japan",
+            "seendate": "20260817T183000Z",
+            "socialimage": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_ede22e27be4305a216774a80ae6cc6db.jpg",
+            "domain": "aa.com.tr",
             "language": "English",
-            "sourcecountry": "India"
+            "sourcecountry": "Turkey"
           },
           {
-            "url": "https://www.thehindubusinessline.com/money-and-banking/rbi-turns-upbeat-as-worst-of-iran-war-shock-recedes/article71339649.ece",
-            "url_mobile": "https://www.thehindubusinessline.com/money-and-banking/rbi-turns-upbeat-as-worst-of-iran-war-shock-recedes/article71339649.ece/amp/",
-            "title": "RBI turns upbeat as worst of Iran war shock recedes - The HinduBusinessLine",
-            "seendate": "20260813T063000Z",
-            "socialimage": "https://bl-i.thgim.com/public/incoming/3qjzi7/article71339697.ece/alternates/LANDSCAPE_1200/2026-08-05T071000Z_1003846061_RC26SMAAM70V_RTRMADP_3_INDIA-ECONOMY-RATES.JPG",
-            "domain": "thehindubusinessline.com",
-            "language": "English",
-            "sourcecountry": "India"
+            "url": "https://www.newspim.com/news/view/20260819000967",
+            "url_mobile": "https://m.newspim.com/news/view/20260819000967",
+            "title": "\u4e2d\u4f01 \ub300\ucd9c \uc5f0\uccb4\uc728 10\ub144 \ub9cc\uc5d0 \ucd5c\uace0 \u2026 \ud558\ubc18\uae30 \uacbd\uc81c  \uc2dc\ud55c\ud3ed\ud0c4  ",
+            "seendate": "20260819T073000Z",
+            "socialimage": "https://img.newspim.com/news/2026/08/19/2608191532495570_211_tc.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-bank-of-japan-could-raise-rates-in-september-eye-faster-hikes-reports/articleshow/133235665.cms",
-            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/global-market-bank-of-japan-could-raise-rates-in-september-eye-faster-hikes-reports/amp_articleshow/133235665.cms",
-            "title": "Global Market | Bank of Japan could raise rates in September , eye faster hikes : Reports",
-            "seendate": "20260814T100000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-133235728,width-1200,height-630,imgsize-81226,overlay-etmarkets/articleshow.jpg",
+            "url": "https://www.newspim.com/news/view/20260812000644",
+            "url_mobile": "https://m.newspim.com/news/view/20260812000644",
+            "title": "\ud589\uc548\ubd80 - \uc5ec\uae30\uc5b4\ub54c \ub9de\uc190 \u2026 \uc5ec\ud589\ud558\uba70 \uc4f0\ub808\uae30 \uc90d\uace0 \uc9c0\uc5ed\uacbd\uc81c\ub3c4 \uc0b4\ub9b0\ub2e4",
+            "seendate": "20260819T021500Z",
+            "socialimage": "https://img.newspim.com/news/2024/05/22/2405221512177830_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.albayan.ae/economy/business/world-economy/1546809",
+            "url_mobile": "https://www.albayan.ae/amp/economy/business/world-economy/1546809",
+            "title": "\u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0633\u062a\u0642\u0631 \u0648\u0633\u0637 \u062a\u0648\u0642\u0639\u0627\u062a \u0628\u062a\u064a\u0633\u064a\u0631 \u0627\u0644\u0633\u064a\u0627\u0633\u0629 \u0627\u0644\u0646\u0642\u062f\u064a\u0629 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629",
+            "seendate": "20260818T234500Z",
+            "socialimage": "https://www.albayan.ae/assets/images/2026/08/18/5296759.jpg",
+            "domain": "albayan.ae",
+            "language": "Arabic",
+            "sourcecountry": "United Arab Emirates"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-10-year-jgb-yield-hits-three-decade-high-on-boj-rate-hike-bets/articleshow/133311165.cms",
+            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/global-market-japans-10-year-jgb-yield-hits-three-decade-high-on-boj-rate-hike-bets/amp_articleshow/133311165.cms",
+            "title": "Global Market : Japan 10 - year JGB yield hits three - decade high on BOJ rate hike bets",
+            "seendate": "20260818T043000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-133311210,width-1200,height-630,imgsize-140448,overlay-etmarkets/articleshow.jpg",
             "domain": "economictimes.indiatimes.com",
             "language": "English",
             "sourcecountry": "India"
           },
           {
-            "url": "https://finanza.repubblica.it/News/2026/08/13/giappone_governo_favorevole_ad_aumento_dei_tassi_a_breve_da_parte_della_boj-69/",
+            "url": "https://www.sankei.com/article/20260818-EL7PS64VVFAS5PZ6B5CYEAOXTU/",
             "url_mobile": "",
-            "title": "Giappone , governo favorevole ad aumento dei tassi a breve da parte della BoJ - Economia e Finanza",
-            "seendate": "20260813T113000Z",
-            "socialimage": "",
-            "domain": "finanza.repubblica.it",
-            "language": "Italian",
-            "sourcecountry": "Kosovo"
-          },
-          {
-            "url": "https://www.aljazeera.net/ebusiness/2026/8/12/us-japan-yen",
-            "url_mobile": "https://www.aljazeera.net/amp/ebusiness/2026/8/12/us-japan-yen",
-            "title": "\u0628\u0644\u0648\u0645\u0628\u064a\u0631\u063a : \u062e\u0644\u0627\u0641 \u0623\u0645\u0631\u064a\u0643\u0627 \u0648\u0627\u0644\u064a\u0627\u0628\u0627\u0646 \u064a\u0639\u064a\u0642 \u062c\u0647\u0648\u062f \u0625\u0646\u0642\u0627\u0630 \u0627\u0644\u064a\u0646",
-            "seendate": "20260812T181500Z",
-            "socialimage": "https://www.aljazeera.net/wp-content/uploads/2026/08/ap_6a7c67d09dfcf-1786537936.jpg",
-            "domain": "aljazeera.net",
-            "language": "Arabic",
-            "sourcecountry": "Israel"
-          },
-          {
-            "url": "https://www.shorouknews.com/news/view.aspx?cdate=13082026&id=be295d65-bf64-44cc-8a55-5016a5b171ad",
-            "url_mobile": "",
-            "title": "\u0627\u0644\u062d\u0643\u0648\u0645\u0629 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a\u0629 \u062a\u0624\u064a\u062f \u062a\u0633\u0631\u064a\u0639 \u0632\u064a\u0627\u062f\u0629 \u0633\u0639\u0631 \u0627\u0644\u0641\u0627\u0626\u062f\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629",
-            "seendate": "20260813T080000Z",
-            "socialimage": "https://www.shorouknews.com/uploadedimages/Box/original/%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86%D9%8A%D8%A9%20%D8%AA%D8%A4%D9%8A%D8%AF%20%D8%AA%D8%B3%D8%B1%D9%8A%D8%B9%20%D8%B2%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%B3%D8%B9%D8%B1%20%D8%A7%D9%84%D9%81%D8%A7%D8%A6%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9.jpg",
-            "domain": "shorouknews.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://finanza.lastampa.it/News/2026/08/13/giappone-governo-favorevole-ad-aumento-dei-tassi-a-breve-da-parte-della-boj/NjlfMjAyNi0wOC0xM19UTEI",
-            "url_mobile": "",
-            "title": "Giappone , governo favorevole ad aumento dei tassi a breve da parte della BoJ",
-            "seendate": "20260813T103000Z",
-            "socialimage": "https://images.teleborsa.it/t/stabile/315085.t.W600.H340.M4.jpg",
-            "domain": "finanza.lastampa.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://www.boursorama.com/bourse/actualites/les-marches-boursiers-asiatiques-devraient-afficher-une-hausse-hebdomadaire-les-anticipations-de-hausse-des-taux-americains-s-estompant-702e065035c64b4718d2430bf5d31d91",
-            "url_mobile": "https://www.boursorama.com/bourse/actualites-amp/les-marches-boursiers-asiatiques-devraient-afficher-une-hausse-hebdomadaire-les-anticipations-de-hausse-des-taux-americains-s-estompant-702e065035c64b4718d2430bf5d31d91",
-            "title": "Les march\u00e9s boursiers asiatiques devraient afficher une hausse hebdomadaire , les anticipations de hausse des taux am\u00e9ricains sestompant - 14 / 08 / 2026 \u00e0 04 : 32",
-            "seendate": "20260814T054500Z",
-            "socialimage": "",
-            "domain": "boursorama.com",
-            "language": "French",
-            "sourcecountry": "France"
-          },
-          {
-            "url": "https://www.newsweekjapan.jp/articles/-/331278",
-            "url_mobile": "",
-            "title": "\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc \uff1a \u5186\u5b89\u662f\u6b63\u3078\u518d\u3073\u5354\u8abf\u4ecb\u5165\u3082 \u3001 \u5229\u4e0a\u3052\u52a0\u901f\u3082\u9078\u629e\u80a2\uff1d\u53e4\u6ca2\u5143\u8ca1\u52d9\u5b98 | \u30cb\u30e5\u30fc\u30ba\u30a6\u30a3\u30fc\u30af\u65e5\u672c\u7248 \u30aa\u30d5\u30a3\u30b7\u30e3\u30eb\u30b5\u30a4\u30c8",
-            "seendate": "20260814T004500Z",
-            "socialimage": "https://newsweekjapan.ismcdn.jp/mwimgs/b/7/1200x/img_b7b426a1b62b8e7a5898cf91eed0126f101883.jpg",
-            "domain": "newsweekjapan.jp",
+            "title": "\u3044\u305a\u308c\u70ba\u66ff\u306f \u300c 1\u30c9\u30eb=300\u5186 \u300d \u306b \u65e5\u672c\u306e\u8ca1\u653f\u7834\u7dbb\u306e\u6b74\u53f2\u306f\u7e70\u308a\u8fd4\u3059\u3060\u308d\u3046 \u6e21\u9089\u7f8e\u6a39 \u7d4c\u55b6\u8005\u76ee\u7dda",
+            "seendate": "20260818T174500Z",
+            "socialimage": "https://www.sankei.com/resizer/v2/KVPQYFT6BBIWXHIB6H2NXXFURA.jpg?auth=840cacad288f72fe3866bbbe45b1ccb26df147980ac2326ce62f245cc61e2fbc&quality=50&smart=true",
+            "domain": "sankei.com",
             "language": "Japanese",
             "sourcecountry": "Japan"
           },
           {
-            "url": "https://www.theepochtimes.com/opinion/japans-debt-crisis-is-a-global-warning-6074921",
+            "url": "https://www.business-standard.com/markets/capital-market-news/usd-jpy-trades-flat-around-159-core-inflation-in-japan-accelerates-in-july-126082100273_1.html",
+            "url_mobile": "https://www.business-standard.com/amp/markets/capital-market-news/usd-jpy-trades-flat-around-159-core-inflation-in-japan-accelerates-in-july-126082100273_1.html",
+            "title": "USD / JPY trades flat around 159 ; Core inflation in Japan accelerates in July",
+            "seendate": "20260821T064500Z",
+            "socialimage": "https://www.business-standard.com/assets/web-assets/images/Business_Standard_1_685x385.jpg",
+            "domain": "business-standard.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "http://www.econotimes.com/FxWirePro-USD-JPY-steadies-around-15970retains-bid-tone-1749747",
             "url_mobile": "",
-            "title": "Japan Debt Crisis Is a Global Warning",
-            "seendate": "20260813T201500Z",
-            "socialimage": "https://img.theepochtimes.com/assets/uploads/2026/08/13/id6074925-Adobe-Express-file-1-1080x720.jpg",
-            "domain": "theepochtimes.com",
+            "title": "FxWirePro : USD / JPY steadies around 159 . 70 , retains bid tone",
+            "seendate": "20260818T111500Z",
+            "socialimage": "https://f1.econotimes.com/2026/08/weh5h8edn8.jpg",
+            "domain": "econotimes.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-premarket-stocks-near-record-highs-benign-us-inflation-eclipses-oil/",
-            "url_mobile": "",
-            "title": "Premarket : Stocks near record highs ; benign U . S . inflation eclipses oil rally",
-            "seendate": "20260814T120000Z",
-            "socialimage": "https://www.theglobeandmail.com/resizer/v2/QJPH2CKYRFHOVEO2ZKQKLX46RU.JPG?auth=9541b3f5803e34688e160fa3766f00c1049457e1f06c6dd7c3cce74b6f465a8a&quality=80&smart=true",
-            "domain": "theglobeandmail.com",
+            "url": "https://www.dailysabah.com/opinion/op-ed/are-central-banks-all-hitting-the-brakes-at-once",
+            "url_mobile": "https://www.dailysabah.com/opinion/op-ed/are-central-banks-all-hitting-the-brakes-at-once/amp",
+            "title": "Are central banks all hitting the brakes at once ? ",
+            "seendate": "20260818T224500Z",
+            "socialimage": "https://idsb.tmgrup.com.tr/ly/uploads/images/2026/08/18/thumbs/1200x675/456288.jpg",
+            "domain": "dailysabah.com",
             "language": "English",
-            "sourcecountry": "Canada"
+            "sourcecountry": "Turkey"
           },
           {
-            "url": "https://finance.yahoo.com/news/yens-weekly-loss-puts-more-061643422.html",
+            "url": "https://finance.yahoo.com/economy/policy/articles/japans-core-inflation-accelerates-july-234151348.html",
             "url_mobile": "",
-            "title": "Dollar falls on surprise drop in US retail sales",
-            "seendate": "20260814T144500Z",
-            "socialimage": "https://s.yimg.com/lo/mysterio/api/64AD9D1936BFC7286B14EE068CD2A5AABA6EFD2272409FA13619BC8780EE3D4A/subgraphmysterio/resizefill_w1200_h785;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F770dce664cc1925ef5ef0a5c39835ecf.jpg",
+            "title": "Japan core inflation accelerates in July , bolsters case for rate hike",
+            "seendate": "20260821T001500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/4BF2E6BCD6EC736A75813104AD66B0CD425596638489358D805608EA168C6B53/subgraphmysterio/resizefill_w1200_h830;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F2885f7d65aadb7241564793c7289496a.jpg",
             "domain": "finance.yahoo.com",
             "language": "English",
             "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.newspim.com/news/view/20260819000614",
+            "url_mobile": "https://m.newspim.com/news/view/20260819000614",
+            "title": "\uacbd\ucc30 \ub85c\ud38c\u884c  \uc804\uacbd\uc608\uc6b0 ... \uacbd\ucc30  \uc0ac\uac74\ubb38\uc758 \u00b7 \uc0ac\uc801\uc811\ucd09 \uae08\uc9c0\uc81c \uac15\ud654\ud560 \ubc29\uce68  ",
+            "seendate": "20260819T034500Z",
+            "socialimage": "https://img.newspim.com/news/2023/07/18/2307181826108640_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.newspim.com/news/view/20260818000981",
+            "url_mobile": "https://m.newspim.com/news/view/20260818000981",
+            "title": " [ \ub274\uc2a4\ud54c \uc774 \uc2dc\uac01 PICK ] \uc624\uc138\ud6c8 , \uf9e1\ub300\ud1b5\ub839\uc5d0  \uc6a9\uc0b0\uacf5\uc6d0 \uc544\ud30c\ud2b8 \uc548\ub3fc  \u5916",
+            "seendate": "20260818T064500Z",
+            "socialimage": "https://img.newspim.com/news/2026/08/18/2608181447022560_831_tc.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           }
         ]
       }
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
-      "fetched_at_utc": "2026-08-20T17:11:12.506636+00:00",
+      "fetched_at_utc": "2026-08-21T17:08:39.764898+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/economia-e-finanza-gli-avvenimenti-di-venerdi--14-agosto-nRC_13082026_1930_527986278.html",
-            "url_mobile": "",
-            "title": "Economia e finanza : gli avvenimenti di VENERDI  14 agosto",
-            "seendate": "20260813T211500Z",
-            "socialimage": "",
-            "domain": "borsaitaliana.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
           {
             "url": "http://www.econotimes.com/FxWirePro-EUR-AUD-retreats-focus-on-near-term-support-1749561",
             "url_mobile": "",
@@ -558,66 +548,6 @@
             "sourcecountry": "Finland"
           },
           {
-            "url": "https://www.talouselama.fi/uutiset/a/0fe74245-a573-47db-b79f-c43110f6ecc0",
-            "url_mobile": "",
-            "title": "Inflaatio polkee nyt tavoitetasolla , mutta ekonomisti povaa muutosta",
-            "seendate": "20260814T090000Z",
-            "socialimage": "https://images.almatalent.fi/cx0,cy7,cw3000,ch1686,1200x/https://assets.almatalent.fi/image/05fc3d09-a859-5ccc-a1a3-be1d87241849",
-            "domain": "talouselama.fi",
-            "language": "Finnish",
-            "sourcecountry": "Finland"
-          },
-          {
-            "url": "https://www.ansa.it/sito/notizie/topnews/2026/08/14/nelleurozona-il-pil-sale-dello-04-nel-secondo-trimestre_7970a9ba-0a01-471f-959e-6fca2420facf.html",
-            "url_mobile": "",
-            "title": "NellEurozona il Pil sale dello 0 , 4 % nel secondo trimestre - Ultima ora",
-            "seendate": "20260814T094500Z",
-            "socialimage": "https://www.ansa.it/webimages/img_1280x720/2026/8/14/0807a3040134b3de4862879ef0e16ae9.jpg",
-            "domain": "ansa.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://www.ansa.it/sito/notizie/economia/2026/08/14/nelleurozona-il-pil-sale-dello-04-nel-secondo-trimestre_1cb86fe1-2974-48d0-b4ed-07dc90cb8155.html",
-            "url_mobile": "https://www.ansa.it/amp/sito/notizie/economia/2026/08/14/nelleurozona-il-pil-sale-dello-04-nel-secondo-trimestre_1cb86fe1-2974-48d0-b4ed-07dc90cb8155.html",
-            "title": "NellEurozona il Pil sale dello 0 , 4 % nel secondo trimestre - Notizie",
-            "seendate": "20260814T100000Z",
-            "socialimage": "https://www.ansa.it/webimages/img_1280x720/2026/8/14/0807a3040134b3de4862879ef0e16ae9.jpg",
-            "domain": "ansa.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2092030/nell-eurozona-il-pil-sale-dello-0-4-nel-secondo-trimestre.html",
-            "url_mobile": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2092030/nell-eurozona-il-pil-sale-dello-0-4-nel-secondo-trimestre.amp",
-            "title": "NellEurozona il Pil sale dello 0 , 4 % nel secondo trimestre",
-            "seendate": "20260814T094500Z",
-            "socialimage": "https://www.lagazzettadelmezzogiorno.it/resizer/600/315/true/ansa/2026_08_14/0807a3040134b3de4862879ef0e16ae9.jpg--.jpg",
-            "domain": "lagazzettadelmezzogiorno.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://www.ess.fi/uutissuomalainen/9698712",
-            "url_mobile": "",
-            "title": "Inflaatio pysyi 2 , 1 prosentissa hein\u00e4kuussa \u2013 sota Iranissa on iskenyt suomalaisten kukkaroihin l\u00e4hinn\u00e4 huoltoasemilla ja s\u00e4hk\u00f6laskuissa",
-            "seendate": "20260814T100000Z",
-            "socialimage": "https://i.media.fi/incoming/3wosui/11618391.jpg/alternates/OG_IMAGE_ESS/11618391.jpg",
-            "domain": "ess.fi",
-            "language": "Finnish",
-            "sourcecountry": "Finland"
-          },
-          {
-            "url": "https://www.karjalainen.fi/uutissuomalainen/9698712",
-            "url_mobile": "",
-            "title": "Inflaatio pysyi 2 , 1 prosentissa hein\u00e4kuussa \u2013 sota Iranissa on iskenyt suomalaisten kukkaroihin l\u00e4hinn\u00e4 huoltoasemilla ja s\u00e4hk\u00f6laskuissa",
-            "seendate": "20260814T090000Z",
-            "socialimage": "https://i.media.fi/incoming/3wosui/11618391.jpg/alternates/OG_IMAGE_KARJALAINEN/11618391.jpg",
-            "domain": "karjalainen.fi",
-            "language": "Finnish",
-            "sourcecountry": "Finland"
-          },
-          {
             "url": "https://www.sb.by/articles/litva-stala-vtoroy-v-es-po-urovnyu-godovoy-inflyatsii-v-iyule.html",
             "url_mobile": "https://www.sb.by/articles/litva-stala-vtoroy-v-es-po-urovnyu-godovoy-inflyatsii-v-iyule.html?amp=1",
             "title": "\u041b\u0438\u0442\u0432\u0430 \u0441\u0442\u0430\u043b\u0430 \u0432\u0442\u043e\u0440\u043e\u0439 \u0432 \u0415\u0421 \u043f\u043e \u0443\u0440\u043e\u0432\u043d\u044e \u0433\u043e\u0434\u043e\u0432\u043e\u0439 \u0438\u043d\u0444\u043b\u044f\u0446\u0438\u0438 \u0432 \u0438\u044e\u043b\u0435 \u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u044c \u0434\u043e\u0441\u0442\u0438\u0433 5 , 4 % ",
@@ -628,14 +558,54 @@
             "sourcecountry": "Belarus"
           },
           {
-            "url": "http://www.reporter.gr/diethnh/diethneis-eidhseis/683051-evrozoni-to-aep-afksithike-kata-0-4-to-v-trimino-2026",
+            "url": "https://www.surinenglish.com/spain/inflation-spain-percentage-20260819122003-nt.html",
             "url_mobile": "",
-            "title": "\u0395\u03c5\u03c1\u03c9\u03b6\u03ce\u03bd\u03b7 : \u03a4\u03bf \u0391\u0395\u03a0 \u03b1\u03c5\u03be\u03ae\u03b8\u03b7\u03ba\u03b5 \u03ba\u03b1\u03c4\u03ac 0 , 4 % \u03c4\u03bf \u03b2  \u03c4\u03c1\u03af\u03bc\u03b7\u03bd\u03bf 2026",
-            "seendate": "20260814T111500Z",
-            "socialimage": "https://www.reporter.gr/media/k2/items/cache/01e0e91824b0eb9344c7cf50ea50cc04_L.jpg",
-            "domain": "reporter.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
+            "title": "Inflation in Spain 1 % above July eurozone average",
+            "seendate": "20260819T124500Z",
+            "socialimage": "https://s2.ppllstatics.com/surinenglish/www/multimedia/externo/2026/08/19/1512624590-RD5A27chrQ0IAEl0s2JEVpI-1200x840RC-U101072592324x1-1200x840@Diario%20Sur.jpg",
+            "domain": "surinenglish.com",
+            "language": "English",
+            "sourcecountry": "Spain"
+          },
+          {
+            "url": "https://time.mk/ai/b1226efe56/mk/",
+            "url_mobile": "",
+            "title": "Time . ai",
+            "seendate": "20260820T054500Z",
+            "socialimage": "",
+            "domain": "time.mk",
+            "language": "Macedonian",
+            "sourcecountry": "Macedonia"
+          },
+          {
+            "url": "https://www.actualno.com/economy/godishnata-inflacija-v-evrozonata-narastva-bylgarija-ostava-v-top-3-news_2630551.html",
+            "url_mobile": "",
+            "title": "\u0413\u043e\u0434\u0438\u0448\u043d\u0430\u0442\u0430 \u0438\u043d\u0444\u043b\u0430\u0446\u0438\u044f \u0432 \u0435\u0432\u0440\u043e\u0437\u043e\u043d\u0430\u0442\u0430 \u043d\u0430\u0440\u0430\u0441\u0442\u0432\u0430 , \u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f \u043e\u0441\u0442\u0430\u0432\u0430 \u0432 \u0442\u043e\u043f 3",
+            "seendate": "20260819T140000Z",
+            "socialimage": "https://cdn.actualno.eu/actualno_2013/upload/news/2026/08/19/ccd45a78c028fee14e8f4c64a969b1d3_2630551_1920x1080.jpg",
+            "domain": "actualno.com",
+            "language": "Bulgarian",
+            "sourcecountry": "Bulgaria"
+          },
+          {
+            "url": "https://www.salkunrakentaja.fi/2026/08/iran-asevoimat-oljy/",
+            "url_mobile": "",
+            "title": "Iran vahvisti asevoimiaan neuvottelutauon aikana \u2013 \u00f6ljyn hinta nousussa j\u00e4lleen",
+            "seendate": "20260817T064500Z",
+            "socialimage": "https://www.salkunrakentaja.fi/wp-content/uploads/2026/08/Iran-ulkoministeri-Abbas-Araghchi-082026.jpg",
+            "domain": "salkunrakentaja.fi",
+            "language": "Finnish",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://cyprus-mail.com/2026/08/19/ai-could-strengthen-financial-stability-monitoring",
+            "url_mobile": "",
+            "title": "AI could strengthen financial stability monitoring",
+            "seendate": "20260819T054500Z",
+            "socialimage": "https://cyprus-mail.com/wp-content/uploads/2026/02/Ai-artificial-intelligence-EU-european.jpg",
+            "domain": "cyprus-mail.com",
+            "language": "English",
+            "sourcecountry": "Cyprus"
           }
         ]
       }
@@ -1019,7 +989,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-08-19T17:09:42.676165+00:00",
+      "fetched_at_utc": "2026-08-21T17:12:48.330069+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
@@ -1110,116 +1080,106 @@
       }
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-14T17:43:43.086853+00:00",
+      "fetched_at_utc": "2026-08-21T17:14:19.541481+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.businesstimes.com.sg/international/asean/malaysias-economy-grows-6-q2-beating-expectations",
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/19/ringgit-opens-higher-vs-us-as-fed-rate-hike-expectations-ease",
             "url_mobile": "",
-            "title": "Malaysia economy grows 6 % in Q2 , beating expectations",
-            "seendate": "20260814T050000Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/6b812e56c5d4c082413e18d7b9a51031e7df0b36c2891b75d05828d300fa1c5a?&f=webp",
-            "domain": "businesstimes.com.sg",
+            "title": "Ringgit opens higher vs US$ as Fed rate hike expectations ease",
+            "seendate": "20260819T013000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/19/4066639.jpeg",
+            "domain": "thestar.com.my",
             "language": "English",
-            "sourcecountry": "Singapore"
+            "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://www.freemalaysiatoday.com/category/nation/2026/08/14/malaysia-records-6-gdp-growth-in-q2-2026",
+            "url": "https://www.freemalaysiatoday.com/category/business/2026/08/19/ringgit-rises-at-open-vs-us-dollar-as-fed-rate-hike-expectations-ease",
             "url_mobile": "",
-            "title": "Malaysia records 6 % GDP growth in Q2 2026",
-            "seendate": "20260814T054500Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/09/a3922709-kl-skyline-epa-images-050924.webp",
+            "title": "Ringgit rises at open vs US dollar as Fed rate hike expectations ease",
+            "seendate": "20260819T014500Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2025/10/3707b66e-ringgit.webp",
             "domain": "freemalaysiatoday.com",
             "language": "English",
             "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://www.businesstimes.com.sg/international/asean/malaysias-central-bank-upbeat-q2-growth-beats-expectations",
+            "url": "https://www.freemalaysiatoday.com/category/nation/2026/08/18/govt-reviewing-rm1-700-minimum-wage",
             "url_mobile": "",
-            "title": "Malaysia central bank upbeat as Q2 growth beats expectations",
-            "seendate": "20260814T070000Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/6b812e56c5d4c082413e18d7b9a51031e7df0b36c2891b75d05828d300fa1c5a?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://www.finanzen.ch/nachrichten/zinsen/malaysia-gdp-growth-exceeds-estimate-1036458668",
-            "url_mobile": "",
-            "title": "Malaysia GDP Growth Exceeds Estimate",
-            "seendate": "20260814T084500Z",
-            "socialimage": "",
-            "domain": "finanzen.ch",
-            "language": "English",
-            "sourcecountry": "Switzerland"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/08/14/ringgit-firmer-against-us-on-stronger-than-expected-gdp-growth",
-            "url_mobile": "",
-            "title": "Ringgit firmer against US$ on stronger - than - expected GDP growth",
-            "seendate": "20260814T120000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/14/4060046.jpg",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "http://www.bignewsnetwork.com/news/279240937/malaysia-economy-grows-6-pct-in-q2-as-exports-demand-strengthen",
-            "url_mobile": "",
-            "title": "Malaysia economy grows 6 pct in Q2 as exports , demand strengthen",
-            "seendate": "20260814T084500Z",
-            "socialimage": "",
-            "domain": "bignewsnetwork.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/08/13/ringgit-closes-almost-unchanged-vs-us-ahead-of-2q-gdp-announcement",
-            "url_mobile": "",
-            "title": "Ringgit closes almost unchanged vs US$ ahead of 2Q GDP announcement",
-            "seendate": "20260813T114500Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/13/4058152.jpg",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/08/14/economists-upbeat-on-malaysia039s-2026-outlook-after-6-2q-gdp-growth",
-            "url_mobile": "",
-            "title": "Economists upbeat on Malaysia 2026 outlook after 6 % 2Q GDP growth",
-            "seendate": "20260814T120000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/14/4060008.jpeg",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.freemalaysiatoday.com/category/nation/2026/08/14/mediasas-to-offer-more-affordable-private-medical-insurance",
-            "url_mobile": "",
-            "title": "MediAsas to offer more affordable private medical insurance",
-            "seendate": "20260814T111500Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2025/03/2b0a0ab0-medical-insurance-generic-envato-240325.webp",
+            "title": "Govt reviewing RM1 , 700 minimum wage",
+            "seendate": "20260818T021500Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2026/03/71c4856d-2_ramanan_ramakrishnan_perkeso_iftar_moganraj_fmt_citra_24112025-copy-7.webp",
             "domain": "freemalaysiatoday.com",
             "language": "English",
             "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://promptnewsonline.com/rethinking-the-cbns-mandate-lessons-from-malaysia-for-nigeria/",
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/18/ringgit-extends-gains-to-close-higher-vs-major-regional-currencies",
             "url_mobile": "",
-            "title": "Rethinking the CBN Mandate : Lessons from Malaysia for Nigeria",
-            "seendate": "20260812T201500Z",
-            "socialimage": "https://promptnewsonline.com/wp-content/uploads/2024/12/Prof-Uche-Uwaleke.jpg",
-            "domain": "promptnewsonline.com",
+            "title": "Ringgit extends gains to close higher vs major , regional currencies",
+            "seendate": "20260818T120000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/18/4065920.png",
+            "domain": "thestar.com.my",
             "language": "English",
-            "sourcecountry": "Nigeria"
+            "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://www.thestar.com.my/news/nation/2026/08/11/bank-negara-warnings-on-tabung-haji-ignored-since-2014",
+            "url": "https://www.freemalaysiatoday.com/category/business/2026/08/18/ringgit-extends-gains-as-fed-rate-hike-expectations-ease",
             "url_mobile": "",
-            "title": "Bank Negara warnings on Tabung Haji ignored since 2014",
-            "seendate": "20260811T140000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/11/4053982.jpg",
+            "title": "Ringgit extends gains as Fed rate - hike expectations ease",
+            "seendate": "20260818T120000Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/8bc5efb2-ringgit_up-new-2024-3.webp",
+            "domain": "freemalaysiatoday.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.ft.lk/columns/One-rate-and-the-SMEs-who-absorbed-the-difference/4-796250",
+            "url_mobile": "",
+            "title": "One rate , and the SMEs who absorbed the difference",
+            "seendate": "20260820T021500Z",
+            "socialimage": "https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.ft.lk/assets/uploads/image_c6d0d5027b.jpg",
+            "domain": "ft.lk",
+            "language": "English",
+            "sourcecountry": "Sri Lanka"
+          },
+          {
+            "url": "https://www.freemalaysiatoday.com/category/nation/2026/08/18/2027-budget-to-focus-on-economic-resilience-people-s-well-being",
+            "url_mobile": "",
+            "title": "2027 budget to focus on economic resilience , people wellbeing",
+            "seendate": "20260818T043000Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/v3/2026/08/9bdabb58-b145-4838-aa4d-795d608187a8-Amir-Hamzah-Azizan-Belanjawan-2027-180826m1.webp",
+            "domain": "freemalaysiatoday.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/20/domestic-delight-for-s-p-setia",
+            "url_mobile": "",
+            "title": "Domestic delight for S P Setia",
+            "seendate": "20260820T003000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/20/4068257.jpg",
             "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/08/18/epf-advocates-for-prudence-in-2h26",
+            "url_mobile": "",
+            "title": "EPF advocates for prudence in 2H26",
+            "seendate": "20260818T000000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/08/18/4064701.jpg",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.freemalaysiatoday.com/category/opinion/2026/08/18/rethinking-medical-protection-beyond-the-price-tag",
+            "url_mobile": "",
+            "title": "Rethinking medical protection beyond the price tag",
+            "seendate": "20260818T154500Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/04/e2ce543f-doktor-doctor-01-fmt-170724.webp",
+            "domain": "freemalaysiatoday.com",
             "language": "English",
             "sourcecountry": "Malaysia"
           }
@@ -1498,7 +1458,7 @@
       }
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-20T17:12:46.916578+00:00",
+      "fetched_at_utc": "2026-08-21T17:10:08.749294+00:00",
       "payload": {
         "articles": [
           {
@@ -1512,16 +1472,6 @@
             "sourcecountry": "Egypt"
           },
           {
-            "url": "https://www.almanar.com.lb/article/1102777/",
-            "url_mobile": "",
-            "title": "\u0645\u0648\u062c\u0629 \u063a\u0644\u0627\u0621 \u062c\u062f\u064a\u062f\u0629 \u062a\u0644\u0648\u062d \u0641\u064a \u0628\u0631\u064a\u0637\u0627\u0646\u064a\u0627 \u0645\u0639 \u0642\u0641\u0632\u0629 \u0645\u062a\u0648\u0642\u0639\u0629 \u0641\u064a \u0627\u0644\u062a\u0636\u062e\u0645 \u2013 \u0642\u0646\u0627\u0629 \u0627\u0644\u0645\u0646\u0627\u0631",
-            "seendate": "20260817T071500Z",
-            "socialimage": "https://www.almanar.com.lb/uploads/2026/08/manar-e367eea7694a968b.jpg",
-            "domain": "almanar.com.lb",
-            "language": "Arabic",
-            "sourcecountry": "Lebanon"
-          },
-          {
             "url": "https://moneyweek.com/economy/inside-the-bank-of-england-moneyweek-talks",
             "url_mobile": "",
             "title": "Inside the Bank of England : Gold vaults and  giant  bank notes",
@@ -1530,6 +1480,16 @@
             "domain": "moneyweek.com",
             "language": "English",
             "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://finance.yahoo.com/economy/policy/articles/ai-productivity-gains-may-not-121420024.html",
+            "url_mobile": "",
+            "title": "AI productivity gains may not curb inflation , IMF Tenreyro warns",
+            "seendate": "20260820T233000Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/950B9677535F4BB3028B41CD168E9640ECA866FA5258345069E15E1563742976/subgraphmysterio/resizefill_w1200_h759;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2Fa4fbe7cd6aeeaac837226210f8264fd4.jpg",
+            "domain": "finance.yahoo.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
             "url": "https://www.aol.co.uk/articles/uk-inflation-rises-2-9-060113000.html",
@@ -1625,7 +1585,7 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-20T17:14:49.340666+00:00",
+      "fetched_at_utc": "2026-08-21T17:12:26.144033+00:00",
       "payload": {
         "articles": [
           {
@@ -1679,14 +1639,14 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.investmentnews.com/equities/franklin-templeton-stays-bullish-on-equities-as-earnings-growth-tops-20/267831",
+            "url": "https://www.governmentnews.com.au/rba-board-appointment/",
             "url_mobile": "",
-            "title": "Franklin Templeton stays bullish on equities as earnings growth tops 20 % ",
-            "seendate": "20260817T140000Z",
-            "socialimage": "https://cdn-res.keymedia.com/cms/images/in/gene_638779484761222992.png",
-            "domain": "investmentnews.com",
+            "title": "RBA board appointment - Government News",
+            "seendate": "20260820T221500Z",
+            "socialimage": "https://www.governmentnews.com.au/wp-content/uploads/2026/08/Melinda-Cilento.jpg",
+            "domain": "governmentnews.com.au",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Australia"
           },
           {
             "url": "https://www.dailymail.com/news/article-16065689/unemployment-rates-australia-rba.html",
@@ -1739,14 +1699,14 @@
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.cairnspost.com.au/business/work/australian-pay-rises-wiped-out-as-costofliving-outpaces-wage-growth/news-story/b4997d6402cfa6c0677faa1880cb3edd?nk=040bd859f71226cf5f0def9ee9eb0ddf-1787110319",
+            "url": "https://www.actionforex.com/contributors/fundamental-analysis/651445-week-ahead-feds-jackson-hole-and-nvidia-earnings-to-dictate-markets/",
             "url_mobile": "",
-            "title": "Inflation , interest rates : Wages up but Australians lose ground",
-            "seendate": "20260819T034500Z",
-            "socialimage": "https://content.api.news/v3/images/bin/0daf733df3e0810f8156944cf627a871",
-            "domain": "cairnspost.com.au",
+            "title": "Week Ahead \u2013 Fed Jackson Hole and Nvidia Earnings to Dictate Markets",
+            "seendate": "20260821T164500Z",
+            "socialimage": "https://www.actionforex.com/wp-content/uploads/2020/04/f-fed36.jpg",
+            "domain": "actionforex.com",
             "language": "English",
-            "sourcecountry": "Australia"
+            "sourcecountry": "United Kingdom"
           }
         ]
       }
@@ -2154,11 +2114,11 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-08-20T17:23:15.426001+00:00",
+      "fetched_at_utc": "2026-08-21T17:18:37.819125+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-08-14T17:44:46.665121+00:00",
+      "fetched_at_utc": "2026-08-21T17:15:23.624254+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
