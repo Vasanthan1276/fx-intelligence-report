@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-21T17:18:37.941934+00:00",
+  "generated_at_utc": "2026-08-24T17:25:08.274427+00:00",
   "model_version": "2.2-phase2c-baseline",
   "note": "Official 2026 decision dates embedded for reliable daily event-risk scoring.",
   "sources": {
@@ -76,43 +76,43 @@
   "next_events": {
     "JPY": {
       "next_policy_meeting_date": "2026-09-18",
-      "days_to_policy_meeting": 28,
+      "days_to_policy_meeting": 25,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "Bank of Japan MPM schedule"
     },
     "USD": {
       "next_policy_meeting_date": "2026-09-16",
-      "days_to_policy_meeting": 26,
+      "days_to_policy_meeting": 23,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "Federal Reserve FOMC calendar"
     },
     "MYR": {
       "next_policy_meeting_date": "2026-09-03",
-      "days_to_policy_meeting": 13,
+      "days_to_policy_meeting": 10,
       "event_risk_label": "Elevated",
       "policy_calendar_source": "Bank Negara Malaysia MPC schedule"
     },
     "CHF": {
       "next_policy_meeting_date": "2026-09-24",
-      "days_to_policy_meeting": 34,
+      "days_to_policy_meeting": 31,
       "event_risk_label": "Normal",
       "policy_calendar_source": "Swiss National Bank monetary policy assessment schedule"
     },
     "EUR": {
       "next_policy_meeting_date": "2026-09-10",
-      "days_to_policy_meeting": 20,
+      "days_to_policy_meeting": 17,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "ECB Governing Council calendar"
     },
     "AUD": {
       "next_policy_meeting_date": "2026-09-29",
-      "days_to_policy_meeting": 39,
+      "days_to_policy_meeting": 36,
       "event_risk_label": "Normal",
       "policy_calendar_source": "Reserve Bank of Australia board schedule"
     },
     "GBP": {
       "next_policy_meeting_date": "2026-09-17",
-      "days_to_policy_meeting": 27,
+      "days_to_policy_meeting": 24,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "Bank of England MPC calendar"
     }

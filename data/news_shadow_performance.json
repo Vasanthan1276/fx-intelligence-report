@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-21T17:18:38.280208+00:00",
+  "generated_at_utc": "2026-08-24T17:25:08.464580+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -15,10 +15,10 @@
   "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
   "overall": {
     "1": {
-      "directional_calls": 1,
+      "directional_calls": 3,
       "correct": 0,
       "incorrect": 0,
-      "neutral_move": 1,
+      "neutral_move": 3,
       "directional_accuracy_pct": null
     },
     "5": {
@@ -62,10 +62,10 @@
     },
     "JPY": {
       "1": {
-        "directional_calls": 0,
+        "directional_calls": 1,
         "correct": 0,
         "incorrect": 0,
-        "neutral_move": 0,
+        "neutral_move": 1,
         "directional_accuracy_pct": null
       },
       "5": {
@@ -154,10 +154,10 @@
     },
     "MYR": {
       "1": {
-        "directional_calls": 0,
+        "directional_calls": 1,
         "correct": 0,
         "incorrect": 0,
-        "neutral_move": 0,
+        "neutral_move": 1,
         "directional_accuracy_pct": null
       },
       "5": {
@@ -227,6 +227,34 @@
       "future_rate_sgd": 1.27773,
       "rate_change_pct": -0.19,
       "outcome": "correct"
+    },
+    {
+      "run_date_sgt": "2026-08-22",
+      "market_date": "2026-08-21",
+      "future_date": "2026-08-24",
+      "currency": "JPY",
+      "horizon_trading_days": 1,
+      "shadow_score": 4.08,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.799203,
+      "future_rate_sgd": 0.798438,
+      "rate_change_pct": -0.096,
+      "outcome": "neutral_move"
+    },
+    {
+      "run_date_sgt": "2026-08-22",
+      "market_date": "2026-08-21",
+      "future_date": "2026-08-24",
+      "currency": "MYR",
+      "horizon_trading_days": 1,
+      "shadow_score": 3.71,
+      "shadow_confidence_pct": 73,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.314058,
+      "future_rate_sgd": 0.314281,
+      "rate_change_pct": 0.071,
+      "outcome": "neutral_move"
     }
   ]
 }
