@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-26T18:39:03.939720+00:00",
+  "generated_at_utc": "2026-08-28T01:24:37.272930+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -15,11 +15,11 @@
   "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
   "overall": {
     "1": {
-      "directional_calls": 4,
-      "correct": 0,
+      "directional_calls": 5,
+      "correct": 1,
       "incorrect": 0,
       "neutral_move": 4,
-      "directional_accuracy_pct": null
+      "directional_accuracy_pct": 100.0
     },
     "5": {
       "directional_calls": 1,
@@ -39,11 +39,11 @@
   "by_currency": {
     "USD": {
       "1": {
-        "directional_calls": 1,
-        "correct": 0,
+        "directional_calls": 2,
+        "correct": 1,
         "incorrect": 0,
         "neutral_move": 1,
-        "directional_accuracy_pct": null
+        "directional_accuracy_pct": 100.0
       },
       "5": {
         "directional_calls": 1,
@@ -283,6 +283,20 @@
       "future_rate_sgd": 0.797738,
       "rate_change_pct": -0.088,
       "outcome": "neutral_move"
+    },
+    {
+      "run_date_sgt": "2026-08-27",
+      "market_date": "2026-08-26",
+      "future_date": "2026-08-27",
+      "currency": "USD",
+      "horizon_trading_days": 1,
+      "shadow_score": 3.14,
+      "shadow_confidence_pct": 71,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.269775,
+      "future_rate_sgd": 1.271275,
+      "rate_change_pct": 0.118,
+      "outcome": "correct"
     }
   ]
 }
