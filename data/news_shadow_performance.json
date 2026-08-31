@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-29T00:42:45.162613+00:00",
+  "generated_at_utc": "2026-08-31T22:01:05.714787+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -22,11 +22,11 @@
       "directional_accuracy_pct": 100.0
     },
     "5": {
-      "directional_calls": 3,
+      "directional_calls": 4,
       "correct": 2,
-      "incorrect": 1,
+      "incorrect": 2,
       "neutral_move": 0,
-      "directional_accuracy_pct": 66.7
+      "directional_accuracy_pct": 50.0
     },
     "10": {
       "directional_calls": 1,
@@ -69,9 +69,9 @@
         "directional_accuracy_pct": null
       },
       "5": {
-        "directional_calls": 1,
+        "directional_calls": 2,
         "correct": 0,
-        "incorrect": 1,
+        "incorrect": 2,
         "neutral_move": 0,
         "directional_accuracy_pct": 0.0
       },
@@ -311,6 +311,20 @@
       "future_rate_sgd": 0.797738,
       "rate_change_pct": -0.088,
       "outcome": "neutral_move"
+    },
+    {
+      "run_date_sgt": "2026-08-25",
+      "market_date": "2026-08-24",
+      "future_date": "2026-08-31",
+      "currency": "JPY",
+      "horizon_trading_days": 5,
+      "shadow_score": 4.38,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.798438,
+      "future_rate_sgd": 0.796782,
+      "rate_change_pct": -0.207,
+      "outcome": "incorrect"
     },
     {
       "run_date_sgt": "2026-08-27",
