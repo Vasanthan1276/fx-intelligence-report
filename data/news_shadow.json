@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-09-01T20:00:11.260873+00:00",
-  "run_date_sgt": "2026-09-02",
-  "market_date": "2026-09-01",
+  "generated_at_utc": "2026-09-02T19:54:11.530991+00:00",
+  "run_date_sgt": "2026-09-03",
+  "market_date": "2026-09-02",
   "phase": "Phase 3A.3 \u2014 direction semantics & source-quality shadow mode",
-  "source": "Pair-aware relevance-filtered GDELT + official central-bank communications (0/7 usable; 7 thin; 53 API calls; 0 cache hits; 6 rate-limit retries)",
+  "source": "Pair-aware relevance-filtered GDELT + official central-bank communications (1/7 usable; 6 thin; 50 API calls; 0 cache hits; 2 rate-limit retries)",
   "lookback": "96h",
   "fallback_lookback": "7d",
   "official_lookback_days": 10,
@@ -14,21 +14,21 @@
       "status": "Thin",
       "coverage_quality": "Thin",
       "evidence_eligible": false,
-      "score": 3.75,
+      "score": 3.69,
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 42,
       "article_count": 3,
       "retrieved_article_count": 24,
       "rejected_article_count": 21,
-      "directional_article_count": 1,
+      "directional_article_count": 2,
       "official_directional_count": 0,
-      "media_directional_count": 1,
+      "media_directional_count": 2,
       "official_article_count": 0,
       "media_article_count": 3,
       "source_diversity": 3,
       "agreement_pct": 100,
       "query_attempts": 4,
-      "query_successes": 2,
+      "query_successes": 3,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -52,13 +52,33 @@
           ]
         },
         {
+          "title": "Fed chair signals rate hikes might be needed with US inflation still elevated",
+          "url": "https://www.taipeitimes.com/News/biz/archives/2026/08/31/2003863395",
+          "domain": "taipeitimes.com",
+          "seen_utc": "2026-08-30T18:30:00+00:00",
+          "direction": "strengthening",
+          "headline_score": 3.62,
+          "weight": 0.589,
+          "signal_terms": [
+            "+rate hike"
+          ],
+          "source_type": "media",
+          "source_name": "taipeitimes.com",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
+          ]
+        },
+        {
           "title": "Rupee rises 26 paise to 94 . 96 against US dollar during early trade",
           "url": "https://www.business-standard.com/finance/news/rupee-rises-26-paise-to-94-96-against-us-dollar-during-early-trade-126090100175_1.html",
           "domain": "business-standard.com",
           "seen_utc": "2026-09-01T07:30:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.897,
+          "weight": 0.807,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "business-standard.com",
@@ -68,35 +88,16 @@
           "relevance_reasons": [
             "target currency/economy named"
           ]
-        },
-        {
-          "title": "US GDP Grows 1 . 5 % in Q2 as Core PCE Inflation Holds at 3 . 3 %",
-          "url": "https://www.dailyforex.com/forex-news/2026/08/us-economic-news-26-august-2026/249052",
-          "domain": "dailyforex.com",
-          "seen_utc": "2026-08-26T19:15:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.574,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "dailyforex.com",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 78,
-          "relevance_reasons": [
-            "target-country macro"
-          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=30)",
-        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+eco"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22US+inflation%22+OR+%22US+jobs%22+OR+%22US+GDP%22%29&mode=ArtList&maxrecords=12&"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-16",
-      "days_to_policy_event": 15,
-      "event_risk_label": "Moderate",
+      "days_to_policy_event": 14,
+      "event_risk_label": "Elevated",
       "event_calendar_source": "Federal Reserve FOMC calendar"
     },
     "JPY": {
@@ -106,20 +107,38 @@
       "score": 2.5,
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 42,
-      "article_count": 2,
-      "retrieved_article_count": 14,
-      "rejected_article_count": 12,
+      "article_count": 4,
+      "retrieved_article_count": 27,
+      "rejected_article_count": 23,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
-      "official_article_count": 2,
-      "media_article_count": 0,
-      "source_diversity": 1,
+      "official_article_count": 3,
+      "media_article_count": 1,
+      "source_diversity": 2,
       "agreement_pct": null,
-      "query_attempts": 3,
-      "query_successes": 1,
+      "query_attempts": 2,
+      "query_successes": 2,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
+        {
+          "title": "Speech by Board Member TAKATA in Sapporo (Economic Activity, Prices, and Monetary Policy in Japan)",
+          "url": "http://www.boj.or.jp/en/about/press/koen_2026/ko260902a.htm",
+          "domain": "boj.or.jp",
+          "seen_utc": "2026-09-02T01:30:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.297,
+          "signal_terms": [],
+          "source_type": "official",
+          "source_name": "Bank of Japan updates",
+          "official": true,
+          "query_tag": "official-feed",
+          "relevance_score": 96,
+          "relevance_reasons": [
+            "official policy/macro/FX content"
+          ]
+        },
         {
           "title": "Average Contract Interest Rates on Loans and Discounts (July)",
           "url": "http://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2607.pdf",
@@ -155,16 +174,31 @@
           "relevance_reasons": [
             "official policy/macro/FX content"
           ]
+        },
+        {
+          "title": "BOJ chief vows to keep raising rates , debate price risks this month",
+          "url": "https://www.aol.com/articles/boj-debate-month-economy-price-002530000.html",
+          "domain": "aol.com",
+          "seen_utc": "2026-09-02T04:00:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.907,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "aol.com",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
+          ]
         }
       ],
       "official_feed_errors": [],
-      "query_errors": [
-        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=30)",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+Japan%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxrec"
-      ],
+      "query_errors": [],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-18",
-      "days_to_policy_event": 17,
+      "days_to_policy_event": 16,
       "event_risk_label": "Moderate",
       "event_calendar_source": "Bank of Japan MPM schedule"
     },
@@ -172,19 +206,19 @@
       "status": "Thin",
       "coverage_quality": "Thin",
       "evidence_eligible": false,
-      "score": 3.75,
+      "score": 2.5,
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 42,
       "article_count": 2,
       "retrieved_article_count": 13,
       "rejected_article_count": 11,
-      "directional_article_count": 1,
+      "directional_article_count": 0,
       "official_directional_count": 0,
-      "media_directional_count": 1,
+      "media_directional_count": 0,
       "official_article_count": 1,
       "media_article_count": 1,
       "source_diversity": 2,
-      "agreement_pct": 100,
+      "agreement_pct": null,
       "query_attempts": 3,
       "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
@@ -196,7 +230,7 @@
           "seen_utc": "2026-09-01T16:00:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 1.441,
+          "weight": 1.297,
           "signal_terms": [],
           "source_type": "official",
           "source_name": "ECB press releases and speeches",
@@ -208,34 +242,32 @@
           ]
         },
         {
-          "title": "Euro zone inflation rises above 3 % on higher energy costs",
-          "url": "https://www.rte.ie/news/business/2026/0901/1589924-euro-zone-inflation-flash-reading/",
-          "domain": "rte.ie",
-          "seen_utc": "2026-09-01T11:30:00+00:00",
-          "direction": "strengthening",
-          "headline_score": 3.75,
-          "weight": 0.897,
-          "signal_terms": [
-            "+euro rises"
-          ],
+          "title": "ECB should raise rates in September to safeguard inflation target , says Primoz Dolenc",
+          "url": "https://www.moneycontrol.com/news/business/ecb-should-raise-rates-in-september-to-safeguard-inflation-target-says-primoz-dolenc-14017816.html",
+          "domain": "moneycontrol.com",
+          "seen_utc": "2026-08-28T16:30:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.589,
+          "signal_terms": [],
           "source_type": "media",
-          "source_name": "rte.ie",
+          "source_name": "moneycontrol.com",
           "official": false,
-          "query_tag": "plan-2:96h",
-          "relevance_score": 86,
+          "query_tag": "plan-3:7d",
+          "relevance_score": 92,
           "relevance_reasons": [
-            "target currency/economy named"
+            "target central bank"
           ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22euro%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtL",
-        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22euro+area+inflation%22+OR+%22euro+area+growth%22+OR+%22eurozo"
+        "Expecting value: line 1 column 1 (char 0)",
+        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22European+Central+Bank%22+%28rates+OR+inflation+OR+policy+OR+econ"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-10",
-      "days_to_policy_event": 9,
+      "days_to_policy_event": 8,
       "event_risk_label": "Elevated",
       "event_calendar_source": "ECB Governing Council calendar"
     },
@@ -247,8 +279,8 @@
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 36,
       "article_count": 2,
-      "retrieved_article_count": 15,
-      "rejected_article_count": 13,
+      "retrieved_article_count": 12,
+      "rejected_article_count": 10,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
@@ -257,7 +289,7 @@
       "source_diversity": 2,
       "agreement_pct": null,
       "query_attempts": 4,
-      "query_successes": 3,
+      "query_successes": 2,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -267,7 +299,7 @@
           "seen_utc": "2026-09-01T16:45:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.907,
+          "weight": 0.816,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "933thedrive.com",
@@ -285,7 +317,7 @@
           "seen_utc": "2026-09-01T16:45:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.884,
+          "weight": 0.795,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "oilprice.com",
@@ -299,99 +331,138 @@
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=30)"
+        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28sterling+OR+%22British+pound%22%29+%28forex+OR+currency+OR+%22ex",
+        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28%22UK+inflation%22+OR+%22UK+wages%22+OR+%22UK+GDP%22%29&mode=Art"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-17",
-      "days_to_policy_event": 16,
+      "days_to_policy_event": 15,
       "event_risk_label": "Moderate",
       "event_calendar_source": "Bank of England MPC calendar"
     },
     "AUD": {
-      "status": "Thin",
-      "coverage_quality": "Thin",
-      "evidence_eligible": false,
+      "status": "Available",
+      "coverage_quality": "Adequate",
+      "evidence_eligible": true,
       "score": 3.62,
-      "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 42,
-      "article_count": 3,
+      "label": "Strengthening bias",
+      "confidence_pct": 71,
+      "article_count": 7,
       "retrieved_article_count": 24,
-      "rejected_article_count": 21,
-      "directional_article_count": 1,
+      "rejected_article_count": 17,
+      "directional_article_count": 2,
       "official_directional_count": 0,
-      "media_directional_count": 1,
+      "media_directional_count": 2,
       "official_article_count": 0,
-      "media_article_count": 3,
-      "source_diversity": 3,
+      "media_article_count": 7,
+      "source_diversity": 7,
       "agreement_pct": 100,
-      "query_attempts": 4,
-      "query_successes": 3,
+      "query_attempts": 3,
+      "query_successes": 2,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
-          "title": "Economists see RBA rate hike as early as September after hot CPI",
-          "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/economists-see-rba-rate-hike-early-september-after-hot-cpi",
-          "domain": "businesstimes.com.sg",
-          "seen_utc": "2026-08-27T02:30:00+00:00",
+          "title": "RBA warning as rate hike likely within weeks",
+          "url": "https://www.weeklytimes.com.au/rba-warning-as-rate-hike-likely-within-weeks/",
+          "domain": "weeklytimes.com.au",
+          "seen_utc": "2026-09-01T20:15:00+00:00",
           "direction": "strengthening",
           "headline_score": 3.62,
-          "weight": 0.589,
+          "weight": 0.816,
           "signal_terms": [
             "+rate hike"
           ],
           "source_type": "media",
-          "source_name": "businesstimes.com.sg",
+          "source_name": "weeklytimes.com.au",
           "official": false,
-          "query_tag": "plan-3:7d",
+          "query_tag": "plan-2:96h",
           "relevance_score": 92,
           "relevance_reasons": [
             "target central bank"
           ]
         },
         {
-          "title": "Housing could hold the key to next RBA rates decision",
-          "url": "https://www.illawarramercury.com.au/story/9338237/housing-could-hold-the-key-to-next-rba-rates-decision/",
-          "domain": "illawarramercury.com.au",
-          "seen_utc": "2026-08-26T19:00:00+00:00",
+          "title": "Aussie homeowners brace for rate hike after surprise GDP result piles pressure on the Reserve Bank",
+          "url": "https://www.dailymail.com/news/article-16097881/australia-gdp-growth-reserve-bank-rates.html",
+          "domain": "dailymail.com",
+          "seen_utc": "2026-09-02T04:45:00+00:00",
+          "direction": "strengthening",
+          "headline_score": 3.62,
+          "weight": 0.897,
+          "signal_terms": [
+            "+rate hike"
+          ],
+          "source_type": "media",
+          "source_name": "dailymail.com",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 86,
+          "relevance_reasons": [
+            "target currency/economy named"
+          ]
+        },
+        {
+          "title": "Australia posts second - quarter growth of 2 . 1 %, beating expectations",
+          "url": "https://www.cnbc.com/2026/09/02/australia-gdp-q2-middle-east-rba.html",
+          "domain": "cnbc.com",
+          "seen_utc": "2026-09-02T03:00:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.589,
+          "weight": 1.133,
           "signal_terms": [],
           "source_type": "media",
-          "source_name": "illawarramercury.com.au",
+          "source_name": "cnbc.com",
           "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 92,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 78,
           "relevance_reasons": [
-            "target central bank"
+            "target-country macro"
           ]
         },
         {
-          "title": "Inflation has eased , but here why the RBA may not be breathing a sigh of relief just yet",
-          "url": "https://www.sbs.com.au/news/article/inflation-has-eased-why-rba-may-not-breathing-sigh-of-relief/t3mu5bcf2",
-          "domain": "sbs.com.au",
-          "seen_utc": "2026-08-26T03:45:00+00:00",
+          "title": "Australia economy slows in second quarter",
+          "url": "https://www.rte.ie/news/business/2026/0902/1590042-australia-gdp-figures/",
+          "domain": "rte.ie",
+          "seen_utc": "2026-09-02T10:15:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.589,
+          "weight": 0.884,
+          "signal_terms": [],
+          "source_type": "media",
+          "source_name": "rte.ie",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 78,
+          "relevance_reasons": [
+            "target-country macro"
+          ]
+        },
+        {
+          "title": "The possible cost of Australia stronger - than - expected growth",
+          "url": "https://www.sbs.com.au/news/article/australia-gdp-growth-economy-rba-interest-rates-pressure/61iypio6x",
+          "domain": "sbs.com.au",
+          "seen_utc": "2026-09-02T06:45:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 0.884,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "sbs.com.au",
           "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 92,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 78,
           "relevance_reasons": [
-            "target central bank"
+            "target-country macro"
           ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Reserve+Bank+of+Australia%22+%28rates+OR+inflation+OR+policy+OR+"
+        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=30)"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-29",
-      "days_to_policy_event": 28,
+      "days_to_policy_event": 27,
       "event_risk_label": "Moderate",
       "event_calendar_source": "Reserve Bank of Australia board schedule"
     },
@@ -401,19 +472,19 @@
       "evidence_eligible": false,
       "score": 2.5,
       "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 42,
-      "article_count": 4,
-      "retrieved_article_count": 19,
-      "rejected_article_count": 9,
+      "confidence_pct": 39,
+      "article_count": 3,
+      "retrieved_article_count": 15,
+      "rejected_article_count": 6,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
       "official_article_count": 0,
-      "media_article_count": 4,
-      "source_diversity": 4,
+      "media_article_count": 3,
+      "source_diversity": 3,
       "agreement_pct": null,
       "query_attempts": 4,
-      "query_successes": 3,
+      "query_successes": 2,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -423,7 +494,7 @@
           "seen_utc": "2026-09-01T11:30:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.884,
+          "weight": 0.795,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "aninews.in",
@@ -441,30 +512,12 @@
           "seen_utc": "2026-09-01T10:30:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.884,
+          "weight": 0.795,
           "signal_terms": [],
           "source_type": "media",
           "source_name": "humanresourcesonline.net",
           "official": false,
           "query_tag": "plan-3:7d",
-          "relevance_score": 78,
-          "relevance_reasons": [
-            "target-country macro"
-          ]
-        },
-        {
-          "title": "Malaysian bonds trail peers in August on supply , rate - hike concerns",
-          "url": "https://www.freemalaysiatoday.com/category/highlight/2026/09/01/malaysian-bonds-lag-peers-in-august-on-supply-rate-hike-concerns",
-          "domain": "freemalaysiatoday.com",
-          "seen_utc": "2026-09-01T02:45:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.884,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "freemalaysiatoday.com",
-          "official": false,
-          "query_tag": "plan-2:96h",
           "relevance_score": 78,
           "relevance_reasons": [
             "target-country macro"
@@ -491,11 +544,12 @@
       ],
       "official_feed_errors": [],
       "query_errors": [
+        "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Bank+Negara+Malaysia%22+%28rates+OR+inflation+OR+policy+OR+econo",
         "HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+eco"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-03",
-      "days_to_policy_event": 2,
+      "days_to_policy_event": 1,
       "event_risk_label": "Very high",
       "event_calendar_source": "Bank Negara Malaysia MPC schedule"
     },
@@ -507,8 +561,8 @@
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 41,
       "article_count": 1,
-      "retrieved_article_count": 19,
-      "rejected_article_count": 18,
+      "retrieved_article_count": 28,
+      "rejected_article_count": 27,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
@@ -544,7 +598,7 @@
       "query_errors": [],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-09-24",
-      "days_to_policy_event": 23,
+      "days_to_policy_event": 22,
       "event_risk_label": "Moderate",
       "event_calendar_source": "Swiss National Bank monetary policy assessment schedule"
     }

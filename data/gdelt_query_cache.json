@@ -1,8 +1,8 @@
 {
-  "updated_at_utc": "2026-09-01T20:00:10.680146+00:00",
+  "updated_at_utc": "2026-09-02T19:54:11.039739+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-09-01T19:32:43.553031+00:00",
+      "fetched_at_utc": "2026-09-02T19:29:00.870172+00:00",
       "payload": {
         "articles": [
           {
@@ -36,6 +36,16 @@
             "sourcecountry": "Pakistan"
           },
           {
+            "url": "https://www.prokerala.com/news/articles/a1807542.html",
+            "url_mobile": "",
+            "title": "ICICI Bank raises $17 . 88 billion under RBI FCNR ( B ) swap facility",
+            "seendate": "20260902T073000Z",
+            "socialimage": "",
+            "domain": "prokerala.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
             "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-falls-13-paise-to-95-56-as-crude-rises-fed-hike-bets-strengthen-dollar/articleshow/133641539.cms",
             "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/rupee-falls-13-paise-to-95-56-as-crude-rises-fed-hike-bets-strengthen-dollar/amp_articleshow/133641539.cms",
             "title": "Rupee falls 13 paise to 95 . 56 as crude rises , Fed hike bets strengthen dollar",
@@ -46,14 +56,24 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://www.business-standard.com/finance/news/rupee-rises-26-paise-to-94-96-against-us-dollar-during-early-trade-126090100175_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/finance/news/rupee-rises-26-paise-to-94-96-against-us-dollar-during-early-trade-126090100175_1.html",
-            "title": "Rupee rises 26 paise to 94 . 96 against US dollar during early trade",
-            "seendate": "20260901T073000Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-06/22/thumb/fitandfill/1200X628/1782151005-2738.jpg",
-            "domain": "business-standard.com",
+            "url": "https://www.stiripesurse.ro/euro-trades-at-ron-52555_3916832",
+            "url_mobile": "",
+            "title": "Euro trades at RON 5 . 2555",
+            "seendate": "20260902T114500Z",
+            "socialimage": "https://www.stiripesurse.ro/media/images/202505/1600x900/media-174661003228105400.webp",
+            "domain": "stiripesurse.ro",
             "language": "English",
-            "sourcecountry": "India"
+            "sourcecountry": "Romania"
+          },
+          {
+            "url": "https://zalebs.com/business/naira-gains-to-n1329-43-per-dollar-as-september-trading-begins/",
+            "url_mobile": "",
+            "title": "Naira Gains to N1 , 329 . 43 per Dollar as September Trading Begins",
+            "seendate": "20260902T114500Z",
+            "socialimage": "https://zalebs.com/wp-content/uploads/2026/09/naira-exchange-rate-today-september-f182.webp",
+            "domain": "zalebs.com",
+            "language": "English",
+            "sourcecountry": "South Africa"
           },
           {
             "url": "http://www.jpost.com/middle-east/article-907125",
@@ -76,12 +96,12 @@
             "sourcecountry": "Israel"
           },
           {
-            "url": "https://www.businesstoday.in/nri/story/uae-nris-should-you-keep-your-dollars-abroad-or-move-them-into-fcnr-b-deposits-552050-2026-08-29",
-            "url_mobile": "https://www.businesstoday.in/amp/nri/story/uae-nris-should-you-keep-your-dollars-abroad-or-move-them-into-fcnr-b-deposits-552050-2026-08-29",
-            "title": "UAE NRIs : Should you keep your dollars abroad or move them into FCNR ( B ) deposits ? ",
-            "seendate": "20260829T181500Z",
-            "socialimage": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202608/6a92d43fb2263-fcnrb-deposits-surge-654-billion--pushing-indias-forex-reserves-to-a-record-72933-billion-294441931-16x9.png",
-            "domain": "businesstoday.in",
+            "url": "https://www.business-standard.com/finance/news/rupee-rises-26-paise-to-94-96-against-us-dollar-during-early-trade-126090100175_1.html",
+            "url_mobile": "https://www.business-standard.com/amp/finance/news/rupee-rises-26-paise-to-94-96-against-us-dollar-during-early-trade-126090100175_1.html",
+            "title": "Rupee rises 26 paise to 94 . 96 against US dollar during early trade",
+            "seendate": "20260901T073000Z",
+            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-06/22/thumb/fitandfill/1200X628/1782151005-2738.jpg",
+            "domain": "business-standard.com",
             "language": "English",
             "sourcecountry": "India"
           },
@@ -96,16 +116,6 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.livemint.com/news/the-week-in-charts-upi-milestone-services-inflation-kanda-express-11787816764963.html",
-            "url_mobile": "https://www.livemint.com/news/the-week-in-charts-upi-milestone-services-inflation-kanda-express/amp-11787816764963.html",
-            "title": "The week in charts : A decade of UPI , services inflation , Kanda Express",
-            "seendate": "20260829T023000Z",
-            "socialimage": "https://www.livemint.com/lm-img/img/2026/08/27/600x338/3-0-2286450224-UPI-online-payment-App--8--0_1674163497661_1787844323300_4f5a341a-eac6-474f-8db9-584297215f35.jpg",
-            "domain": "livemint.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
             "url": "https://www.finanzen.ch/nachrichten/devisen/devisen-jackson-hole-wirkt-weiter-nach-1036507014",
             "url_mobile": "",
             "title": "Devisen : Jackson Hole wirkt weiter nach",
@@ -114,16 +124,6 @@
             "domain": "finanzen.ch",
             "language": "German",
             "sourcecountry": "Switzerland"
-          },
-          {
-            "url": "https://www.cubaheadlines.com/articles/339034",
-            "url_mobile": "",
-            "title": "Dollar and Euro Surge in Cuban Informal Market as Saturday Begins",
-            "seendate": "20260829T154500Z",
-            "socialimage": "https://cdn0.celebritax.com/sites/default/files/styles/watermark_100/public/1788013624-sube-precio-dolar-euro-cuba.jpg",
-            "domain": "cubaheadlines.com",
-            "language": "English",
-            "sourcecountry": "Cuba"
           }
         ]
       }
@@ -256,23 +256,13 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-08-31T21:37:35.249748+00:00",
+      "fetched_at_utc": "2026-09-02T19:32:17.931764+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-08-31T21:38:04.030475+00:00",
+      "fetched_at_utc": "2026-09-02T19:33:24.321473+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.vetogate.com/5721105",
-            "url_mobile": "",
-            "title": "\u0633\u0639\u0631 \u0627\u0644\u0640 100 \u064a\u0646 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u0641\u064a \u0627\u0644\u0628\u0646\u0648\u0643 \u0627\u0644\u0645\u0635\u0631\u064a\u0629",
-            "seendate": "20260828T101500Z",
-            "socialimage": "",
-            "domain": "vetogate.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
           {
             "url": "https://www.vetogate.com/5722353",
             "url_mobile": "",
@@ -284,34 +274,34 @@
             "sourcecountry": "Egypt"
           },
           {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-28-august-2026/",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-1-september-2026/",
             "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 28 August 2026",
-            "seendate": "20260828T061500Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2025/01/how-much-foreign-currency-an-individual-can-buy-per-day-in-pakistan-pakobserver-654526.jpg",
+            "title": "Currency exchange rates in Pakistan today \u2013 1 September 2026",
+            "seendate": "20260901T063000Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/08/currency.webp",
             "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.nayaindia.com/business/foreign-exchange-reserves-at-record-level-of-dollar-729-billion/521128.html",
-            "url_mobile": "https://www.nayaindia.com/business/foreign-exchange-reserves-at-record-level-of-dollar-729-billion/521128.html?amp=1",
-            "title": "\u0935\u093f\u0926\u0947\u0936\u0940 \u092e\u0941\u0926\u094d\u0930\u093e \u092d\u0902\u0921\u093e\u0930 729 \u0905\u0930\u092c \u0921\u0949\u0932\u0930 \u0915\u0947 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0938\u094d\u0924\u0930 \u092a\u0930 - Naya India - Hindi News , Latest Hindi News , Breaking News , Hindi Samachar",
-            "seendate": "20260828T214500Z",
-            "socialimage": "https://www.nayaindia.com/wp-content/uploads/2024/06/Country-Foreign-Exchange-Reserves-Reached-An-All-Time-High.jpg",
-            "domain": "nayaindia.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
+            "url": "https://kuban24.tv/item/bank-rossii-sohranil-eshhe-na-polgoda-ogranicheniya-na-snyatie-nalichnoj-valyuty",
+            "url_mobile": "",
+            "title": "\u0411\u0430\u043d\u043a \u0420\u043e\u0441\u0441\u0438\u0438 \u0441\u043e\u0445\u0440\u0430\u043d\u0438\u043b \u0435\u0449\u0435 \u043d\u0430 \u043f\u043e\u043b\u0433\u043e\u0434\u0430 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f \u043d\u0430 \u0441\u043d\u044f\u0442\u0438\u0435 \u0438\u043d\u043e\u0441\u0442\u0440\u0430\u043d\u043d\u043e\u0439 \u0432\u0430\u043b\u044e\u0442\u044b",
+            "seendate": "20260901T191500Z",
+            "socialimage": "https://kuban24.tv/wp-content/uploads/photobank/2025/02/image006-3.jpg",
+            "domain": "kuban24.tv",
+            "language": "Russian",
+            "sourcecountry": "Russia"
           },
           {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-28-08-2026-7323211077158976a.html",
+            "url": "https://www.stiripesurse.ro/euro-trades-at-ron-52555_3916832",
             "url_mobile": "",
-            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 28 . 08 . 2026",
-            "seendate": "20260828T070000Z",
-            "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
-            "domain": "money.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
+            "title": "Euro trades at RON 5 . 2555",
+            "seendate": "20260902T114500Z",
+            "socialimage": "https://www.stiripesurse.ro/media/images/202505/1600x900/media-174661003228105400.webp",
+            "domain": "stiripesurse.ro",
+            "language": "English",
+            "sourcecountry": "Romania"
           },
           {
             "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-31-08-2026-7324272724502560a.html",
@@ -324,56 +314,6 @@
             "sourcecountry": "Poland"
           },
           {
-            "url": "https://www.koreatimes.co.kr/economy/20260828/more-koreans-buy-dollars-as-won-strengthens-against-greenback",
-            "url_mobile": "https://www.koreatimes.co.kr/amp/economy/20260828/more-koreans-buy-dollars-as-won-strengthens-against-greenback",
-            "title": "More Koreans buy dollars as won strengthens against greenback",
-            "seendate": "20260828T111500Z",
-            "socialimage": "https://newsimg.koreatimes.co.kr/2026/08/28/5b1d2000-eca9-41a8-80f0-9d85cc10e1c2.jpg",
-            "domain": "koreatimes.co.kr",
-            "language": "English",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://english.news.cn/20260828/99318ba77d5e42d58f9cac597e3b10f7/c.html",
-            "url_mobile": "",
-            "title": "S . Korea foreign currency deposits grow for 4th month in July - Xinhua",
-            "seendate": "20260828T041500Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://english.news.cn/asiapacific/20260828/9ff13326ca0f47beb4603a8a28e992aa/c.html",
-            "url_mobile": "",
-            "title": "S . Korea foreign currency deposits grow for 4th month in July - Xinhua",
-            "seendate": "20260828T041500Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "http://www.japanherald.com/news/279270502/s-korea-foreign-currency-deposits-grow-for-4th-month-in-july",
-            "url_mobile": "",
-            "title": "S . Korea foreign currency deposits grow for 4th month in July",
-            "seendate": "20260829T093000Z",
-            "socialimage": "",
-            "domain": "japanherald.com",
-            "language": "English",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://nypost.com/2026/08/28/business/scott-bessent-blasts-elizabeth-warren-offers-foreign-exchange-for-dummies-tutorial/",
-            "url_mobile": "",
-            "title": "Exclusive | Scott Bessent blasts Elizabeth Warren , offers  Foreign Exchange for Dummie tutorial",
-            "seendate": "20260828T161500Z",
-            "socialimage": "https://nypost.com/wp-content/uploads/sites/2/2026/08/138782791.jpg?quality=75&strip=all",
-            "domain": "nypost.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
             "url": "https://www.thelocal.se/20260831/swedish-krona-drops-4-percent-against-us-dollar-after-strong-2025/",
             "url_mobile": "",
             "title": "Swedish krona drops 4 percent against US dollar after strong 2025",
@@ -382,14 +322,104 @@
             "domain": "thelocal.se",
             "language": "English",
             "sourcecountry": "Sweden"
+          },
+          {
+            "url": "https://www.thelocal.se/20260831/swedish-krona-drops-4-percent-against-us-dollar-after-strong-2025",
+            "url_mobile": "",
+            "title": "Swedish krona drops 4 percent against US dollar after strong 2025",
+            "seendate": "20260831T101500Z",
+            "socialimage": "",
+            "domain": "thelocal.se",
+            "language": "English",
+            "sourcecountry": "Sweden"
+          },
+          {
+            "url": "https://www.livemint.com/market/dollar-slips-with-traders-already-eyeing-friday-jobs-data-11788204409382.html",
+            "url_mobile": "https://www.livemint.com/market/dollar-slips-with-traders-already-eyeing-friday-jobs-data/amp-11788204409382.html",
+            "title": "Dollar slips , with traders already eyeing Friday jobs data",
+            "seendate": "20260831T200000Z",
+            "socialimage": "https://www.livemint.com/lm-img/img/2024/12/06/600x338/market1_1733465997762_1733466008348.jpg",
+            "domain": "livemint.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.ntvbd.com/economy/news-1795573",
+            "url_mobile": "https://www.ntvbd.com/economy/news-1795573?amp",
+            "title": "\u0986\u099c \u0995\u09a4 \u099f\u09be\u0995\u09be\u09df \u09ae\u09bf\u09b2\u099b\u09c7 \u09a1\u09b2\u09be\u09b0 - \u0987\u0989\u09b0\u09cb - \u09b0\u09c1\u09aa\u09bf",
+            "seendate": "20260830T141500Z",
+            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_23m/public/images/2026/08/30/chatgpt_image_jul_20_2026_10_27_28_am.jpg",
+            "domain": "ntvbd.com",
+            "language": "Bengali",
+            "sourcecountry": "Bangladesh"
+          },
+          {
+            "url": "https://b24.am/finance/464389.html",
+            "url_mobile": "https://b24.am/finance/464389.html?amp",
+            "title": "\u0534\u0578\u056c\u0561\u0580\u0568 , \u0565\u057e\u0580\u0578\u0576 \u0578\u0582 \u0578\u057d\u056f\u0578\u0582 \u0563\u056b\u0576\u0568 \u0576\u057e\u0561\u0566\u0565\u056c \u0565\u0576 . \u0540\u0540 \u053f\u0532 , 01 / 09 / 2026",
+            "seendate": "20260901T170000Z",
+            "socialimage": "https://b24.am/pub/uploads/2009/08/100000Dram.jpg",
+            "domain": "b24.am",
+            "language": "Armenian",
+            "sourcecountry": "Armenia"
+          },
+          {
+            "url": "https://ua.korrespondent.net/business/economics/4907523-nafta-dorozhchaie-cherez-zahostrennia-dovkola-iranu",
+            "url_mobile": "https://ua.korrespondent.net/amp/4907523-nafta-dorozhchaie-cherez-zahostrennia-dovkola-iranu",
+            "title": "\u041d\u0430\u0444\u0442\u0430 \u0434\u043e\u0440\u043e\u0436\u0447\u0430\u0454 \u0447\u0435\u0440\u0435\u0437 \u0437\u0430\u0433\u043e\u0441\u0442\u0440\u0435\u043d\u043d\u044f \u0434\u043e\u0432\u043a\u043e\u043b\u0430 \u0406\u0440\u0430\u043d\u0443",
+            "seendate": "20260831T011500Z",
+            "socialimage": "https://kor.ill.in.ua/m/1260x900/4545095.jpg",
+            "domain": "ua.korrespondent.net",
+            "language": "Ukrainian",
+            "sourcecountry": "Ukraine"
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-faces-three-way-macro-102016615.html",
+            "url_mobile": "",
+            "title": "Bitcoin Faces a Three - Way Macro Test Near $78 , 000",
+            "seendate": "20260831T114500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/7ff344e537085fc322ec3b5c90a320c9358c68e35f60348b7738e55265f57d7b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcryptonews_us_711%2F94f1935bec510b094b03b392f156a268",
+            "domain": "finance.yahoo.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-31T21:38:35.051858+00:00",
+      "fetched_at_utc": "2026-09-02T19:33:51.281847+00:00",
       "payload": {
         "articles": [
+          {
+            "url": "https://www.albayan.ae/economy/business/world-economy/1549596",
+            "url_mobile": "https://www.albayan.ae/amp/economy/business/world-economy/1549596",
+            "title": "\u0628\u0646\u0643 \u0627\u0644\u064a\u0627\u0628\u0627\u0646 \u064a\u0644\u0645\u062d \u0625\u0644\u0649 \u0631\u0641\u0639 \u0627\u0644\u0641\u0627\u0626\u062f\u0629 \u0645\u0639 \u062a\u0635\u0627\u0639\u062f \u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u062a\u0636\u062e\u0645",
+            "seendate": "20260902T134500Z",
+            "socialimage": "https://www.albayan.ae/assets/images/2026/09/02/5313229.jpg",
+            "domain": "albayan.ae",
+            "language": "Arabic",
+            "sourcecountry": "United Arab Emirates"
+          },
+          {
+            "url": "https://www.edaily.co.kr/News/Read?newsId=04696966645575856&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=04696966645575856 eNo=257",
+            "title": "\u65e5 10\ub144\ubb3c \uad6d\ucc44\uae08\ub9ac 3 % \ub3cc\ud30c \u2026 30\ub144 \ub9cc\uc5d0 \ucd5c\uace0",
+            "seendate": "20260901T073000Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/09/PS26090101276.jpg",
+            "domain": "edaily.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.nikkei.com/article/DGXZQOUB0246R0S6A900C2000000/",
+            "url_mobile": "",
+            "title": "\u65e5\u9280\u306e\u9ad8\u7530\u5be9\u8b70\u59d4\u54e1 \u300c \u9023\u7d9a\u5229\u4e0a\u3052\u3042\u308a\u5f97\u308b \u300d \u6d77\u5916\u767a\u3067\u5c40\u9762\u5909\u5316\u3092\u6307\u6458",
+            "seendate": "20260902T091500Z",
+            "socialimage": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3540862002092026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.48&fp-y=0.34&s=86a47fa9f60afd7aa56c807d32391c29",
+            "domain": "nikkei.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
+          },
           {
             "url": "https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5312973-%D8%B9%D9%88%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86-%D8%AA%D9%82%D9%81%D8%B2-%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D9%87%D9%85-%D8%AA%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9",
             "url_mobile": "",
@@ -399,6 +429,66 @@
             "domain": "aawsat.com",
             "language": "Arabic",
             "sourcecountry": "Syria"
+          },
+          {
+            "url": "https://fr.euronews.com/business/2026/09/01/rendement-japonais-a-10-ans-a-3-une-premiere-depuis-1996-au-g20-les-hausses-de-taux-domine",
+            "url_mobile": "",
+            "title": "Rendement japonais \u00e0 10 ans \u00e0 3 %, une premi\u00e8re depuis 1996 , au G20 les hausses de taux dominent",
+            "seendate": "20260901T130000Z",
+            "socialimage": "https://images.euronews.com/articles/stories/09/89/67/38/1200x675_cmsv2_0a051c51-350e-52f6-a281-a1ee2761cf25-9896738.jpg",
+            "domain": "fr.euronews.com",
+            "language": "French",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.fnnews.com/news/202609020851171562",
+            "url_mobile": "",
+            "title": "\ubca0\uc120\ud2b8 \u7f8e\uc7ac\ubb34 , \uc77c\uc740 \ucd1d\uc7ac\uc5d0 \u2033 \ub2e8\ud638\ud55c \uae08\uc735\uc815\ucc45 \uc9c0\uc9c0 \u2033\u2026 \uae08\ub9ac\uc778\uc0c1 \ucd09\uad6c",
+            "seendate": "20260902T013000Z",
+            "socialimage": "https://image.fnnews.com/resource/media/image/2026/09/02/202609020737113740_e.jpg",
+            "domain": "fnnews.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.newspim.com/news/view/20260902001229",
+            "url_mobile": "https://m.newspim.com/news/view/20260902001229",
+            "title": "\uc5d4\ud654 , BOJ \ub9e4\ud30c \ubc1c\uc5b8\uc5d0 \uac15\uc138 \u2026 \uc5f0\uc18d \uc778\uc0c1\ub3c4 \uac00\ub2a5  ",
+            "seendate": "20260902T154500Z",
+            "socialimage": "https://img.newspim.com/news/2026/09/02/2609022354584290_888_tc.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.aol.com/articles/boj-debate-month-economy-price-002530000.html",
+            "url_mobile": "",
+            "title": "BOJ chief vows to keep raising rates , debate price risks this month",
+            "seendate": "20260902T040000Z",
+            "socialimage": "https://hermes.media.static.aol.com/media/2026/09/02/9d84fe32-c3bb-3d95-b8f6-cc459a4d2d11/9dea84f0-c916-47c3-bfa2-bc9ccb267e91.jpg",
+            "domain": "aol.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.jiji.com/jc/article?k=2026090200174&g=eco",
+            "url_mobile": "",
+            "title": "\u5186\u5b89\u662f\u6b63\u3078 \u300c \u65ad\u56fa\u305f\u308b\u63aa\u7f6e \u300d \u7c73\u8ca1\u52d9\u9577\u5b98 \u3001 \u65e5\u9280\u7dcf\u88c1\u3068\u4f1a\u8ac7 \uff1a \u6642\u4e8b\u30c9\u30c3\u30c8\u30b3\u30e0",
+            "seendate": "20260901T224500Z",
+            "socialimage": "https://www.jiji.com/img/jijicom_og_image.png",
+            "domain": "jiji.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "https://www.fnnews.com/news/202609021114122481",
+            "url_mobile": "",
+            "title": "\u7f8e  \ub9ac\ud50c\ub808 \ub05d\ub0b4\ub77c  \uc555\ubc15\uc5d0 \u65e5\u9280  9\uc6d4 \ud3ec\ud568 \ub9e4\ubc88 \uae08\ub9ac\uc778\uc0c1 \ub17c\uc758  ",
+            "seendate": "20260902T051500Z",
+            "socialimage": "https://image.fnnews.com/resource/media/image/2026/08/26/202608261644452780_e.jpg",
+            "domain": "fnnews.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
             "url": "https://www.nile.eg/%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%86%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%89-%D8%AA%D8%AD%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D9%8A%D9%86-%D8%A7%D9%84%D8%A3",
@@ -411,112 +501,42 @@
             "sourcecountry": "Egypt"
           },
           {
-            "url": "http://www.econotimes.com/Tokyo-Inflation-Rises-in-August-as-BOJ-Rate-Hike-Bets-Grow-1750676",
+            "url": "https://www.fnnews.com/news/202609020819085865",
             "url_mobile": "",
-            "title": "Tokyo Inflation Rises in August as BOJ Rate Hike Bets Grow",
-            "seendate": "20260828T061500Z",
-            "socialimage": "https://f1.econotimes.com/2025/01/gsqq02gx33.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.jiji.com/jc/article?k=2026082700884&g=eco",
-            "url_mobile": "",
-            "title": "\uff27\uff12\uff10 \u3001 \u30a4\u30f3\u30d5\u30ec\u6291\u5236\u3092\u8b70\u8ad6 \u4e2d\u6771\u30ea\u30b9\u30af\u5bfe\u5fdc \u3001 \uff21\uff29\u6d3b\u7528\u3082\u7126\u70b9 \u2015 \uff13\uff11\u65e5\u304b\u3089\u8ca1\u52d9\u76f8\u4f1a\u8b70 \uff1a \u6642\u4e8b\u30c9\u30c3\u30c8\u30b3\u30e0",
-            "seendate": "20260827T230000Z",
-            "socialimage": "https://www.jiji.com/img/jijicom_og_image.png",
-            "domain": "jiji.com",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://www.hani.co.kr/arti/international/international_general/1275315.html",
-            "url_mobile": "",
-            "title": "\ubbf8\uc77c \uc5d4\uc800 \uacf5\ub3d9\ubc29\uc5b4 \ud55c\ub2ec \ub9cc\uc5d0  1\ub2ec\ub7ec=160\uc5d4  \uc81c\uc790\ub9ac \u2026 \ucd94\uac00 \uac1c\uc785\ud558\ub098",
-            "seendate": "20260830T080000Z",
-            "socialimage": "https://flexible.img.hani.co.kr/flexible/normal/860/573/imgdb/original/2026/0830/20260830501508.webp",
-            "domain": "hani.co.kr",
+            "title": "\ub2e4\uce74\uc774\uce58  \uc7a5\uae30\uae08\ub9ac 3 %, \uc2dc\uc7a5\uc11c \uacb0\uc815 .. \uc7ac\uc815\uc6b4\uc601 \uc801\uc808 \ud310\ub2e8  ",
+            "seendate": "20260902T013000Z",
+            "socialimage": "https://image.fnnews.com/resource/media/image/2026/08/19/202608192125214779_e.jpg",
+            "domain": "fnnews.com",
             "language": "Korean",
             "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.edaily.co.kr/News/Read?newsId=02266486645552568&mediaCodeNo=257",
-            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=02266486645552568 eNo=257",
-            "title": "\ub2e4\uc2dc \uae34\ucd95 \u2026 \ud55c \u00b7 \uc77c \u00b7 \uc720\ub7fd \uc774\uc5b4 \u7f8e\ub3c4 \uae08\ub9ac\uc778\uc0c1 \uc784\ubc15",
-            "seendate": "20260830T151500Z",
-            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26083000859.jpg",
-            "domain": "edaily.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://japantoday.com/category/business/update2-boj-deputy-chief-calls-for-more-rate-hikes-on-inflation-risks",
-            "url_mobile": "",
-            "title": "BOJ deputy chief calls for more rate hikes on inflation risks",
-            "seendate": "20260827T223000Z",
-            "socialimage": "",
-            "domain": "japantoday.com",
-            "language": "English",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://www.business-standard.com/world-news/warsh-puts-inflation-at-centre-of-fed-policy-at-jackson-hole-conference-126083000054_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/world-news/warsh-puts-inflation-at-centre-of-fed-policy-at-jackson-hole-conference-126083000054_1.html",
-            "title": "Warsh puts inflation at centre of Fed policy at Jackson Hole conference",
-            "seendate": "20260830T030000Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/30/thumb/fitandfill/1200X628/1788056009-8731.jpg",
-            "domain": "business-standard.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.albayan.ae/economy/business/world-economy/1548513",
-            "url_mobile": "https://www.albayan.ae/amp/economy/business/world-economy/1548513",
-            "title": "\u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0642\u0631\u0628 \u0623\u0639\u0644\u0649 \u0645\u0633\u062a\u0648\u0649 \u0641\u064a 8 \u0623\u064a\u0627\u0645",
-            "seendate": "20260827T230000Z",
-            "socialimage": "https://www.albayan.ae/assets/images/2026/08/27/5306943.jpg",
-            "domain": "albayan.ae",
-            "language": "Arabic",
-            "sourcecountry": "United Arab Emirates"
-          },
-          {
-            "url": "https://www.mubasher.info/news/4664875/%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%8A%D8%B3%D8%AA%D9%82%D8%B1-%D9%85%D8%B9-%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D8%B1%D8%B4-%D9%85%D9%86-%D8%A7%D9%84%D8%AA%D8%B6%D8%AE%D9%85/",
-            "url_mobile": "",
-            "title": "\u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0633\u062a\u0642\u0631 \u0645\u0639 \u062a\u062d\u0630\u064a\u0631\u0627\u062a \u0648\u0627\u0631\u0634 \u0645\u0646 \u0627\u0644\u062a\u0636\u062e\u0645",
-            "seendate": "20260828T184500Z",
-            "socialimage": "https://static.mubasher.info/File.Story_Image/fd63890db50b2031a10b8dbcf7f81dca/640.jpg",
-            "domain": "mubasher.info",
-            "language": "Arabic",
-            "sourcecountry": "United Arab Emirates"
-          },
-          {
-            "url": "https://www.forbes.com/sites/williampesek/2026/08/31/bank-of-japan-has-political-wind-at-its-back-its-time-to-use-it/",
-            "url_mobile": "",
-            "title": "Bank Of Japan Has Political Wind At Its Back . It Time To Use It",
-            "seendate": "20260831T123000Z",
-            "socialimage": "https://imageio.forbes.com/specials-images/imageserve/6a952d9274222eb5ced632e9/0x0.jpg?format=jpg&fit=bounds",
-            "domain": "forbes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://inews24.com/view/2000017",
-            "url_mobile": "http://m.inews24.com/v/2000017",
-            "title": "\uc5d4\ud654 \uc57d\uc138 \u00b7 \u7f8e \uae34\ucd95 \uacbd\uacc4 \u2026 \u65e5 \uc7a5\uae30\uae08\ub9ac 3 % \uadfc\uc811",
-            "seendate": "20260831T044500Z",
-            "socialimage": "https://image.inews24.com/v1/73526edf4df7b4.jpg",
-            "domain": "inews24.com",
-            "language": "Korean",
-            "sourcecountry": ""
           }
         ]
       }
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
-      "fetched_at_utc": "2026-08-31T21:42:56.093148+00:00",
+      "fetched_at_utc": "2026-09-02T19:38:42.564118+00:00",
       "payload": {
         "articles": [
+          {
+            "url": "https://yle.fi/a/74-20243998",
+            "url_mobile": "",
+            "title": "Euroalueen inflaatio kiihtyi elokuussa 3 , 3 prosenttiin",
+            "seendate": "20260901T110000Z",
+            "socialimage": "https://img.img-cdn.yle.fi/crop_fill,w_1200,h_628/f_auto/39-12692236617e49e05397",
+            "domain": "yle.fi",
+            "language": "Finnish",
+            "sourcecountry": "Finland"
+          },
+          {
+            "url": "https://www.moneycontrol.com/news/business/markets/wall-street-futures-decline-up-to-1-as-yields-climb-on-rate-hike-concerns-14019985.html",
+            "url_mobile": "https://www.moneycontrol.com/news/business/markets/wall-street-futures-decline-up-to-1-as-yields-climb-on-rate-hike-concerns-14019985.html/amp",
+            "title": "Wall Street futures decline up to 1 % as yields climb on rate hike concerns",
+            "seendate": "20260901T111500Z",
+            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/01/20260120112452_Wall-Street.jpg",
+            "domain": "moneycontrol.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
           {
             "url": "https://www.kauppalehti.fi/uutiset/a/b10c139c-e5e5-4201-8099-5b29b56fb82c",
             "url_mobile": "",
@@ -568,32 +588,12 @@
             "sourcecountry": "Finland"
           },
           {
-            "url": "https://aa.com.tr/en/world/european-stocks-close-mixed-amid-uncertainty-over-us-sanctions-on-iran/4036261",
+            "url": "https://www.focus-news.net/novini/Bylgaria/Evrostat-Bulgariya-e-s-edna-ot-nai-visokite-inflacii-v-evrozonata-3018692",
             "url_mobile": "",
-            "title": "European stocks close mixed amid uncertainty over US sanctions on Iran",
-            "seendate": "20260824T230000Z",
-            "socialimage": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/24/thumbs_b_c_a246bdbfa33e97117f3541e735246cee.jpg",
-            "domain": "aa.com.tr",
-            "language": "English",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.hellenicshippingnews.com/could-lower-oil-prices-and-fiscal-support-extend-europes-rally/",
-            "url_mobile": "",
-            "title": "Could lower oil prices and fiscal support extend Europe rally ? | Hellenic Shipping News Worldwide",
-            "seendate": "20260826T111500Z",
-            "socialimage": "",
-            "domain": "hellenicshippingnews.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.investor.bg/a/515-ikonomika-i-makrodanni/435596-biznes-klimatat-v-germaniya-se-podobryava-za-chetvarti-poreden-mesets-prez-avgust",
-            "url_mobile": "",
-            "title": "\u0411\u0438\u0437\u043d\u0435\u0441 \u043a\u043b\u0438\u043c\u0430\u0442\u044a\u0442 \u0432 \u0413\u0435\u0440\u043c\u0430\u043d\u0438\u044f \u0441\u0435 \u043f\u043e\u0434\u043e\u0431\u0440\u044f\u0432\u0430 \u0437\u0430 \u0447\u0435\u0442\u0432\u044a\u0440\u0442\u0438 \u043f\u043e\u0440\u0435\u0434\u0435\u043d \u043c\u0435\u0441\u0435\u0446 \u043f\u0440\u0435\u0437 \u0430\u0432\u0433\u0443\u0441\u0442",
-            "seendate": "20260825T093000Z",
-            "socialimage": "https://www.investor.bg/media/files/resized/article/1280x720/859/9b518d7d9b15508d4d6bef0580fe4859-germany-economy-bloomberg-lp.jpg",
-            "domain": "investor.bg",
+            "title": "\u0415\u0432\u0440\u043e\u0441\u0442\u0430\u0442 : \u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f \u0435 \u0441 \u0435\u0434\u043d\u0430 \u043e\u0442 \u043d\u0430\u0439 - \u0432\u0438\u0441\u043e\u043a\u0438\u0442\u0435 \u0438\u043d\u0444\u043b\u0430\u0446\u0438\u0438 \u0432 \u0435\u0432\u0440\u043e\u0437\u043e\u043d\u0430\u0442\u0430",
+            "seendate": "20260901T113000Z",
+            "socialimage": "https://i.id24.bg/i/3018692.webp",
+            "domain": "focus-news.net",
             "language": "Bulgarian",
             "sourcecountry": "Bulgaria"
           },
@@ -608,34 +608,34 @@
             "sourcecountry": "Brazil"
           },
           {
-            "url": "https://www.bfmtv.com/economie/malgre-la-crise-energetique-provoquee-par-la-guerre-au-moyen-orient-la-croissance-allemande-est-revue-a-la-hausse-a-0-3-au-deuxieme-trimestre-mais-elle-reste-inferieure-a-la-moyenne-de-la-zone-euro_AD-202608250216.html",
+            "url": "https://www.dnes.bg/a/1-bulgaria/733757-evrostat-balgariya-s-51-inflatsiya-v-top-3-sme-v-evrozonata",
             "url_mobile": "",
-            "title": "Malgr\u00e9 la crise \u00e9nerg\u00e9tique provoqu\u00e9e par la guerre au Moyen - Orient , la croissance allemande est revue \u00e0 la hausse , \u00e0 0 , 3 % au deuxi\u00e8me trimestre ( mais elle reste inf\u00e9rieure \u00e0 la moyenne de la zone euro ) ",
-            "seendate": "20260825T084500Z",
-            "socialimage": "https://images.bfmtv.com/bM5WtOs4mG0sXc19K9EF7_TahuQ=/0x103:2048x1255/2048x0/images/Drapeau-allemand-Allemagne-bundestag-2336420.jpg",
-            "domain": "bfmtv.com",
-            "language": "French",
-            "sourcecountry": "France"
-          },
-          {
-            "url": "https://www.chronicle.lu/category/luxembourg/63030-despite-turbulent-environment-business-activity-remains-resilient-in-2024-q2",
-            "url_mobile": "",
-            "title": "Despite Turbulent Environment , Business Activity Remains Resilient in 2024 Q2",
-            "seendate": "20260825T180000Z",
-            "socialimage": "http://www.chronicle.lu/images/2026/Aug/20260825_business-confidence-20260825-statec-600-460.jpg",
-            "domain": "chronicle.lu",
-            "language": "English",
-            "sourcecountry": "Luxembourg"
-          },
-          {
-            "url": "https://www.investor.bg/a/539-banki-i-zastrahovateli/435654-shnabel-ot-etsb-lihvite-tryabva-da-badat-povisheni-oshte-poveche-zaradi-ustoychivata-ikonomika",
-            "url_mobile": "",
-            "title": "\u0428\u043d\u0430\u0431\u0435\u043b \u043e\u0442 \u0415\u0426\u0411 : \u041b\u0438\u0445\u0432\u0438\u0442\u0435 \u0442\u0440\u044f\u0431\u0432\u0430 \u0434\u0430 \u0431\u044a\u0434\u0430\u0442 \u043f\u043e\u0432\u0438\u0448\u0435\u043d\u0438 \u043e\u0449\u0435 \u043f\u043e\u0432\u0435\u0447\u0435 \u0437\u0430\u0440\u0430\u0434\u0438 \u0443\u0441\u0442\u043e\u0439\u0447\u0438\u0432\u0430\u0442\u0430 \u0438\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430",
-            "seendate": "20260826T130000Z",
-            "socialimage": "https://www.investor.bg/media/files/resized/article/1280x720/fe5/8111c8644691a827e6fd29999137afe5-465649208.jpg",
-            "domain": "investor.bg",
+            "title": "\u0415\u0432\u0440\u043e\u0441\u0442\u0430\u0442 : \u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f \u0441 5 , 1 % \u0438\u043d\u0444\u043b\u0430\u0446\u0438\u044f , \u0432 \u0422\u041e\u041f 3 \u0441\u043c\u0435 \u0432 \u0435\u0432\u0440\u043e\u0437\u043e\u043d\u0430\u0442\u0430",
+            "seendate": "20260901T113000Z",
+            "socialimage": "https://www.dnes.bg/media/files/resized/article/1280x720/f97/5b5c0b3137d03ed03383f5fc590caf97-screenshot-2026-09-01-at-131203.jpg",
+            "domain": "dnes.bg",
             "language": "Bulgarian",
             "sourcecountry": "Bulgaria"
+          },
+          {
+            "url": "https://www.poslovni.hr/europska-unija/novi-udar-na-cijene-u-europi-inflacija-skocila-na-33-posto-hrvatska-iznad-prosjeka-4552919",
+            "url_mobile": "",
+            "title": "Novi udar na cijene u Europi : Inflacija sko\u010dila na 3 , 3 posto , Hrvatska iznad prosjeka",
+            "seendate": "20260901T154500Z",
+            "socialimage": "https://www.poslovni.hr/wp-content/uploads/2025/09/entrepreneur-working-with-bills-1600x1000.jpg",
+            "domain": "poslovni.hr",
+            "language": "Croatian",
+            "sourcecountry": "Croatia"
+          },
+          {
+            "url": "https://www.business-standard.com/world-news/us-jobs-report-seen-reinforcing-kevin-warsh-s-view-of-labour-market-126083000053_1.html",
+            "url_mobile": "https://www.business-standard.com/amp/world-news/us-jobs-report-seen-reinforcing-kevin-warsh-s-view-of-labour-market-126083000053_1.html",
+            "title": "US jobs report seen reinforcing Kevin Warsh view of labour market",
+            "seendate": "20260830T030000Z",
+            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/30/thumb/fitandfill/1200X628/1788055633-9292.jpg",
+            "domain": "business-standard.com",
+            "language": "English",
+            "sourcecountry": "India"
           }
         ]
       }
@@ -805,7 +805,7 @@
       }
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-09-01T19:49:39.446526+00:00",
+      "fetched_at_utc": "2026-09-02T19:44:13.005846+00:00",
       "payload": {
         "articles": [
           {
@@ -837,16 +837,6 @@
             "domain": "dailyforex.com",
             "language": "English",
             "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/29-Aug-2026/forex-rates-latest-currency-exchange-rates-in-pakistan-online-29-august-2026",
-            "url_mobile": "",
-            "title": "Forex Rates - Latest Currency Exchange Rates in Pakistan Online",
-            "seendate": "20260829T084500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
           },
           {
             "url": "http://www.econotimes.com/Asian-Currencies-Mixed-as-Yen-Nears-160-Oil-Surges-1750828",
@@ -919,14 +909,24 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "https://finance.yahoo.com/markets/stocks/articles/somnomed-ltd-asx-som-fy-010255715.html",
+            "url": "https://www.freemalaysiatoday.com/category/business/2026/09/02/dollar-holds-firm-as-middle-east-hostilities-lift-oil",
             "url_mobile": "",
-            "title": "SomnoMed Ltd ( ASX : SOM ) ( FY 2026 ) Earnings Call Highlights : EBITDA Surges 19 % as North America ... ",
-            "seendate": "20260829T013000Z",
-            "socialimage": "",
-            "domain": "finance.yahoo.com",
+            "title": "Dollar holds firm as Middle East hostilities drive oil prices higher",
+            "seendate": "20260902T040000Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=80,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2025/08/5d171a8e-dollar.jpg",
+            "domain": "freemalaysiatoday.com",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "http://www.kitco.com/news/off-the-wire/2026-09-01/dollar-holds-firm-middle-east-hostilities-lift-oil",
+            "url_mobile": "",
+            "title": "Dollar holds firm as Middle East hostilities lift oil",
+            "seendate": "20260902T024500Z",
+            "socialimage": "https://image-api.prod.kitco.com/image/852274e0-dbf7-4f10-ad77-fb757d6893c9.webp?top=0&left=0.37153140601423&.256937188&scale_width=1920&token=5e56fd39221d0f43b1cef18e93835915a0f5fb77bd29ee74809b9d6236098c45",
+            "domain": "kitco.com",
+            "language": "English",
+            "sourcecountry": "China"
           }
         ]
       }
@@ -1063,7 +1063,7 @@
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-09-01T19:54:16.560817+00:00",
+      "fetched_at_utc": "2026-09-02T19:47:56.042274+00:00",
       "payload": {
         "articles": [
           {
@@ -1082,16 +1082,6 @@
             "title": "Dollar , Euro , Pound , Dirham Rates Today - Check Latest Currency Exchange Rates in Pakistan",
             "seendate": "20260830T090000Z",
             "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/pkr-exchange-rate-to-us-dollar-euro-pound-dirham-and-riyal-check-24-jan-2024-forex-rates-1706069532-3910-1.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/29-Aug-2026/forex-rates-latest-currency-exchange-rates-in-pakistan-online-29-august-2026",
-            "url_mobile": "",
-            "title": "Forex Rates - Latest Currency Exchange Rates in Pakistan Online",
-            "seendate": "20260829T084500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
             "domain": "en.dailypakistan.com.pk",
             "language": "English",
             "sourcecountry": "Pakistan"
@@ -1147,7 +1137,7 @@
       }
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-09-01T19:57:51.974774+00:00",
+      "fetched_at_utc": "2026-09-02T19:53:08.700905+00:00",
       "payload": {
         "articles": [
           {
@@ -1171,6 +1161,26 @@
             "sourcecountry": "Pakistan"
           },
           {
+            "url": "https://www.stiripesurse.ro/euro-trades-at-ron-52555_3916832",
+            "url_mobile": "",
+            "title": "Euro trades at RON 5 . 2555",
+            "seendate": "20260902T114500Z",
+            "socialimage": "https://www.stiripesurse.ro/media/images/202505/1600x900/media-174661003228105400.webp",
+            "domain": "stiripesurse.ro",
+            "language": "English",
+            "sourcecountry": "Romania"
+          },
+          {
+            "url": "https://al-sharq.com/article/02/09/2026/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%AA-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%B7%D8%B1%D9%8A-203",
+            "url_mobile": "",
+            "title": "\u202b \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0631\u064a\u0627\u0644 \u0627\u0644\u0642\u0637\u0631\u064a",
+            "seendate": "20260902T073000Z",
+            "socialimage": "https://al-sharq.com/get/maximage/20240810_1723302560-400.jpg?t=1723302560",
+            "domain": "al-sharq.com",
+            "language": "Arabic",
+            "sourcecountry": "Qatar"
+          },
+          {
             "url": "https://www.thelocal.se/20260831/swedish-krona-drops-4-percent-against-us-dollar-after-strong-2025/",
             "url_mobile": "",
             "title": "Swedish krona drops 4 percent against US dollar after strong 2025",
@@ -1191,21 +1201,21 @@
             "sourcecountry": "Sweden"
           },
           {
+            "url": "https://www.interfax.ru/world/1112731",
+            "url_mobile": "https://www.interfax.ru/amp/1112731",
+            "title": "\u0417\u043e\u043b\u043e\u0442\u043e \u043f\u043e\u0434\u0435\u0448\u0435\u0432\u0435\u043b\u043e \u0434\u043e \u043c\u0438\u043d\u0438\u043c\u0443\u043c\u0430 \u0441 \u043d\u0430\u0447\u0430\u043b\u0430 \u0430\u0432\u0433\u0443\u0441\u0442\u0430",
+            "seendate": "20260902T113000Z",
+            "socialimage": "https://www.interfax.ru/aspimg/1112731.jpg",
+            "domain": "interfax.ru",
+            "language": "Russian",
+            "sourcecountry": "Russia"
+          },
+          {
             "url": "https://en.dailypakistan.com.pk/30-Aug-2026/dollar-euro-pound-dirham-rates-today-check-latest-currency-exchange-rates-in-pakistan-30-august",
             "url_mobile": "",
             "title": "Dollar , Euro , Pound , Dirham Rates Today - Check Latest Currency Exchange Rates in Pakistan",
             "seendate": "20260830T090000Z",
             "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/pkr-exchange-rate-to-us-dollar-euro-pound-dirham-and-riyal-check-24-jan-2024-forex-rates-1706069532-3910-1.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/29-Aug-2026/forex-rates-latest-currency-exchange-rates-in-pakistan-online-29-august-2026",
-            "url_mobile": "",
-            "title": "Forex Rates - Latest Currency Exchange Rates in Pakistan Online",
-            "seendate": "20260829T084500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
             "domain": "en.dailypakistan.com.pk",
             "language": "English",
             "sourcecountry": "Pakistan"
@@ -1219,6 +1229,16 @@
             "domain": "tdg.ch",
             "language": "French",
             "sourcecountry": "Switzerland"
+          },
+          {
+            "url": "https://www.businessonline.it/news/la-banconota-con-il-pi-alto-valore-al-mondo-gli-esperti-si-dividono-su-quale-sia-veramente_n86933.html",
+            "url_mobile": "",
+            "title": "Qual \u00e8 la banconota dal valore pi\u00f9 alto al mondo ? Il primato che divide gli esperti",
+            "seendate": "20260902T174500Z",
+            "socialimage": "https://www.businessonline.it/img/news/original/la-banconota-con-il-pi-alto-valore-al-mondo-gli-esperti-si-dividono-su-quale-sia-veramente-3915041.png",
+            "domain": "businessonline.it",
+            "language": "Italian",
+            "sourcecountry": "Italy"
           },
           {
             "url": "https://www.reporter.gr/diethnh/%CE%BDomismata/684029-xrysos-kai-bitcoin-to-adynamo-dolario-fountonei-to-rali-oi-nees-kiniseis-ton-ependyton",
@@ -1239,42 +1259,12 @@
             "domain": "akhbarelyom.com",
             "language": "Arabic",
             "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://www.thelocal.se/20260831/today-in-sweden-a-roundup-of-the-latest-news-on-monday-259",
-            "url_mobile": "",
-            "title": "Today in Sweden : A roundup of the latest news on Monday",
-            "seendate": "20260831T101500Z",
-            "socialimage": "",
-            "domain": "thelocal.se",
-            "language": "English",
-            "sourcecountry": "Sweden"
-          },
-          {
-            "url": "https://www.mikrometoxos.gr/chrysos-kai-bitcoin-i-megali-fygi-apo-to-dolario-pou-topothetoun-tora-ta-kefalaia-tous-oi-ependytes/",
-            "url_mobile": "",
-            "title": "\u03a7\u03c1\u03c5\u03c3\u03cc\u03c2 \u03ba\u03b1\u03b9 Bitcoin : \u0397 \u03bc\u03b5\u03b3\u03ac\u03bb\u03b7 \u03c6\u03c5\u03b3\u03ae \u03b1\u03c0\u03cc \u03c4\u03bf \u03b4\u03bf\u03bb\u03ac\u03c1\u03b9\u03bf \u2013 \u03a0\u03bf\u03cd \u03c4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c4\u03bf\u03cd\u03bd \u03c4\u03ce\u03c1\u03b1 \u03c4\u03b1 \u03ba\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03ac \u03c4\u03bf\u03c5\u03c2 \u03bf\u03b9 \u03b5\u03c0\u03b5\u03bd\u03b4\u03c5\u03c4\u03ad\u03c2",
-            "seendate": "20260831T050000Z",
-            "socialimage": "https://www.mikrometoxos.gr/wp-content/uploads/2026/08/images-2026-08-31T074122.212.jpg",
-            "domain": "mikrometoxos.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "http://www.batonrougepost.com/news/279276322/wall-street-slips-monday-nasdaq-composite-dips-32-points",
-            "url_mobile": "",
-            "title": "Wall Street slips Monday , Nasdaq Composite dips 32 points",
-            "seendate": "20260831T220000Z",
-            "socialimage": "https://image.chitra.live/api/v1/wps/88e70a5/4386827e-382c-42c6-bb02-2b6b8c839822/2/US-stocks-mixed-AP-600x315.jpeg",
-            "domain": "batonrougepost.com",
-            "language": "English",
-            "sourcecountry": "United States"
           }
         ]
       }
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-01T19:58:17.180458+00:00",
+      "fetched_at_utc": "2026-09-02T19:53:31.745273+00:00",
       "payload": {
         "articles": [
           {
@@ -1288,30 +1278,120 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://www.themarketsdaily.com/2026/08/30/okta-nasdaqokta-upgraded-by-wall-street-zen-to-buy-rating.html",
+            "url": "http://www.zimbabwestar.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
             "url_mobile": "",
-            "title": "Okta ( NASDAQ : OKTA ) Upgraded by Wall Street Zen to Buy Rating",
-            "seendate": "20260830T071500Z",
-            "socialimage": "",
-            "domain": "themarketsdaily.com",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T221500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "zimbabwestar.com",
+            "language": "English",
+            "sourcecountry": "Zimbabwe"
+          },
+          {
+            "url": "http://www.philippinetimes.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T221500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "philippinetimes.com",
+            "language": "English",
+            "sourcecountry": "Philippines"
+          },
+          {
+            "url": "http://www.cincinnatisun.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T221500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "cincinnatisun.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.finews.ch/news/banken/73429-umfrage-schweizer-regionalbanken-eigene-geschaeftslage-skepsis-langfristige-entwicklung-verhaeltnis-zur-finma",
+            "url": "http://www.shanghainews.net/news/279280087/u-s-and-global-stocks-undermined-by-rising-bond-yields",
             "url_mobile": "",
-            "title": "Die Regionalbanken verlieren das Vertrauen in die Finma",
-            "seendate": "20260901T190000Z",
-            "socialimage": "https://www.finews.ch/images/news/2026/09/Bernerland-Bank-Filiale-Lyss.jpg",
-            "domain": "finews.ch",
-            "language": "German",
-            "sourcecountry": "Switzerland"
+            "title": "U . S . and global stocks undermined by rising bond yields",
+            "seendate": "20260901T221500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "shanghainews.net",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "http://www.pakistantelegraph.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T221500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "pakistantelegraph.com",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "http://www.neworleanssun.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T224500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "neworleanssun.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.parisguardian.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T224500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "parisguardian.com",
+            "language": "English",
+            "sourcecountry": "France"
+          },
+          {
+            "url": "http://www.nigeriasun.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T224500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "nigeriasun.com",
+            "language": "English",
+            "sourcecountry": "Nigeria"
+          },
+          {
+            "url": "http://www.iranherald.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T224500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "iranherald.com",
+            "language": "English",
+            "sourcecountry": "Iran"
+          },
+          {
+            "url": "http://www.torontotelegraph.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T213000Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "torontotelegraph.com",
+            "language": "English",
+            "sourcecountry": "Canada"
+          },
+          {
+            "url": "http://www.newyorktelegraph.com/news/279280087/tech-rout-sends-nasdaq-composite-reeling-on-tuesday",
+            "url_mobile": "",
+            "title": "Tech rout sends Nasdaq Composite reeling on Tuesday",
+            "seendate": "20260901T224500Z",
+            "socialimage": "https://image.chitra.live/api/v1/wps/313d8e4/bd4c761f-e76c-4683-9952-719f91400aa1/1/US-stocks-plunge-3-600x315.jpg",
+            "domain": "newyorktelegraph.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-09-01T19:58:43.829370+00:00",
+      "fetched_at_utc": "2026-09-02T19:53:52.720122+00:00",
       "payload": {
         "articles": [
           {
@@ -1348,7 +1428,7 @@
       }
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-01T19:47:43.652830+00:00",
+      "fetched_at_utc": "2026-09-02T19:40:56.815027+00:00",
       "payload": {
         "articles": [
           {
@@ -1360,16 +1440,6 @@
             "domain": "hankookilbo.com",
             "language": "Korean",
             "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.thehindubusinessline.com/portfolio/mutual-funds/warshs-inflation-warning-sets-up-september-showdown-for-the-fed/article71405107.ece",
-            "url_mobile": "https://www.thehindubusinessline.com/portfolio/mutual-funds/warshs-inflation-warning-sets-up-september-showdown-for-the-fed/article71405107.ece/amp/",
-            "title": "Warsh inflation warning sets up September showdown for the Fed",
-            "seendate": "20260829T160000Z",
-            "socialimage": "https://bl-i.thgim.com/public/incoming/92yl04/article71405130.ece/alternates/LANDSCAPE_1200/465922502.jpg",
-            "domain": "thehindubusinessline.com",
-            "language": "English",
-            "sourcecountry": "India"
           },
           {
             "url": "https://www.aol.co.uk/articles/average-uk-house-price-edged-062437000.html",
@@ -1390,26 +1460,6 @@
             "domain": "business-standard.com",
             "language": "English",
             "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/warshs-inflation-warning-sets-september-showdown-fed",
-            "url_mobile": "",
-            "title": "Warsh inflation warning sets up September showdown for the Fed",
-            "seendate": "20260829T034500Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/4e2b79d5e0d1ff7eef828dc073557c30f4f9ecc1d418ab3b5846829abe6e54b1?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://www.breitbart.com/economy/2026/08/28/warsh-expands-longstanding-critique-of-fed-forward-guidance-lays-out-seven-policy-principles/",
-            "url_mobile": "https://www.breitbart.com/economy/2026/08/28/warsh-expands-longstanding-critique-of-fed-forward-guidance-lays-out-seven-policy-principles/amp/",
-            "title": "Warsh Expands Longstanding Critique of Fed Forward Guidance , Lays Out Seven Policy Principles",
-            "seendate": "20260828T210000Z",
-            "socialimage": "https://media.breitbart.com/media/2026/08/GettyImages-2291773172-e1787940520832-639x335.jpg",
-            "domain": "breitbart.com",
-            "language": "English",
-            "sourcecountry": "United States"
           },
           {
             "url": "https://www.aol.com/articles/pound-slips-despite-jump-gilt-112948000.html",
@@ -1462,6 +1512,16 @@
             "sourcecountry": "United States"
           },
           {
+            "url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/economia/dettaglio/schroders-tre-ondate-di-inflazione-rimettono-al-lavoro-le-banche-centrali-parola-al-mercato-nRC_30082026_1437_271110921.html",
+            "url_mobile": "",
+            "title": "Schroders : tre ondate di inflazione rimettono al lavoro le banche centrali - PAROLA AL MERCATO",
+            "seendate": "20260830T134500Z",
+            "socialimage": "",
+            "domain": "borsaitaliana.it",
+            "language": "Italian",
+            "sourcecountry": "Italy"
+          },
+          {
             "url": "https://www.theguardian.com/business/live/2026/sep/01/bond-sell-off-oil-prices-inflation-fears-shein-shares-latest-news-updates",
             "url_mobile": "",
             "title": "UK 10 - year gilt yield highest since 2008 as rising oil prices trigger global bond rout \u2013 business live \u2013 business live",
@@ -1470,139 +1530,159 @@
             "domain": "theguardian.com",
             "language": "English",
             "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.abcbourse.com/marches/newsContent/701783",
+            "url_mobile": "",
+            "title": "Kevin Warsh plaide en faveur dune hausse des taux et rel\u00e8ve le niveau dexigenc",
+            "seendate": "20260831T060000Z",
+            "socialimage": "https://www.abcbourse.com/imgabc/881-x.jpg",
+            "domain": "abcbourse.com",
+            "language": "French",
+            "sourcecountry": "France"
+          },
+          {
+            "url": "https://www.asianimage.co.uk/news/national/26509977.average-uk-house-price-edged-0-2-august-says-nationwide/",
+            "url_mobile": "",
+            "title": "Average united kingdom house price edged up by 0 . 2 % in August , says Nationwide",
+            "seendate": "20260901T070000Z",
+            "socialimage": "https://www.asianimage.co.uk/resources/images/21394040.jpg?type=og-image",
+            "domain": "asianimage.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
           }
         ]
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-31T21:52:08.357084+00:00",
+      "fetched_at_utc": "2026-09-02T19:45:43.218522+00:00",
       "payload": {
         "articles": [
           {
-            "url": "http://www.econotimes.com/FxWirePro-AUD-USD-hits-three-month-peakscope-for-futher-upside-1750663",
+            "url": "https://theconversation.com/why-the-rise-in-government-debt-is-freaking-out-the-bond-market-290240",
             "url_mobile": "",
-            "title": "FxWirePro : AUD / USD hits three - month peak , scope for futher upside",
-            "seendate": "20260828T061500Z",
-            "socialimage": "https://f1.econotimes.com/2026/08/q1lk6n8ltn.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/audusd-forex-forecast-28-august-2026/249105",
-            "url_mobile": "",
-            "title": "AUD / USD Forecast : Jackson Hole Speech Tests Aussie Rally",
-            "seendate": "20260828T113000Z",
-            "socialimage": "",
-            "domain": "dailyforex.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "http://www.econotimes.com/Asian-Currencies-Steady-Ahead-of-Warsh-Speech-1750671",
-            "url_mobile": "",
-            "title": "Asian Currencies Steady Ahead of Warsh Speech",
-            "seendate": "20260828T061500Z",
-            "socialimage": "https://f1.econotimes.com/2026/02/iwkjc7z84c.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.hellenicshippingnews.com/asia-week-ahead-key-data-on-australia-china-india-japan-korea-philippines/",
-            "url_mobile": "",
-            "title": "Asia week ahead : Key data on Australia , China , India , Japan , Korea , Philippines",
-            "seendate": "20260828T181500Z",
-            "socialimage": "",
-            "domain": "hellenicshippingnews.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.ibtimes.com.au/commonwealth-bank-leads-gains-amid-market-volatility-1874781",
-            "url_mobile": "",
-            "title": "Commonwealth Bank Shares Rise Nearly 2 Percent as Banks Lead ASX Higher on Rate Hike Expectations",
-            "seendate": "20260831T074500Z",
-            "socialimage": "https://d.ibtimes.com.au/en/full/1890715/commonwealth-bank-australia.jpg",
-            "domain": "ibtimes.com.au",
+            "title": "Why the rise in government debt is freaking out the bond market",
+            "seendate": "20260902T014500Z",
+            "socialimage": "https://images.theconversation.com/files/757097/original/file-20260901-60-e87so0.jpg?ixlib=rb-4.1.1&rect=0%2C653%2C5193%2C2596&q=45&auto=format&fit=crop",
+            "domain": "theconversation.com",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://thebull.com.au/news/aud-usd-forecasters-shift-tone-as-central-bank-comments-cast-shadow/",
+            "url": "https://www.sbs.com.au/news/article/australia-gdp-growth-economy-rba-interest-rates-pressure/61iypio6x",
             "url_mobile": "",
-            "title": "AUD / USD Forecasters Shift Tone , As Central Bank Comments Cast Shadow",
-            "seendate": "20260831T094500Z",
-            "socialimage": "",
-            "domain": "thebull.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.rttnews.com/3687038/surging-crude-oil-prices-may-weigh-on-wall-street.aspx",
-            "url_mobile": "",
-            "title": "Surging Crude Oil Prices May Weigh On Wall Street",
-            "seendate": "20260831T141500Z",
-            "socialimage": "",
-            "domain": "rttnews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.proactiveinvestors.com.au/companies/news/1097753/asx-set-to-edge-higher-after-rate-hike-fears-trigger-sharpest-sell-off-in-12-weeks-1097753.html",
-            "url_mobile": "",
-            "title": "ASX set to edge higher after rate hike fears trigger sharpest sell - off in 12 weeks",
-            "seendate": "20260828T001500Z",
-            "socialimage": "https://cdn.proactiveinvestors.com/eyJidWNrZXQiOiJwYS1jZG4iLCJrZXkiOiJ1cGxvYWRcL05ld3NcL0ltYWdlXC8yMDI2XzA4XC8yMDI2LTA4LTI4LTA5LTIyLTUxLTJjYTllYzVlNDRjN2U1ZTEzNzFjMzFhNGJlMzU3YTJkLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0Ijo2MzAsImZpdCI6ImNvdmVyIn19fQ==",
-            "domain": "proactiveinvestors.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.livemint.com/opinion/online-views/exorbitant-privilege-how-dollar-dominance-deployed-for-statecraft-extract-diplomatic-price-11787909010022.html",
-            "url_mobile": "https://www.livemint.com/opinion/online-views/exorbitant-privilege-how-dollar-dominance-deployed-for-statecraft-extract-diplomatic-price/amp-11787909010022.html",
-            "title": "Exorbitant privilege : how dollar dominance deployed for statecraft could extract a diplomatic price",
-            "seendate": "20260828T111500Z",
-            "socialimage": "https://www.livemint.com/lm-img/img/2026/08/28/600x338/im-28741974_1786451481403_1787909566136_38c39d01-714d-46f3-8222-4447e9bd01fd.jpg",
-            "domain": "livemint.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69446638-asian-markets-track-wall-street-lower-020.htm",
-            "url_mobile": "",
-            "title": "Asian Markets Track Wall Street Lower",
-            "seendate": "20260831T044500Z",
-            "socialimage": "https://www.finanznachrichten.de/content/g/fb.png",
-            "domain": "finanznachrichten.de",
-            "language": "English",
-            "sourcecountry": "Germany"
-          },
-          {
-            "url": "https://www.sbs.com.au/news/article/mortgages-in-retirement-older-australians-first-home-buyers/gm75pqojy",
-            "url_mobile": "",
-            "title": "The big retirement question hiding in Australia housing crisis",
-            "seendate": "20260828T230000Z",
-            "socialimage": "https://sbs-au-brightspot.s3.ap-southeast-2.amazonaws.com/d1/43/a9643c464f68bb2d3975045cdf35/gfx-260826-mortgage-into-retirement-lead-image.png",
+            "title": "The possible cost of Australia stronger - than - expected growth",
+            "seendate": "20260902T064500Z",
+            "socialimage": "https://sbs-au-brightspot.s3.ap-southeast-2.amazonaws.com/a8/76/dad87a7d4c578cfa8d5cd8546d2b/20251013115387353461-original.jpg",
             "domain": "sbs.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "http://www.britainnews.net/news/279276322/u-s-stocks-drop-after-u-s-iran-hostilities-flare",
+            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/new-zealand-central-bank-raises-rates-25-bps-flags-gradual-tightening-path",
             "url_mobile": "",
-            "title": "U . S . stocks drop after U . S .- Iran hostilities flare",
-            "seendate": "20260831T204500Z",
-            "socialimage": "https://image.chitra.live/api/v1/wps/88e70a5/4386827e-382c-42c6-bb02-2b6b8c839822/2/US-stocks-mixed-AP-600x315.jpeg",
-            "domain": "britainnews.net",
+            "title": "New Zealand central bank raises rates by 25 bps , flags gradual tightening path",
+            "seendate": "20260902T040000Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/92b13f13f3fd4779b5f66dd7fcfcd9ce1bb97e1df07c74c13f219881ce07f25e?&f=webp",
+            "domain": "businesstimes.com.sg",
             "language": "English",
-            "sourcecountry": "United Kingdom"
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://www.scmp.com/news/asia/australasia/article/3365916/australias-biggest-property-downturn-pandemic-threatens-economic-growth",
+            "url_mobile": "https://amp.scmp.com/news/asia/australasia/article/3365916/australias-biggest-property-downturn-pandemic-threatens-economic-growth",
+            "title": "Australia biggest property downturn since pandemic threatens economic growth",
+            "seendate": "20260901T041500Z",
+            "socialimage": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/09/01/94a434e5-e7c3-49c8-b22f-52e102b82422_eb680cad.jpg?itok=KBmO_RL-&v=1788232729",
+            "domain": "scmp.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.cnbc.com/2026/09/02/australia-gdp-q2-middle-east-rba.html",
+            "url_mobile": "https://www.cnbc.com/amp/2026/09/02/australia-gdp-q2-middle-east-rba.html",
+            "title": "Australia posts second - quarter growth of 2 . 1 %, beating expectations",
+            "seendate": "20260902T030000Z",
+            "socialimage": "https://image.cnbcfm.com/api/v1/image/108357457-1788312944438-gettyimages-2155290490-_bt_may30_24_0024_efsljj39.jpeg?v=1788312955",
+            "domain": "cnbc.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.theglobeandmail.com/investing/article-the-real-deal-world-bonds-grind-towards-higher-neutral-rates/",
+            "url_mobile": "",
+            "title": "The  real  deal world bonds grind towards higher neutral rates",
+            "seendate": "20260902T134500Z",
+            "socialimage": "https://www.theglobeandmail.com/resizer/v2/FMODGMLEBFFKNBHSZZHXQUD4WQ.JPG?auth=15a929f7f4fecffa4f6fd9ef1a635d16857f93e434e92418cb401d87b3d67acd&quality=80&smart=true",
+            "domain": "theglobeandmail.com",
+            "language": "English",
+            "sourcecountry": "Canada"
+          },
+          {
+            "url": "https://www.rte.ie/news/business/2026/0902/1590042-australia-gdp-figures/",
+            "url_mobile": "",
+            "title": "Australia economy slows in second quarter",
+            "seendate": "20260902T101500Z",
+            "socialimage": "https://www.rte.ie/images/00205eec-1600.jpg",
+            "domain": "rte.ie",
+            "language": "English",
+            "sourcecountry": "Ireland"
+          },
+          {
+            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/australian-new-zealand-dollars-pause-near-multi-month-peaks-bond-selloff-deepens",
+            "url_mobile": "",
+            "title": "Australian , New Zealand dollars pause near multi - month peaks as bond selloff deepens",
+            "seendate": "20260901T041500Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/43719f2f1101c2adb84c603d7a5705a56ded83e039fce8c4ffee82c9b59fd5ba?&f=webp",
+            "domain": "businesstimes.com.sg",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://www.morningstar.com/news/dow-jones/202608318308/australian-consumer-confidence-drops-as-rate-boost-looks-likely",
+            "url_mobile": "",
+            "title": "Australian Consumer Confidence Drops as Rate Boost Looks Likely",
+            "seendate": "20260901T044500Z",
+            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+            "domain": "morningstar.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.livemint.com/market/stock-market-news/10year-treasury-yield-hits-highest-level-since-late-2023-as-oil-price-lifts-us-fed-rate-hike-bets-11788347411111.html",
+            "url_mobile": "https://www.livemint.com/market/stock-market-news/10year-treasury-yield-hits-highest-level-since-late-2023-as-oil-price-lifts-us-fed-rate-hike-bets/amp-11788347411111.html",
+            "title": "10 - year Treasury yield hits highest level since late 2023 as oil price lifts US Fed rate - hike bets",
+            "seendate": "20260902T130000Z",
+            "socialimage": "https://www.livemint.com/lm-img/img/2026/09/02/600x338/bonds_1788351465803_d2d50ec5-fb3e-41d8-9a5e-bdea1225484e_1788351482172_96d43f2a-ec70-46ad-b51c-9695fbfe2a84_6617faa7-7e1c-42ca-9370-ebb1f2852d6d_2b10a8c0-b894-493f-9cc3-5bda320db625.png",
+            "domain": "livemint.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.dailymail.com/news/article-16097881/australia-gdp-growth-reserve-bank-rates.html",
+            "url_mobile": "https://www.dailymail.com/news/article-16097881/amp/australia-gdp-growth-reserve-bank-rates.html",
+            "title": "Aussie homeowners brace for rate hike after surprise GDP result piles pressure on the Reserve Bank",
+            "seendate": "20260902T044500Z",
+            "socialimage": "https://i.dailymail.com/1s/2026/09/02/03/110991767-0-image-m-44_1788317757862.jpg",
+            "domain": "dailymail.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.weeklytimes.com.au/rba-warning-as-rate-hike-likely-within-weeks/",
+            "url_mobile": "https://www.weeklytimes.com.au/rba-warning-as-rate-hike-likely-within-weeks/?amp_markup=1",
+            "title": "RBA warning as rate hike likely within weeks",
+            "seendate": "20260901T201500Z",
+            "socialimage": "https://i0.wp.com/www.weeklytimes.com.au/wp-content/uploads/2026/09/hike2.jpg?fit=700%2C467&ssl=1",
+            "domain": "weeklytimes.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
           }
         ]
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-09-01T19:55:39.294450+00:00",
+      "fetched_at_utc": "2026-09-02T19:50:53.593798+00:00",
       "payload": {
         "articles": [
           {
@@ -1729,93 +1809,13 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:bankofengland.co.uk": {
-      "fetched_at_utc": "2026-09-01T19:48:36.183502+00:00",
+      "fetched_at_utc": "2026-09-02T19:43:00.773637+00:00",
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-08-31T21:36:11.718026+00:00",
+      "fetched_at_utc": "2026-09-02T19:29:21.232886+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.upi.com/Top_News/US/2026/08/28/kevin-warsh-federal-reserve-symposium-wyoming/4011787924809/",
-            "url_mobile": "https://www.upi.com/amp/Top_News/US/2026/08/28/kevin-warsh-federal-reserve-symposium-wyoming/4011787924809/",
-            "title": "Kevin Warsh to deliver keynote speech at Fed symposium in Wyoming",
-            "seendate": "20260828T160000Z",
-            "socialimage": "https://cdnph.upi.com/sv/ph/og/upi/4011787924809/2026/1/3fe0a585dcb933de7d6325bd57fa0dd6/v1.5/Kevin-Warsh-to-deliver-keynote-speech-at-Feds-symposium-in-Wyoming.jpg",
-            "domain": "upi.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://biz.heraldcorp.com/article/10854887",
-            "url_mobile": "",
-            "title": "\uce94\uc790\uc2a4\uc2dc\ud2f0 \uc5f0\uc740 \ucd1d\uc7ac  \ud604\uc7ac \uae30\uc900\uae08\ub9ac \uc81c\uc57d\uc801\uc774\uc9c0 \uc54a\uc544 \u2026 \uc778\ud50c\ub808 \uc644\uace0  ",
-            "seendate": "20260827T230000Z",
-            "socialimage": "https://wimg.heraldcorp.com/news/cms/2026/08/28/news-p.v1.20260828.71d50d859a904647aa85c5088f78ca1f_T1.jpg",
-            "domain": "biz.heraldcorp.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.fnnews.com/news/202608280718572396",
-            "url_mobile": "",
-            "title": "  \uc7ad\uc2a8\ud640  \ubaa8\uc778 \u7f8e \uc5f0\uc900 \ucd1d\uc7ac\ub4e4 , \uc785 \ubaa8\uc544 \ubb3c\uac00\uc0c1\uc2b9 \uacbd\uace0",
-            "seendate": "20260828T000000Z",
-            "socialimage": "https://image.fnnews.com/resource/media/image/2026/08/28/202608280148366760_e.jpg",
-            "domain": "fnnews.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.nydailynews.com/2026/08/28/fed-chair-warsh-rate-hikes-inflation/",
-            "url_mobile": "",
-            "title": "Fed Chair Warsh signals rate hikes may be needed with inflation high",
-            "seendate": "20260828T161500Z",
-            "socialimage": "https://www.nydailynews.com/wp-content/uploads/2026/08/Federal_Reserve_Warsh_23992-1.jpg",
-            "domain": "nydailynews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.ocregister.com/2026/08/28/fed-chair-warsh-rate-hikes-inflation/",
-            "url_mobile": "",
-            "title": "Fed Chair Warsh signals rate hikes may be needed with inflation high",
-            "seendate": "20260828T154500Z",
-            "socialimage": "https://www.ocregister.com/wp-content/uploads/2026/08/Federal_Reserve_Warsh_23992-1.jpg",
-            "domain": "ocregister.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.courant.com/2026/08/28/fed-chair-warsh-rate-hikes-inflation/",
-            "url_mobile": "",
-            "title": "Fed Chair Warsh signals rate hikes may be needed with inflation high",
-            "seendate": "20260828T150000Z",
-            "socialimage": "https://www.courant.com/wp-content/uploads/2026/08/Federal_Reserve_Warsh_23992-1.jpg",
-            "domain": "courant.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.citizensvoice.com/2026/08/28/fed-chair-warsh-rate-hikes-inflation/",
-            "url_mobile": "",
-            "title": "Fed Chair Warsh signals rate hikes may be needed with inflation high",
-            "seendate": "20260828T150000Z",
-            "socialimage": "https://www.citizensvoice.com/wp-content/uploads/2026/08/Federal_Reserve_Warsh_23992-1.jpg",
-            "domain": "citizensvoice.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stock-market-warsh-jackson-hole-speech-puts-fed-policy-communication-under-scrutiny/articleshow/133585815.cms",
-            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/us-stock-market-warsh-jackson-hole-speech-puts-fed-policy-communication-under-scrutiny/amp_articleshow/133585815.cms",
-            "title": "US Stock Market : Warsh Jackson Hole speech puts Fed policy communication under scrutiny",
-            "seendate": "20260828T073000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-133585862,width-1200,height-630,imgsize-2524745,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
           {
             "url": "https://www.edaily.co.kr/News/Read?newsId=01246406645552568&mediaCodeNo=257",
             "url_mobile": "https://m.edaily.co.kr/news/read?newsId=01246406645552568 eNo=257",
@@ -1837,24 +1837,104 @@
             "sourcecountry": "South Korea"
           },
           {
-            "url": "https://www.etoday.co.kr/news/view/2619543",
-            "url_mobile": "https://m.etoday.co.kr/news/view/2619543",
-            "title": "\uc6cc\uc2dc , \ucde8\uc784 \ud6c4 \uac00\uc7a5 \uac15\ud55c  \uae08\ub9ac \uc778\uc0c1  \uc2e0\ud638 \u2026 9\uc6d4 \ud655\ub960 60 % \uc721\ubc15",
-            "seendate": "20260829T024500Z",
-            "socialimage": "https://img.etoday.co.kr/pto_db/2026/08/20260829090115_2380239_1200_827.jpg",
-            "domain": "etoday.co.kr",
+            "url": "https://www.hani.co.kr/arti/economy/economy_general/1275299.html",
+            "url_mobile": "",
+            "title": "\uc6cc\uc2dc  \ub9e4\ud30c \ubc1c\uc5b8  \uc5d0\ub3c4 \ubbf8 9\uc6d4 \uae08\ub9ac \uc804\ub9dd \uc548\uac2f\uc18d \u2026 \ud2b8\ub7fc\ud504 \uc555\ubc15\ub3c4 \ub9cc\ub9cc\ucc2e\uc544",
+            "seendate": "20260830T060000Z",
+            "socialimage": "https://flexible.img.hani.co.kr/flexible/normal/740/493/imgdb/original/2026/0830/20260830501269.webp",
+            "domain": "hani.co.kr",
             "language": "Korean",
             "sourcecountry": "South Korea"
           },
           {
-            "url": "https://www.capitalgazette.com/2026/08/28/fed-chair-warsh-rate-hikes-inflation/",
+            "url": "https://www.edaily.co.kr/News/Read?newsId=03325926645552896&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=03325926645552896 eNo=257",
+            "title": "  \uc5f0\ub9d0\uae4c\uc9c0 \ub3d9\uacb0  \ub4a4\uc9d1\uc740 \ubc14\ud074\ub808\uc774\uc2a4 \u2026 \uc5f0\uc900 2\ucc28\ub840 \uc778\uc0c1 \uc804\ub9dd",
+            "seendate": "20260831T061500Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26083100770.jpg",
+            "domain": "edaily.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "http://www.koreatimes.com/article/20260901/1627975",
             "url_mobile": "",
-            "title": "Fed Chair Warsh signals rate hikes may be needed with inflation high",
-            "seendate": "20260828T161500Z",
-            "socialimage": "https://www.capitalgazette.com/wp-content/uploads/2026/08/Federal_Reserve_Warsh_23992-1.jpg",
-            "domain": "capitalgazette.com",
+            "title": "\ubc14 \uc5f0\uc900 \uc774\uc0ac  \uc778\ud50c\ub808\uc774\uc158 \uc644\ud654 \uc548 \ub418\uba74 \uae08\ub9ac \ub2e8\ud638\ud788 \uc62c\ub824\uc57c  ",
+            "seendate": "20260901T191500Z",
+            "socialimage": "http://mimg.koreatimes.com/286/172/article/2026/09/01/202609011058116a5.JPG",
+            "domain": "koreatimes.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.livehindustan.com/business/personal-finance/gold-rate-monday-31-august-2026-sona-hua-sasta-sone-ka-bhav-delhi-up-bihar-jaipur-gold-rate-201788176920223.html",
+            "url_mobile": "https://www.livehindustan.com/business/personal-finance/gold-rate-monday-31-august-2026-sona-hua-sasta-sone-ka-bhav-delhi-up-bihar-jaipur-gold-rate-201788176920223.amp.html",
+            "title": "Gold Rate Today : \u0926\u0947\u0936 \u092e\u0947\u0902 1 . 42 \u0932\u093e\u0916 \u0930\u0941\u092a\u092f\u0947 \u092a\u0930 \u0906\u092f\u093e \u0917\u094b\u0932\u094d\u0921 , \u0938\u094b\u0928\u0947 \u092e\u0947\u0902 \u0932\u0917\u093e\u0924\u093e\u0930 \u0906 \u0930\u0939\u0940 \u0939\u0948 \u0917\u093f\u0930\u093e\u0935\u091f",
+            "seendate": "20260831T123000Z",
+            "socialimage": "",
+            "domain": "livehindustan.com",
+            "language": "Hindi",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-sounds-alarm-investors-090800990.html",
+            "url_mobile": "",
+            "title": "The Stock Market Sounds an Alarm as Investors Get Bad News About President Trump Economy . History Says This Will Happen Next . ",
+            "seendate": "20260831T101500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/23ebdd37bd1adf333c55239369570928d01e1a156c00b4cb073224eddfed2085/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmotleyfool.com%2F04eb876db0afdc4a08be75355c66de7a.jpg",
+            "domain": "finance.yahoo.com",
             "language": "English",
             "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.taipeitimes.com/News/biz/archives/2026/08/31/2003863395",
+            "url_mobile": "",
+            "title": "Fed chair signals rate hikes might be needed with US inflation still elevated",
+            "seendate": "20260830T183000Z",
+            "socialimage": "https://img.taipeitimes.com/images/2026/08/31/P09-260831-318.jpg",
+            "domain": "taipeitimes.com",
+            "language": "English",
+            "sourcecountry": "Taiwan"
+          },
+          {
+            "url": "https://www.edaily.co.kr/News/Read?newsId=02273046645552568&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=02273046645552568 eNo=257",
+            "title": "\uc804\uc7c1 \u00b7 \uad00\uc138 \u00b7 AI \ud22c\uc790\ubd90\uc5d0 \uae00\ub85c\ubc8c \uae34\ucd95 \uae30\uc870 \u2026 \u97d3\ub3c4 \uace0\uae08\ub9ac \uc7a5\uae30\ud654 \uc555\ub825",
+            "seendate": "20260830T151500Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26083000862.jpg",
+            "domain": "edaily.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://time.mk/c/55e3f62a45/cenata-na-zlatoto-vo-pad-pazarite-vo-iscekuvanje-na-novi-signali-od-amerikanskata-ekonomija.html",
+            "url_mobile": "",
+            "title": "\u0426\u0435\u043d\u0430\u0442\u0430 \u043d\u0430 \u0437\u043b\u0430\u0442\u043e\u0442\u043e \u0432\u043e \u043f\u0430\u0434 , \u043f\u0430\u0437\u0430\u0440\u0438\u0442\u0435 \u0432\u043e \u0438\u0441\u0447\u0435\u043a\u0443\u0432\u0430\u045a\u0435 \u043d\u0430 \u043d\u043e\u0432\u0438 \u0441\u0438\u0433\u043d\u0430\u043b\u0438 \u043e\u0434 \u0430\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u0442\u0430 \u0435\u043a\u043e\u043d\u043e\u043c\u0438\u0458\u0430",
+            "seendate": "20260901T070000Z",
+            "socialimage": "https://faktor.mk/media/main/2026/08/20260806212630.jpg",
+            "domain": "time.mk",
+            "language": "Macedonian",
+            "sourcecountry": "Macedonia"
+          },
+          {
+            "url": "https://time.mk/c/48d4149264/mk/paradoks-na-pazarite-vojnata-se-razgoruva-a-zlatoto-pagja-kon-4-400-dolari.html",
+            "url_mobile": "",
+            "title": "\u041f\u0410\u0420\u0410\u0414\u041e\u041a\u0421 \u041d\u0410 \u041f\u0410\u0417\u0410\u0420\u0418\u0422\u0415 : \u0412\u043e\u0458\u043d\u0430\u0442\u0430 \u0441\u0435 \u0440\u0430\u0437\u0433\u043e\u0440\u0443\u0432\u0430 , \u0430 \u0437\u043b\u0430\u0442\u043e\u0442\u043e \u043f\u0430\u0453\u0430 \u043a\u043e\u043d 4 . 400 \u0434\u043e\u043b\u0430\u0440\u0438",
+            "seendate": "20260901T081500Z",
+            "socialimage": "http://pari.com.mk/wp-content/uploads/2026/08/zlataky-cz-y7jRMXOz7pE-unsplash-scaled.jpg",
+            "domain": "time.mk",
+            "language": "Macedonian",
+            "sourcecountry": "Macedonia"
+          },
+          {
+            "url": "https://www.fnnews.com/news/202609021147445723",
+            "url_mobile": "",
+            "title": "\ubc14 \uc5f0\uc900 \uc774\uc0ac  \ubb3c\uac00 \ucda9\ubd84\ud788 \uc548 \uaebe\uc774\uba74 \ub2e8\ud638\ud558\uac8c \uae08\ub9ac \uc62c\ub824\uc57c  ",
+            "seendate": "20260902T051500Z",
+            "socialimage": "",
+            "domain": "fnnews.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           }
         ]
       }
@@ -2004,7 +2084,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-09-01T20:00:10.680127+00:00",
+      "fetched_at_utc": "2026-09-02T19:54:11.039717+00:00",
       "payload": {
         "articles": [
           {
