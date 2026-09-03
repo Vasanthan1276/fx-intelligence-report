@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-02T19:54:12.071266+00:00",
+  "generated_at_utc": "2026-09-03T19:43:34.254444+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -15,18 +15,18 @@
   "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
   "overall": {
     "1": {
-      "directional_calls": 7,
-      "correct": 1,
+      "directional_calls": 8,
+      "correct": 2,
       "incorrect": 1,
       "neutral_move": 5,
-      "directional_accuracy_pct": 50.0
+      "directional_accuracy_pct": 66.7
     },
     "5": {
-      "directional_calls": 5,
+      "directional_calls": 6,
       "correct": 3,
-      "incorrect": 2,
+      "incorrect": 3,
       "neutral_move": 0,
-      "directional_accuracy_pct": 60.0
+      "directional_accuracy_pct": 50.0
     },
     "10": {
       "directional_calls": 1,
@@ -115,11 +115,11 @@
         "directional_accuracy_pct": null
       },
       "5": {
-        "directional_calls": 0,
+        "directional_calls": 1,
         "correct": 0,
-        "incorrect": 0,
+        "incorrect": 1,
         "neutral_move": 0,
-        "directional_accuracy_pct": null
+        "directional_accuracy_pct": 0.0
       },
       "10": {
         "directional_calls": 0,
@@ -131,11 +131,11 @@
     },
     "AUD": {
       "1": {
-        "directional_calls": 0,
-        "correct": 0,
+        "directional_calls": 1,
+        "correct": 1,
         "incorrect": 0,
         "neutral_move": 0,
-        "directional_accuracy_pct": null
+        "directional_accuracy_pct": 100.0
       },
       "5": {
         "directional_calls": 0,
@@ -369,6 +369,20 @@
       "outcome": "neutral_move"
     },
     {
+      "run_date_sgt": "2026-08-28",
+      "market_date": "2026-08-27",
+      "future_date": "2026-09-03",
+      "currency": "GBP",
+      "horizon_trading_days": 5,
+      "shadow_score": 3.22,
+      "shadow_confidence_pct": 77,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.726615,
+      "future_rate_sgd": 1.711115,
+      "rate_change_pct": -0.898,
+      "outcome": "incorrect"
+    },
+    {
       "run_date_sgt": "2026-09-01",
       "market_date": "2026-08-31",
       "future_date": "2026-09-01",
@@ -381,6 +395,20 @@
       "future_rate_sgd": 0.795076,
       "rate_change_pct": -0.214,
       "outcome": "incorrect"
+    },
+    {
+      "run_date_sgt": "2026-09-03",
+      "market_date": "2026-09-02",
+      "future_date": "2026-09-03",
+      "currency": "AUD",
+      "horizon_trading_days": 1,
+      "shadow_score": 3.62,
+      "shadow_confidence_pct": 71,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.909994,
+      "future_rate_sgd": 0.911934,
+      "rate_change_pct": 0.213,
+      "outcome": "correct"
     }
   ]
 }
