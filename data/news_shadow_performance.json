@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-03T19:43:34.254444+00:00",
+  "generated_at_utc": "2026-09-04T19:27:06.203884+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -29,11 +29,11 @@
       "directional_accuracy_pct": 50.0
     },
     "10": {
-      "directional_calls": 1,
-      "correct": 1,
-      "incorrect": 0,
+      "directional_calls": 3,
+      "correct": 2,
+      "incorrect": 1,
       "neutral_move": 0,
-      "directional_accuracy_pct": 100.0
+      "directional_accuracy_pct": 66.7
     }
   },
   "by_currency": {
@@ -76,11 +76,11 @@
         "directional_accuracy_pct": 0.0
       },
       "10": {
-        "directional_calls": 0,
-        "correct": 0,
+        "directional_calls": 1,
+        "correct": 1,
         "incorrect": 0,
         "neutral_move": 0,
-        "directional_accuracy_pct": null
+        "directional_accuracy_pct": 100.0
       }
     },
     "EUR": {
@@ -168,11 +168,11 @@
         "directional_accuracy_pct": 100.0
       },
       "10": {
-        "directional_calls": 0,
+        "directional_calls": 1,
         "correct": 0,
-        "incorrect": 0,
+        "incorrect": 1,
         "neutral_move": 0,
-        "directional_accuracy_pct": null
+        "directional_accuracy_pct": 0.0
       }
     },
     "CHF": {
@@ -273,6 +273,20 @@
     {
       "run_date_sgt": "2026-08-22",
       "market_date": "2026-08-21",
+      "future_date": "2026-09-04",
+      "currency": "JPY",
+      "horizon_trading_days": 10,
+      "shadow_score": 4.08,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.799203,
+      "future_rate_sgd": 0.810838,
+      "rate_change_pct": 1.456,
+      "outcome": "correct"
+    },
+    {
+      "run_date_sgt": "2026-08-22",
+      "market_date": "2026-08-21",
       "future_date": "2026-08-24",
       "currency": "MYR",
       "horizon_trading_days": 1,
@@ -297,6 +311,20 @@
       "future_rate_sgd": 0.315776,
       "rate_change_pct": 0.547,
       "outcome": "correct"
+    },
+    {
+      "run_date_sgt": "2026-08-22",
+      "market_date": "2026-08-21",
+      "future_date": "2026-09-04",
+      "currency": "MYR",
+      "horizon_trading_days": 10,
+      "shadow_score": 3.71,
+      "shadow_confidence_pct": 73,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.314058,
+      "future_rate_sgd": 0.313243,
+      "rate_change_pct": -0.259,
+      "outcome": "incorrect"
     },
     {
       "run_date_sgt": "2026-08-25",

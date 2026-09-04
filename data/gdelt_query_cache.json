@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-09-03T19:43:33.648484+00:00",
+  "updated_at_utc": "2026-09-04T19:22:13.854346+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-09-02T19:29:00.870172+00:00",
@@ -256,7 +256,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-09-02T19:32:17.931764+00:00",
+      "fetched_at_utc": "2026-09-04T19:06:40.743939+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -768,19 +768,9 @@
       }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-09-01T19:48:08.112000+00:00",
+      "fetched_at_utc": "2026-09-04T19:14:16.760373+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://az.trend.az/other/world/4217976.html",
-            "url_mobile": "",
-            "title": "B\u00f6y\u00fck Britaniyada inflyasiya 2 , 9 faiz\u0259 y\u00fcks\u0259lib",
-            "seendate": "20260825T214500Z",
-            "socialimage": "https://az.trend.az/media/2025/03/17/houses_of_parliament_britain_170325.jpg",
-            "domain": "az.trend.az",
-            "language": "Azerbaijani",
-            "sourcecountry": "Azerbaijan"
-          },
           {
             "url": "https://www.express.co.uk/news/uk/2243737/major-supermarket-closing-down-co-op-uk",
             "url_mobile": "https://www.express.co.uk/news/uk/2243737/major-supermarket-closing-down-co-op-uk/amp",
@@ -788,16 +778,6 @@
             "seendate": "20260829T181500Z",
             "socialimage": "https://cdn.images.express.co.uk/img/dynamic/1/1200x630/7117671.jpg",
             "domain": "express.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.esmmagazine.com/retail/consumer-demand-holding-up-in-france-despite-difficult-environment-carrefour-ceo-says-320156",
-            "url_mobile": "",
-            "title": "Consumer Demand Holding Up In France Despite Difficult Environment , Carrefour CEO Says",
-            "seendate": "20260826T171500Z",
-            "socialimage": "https://img.resized.co/esmmagazine/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL21lZGlhLm1hZGlzb25wdWJsaWNhdGlvbnMuZXVcXFwvZXNtbWFnYXppbmUtcHJvZFxcXC91cGxvYWRzXFxcLzIwMjRcXFwvMTFcXFwvMjIwNjQ1NTFcXFwvQWxleGFuZHJlLUJvbXBhcmQtY29weS1zY2FsZWQuanBnXCIsXCJ3aWR0aFwiOjEyMDAsXCJoZWlnaHRcIjo2MjcsXCJkZWZhdWx0XCI6XCJodHRwczpcXFwvXFxcL2ltZy5yZXNpemVkLmNvXFxcL25vLWltYWdlLnBuZ1wiLFwib3B0aW9uc1wiOltdfSIsImhhc2giOiIxOWI1Yjg0ZmQ2ZmQ5OGVkMzBlNjcwM2FhNjg0MWYyMjIyZmRiMmM4In0=/consumer-demand-holding-up-in-france-despite-difficult-environment-carrefour-ceo-says.jpg",
-            "domain": "esmmagazine.com",
             "language": "English",
             "sourcecountry": "United Kingdom"
           }
@@ -1428,19 +1408,9 @@
       }
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-02T19:40:56.815027+00:00",
+      "fetched_at_utc": "2026-09-04T19:13:13.220610+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.hankookilbo.com/news/article/A2026083010440004300",
-            "url_mobile": "https://www.hankookilbo.com/news/article/amp/A2026083010440004300",
-            "title": "\u7f8e \uc5f0\uc900 \uc758\uc7a5  \ud560 \uc77c \uc788\ub2e4  \uac15\uc218 \u2026 \ub2e4\uc74c \ub2ec \uae08\ub9ac \uc778\uc0c1\ud558\ub098 - \uad6d\uc81c\u3163\ud55c\uad6d\uc77c\ubcf4",
-            "seendate": "20260830T071500Z",
-            "socialimage": "https://newsimg.hankookilbo.com/2026/08/30/3e5504c3-4af6-4182-9c08-6b62f06a52d0.jpg",
-            "domain": "hankookilbo.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
           {
             "url": "https://www.aol.co.uk/articles/average-uk-house-price-edged-062437000.html",
             "url_mobile": "",
@@ -1450,16 +1420,6 @@
             "domain": "aol.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.business-standard.com/world-news/warsh-puts-inflation-at-centre-of-fed-policy-at-jackson-hole-conference-126083000054_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/world-news/warsh-puts-inflation-at-centre-of-fed-policy-at-jackson-hole-conference-126083000054_1.html",
-            "title": "Warsh puts inflation at centre of Fed policy at Jackson Hole conference",
-            "seendate": "20260830T030000Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/30/thumb/fitandfill/1200X628/1788056009-8731.jpg",
-            "domain": "business-standard.com",
-            "language": "English",
-            "sourcecountry": "India"
           },
           {
             "url": "https://www.aol.com/articles/pound-slips-despite-jump-gilt-112948000.html",
@@ -1492,16 +1452,6 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.livemint.com/global/warsh-makes-the-case-for-higher-rates-and-raises-the-bar-for-standing-pat-11788089992510.html",
-            "url_mobile": "https://www.livemint.com/global/warsh-makes-the-case-for-higher-rates-and-raises-the-bar-for-standing-pat/amp-11788089992510.html",
-            "title": "Warsh makes the case for higher rates and raises the bar for standing pat",
-            "seendate": "20260830T151500Z",
-            "socialimage": "https://www.livemint.com/lm-img/img/2026/08/30/600x338/FED-SYMPOSIUM-17_1788094552968_1788094575238_a26bea3c-dd46-43d6-97d6-0ca405631dcd.jpg",
-            "domain": "livemint.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
             "url": "https://oilprice.com/Energy/Energy-General/Food-Inflation-Jumps-as-Higher-Energy-Costs-Hit-UK-Retailers.html",
             "url_mobile": "https://oilprice.com/Energy/Energy-General/Food-Inflation-Jumps-as-Higher-Energy-Costs-Hit-UK-Retailers.amp.html",
             "title": "Food Inflation Jumps as Higher Energy Costs Hit united kingdom Retailers",
@@ -1510,16 +1460,6 @@
             "domain": "oilprice.com",
             "language": "English",
             "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/economia/dettaglio/schroders-tre-ondate-di-inflazione-rimettono-al-lavoro-le-banche-centrali-parola-al-mercato-nRC_30082026_1437_271110921.html",
-            "url_mobile": "",
-            "title": "Schroders : tre ondate di inflazione rimettono al lavoro le banche centrali - PAROLA AL MERCATO",
-            "seendate": "20260830T134500Z",
-            "socialimage": "",
-            "domain": "borsaitaliana.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
           },
           {
             "url": "https://www.theguardian.com/business/live/2026/sep/01/bond-sell-off-oil-prices-inflation-fears-shein-shares-latest-news-updates",
@@ -1532,14 +1472,14 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.abcbourse.com/marches/newsContent/701783",
-            "url_mobile": "",
-            "title": "Kevin Warsh plaide en faveur dune hausse des taux et rel\u00e8ve le niveau dexigenc",
-            "seendate": "20260831T060000Z",
-            "socialimage": "https://www.abcbourse.com/imgabc/881-x.jpg",
-            "domain": "abcbourse.com",
-            "language": "French",
-            "sourcecountry": "France"
+            "url": "https://www.mirror.co.uk/money/buy-holiday-cash-now-save-37623537",
+            "url_mobile": "https://www.mirror.co.uk/money/buy-holiday-cash-now-save-37623537.amp",
+            "title": "  Buy holiday cash now  and  save \u20ac230  ahead of  change after this week  ",
+            "seendate": "20260903T124500Z",
+            "socialimage": "https://i2-prod.mirror.co.uk/article37623535.ece/ALTERNATES/s1200d/0_Customers-hands-exchanging-euro-banknotes-at-bakery-counter.jpg",
+            "domain": "mirror.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
           },
           {
             "url": "https://www.asianimage.co.uk/news/national/26509977.average-uk-house-price-edged-0-2-august-says-nationwide/",
@@ -1548,6 +1488,46 @@
             "seendate": "20260901T070000Z",
             "socialimage": "https://www.asianimage.co.uk/resources/images/21394040.jpg?type=og-image",
             "domain": "asianimage.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.brentwoodlive.co.uk/news/national/26509977.average-uk-house-price-edged-0-2-august-says-nationwide/",
+            "url_mobile": "",
+            "title": "Average united kingdom house price edged up by 0 . 2 % in August , says Nationwide",
+            "seendate": "20260901T070000Z",
+            "socialimage": "https://www.brentwoodlive.co.uk/resources/images/21394040.jpg?type=og-image",
+            "domain": "brentwoodlive.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.andoveradvertiser.co.uk/news/national/26509977.average-uk-house-price-edged-0-2-august-says-nationwide/",
+            "url_mobile": "",
+            "title": "Average united kingdom house price edged up by 0 . 2 % in August , says Nationwide",
+            "seendate": "20260901T070000Z",
+            "socialimage": "https://www.andoveradvertiser.co.uk/resources/images/21394040.jpg?type=og-image",
+            "domain": "andoveradvertiser.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.northwaleschronicle.co.uk/news/national/26509977.average-uk-house-price-edged-0-2-august-says-nationwide/",
+            "url_mobile": "",
+            "title": "Average united kingdom house price edged up by 0 . 2 % in August , says Nationwide",
+            "seendate": "20260901T070000Z",
+            "socialimage": "https://www.northwaleschronicle.co.uk/resources/images/21394040.jpg?type=og-image",
+            "domain": "northwaleschronicle.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.bromsgroveadvertiser.co.uk/news/national/26509977.average-uk-house-price-edged-0-2-august-says-nationwide/",
+            "url_mobile": "",
+            "title": "Average united kingdom house price edged up by 0 . 2 % in August , says Nationwide",
+            "seendate": "20260901T070000Z",
+            "socialimage": "https://www.bromsgroveadvertiser.co.uk/resources/images/21394040.jpg?type=og-image",
+            "domain": "bromsgroveadvertiser.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           }
@@ -1682,18 +1662,18 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-09-03T19:40:06.930378+00:00",
+      "fetched_at_utc": "2026-09-04T19:22:13.854326+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.mzamin.com/article/37151",
+            "url": "https://www.thestar.com.my/business/business-news/2026/09/04/ringgit-ends-higher-against-the-greenback",
             "url_mobile": "",
-            "title": "\u09eb \u09ac\u099b\u09b0\u09c7 \u09ae\u09be\u09b2\u09df\u09c7\u09b6\u09bf\u09df\u09be \u09ad\u09bf\u09df\u09c7\u09a4\u09a8\u09be\u09ae - \u09b9\u0982\u0995\u0982\u0995\u09c7 \u099b\u09be\u09dc\u09be\u09ac\u09c7 \u09ac\u09be\u0982\u09b2\u09be\u09a6\u09c7\u09b6",
-            "seendate": "20260828T191500Z",
-            "socialimage": "https://www.mzamin.com/uploads/news/28082026/1787928893_aifm.webp",
-            "domain": "mzamin.com",
-            "language": "Bengali",
-            "sourcecountry": "Bangladesh"
+            "title": "Ringgit ends higher against the greenback",
+            "seendate": "20260904T021500Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/09/04/4092409.png",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
           },
           {
             "url": "https://www.businesstimes.com.sg/international/asias-economies-avert-energy-shock-fiscal-buffers-ai-boom",
@@ -1736,70 +1716,70 @@
             "sourcecountry": "China"
           },
           {
-            "url": "http://www.malaysiasun.com/news/279270246/koike-malaysia-and-managing-director-na-chin-teong-honoured-at-asia-pacific-enterprise-awards-apea-2026-regional-edition-for-entrepreneurial-excellence-and-business-growth",
+            "url": "https://www.humanresourcesonline.net/malaysia-gdp-grows-6-in-q2-2026-as-economic-momentum-strengthens",
             "url_mobile": "",
-            "title": "Koike Malaysia and Managing Director Na Chin Teong Honoured at Asia Pacific Enterprise Awards ( APEA ) 2026 Regional Edition for Entrepreneurial Excellence and Business Growth",
-            "seendate": "20260828T054500Z",
+            "title": "Malaysia GDP grows 6 % in Q2 2026 as economic momentum strengthens",
+            "seendate": "20260901T103000Z",
+            "socialimage": "https://humanresourcesonline-assets.b-cdn.net/article_images/malaysia-gdp-grows-6-0-in-q2-2026-as-economic-momentum-strengthens/1788252959_Umairah_August%202026_Malaysia%20GDP%20grows%20in%20Q2%202026_123RF.jpg",
+            "domain": "humanresourcesonline.net",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://dailyinqilab.com/national/article/933980",
+            "url_mobile": "",
+            "title": "\u09b6\u09bf\u09b2\u09cd\u09aa\u09be\u09df\u09a8 - \u09ac\u09bf\u09a8\u09bf\u09df\u09cb\u0997\u09c7 \u09ac\u09cd\u09af\u09be\u09aa\u0995 \u0995\u09b0\u09cd\u09ae\u0995\u09be\u09a3\u09cd\u09a1",
+            "seendate": "20260829T213000Z",
             "socialimage": "",
-            "domain": "malaysiasun.com",
+            "domain": "dailyinqilab.com",
+            "language": "Bengali",
+            "sourcecountry": "Bangladesh"
+          },
+          {
+            "url": "https://aninews.in/news/business/dayone-and-tnb-explore-up-to-15-gw-of-on-site-power-generation-to-advance-malaysias-energy-resilience-and-digital-economy20260901155927/",
+            "url_mobile": "",
+            "title": "DayOne and TNB Explore Up To 1 . 5 GW of On - Site Power Generation to Advance Malaysia Energy Resilience and Digital Economy",
+            "seendate": "20260901T113000Z",
+            "socialimage": "",
+            "domain": "aninews.in",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.freemalaysiatoday.com/category/opinion/2026/09/03/combining-gst-and-sst-is-not-the-answer",
+            "url_mobile": "",
+            "title": "Combining GST and SST is not the answer",
+            "seendate": "20260903T093000Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/04/7abd8f92-gst-bernama-020424.webp",
+            "domain": "freemalaysiatoday.com",
             "language": "English",
             "sourcecountry": "Malaysia"
           },
           {
-            "url": "http://www.vietnamtribune.com/news/279270246/koike-malaysia-and-managing-director-na-chin-teong-honoured-at-asia-pacific-enterprise-awards-apea-2026-regional-edition-for-entrepreneurial-excellence-and-business-growth",
+            "url": "http://auto.cyol.com/gb/articles/2026-09/01/content_77eM4McZyx.html",
             "url_mobile": "",
-            "title": "Koike Malaysia and Managing Director Na Chin Teong Honoured at Asia Pacific Enterprise Awards ( APEA ) 2026 Regional Edition for Entrepreneurial Excellence and Business Growth",
-            "seendate": "20260828T043000Z",
+            "title": "\u6691\u671f\u6e38\u6536\u5b98 \uff1a \u4eb2\u5b50\u6df1\u5ea6\u6e38\u9886\u8dd1 \uff0c \u53bf\u57df\u677e\u5f1b\u6e38\u4e0e\u5165\u5883\u6e38\u5171\u70ed",
+            "seendate": "20260901T050000Z",
             "socialimage": "",
-            "domain": "vietnamtribune.com",
-            "language": "English",
-            "sourcecountry": "Vietnam"
-          },
-          {
-            "url": "http://www.australiannews.net/news/279270246/koike-malaysia-and-managing-director-na-chin-teong-honoured-at-asia-pacific-enterprise-awards-apea-2026-regional-edition-for-entrepreneurial-excellence-and-business-growth",
-            "url_mobile": "",
-            "title": "Koike Malaysia and Managing Director Na Chin Teong Honoured at Asia Pacific Enterprise Awards ( APEA ) 2026 Regional Edition for Entrepreneurial Excellence and Business Growth",
-            "seendate": "20260828T043000Z",
-            "socialimage": "",
-            "domain": "australiannews.net",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "http://www.asiabulletin.com/news/279270246/koike-malaysia-and-managing-director-na-chin-teong-honoured-at-asia-pacific-enterprise-awards-apea-2026-regional-edition-for-entrepreneurial-excellence-and-business-growth",
-            "url_mobile": "",
-            "title": "Koike Malaysia and Managing Director Na Chin Teong Honoured at Asia Pacific Enterprise Awards ( APEA ) 2026 Regional Edition for Entrepreneurial Excellence and Business Growth",
-            "seendate": "20260828T043000Z",
-            "socialimage": "",
-            "domain": "asiabulletin.com",
-            "language": "English",
+            "domain": "auto.cyol.com",
+            "language": "Chinese",
             "sourcecountry": "China"
           },
           {
-            "url": "http://www.sydneysun.com/news/279270246/koike-malaysia-and-managing-director-na-chin-teong-honoured-at-asia-pacific-enterprise-awards-apea-2026-regional-edition-for-entrepreneurial-excellence-and-business-growth",
+            "url": "http://www.sydneysun.com/news/279278716/dayone-and-tnb-explore-up-to-15-gw-of-on-site-power-generation-to-advance-malaysia-energy-resilience-and-digital-economy",
             "url_mobile": "",
-            "title": "Koike Malaysia and Managing Director Na Chin Teong Honoured at Asia Pacific Enterprise Awards ( APEA ) 2026 Regional Edition for Entrepreneurial Excellence and Business Growth",
-            "seendate": "20260828T051500Z",
+            "title": "DayOne and TNB Explore Up To 1 . 5 GW of On - Site Power Generation to Advance Malaysia Energy Resilience and Digital Economy",
+            "seendate": "20260901T111500Z",
             "socialimage": "",
             "domain": "sydneysun.com",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.thailand-business-news.com/pr-news/koike-malaysia-and-managing-director-na-chin-teong-honoured-at-asia-pacific-enterprise-awards-apea-2026-regional-edition-for-entrepreneurial-excellence-and-business-growth",
+            "url": "http://www.philippinetimes.com/news/279278716/dayone-and-tnb-explore-up-to-15-gw-of-on-site-power-generation-to-advance-malaysia-energy-resilience-and-digital-economy",
             "url_mobile": "",
-            "title": "Koike Malaysia and Managing Director Na Chin Teong Honoured at Asia Pacific Enterprise Awards ( APEA ) 2026 Regional Edition for Entrepreneurial Excellence and Business Growth",
-            "seendate": "20260828T020000Z",
-            "socialimage": "",
-            "domain": "thailand-business-news.com",
-            "language": "English",
-            "sourcecountry": "Thailand"
-          },
-          {
-            "url": "http://www.philippinetimes.com/news/279270246/koike-malaysia-and-managing-director-na-chin-teong-honoured-at-asia-pacific-enterprise-awards-apea-2026-regional-edition-for-entrepreneurial-excellence-and-business-growth",
-            "url_mobile": "",
-            "title": "Koike Malaysia and Managing Director Na Chin Teong Honoured at Asia Pacific Enterprise Awards ( APEA ) 2026 Regional Edition for Entrepreneurial Excellence and Business Growth",
-            "seendate": "20260828T070000Z",
+            "title": "DayOne and TNB Explore Up To 1 . 5 GW of On - Site Power Generation to Advance Malaysia Energy Resilience and Digital Economy",
+            "seendate": "20260901T130000Z",
             "socialimage": "",
             "domain": "philippinetimes.com",
             "language": "English",
@@ -1813,46 +1793,56 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-02T19:29:21.232886+00:00",
+      "fetched_at_utc": "2026-09-04T19:05:25.525662+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.edaily.co.kr/News/Read?newsId=01246406645552568&mediaCodeNo=257",
-            "url_mobile": "https://m.edaily.co.kr/news/read?newsId=01246406645552568 eNo=257",
-            "title": "  \uc815\ub2f5 \ub300\uc2e0 \uc6d0\uce59 \u2026 \uc6cc\uc2dc\uac00 \uc7ad\uc2a8\ud640\uc11c \uadf8\ub9b0  \uc0c8 \uc5f0\uc900  ",
-            "seendate": "20260830T010000Z",
-            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26083000096.jpg",
+            "url": "https://www.etnews.com/20260903000003",
+            "url_mobile": "https://m.etnews.com/20260903000003",
+            "title": "\u7f8e \uc5f0\uc900  \uacbd\uc81c \uc644\ub9cc\ud788 \uc131\uc7a5 \u2026 \uc5d0\ub108\uc9c0 \u00b7 \uc9c0\uc815\ud559 \ubd88\ud655\uc2e4\uc131 \uc99d\ub300  ",
+            "seendate": "20260903T020000Z",
+            "socialimage": "https://img.etnews.com/news/article/2026/01/31/news-p.v1.20260131.478a93b5015f49ce922019e262d2b379_P1.jpg",
+            "domain": "etnews.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.edaily.co.kr/News/Read?newsId=02663366645576840&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=02663366645576840 eNo=257",
+            "title": "\uc6d4\ub7ec\uac00 \ub2ec\ub7ac\ub294\ub370\ub3c4 \uc2dc\uc7a5\uc740 \ub5a4\ub2e4 \u2026 \u7f8e \uae08\ub9ac \uc27d\uac8c \uc548 \ub0b4\ub824\uac00",
+            "seendate": "20260904T011500Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/09/PS26090400305.jpg",
             "domain": "edaily.co.kr",
             "language": "Korean",
             "sourcecountry": "South Korea"
           },
           {
-            "url": "https://www.hankookilbo.com/news/article/A2026083010440004300",
-            "url_mobile": "https://www.hankookilbo.com/news/article/amp/A2026083010440004300",
-            "title": "\u7f8e \uc5f0\uc900 \uc758\uc7a5  \ud560 \uc77c \uc788\ub2e4  \uac15\uc218 \u2026 \ub2e4\uc74c \ub2ec \uae08\ub9ac \uc778\uc0c1\ud558\ub098 - \uad6d\uc81c\u3163\ud55c\uad6d\uc77c\ubcf4",
-            "seendate": "20260830T071500Z",
-            "socialimage": "https://newsimg.hankookilbo.com/2026/08/30/3e5504c3-4af6-4182-9c08-6b62f06a52d0.jpg",
-            "domain": "hankookilbo.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.hani.co.kr/arti/economy/economy_general/1275299.html",
+            "url": "https://www.nationalmortgagenews.com/news/feds-williams-not-swayed-that-a-rate-hike-is-the-answer-yet",
             "url_mobile": "",
-            "title": "\uc6cc\uc2dc  \ub9e4\ud30c \ubc1c\uc5b8  \uc5d0\ub3c4 \ubbf8 9\uc6d4 \uae08\ub9ac \uc804\ub9dd \uc548\uac2f\uc18d \u2026 \ud2b8\ub7fc\ud504 \uc555\ubc15\ub3c4 \ub9cc\ub9cc\ucc2e\uc544",
-            "seendate": "20260830T060000Z",
-            "socialimage": "https://flexible.img.hani.co.kr/flexible/normal/740/493/imgdb/original/2026/0830/20260830501269.webp",
-            "domain": "hani.co.kr",
+            "title": "Fed Williams not swayed that a rate hike is the answer yet",
+            "seendate": "20260902T211500Z",
+            "socialimage": "https://source-media-brightspot.s3.us-east-1.amazonaws.com/6b/a3/6288e3ff48899225e677145e85ab/457122559.jpg",
+            "domain": "nationalmortgagenews.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://biz.heraldcorp.com/article/10862274",
+            "url_mobile": "",
+            "title": "\uc6d4\ub7ec  9\uc6d4 \uae08\ub9ac \ub3d9\uacb0 \u2026 \uc778\uc0c1 \ud655\ub960 63 % \u219248 % \ub85c \ub69d",
+            "seendate": "20260903T221500Z",
+            "socialimage": "https://wimg.heraldcorp.com/news/cms/2026/09/04/news-p.v1.20260224.834a4ead38564d588c14359f7d70580d_T1.jpg",
+            "domain": "biz.heraldcorp.com",
             "language": "Korean",
             "sourcecountry": "South Korea"
           },
           {
-            "url": "https://www.edaily.co.kr/News/Read?newsId=03325926645552896&mediaCodeNo=257",
-            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=03325926645552896 eNo=257",
-            "title": "  \uc5f0\ub9d0\uae4c\uc9c0 \ub3d9\uacb0  \ub4a4\uc9d1\uc740 \ubc14\ud074\ub808\uc774\uc2a4 \u2026 \uc5f0\uc900 2\ucc28\ub840 \uc778\uc0c1 \uc804\ub9dd",
-            "seendate": "20260831T061500Z",
-            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26083100770.jpg",
-            "domain": "edaily.co.kr",
+            "url": "http://www.koreatimes.com/article/20260903/1628349",
+            "url_mobile": "",
+            "title": "\ub274\uc695\uc99d\uc2dc , \uae08\ub9ac \uc778\uc0c1 \uc6b0\ub824 \uc644\ud654\uc5d0 \uc77c\uc81c\ud788 1 % \ub300 \uc0c1\uc2b9",
+            "seendate": "20260904T003000Z",
+            "socialimage": "http://mimg.koreatimes.com/286/172/article/2026/09/03/202609031451036a5.jpg",
+            "domain": "koreatimes.com",
             "language": "Korean",
             "sourcecountry": "South Korea"
           },
@@ -1867,82 +1857,82 @@
             "sourcecountry": "South Korea"
           },
           {
-            "url": "https://www.livehindustan.com/business/personal-finance/gold-rate-monday-31-august-2026-sona-hua-sasta-sone-ka-bhav-delhi-up-bihar-jaipur-gold-rate-201788176920223.html",
-            "url_mobile": "https://www.livehindustan.com/business/personal-finance/gold-rate-monday-31-august-2026-sona-hua-sasta-sone-ka-bhav-delhi-up-bihar-jaipur-gold-rate-201788176920223.amp.html",
-            "title": "Gold Rate Today : \u0926\u0947\u0936 \u092e\u0947\u0902 1 . 42 \u0932\u093e\u0916 \u0930\u0941\u092a\u092f\u0947 \u092a\u0930 \u0906\u092f\u093e \u0917\u094b\u0932\u094d\u0921 , \u0938\u094b\u0928\u0947 \u092e\u0947\u0902 \u0932\u0917\u093e\u0924\u093e\u0930 \u0906 \u0930\u0939\u0940 \u0939\u0948 \u0917\u093f\u0930\u093e\u0935\u091f",
-            "seendate": "20260831T123000Z",
-            "socialimage": "",
-            "domain": "livehindustan.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-sounds-alarm-investors-090800990.html",
+            "url": "https://www.fnnews.com/news/202609041144067711",
             "url_mobile": "",
-            "title": "The Stock Market Sounds an Alarm as Investors Get Bad News About President Trump Economy . History Says This Will Happen Next . ",
-            "seendate": "20260831T101500Z",
-            "socialimage": "https://s.yimg.com/lo/mysterio/api/23ebdd37bd1adf333c55239369570928d01e1a156c00b4cb073224eddfed2085/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmotleyfool.com%2F04eb876db0afdc4a08be75355c66de7a.jpg",
-            "domain": "finance.yahoo.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.taipeitimes.com/News/biz/archives/2026/08/31/2003863395",
-            "url_mobile": "",
-            "title": "Fed chair signals rate hikes might be needed with US inflation still elevated",
-            "seendate": "20260830T183000Z",
-            "socialimage": "https://img.taipeitimes.com/images/2026/08/31/P09-260831-318.jpg",
-            "domain": "taipeitimes.com",
-            "language": "English",
-            "sourcecountry": "Taiwan"
-          },
-          {
-            "url": "https://www.edaily.co.kr/News/Read?newsId=02273046645552568&mediaCodeNo=257",
-            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=02273046645552568 eNo=257",
-            "title": "\uc804\uc7c1 \u00b7 \uad00\uc138 \u00b7 AI \ud22c\uc790\ubd90\uc5d0 \uae00\ub85c\ubc8c \uae34\ucd95 \uae30\uc870 \u2026 \u97d3\ub3c4 \uace0\uae08\ub9ac \uc7a5\uae30\ud654 \uc555\ub825",
-            "seendate": "20260830T151500Z",
-            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26083000862.jpg",
-            "domain": "edaily.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://time.mk/c/55e3f62a45/cenata-na-zlatoto-vo-pad-pazarite-vo-iscekuvanje-na-novi-signali-od-amerikanskata-ekonomija.html",
-            "url_mobile": "",
-            "title": "\u0426\u0435\u043d\u0430\u0442\u0430 \u043d\u0430 \u0437\u043b\u0430\u0442\u043e\u0442\u043e \u0432\u043e \u043f\u0430\u0434 , \u043f\u0430\u0437\u0430\u0440\u0438\u0442\u0435 \u0432\u043e \u0438\u0441\u0447\u0435\u043a\u0443\u0432\u0430\u045a\u0435 \u043d\u0430 \u043d\u043e\u0432\u0438 \u0441\u0438\u0433\u043d\u0430\u043b\u0438 \u043e\u0434 \u0430\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u0442\u0430 \u0435\u043a\u043e\u043d\u043e\u043c\u0438\u0458\u0430",
-            "seendate": "20260901T070000Z",
-            "socialimage": "https://faktor.mk/media/main/2026/08/20260806212630.jpg",
-            "domain": "time.mk",
-            "language": "Macedonian",
-            "sourcecountry": "Macedonia"
-          },
-          {
-            "url": "https://time.mk/c/48d4149264/mk/paradoks-na-pazarite-vojnata-se-razgoruva-a-zlatoto-pagja-kon-4-400-dolari.html",
-            "url_mobile": "",
-            "title": "\u041f\u0410\u0420\u0410\u0414\u041e\u041a\u0421 \u041d\u0410 \u041f\u0410\u0417\u0410\u0420\u0418\u0422\u0415 : \u0412\u043e\u0458\u043d\u0430\u0442\u0430 \u0441\u0435 \u0440\u0430\u0437\u0433\u043e\u0440\u0443\u0432\u0430 , \u0430 \u0437\u043b\u0430\u0442\u043e\u0442\u043e \u043f\u0430\u0453\u0430 \u043a\u043e\u043d 4 . 400 \u0434\u043e\u043b\u0430\u0440\u0438",
-            "seendate": "20260901T081500Z",
-            "socialimage": "http://pari.com.mk/wp-content/uploads/2026/08/zlataky-cz-y7jRMXOz7pE-unsplash-scaled.jpg",
-            "domain": "time.mk",
-            "language": "Macedonian",
-            "sourcecountry": "Macedonia"
-          },
-          {
-            "url": "https://www.fnnews.com/news/202609021147445723",
-            "url_mobile": "",
-            "title": "\ubc14 \uc5f0\uc900 \uc774\uc0ac  \ubb3c\uac00 \ucda9\ubd84\ud788 \uc548 \uaebe\uc774\uba74 \ub2e8\ud638\ud558\uac8c \uae08\ub9ac \uc62c\ub824\uc57c  ",
-            "seendate": "20260902T051500Z",
+            "title": "\uc6cc\uc2dc\ub294 \uc6d0\uce59 , \uc774\uc0ac\ub4e4\uc740  \uc778\uc0c1 \u00b7 \ub3d9\uacb0 \u2026 \uc5f0\uc900\uc758  \uc5ed\ud560 \ubd84\ub2f4  \ud654\ubc95",
+            "seendate": "20260904T043000Z",
             "socialimage": "",
             "domain": "fnnews.com",
             "language": "Korean",
             "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://kfyi.iheart.com/content/2026-09-04-trump-calls-for-interest-rate-cut/",
+            "url_mobile": "",
+            "title": "Trump Calls For Interest Rate Cut | News Talk 550 KFYI",
+            "seendate": "20260904T161500Z",
+            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6a9ae942634a139d63297a54?ops=gravity(%22north%22),fit(1200,675),quality(65)",
+            "domain": "kfyi.iheart.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://hallelujah955.iheart.com/content/2026-09-04-trump-calls-for-interest-rate-cut/",
+            "url_mobile": "",
+            "title": "Trump Calls For Interest Rate Cut | Hallelujah 95 . 5",
+            "seendate": "20260904T161500Z",
+            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6a9ae942634a139d63297a54?ops=gravity(%22north%22),fit(1200,675),quality(65)",
+            "domain": "hallelujah955.iheart.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://wtkg.iheart.com/content/2026-09-04-trump-calls-for-interest-rate-cut/",
+            "url_mobile": "",
+            "title": "Trump Calls For Interest Rate Cut",
+            "seendate": "20260904T161500Z",
+            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6a9ae942634a139d63297a54?ops=gravity(%22north%22),fit(1200,675),quality(65)",
+            "domain": "wtkg.iheart.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://720thevoice.iheart.com/content/2026-09-04-trump-calls-for-interest-rate-cut/",
+            "url_mobile": "",
+            "title": "Trump Calls For Interest Rate Cut | 720 THE VOICE",
+            "seendate": "20260904T161500Z",
+            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6a9ae942634a139d63297a54?ops=gravity(%22north%22),fit(1200,675),quality(65)",
+            "domain": "720thevoice.iheart.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://1190talkradio.iheart.com/content/2026-09-04-trump-calls-for-interest-rate-cut/",
+            "url_mobile": "",
+            "title": "Trump Calls For Interest Rate Cut | Talk Radio 1190",
+            "seendate": "20260904T183000Z",
+            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6a9ae942634a139d63297a54?ops=gravity(%22north%22),fit(1200,675),quality(65)",
+            "domain": "1190talkradio.iheart.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-03T19:29:11.937102+00:00",
+      "fetched_at_utc": "2026-09-04T19:11:59.280252+00:00",
       "payload": {
         "articles": [
+          {
+            "url": "https://time.mk/ai/29dfd2ec1d/mk/",
+            "url_mobile": "",
+            "title": "Time . ai",
+            "seendate": "20260904T094500Z",
+            "socialimage": "",
+            "domain": "time.mk",
+            "language": "Macedonian",
+            "sourcecountry": "Macedonia"
+          },
           {
             "url": "https://www.fnnews.com/news/202609020841542386",
             "url_mobile": "",
@@ -1952,6 +1942,16 @@
             "domain": "fnnews.com",
             "language": "Korean",
             "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.aol.com/articles/j-p-morgan-bnp-paribas-062310000.html",
+            "url_mobile": "",
+            "title": "J . P . Morgan , BNP Paribas forecast December ECB rate hike as energy risks linger",
+            "seendate": "20260904T084500Z",
+            "socialimage": "https://hermes.media.static.aol.com/media/2026/09/04/bce9d9b7-aee8-3741-a068-53e1c7e556a8/00624548-ae69-47fb-943d-5a8a2f72fe46.jpg",
+            "domain": "aol.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
             "url": "https://www.capital.gr/diethni/4014027/ekt-o-nagkel-prodiegrapse-auxisi-epitokion-tin-epomeni-ebdomada-epifulaktikos-gia-tis-epomenes-kiniseis/",
@@ -1994,22 +1994,22 @@
             "sourcecountry": "China"
           },
           {
-            "url": "http://usa.chinadaily.com.cn/a/202609/03/WS6a98ca23e4b06d4aa055c141.html",
-            "url_mobile": "",
-            "title": "ECB may hike rates amid higher eurozone inflation",
-            "seendate": "20260903T040000Z",
-            "socialimage": "http://img2.chinadaily.com.cn/images/202609/03/6a98ca22e4b06d4a392b4c9b.jpeg",
-            "domain": "usa.chinadaily.com.cn",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
             "url": "http://europe.chinadaily.com.cn/a/202609/03/WS6a98ca23e4b06d4aa055c141.html",
             "url_mobile": "",
             "title": "ECB may hike rates amid higher eurozone inflation",
             "seendate": "20260903T054500Z",
             "socialimage": "http://img2.chinadaily.com.cn/images/202609/03/6a98ca22e4b06d4a392b4c9b.jpeg",
             "domain": "europe.chinadaily.com.cn",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "http://usa.chinadaily.com.cn/a/202609/03/WS6a98ca23e4b06d4aa055c141.html",
+            "url_mobile": "",
+            "title": "ECB may hike rates amid higher eurozone inflation",
+            "seendate": "20260903T040000Z",
+            "socialimage": "http://img2.chinadaily.com.cn/images/202609/03/6a98ca22e4b06d4a392b4c9b.jpeg",
+            "domain": "usa.chinadaily.com.cn",
             "language": "English",
             "sourcecountry": "China"
           },
@@ -2024,6 +2024,16 @@
             "sourcecountry": "Singapore"
           },
           {
+            "url": "https://time.mk/ai/48ce8351cb/mk/",
+            "url_mobile": "",
+            "title": "Time . ai",
+            "seendate": "20260904T074500Z",
+            "socialimage": "",
+            "domain": "time.mk",
+            "language": "Macedonian",
+            "sourcecountry": "Macedonia"
+          },
+          {
             "url": "https://www.interfax.ru/business/1112370",
             "url_mobile": "https://www.interfax.ru/amp/1112370",
             "title": "\u0420\u044b\u043d\u043a\u0438 \u0430\u043a\u0446\u0438\u0439 \u0415\u0432\u0440\u043e\u043f\u044b \u0441\u043d\u0438\u0437\u0438\u043b\u0438\u0441\u044c \u043d\u0430 \u043e\u043f\u0430\u0441\u0435\u043d\u0438\u044f\u0445 \u0443\u0436\u0435\u0441\u0442\u043e\u0447\u0435\u043d\u0438\u044f \u0414\u041a\u041f",
@@ -2032,36 +2042,6 @@
             "domain": "interfax.ru",
             "language": "Russian",
             "sourcecountry": "Russia"
-          },
-          {
-            "url": "https://www.kathimerini.com.cy/gr/oikonomiki/oikonomia/dedomeni-i-ayxisi-ton-epitokion-apo-tin-ekt",
-            "url_mobile": "",
-            "title": "\u0394\u03b5\u03b4\u03bf\u03bc\u03ad\u03bd\u03b7 \u03b7 \u03b1\u03cd\u03be\u03b7\u03c3\u03b7 \u03c4\u03c9\u03bd \u03b5\u03c0\u03b9\u03c4\u03bf\u03ba\u03af\u03c9\u03bd \u03b1\u03c0\u03cc \u03c4\u03b7\u03bd \u0395\u039a\u03a4",
-            "seendate": "20260902T163000Z",
-            "socialimage": "https://www.kathimerini.com.cy/assets/modules/wnp/articles/202609/599292/images/b_1.jpg",
-            "domain": "kathimerini.com.cy",
-            "language": "Greek",
-            "sourcecountry": "Cyprus"
-          },
-          {
-            "url": "https://www.capital.gr/agores/4013936/upoxorisan-oi-euroagores-baridi-ta-stoixeia-gia-ton-plithorismo/",
-            "url_mobile": "https://www.capital.gr/agores/4013936/upoxorisan-oi-euroagores-baridi-ta-stoixeia-gia-ton-plithorismo/?amp=true",
-            "title": "\u03a5\u03c0\u03bf\u03c7\u03ce\u03c1\u03b7\u03c3\u03b1\u03bd \u03bf\u03b9 \u03b5\u03c5\u03c1\u03c9\u03b1\u03b3\u03bf\u03c1\u03ad\u03c2 - \u0392\u03b1\u03c1\u03af\u03b4\u03b9 \u03c4\u03b1 \u03c3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf\u03bd \u03c0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03cc",
-            "seendate": "20260901T201500Z",
-            "socialimage": "https://www.capital.gr/Content/ImagesDatabase/fb/1000x523/crop/both/29/29b37f2c711c43fc89a7b59504431bda.jpg",
-            "domain": "capital.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://www.newsbeast.gr/financial/arthro/13326384/o-polemos-sto-iran-fovizei-tin-ekt-gia-afxisi-tou-plithorismou-stin-evropi",
-            "url_mobile": "",
-            "title": "\u039f \u03c0\u03cc\u03bb\u03b5\u03bc\u03bf\u03c2 \u03c3\u03c4\u03bf \u0399\u03c1\u03ac\u03bd \u03c6\u03bf\u03b2\u03af\u03b6\u03b5\u03b9 \u03c4\u03b7\u03bd \u0395\u039a\u03a4 \u03b3\u03b9\u03b1 \u03b1\u03cd\u03be\u03b7\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03c0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03bf\u03cd \u03c3\u03c4\u03b7\u03bd \u0395\u03c5\u03c1\u03ce\u03c0\u03b7",
-            "seendate": "20260901T141500Z",
-            "socialimage": "https://www.newsbeast.gr/image/s1200x762/fill/file/files/1/2026/09/iran.jpg",
-            "domain": "newsbeast.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
           }
         ]
       }
