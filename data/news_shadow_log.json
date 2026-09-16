@@ -2436,6 +2436,93 @@
         "MYR": 0.311344,
         "CHF": 1.555238
       }
+    },
+    {
+      "run_date_sgt": "2026-09-17",
+      "market_date": "2026-09-16",
+      "app_release": "3.3-phase3a3-direction-semantics",
+      "shadow_mode": true,
+      "news_scores": {
+        "USD": 2.5,
+        "JPY": 2.5,
+        "EUR": 2.5,
+        "GBP": 2.5,
+        "AUD": 2.5,
+        "MYR": 2.5,
+        "CHF": 2.5
+      },
+      "news_labels": {
+        "USD": "Relevant coverage / insufficient directional evidence",
+        "JPY": "Relevant coverage / insufficient directional evidence",
+        "EUR": "Relevant coverage / insufficient directional evidence",
+        "GBP": "Unavailable",
+        "AUD": "Relevant coverage / insufficient directional evidence",
+        "MYR": "Unavailable",
+        "CHF": "Unavailable"
+      },
+      "news_confidence_pct": {
+        "USD": 33,
+        "JPY": 41,
+        "EUR": 42,
+        "GBP": 0,
+        "AUD": 34,
+        "MYR": 0,
+        "CHF": 0
+      },
+      "news_coverage_quality": {
+        "USD": "Thin",
+        "JPY": "Thin",
+        "EUR": "Thin",
+        "GBP": "Unavailable",
+        "AUD": "Thin",
+        "MYR": "Unavailable",
+        "CHF": "Unavailable"
+      },
+      "news_evidence_eligible": {
+        "USD": false,
+        "JPY": false,
+        "EUR": false,
+        "GBP": false,
+        "AUD": false,
+        "MYR": false,
+        "CHF": false
+      },
+      "official_article_count": {
+        "USD": 0,
+        "JPY": 1,
+        "EUR": 4,
+        "GBP": 0,
+        "AUD": 0,
+        "MYR": 0,
+        "CHF": 0
+      },
+      "directional_article_count": {
+        "USD": 0,
+        "JPY": 0,
+        "EUR": 0,
+        "GBP": 0,
+        "AUD": 0,
+        "MYR": 0,
+        "CHF": 0
+      },
+      "article_count": {
+        "USD": 1,
+        "JPY": 1,
+        "EUR": 4,
+        "GBP": 0,
+        "AUD": 1,
+        "MYR": 0,
+        "CHF": 0
+      },
+      "rates_sgd": {
+        "USD": 1.273295,
+        "JPY": 0.821221,
+        "EUR": 1.469,
+        "GBP": 1.713319,
+        "AUD": 0.908136,
+        "MYR": 0.311546,
+        "CHF": 1.554662
+      }
     }
   ]
 }
