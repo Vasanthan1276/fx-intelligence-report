@@ -1,131 +1,131 @@
 {
-  "updated_at_utc": "2026-09-17T20:08:22.695053+00:00",
+  "updated_at_utc": "2026-09-18T19:23:06.028137+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-09-17T19:48:49.432826+00:00",
+      "fetched_at_utc": "2026-09-18T19:08:10.950915+00:00",
       "payload": {}
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-09-15T19:49:43.698914+00:00",
+      "fetched_at_utc": "2026-09-18T19:09:38.620979+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.dunya.com/ekonomi/abd-enflasyon-rakamlari-ne-zaman-saat-kacta-aciklanacak-abd-tufe-oranlari-saati-haberi-839611",
-            "url_mobile": "",
-            "title": "ABD enflasyon rakamlar\u0131 ne zaman , saat ka\u00e7ta a\u00e7\u0131klanacak ? ABD T\u00dcFE oranlar\u0131 saati ... ",
-            "seendate": "20260911T081500Z",
-            "socialimage": "https://image.dunya.com/rcman/Cw1280h720q95gc/storage/files/images/2026/09/11/abd-enflasyon-axch_cover.jpg",
-            "domain": "dunya.com",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.gercekgundem.com/ekonomi/abd-enflasyonu-aciklandi-altin-geriledi-kritik-verinin-ardindan-piyasalarda-hareketlilik-578465",
-            "url_mobile": "https://www.gercekgundem.com/amp/ekonomi/abd-enflasyonu-aciklandi-altin-geriledi-kritik-verinin-ardindan-piyasalarda-hareketlilik-578465",
-            "title": "ABD Enflasyonu A\u00e7\u0131kland\u0131 , Alt\u0131n Geriledi ! Kritik Verinin Ard\u0131ndan Piyasalarda Hareketlilik",
-            "seendate": "20260911T131500Z",
-            "socialimage": "https://img.gercekgundem.com/rcman/Cw1280h720q95gc/storage/files/images/2026/09/11/abd-enflasyonu-aciklandi-altin-geriledi-kritik-verinin-ardindan-piyasalarda-hareketlilik-rmzf.jpg",
-            "domain": "gercekgundem.com",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.sabah.com.tr/trend/galeri/ekonomi/altin-yukselise-gecti-abd-enflasyonu-etkili-oldu-iste-guncel-fiyatlar",
-            "url_mobile": "https://m.sabah.com.tr/trend/galeri/ekonomi/altin-yukselise-gecti-abd-enflasyonu-etkili-oldu-iste-guncel-fiyatlar",
-            "title": "Alt\u0131n y\u00fckseli\u015fe ge\u00e7ti ! ABD enflasyonu etkili oldu : \u0130\u015fte g\u00fcncel fiyatlar ... - Galeri",
-            "seendate": "20260911T131500Z",
-            "socialimage": "https://isbh.tmgrup.com.tr/sb/album/2026/09/11/altin-yukselise-gecti-abd-enflasyonu-etkili-oldu-iste-guncel-fiyatlar-1789130885364.jpg",
-            "domain": "sabah.com.tr",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/wealth/invest/gold-price-today-check-18k-20k-22k-24k-gold-rates-september-9-2026-at-tanishq-malabar-gold-diamonds-kalyan-jewellers-joyalukkas-and-ibja/articleshow/133958436.cms",
-            "url_mobile": "https://m.economictimes.com/wealth/invest/gold-price-today-check-18k-20k-22k-24k-gold-rates-september-9-2026-at-tanishq-malabar-gold-diamonds-kalyan-jewellers-joyalukkas-and-ibja/amp_articleshow/133958436.cms",
-            "title": "Gold price today : Check 18k , 20k , 22k , 24k gold rates ( September 9 , 2026 ) at Tanishq , Malabar Gold & Diamonds , Kalyan Jewellers , Joyalukkas and IBJA",
-            "seendate": "20260909T080000Z",
-            "socialimage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1481389,resizemode-75,msid-133958436/wealth/invest/gold-price-today-check-18k-20k-22k-24k-gold-rates-september-9-2026-at-tanishq-malabar-gold-diamonds-kalyan-jewellers-joyalukkas-and-ibja.jpg",
-            "domain": "economictimes.indiatimes.com",
+            "url": "https://www.freepressjournal.in/business/gold-loses-its-shine-for-the-week-prices-fall-2-as-fed-rate-hike-fears-grow",
+            "url_mobile": "https://www.freepressjournal.in/amp/business/gold-loses-its-shine-for-the-week-prices-fall-2-as-fed-rate-hike-fears-grow",
+            "title": "Gold Loses Its Shine For The Week , Prices Fall 2 % As Fed Rate Hike Fears Grow",
+            "seendate": "20260912T093000Z",
+            "socialimage": "https://media.assettype.com/freepressjournal/2026-08-19/89u82tv8/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-08-19T192505.226.jpg",
+            "domain": "freepressjournal.in",
             "language": "English",
             "sourcecountry": "India"
           },
           {
-            "url": "https://naslovi.net/2026-09-11/biznis/ubrzanje-americke-inflacije-u-avgustu/42345940",
+            "url": "https://www.haberts.com/abd-enflasyonu-aciklandi-gram-altin-yukseldi",
             "url_mobile": "",
-            "title": "Ubrzanje ameri\u010dke inflacije u avgustu",
-            "seendate": "20260911T143000Z",
-            "socialimage": "https://biznis.rs/wp-content/uploads/2020/10/architecture-1853552_1920.jpg",
+            "title": "ABD Enflasyonu A\u00e7\u0131kland\u0131 : Gram Alt\u0131n Y\u00fckseldi",
+            "seendate": "20260911T211500Z",
+            "socialimage": "https://habertscom.teimg.com/crop/1280x720/haberts-com/uploads/2026/09/altin-1487399-7.jpg",
+            "domain": "haberts.com",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://tribune.com.pk/story/2628849/gold-declines-sharply-despite-global-rebound",
+            "url_mobile": "",
+            "title": "Gold declines sharply despite global rebound",
+            "seendate": "20260912T080000Z",
+            "socialimage": "https://i.tribune.com.pk/media/images/321789160179-7/321789160179-7-640x480.webp",
+            "domain": "tribune.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/crypto/articles/jpmorgan-wall-street-giants-estimates-070417697.html",
+            "url_mobile": "",
+            "title": "JPMorgan & Wall Street Giant Estimates on US CPI Inflation , Will Crypto Market Recover ? ",
+            "seendate": "20260912T101500Z",
+            "socialimage": "https://s.yimg.com/lo/mysterio/api/747bfd4d585639fe9b74a24b05238b742d676f7f9afd273d75e32c9b40a1e991/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcoingape_360%2Fed563e9d53c917c516f5b83a46c1de9b",
+            "domain": "finance.yahoo.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.f5haber.com/ekonomi/dusmesi-beklenen-altin-tirmanisa-gecti-abdden-gelen-verinin-surpriz-perde-arkasi-6974401",
+            "url_mobile": "",
+            "title": "D\u00fc\u015fmesi beklenen alt\u0131n t\u0131rman\u0131\u015fa ge\u00e7ti : ABDden gelen verinin s\u00fcrpriz perde arkas\u0131",
+            "seendate": "20260911T213000Z",
+            "socialimage": "https://img.f5haber.com/rcman/Cw1280h720q95gc/storage/files/images/2026/09/11/altin-ir0k_cover.jpg",
+            "domain": "f5haber.com",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/piyasada-fed-baskisi-artti_ID102246490/",
+            "url_mobile": "",
+            "title": "Piyasada Fed bask\u0131s\u0131 artt\u0131",
+            "seendate": "20260912T053000Z",
+            "socialimage": "https://image.hurimg.com/i/hurriyet/90/0x0/6aa4632a3443bc75302b00e7.jpg",
+            "domain": "bigpara.hurriyet.com.tr",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://www.afr.com/chanticleer/markets-may-be-making-a-horrible-miscalculation-on-ai-and-inflation-20260912-p60wqy",
+            "url_mobile": "",
+            "title": "Markets may be making a horrible miscalculation on AI and inflation",
+            "seendate": "20260912T014500Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.3146%2C$multiply_3%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_opinion_no_age_social_wm/d7334828430bc7e2af7566803f9226d472cb6748",
+            "domain": "afr.com",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://naslovi.net/2026-09-11/seebiz/americka-inflacija-i-dalje-raste-fed-bio-mogao-podici-kamatne-stope/42346918",
+            "url_mobile": "",
+            "title": "Ameri\u010dka inflacija i dalje raste , Fed bio mogao podi\u0107i kamatne stope",
+            "seendate": "20260911T201500Z",
+            "socialimage": "https://www.seebiz.eu/img/1342e291b954959c5aadb4924bc70c05.jpeg",
             "domain": "naslovi.net",
-            "language": "Serbian",
+            "language": "Croatian",
             "sourcecountry": "Serbia"
           },
           {
-            "url": "https://www.portfolio.hu/uzlet/20260910/ugrik-az-olajar-mi-tortenik-a-tozsdeken-861624",
-            "url_mobile": "https://www.portfolio.hu/uzlet/20260910/ugrik-az-olajar-mi-tortenik-a-tozsdeken-861624?amp",
-            "title": "Ugrik az olaj\u00e1r - Mi t\u00f6rt\u00e9nik a t\u0151zsd\u00e9ken ? ",
-            "seendate": "20260910T194500Z",
-            "socialimage": "https://pcdn.hu/articles/images-xl/g/e/t/gettyimages-14386095481-arfolyam-befektetes-befekteto-elemzes-iroda-kereskedes-laptop-monitor-751379.jpg",
-            "domain": "portfolio.hu",
-            "language": "Hungarian",
-            "sourcecountry": "Hungary"
-          },
-          {
-            "url": "https://www.haber3.com/guncel/degerli-metaller-uzmani-zafer-ergezen-altin-gumus-bakir-ve-dolar-tahminlerini-acikladi-haberi-6264211",
-            "url_mobile": "https://www.haber3.com/amp/guncel/degerli-metaller-uzmani-zafer-ergezen-altin-gumus-bakir-ve-dolar-tahminlerini-acikladi-haberi-6264211",
-            "title": "De\u011ferli metaller uzman\u0131 Zafer Ergezen alt\u0131n , g\u00fcm\u00fc\u015f , bak\u0131r ve Dolar tahminlerini a\u00e7\u0131klad\u0131",
-            "seendate": "20260909T223000Z",
-            "socialimage": "https://img.haber3.com/rcman/Cw1280h720q95gc/storage/files/images/2026/09/09/zafer-ergezen-lotw_cover.jpg",
-            "domain": "haber3.com",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.hindustantimes.com/world-news/us-news/gold-price-today-why-gold-is-near-4-400-ahead-of-us-inflation-data-101789041183550.html",
-            "url_mobile": "https://www.hindustantimes.com/world-news/us-news/gold-price-today-why-gold-is-near-4-400-ahead-of-us-inflation-data-101789041183550-amp.html",
-            "title": "Gold price today : Why gold is near $4 , 400 ahead of US inflation data",
-            "seendate": "20260910T140000Z",
-            "socialimage": "",
-            "domain": "hindustantimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.rediff.com/business/report/indian-stock-market-rises-bank-stocks-lead-gains-us-inflation-data-boosts-sentiment/20260715.htm",
-            "url_mobile": "https://m.rediff.com/amp/business/report/indian-stock-market-rises-bank-stocks-lead-gains-us-inflation-data-boosts-sentiment/20260715.htm",
-            "title": "Indian Stock Market Rises : Bank Stocks Lead Gains , US Inflation Data Boosts Sentiment",
-            "seendate": "20260908T220000Z",
-            "socialimage": "https://im.rediff.com/1200-630/money/2018/may/04bse.jpg",
-            "domain": "rediff.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.timeturk.com/abd-enflasyon-rakamlari-saat-kacta-aciklanacak-beklenti-yuzde-34",
+            "url": "https://hnonline.sk/komentare/komentare-hn/96301953-inflacia-drzi-fed-v-strehu-a-wall-street-v-napati",
             "url_mobile": "",
-            "title": "ABD enflasyon rakamlar\u0131 saat ka\u00e7ta a\u00e7\u0131klanacak ? Beklenti y\u00fczde 3 , 4",
-            "seendate": "20260911T121500Z",
-            "socialimage": "https://cdn.timeturk.com/uploads/2026/09/abd-enflasyon-rakamlari-saat-kacta-aciklanacak-beklenti-yuzde-3-4-1.webp",
-            "domain": "timeturk.com",
+            "title": "Infl\u00e1cia dr\u017e\u00ed Fed v strehu a Wall Street v nap\u00e4t\u00ed",
+            "seendate": "20260912T143000Z",
+            "socialimage": "https://static.hnonline.sk/images/slike/2026/09/12/7371437.jpg",
+            "domain": "hnonline.sk",
+            "language": "Slovak",
+            "sourcecountry": "Slovak Republic"
+          },
+          {
+            "url": "https://www.sozcu.com.tr/altin-fiyatlarinda-beklenen-kirilma-geldi-dev-banka-5-bin-dolar-icin-tarih-verdi-p357505",
+            "url_mobile": "https://www.sozcu.com.tr/amp/altin-fiyatlarinda-beklenen-kirilma-geldi-dev-banka-5-bin-dolar-icin-tarih-verdi-p357505",
+            "title": "Alt\u0131n fiyatlar\u0131nda beklenen k\u0131r\u0131lma geldi : Dev banka  5 bin dolar  i\u00e7in tarih verdi",
+            "seendate": "20260912T091500Z",
+            "socialimage": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2026/8/altin1jpg-gHC_xls2rUy-7fhT07Ia1A.jpg?&mode=crop&scale=both",
+            "domain": "sozcu.com.tr",
             "language": "Turkish",
             "sourcecountry": "Turkey"
           },
           {
-            "url": "https://www.ozgurkocaeli.com.tr/haber/28680034/altin-yatirimcilari-bu-saati-bekliyor-kritik-veri-bugun-aciklanacak",
-            "url_mobile": "https://www.ozgurkocaeli.com.tr/amp/haber/28680034/altin-yatirimcilari-bu-saati-bekliyor-kritik-veri-bugun-aciklanacak",
-            "title": "Alt\u0131n yat\u0131r\u0131mc\u0131lar\u0131 bu saati bekliyor ! Kritik veri bug\u00fcn a\u00e7\u0131klanacak",
-            "seendate": "20260911T101500Z",
-            "socialimage": "https://static.daktilo.com/sites/535/uploads/2026/09/11/large/altin-yatirimcilari-bu-saati-bekliyor-kritik-veri-20227072-8743-amp-1789112611.jpg",
-            "domain": "ozgurkocaeli.com.tr",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
+            "url": "http://www.econotimes.com/FxWirePro-GBP-USD-gains-some-upside-momentum-but-still-bearish-1751889",
+            "url_mobile": "",
+            "title": "FxWirePro : GBP / USD gains some upside momentum but still bearish",
+            "seendate": "20260911T194500Z",
+            "socialimage": "https://f1.econotimes.com/2026/09/3gp1svu3n2.jpg",
+            "domain": "econotimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://ec.ltn.com.tw/article/breakingnews/5569210",
-            "url_mobile": "https://ec.ltn.com.tw/amp/article/breakingnews/5569210",
-            "title": "\u975c\u5f85\u7f8e\u901a\u81a8\u6578\u64da\u516c\u5e03 \u65b0\u53f0\u5e6331 . 5\u5143\u9644\u8fd1\u9707\u76ea",
-            "seendate": "20260910T044500Z",
-            "socialimage": "https://img.ltn.com.tw/Upload/business/page/800/2026/09/10/5569210_1.jpg",
-            "domain": "ec.ltn.com.tw",
+            "url": "https://www.chinatimes.com/realtimenews/20260912002737-260410",
+            "url_mobile": "",
+            "title": "\u7f8e\u901a\u81a8\u5347\u6eab \u806f\u6e96\u6703\u5347\u606f\u6a5f\u7387\u8fd19 \u6210 \u5b78\u8005\u537b\u8a8d\u70ba\u6703\u6309\u5175\u4e0d\u52d5 - \u8ca1\u7d93",
+            "seendate": "20260912T124500Z",
+            "socialimage": "https://images.chinatimes.com/newsphoto/2026-09-12/656/20260912002738.jpg",
+            "domain": "chinatimes.com",
             "language": "Chinese",
             "sourcecountry": "Taiwan"
           }
@@ -133,7 +133,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-09-17T19:51:05.768537+00:00",
+      "fetched_at_utc": "2026-09-18T19:09:54.090090+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -141,131 +141,8 @@
       "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-14T20:30:30.900356+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.moneycontrol.com/world/all-eyes-on-kevin-warsh-as-rate-hike-fever-spreads-across-g7-central-banks-article-14028837.html",
-            "url_mobile": "https://www.moneycontrol.com/world/all-eyes-on-kevin-warsh-as-rate-hike-fever-spreads-across-g7-central-banks-article-14028837.html/amp",
-            "title": "All eyes on Kevin Warsh as rate - hike fever spreads across G7 central banks",
-            "seendate": "20260913T084500Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/08/20260828181336_465919612W.jpg",
-            "domain": "moneycontrol.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "http://www.econotimes.com/BOJ-Set-to-Raise-Rates-to-125-as-Inflation-Risks-Build-1751829",
-            "url_mobile": "",
-            "title": "BOJ Set to Raise Rates to 1 . 25 % as Inflation Risks Build",
-            "seendate": "20260911T103000Z",
-            "socialimage": "https://f1.econotimes.com/2025/01/pxh5vdmlqd.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://mainichi.jp/articles/20260911/spp/sp0/006/120000c",
-            "url_mobile": "",
-            "title": "\u7d4c\u6e08\u5c02\u9580\u5bb6 \u65e5\u9280\u59d4\u54e1\u4f1a\u898b \u3001 \u653f\u7b56\u91d1\u5229\u306e\u4eca\u5f8c\u306e\u898b\u901a\u3057\u306f \u300c \u4e2d\u9593\u6d3e\u306b\u4f4d\u7f6e\u3059\u308b\u5897\u59d4\u54e1\u304c\u5229\u4e0a\u3052\u306b\u8a00\u53ca\u3057\u305f\u306e\u3067 \u300d\uff08 \u30b9\u30dd\u30cb\u30c1 \uff09 ",
-            "seendate": "20260911T010000Z",
-            "socialimage": "https://cdn.mainichi.jp/vol1/2026/09/09/20260909s10041000195000p/0c10.jpg?1",
-            "domain": "mainichi.jp",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/ecbs-hawkish-stance-prompts-calls-further-rate-hikes",
-            "url_mobile": "",
-            "title": "ECB hawkish stance prompts calls for further rate hikes",
-            "seendate": "20260911T090000Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/d17f8e26d101bf3951875f9b9375a76a22a223a5924628bfd73620480803a7c1?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://www.sankei.com/article/20260912-XSADSVO5RRMR7CGFVYXT3HRK5A/",
-            "url_mobile": "",
-            "title": "\u3061\u3083\u3076\u53f0\u8fd4\u3057\u30c8\u30e9\u30f3\u30d7\u767a\u8a00\u3067\u7c73\u91d1\u878d\u754c\u304c\u72fc\u72fd \u3001 \u65e5\u672c\u306e \u300c \u5229\u4e0a\u3052\u52e2\u529b \u300d \u3082\u53f3\u5f80\u5de6\u5f80 \u9ad8\u6a4b\u6d0b\u4e00 \u65e5\u672c\u306e\u89e3\u304d\u65b9",
-            "seendate": "20260912T021500Z",
-            "socialimage": "https://www.sankei.com/resizer/v2/HQXR6OK5MJM2PAUV3RXK5FRQQQ.jpg?auth=e1ad97e600c62c85029e636fd30bb9492a2c026d15f1e2b43a93baf48b93a54c&quality=50&focal=1878%2C1126",
-            "domain": "sankei.com",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://finance.yahoo.com/economy/policy/articles/boj-set-lift-rates-next-025616689.html",
-            "url_mobile": "",
-            "title": "BOJ set to lift rates next week but offer few clues on terminal , sources say",
-            "seendate": "20260912T214500Z",
-            "socialimage": "https://s.yimg.com/lo/mysterio/api/9baed1d73f3ba99a7ee421a37d5fdf3650cc9c1ccb8fe992e760738b8c2b72e0/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F9db238e97184c8e2270adf65a5db5c95.jpg",
-            "domain": "finance.yahoo.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.kitco.com/news/article/2026-09-11/fed-can-hike-it-wont-derail-golds-long-term-bull-market-analysts",
-            "url_mobile": "",
-            "title": "The Fed can hike , but it wont derail gold long - term bull market \u2013 analysts",
-            "seendate": "20260911T233000Z",
-            "socialimage": "https://image-api.prod.kitco.com/image/226d23b3-16f4-47fe-85f3-d3568f7f4508.jpeg?top=0.41136465827338&left=0&.17727068345&scale_width=1920&token=6ca33dfce5e65b6bf10ab942c2ae37806e1f7e0226f522e84eedb2bfca6dfdb5",
-            "domain": "kitco.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.hani.co.kr/arti/economy/economy_general/1277538.html",
-            "url_mobile": "",
-            "title": "\uace0\uc720\uac00 \u00b7 \uace0\ubb3c \uc555\ubc15 \uc9c0\uc18d \u2026 \ubbf8\uad6d \uc5f0\uc900 , 9\uc6d4 \uae30\uc900\uae08\ub9ac \uc778\uc0c1 \ub098\uc11c\ub098",
-            "seendate": "20260913T071500Z",
-            "socialimage": "https://flexible.img.hani.co.kr/flexible/normal/970/1293/imgdb/original/2026/0913/20260913501450.webp",
-            "domain": "hani.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.aol.com/articles/boj-set-lift-rates-next-025616000.html",
-            "url_mobile": "",
-            "title": "BOJ set to lift rates next week but offer few clues on terminal , sources say",
-            "seendate": "20260911T040000Z",
-            "socialimage": "https://hermes.media.static.aol.com/media/2026/09/11/7c6ebd50-488f-3b54-bce4-952ec40e8199/06582a32-dee7-450e-8c47-f809ce78bc26.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-bond-yields-surge-as-oil-spike-fuels-inflation-fears/articleshow/134047045.cms",
-            "url_mobile": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-bond-yields-surge-as-oil-spike-fuels-inflation-fears/amp_articleshow/134047045.cms",
-            "title": "Global bond yields surge as oil spike fuels inflation fears",
-            "seendate": "20260911T061500Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-134047427,width-1200,height-630,imgsize-2291978,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.businesstimes.com.sg/international/global/boj-set-raise-rates-sep-17-18-meeting-offer-few-clues-how-high-they-could-go",
-            "url_mobile": "",
-            "title": "BOJ set to raise rates at Sep 17 - 18 meeting , but offer few clues on how high they could go",
-            "seendate": "20260911T051500Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/56901142ce77ae87f92bc8e046f26d4e4dd4e832ca7909985c179067d1fd5183?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://www.business-standard.com/world-news/all-eyes-on-warsh-as-rate-hike-fever-spreads-across-g7-central-banks-126091300050_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/world-news/all-eyes-on-warsh-as-rate-hike-fever-spreads-across-g7-central-banks-126091300050_1.html",
-            "title": "All eyes on Warsh as rate - hike fever spreads across G7 central banks",
-            "seendate": "20260913T041500Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-09/13/thumb/fitandfill/1200X628/1789267061-9263.jpg",
-            "domain": "business-standard.com",
-            "language": "English",
-            "sourcecountry": "India"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-09-18T19:11:12.525698+00:00",
+      "payload": {}
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
       "fetched_at_utc": "2026-09-09T19:29:05.889052+00:00",
@@ -680,7 +557,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-09-17T20:00:07.152582+00:00",
+      "fetched_at_utc": "2026-09-18T19:18:57.149533+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
@@ -711,189 +588,33 @@
       }
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-17T20:02:25.701063+00:00",
+      "fetched_at_utc": "2026-09-18T19:20:30.939489+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-09-16T19:57:33.323923+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://minfin.com.ua/ua/2026/09/12/currency/",
-            "url_mobile": "",
-            "title": "\u041e\u0431\u0433\u043e\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u0432\u0430\u043b\u044e\u0442\u043d\u043e\u0433\u043e \u0440\u0438\u043d\u043a\u0430 12 \u2013 13 \u0432\u0435\u0440\u0435\u0441\u043d\u044f 2026 \u041c\u0456\u043d\u0444\u0456\u043d",
-            "seendate": "20260913T021500Z",
-            "socialimage": "",
-            "domain": "minfin.com.ua",
-            "language": "Ukrainian",
-            "sourcecountry": "Ukraine"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-09-18T19:21:57.985701+00:00",
+      "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-09-15T20:04:26.429947+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-09-16T19:58:41.270600+00:00",
+      "fetched_at_utc": "2026-09-18T19:23:06.028120+00:00",
       "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-17T19:56:43.580674+00:00",
+      "fetched_at_utc": "2026-09-18T19:16:29.854386+00:00",
       "payload": {}
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-15T19:59:09.481993+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.standard.net.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T024500Z",
-            "socialimage": "https://www.standard.net.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "standard.net.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.illawarramercury.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T024500Z",
-            "socialimage": "https://www.illawarramercury.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "illawarramercury.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.sbs.com.au/news/article/another-major-bank-tips-interest-rates-will-rise-before-years-end/adpoljsrg",
-            "url_mobile": "",
-            "title": "Another major bank tips interest rates will rise before year end",
-            "seendate": "20260911T230000Z",
-            "socialimage": "https://sbs-au-brightspot.s3.ap-southeast-2.amazonaws.com/4d/db/b2974f2244baba8a48cb23ed4a0d/20200204001446534184-original.jpg",
-            "domain": "sbs.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.easternriverinachronicle.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T024500Z",
-            "socialimage": "https://www.easternriverinachronicle.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "easternriverinachronicle.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.dailyliberal.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T024500Z",
-            "socialimage": "https://www.dailyliberal.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "dailyliberal.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.crookwellgazette.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T024500Z",
-            "socialimage": "https://www.crookwellgazette.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "crookwellgazette.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.theleader.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T024500Z",
-            "socialimage": "https://www.theleader.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "theleader.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.bluemountainsgazette.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T030000Z",
-            "socialimage": "https://www.bluemountainsgazette.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "bluemountainsgazette.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.areanews.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T030000Z",
-            "socialimage": "https://www.areanews.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "areanews.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.portstephensexaminer.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T030000Z",
-            "socialimage": "https://www.portstephensexaminer.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "portstephensexaminer.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.westernadvocate.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T030000Z",
-            "socialimage": "https://www.westernadvocate.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "westernadvocate.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.manningrivertimes.com.au/story/9349174/rba-to-speak-ahead-of-crucial-cash-rate-meeting/",
-            "url_mobile": "",
-            "title": "RBA to speak ahead of crucial cash rate meeting",
-            "seendate": "20260913T030000Z",
-            "socialimage": "https://www.manningrivertimes.com.au/images/transform/v1/crop/frm/silverstone-feed-data/e22cbf52-a9c5-425d-9a91-4bab3c260924.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "manningrivertimes.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-09-18T19:17:44.198978+00:00",
+      "payload": {}
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-09-15T20:02:37.822729+00:00",
+      "fetched_at_utc": "2026-09-18T19:21:03.430675+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://en.antaranews.com/news/430900/indonesia-seeks-to-bolster-strategic-port-corridors-at-imt-gt-forum",
-            "url_mobile": "",
-            "title": "Indonesia seeks to bolster strategic port corridors at IMT - GT forum",
-            "seendate": "20260910T220000Z",
-            "socialimage": "https://cdn.antaranews.com/cache/1200x800/2026/09/10/IMG_0957.jpeg",
-            "domain": "en.antaranews.com",
-            "language": "English",
-            "sourcecountry": "Indonesia"
-          },
-          {
-            "url": "https://www.orientaldaily.com.my/news/nation/2026/09/09/846502",
-            "url_mobile": "",
-            "title": "\u6797\u51a0\u82f1\u5448\u51fd\u5b89\u534e\u5efa\u8bae  \u9a6c\u6765\u897f\u4e9a12\u9879\u8bae\u7a0b  \u4fc3\u843d\u5b9e\u6c99\u7802\u6743\u76ca\u53ca\u63f4\u52a9\u4e2d\u5c0f\u5fae\u4f01 | \u56fd\u5185",
-            "seendate": "20260909T040000Z",
-            "socialimage": "https://www.orientaldaily.com.my/storage/resize_cache/images/uploads/news-cover/2026/SEP_2026/20260909/WhatsApp_Image_2026-09-09_at_11.25.39_AM.jpeg/e96fd7dad5b4f9b90d69cee5f0c9f669.jpeg",
-            "domain": "orientaldaily.com.my",
-            "language": "Chinese",
-            "sourcecountry": "Malaysia"
-          },
           {
             "url": "https://www.thestar.com.my/news/focus/2026/09/13/thought-impact-from-gas-to-gravitas",
             "url_mobile": "",
@@ -903,26 +624,6 @@
             "domain": "thestar.com.my",
             "language": "English",
             "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/09/10/striking-a-balance",
-            "url_mobile": "",
-            "title": "Striking a balance",
-            "seendate": "20260910T010000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/09/10/4102515.jpg",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "http://finance.sina.com.cn/zl/china/2026-09-09/zl-inirfumn8868618.shtml",
-            "url_mobile": "",
-            "title": "\u6e29\u5f6c \uff1a AI\u4e0e\u4ef7\u683c\u8d21\u732e\u5ea6\u4e0a\u5347 8\u6708\u5916\u8d38\u70b9\u8bc4",
-            "seendate": "20260909T120000Z",
-            "socialimage": "http://i3.sinaimg.cn/cj/2015/1216/U12164P31DT20151216094944.jpg",
-            "domain": "finance.sina.com.cn",
-            "language": "Chinese",
-            "sourcecountry": "China"
           }
         ]
       }
@@ -1207,7 +908,7 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-09-11T19:30:00.482841+00:00",
+      "fetched_at_utc": "2026-09-18T19:21:40.774464+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
