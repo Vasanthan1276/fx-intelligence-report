@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-24T20:20:33.321865+00:00",
+  "generated_at_utc": "2026-09-25T20:26:13.334313+00:00",
   "model_version": "2.2-phase2c-baseline",
   "policy_source": "BIS central bank policy rates",
   "macro_source": "IMF World Economic Outlook via DataMapper",
@@ -27,37 +27,6 @@
     "inflation_next_pct": 1.9
   },
   "currencies": {
-    "JPY": {
-      "macro_score": 3.16,
-      "macro_coverage_pct": 100,
-      "effective_macro_weight_pct": 30,
-      "macro_component_scores": {
-        "policy": 5.0,
-        "growth": 0.66,
-        "inflation": 2.33
-      },
-      "policy_rate_pct": 1.0,
-      "policy_rate_6m_change_bps": 25.0,
-      "policy_rate_12m_change_bps": 50.0,
-      "policy_rate_percentile_5y": 100.0,
-      "policy_data_date": "2026-08-01",
-      "growth_current_year": 2026,
-      "growth_current_pct": 0.7,
-      "growth_next_year": 2027,
-      "growth_next_pct": 0.6,
-      "inflation_current_year": 2026,
-      "inflation_current_pct": 2.2,
-      "inflation_next_year": 2027,
-      "inflation_next_pct": 2.3,
-      "forward_policy_score": 2.85,
-      "forward_policy_label": "Balanced / uncertain",
-      "forward_fx_momentum_score": 2.28,
-      "forward_fx_momentum_label": "Mixed / range-bound",
-      "forward_outlook_score": 2.54,
-      "forward_outlook_label": "Mixed / neutral",
-      "decision_confidence": 85,
-      "signal_agreement_pct": 78
-    },
     "GBP": {
       "macro_score": 1.78,
       "macro_coverage_pct": 100,
@@ -82,12 +51,43 @@
       "inflation_next_pct": 2.4,
       "forward_policy_score": 2.19,
       "forward_policy_label": "Balanced / uncertain",
-      "forward_fx_momentum_score": 1.35,
+      "forward_fx_momentum_score": 1.39,
       "forward_fx_momentum_label": "Weakening",
-      "forward_outlook_score": 1.73,
+      "forward_outlook_score": 1.75,
       "forward_outlook_label": "Supports waiting",
       "decision_confidence": 80,
-      "signal_agreement_pct": 58
+      "signal_agreement_pct": 59
+    },
+    "JPY": {
+      "macro_score": 3.16,
+      "macro_coverage_pct": 100,
+      "effective_macro_weight_pct": 30,
+      "macro_component_scores": {
+        "policy": 5.0,
+        "growth": 0.66,
+        "inflation": 2.33
+      },
+      "policy_rate_pct": 1.0,
+      "policy_rate_6m_change_bps": 25.0,
+      "policy_rate_12m_change_bps": 50.0,
+      "policy_rate_percentile_5y": 100.0,
+      "policy_data_date": "2026-08-01",
+      "growth_current_year": 2026,
+      "growth_current_pct": 0.7,
+      "growth_next_year": 2027,
+      "growth_next_pct": 0.6,
+      "inflation_current_year": 2026,
+      "inflation_current_pct": 2.2,
+      "inflation_next_year": 2027,
+      "inflation_next_pct": 2.3,
+      "forward_policy_score": 2.85,
+      "forward_policy_label": "Balanced / uncertain",
+      "forward_fx_momentum_score": 3.0,
+      "forward_fx_momentum_label": "Mixed / range-bound",
+      "forward_outlook_score": 2.93,
+      "forward_outlook_label": "Mixed / neutral",
+      "decision_confidence": 86,
+      "signal_agreement_pct": 76
     },
     "EUR": {
       "macro_score": 2.02,
@@ -113,43 +113,12 @@
       "inflation_next_pct": 2.8,
       "forward_policy_score": 2.63,
       "forward_policy_label": "Balanced / uncertain",
-      "forward_fx_momentum_score": 1.5,
+      "forward_fx_momentum_score": 1.57,
       "forward_fx_momentum_label": "Weakening",
-      "forward_outlook_score": 2.01,
+      "forward_outlook_score": 2.05,
       "forward_outlook_label": "Mixed / neutral",
       "decision_confidence": 84,
-      "signal_agreement_pct": 69
-    },
-    "CHF": {
-      "macro_score": 2.2,
-      "macro_coverage_pct": 100,
-      "effective_macro_weight_pct": 30,
-      "macro_component_scores": {
-        "policy": 2.3,
-        "growth": 1.03,
-        "inflation": 3.69
-      },
-      "policy_rate_pct": 0.0,
-      "policy_rate_6m_change_bps": 0.0,
-      "policy_rate_12m_change_bps": 0.0,
-      "policy_rate_percentile_5y": 45.9,
-      "policy_data_date": "2026-08-01",
-      "growth_current_year": 2026,
-      "growth_current_pct": 1.3,
-      "growth_next_year": 2027,
-      "growth_next_pct": 1.3,
-      "inflation_current_year": 2026,
-      "inflation_current_pct": 0.5,
-      "inflation_next_year": 2027,
-      "inflation_next_pct": 0.5,
-      "forward_policy_score": 2.31,
-      "forward_policy_label": "Balanced / uncertain",
-      "forward_fx_momentum_score": 1.42,
-      "forward_fx_momentum_label": "Weakening",
-      "forward_outlook_score": 1.82,
-      "forward_outlook_label": "Supports waiting",
-      "decision_confidence": 84,
-      "signal_agreement_pct": 69
+      "signal_agreement_pct": 71
     },
     "USD": {
       "macro_score": 1.92,
@@ -175,12 +144,43 @@
       "inflation_next_pct": 2.1,
       "forward_policy_score": 1.84,
       "forward_policy_label": "Easing bias",
-      "forward_fx_momentum_score": 2.81,
+      "forward_fx_momentum_score": 2.54,
       "forward_fx_momentum_label": "Mixed / range-bound",
-      "forward_outlook_score": 2.37,
+      "forward_outlook_score": 2.23,
       "forward_outlook_label": "Mixed / neutral",
-      "decision_confidence": 84,
-      "signal_agreement_pct": 69
+      "decision_confidence": 83,
+      "signal_agreement_pct": 68
+    },
+    "CHF": {
+      "macro_score": 2.2,
+      "macro_coverage_pct": 100,
+      "effective_macro_weight_pct": 30,
+      "macro_component_scores": {
+        "policy": 2.3,
+        "growth": 1.03,
+        "inflation": 3.69
+      },
+      "policy_rate_pct": 0.0,
+      "policy_rate_6m_change_bps": 0.0,
+      "policy_rate_12m_change_bps": 0.0,
+      "policy_rate_percentile_5y": 45.9,
+      "policy_data_date": "2026-08-01",
+      "growth_current_year": 2026,
+      "growth_current_pct": 1.3,
+      "growth_next_year": 2027,
+      "growth_next_pct": 1.3,
+      "inflation_current_year": 2026,
+      "inflation_current_pct": 0.5,
+      "inflation_next_year": 2027,
+      "inflation_next_pct": 0.5,
+      "forward_policy_score": 2.31,
+      "forward_policy_label": "Balanced / uncertain",
+      "forward_fx_momentum_score": 1.22,
+      "forward_fx_momentum_label": "Weakening",
+      "forward_outlook_score": 1.71,
+      "forward_outlook_label": "Supports waiting",
+      "decision_confidence": 82,
+      "signal_agreement_pct": 65
     },
     "AUD": {
       "macro_score": 3.19,
@@ -206,12 +206,12 @@
       "inflation_next_pct": 3.2,
       "forward_policy_score": 3.04,
       "forward_policy_label": "Balanced / uncertain",
-      "forward_fx_momentum_score": 1.83,
+      "forward_fx_momentum_score": 1.58,
       "forward_fx_momentum_label": "Weakening",
-      "forward_outlook_score": 2.37,
+      "forward_outlook_score": 2.24,
       "forward_outlook_label": "Mixed / neutral",
-      "decision_confidence": 85,
-      "signal_agreement_pct": 72
+      "decision_confidence": 83,
+      "signal_agreement_pct": 68
     },
     "MYR": {
       "macro_score": 3.09,
@@ -237,12 +237,12 @@
       "inflation_next_pct": 2.0,
       "forward_policy_score": 2.57,
       "forward_policy_label": "Balanced / uncertain",
-      "forward_fx_momentum_score": 2.54,
+      "forward_fx_momentum_score": 2.3,
       "forward_fx_momentum_label": "Mixed / range-bound",
-      "forward_outlook_score": 2.55,
+      "forward_outlook_score": 2.42,
       "forward_outlook_label": "Mixed / neutral",
       "decision_confidence": 90,
-      "signal_agreement_pct": 87
+      "signal_agreement_pct": 86
     }
   }
 }
