@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-01T21:26:46.300374+00:00",
+  "updated_at_utc": "2026-10-02T21:06:34.635954+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-10-01T21:13:21.534968+00:00",
@@ -260,255 +260,255 @@
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-09-28T22:18:43.384682+00:00",
+      "fetched_at_utc": "2026-10-02T20:55:34.617723+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.vetogate.com/5738783",
+            "url": "https://www.vetogate.com/5741482",
             "url_mobile": "",
-            "title": "\u0627\u0631\u062a\u0641\u0627\u0639 \u0633\u0639\u0631 \u0627\u0644\u064a\u0646 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0623\u062d\u062f 27 - 9 - 2026 \u0641\u064a \u0627\u0644\u0628\u0646\u0648\u0643",
-            "seendate": "20260927T200000Z",
+            "title": "\u0627\u0631\u062a\u0641\u0627\u0639 \u0633\u0639\u0631 \u0627\u0644\u064a\u0646 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062c\u0646\u064a\u0647 \u0641\u064a \u0628\u0646\u0643 \u0645\u0635\u0631 \u0645\u0633\u0627\u0621 \u0627\u0644\u064a\u0648\u0645",
+            "seendate": "20260930T184500Z",
             "socialimage": "",
             "domain": "vetogate.com",
             "language": "Arabic",
             "sourcecountry": "Egypt"
           },
           {
-            "url": "https://pakobserver.net/currency-exchange-latest-rates-in-pakistan-today-28-september-2026/",
+            "url": "https://pakobserver.net/currency-exchange-latest-rates-in-pakistan-today-29-september-2026/",
             "url_mobile": "",
-            "title": "Currency exchange latest rates in Pakistan today \u2013 28 September 2026",
-            "seendate": "20260928T050000Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/08/gold-price-drops-by-rs1800-per-tola-in-pakistan-pakobserver-773973.jpg",
+            "title": "Currency exchange latest rates in Pakistan today \u2013 29 September 2026",
+            "seendate": "20260929T043000Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/08/currency.webp",
             "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://pakobserver.net/currency-exchange-latest-rates-in-pakistan-today-25-september-2026/",
+            "url": "https://pakobserver.net/currency-exchange-latest-rates-in-pakistan-today-30-september-2026/",
             "url_mobile": "",
-            "title": "Currency exchange latest rates in Pakistan today \u2013 25 September 2026",
-            "seendate": "20260925T054500Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/12/today-s-currency-exchange-rates-in-pakistan-dollar-euro-pound-riyal-rates-on-may-25-2023-1684987420-6451.jpg",
+            "title": "Currency exchange latest rates in Pakistan today \u2013 30 September 2026",
+            "seendate": "20260930T074500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/05/dollar-riyal-and-other-currency-exchange-rates-in-pakistan-today-26-may-2026-pakobserver-756848.jpg",
             "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.cnbc.com/2026/09/28/yen-undervalued-turning-point-ocbc.html",
+            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-29-09-2026-7334535655373024a.html",
             "url_mobile": "",
-            "title": "Why OCBC sees an undervalued yen nearing a turning point",
-            "seendate": "20260928T071500Z",
-            "socialimage": "https://image.cnbcfm.com/api/v1/image/108344419-1785844531313-gettyimages-2285558511-JAPAN_YEN.jpeg?v=1785844665",
-            "domain": "cnbc.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-28-09-2026-7334181860542720a.html",
-            "url_mobile": "",
-            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 28 . 09 . 2026",
-            "seendate": "20260928T070000Z",
+            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 29 . 09 . 2026",
+            "seendate": "20260929T063000Z",
             "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
             "domain": "money.pl",
             "language": "Polish",
             "sourcecountry": "Poland"
           },
           {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-25-09-2026-7333120024090848a.html",
+            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-30-09-2026-7334889618147584a.html",
             "url_mobile": "",
-            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 25 . 09 . 2026",
-            "seendate": "20260925T073000Z",
+            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 30 . 09 . 2026",
+            "seendate": "20260930T060000Z",
             "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
             "domain": "money.pl",
             "language": "Polish",
             "sourcecountry": "Poland"
           },
           {
-            "url": "https://en.dailypakistan.com.pk/25-Sep-2026/currency-exchange-rates-today-in-pakistan-us-dollar-euro-pound-dirham-and-riyal-25-sept-2026",
+            "url": "https://cheknews.ca/langford-ramen-restaurant-starts-accepting-euros-1350548/",
             "url_mobile": "",
-            "title": "Currency Exchange Rates Today in Pakistan : US Dollar , Euro , Pound , Dirham and Riyal",
-            "seendate": "20260925T051500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/04/currency-rates-in-pakistan-today-pkr-to-us-dollar-euro-pound-dirham-and-riyal-21-april-2024-1713674270-8229.jpg",
+            "title": "Langford ramen restaurant starts accepting euros",
+            "seendate": "20260929T044500Z",
+            "socialimage": "https://cheknews.ca/wp-content/uploads/2026/09/image-36.png",
+            "domain": "cheknews.ca",
+            "language": "English",
+            "sourcecountry": "Canada"
+          },
+          {
+            "url": "https://en.dailypakistan.com.pk/02-Oct-2026/currency-exchange-rates-in-pakistan-today-us-dollar-euro-dirham-and-riyal-rates-02-october-2026",
+            "url_mobile": "",
+            "title": "Currency Exchange Rates in Pakistan Today - US Dollar , Euro , Dirham and Riyal Rates",
+            "seendate": "20261002T041500Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
             "domain": "en.dailypakistan.com.pk",
             "language": "English",
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://en.dailypakistan.com.pk/28-Sep-2026/currency-exchange-rates-in-pakistan-today-us-dollar-euro-dirham-and-riyal-rates-28-september-2026",
+            "url": "https://en.dailypakistan.com.pk/29-Sep-2026/currency-exchange-rates-in-pakistan-today-us-dollar-euro-dirham-and-riyal-rates-29-september-2026",
             "url_mobile": "",
             "title": "Currency Exchange Rates in Pakistan Today - US Dollar , Euro , Dirham and Riyal Rates",
-            "seendate": "20260928T050000Z",
+            "seendate": "20260929T043000Z",
             "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-15-september-2024-pkr-to-us-dollar-euro-pound-riyal-dirham-open-market-news-250255.jpg",
             "domain": "en.dailypakistan.com.pk",
             "language": "English",
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.ntvbd.com/economy/news-1810029",
-            "url_mobile": "https://www.ntvbd.com/economy/news-1810029?amp",
+            "url": "https://www.ntvbd.com/economy/news-1811161",
+            "url_mobile": "https://www.ntvbd.com/economy/news-1811161?amp",
             "title": "\u0986\u099c \u0995\u09a4 \u099f\u09be\u0995\u09be\u09df \u09aa\u09be\u0993\u09df\u09be \u09af\u09be\u09ac\u09c7 \u09a1\u09b2\u09be\u09b0 - \u0987\u0989\u09b0\u09cb - \u09b0\u09c1\u09aa\u09bf",
-            "seendate": "20260927T070000Z",
-            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_24m/public/images/2026/09/27/img_7074.jpg.jpeg",
+            "seendate": "20260929T073000Z",
+            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_24m/public/images/2026/09/29/image_ju.jpg",
             "domain": "ntvbd.com",
             "language": "Bengali",
             "sourcecountry": "Bangladesh"
           },
           {
-            "url": "http://www.econotimes.com/Asian-Currencies-Weaken-as-Dollar-Oil-Prices-Rise-1753218",
+            "url": "https://b24.am/finance/466087.html",
+            "url_mobile": "https://b24.am/finance/466087.html?amp",
+            "title": "\u0534\u0578\u056c\u0561\u0580\u0568 , \u0565\u057e\u0580\u0578\u0576 \u0587 \u0578\u057d\u056f\u0578\u0582 \u0563\u056b\u0576\u0568 \u0576\u057e\u0561\u0566\u0565\u056c \u0565\u0576 . \u0540\u0540 \u053f\u0532 , 28 / 09 / 2026",
+            "seendate": "20260928T220000Z",
+            "socialimage": "https://b24.am/pub/uploads/2009/08/100000Dram.jpg",
+            "domain": "b24.am",
+            "language": "Armenian",
+            "sourcecountry": "Armenia"
+          },
+          {
+            "url": "https://b24.am/finance/466355.html",
+            "url_mobile": "https://b24.am/finance/466355.html?amp",
+            "title": "\u0534\u0578\u056c\u0561\u0580\u0576 \u0578\u0582 \u0565\u057e\u0580\u0578\u0576 \u0576\u057e\u0561\u0566\u0565\u056c \u0565\u0576 , \u0578\u057d\u056f\u0578\u0582 \u0563\u056b\u0576\u0568 \u055d \u0561\u0573\u0565\u056c . \u0540\u0540 \u053f\u0532 , 01 / 10 / 2026",
+            "seendate": "20261001T213000Z",
+            "socialimage": "https://b24.am/pub/uploads/2025/06/armenian-dram-dollar-euro-ruble-0625-3.jpg",
+            "domain": "b24.am",
+            "language": "Armenian",
+            "sourcecountry": "Armenia"
+          },
+          {
+            "url": "http://www.thegazette.com/news/world/survey-by-japans-central-bank-shows-business-sentiments-are-up-for-sixth-straight-month/article_ce2c5fef-0d7c-5944-b7d5-2d16f2098976.html",
             "url_mobile": "",
-            "title": "Asian Currencies Weaken as Dollar , Oil Prices Rise",
-            "seendate": "20260928T060000Z",
-            "socialimage": "https://f1.econotimes.com/2023/10/spnajhzg1l.jpeg",
-            "domain": "econotimes.com",
+            "title": "Survey by Japan central bank shows business sentiments are up for sixth straight month",
+            "seendate": "20261001T043000Z",
+            "socialimage": "https://bloximages.chicago2.vip.townnews.com/thegazette.com/content/tncms/custom/image/50cb9843-d559-417a-b66a-17dbf6d1881e.png",
+            "domain": "thegazette.com",
             "language": "English",
             "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.freemalaysiatoday.com/category/business/2026/09/28/ringgit-ends-lower-on-hawkish-fed-sentiment",
-            "url_mobile": "",
-            "title": "Ringgit ends lower on hawkish Fed sentiment",
-            "seendate": "20260928T124500Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/a03957c5-ringgit_down-new-2024-3.webp",
-            "domain": "freemalaysiatoday.com",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.khaskhabar.com/news/india-news/news-good-news-for-gold-and-silver-buyers-prices-fell-by-up-to-25-percent-news-hindi-1-848348-KKN.html",
-            "url_mobile": "https://m.khaskhabar.com/amp/news/news-good-news-for-gold-and-silver-buyers-prices-fell-by-up-to-25-percent-news-hindi-1-848348-KKN.html?PageSpeed=off",
-            "title": "Good news for gold and silver buyers , prices fell by up to 2 . 5 percent . ",
-            "seendate": "20260928T053000Z",
-            "socialimage": "https://www.khaskhabar.com/s3-storage/khaskhabar/khaskhabarimages/img500/3-75-1790571591-848348-khaskhabar.jpg",
-            "domain": "khaskhabar.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
           }
         ]
       }
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-30T21:00:57.536902+00:00",
+      "fetched_at_utc": "2026-10-02T20:56:05.402451+00:00",
       "payload": {
         "articles": [
           {
-            "url": "http://www.argentinastar.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
-            "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T101500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "argentinastar.com",
-            "language": "English",
-            "sourcecountry": "Argentina"
+            "url": "https://www.newspim.com/news/view/20261001000569",
+            "url_mobile": "https://m.newspim.com/news/view/20261001000569",
+            "title": "BOJ  \ubb3c\uac00 \uc624\ub974\uba74 \uae08\ub9ac\uc778\uc0c1 \uac00\uc18d ... \ucd94\uac00 \uc778\uc0c1 \uc2dc\uc810\uc740 \uc720\ub3d9\uc801",
+            "seendate": "20261001T023000Z",
+            "socialimage": "https://img.newspim.com/news/2024/09/12/2409121426359850_485_tc.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "http://www.middleeaststar.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
+            "url": "https://www.jiji.com/jc/article?k=2026100100389&g=eco",
             "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T074500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "middleeaststar.com",
-            "language": "English",
-            "sourcecountry": "Syria"
+            "title": "\u5229\u4e0a\u3052\u30da\u30fc\u30b9\u52a0\u901f\u304c\u5fc5\u8981 \u7d4c\u6e08\u5805\u8abf \u3001 \u7269\u4fa1\u4e0a\u632f\u308c\u3092\u8b66\u6212 \u2015 \u65e5\u9280\uff19\u6708\u4f1a\u5408 \uff1a \u6642\u4e8b\u30c9\u30c3\u30c8\u30b3\u30e0",
+            "seendate": "20261001T030000Z",
+            "socialimage": "https://www.jiji.com/news2/kiji_photos/202610/20261001ds54_o.jpg",
+            "domain": "jiji.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
           },
           {
-            "url": "http://www.thailandnews.net/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
+            "url": "https://www.aol.com/articles/boj-debated-more-rate-hikes-001502000.html",
             "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T074500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "thailandnews.net",
-            "language": "English",
-            "sourcecountry": "Thailand"
-          },
-          {
-            "url": "http://www.europesun.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
-            "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T094500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "europesun.com",
-            "language": "English",
-            "sourcecountry": "Russia"
-          },
-          {
-            "url": "http://www.massachusettssun.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
-            "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T094500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "massachusettssun.com",
+            "title": "BOJ debated need for more rate hikes at September meeting , summary shows",
+            "seendate": "20261001T010000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/c8ec3ba5c2010b6fa180271fd187ae49081f206e/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/10/01/57e68ac5-211f-3916-a2c4-f9a422d0c205/dd585522-1124-49fd-8750-a3c3ac0bb814.jpg",
+            "domain": "aol.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.texasguardian.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
+            "url": "http://www.econotimes.com/Tokyo-Inflation-Jumps-to-27-Boosting-BOJ-Rate-Hike-Expectations-1753763",
             "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T101500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "texasguardian.com",
+            "title": "Tokyo Inflation Jumps to 2 . 7 %, Boosting BOJ Rate Hike Expectations",
+            "seendate": "20261002T084500Z",
+            "socialimage": "https://f1.econotimes.com/2024/08/0pnwd4jpvx.jpg",
+            "domain": "econotimes.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.floridastatesman.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
+            "url": "https://www.nikkei.com/article/DGXZQOFL010EW0R01C26A0000000/",
             "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T090000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "floridastatesman.com",
+            "title": "\u5916\u70ba12\u6642 \u5186\u76f8\u5834 \u3001 158\u5186\u53f0\u524d\u534a\u306b\u5927\u5e45\u4e0b\u843d \u65e5\u9280 \u300c \u4e3b\u306a\u610f\u898b \u300d \u5229\u4e0a\u3052\u52a0\u901f\u793a\u3055\u305a",
+            "seendate": "20261001T040000Z",
+            "socialimage": "https://www.nikkei.com/.resources/k-components/rectangle.rev-d54ea30.png",
+            "domain": "nikkei.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "https://www.aol.com/articles/japan-business-mood-improves-tankan-001218000.html",
+            "url_mobile": "",
+            "title": "Japan business mood improves , tankan survey shows",
+            "seendate": "20261001T010000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/e360f9e4863f65902dd3ac88e7030d4bac65f726/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/10/01/8eaeb8d5-e0d1-3336-b525-93706d9aef10/ee05c2f1-72c3-44af-8878-bd971b48d47f.jpg",
+            "domain": "aol.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.chinanationalnews.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
-            "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T080000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "chinanationalnews.com",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japanese-bond-yields-rise-as-investors-weigh-inflation-rate-hike-risks/articleshow/134608120.cms",
+            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/global-market-japanese-bond-yields-rise-as-investors-weigh-inflation-rate-hike-risks/amp_articleshow/134608120.cms",
+            "title": "Global Market : Japanese bond yields rise as investors weigh inflation , rate - hike risks",
+            "seendate": "20261001T051500Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-134608185,width-1200,height-900,imgsize-2117274,overlay-etmarkets/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
             "language": "English",
-            "sourcecountry": "China"
+            "sourcecountry": "India"
           },
           {
-            "url": "http://www.haitisun.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
+            "url": "https://www.nikkei.com/article/DGXZQOFL010EP0R01C26A0000000/",
             "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T074500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "haitisun.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "title": "\u5916\u70ba10\u6642 \u5186\u76f8\u5834 \u3001 \u4e0b\u3052\u5e45\u62e1\u5927 157\u5186\u53f0\u5f8c\u534a \u65e5\u9280 \u300c \u4e3b\u306a\u610f\u898b \u300d \u3067\u58f2\u308a",
+            "seendate": "20261001T024500Z",
+            "socialimage": "https://www.nikkei.com/.resources/k-components/rectangle.rev-d54ea30.png",
+            "domain": "nikkei.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
           },
           {
-            "url": "http://www.oklahomastar.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
+            "url": "https://asia.nikkei.com/economy/inflation/tokyo-core-inflation-rate-jumps-bolsters-case-for-more-boj-hikes",
             "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T074500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "oklahomastar.com",
+            "title": "Tokyo core inflation rate jumps , bolsters case for more BOJ hikes",
+            "seendate": "20261002T024500Z",
+            "socialimage": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fcms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com%2Fimages%2F6%2F4%2F8%2F3%2F13273846-2-eng-GB%2F9aae7401684f-photo_SXM2026100100006804.jpg?fit=cover&gravity=faces&dpr=2&quality=medium&source=nar-cms&format=jpg",
+            "domain": "asia.nikkei.com",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Japan"
           },
           {
-            "url": "http://www.shanghainews.net/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
+            "url": "https://www.heraldk.com/article/2026100104002421324",
             "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T111500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "shanghainews.net",
-            "language": "English",
-            "sourcecountry": "China"
+            "title": "\uc77c\ubcf8\uc740\ud589  \ubb3c\uac00 \ub354 \uc624\ub974\uba74 \uae08\ub9ac\uc778\uc0c1 \uc18d\ub3c4 \ub192\uc5ec\uc57c \u2026 10\uc6d4 \ucd94\uac00 \uc778\uc0c1\ub860",
+            "seendate": "20261001T123000Z",
+            "socialimage": "https://wimg.heraldcorp.com/news/cms/2026/10/01/rcv.YNA.20260918.PRU20260918165801009_P1.jpg",
+            "domain": "heraldk.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "http://www.mainemirror.com/news/279336872/japan-service-inflation-hits-over-two-year-high-bolsters-case-for-further-boj-rate-hikes",
+            "url": "https://www.abc.net.au/news/2026-09-29/rba-lifts-rates-highest-level-in-15-years-september-2026/107206640",
             "url_mobile": "",
-            "title": "Japan service inflation hits over two - year high , bolsters case for further BOJ rate hikes",
-            "seendate": "20260928T111500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2f767f7/52361020-9b4b-49ea-a24d-8b549b136625/0/ANI-20260928064515-600x315.jpg",
-            "domain": "mainemirror.com",
+            "title": "RBA lifts interest rates to highest level in 15 years",
+            "seendate": "20260929T063000Z",
+            "socialimage": "https://live-production.wcms.abc-cdn.net.au/3720bdd572b096bf25cba281b4222edf?impolicy=wcms_watermark_news&cropH=2385&cropW=4240&xPos=0&yPos=100&imformat=generic",
+            "domain": "abc.net.au",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.nikkei.com/article/DGXZQOUB308YK0Q6A930C2000000/",
+            "url_mobile": "",
+            "title": "9\u6708\u65e5\u9280\u77ed\u89b3 \u3001 \u5229\u4e0a\u3052\u7d99\u7d9a\u3082\u8a2d\u5099\u6295\u8cc7\u306b\u5805\u8abf\u3055 26\u5e74\u5ea6\u8a08\u753b\u306f7 . 6 % \u5897",
+            "seendate": "20261001T023000Z",
+            "socialimage": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3661812030092026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&s=63cb8c33dec3b5524413e9ee9254a97e",
+            "domain": "nikkei.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
           }
         ]
       }
@@ -1053,19 +1053,9 @@
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-01T21:26:10.412676+00:00",
+      "fetched_at_utc": "2026-10-02T21:05:15.642910+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://pakobserver.net/currency-exchange-latest-rates-in-pakistan-today-28-september-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange latest rates in Pakistan today \u2013 28 September 2026",
-            "seendate": "20260928T050000Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/08/gold-price-drops-by-rs1800-per-tola-in-pakistan-pakobserver-773973.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
           {
             "url": "https://pakobserver.net/currency-exchange-latest-rates-in-pakistan-today-29-september-2026/",
             "url_mobile": "",
@@ -1097,11 +1087,11 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://en.dailypakistan.com.pk/28-Sep-2026/currency-exchange-rates-in-pakistan-today-us-dollar-euro-dirham-and-riyal-rates-28-september-2026",
+            "url": "https://en.dailypakistan.com.pk/02-Oct-2026/currency-exchange-rates-in-pakistan-today-us-dollar-euro-dirham-and-riyal-rates-02-october-2026",
             "url_mobile": "",
             "title": "Currency Exchange Rates in Pakistan Today - US Dollar , Euro , Dirham and Riyal Rates",
-            "seendate": "20260928T050000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-15-september-2024-pkr-to-us-dollar-euro-pound-riyal-dirham-open-market-news-250255.jpg",
+            "seendate": "20261002T041500Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
             "domain": "en.dailypakistan.com.pk",
             "language": "English",
             "sourcecountry": "Pakistan"
@@ -1115,26 +1105,6 @@
             "domain": "en.dailypakistan.com.pk",
             "language": "English",
             "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "http://www.econotimes.com/Asian-Currencies-Weaken-as-Dollar-Oil-Prices-Rise-1753218",
-            "url_mobile": "",
-            "title": "Asian Currencies Weaken as Dollar , Oil Prices Rise",
-            "seendate": "20260928T060000Z",
-            "socialimage": "https://f1.econotimes.com/2023/10/spnajhzg1l.jpeg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://prachatai.com/journal/2026/09/118922",
-            "url_mobile": "",
-            "title": "\u0e18\u0e38\u0e23\u0e01\u0e34\u0e08\u0e1c\u0e34\u0e14\u0e01\u0e0e\u0e2b\u0e21\u0e32\u0e22\u0e41\u0e25\u0e30\u0e2a\u0e41\u0e01\u0e21\u0e40\u0e21\u0e2d\u0e23\u0e4c\u0e01\u0e23\u0e30\u0e17\u0e1a\u0e01\u0e32\u0e23\u0e1f\u0e37\u0e49\u0e19\u0e15\u0e31\u0e27\u0e02\u0e2d\u0e07 Forest City \u0e43\u0e19\u0e22\u0e30\u0e42\u0e2e\u0e23\u0e4c",
-            "seendate": "20260928T121500Z",
-            "socialimage": "https://prachatai.com/sites/default/files/styles/super_cover_upload/public/files-super-cover-upload/2026/2026-09/noname_33.jpg.webp?itok=-_JvN_A5",
-            "domain": "prachatai.com",
-            "language": "Thai",
-            "sourcecountry": "Thailand"
           },
           {
             "url": "https://hindi.moneycontrol.com/news/markets/stock-market-today-top-10-news-market-outlook-for-september-29-trends-in-the-gift-nifty-2443763.html",
@@ -1167,20 +1137,30 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://hindi.moneycontrol.com/news/markets/stock-market-today-top-10-news-market-outlook-for-september-28-trends-in-the-gift-nifty-2443453.html",
-            "url_mobile": "https://hindi.moneycontrol.com/news/markets/stock-market-today-top-10-news-market-outlook-for-september-28-trends-in-the-gift-nifty-2443453.html/amp",
-            "title": "Stock Market Today : \u092c\u093e\u091c\u093e\u0930 \u092a\u0930 \u0906\u091c \u0907\u0928 \u0916\u092c\u0930\u094b\u0902 \u0915\u093e \u0926\u093f\u0916\u0947\u0917\u093e \u0905\u0938\u0930 , \u0915\u094b\u0908 \u091f\u094d\u0930\u0947\u0921 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0907\u0928 \u092a\u0930 \u0921\u093e\u0932 \u0932\u0947\u0902 \u090f\u0915 \u0928\u091c\u0930",
-            "seendate": "20260928T114500Z",
-            "socialimage": "https://images.moneycontrol.com/static-hindinews/2026/09/market-flat.jpg",
-            "domain": "hindi.moneycontrol.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
+            "url": "https://techcabal.com/2026/10/01/lunos-plan-for-crypto-as-a-service/",
+            "url_mobile": "",
+            "title": "Luno is turning its crypto exchange into an institutional infrastructure business",
+            "seendate": "20261001T130000Z",
+            "socialimage": "https://c76c7bbc41.mjedge.net/wp-content/uploads/tc/2026/10/Tap-to-view-Story-Template-2026-10-01T120342.676-1024x576.png",
+            "domain": "techcabal.com",
+            "language": "English",
+            "sourcecountry": "Nigeria"
+          },
+          {
+            "url": "https://www.investegate.co.uk/announcement/rns/dotlines-global-limited--dotl/interim-results/9798413",
+            "url_mobile": "",
+            "title": "Interim Results | Company Announcement",
+            "seendate": "20260930T071500Z",
+            "socialimage": "",
+            "domain": "investegate.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
           }
         ]
       }
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-01T21:26:24.298856+00:00",
+      "fetched_at_utc": "2026-10-02T21:05:28.825844+00:00",
       "payload": {
         "articles": [
           {
@@ -1715,134 +1695,134 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-24T20:17:13.467952+00:00",
+      "fetched_at_utc": "2026-10-02T21:03:02.349576+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.businesstimes.com.sg/property/australia-housing-runs-out-rescuers-rba-set-hike-rates",
+            "url": "http://www.econotimes.com/FxWirePro-AUD-USD-edges-higher-after-RBA-delivers-another-rate-hike-1753357",
             "url_mobile": "",
-            "title": "Australia\u00a0housing\u00a0runs out of rescuers as RBA is set to hike rates",
-            "seendate": "20260924T061500Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/0a0da21e6fbe7a8d5ad2fd1e561920d00f9a113bb8139407a5cb3a204d92c920?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://www.aol.com/articles/australias-central-bank-says-inflation-043607000.html",
-            "url_mobile": "",
-            "title": "Australia central bank says inflation risks may be materialising",
-            "seendate": "20260922T054500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/662f81b85fc5538c26f7a9bf28b0c9fcb454aaf2/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/09/22/89330902-8206-384c-8dde-f59b7efd6aec/2a86f5fc-d26d-4661-ae4e-b067860d135c.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.afr.com/markets/equity-markets/asx-to-fall-traders-eye-three-rba-rate-rises-20260921-p60ywe",
-            "url_mobile": "",
-            "title": "ASX to fall ; traders eye three RBA rate rises",
-            "seendate": "20260920T223000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.5519%2C$multiply_2%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_live_no_age_social_wm/32437f5c8bfd2415073fd80dd4a01c4703486a1ff5b291a29ca1a62bfda7c344",
-            "domain": "afr.com",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "http://www.econotimes.com/Asian-Currencies-Muted-as-Dollar-Firms-Ahead-of-Trump-Xi-Summit-1752744",
-            "url_mobile": "",
-            "title": "Asian Currencies Muted as Dollar Firms Ahead of Trump - Xi Summit",
-            "seendate": "20260923T053000Z",
-            "socialimage": "https://f1.econotimes.com/2026/02/iwkjc7z84c.jpg",
+            "title": "FxWirePro : AUD / USD edges higher after RBA delivers another rate hike",
+            "seendate": "20260929T060000Z",
+            "socialimage": "https://f1.econotimes.com/2026/09/p1lpzvp83p.jpg",
             "domain": "econotimes.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.actionforex.com/live-comments/654927-hunter-says-rba-tightening-is-slowing-housing-but-inflation-risks-still-point-up/",
+            "url": "https://www.easternriverinachronicle.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
             "url_mobile": "",
-            "title": "Hunter Says RBA Tightening Is Slowing Housing , but Inflation Risks Still Point Up",
-            "seendate": "20260922T050000Z",
-            "socialimage": "https://www.actionforex.com/wp-content/uploads/featured-images/f-au1.jpg",
-            "domain": "actionforex.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.afr.com/policy/economy/rba-s-narrow-path-now-leads-to-double-rate-rise-before-christmas-20260923-p60zje",
-            "url_mobile": "",
-            "title": "Reserve Bank of Australia tipped to raise interest rates twice before Christmas",
-            "seendate": "20260923T014500Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.1567%2C$multiply_4%2C$ratio_1.777778%2C$width_1059%2C$x_21%2C$y_0/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/4547f538620778758882ea5a1fcd77f9b8619f8e",
-            "domain": "afr.com",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T074500Z",
+            "socialimage": "https://www.easternriverinachronicle.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "easternriverinachronicle.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.afr.com/policy/economy/rba-pay-dispute-escalates-to-fair-work-commission-20260924-p61031",
+            "url": "https://www.juneesoutherncross.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
             "url_mobile": "",
-            "title": "RBA pay dispute escalates as Finance Sector Union takes Reserve Bank to Fair Work Commission",
-            "seendate": "20260924T073000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.2353%2C$multiply_3%2C$ratio_1.777778%2C$width_1059%2C$x_108%2C$y_154/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/c5c7df7b31aedec909f402d2698ead861e7dcd1d",
-            "domain": "afr.com",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T113000Z",
+            "socialimage": "https://www.juneesoutherncross.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "juneesoutherncross.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "http://www.econotimes.com/Asia-Roundup-Dollar-firms-on-rate-hike-wagers-Asian-shares-gain-Gold-fallsOil-prices-climb-September-22-nd-2026-1752666",
-            "url_mobile": "",
-            "title": "Asia Roundup : Dollar firms on rate - hike wagers , Asian shares gain , Gold falls , Oil prices climb - September 22 nd , 2026",
-            "seendate": "20260923T053000Z",
-            "socialimage": "https://www.econotimes.com/assets/images/econotimes/metaDefault2.png",
-            "domain": "econotimes.com",
+            "url": "https://www.cnbc.com/2026/09/29/australia-rates-inflation-monetary-policy.html",
+            "url_mobile": "https://www.cnbc.com/amp/2026/09/29/australia-rates-inflation-monetary-policy.html",
+            "title": "Australia raises rates to 15 - year high as it fights stubborn inflation",
+            "seendate": "20260929T063000Z",
+            "socialimage": "https://image.cnbcfm.com/api/v1/image/108301999-1777943739010-gettyimages-2250195868-AUS_RBA_BULLOCK.jpeg?v=1777943749",
+            "domain": "cnbc.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.thestar.com.my/business/business-news/2026/09/22/yen-squeezed-as-hawkish-turn-grips-central-banks",
+            "url": "https://www.bunburymail.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
             "url_mobile": "",
-            "title": "Yen squeezed as hawkish turn grips central banks",
-            "seendate": "20260922T064500Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/09/22/4122914.jpeg",
-            "domain": "thestar.com.my",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T073000Z",
+            "socialimage": "https://www.bunburymail.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "bunburymail.com.au",
             "language": "English",
-            "sourcecountry": "Malaysia"
+            "sourcecountry": "Australia"
           },
           {
-            "url": "http://www.econotimes.com/FxWirePro-AUD-USD-gains-slightly-ahead-of-key-RBA-policymakers-speeches-1752554",
+            "url": "https://www.manningrivertimes.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
             "url_mobile": "",
-            "title": "FxWirePro : AUD / USD gains slightly ahead of key RBA policymaker speeches",
-            "seendate": "20260921T060000Z",
-            "socialimage": "https://f1.econotimes.com/2026/09/c7vmeq3frc.jpg",
-            "domain": "econotimes.com",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T073000Z",
+            "socialimage": "https://www.manningrivertimes.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "manningrivertimes.com.au",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.aol.com/articles/australias-unemployment-rate-hits-five-014135000.html",
+            "url": "https://www.goulburnpost.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
             "url_mobile": "",
-            "title": "Australia jobless rate hits five - year high , RBA hike still seen",
-            "seendate": "20260924T041500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/8b28ab736dd430a67ab0e4f507a83b305db966a7/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/09/24/5aed8f0f-1ea6-3d06-9838-da472ca79c38/26fef4bc-c448-4a95-bf85-a663de4b4e82.jpg",
-            "domain": "aol.com",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T073000Z",
+            "socialimage": "https://www.goulburnpost.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "goulburnpost.com.au",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.morningstar.com/news/dow-jones/20260920288/week-ahead-for-fx-bonds-us-pmi-data-various-2",
+            "url": "https://www.bluemountainsgazette.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
             "url_mobile": "",
-            "title": "Week Ahead for FX , Bonds : U . S . PMI Data , Various - 2 - ",
-            "seendate": "20260921T003000Z",
-            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
-            "domain": "morningstar.com",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T080000Z",
+            "socialimage": "https://www.bluemountainsgazette.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "bluemountainsgazette.com.au",
             "language": "English",
-            "sourcecountry": "China"
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.greatlakesadvocate.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
+            "url_mobile": "",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T080000Z",
+            "socialimage": "https://www.greatlakesadvocate.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "greatlakesadvocate.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.theleader.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
+            "url_mobile": "",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T080000Z",
+            "socialimage": "https://www.theleader.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "theleader.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.begadistrictnews.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
+            "url_mobile": "",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T083000Z",
+            "socialimage": "https://www.begadistrictnews.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "begadistrictnews.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.bordermail.com.au/story/9359730/why-mortgage-holders-monthly-payments-are-going-up/",
+            "url_mobile": "",
+            "title": "Why mortgage holder monthly payments are going up",
+            "seendate": "20260929T073000Z",
+            "socialimage": "https://www.bordermail.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a556e164-fb29-4df6-8a71-22745d6544fe.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "bordermail.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
           }
         ]
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-10-01T21:26:46.300353+00:00",
+      "fetched_at_utc": "2026-10-02T21:06:34.635931+00:00",
       "payload": {
         "articles": [
           {
@@ -1863,6 +1843,16 @@
             "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/7c26985f-ringgit_up-new-2024-2.webp",
             "domain": "freemalaysiatoday.com",
             "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.orientaldaily.com.my/news/nation/2026/10/02/852032",
+            "url_mobile": "",
+            "title": "\u99968\u6708\u8fce2880\u4e07\u56fd\u9645\u65c5\u5ba2 \u65c5\u6e38\u5c40 \uff1a \u5e74\u589e1 . 8 % \u52bf\u5934\u5f3a\u52b2 | \u56fd\u5185",
+            "seendate": "20261002T074500Z",
+            "socialimage": "https://www.orientaldaily.com.my/storage/resize_cache/images/uploads/news-cover/2026/OCT_2026/20261002/WhatsApp_Image_2026-10-02_at_3.01.23_PM.jpeg/a3d1c796009afe1730856187f8af3dca.jpeg",
+            "domain": "orientaldaily.com.my",
+            "language": "Chinese",
             "sourcecountry": "Malaysia"
           },
           {
@@ -1903,18 +1893,58 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-30T20:57:43.807321+00:00",
+      "fetched_at_utc": "2026-10-02T20:54:18.113367+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-market-feds-hammack-warns-against-inflation-becoming-entrenched-in-economy/articleshow/134539089.cms",
-            "url_mobile": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/us-market-feds-hammack-warns-against-inflation-becoming-entrenched-in-economy/amp_articleshow/134539089.cms",
-            "title": "US Market : Fed Hammack warns against inflation becoming entrenched in economy",
-            "seendate": "20260928T111500Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-134539125,width-1200,height-630,imgsize-148628,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
+            "url": "https://www.fnnews.com/news/202610020036456158",
+            "url_mobile": "",
+            "title": "\u7f8e\uc5f0\uc900 \uce74\uc2dc\uce74\ub9ac  \ubb3c\uac00 \uc7a1\uae30 \uc704\ud574 \uae08\ub9ac \uc5bc\ub9c8\ub098 \uc62c\ub9b4\uc9c0\uac00 \ubb38\uc81c  ",
+            "seendate": "20261001T214500Z",
+            "socialimage": "https://image.fnnews.com/resource/media/image/2026/10/02/202610020036427951_e.jpg",
+            "domain": "fnnews.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "http://www.zerohedge.com/markets/opposite-what-youre-told-markets-dont-wait-fed",
+            "url_mobile": "",
+            "title": "Opposite What Youre Told , Markets Dont Wait For The Fed",
+            "seendate": "20261001T190000Z",
+            "socialimage": "https://cms.zerohedge.com/s3/files/styles/16_9_max_700/public/2026-09/Screenshot%202026-09-29%20at%2011-00-15%20Create%20tease%20image.png?itok=ckikBJS0",
+            "domain": "zerohedge.com",
             "language": "English",
-            "sourcecountry": "India"
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.zerohedge.com/markets/opposite-what-youre-told-markets-dont-wait-fed",
+            "url_mobile": "",
+            "title": "Opposite What Youre Told , Markets Dont Wait For The Fed",
+            "seendate": "20261001T153000Z",
+            "socialimage": "https://cms.zerohedge.com/s3/files/styles/16_9_max_700/public/2026-09/Screenshot%202026-09-29%20at%2011-00-15%20Create%20tease%20image.png?itok=ckikBJS0",
+            "domain": "zerohedge.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://biz.heraldcorp.com/article/10891183",
+            "url_mobile": "",
+            "title": "\u7f8e\uc5f0\uc900 \uce74\uc2dc\uce74\ub9ac  \uc778\ud50c\ub808 \uc7a1\uae30 \uc704\ud574 \uae08\ub9ac \uc5bc\ub9c8\ub098 \uc62c\ub9b4\uc9c0\uac00 \ubb38\uc81c  ",
+            "seendate": "20261001T214500Z",
+            "socialimage": "https://wimg.heraldcorp.com/news/cms/2026/10/02/news-p.v1.20261002.50bde4338f64413ba15aa84e4d5fdce4_P1.jpg",
+            "domain": "biz.heraldcorp.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "http://www.econotimes.com/Feds-Logan-Signals-50-Basis-Points-More-in-Rate-Hikes-1753780",
+            "url_mobile": "",
+            "title": "Fed Logan Signals 50 Basis Points More in Rate Hikes",
+            "seendate": "20261002T084500Z",
+            "socialimage": "https://f1.econotimes.com/2025/02/l3c4ybimlw.jpg",
+            "domain": "econotimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
             "url": "https://wwmt.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
@@ -1937,92 +1967,52 @@
             "sourcecountry": "United States"
           },
           {
+            "url": "http://www.kitco.com/news/off-the-wire/2026-10-01/fed-officials-wash-away-market-bets-october-rate-increase",
+            "url_mobile": "",
+            "title": "Fed officials wash away market bets on October rate increase",
+            "seendate": "20261001T230000Z",
+            "socialimage": "https://image-api.prod.kitco.com/image/a8c61b15-b8e3-48e2-a4b5-09fed9190dc1.webp?top=0.20417422867514&left=0&.59165154265&scale_width=1920&token=f54dab97631364983555bad93db48be624efdcd53bbd7d015d2f7317d6581014",
+            "domain": "kitco.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://ktul.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
+            "url_mobile": "",
+            "title": "Stubborn inflation and consistent growth shift Fed debate to timing of next hike",
+            "seendate": "20261001T173000Z",
+            "socialimage": "https://ktul.com/resources/media2/16x9/8192/1320/0x1/90/8ee95586-83e7-46d9-ac66-75da3f589f7c-GettyImages2288353363.jpg",
+            "domain": "ktul.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.fnnews.com/news/202610021405524466",
+            "url_mobile": "",
+            "title": "\uc6cc\uc2dc\ub294 \uae08\ub9ac \uc608\uace0 \uc904\uc774\ub294\ub370 \u2026 \uc5f0\uc900 \uc778\uc0ac\ub4e4  \ucd94\uac00 \uc778\uc0c1 , \uc2dc\uc7a5\uc740 10\uc6d4 \ub3d9\uacb0 \ucabd",
+            "seendate": "20261002T060000Z",
+            "socialimage": "https://image.fnnews.com/resource/media/image/2026/10/02/202610021405450315_e.jpg",
+            "domain": "fnnews.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/fed-policymakers-lean-against-october-rate-hike",
+            "url_mobile": "",
+            "title": "Fed policymakers lean against October rate hike",
+            "seendate": "20261002T080000Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/b5da231e147ea9e1aa9e61ee3d2971840821422fd02b31a088807c91bacb0fc5?&f=webp",
+            "domain": "businesstimes.com.sg",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
             "url": "https://fox11online.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
             "url_mobile": "",
             "title": "Stubborn inflation and consistent growth shift Fed debate to timing of next hike",
             "seendate": "20260930T193000Z",
             "socialimage": "https://fox11online.com/resources/media2/16x9/8192/1320/0x1/90/8ee95586-83e7-46d9-ac66-75da3f589f7c-GettyImages2288353363.jpg",
             "domain": "fox11online.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://kval.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
-            "url_mobile": "",
-            "title": "Stubborn inflation and consistent growth shift Fed debate to timing of next hike",
-            "seendate": "20260930T193000Z",
-            "socialimage": "https://kval.com/resources/media2/16x9/8192/1320/0x1/90/8ee95586-83e7-46d9-ac66-75da3f589f7c-GettyImages2288353363.jpg",
-            "domain": "kval.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://newsway.co.kr/news/view?ud=2026092915003766166",
-            "url_mobile": "",
-            "title": "\u7f8e PCE \u00b7 \uace0\uc6a9  \ube45\uc704\ud06c  \uace0\uc131\uc7a5 \u00b7 \uace0\ubb3c\uac00 \uc18d \uc5f0\uc900\uc758 \uc120\ud0dd\uc740",
-            "seendate": "20260929T101500Z",
-            "socialimage": "https://nimage.newsway.co.kr/photo/2026/06/26/20260626000016_1200.jpg",
-            "domain": "newsway.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newsway.co.kr/news/view?ud=2026092915003766166",
-            "url_mobile": "",
-            "title": "\u7f8e PCE \u00b7 \uace0\uc6a9  \ube45\uc704\ud06c  \uace0\uc131\uc7a5 \u00b7 \uace0\ubb3c\uac00 \uc18d \uc5f0\uc900\uc758 \uc120\ud0dd\uc740",
-            "seendate": "20260929T104500Z",
-            "socialimage": "https://nimage.newsway.co.kr/photo/2026/06/26/20260626000016_1200.jpg",
-            "domain": "newsway.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://sana.sy/en/economic/2346626/",
-            "url_mobile": "",
-            "title": "U . S . Treasury yield curve nears inversion as rate expectations rise",
-            "seendate": "20260928T163000Z",
-            "socialimage": "https://cdn.sananews.sy/2026/09/U.S.-Treasury-yield-curve-nears-inversion-as-rate-expectations-rise.jpg",
-            "domain": "sana.sy",
-            "language": "English",
-            "sourcecountry": "Syria"
-          },
-          {
-            "url": "https://krcrtv.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
-            "url_mobile": "",
-            "title": "Redding Chico Eureka",
-            "seendate": "20260930T193000Z",
-            "socialimage": "https://krcrtv.com/resources/media2/16x9/8192/1320/0x1/90/8ee95586-83e7-46d9-ac66-75da3f589f7c-GettyImages2288353363.jpg",
-            "domain": "krcrtv.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.etoday.co.kr/news/view/2629548",
-            "url_mobile": "https://m.etoday.co.kr/news/view/2629548",
-            "title": "\ubbf8\uad6d \uc5f0\uc900 , 10\uc6d4 \uae08\ub9ac\uc778\uc0c1 \ud655\ub960 60 % \ub118\uc5b4\u22ef\uae00\ub85c\ubc8c \uad6d\ucc44\uae08\ub9ac \uc77c\uc81c\ud788 \uae09\ub4f1",
-            "seendate": "20260927T093000Z",
-            "socialimage": "https://img.etoday.co.kr/pto_db/2026/09/20260927153031_2393490_918_463.jpg",
-            "domain": "etoday.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.etoday.co.kr/news/view/2629824",
-            "url_mobile": "https://m.etoday.co.kr/news/view/2629824",
-            "title": "\u7f8e \ubb3c\uac00\u318d\uace0\uc6a9  \uacbd\uc81c\uc9c0\ud45c \uc288\ud37c\uc704\ud06c  \u22ef\uc5f0\uc900 \ucd94\uac00 \uc778\uc0c1 \uc2dc\ud5d8\ub300",
-            "seendate": "20260928T033000Z",
-            "socialimage": "https://img.etoday.co.kr/pto_db/2026/09/20260928111335_2393823_1200_921.jpg",
-            "domain": "etoday.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.aol.com/articles/feds-cook-inflation-too-high-192755000.html",
-            "url_mobile": "",
-            "title": "Fed Cook : inflation has been too high for too long",
-            "seendate": "20260930T201500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/b81d1a25d5566ef05b0e9af8e7c8fe2c6b291c59/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/09/30/a0213b2c-4c06-3a46-ace6-82926f3d2625/fc3af51b-c9d4-4852-8113-70ddc82be178.jpg",
-            "domain": "aol.com",
             "language": "English",
             "sourcecountry": "United States"
           }
