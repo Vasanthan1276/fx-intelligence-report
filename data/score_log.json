@@ -11324,6 +11324,218 @@
         "CHF": "Above Historical Fair Value",
         "MYR": "Above Historical Fair Value"
       }
+    },
+    {
+      "date": "2026-10-05",
+      "model_version": "2.2-phase2c-baseline",
+      "app_release": "3.3-phase3a3-direction-semantics",
+      "scores": {
+        "EUR": 3.57,
+        "JPY": 3.33,
+        "GBP": 3.23,
+        "AUD": 3.11,
+        "CHF": 2.91,
+        "USD": 2.88,
+        "MYR": 2.7
+      },
+      "opportunity_scores": {
+        "EUR": 3.57,
+        "JPY": 3.33,
+        "GBP": 3.23,
+        "AUD": 3.11,
+        "CHF": 2.91,
+        "USD": 2.88,
+        "MYR": 2.7
+      },
+      "buy_urgency_scores": {
+        "EUR": 2.37,
+        "JPY": 2.98,
+        "GBP": 2.37,
+        "AUD": 2.42,
+        "CHF": 2.03,
+        "USD": 2.73,
+        "MYR": 2.31
+      },
+      "forward_policy_scores": {
+        "EUR": 2.63,
+        "JPY": 2.85,
+        "GBP": 2.19,
+        "AUD": 3.04,
+        "CHF": 2.31,
+        "USD": 1.84,
+        "MYR": 2.57
+      },
+      "forward_fx_momentum_scores": {
+        "EUR": 0.94,
+        "JPY": 2.28,
+        "GBP": 1.77,
+        "AUD": 1.41,
+        "CHF": 1.67,
+        "USD": 2.83,
+        "MYR": 2.44
+      },
+      "forward_outlook_scores": {
+        "EUR": 1.7,
+        "JPY": 2.54,
+        "GBP": 1.96,
+        "AUD": 2.14,
+        "CHF": 1.96,
+        "USD": 2.38,
+        "MYR": 2.5
+      },
+      "decision_confidence": {
+        "EUR": 77,
+        "JPY": 86,
+        "GBP": 82,
+        "AUD": 84,
+        "CHF": 86,
+        "USD": 84,
+        "MYR": 90
+      },
+      "signal_agreement_pct": {
+        "EUR": 51,
+        "JPY": 80,
+        "GBP": 65,
+        "AUD": 69,
+        "CHF": 75,
+        "USD": 71,
+        "MYR": 88
+      },
+      "event_risk_labels": {
+        "EUR": "Moderate",
+        "JPY": "Moderate",
+        "GBP": "Normal",
+        "AUD": "Moderate",
+        "CHF": "Low",
+        "USD": "Moderate",
+        "MYR": "Normal"
+      },
+      "next_policy_meeting_dates": {
+        "EUR": "2026-10-29",
+        "JPY": "2026-10-30",
+        "GBP": "2026-11-05",
+        "AUD": "2026-11-03",
+        "CHF": "2026-12-10",
+        "USD": "2026-10-28",
+        "MYR": "2026-11-05"
+      },
+      "market_scores": {
+        "EUR": 4.23,
+        "JPY": 3.41,
+        "GBP": 3.85,
+        "AUD": 3.07,
+        "CHF": 3.21,
+        "USD": 3.29,
+        "MYR": 2.54
+      },
+      "macro_scores": {
+        "EUR": 2.02,
+        "JPY": 3.16,
+        "GBP": 1.78,
+        "AUD": 3.19,
+        "CHF": 2.2,
+        "USD": 1.92,
+        "MYR": 3.09
+      },
+      "macro_coverage_pct": {
+        "EUR": 100,
+        "JPY": 100,
+        "GBP": 100,
+        "AUD": 100,
+        "CHF": 100,
+        "USD": 100,
+        "MYR": 100
+      },
+      "effective_macro_weight_pct": {
+        "EUR": 30,
+        "JPY": 30,
+        "GBP": 30,
+        "AUD": 30,
+        "CHF": 30,
+        "USD": 30,
+        "MYR": 30
+      },
+      "recommendations": {
+        "EUR": "Patient Accumulate",
+        "JPY": "Wait",
+        "GBP": "Wait",
+        "AUD": "Wait",
+        "CHF": "Wait",
+        "USD": "Wait",
+        "MYR": "Wait"
+      },
+      "suggested_buy_pct": {
+        "EUR": 10,
+        "JPY": 0,
+        "GBP": 0,
+        "AUD": 0,
+        "CHF": 0,
+        "USD": 0,
+        "MYR": 0
+      },
+      "suggested_actions": {
+        "EUR": "Small staged purchases; no need to rush",
+        "JPY": "Wait for a better rate unless funds are needed",
+        "GBP": "Wait for a better rate unless funds are needed",
+        "AUD": "Wait for a better rate unless funds are needed",
+        "CHF": "Wait for a better rate unless funds are needed",
+        "USD": "Wait for a better rate unless funds are needed",
+        "MYR": "Wait for a better rate unless funds are needed"
+      },
+      "decision_confidence_labels": {
+        "EUR": "Medium",
+        "JPY": "High",
+        "GBP": "High",
+        "AUD": "High",
+        "CHF": "High",
+        "USD": "High",
+        "MYR": "High"
+      },
+      "buy_urgency_labels": {
+        "EUR": "Low",
+        "JPY": "Moderate",
+        "GBP": "Low",
+        "AUD": "Low",
+        "CHF": "Low",
+        "USD": "Low",
+        "MYR": "Low"
+      },
+      "forward_outlook_labels": {
+        "EUR": "Supports waiting",
+        "JPY": "Mixed / neutral",
+        "GBP": "Mixed / neutral",
+        "AUD": "Mixed / neutral",
+        "CHF": "Mixed / neutral",
+        "USD": "Mixed / neutral",
+        "MYR": "Mixed / neutral"
+      },
+      "rates_sgd": {
+        "EUR": 1.4344,
+        "JPY": 0.809116,
+        "GBP": 1.693107,
+        "AUD": 0.891098,
+        "CHF": 1.540543,
+        "USD": 1.280257,
+        "MYR": 0.313249
+      },
+      "buy_zone_upper_sgd": {
+        "EUR": 1.4518,
+        "JPY": 0.877671,
+        "GBP": 1.699596,
+        "AUD": 0.878865,
+        "CHF": 1.489804,
+        "USD": 1.321347,
+        "MYR": 0.301383
+      },
+      "zone_status": {
+        "EUR": "Attractive Historical Value",
+        "JPY": "Exceptional Historical Value",
+        "GBP": "Attractive Historical Value",
+        "AUD": "Near Historical Fair Value",
+        "CHF": "Above Historical Fair Value",
+        "USD": "Strong Historical Value",
+        "MYR": "Above Historical Fair Value"
+      }
     }
   ]
 }
