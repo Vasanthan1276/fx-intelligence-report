@@ -1,8 +1,8 @@
 {
-  "updated_at_utc": "2026-10-06T21:25:57.107323+00:00",
+  "updated_at_utc": "2026-10-07T21:40:45.978064+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-06T21:08:23.018349+00:00",
+      "fetched_at_utc": "2026-10-07T21:28:54.915662+00:00",
       "payload": {
         "articles": [
           {
@@ -49,19 +49,9 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-10-06T21:10:21.749055+00:00",
+      "fetched_at_utc": "2026-10-07T21:30:04.936931+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "http://www.econotimes.com/FxWirePro-GBP-USD-cedes-early-gains-outlook-bearish-1753562",
-            "url_mobile": "",
-            "title": "FxWirePro : GBP / USD cedes early gains , outlook bearish",
-            "seendate": "20260930T173000Z",
-            "socialimage": "https://f1.econotimes.com/2026/09/yum0d48y71.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
           {
             "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-prices-flat-ahead-of-us-jobs-data/articleshow/134606175.cms",
             "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-prices-flat-ahead-of-us-jobs-data/amp_articleshow/134606175.cms",
@@ -103,16 +93,6 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://en.shafaqna.com/481111/gold-prices-steady-monthly-loss-rate-bets/",
-            "url_mobile": "",
-            "title": "Gold Prices Steady but Set for Monthly Loss on Rate Bets",
-            "seendate": "20260930T080000Z",
-            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2026/04/en.shafaqna-Gold-prices-drop-amid-firming-dollar.jpg",
-            "domain": "en.shafaqna.com",
-            "language": "English",
-            "sourcecountry": "Saudi Arabia"
-          },
-          {
             "url": "http://www.econotimes.com/FxWirePro-EUR-NZD-eases-slightly-but-outlook-is-bullish-1753601",
             "url_mobile": "",
             "title": "FxWirePro : EUR / NZD eases slightly but outlook is bullish",
@@ -121,26 +101,6 @@
             "domain": "econotimes.com",
             "language": "English",
             "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.thenews.com.pk/latest/1418223-us-inflation-rises-less-than-expected-what-to-know",
-            "url_mobile": "https://www.thenews.com.pk/amp/1418223-us-inflation-rises-less-than-expected-what-to-know",
-            "title": "US inflation rises less than expected : What to know",
-            "seendate": "20260930T150000Z",
-            "socialimage": "https://www.thenews.com.pk/assets/uploads/2026-09-30/1418223_070235_updates.jpg",
-            "domain": "thenews.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.capital.gr/diethni/4020569/ipa-anodiki-anatheorisi-sta-stoixeia-gia-to-aep-sto-22-i-anaptuxi-to-b-trimino/",
-            "url_mobile": "https://www.capital.gr/diethni/4020569/ipa-anodiki-anatheorisi-sta-stoixeia-gia-to-aep-sto-22-i-anaptuxi-to-b-trimino/?amp=true",
-            "title": "\u0397\u03a0\u0391 : \u0391\u03bd\u03bf\u03b4\u03b9\u03ba\u03ae \u03b1\u03bd\u03b1\u03b8\u03b5\u03ce\u03c1\u03b7\u03c3\u03b7 \u03c3\u03c4\u03b1 \u03c3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf \u0391\u0395\u03a0 - \u03a3\u03c4\u03bf 2 , 2 % \u03b7 \u03b1\u03bd\u03ac\u03c0\u03c4\u03c5\u03be\u03b7 \u03c4\u03bf \u03b2 ... ",
-            "seendate": "20260930T140000Z",
-            "socialimage": "https://www.capital.gr/Content/ImagesDatabase/fb/1000x523/crop/both/ae/aead4a6bb5a64e77ad6deddb830cf31d.jpg",
-            "domain": "capital.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
           },
           {
             "url": "https://www.aol.com/articles/asian-stocks-dip-bonds-focus-015645000.html",
@@ -171,12 +131,52 @@
             "domain": "slobodna-bosna.ba",
             "language": "Bosnian",
             "sourcecountry": "Bosnia-Herzegovina"
+          },
+          {
+            "url": "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-01-october-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/liveblog/134606940.cms",
+            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-01-october-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/amp_liveblog/134606940.cms",
+            "title": "Stock Market Today Live Updates : GIFT Nifty points to weak opening ; Sensex , Nifty brace for final session of the week",
+            "seendate": "20261001T040000Z",
+            "socialimage": "https://static.toiimg.com/thumb/msid-134606940,width-1280,height-720,imgsize-2323885,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "domain": "timesofindia.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/10/01/fbm-klci-sinks-deeper-into-the-red-at-midday",
+            "url_mobile": "",
+            "title": "FBM KLCI sinks deeper into the red at midday",
+            "seendate": "20261001T060000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/10/01/4138940.png",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://en.shafaqna.com/481380/dollar-near-two-month-high/",
+            "url_mobile": "",
+            "title": "Dollar Near Two - Month High on Higher Treasury Yields",
+            "seendate": "20261001T044500Z",
+            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2026/06/en.shafaqna-Dollar-continues-its-rise.jpeg",
+            "domain": "en.shafaqna.com",
+            "language": "English",
+            "sourcecountry": "Saudi Arabia"
+          },
+          {
+            "url": "https://en.shafaqna.com/481373/asian-stocks-muted-september/",
+            "url_mobile": "",
+            "title": "Asian Stocks Muted After Brutal September",
+            "seendate": "20261001T044500Z",
+            "socialimage": "",
+            "domain": "en.shafaqna.com",
+            "language": "English",
+            "sourcecountry": "Saudi Arabia"
           }
         ]
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-10-05T22:53:54.305067+00:00",
+      "fetched_at_utc": "2026-10-07T21:30:44.486904+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -461,254 +461,21 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-05T22:58:17.135075+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-funt-kurs-funta-do-zlotego-pln-gbp-02-10-2026-7335597428427072a.html",
-            "url_mobile": "",
-            "title": "Ile kosztuje funt ? Kurs funta do z\u0142otego PLN / GBP 02 . 10 . 2026",
-            "seendate": "20261002T063000Z",
-            "socialimage": "https://v.wpimg.pl/NTliNDdkYTUNCzh3SxBsIE5TbC0NSWJ2GUt0Zktad2ZcEWEiDQcrJgkZIWoDGTskDR4-ahQHYTUcAGEyVUQqPR8ZIiUdRCs5DgwqawdYeWAJDCgnSVIrbA5EenZQCmM1DQh5aV1aeWFVC3pzAFp_Yk4U",
-            "domain": "money.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
-            "url": "https://www.libyaakhbar.com/business-news/2887662.html",
-            "url_mobile": "",
-            "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0648\u0627\u0644\u064a\u0648\u0631\u0648 \u0648\u0627\u0644\u0628\u0627\u0648\u0646\u062f \u0648\u0627\u0644\u0630\u0647\u0628 \u0641\u064a \u062e\u062a\u0627\u0645 \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0645\u0648\u0627\u0632\u064a 1 \u0627\u0643\u062a\u0648\u0628\u0631 2026",
-            "seendate": "20261002T001500Z",
-            "socialimage": "https://www.libyaakhbar.com/wp-content/uploads/2026/06/dollar2.webp",
-            "domain": "libyaakhbar.com",
-            "language": "Arabic",
-            "sourcecountry": "Libya"
-          },
-          {
-            "url": "https://www.teleborsa.it/News/2026/10/02/analisi-tecnica-eur-gbp-dell-1-10-2026-59_TLB-AUTO.html",
-            "url_mobile": "https://www.teleborsa.it/AMP/News/2026/10/02/analisi-tecnica-eur-gbp-dell-1-10-2026-59_TLB-AUTO.html",
-            "title": "Analisi Tecnica : EUR / GBP dell  1 / 10 / 2026",
-            "seendate": "20261002T083000Z",
-            "socialimage": "https://images.teleborsa.it/t/stabile/116995.t.W600.H340.M4.jpg",
-            "domain": "teleborsa.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://glavcom.ua/economics/personal-money/dolar-podorozhchav-kurs-valjut-na-2-zhovtnja-2026-roku-1146608.html",
-            "url_mobile": "https://glavcom.ua/amp/economics/personal-money/dolar-podorozhchav-kurs-valjut-na-2-zhovtnja-2026-roku-1146608.html",
-            "title": "\u0414\u043e\u043b\u0430\u0440 \u043f\u043e\u0434\u043e\u0440\u043e\u0436\u0447\u0430\u0432 . \u041a\u0443\u0440\u0441 \u0432\u0430\u043b\u044e\u0442 \u043d\u0430 2 \u0436\u043e\u0432\u0442\u043d\u044f 2026 \u0440\u043e\u043a\u0443",
-            "seendate": "20261002T084500Z",
-            "socialimage": "",
-            "domain": "glavcom.ua",
-            "language": "Ukrainian",
-            "sourcecountry": "Ukraine"
-          },
-          {
-            "url": "https://www.dostor.org/5724430",
-            "url_mobile": "",
-            "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0648\u0627\u0644\u0623\u062c\u0646\u0628\u064a\u0629 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u062c\u0645\u0639\u0629 2 \u0623\u0643\u062a\u0648\u0628\u0631 2026 \u0641\u064a \u0627\u0644\u0628\u0646\u0648\u0643",
-            "seendate": "20261002T083000Z",
-            "socialimage": "https://cdn.dostor.org/media/img/large/2026/10/2/2026_10_2_9_41_35_813_2205.png",
-            "domain": "dostor.org",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/02-Oct-2026/currency-exchange-rates-in-pakistan-today-us-dollar-euro-dirham-and-riyal-rates-02-october-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today - US Dollar , Euro , Dirham and Riyal Rates",
-            "seendate": "20261002T041500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.freemalaysiatoday.com/category/business/2026/10/02/ringgit-opens-higher-against-us-dollar-major-currencies-3",
-            "url_mobile": "",
-            "title": "Ringgit opens higher against US dollar , major currencies",
-            "seendate": "20261002T020000Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2026/06/fa5b8d8f-ringgit.webp",
-            "domain": "freemalaysiatoday.com",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.nzherald.co.nz/business/markets/currency/weak-nz-dollar-high-oil-prices-pile-on-pressure-as-rbnzs-ocr-call-nears/premium/CJ22KE4BNNE27MKGXO42ZFBY5Q/",
-            "url_mobile": "",
-            "title": "Weak NZ dollar , high oil prices pile on pressure as RBNZ OCR call nears",
-            "seendate": "20261002T041500Z",
-            "socialimage": "https://www.nzherald.co.nz/resizer/v2/MFELWKNMZBEN7LOBTJSKM2KD2I.jpg?auth=202daff6c65e631851c6fbca7ef1abde7309d9d87b99742498a34379dc123308&quality=70&focal=1181%2C709&smart=false",
-            "domain": "nzherald.co.nz",
-            "language": "English",
-            "sourcecountry": "New Zealand"
-          },
-          {
-            "url": "https://www.naftemporiki.gr/finance/markets/2169579/se-nadir-17-minon-to-eyro/",
-            "url_mobile": "",
-            "title": "\u03a3\u03b5 \u03bd\u03b1\u03b4\u03af\u03c1 17 \u03bc\u03b7\u03bd\u03ce\u03bd \u03c4\u03bf \u03b5\u03c5\u03c1\u03ce",
-            "seendate": "20261002T043000Z",
-            "socialimage": "https://www.naftemporiki.gr/wp-content/uploads/2023/02/euro-xartonomismata.jpg",
-            "domain": "naftemporiki.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://www.okaz.com.sa/economy/na/2268911",
-            "url_mobile": "https://www.okaz.com.sa/ampArticle/2268911",
-            "title": "\u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0644\u0627\u0645\u0633 \u0623\u0639\u0644\u0649 \u0645\u0633\u062a\u0648\u064a\u0627\u062a\u0647 \u0641\u064a 18 \u0634\u0647\u0631\u0627\u064b",
-            "seendate": "20261002T083000Z",
-            "socialimage": "https://www.okaz.com.sa/okaz/uploads/images/2026/10/02/2774558.webp",
-            "domain": "okaz.com.sa",
-            "language": "Arabic",
-            "sourcecountry": "Saudi Arabia"
-          },
-          {
-            "url": "https://www.sofokleousin.gr/agores/se-ypsilo-17-minon-ektinassetai-to-dolario-logo-tou-sell-off-sta-",
-            "url_mobile": "https://www.sofokleousin.gr/agores/se-ypsilo-17-minon-ektinassetai-to-dolario-logo-tou-sell-off-sta-/amp",
-            "title": "\u03a3\u03b5 \u03c5\u03c8\u03b7\u03bb\u03cc 17 \u03bc\u03b7\u03bd\u03ce\u03bd \u03b5\u03ba\u03c4\u03b9\u03bd\u03ac\u03c3\u03c3\u03b5\u03c4\u03b1\u03b9 \u03c4\u03bf \u03b4\u03bf\u03bb\u03ac\u03c1\u03b9\u03bf \u03bb\u03cc\u03b3\u03c9 \u03c4\u03bf\u03c5 sell - off \u03c3\u03c4\u03b1 \u03bf\u03bc\u03cc\u03bb\u03bf\u03b3\u03b1",
-            "seendate": "20261002T091500Z",
-            "socialimage": "https://cdn.sofokleousin.gr/sites/default/files/styles/ogimage/public/2026-08/euro_dolario_sterlina_1200.jpg?itok=VqPwFTB1",
-            "domain": "sofokleousin.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://economytoday.sigmalive.com/dolario-se-ypsilo-17-minon-kathos-to-sell-off-sta-omologa-plittei-to-eyro/",
-            "url_mobile": "",
-            "title": "\u0394\u03bf\u03bb\u03ac\u03c1\u03b9\u03bf : \u03a3\u03b5 \u03c5\u03c8\u03b7\u03bb\u03cc 17 \u03bc\u03b7\u03bd\u03ce\u03bd \u03ba\u03b1\u03b8\u03ce\u03c2 \u03c4\u03bf sell - off \u03c3\u03c4\u03b1 \u03bf\u03bc\u03cc\u03bb\u03bf\u03b3\u03b1 \u03c0\u03bb\u03ae\u03c4\u03c4\u03b5\u03b9 \u03c4\u03bf \u03b5\u03c5\u03c1\u03ce",
-            "seendate": "20261002T084500Z",
-            "socialimage": "https://economytoday.sigmalive.com/assets/images/primary/2026/10/2362-0.Dollars-123rf-1280x674.jpg",
-            "domain": "economytoday.sigmalive.com",
-            "language": "Greek",
-            "sourcecountry": "Cyprus"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-07T21:35:07.487156+00:00",
+      "payload": {}
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
       "fetched_at_utc": "2026-10-06T21:17:42.076226+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-06T21:18:23.814462+00:00",
+      "fetched_at_utc": "2026-10-07T21:36:20.400279+00:00",
       "payload": {}
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-10-05T23:02:53.976787+00:00",
+      "fetched_at_utc": "2026-10-07T21:37:29.099668+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.abc.net.au/listen/programs/radionational-breakfast/radio-national-breakfast/107136048",
-            "url_mobile": "",
-            "title": "BREAKFAST WRAP : Albanese Government braces for rising rates and growing AI threat",
-            "seendate": "20260929T054500Z",
-            "socialimage": "https://live-production.wcms.abc-cdn.net.au/bffb9bfe457fc4c5c3a6a3f2df0e5bcd?impolicy=wcms_watermark_abc&cropH=1688&cropW=3000&xPos=0&yPos=656&imformat=generic",
-            "domain": "abc.net.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.ntvbd.com/world/news-1811217",
-            "url_mobile": "https://www.ntvbd.com/world/news-1811217?amp",
-            "title": "\u0985\u09b8\u09cd\u099f\u09cd\u09b0\u09c7\u09b2\u09bf\u09df\u09be\u09df \u09b8\u09c1\u09a6\u09c7\u09b0 \u09b9\u09be\u09b0 \u09e7\u09eb \u09ac\u099b\u09b0\u09c7\u09b0 \u09b8\u09b0\u09cd\u09ac\u09cb\u099a\u09cd\u099a , \u0986\u09ac\u09be\u09b0\u0993 \u099a\u09be\u09aa\u09c7 \u09ac\u09be\u09dc\u09bf\u09b0 \u09ae\u09be\u09b2\u09bf\u0995\u09b0\u09be",
-            "seendate": "20260929T073000Z",
-            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_24m/public/images/2026/09/29/chbi_eaai.jpg",
-            "domain": "ntvbd.com",
-            "language": "Bengali",
-            "sourcecountry": "Bangladesh"
-          },
-          {
-            "url": "https://www.cnbc.com/2026/09/29/australia-rates-inflation-monetary-policy.html",
-            "url_mobile": "https://www.cnbc.com/amp/2026/09/29/australia-rates-inflation-monetary-policy.html",
-            "title": "Australia raises rates to 15 - year high as it fights stubborn inflation",
-            "seendate": "20260929T063000Z",
-            "socialimage": "https://image.cnbcfm.com/api/v1/image/108301999-1777943739010-gettyimages-2250195868-AUS_RBA_BULLOCK.jpeg?v=1777943749",
-            "domain": "cnbc.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.perthnow.com.au/news/business/economy/trumps-war-with-iran-big-driver-in-australias-inflation-challenge-chalmers-c-22939951",
-            "url_mobile": "",
-            "title": "Trump war with Iran  big driver  in Australia  inflation challenge : Chalmers",
-            "seendate": "20260928T234500Z",
-            "socialimage": "https://images.perthnow.com.au/publication/C-22939951/0b917db250c5a62749c02beebc287e93df5c9fd6-16x9-x0y395w1024h576.jpg?imwidth=1200",
-            "domain": "perthnow.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://udn.com/news/story/7239/9784365",
-            "url_mobile": "https://udn.com/news/amp/story/7239/9784365",
-            "title": "\u5916\u5e63\u4fdd\u55ae\u5168\u5e74\u71b1\u92b7\u5230\u62da5 , 000\u5104\u5143 \u7f8e\u570b\u518d\u5347\u606f\u4e5f\u4e0d\u6015 \uff1f | \u91d1\u878d\u8981\u805e | \u7522\u7d93",
-            "seendate": "20260929T144500Z",
-            "socialimage": "https://udn.com/static/img/UDN_BABY.png",
-            "domain": "udn.com",
-            "language": "Chinese",
-            "sourcecountry": "Taiwan"
-          },
-          {
-            "url": "https://theconversation.com/inflation-lifts-to-4-0-in-august-keeping-pressure-on-the-rba-for-another-rate-rise-292366",
-            "url_mobile": "",
-            "title": "Inflation lifts to 4 . 0 % in August , keeping pressure on the RBA for another rate rise",
-            "seendate": "20260930T074500Z",
-            "socialimage": "https://images.theconversation.com/files/762945/original/file-20260929-50-3i33bv.jpg?ixlib=rb-4.1.1&rect=0%2C132%2C6263%2C3131&q=45&auto=format&fit=crop",
-            "domain": "theconversation.com",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.cna.com.tw:443/news/afe/202609290279.aspx",
-            "url_mobile": "",
-            "title": "\u5916\u5e63\u4fdd\u55ae\u524d7\u6708\u65b0\u5951\u7d04\u4fdd\u8cbb3309\u5104\u5143 \u52755\u5e74\u540c\u671f\u65b0\u9ad8 | \u7522\u7d93",
-            "seendate": "20260929T113000Z",
-            "socialimage": "",
-            "domain": "cna.com.tw",
-            "language": "Chinese",
-            "sourcecountry": "Taiwan"
-          },
-          {
-            "url": "https://www.illawarramercury.com.au/story/9359064/more-pain-brews-for-borrowers-as-rates-hit-15-year-high/",
-            "url_mobile": "",
-            "title": "More pain brews for borrowers as rates hit 15 - year high",
-            "seendate": "20260929T113000Z",
-            "socialimage": "https://www.illawarramercury.com.au/images/transform/v1/crop/frm/silverstone-feed-data/f0d8086c-d97c-4b40-bb5e-21a732116792.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "illawarramercury.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.theepochtimes.com/world/reserve-bank-of-australia-raises-interest-rates-to-15-year-high-6096119",
-            "url_mobile": "",
-            "title": "Reserve Bank of Australia Raises Interest Rates to 15 - Year High",
-            "seendate": "20260929T063000Z",
-            "socialimage": "https://img.theepochtimes.com/assets/uploads/2026/09/29/id6096193-GettyImages-2274254520.jpg",
-            "domain": "theepochtimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.miragenews.com/inflation-hits-4-in-august-keeping-rba-rate-1752489/",
-            "url_mobile": "",
-            "title": "Inflation Hits 4 % in August , Keeping RBA Rate Hike Pressure On",
-            "seendate": "20260930T060000Z",
-            "socialimage": "https://cdn1.miragenews.com/tmp_cache?cdn=images.unsplash.com%2Fphoto-1526256262350-7da7584cf5eb%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26amp%3Bixlib%3Drb-1.2.1%26amp%3Bauto%3Dformat%26amp%3Bfit%3Dcrop%26amp%3Bw%3D1350%26amp%3Bq%3D80",
-            "domain": "miragenews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://english.news.cn/20260929/90d03372c6984cfda25d3ae39bd8be6b/c.html",
-            "url_mobile": "",
-            "title": "Australian central bank raises interest rates to 15 - year high - Xinhua",
-            "seendate": "20260929T080000Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
           {
             "url": "https://www.dailymail.com/news/article-16174111/australia-inflation-reserve-bank-economy-peter-van-onselen.html",
             "url_mobile": "",
@@ -718,12 +485,22 @@
             "domain": "dailymail.com",
             "language": "English",
             "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.dailymail.com/news/article-16174205/mark-bouris-inflation-albanese-government-recession.html",
+            "url_mobile": "https://www.dailymail.com/news/article-16174205/amp/mark-bouris-inflation-albanese-government-recession.html",
+            "title": "Millionaire Mark Bouris delivers urgent wake up call to the Albanese government - as he reveals why interest rates are soaring :  Our government is spending more than it receives  ",
+            "seendate": "20261001T024500Z",
+            "socialimage": "https://i.dailymail.com/1s/2026/10/01/02/111578317-0-image-m-56_1790817698615.jpg",
+            "domain": "dailymail.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-09-29T21:12:29.345205+00:00",
+      "fetched_at_utc": "2026-10-07T21:37:45.096345+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
@@ -731,11 +508,11 @@
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-05T23:05:12.257366+00:00",
+      "fetched_at_utc": "2026-10-07T21:39:05.918404+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-06T21:23:51.994605+00:00",
+      "fetched_at_utc": "2026-10-07T21:40:45.978043+00:00",
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
@@ -887,29 +664,9 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-10-02T21:06:34.635931+00:00",
+      "fetched_at_utc": "2026-10-07T21:39:20.546887+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.freemalaysiatoday.com/category/highlight/2026/09/29/s-p-affirms-malaysia-s-credit-ratings-but-flags-political-risks",
-            "url_mobile": "",
-            "title": "S & P affirms Malaysia credit ratings but flags political risks",
-            "seendate": "20260929T114500Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2025/09/9c2c6ecb-perdana-putra-pmo-fmt-resize-120925-1.webp",
-            "domain": "freemalaysiatoday.com",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.freemalaysiatoday.com/category/business/2026/09/29/ringgit-ends-marginally-higher-s-p-rating-supports-sentiment",
-            "url_mobile": "",
-            "title": "Ringgit ends marginally higher , S & P rating supports sentiment",
-            "seendate": "20260929T114500Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/7c26985f-ringgit_up-new-2024-2.webp",
-            "domain": "freemalaysiatoday.com",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
           {
             "url": "https://www.orientaldaily.com.my/news/nation/2026/10/02/852032",
             "url_mobile": "",
@@ -919,36 +676,6 @@
             "domain": "orientaldaily.com.my",
             "language": "Chinese",
             "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.orientaldaily.com.my/news/nation/2026/09/29/851287",
-            "url_mobile": "",
-            "title": "2030\u5e74\u94c1\u8def\u4e1a\u987b2 . 5\u4e07\u5458\u5de5 \u4eba\u8d44\u90e8 \uff1a \u4e1c\u94c1\u63d0\u4f9b3000\u5de5\u4f5c | \u56fd\u5185",
-            "seendate": "20260929T083000Z",
-            "socialimage": "https://www.orientaldaily.com.my/storage/resize_cache/images/uploads/news-cover/2026/SEP_2026/20260929/3d8600a6-e7c6-4a65-9fce-5861bbd62548.jpg/a30c406e83e3a1c417aa1a11cc809f66.jpg",
-            "domain": "orientaldaily.com.my",
-            "language": "Chinese",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/09/29/an-end-to-cheap-debt",
-            "url_mobile": "",
-            "title": "An end to cheap debt",
-            "seendate": "20260929T004500Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/09/29/4134758.jpg",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.philstar.com/business/2026/09/28/2559311/are-we-losing-our-edge",
-            "url_mobile": "https://www.philstar.com/business/2026/09/28/2559311/are-we-losing-our-edge/amp/",
-            "title": "Are we losing our edge ? ",
-            "seendate": "20260927T171500Z",
-            "socialimage": "",
-            "domain": "philstar.com",
-            "language": "English",
-            "sourcecountry": "Philippines"
           }
         ]
       }
