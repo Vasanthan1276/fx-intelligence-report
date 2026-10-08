@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-07T21:40:45.978064+00:00",
+  "updated_at_utc": "2026-10-08T21:41:10.783442+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-10-07T21:28:54.915662+00:00",
@@ -176,138 +176,15 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-10-07T21:30:44.486904+00:00",
+      "fetched_at_utc": "2026-10-08T21:29:04.647140+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-05T22:54:56.622905+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://en.dailypakistan.com.pk/02-Oct-2026/currency-exchange-rates-in-pakistan-today-us-dollar-euro-dirham-and-riyal-rates-02-october-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today - US Dollar , Euro , Dirham and Riyal Rates",
-            "seendate": "20261002T041500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "http://www.econotimes.com/Asian-Stocks-Fall-as-US-Jobs-Data-and-Oil-Risks-Rattle-Markets-1753766",
-            "url_mobile": "",
-            "title": "Asian Stocks Fall as US Jobs Data and Oil Risks Rattle Markets",
-            "seendate": "20261002T084500Z",
-            "socialimage": "https://f1.econotimes.com/2025/01/61gg6exa4w.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.freemalaysiatoday.com/category/business/2026/10/02/ringgit-opens-higher-against-us-dollar-major-currencies-3",
-            "url_mobile": "",
-            "title": "Ringgit opens higher against US dollar , major currencies",
-            "seendate": "20261002T020000Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2026/06/fa5b8d8f-ringgit.webp",
-            "domain": "freemalaysiatoday.com",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.nzherald.co.nz/business/markets/currency/weak-nz-dollar-high-oil-prices-pile-on-pressure-as-rbnzs-ocr-call-nears/premium/CJ22KE4BNNE27MKGXO42ZFBY5Q/",
-            "url_mobile": "",
-            "title": "Weak NZ dollar , high oil prices pile on pressure as RBNZ OCR call nears",
-            "seendate": "20261002T041500Z",
-            "socialimage": "https://www.nzherald.co.nz/resizer/v2/MFELWKNMZBEN7LOBTJSKM2KD2I.jpg?auth=202daff6c65e631851c6fbca7ef1abde7309d9d87b99742498a34379dc123308&quality=70&focal=1181%2C709&smart=false",
-            "domain": "nzherald.co.nz",
-            "language": "English",
-            "sourcecountry": "New Zealand"
-          },
-          {
-            "url": "https://navbharattimes.indiatimes.com/business/share-market/share-news/stock-market-sees-longest-weekly-fall-in-25-years-know-the-reasons/articleshow/134631279.cms",
-            "url_mobile": "https://navbharattimes.indiatimes.com/business/share-market/share-news/stock-market-sees-longest-weekly-fall-in-25-years-know-the-reasons/amp_articleshow/134631279.cms",
-            "title": "Share Market Crash : 25 \u0938\u093e\u0932 \u092e\u0947\u0902 \u092a\u0939\u0932\u0940 \u092c\u093e\u0930 \u0939\u0941\u0906 \u0910\u0938\u093e , \u0936\u0947\u092f\u0930 \u092c\u093e\u091c\u093e\u0930 \u092e\u0947\u0902 \u0932\u0917\u093e\u0924\u093e\u0930 8 \u0939\u092b\u094d\u0924\u0947 \u0917\u093f\u0930\u093e\u0935\u091f , \u0915\u094b\u0930\u094b\u0928\u093e \u0915\u093e\u0932 \u092e\u0947\u0902 \u092d\u0940 \u0928\u0939\u0940\u0902 \u0939\u0941\u0906 \u0925\u093e \u0910\u0938\u093e",
-            "seendate": "20261002T043000Z",
-            "socialimage": "",
-            "domain": "navbharattimes.indiatimes.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.livehindustan.com/business/asian-markets-fall-uk-bond-yields-hit-record-high-since-1998-201790912931741.html",
-            "url_mobile": "https://www.livehindustan.com/business/asian-markets-fall-uk-bond-yields-hit-record-high-since-1998-201790912931741.amp.html",
-            "title": "\u090f\u0936\u093f\u092f\u093e\u0908 \u092c\u093e\u091c\u093e\u0930\u094b\u0902 \u092e\u0947\u0902 \u0917\u093f\u0930\u093e\u0935\u091f , \u092c\u094d\u0930\u093f\u091f\u0947\u0928 \u092e\u0947\u0902 \u092c\u0949\u0928\u094d\u0921 \u092f\u0940\u0932\u094d\u0921 1998 \u0915\u0947 \u092c\u093e\u0926 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0939\u093e\u0908 \u092a\u0930",
-            "seendate": "20261002T054500Z",
-            "socialimage": "",
-            "domain": "livehindustan.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "http://www.azerbaijannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
-            "url_mobile": "",
-            "title": "U . S . stocks struggle for direction Thursday",
-            "seendate": "20261001T233000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c1f2d65/6e126638-ea06-4875-aceb-7327626d29dd/7/Wall-Street-600x315.jpeg",
-            "domain": "azerbaijannews.net",
-            "language": "English",
-            "sourcecountry": "Azerbaijan"
-          },
-          {
-            "url": "http://www.albuquerqueexpress.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-            "url_mobile": "",
-            "title": "Wall Street directionless on first October trading day",
-            "seendate": "20261001T233000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c1f2d65/6e126638-ea06-4875-aceb-7327626d29dd/7/Wall-Street-600x315.jpeg",
-            "domain": "albuquerqueexpress.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.oklahomastar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-            "url_mobile": "",
-            "title": "Wall Street directionless on first October trading day",
-            "seendate": "20261001T233000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c1f2d65/6e126638-ea06-4875-aceb-7327626d29dd/7/Wall-Street-600x315.jpeg",
-            "domain": "oklahomastar.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.afghanistansun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-            "url_mobile": "",
-            "title": "Wall Street directionless on first October trading day",
-            "seendate": "20261001T233000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c1f2d65/6e126638-ea06-4875-aceb-7327626d29dd/7/Wall-Street-600x315.jpeg",
-            "domain": "afghanistansun.com",
-            "language": "English",
-            "sourcecountry": "Afghanistan"
-          },
-          {
-            "url": "http://www.russiaherald.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-            "url_mobile": "",
-            "title": "Wall Street directionless on first October trading day",
-            "seendate": "20261001T231500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c1f2d65/6e126638-ea06-4875-aceb-7327626d29dd/7/Wall-Street-600x315.jpeg",
-            "domain": "russiaherald.com",
-            "language": "English",
-            "sourcecountry": "Russia"
-          },
-          {
-            "url": "http://www.stlouisstar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-            "url_mobile": "",
-            "title": "Wall Street directionless on first October trading day",
-            "seendate": "20261001T231500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c1f2d65/6e126638-ea06-4875-aceb-7327626d29dd/7/Wall-Street-600x315.jpeg",
-            "domain": "stlouisstar.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-08T21:29:21.255248+00:00",
+      "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-06T21:12:49.381862+00:00",
+      "fetched_at_utc": "2026-10-08T21:29:58.240920+00:00",
       "payload": {
         "articles": [
           {
@@ -469,38 +346,15 @@
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-07T21:36:20.400279+00:00",
+      "fetched_at_utc": "2026-10-08T21:33:51.903035+00:00",
       "payload": {}
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-10-07T21:37:29.099668+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.dailymail.com/news/article-16174111/australia-inflation-reserve-bank-economy-peter-van-onselen.html",
-            "url_mobile": "",
-            "title": "Yes , inflation is surging - but there IS a flicker of hope . Why another interest rate rise isnt inevitable : PETER VAN ONSELEN",
-            "seendate": "20261001T004500Z",
-            "socialimage": "https://i.dailymail.com/1s/2026/09/30/23/111577429-0-image-m-10_1790809141151.jpg",
-            "domain": "dailymail.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.dailymail.com/news/article-16174205/mark-bouris-inflation-albanese-government-recession.html",
-            "url_mobile": "https://www.dailymail.com/news/article-16174205/amp/mark-bouris-inflation-albanese-government-recession.html",
-            "title": "Millionaire Mark Bouris delivers urgent wake up call to the Albanese government - as he reveals why interest rates are soaring :  Our government is spending more than it receives  ",
-            "seendate": "20261001T024500Z",
-            "socialimage": "https://i.dailymail.com/1s/2026/10/01/02/111578317-0-image-m-56_1790817698615.jpg",
-            "domain": "dailymail.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-08T21:35:51.696763+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-10-07T21:37:45.096345+00:00",
+      "fetched_at_utc": "2026-10-08T21:36:27.714210+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
@@ -508,7 +362,7 @@
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-07T21:39:05.918404+00:00",
+      "fetched_at_utc": "2026-10-08T21:37:55.180593+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
@@ -516,21 +370,8 @@
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-05T23:08:27.182305+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.finews.ch/news/banken/73808-ubs-verlagerung-konzernhauptsitz-eigenkapital-staenderat-kontroverse",
-            "url_mobile": "",
-            "title": "Wegzug der UBS : Fragen und Antworten",
-            "seendate": "20261002T053000Z",
-            "socialimage": "https://www.finews.ch/images/news/2026/10/colm_kelleher.jpg",
-            "domain": "finews.ch",
-            "language": "German",
-            "sourcecountry": "Switzerland"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-08T21:41:10.783424+00:00",
+      "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
       "fetched_at_utc": "2026-10-06T21:25:23.649610+00:00",
@@ -664,7 +505,7 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-10-07T21:39:20.546887+00:00",
+      "fetched_at_utc": "2026-10-08T21:38:52.587674+00:00",
       "payload": {
         "articles": [
           {
@@ -812,128 +653,78 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-09-30T21:04:26.541381+00:00",
+      "fetched_at_utc": "2026-10-08T21:31:39.818443+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.moneycontrol.com/world/eurozone-inflation-surges-lagarde-warns-of-higher-prices-amid-energy-shock-breaking-news-n18g-article-14040378.html",
-            "url_mobile": "https://www.moneycontrol.com/world/eurozone-inflation-surges-lagarde-warns-of-higher-prices-amid-energy-shock-breaking-news-n18g-article-14040378.html/amp",
-            "title": "EUROZONE INFLATION SURGES ! Lagarde Warns Of Higher Prices Amid Energy Shock | Breaking News",
-            "seendate": "20260929T043000Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/09/20260928181735_ec-bank.jpg",
-            "domain": "moneycontrol.com",
-            "language": "English",
-            "sourcecountry": "India"
+            "url": "https://time.mk/ai/f8fb5ead76/mk/",
+            "url_mobile": "",
+            "title": "Time . ai",
+            "seendate": "20261006T083000Z",
+            "socialimage": "",
+            "domain": "time.mk",
+            "language": "Macedonian",
+            "sourcecountry": "Macedonia"
           },
           {
-            "url": "https://www.euro2day.gr/news/world/article/2370993/bofa-erhontai-nees-ayxhseis-epitokion-se-hpa-kai-e.html",
-            "url_mobile": "https://www.euro2day.gr/amp/news/world/article/2370993/bofa-erhontai-nees-ayxhseis-epitokion-se-hpa-kai-e.html",
-            "title": "BofA : \u0388\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03b9 \u03bd\u03ad\u03b5\u03c2 \u03b1\u03c5\u03be\u03ae\u03c3\u03b5\u03b9\u03c2 \u03b5\u03c0\u03b9\u03c4\u03bf\u03ba\u03af\u03c9\u03bd \u03c3\u03b5 \u0397\u03a0\u0391 \u03ba\u03b1\u03b9 \u0395\u03c5\u03c1\u03ce\u03c0\u03b7",
-            "seendate": "20260928T121500Z",
-            "socialimage": "",
-            "domain": "euro2day.gr",
+            "url": "https://plusinfo.mk/ecb-ochekuva-nov-energetski-shok-se-stravuva-deka-rastot-na-cenite-na-energensite-e-se-prelee-na-drugite-ceni/",
+            "url_mobile": "",
+            "title": "\u0415\u0426\u0411 \u041e\u0427\u0415\u041a\u0423\u0412\u0410 \u041d\u041e\u0412 \u0415\u041d\u0415\u0420\u0413\u0415\u0422\u0421\u041a\u0418 \u0428\u041e\u041a \u0421\u0435 \u0441\u0442\u0440\u0430\u0432\u0443\u0432\u0430 \u0434\u0435\u043a\u0430 \u0440\u0430\u0441\u0442\u043e\u0442 \u043d\u0430 \u0446\u0435\u043d\u0438\u0442\u0435 \u043d\u0430 \u0435\u043d\u0435\u0440\u0433\u0435\u043d\u0441\u0438\u0442\u0435 \u045c\u0435 \u0441\u0435 \u043f\u0440\u0435\u043b\u0435\u0435 \u043d\u0430 \u0434\u0440\u0443\u0433\u0438\u0442\u0435 \u0446\u0435\u043d\u0438",
+            "seendate": "20261006T083000Z",
+            "socialimage": "https://plusinfo.mk/wp-content/uploads/2026/04/ECB.jpg",
+            "domain": "plusinfo.mk",
+            "language": "Macedonian",
+            "sourcecountry": "Macedonia"
+          },
+          {
+            "url": "https://www.investor.bg/a/515-ikonomika-i-makrodanni/437559-germanskite-fabrichni-porachki-se-srivat-nanasyayki-udar-na-vazstanovyavaneto-na-stranata",
+            "url_mobile": "",
+            "title": "\u0413\u0435\u0440\u043c\u0430\u043d\u0441\u043a\u0438\u0442\u0435 \u0444\u0430\u0431\u0440\u0438\u0447\u043d\u0438 \u043f\u043e\u0440\u044a\u0447\u043a\u0438 \u0441\u0435 \u0441\u0440\u0438\u0432\u0430\u0442 , \u043d\u0430\u043d\u0430\u0441\u044f\u0439\u043a\u0438 \u0443\u0434\u0430\u0440 \u043d\u0430 \u0432\u044a\u0437\u0441\u0442\u0430\u043d\u043e\u0432\u044f\u0432\u0430\u043d\u0435\u0442\u043e \u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0430\u0442\u0430",
+            "seendate": "20261006T083000Z",
+            "socialimage": "https://www.investor.bg/media/files/resized/article/1280x720/730/9b66d54dc788512262645840fe46a730-470008833.jpg",
+            "domain": "investor.bg",
+            "language": "Bulgarian",
+            "sourcecountry": "Bulgaria"
+          },
+          {
+            "url": "https://www.naftemporiki.gr/finance/markets/2171215/to-galliko-chreos-pnigei-to-eyro-vythizetai-to-nomisma-fygi-sto-dolario/",
+            "url_mobile": "",
+            "title": "\u03a4\u03bf \u03b3\u03b1\u03bb\u03bb\u03b9\u03ba\u03cc \u03c7\u03c1\u03ad\u03bf\u03c2 \u00ab \u03c0\u03bd\u03af\u03b3\u03b5\u03b9 \u00bb \u03c4\u03bf \u03b5\u03c5\u03c1\u03ce : \u0392\u03c5\u03b8\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03c4\u03bf \u03bd\u03cc\u03bc\u03b9\u03c3\u03bc\u03b1 , \u03c6\u03c5\u03b3\u03ae \u03c3\u03c4\u03bf \u03b4\u03bf\u03bb\u03ac\u03c1\u03b9\u03bf",
+            "seendate": "20261006T083000Z",
+            "socialimage": "https://www.naftemporiki.gr/wp-content/uploads/2026/10/euro-vithizetai.jpg",
+            "domain": "naftemporiki.gr",
             "language": "Greek",
             "sourcecountry": "Greece"
           },
           {
-            "url": "http://www.heraldglobe.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T200000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "heraldglobe.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "url": "https://vz.ru/news/2026/10/6/1459337.html",
+            "url_mobile": "https://vz.ru/amp/news/2026/10/6/1459337.html",
+            "title": "\u0420\u043e\u0441\u0442 \u0434\u043e\u043b\u0433\u0430 \u0424\u0440\u0430\u043d\u0446\u0438\u0438 \u0443\u0441\u0438\u043b\u0438\u043b \u0440\u0438\u0441\u043a\u0438 \u043d\u043e\u0432\u043e\u0433\u043e \u043a\u0440\u0438\u0437\u0438\u0441\u0430 \u0435\u0432\u0440\u043e\u0437\u043e\u043d\u044b :: \u041d\u043e\u0432\u043e\u0441\u0442\u0438 \u0434\u043d\u044f / \u0412\u0417\u0413\u041b\u042f\u0414",
+            "seendate": "20261006T083000Z",
+            "socialimage": "https://img.vz.ru/upimg/soc/soc_1459337.png",
+            "domain": "vz.ru",
+            "language": "Russian",
+            "sourcecountry": "Russia"
           },
           {
-            "url": "http://www.argentinastar.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
+            "url": "https://www.cityam.com/old-fault-lines-are-threatening-to-rock-the-eurozone/",
             "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T200000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "argentinastar.com",
+            "title": "Old fault lines are threatening to rock the Eurozone",
+            "seendate": "20261006T083000Z",
+            "socialimage": "https://www.cityam.com/wp-content/uploads/2026/10/Eurozone-e1791217412850.jpg",
+            "domain": "cityam.com",
             "language": "English",
-            "sourcecountry": "Argentina"
+            "sourcecountry": "United Kingdom"
           },
           {
-            "url": "http://www.kenyastar.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
+            "url": "https://www.epochtimes.de/politik/ausland/euro-auf-jahrestief-loest-frankreich-eine-neue-eurokrise-aus-a5628418.html",
             "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T210000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "kenyastar.com",
-            "language": "English",
-            "sourcecountry": "Kenya"
-          },
-          {
-            "url": "http://www.northkoreatimes.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T210000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "northkoreatimes.com",
-            "language": "English",
-            "sourcecountry": "North Korea"
-          },
-          {
-            "url": "http://www.parisguardian.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T210000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "parisguardian.com",
-            "language": "English",
-            "sourcecountry": "France"
-          },
-          {
-            "url": "http://www.austinglobe.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T210000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "austinglobe.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.thailandnews.net/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T210000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "thailandnews.net",
-            "language": "English",
-            "sourcecountry": "Thailand"
-          },
-          {
-            "url": "http://www.tucsonpost.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T210000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "tucsonpost.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.irishsun.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T201500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "irishsun.com",
-            "language": "English",
-            "sourcecountry": "Ireland"
-          },
-          {
-            "url": "http://www.batonrougepost.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T211500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "batonrougepost.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "title": "Euro auf Jahrestief : L\u00f6st Frankreich eine neue Eurokrise aus ? ",
+            "seendate": "20261006T083000Z",
+            "socialimage": "https://images-de.epochtimes.de/uploads/2026/10/GettyImages-2280380492.jpg",
+            "domain": "epochtimes.de",
+            "language": "German",
+            "sourcecountry": "Germany"
           }
         ]
       }
@@ -993,132 +784,62 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-10-06T21:23:36.441662+00:00",
+      "fetched_at_utc": "2026-10-08T21:39:49.469510+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
-      "fetched_at_utc": "2026-10-01T21:17:41.908528+00:00",
+      "fetched_at_utc": "2026-10-08T21:30:16.948454+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.fnnews.com/news/202609292020508630",
+            "url": "https://www.saamana.com/asian-markets-hang-seng-nikkei-us-jobs-data-high-bond-yield-crude-oil-pressure-saamana-online-news/",
             "url_mobile": "",
-            "title": "7\uc6d4 \uae09\ub77d\uc7a5\uc5d0 \uad6d\ubbfc\uc5f0\uae08 \uc801\ub9bd\uae08 182\uc870 \uc99d\ubc1c \u2026 1866\uc870\u21921684\uc870",
-            "seendate": "20260929T124500Z",
-            "socialimage": "https://image.fnnews.com/resource/media/image/2026/09/29/202609292021334858_e.jpg",
-            "domain": "fnnews.com",
+            "title": "Share Market News \u2013 \u0906\u0936\u093f\u092f\u093e\u0908 \u092c\u093e\u091c\u093e\u0930\u093e\u0902\u092e\u0927\u094d\u092f\u0947 \u092e\u094b\u0920\u0940 \u0918\u0938\u0930\u0923 ; \u0924\u0947\u0932\u093e\u091a\u094d\u092f\u093e \u0935\u093e\u0922\u0924\u094d\u092f\u093e \u0915\u093f\u092e\u0924\u0940 \u0906\u0923\u093f \u092c\u0949\u0923\u094d\u0921 \u092f\u0940\u0932\u094d\u0921\u094d\u0938\u091a\u094d\u092f\u093e \u0926\u0941\u0939\u0947\u0930\u0940 \u0926\u092c\u093e\u0935\u093e\u091a\u093e \u092a\u0930\u093f\u0923\u093e\u092e",
+            "seendate": "20261002T083000Z",
+            "socialimage": "",
+            "domain": "saamana.com",
+            "language": "Marathi",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.hankookilbo.com/news/article/A2026100110560003883",
+            "url_mobile": "https://www.hankookilbo.com/news/article/amp/A2026100110560003883",
+            "title": "\uc778\uc704\uc801 \uc11d\uc720 \uac00\uaca9 \ud1b5\uc81c \uc5b8\uc81c\uae4c\uc9c0 - \uc624\ud53c\ub2c8\uc5b8\u3163\ud55c\uad6d\uc77c\ubcf4",
+            "seendate": "20261001T214500Z",
+            "socialimage": "https://newsimg.hankookilbo.com/2026/10/01/bc859a41-9f91-4ff1-8388-50207747c074.jpg",
+            "domain": "hankookilbo.com",
             "language": "Korean",
             "sourcecountry": "South Korea"
           },
           {
-            "url": "https://www.estrategiasdeinversion.com/analisis/bolsa-y-mercados/informes/arranca-octubre-la-temporada-de-resultados-y-los-n-956051",
-            "url_mobile": "https://www.estrategiasdeinversion.com/amp/arranca-octubre-la-temporada-de-resultados-y-los-n-956051",
-            "title": "Arranca octubre : la temporada de resultados y los bancos centrales ser\u00e1n protagonistas",
-            "seendate": "20261001T130000Z",
-            "socialimage": "https://www.estrategiasdeinversion.com/uploads/noticias_redaccion/native/agenda_calendario_native.jpg",
-            "domain": "estrategiasdeinversion.com",
-            "language": "Spanish",
-            "sourcecountry": "Spain"
-          },
-          {
-            "url": "https://biz.chosun.com/stock/stock_general/2026/09/30/EYHJQRJSAJH4DBP4KIYOUTTTV4/",
-            "url_mobile": "https://biz.chosun.com/stock/stock_general/2026/09/30/EYHJQRJSAJH4DBP4KIYOUTTTV4/?outputType=amp",
-            "title": "7\uc6d4 \ud3ed\ub77d\uc7a5\uc5d0 \uad6d\ubbfc\uc5f0\uae08 182\uc870 \uc904\uc5c8\ub2e4 \u2026 \uad6d\ub0b4\uc8fc\uc2dd\ub9cc 124\uc870 \uac10\uc18c",
-            "seendate": "20260930T004500Z",
-            "socialimage": "https://biz.chosun.com/resizer/v2/MQYTGNRTMM4TOZTCGRTDQZRVMY.jpg?auth=651d8ca358c5d6d459beffb75d5e715885543ce30fe491ef6fbc31ce19454bc7&smart=true",
-            "domain": "biz.chosun.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.etoday.co.kr/news/view/2630335",
-            "url_mobile": "https://m.etoday.co.kr/news/view/2630335",
-            "title": "\uad6d\uc81c LPG\uac12 \uc7ac\uc0c1\uc2b9\u22ef\uc313\uc778 \uc6d0\uac00 \ubd80\ub2f4\uc5d0 10\uc6d4 \uad6d\ub0b4 \uacf5\uae09\uac00 \uc778\uc0c1  \ubb34\uac8c  ",
-            "seendate": "20260929T080000Z",
-            "socialimage": "https://img.etoday.co.kr/pto_db/2024/11/20241130191629_2108976_1200_800.jpg",
-            "domain": "etoday.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://en.shafaqna.com/480413/japan-services-inflation-two-year-high-august/",
+            "url": "https://www.chinatimes.com/realtimenews/20261002002365-260410",
             "url_mobile": "",
-            "title": "Japan Services Inflation Hits Two - Year High in August",
-            "seendate": "20260928T054500Z",
-            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2025/12/en.shafaqna-BOJ.webp",
-            "domain": "en.shafaqna.com",
-            "language": "English",
-            "sourcecountry": "Saudi Arabia"
-          },
-          {
-            "url": "https://finance.sina.com.cn/stock/usstock/c/2026-09-25/doc-iniszrtv4341763.shtml",
-            "url_mobile": "",
-            "title": "\u7279\u6717\u666e\u4e0e\u9ad8\u5e02\u65e9\u82d7\u8ba8\u8bba\u65e5\u5143\u75b2\u8f6f\u95ee\u9898",
-            "seendate": "20260925T081500Z",
-            "socialimage": "https://n.sinaimg.cn/finance/transform/55/w550h305/20260925/2221-e6d1cfed75ea8242413a0ae1f2f29ba0.png",
-            "domain": "finance.sina.com.cn",
-            "language": "Chinese",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://technews.tw/2026/10/01/japan-sees-another-wave-of-price-hikes-in-october-squeezing-household-budgets/",
-            "url_mobile": "",
-            "title": "\u65e5\u672c\u5341\u6708\u53c8\u6380\u6f32\u50f9\u6f6e \uff0c \u5bb6\u5ead\u9677\u652f\u51fa\u5371\u6a5f",
-            "seendate": "20261001T034500Z",
-            "socialimage": "https://img.technews.tw/wp-content/uploads/2026/10/01101758/54545703934_ff96388681_c.jpg",
-            "domain": "technews.tw",
+            "title": " \u300a \u65e5\u80a1 \u300b \u7372\u5229\u4e86\u7d50 \u65e5\u7d93\u6307\u6578\u6668\u6536\u8dcc630\u9ede \u5149\u901a\u8a0a3\u96c4\u9006\u52e2\u98c6 - \u8ca1\u7d93",
+            "seendate": "20261002T053000Z",
+            "socialimage": "",
+            "domain": "chinatimes.com",
             "language": "Chinese",
             "sourcecountry": "Taiwan"
           },
           {
-            "url": "https://www.etoday.co.kr/news/view/2629849",
-            "url_mobile": "https://m.etoday.co.kr/news/view/2629849",
-            "title": "\uae00\ub85c\ubc8c \uace0\uae08\ub9ac \uacf5\ud3ec\u22ef\uc6d0\ud654\ucc44  \ub098 \ub5a8\uace0 \uc788\ub2c8  ",
-            "seendate": "20260928T033000Z",
-            "socialimage": "https://img.etoday.co.kr/pto_db/2026/09/20260921162021_2391495_1199_671.jpg",
-            "domain": "etoday.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.newsweekjapan.jp/articles/-/335655",
+            "url": "https://www.actionforex.com/live-comments/656111-tokyo-core-cpi-jumps-to-2-7-core-core-hits-3-0-as-price-pressures-broaden/",
             "url_mobile": "",
-            "title": "\u30a2\u30b8\u30a2\u682a\u5f0f\u5e02\u5834\u30b5\u30de\u30ea\u30fc \uff1a \u5f15\u3051 \uff08 1\u65e5 \uff09 | \u30cb\u30e5\u30fc\u30ba\u30a6\u30a3\u30fc\u30af\u65e5\u672c\u7248 \u30aa\u30d5\u30a3\u30b7\u30e3\u30eb\u30b5\u30a4\u30c8",
-            "seendate": "20261001T114500Z",
-            "socialimage": "https://newsweekjapan.ismcdn.jp/common/images/newsweek/og_image.png",
-            "domain": "newsweekjapan.jp",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://www.heraldk.com/article/2026100104002421324",
-            "url_mobile": "",
-            "title": "\uc77c\ubcf8\uc740\ud589  \ubb3c\uac00 \ub354 \uc624\ub974\uba74 \uae08\ub9ac\uc778\uc0c1 \uc18d\ub3c4 \ub192\uc5ec\uc57c \u2026 10\uc6d4 \ucd94\uac00 \uc778\uc0c1\ub860",
-            "seendate": "20261001T123000Z",
-            "socialimage": "https://wimg.heraldcorp.com/news/cms/2026/10/01/rcv.YNA.20260918.PRU20260918165801009_P1.jpg",
-            "domain": "heraldk.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.tribuneindia.com/news/comment/india-must-brace-for-global-capital-war/",
-            "url_mobile": "https://www.tribuneindia.com/news/comment/india-must-brace-for-global-capital-war/amp",
-            "title": "India must brace for global capital war",
-            "seendate": "20260930T233000Z",
-            "socialimage": "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTlmNTBmZWIwLWJkMWUtMTFmMS1iZDA1LWIxMjRhNDIyZDM2Yi5qcGc=",
-            "domain": "tribuneindia.com",
+            "title": "Tokyo Core CPI Jumps to 2 . 7 %, Core - Core Hits 3 . 0 % as Price Pressures Broaden",
+            "seendate": "20261002T080000Z",
+            "socialimage": "https://www.actionforex.com/wp-content/uploads/2018/03/f-japan5.jpg",
+            "domain": "actionforex.com",
             "language": "English",
-            "sourcecountry": "India"
+            "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://forex.jrj.com.cn/2026/09/28113258564413.shtml",
+            "url": "https://www.sbctv.gr/2026/10/%CF%80%CE%BB%CE%B7%CE%B8%CF%89%CF%81%CE%B9%CF%83%CE%BC%CE%BF%CF%82-%CF%84%CE%BF%CE%BA%CE%B9%CE%BF-3/",
             "url_mobile": "",
-            "title": "\u65e5\u672c\u4f20\u6765\u91cd\u91cf\u7ea7\u6d88\u606f \uff01 \u65e5\u672c\u592e\u884c7\u6708\u4f1a\u8bae\u7eaa\u8981 \uff1a \u592e\u884c\u8ba8\u8bba\u52a0\u5feb\u52a0\u606f\u5fc5\u8981\u6027",
-            "seendate": "20260928T054500Z",
-            "socialimage": "http://img.jrjimg.cn/2026/09/cms_20260928113203598.jpg",
-            "domain": "forex.jrj.com.cn",
-            "language": "Chinese",
-            "sourcecountry": "China"
+            "title": "\u03a0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03cc\u03c2 \u03a4\u03cc\u03ba\u03b9\u03bf \u03ba\u03b1\u03b9 \u03bf\u03b9 \u03b5\u03c0\u03cc\u03bc\u03b5\u03bd\u03b5\u03c2 \u03ba\u03b9\u03bd\u03ae\u03c3\u03b5\u03b9\u03c2 \u03c4\u03b7\u03c2 \u03a4\u03c1\u03ac\u03c0\u03b5\u03b6\u03b1\u03c2 \u0399\u03b1\u03c0\u03c9\u03bd\u03af\u03b1\u03c2",
+            "seendate": "20261002T040000Z",
+            "socialimage": "https://www.sbctv.gr/wp-content/uploads/2026/10/plithorismos-tokio.jpg",
+            "domain": "sbctv.gr",
+            "language": "Greek",
+            "sourcecountry": "Greece"
           }
         ]
       }
