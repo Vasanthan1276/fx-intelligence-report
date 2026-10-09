@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-08T21:41:10.783442+00:00",
+  "updated_at_utc": "2026-10-09T21:23:10.902133+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-10-07T21:28:54.915662+00:00",
@@ -49,128 +49,18 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-10-07T21:30:04.936931+00:00",
+      "fetched_at_utc": "2026-10-09T21:09:29.914933+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-prices-flat-ahead-of-us-jobs-data/articleshow/134606175.cms",
-            "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-prices-flat-ahead-of-us-jobs-data/amp_articleshow/134606175.cms",
-            "title": "Gold prices flat ahead of US jobs data",
-            "seendate": "20261001T030000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-134606215,width-1200,height-900,imgsize-202484,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.livemint.com/market/commodities/gold-price-future-roadmap-why-led-to-6-yellow-metal-fall-in-sept-2026-will-diwali-help-bounce-back-experts-view-11790842892313.html",
-            "url_mobile": "https://www.livemint.com/market/commodities/gold-price-future-roadmap-why-led-to-6-yellow-metal-fall-in-sept-2026-will-diwali-help-bounce-back-experts-view/amp-11790842892313.html",
-            "title": "Gold price future roadmap : What led to 6 % yellow metal fall in Sept 2026 ? Will Diwali help bounce back ? Experts view",
-            "seendate": "20261001T110000Z",
-            "socialimage": "https://www.livemint.com/lm-img/img/2026/10/01/600x338/Gold_Prices_Fall_1790844413380_qbDt_1790844420127_qDOa_4ddba6eb-34ea-49a9-9c38-be26bdc1bf79_O2Yc.png",
-            "domain": "livemint.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.euronews.com/2026/10/01/oil-rebounds-above-100-as-us-bonds-suffer-their-worst-quarter-since-1994",
+            "url": "https://www.wmdt.com/2026/10/gov-meyer-signs-housing-development-reform-bills/",
             "url_mobile": "",
-            "title": "Oil hovers around $100 as US bonds suffer their worst quarter since 1994",
-            "seendate": "20261001T121500Z",
-            "socialimage": "https://images.euronews.com/articles/stories/09/92/56/54/1200x675_cmsv2_e1cabd86-6974-55ff-9779-ffa29be0ae70-9925654.jpg",
-            "domain": "euronews.com",
+            "title": "Gov . Meyer Signs Housing Development Reform Bills",
+            "seendate": "20261008T053000Z",
+            "socialimage": "https://www.wmdt.com/content/uploads/2026/10/k/n/1791413875-9f1aff307785d734cb602f0a9bf712e0692bd4af.jpg",
+            "domain": "wmdt.com",
             "language": "English",
             "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.jagranjosh.com/general-knowledge/gold-price-vs-us-inflation-data-why-did-gold-rise-after-cooler-pce-inflation-reading-know-the-impact-on-indian-gold-market-1820012673-1",
-            "url_mobile": "https://www.jagranjosh.com/lite/general-knowledge/gold-price-vs-us-inflation-data-why-did-gold-rise-after-cooler-pce-inflation-reading-know-the-impact-on-indian-gold-market-1820012673-1",
-            "title": "Gold Price vs US Inflation Data : Why Did Gold Rise After Cooler PCE Inflation Reading ? Know the Impact on Indian Gold Market",
-            "seendate": "20261001T030000Z",
-            "socialimage": "https://img.jagranjosh.com/images/2026/10/01/template/image/Gold-price-today-(5)-1790821876209.webp",
-            "domain": "jagranjosh.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "http://www.econotimes.com/FxWirePro-EUR-NZD-eases-slightly-but-outlook-is-bullish-1753601",
-            "url_mobile": "",
-            "title": "FxWirePro : EUR / NZD eases slightly but outlook is bullish",
-            "seendate": "20261001T031500Z",
-            "socialimage": "https://f1.econotimes.com/2026/10/dsur07i8z0.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.aol.com/articles/asian-stocks-dip-bonds-focus-015645000.html",
-            "url_mobile": "",
-            "title": "Asian stocks dip , bonds in focus after torrid September",
-            "seendate": "20261001T034500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/e1ea02ed5f539d53707c4bd809be6e782685deef/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/10/01/d896d8dc-4774-30c4-9ea8-e6a8791e1a94/c768d89f-f95f-4825-a14b-605bd723c0cd.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://english.kontan.co.id/news/global-markets-asian-stocks-dip-bonds-in-focus-after-torrid-september",
-            "url_mobile": "https://amp.kontan.co.id/news/global-markets-asian-stocks-dip-bonds-in-focus-after-torrid-september",
-            "title": "GLOBAL MARKETS - Asian Stocks Dip , Bonds in Focus After Torrid September",
-            "seendate": "20261001T030000Z",
-            "socialimage": "https://foto.kontan.co.id/iQTaCnR1cgqWHBzboZTYfLTOaNs=/smart/filters:format(webp)/2026/09/03/1899958612p.jpg",
-            "domain": "english.kontan.co.id",
-            "language": "English",
-            "sourcecountry": "Indonesia"
-          },
-          {
-            "url": "https://www.slobodna-bosna.ba/vijest/508107/gdje_puno_obecavaju_malu_torbu_ponesi_dodik_najavio_velike_stvari_za_rs_nema_nijednog_razloga_da_ne_uspijemo_samo_je_vazno_da_ne_napravimo_neku_budalastinu.html",
-            "url_mobile": "",
-            "title": "GDJE PUNO OBE\u0106AVAJU , MALU TORBU PONESI : Dodik najavio velike stvari za RS \u2013  Nema nijednog razloga da ne uspijemo , samo je va\u017eno da ne napravimo neku budala\u0161tinu  ",
-            "seendate": "20261001T100000Z",
-            "socialimage": "https://www.slobodna-bosna.ba/img/vijesti/2026/10/milorad_dodik_sb_1_3_2.jpg",
-            "domain": "slobodna-bosna.ba",
-            "language": "Bosnian",
-            "sourcecountry": "Bosnia-Herzegovina"
-          },
-          {
-            "url": "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-01-october-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/liveblog/134606940.cms",
-            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-01-october-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/amp_liveblog/134606940.cms",
-            "title": "Stock Market Today Live Updates : GIFT Nifty points to weak opening ; Sensex , Nifty brace for final session of the week",
-            "seendate": "20261001T040000Z",
-            "socialimage": "https://static.toiimg.com/thumb/msid-134606940,width-1280,height-720,imgsize-2323885,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-            "domain": "timesofindia.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/10/01/fbm-klci-sinks-deeper-into-the-red-at-midday",
-            "url_mobile": "",
-            "title": "FBM KLCI sinks deeper into the red at midday",
-            "seendate": "20261001T060000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/10/01/4138940.png",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://en.shafaqna.com/481380/dollar-near-two-month-high/",
-            "url_mobile": "",
-            "title": "Dollar Near Two - Month High on Higher Treasury Yields",
-            "seendate": "20261001T044500Z",
-            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2026/06/en.shafaqna-Dollar-continues-its-rise.jpeg",
-            "domain": "en.shafaqna.com",
-            "language": "English",
-            "sourcecountry": "Saudi Arabia"
-          },
-          {
-            "url": "https://en.shafaqna.com/481373/asian-stocks-muted-september/",
-            "url_mobile": "",
-            "title": "Asian Stocks Muted After Brutal September",
-            "seendate": "20261001T044500Z",
-            "socialimage": "",
-            "domain": "en.shafaqna.com",
-            "language": "English",
-            "sourcecountry": "Saudi Arabia"
           }
         ]
       }
@@ -180,11 +70,11 @@
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-08T21:29:21.255248+00:00",
+      "fetched_at_utc": "2026-10-09T21:11:24.731787+00:00",
       "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-08T21:29:58.240920+00:00",
+      "fetched_at_utc": "2026-10-09T21:12:18.598759+00:00",
       "payload": {
         "articles": [
           {
@@ -211,134 +101,11 @@
       }
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
-      "fetched_at_utc": "2026-09-29T21:06:34.384038+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.kauppalehti.fi/uutiset/a/21c66bad-32d4-4296-85a0-80ff9809ce8c",
-            "url_mobile": "",
-            "title": "Trump voi ottaa koko maailmantaloutta ravisuttavan riskin \u2013  Vaarallisin mahdollinen  ",
-            "seendate": "20260929T020000Z",
-            "socialimage": "https://images.almatalent.fi/cx0,cy116,cw3000,ch1689,1200x/https://assets.almatalent.fi/image/a69cb978-3e8a-5b18-a35e-351ed1503108",
-            "domain": "kauppalehti.fi",
-            "language": "Finnish",
-            "sourcecountry": "Finland"
-          },
-          {
-            "url": "https://www.moneycontrol.com/world/eurozone-inflation-surges-lagarde-warns-of-higher-prices-amid-energy-shock-breaking-news-n18g-article-14040378.html",
-            "url_mobile": "https://www.moneycontrol.com/world/eurozone-inflation-surges-lagarde-warns-of-higher-prices-amid-energy-shock-breaking-news-n18g-article-14040378.html/amp",
-            "title": "EUROZONE INFLATION SURGES ! Lagarde Warns Of Higher Prices Amid Energy Shock | Breaking News",
-            "seendate": "20260929T043000Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/09/20260928181735_ec-bank.jpg",
-            "domain": "moneycontrol.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.moroccoworldnews.com/2026/09/339493/oecd-raises-2026-global-growth-forecast-to-2-9-amid-energy-and-inflation-risks/",
-            "url_mobile": "",
-            "title": "OECD Raises 2026 Global Growth Forecast to 2 . 9 % Amid Energy and Inflation Risks",
-            "seendate": "20260923T213000Z",
-            "socialimage": "https://www.moroccoworldnews.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-23-at-19.54.25.jpeg",
-            "domain": "moroccoworldnews.com",
-            "language": "English",
-            "sourcecountry": "Morocco"
-          },
-          {
-            "url": "https://www.aei.org/economics/gathering-clouds-over-the-eurozone-economy/",
-            "url_mobile": "",
-            "title": "Gathering Clouds over the Eurozone Economy",
-            "seendate": "20260928T161500Z",
-            "socialimage": "https://www.aei.org/wp-content/uploads/2026/09/Desmond.Lachman.AEIdeas092826-1.jpg",
-            "domain": "aei.org",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.moneycontrol.com/news/opinion/distorted-price-signals-tariffs-interest-rates-and-global-inflation-in-2026-14040079.html",
-            "url_mobile": "https://www.moneycontrol.com/news/opinion/distorted-price-signals-tariffs-interest-rates-and-global-inflation-in-2026-14040079.html/amp",
-            "title": "OPINION | Distorted Price Signals : Tariffs , interest rates , and global inflation in 2026",
-            "seendate": "20260928T110000Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2025/08/20250801103021_2.png",
-            "domain": "moneycontrol.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/small-biz/trade/exports/insights/us-hiring-appetite-is-healthy-as-economy-powers-ahead/articleshow/134514855.cms",
-            "url_mobile": "https://m.economictimes.com/small-biz/trade/exports/insights/us-hiring-appetite-is-healthy-as-economy-powers-ahead/amp_articleshow/134514855.cms",
-            "title": "US hiring appetite is healthy as economy powers ahead",
-            "seendate": "20260927T070000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-134514855,width-1200,height-630,imgsize-45458,overlay-etrise/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://time.mk/ai/4d6754572a/mk/",
-            "url_mobile": "",
-            "title": "Time . ai",
-            "seendate": "20260924T013000Z",
-            "socialimage": "",
-            "domain": "time.mk",
-            "language": "Macedonian",
-            "sourcecountry": "Macedonia"
-          },
-          {
-            "url": "https://english.news.cn/europe/20260929/260fbfec5b45476e957b370317e55001/c.html",
-            "url_mobile": "",
-            "title": "Lagarde : Higher energy prices raise euro area inflation risks - Xinhua",
-            "seendate": "20260928T181500Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "http://www.heraldglobe.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T200000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "heraldglobe.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.argentinastar.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T200000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "argentinastar.com",
-            "language": "English",
-            "sourcecountry": "Argentina"
-          },
-          {
-            "url": "http://www.kenyastar.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T210000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "kenyastar.com",
-            "language": "English",
-            "sourcecountry": "Kenya"
-          },
-          {
-            "url": "http://www.northkoreatimes.com/news/279338344/higher-energy-prices-raise-euro-area-inflation-risksecb-president-lagarde",
-            "url_mobile": "",
-            "title": "Higher energy prices raise euro area inflation risks : ECB President Lagarde",
-            "seendate": "20260928T210000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e549fac/de511b96-e6bc-4591-add2-ee354529a994/0/CbsbeeE000059-20260929-PRMFN0A001-600x315.jpg",
-            "domain": "northkoreatimes.com",
-            "language": "English",
-            "sourcecountry": "North Korea"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-09T21:14:20.145733+00:00",
+      "payload": {}
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-07T21:35:07.487156+00:00",
+      "fetched_at_utc": "2026-10-09T21:14:36.665316+00:00",
       "payload": {}
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
@@ -354,15 +121,15 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-10-08T21:36:27.714210+00:00",
+      "fetched_at_utc": "2026-10-09T21:19:19.355154+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-06T21:21:30.290690+00:00",
+      "fetched_at_utc": "2026-10-09T21:19:33.944326+00:00",
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-08T21:37:55.180593+00:00",
+      "fetched_at_utc": "2026-10-09T21:19:51.758932+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
@@ -370,55 +137,12 @@
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-08T21:41:10.783424+00:00",
+      "fetched_at_utc": "2026-10-09T21:22:56.883255+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-10-06T21:25:23.649610+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://aa.com.tr/en/economy/swiss-inflation-hits-2-year-high-of-1-in-september-as-petroleum-prices-climb/4074458",
-            "url_mobile": "",
-            "title": "Swiss inflation hits 2 - year high of 1 % in September as petroleum prices climb",
-            "seendate": "20261001T111500Z",
-            "socialimage": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/10/01/thumbs_b_c_990b57c6529c4903ac4a613909bfc4ae.jpg",
-            "domain": "aa.com.tr",
-            "language": "English",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.laregione.ch/svizzera/svizzera/1954208/settembre-mercato-auto-vendite-svizzera",
-            "url_mobile": "https://amp.laregione.ch/svizzera/svizzera/1954208/settembre-mercato-auto-vendite-svizzera",
-            "title": "Crescita delle vendite di auto nuove in Svizzera a settembre , lelettrico traina il mercato",
-            "seendate": "20261002T083000Z",
-            "socialimage": "",
-            "domain": "laregione.ch",
-            "language": "Italian",
-            "sourcecountry": "Switzerland"
-          },
-          {
-            "url": "https://www.snb.ch/en/publications/quarterly-bulletin/2026/quartbul_2026_3_komplett",
-            "url_mobile": "",
-            "title": "Quarterly Bulletin 3 / 2026",
-            "seendate": "20260930T144500Z",
-            "socialimage": "",
-            "domain": "snb.ch",
-            "language": "English",
-            "sourcecountry": "Switzerland"
-          },
-          {
-            "url": "https://www.sbctv.gr/2026/10/%CE%B5%CF%85%CF%81%CF%89%CF%80%CE%B1%CE%B9%CE%BA%CE%B1-%CF%87%CF%81%CE%B7%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CF%84%CE%B7%CF%81%CE%B9%CE%B1-69/",
-            "url_mobile": "",
-            "title": "\u0395\u03c5\u03c1\u03c9\u03c0\u03b1\u03ca\u03ba\u03ac \u03c7\u03c1\u03b7\u03bc\u03b1\u03c4\u03b9\u03c3\u03c4\u03ae\u03c1\u03b9\u03b1 \u03c5\u03c0\u03bf\u03c7\u03c9\u03c1\u03bf\u03cd\u03bd \u03bc\u03b5\u03c4\u03ac \u03c4\u03b1 \u03bc\u03b9\u03ba\u03c4\u03ac \u03c3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03b1",
-            "seendate": "20261001T170000Z",
-            "socialimage": "https://www.sbctv.gr/wp-content/uploads/2026/10/eyropaika-chrimatistiria.jpg",
-            "domain": "sbctv.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-09T21:23:10.902110+00:00",
+      "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-10-06T21:16:26.978404+00:00",
@@ -505,21 +229,8 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-10-08T21:38:52.587674+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.orientaldaily.com.my/news/nation/2026/10/02/852032",
-            "url_mobile": "",
-            "title": "\u99968\u6708\u8fce2880\u4e07\u56fd\u9645\u65c5\u5ba2 \u65c5\u6e38\u5c40 \uff1a \u5e74\u589e1 . 8 % \u52bf\u5934\u5f3a\u52b2 | \u56fd\u5185",
-            "seendate": "20261002T074500Z",
-            "socialimage": "https://www.orientaldaily.com.my/storage/resize_cache/images/uploads/news-cover/2026/OCT_2026/20261002/WhatsApp_Image_2026-10-02_at_3.01.23_PM.jpeg/a3d1c796009afe1730856187f8af3dca.jpeg",
-            "domain": "orientaldaily.com.my",
-            "language": "Chinese",
-            "sourcecountry": "Malaysia"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-09T21:20:54.155911+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:bankofengland.co.uk": {
       "fetched_at_utc": "2026-09-15T19:57:21.561420+00:00",
@@ -788,61 +499,8 @@
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
-      "fetched_at_utc": "2026-10-08T21:30:16.948454+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.saamana.com/asian-markets-hang-seng-nikkei-us-jobs-data-high-bond-yield-crude-oil-pressure-saamana-online-news/",
-            "url_mobile": "",
-            "title": "Share Market News \u2013 \u0906\u0936\u093f\u092f\u093e\u0908 \u092c\u093e\u091c\u093e\u0930\u093e\u0902\u092e\u0927\u094d\u092f\u0947 \u092e\u094b\u0920\u0940 \u0918\u0938\u0930\u0923 ; \u0924\u0947\u0932\u093e\u091a\u094d\u092f\u093e \u0935\u093e\u0922\u0924\u094d\u092f\u093e \u0915\u093f\u092e\u0924\u0940 \u0906\u0923\u093f \u092c\u0949\u0923\u094d\u0921 \u092f\u0940\u0932\u094d\u0921\u094d\u0938\u091a\u094d\u092f\u093e \u0926\u0941\u0939\u0947\u0930\u0940 \u0926\u092c\u093e\u0935\u093e\u091a\u093e \u092a\u0930\u093f\u0923\u093e\u092e",
-            "seendate": "20261002T083000Z",
-            "socialimage": "",
-            "domain": "saamana.com",
-            "language": "Marathi",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.hankookilbo.com/news/article/A2026100110560003883",
-            "url_mobile": "https://www.hankookilbo.com/news/article/amp/A2026100110560003883",
-            "title": "\uc778\uc704\uc801 \uc11d\uc720 \uac00\uaca9 \ud1b5\uc81c \uc5b8\uc81c\uae4c\uc9c0 - \uc624\ud53c\ub2c8\uc5b8\u3163\ud55c\uad6d\uc77c\ubcf4",
-            "seendate": "20261001T214500Z",
-            "socialimage": "https://newsimg.hankookilbo.com/2026/10/01/bc859a41-9f91-4ff1-8388-50207747c074.jpg",
-            "domain": "hankookilbo.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.chinatimes.com/realtimenews/20261002002365-260410",
-            "url_mobile": "",
-            "title": " \u300a \u65e5\u80a1 \u300b \u7372\u5229\u4e86\u7d50 \u65e5\u7d93\u6307\u6578\u6668\u6536\u8dcc630\u9ede \u5149\u901a\u8a0a3\u96c4\u9006\u52e2\u98c6 - \u8ca1\u7d93",
-            "seendate": "20261002T053000Z",
-            "socialimage": "",
-            "domain": "chinatimes.com",
-            "language": "Chinese",
-            "sourcecountry": "Taiwan"
-          },
-          {
-            "url": "https://www.actionforex.com/live-comments/656111-tokyo-core-cpi-jumps-to-2-7-core-core-hits-3-0-as-price-pressures-broaden/",
-            "url_mobile": "",
-            "title": "Tokyo Core CPI Jumps to 2 . 7 %, Core - Core Hits 3 . 0 % as Price Pressures Broaden",
-            "seendate": "20261002T080000Z",
-            "socialimage": "https://www.actionforex.com/wp-content/uploads/2018/03/f-japan5.jpg",
-            "domain": "actionforex.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.sbctv.gr/2026/10/%CF%80%CE%BB%CE%B7%CE%B8%CF%89%CF%81%CE%B9%CF%83%CE%BC%CE%BF%CF%82-%CF%84%CE%BF%CE%BA%CE%B9%CE%BF-3/",
-            "url_mobile": "",
-            "title": "\u03a0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03cc\u03c2 \u03a4\u03cc\u03ba\u03b9\u03bf \u03ba\u03b1\u03b9 \u03bf\u03b9 \u03b5\u03c0\u03cc\u03bc\u03b5\u03bd\u03b5\u03c2 \u03ba\u03b9\u03bd\u03ae\u03c3\u03b5\u03b9\u03c2 \u03c4\u03b7\u03c2 \u03a4\u03c1\u03ac\u03c0\u03b5\u03b6\u03b1\u03c2 \u0399\u03b1\u03c0\u03c9\u03bd\u03af\u03b1\u03c2",
-            "seendate": "20261002T040000Z",
-            "socialimage": "https://www.sbctv.gr/wp-content/uploads/2026/10/plithorismos-tokio.jpg",
-            "domain": "sbctv.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-09T21:12:32.214033+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:boj.or.jp": {
       "fetched_at_utc": "2026-09-22T19:54:36.780216+00:00",
