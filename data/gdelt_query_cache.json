@@ -1,49 +1,29 @@
 {
-  "updated_at_utc": "2026-10-09T21:23:10.902133+00:00",
+  "updated_at_utc": "2026-10-12T23:27:54.093342+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-07T21:28:54.915662+00:00",
+      "fetched_at_utc": "2026-10-12T23:08:48.544006+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.epochtimes.de/politik/ausland/euro-auf-jahrestief-loest-frankreich-eine-neue-eurokrise-aus-a5628418.html",
+            "url": "https://www.boerse-express.com/news/articles/gold-etf-zufluesse-erreichen-31-milliarden-952008",
             "url_mobile": "",
-            "title": "Euro auf Jahrestief : L\u00f6st Frankreich eine neue Eurokrise aus ? ",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://images-de.epochtimes.de/uploads/2026/10/GettyImages-2280380492.jpg",
-            "domain": "epochtimes.de",
+            "title": "Gold : ETF - Zufl\u00fcsse erreichen 31 Milliarden",
+            "seendate": "20261010T064500Z",
+            "socialimage": "https://www.boerse-express.com/assets/12bcf7022d/gold-etf-zufluesse-erreichen-31-milliarden-952008__FillWzEyMDAsMTIwMF0.jpg",
+            "domain": "boerse-express.com",
             "language": "German",
-            "sourcecountry": "Germany"
+            "sourcecountry": "Austria"
           },
           {
-            "url": "https://www.dailymirror.lk/business-news/Teas-rupee-gains-outpace-dollar-performance/273-351861",
-            "url_mobile": "",
-            "title": "Tea rupee gains outpace dollar performance - Business News",
-            "seendate": "20261006T083000Z",
-            "socialimage": "",
-            "domain": "dailymirror.lk",
+            "url": "https://economictimes.indiatimes.com/markets/commodities/news/brent-commands-a-war-premium-as-middle-east-supply-risks-keep-oil-on-edge/articleshow/134848278.cms",
+            "url_mobile": "https://m.economictimes.com/markets/commodities/news/brent-commands-a-war-premium-as-middle-east-supply-risks-keep-oil-on-edge/amp_articleshow/134848278.cms",
+            "title": "Brent commands a war premium as Middle East supply risks keep oil on edge",
+            "seendate": "20261010T064500Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-134848528,width-1200,height-900,imgsize-20779,overlay-etmarkets/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
             "language": "English",
-            "sourcecountry": "Sri Lanka"
-          },
-          {
-            "url": "https://unternehmen-heute.de/news.php?newsid=6713730",
-            "url_mobile": "",
-            "title": "B\u00f6rse - Tech - Rally zieht Dax zum Start ins Plus - UNTERNEHMEN - HEUTE . de",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://unternehmen-heute.de/newssys/galerie/6713730/6713730_1_690x483.jpg",
-            "domain": "unternehmen-heute.de",
-            "language": "German",
-            "sourcecountry": "Germany"
-          },
-          {
-            "url": "https://www.freitag.de/autoren/the-guardian/scheich-tahnoon-bin-zayed-al-nahyan-wie-viel-macht-hat-dieser-scheich-wirklich",
-            "url_mobile": "",
-            "title": "Scheich Tahnoon bin Zayed Al Nahyan : Wie viel Macht hat dieser Scheich wirklich ? der Freitag",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://www.freitag.de/autoren/the-guardian/scheich-tahnoon-bin-zayed-al-nahyan-wie-viel-macht-hat-dieser-scheich-wirklich/@@images/image/great",
-            "domain": "freitag.de",
-            "language": "German",
-            "sourcecountry": "Germany"
+            "sourcecountry": "India"
           }
         ]
       }
@@ -66,39 +46,16 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-10-08T21:29:04.647140+00:00",
+      "fetched_at_utc": "2026-10-12T23:11:10.791823+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-09T21:11:24.731787+00:00",
+      "fetched_at_utc": "2026-10-12T23:12:09.242339+00:00",
       "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-09T21:12:18.598759+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "http://inews24.com/view/2012132",
-            "url_mobile": "http://m.inews24.com/v/2012132",
-            "title": "\u65e5 , 10\ub144\ubb3c \uad6d\ucc44 \ud45c\uba74\uae08\ub9ac 3 . 1 % \ub85c \uc778\uc0c1",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://image.inews24.com/v1/69b8c25174200c.jpg",
-            "domain": "inews24.com",
-            "language": "Korean",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://www.ibtimes.com.au/japan-nikkei-closes-above-70000-1876319",
-            "url_mobile": "",
-            "title": "Nikkei Tops 70 , 000 at Close , Hits Three - Month High as Wall Street Rally and Cheaper Oil Lift Tokyo Stocks",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://d.ibtimes.com.au/en/full/1895331/10-nikkei-225-stocks-analysts-are-watching-2026.jpg",
-            "domain": "ibtimes.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-12T23:13:06.180408+00:00",
+      "payload": {}
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
       "fetched_at_utc": "2026-10-09T21:14:20.145733+00:00",
@@ -109,19 +66,19 @@
       "payload": {}
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-10-06T21:17:42.076226+00:00",
+      "fetched_at_utc": "2026-10-12T23:18:14.623945+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-08T21:33:51.903035+00:00",
+      "fetched_at_utc": "2026-10-12T23:19:11.934800+00:00",
       "payload": {}
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-10-08T21:35:51.696763+00:00",
+      "fetched_at_utc": "2026-10-12T23:21:14.913513+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-10-09T21:19:19.355154+00:00",
+      "fetched_at_utc": "2026-10-12T23:21:30.119510+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
@@ -145,21 +102,8 @@
       "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-06T21:16:26.978404+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.swindonadvertiser.co.uk/news/26606419.uk-house-price-growth-slows-0-8-per-cent-september/",
-            "url_mobile": "",
-            "title": "UK house price growth slows to 0 . 8 per cent in September",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://www.swindonadvertiser.co.uk/resources/images/19304787.jpg?type=og-image",
-            "domain": "swindonadvertiser.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-12T23:17:56.525750+00:00",
+      "payload": {}
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-10-05T23:02:14.294356+00:00",
@@ -237,126 +181,36 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-02T20:54:18.113367+00:00",
+      "fetched_at_utc": "2026-10-12T23:09:44.765249+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.fnnews.com/news/202610020036456158",
+            "url": "https://www.newsandsentinel.com/opinion/local-columns/2026/10/mid-ohio-valley-climate-corner-vote-not-just-for-climate-but-affordability/",
             "url_mobile": "",
-            "title": "\u7f8e\uc5f0\uc900 \uce74\uc2dc\uce74\ub9ac  \ubb3c\uac00 \uc7a1\uae30 \uc704\ud574 \uae08\ub9ac \uc5bc\ub9c8\ub098 \uc62c\ub9b4\uc9c0\uac00 \ubb38\uc81c  ",
-            "seendate": "20261001T214500Z",
-            "socialimage": "https://image.fnnews.com/resource/media/image/2026/10/02/202610020036427951_e.jpg",
-            "domain": "fnnews.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "http://www.zerohedge.com/markets/opposite-what-youre-told-markets-dont-wait-fed",
-            "url_mobile": "",
-            "title": "Opposite What Youre Told , Markets Dont Wait For The Fed",
-            "seendate": "20261001T190000Z",
-            "socialimage": "https://cms.zerohedge.com/s3/files/styles/16_9_max_700/public/2026-09/Screenshot%202026-09-29%20at%2011-00-15%20Create%20tease%20image.png?itok=ckikBJS0",
-            "domain": "zerohedge.com",
+            "title": "Mid - Ohio Valley Climate Corner : Vote not just for climate , but affordability",
+            "seendate": "20261010T064500Z",
+            "socialimage": "https://ogden_images.s3.amazonaws.com/www.newsandsentinel.com/images/2026/01/08161315/Image-MOV-Climate-Corner-2.jpg",
+            "domain": "newsandsentinel.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.zerohedge.com/markets/opposite-what-youre-told-markets-dont-wait-fed",
+            "url": "http://www.gazettextra.com/news/nation_world/ap-news-in-brief-at-12-04-a-m-edt/article_f833cdbb-ff2e-5f42-965b-9b371c884967.html",
             "url_mobile": "",
-            "title": "Opposite What Youre Told , Markets Dont Wait For The Fed",
-            "seendate": "20261001T153000Z",
-            "socialimage": "https://cms.zerohedge.com/s3/files/styles/16_9_max_700/public/2026-09/Screenshot%202026-09-29%20at%2011-00-15%20Create%20tease%20image.png?itok=ckikBJS0",
-            "domain": "zerohedge.com",
+            "title": "AP News in Brief at 12 : 04 a . m . EDT",
+            "seendate": "20261010T064500Z",
+            "socialimage": "https://bloximages.newyork1.vip.townnews.com/gazettextra.com/content/tncms/custom/image/bd5993ec-56a6-11ec-a43c-8f7b005e099d.jpg",
+            "domain": "gazettextra.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://biz.heraldcorp.com/article/10891183",
+            "url": "https://www.woonsocketcall.com/news/national_and_world_news/ap-news-in-brief-at-12-04-a-m-edt/article_e52b742b-83ac-53a0-80bc-a4829bcbc907.html",
             "url_mobile": "",
-            "title": "\u7f8e\uc5f0\uc900 \uce74\uc2dc\uce74\ub9ac  \uc778\ud50c\ub808 \uc7a1\uae30 \uc704\ud574 \uae08\ub9ac \uc5bc\ub9c8\ub098 \uc62c\ub9b4\uc9c0\uac00 \ubb38\uc81c  ",
-            "seendate": "20261001T214500Z",
-            "socialimage": "https://wimg.heraldcorp.com/news/cms/2026/10/02/news-p.v1.20261002.50bde4338f64413ba15aa84e4d5fdce4_P1.jpg",
-            "domain": "biz.heraldcorp.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "http://www.econotimes.com/Feds-Logan-Signals-50-Basis-Points-More-in-Rate-Hikes-1753780",
-            "url_mobile": "",
-            "title": "Fed Logan Signals 50 Basis Points More in Rate Hikes",
-            "seendate": "20261002T084500Z",
-            "socialimage": "https://f1.econotimes.com/2025/02/l3c4ybimlw.jpg",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://wwmt.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
-            "url_mobile": "",
-            "title": "Stubborn inflation and consistent growth shift Fed debate to timing of next hike",
-            "seendate": "20260930T193000Z",
-            "socialimage": "https://wwmt.com/resources/media2/16x9/8192/1320/0x1/90/8ee95586-83e7-46d9-ac66-75da3f589f7c-GettyImages2288353363.jpg",
-            "domain": "wwmt.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://abc6onyourside.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
-            "url_mobile": "",
-            "title": "Stubborn inflation and consistent growth shift Fed debate to timing of next hike",
-            "seendate": "20260930T193000Z",
-            "socialimage": "https://abc6onyourside.com/resources/media2/16x9/8192/1320/0x1/90/8ee95586-83e7-46d9-ac66-75da3f589f7c-GettyImages2288353363.jpg",
-            "domain": "abc6onyourside.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.kitco.com/news/off-the-wire/2026-10-01/fed-officials-wash-away-market-bets-october-rate-increase",
-            "url_mobile": "",
-            "title": "Fed officials wash away market bets on October rate increase",
-            "seendate": "20261001T230000Z",
-            "socialimage": "https://image-api.prod.kitco.com/image/a8c61b15-b8e3-48e2-a4b5-09fed9190dc1.webp?top=0.20417422867514&left=0&.59165154265&scale_width=1920&token=f54dab97631364983555bad93db48be624efdcd53bbd7d015d2f7317d6581014",
-            "domain": "kitco.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://ktul.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
-            "url_mobile": "",
-            "title": "Stubborn inflation and consistent growth shift Fed debate to timing of next hike",
-            "seendate": "20261001T173000Z",
-            "socialimage": "https://ktul.com/resources/media2/16x9/8192/1320/0x1/90/8ee95586-83e7-46d9-ac66-75da3f589f7c-GettyImages2288353363.jpg",
-            "domain": "ktul.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.fnnews.com/news/202610021405524466",
-            "url_mobile": "",
-            "title": "\uc6cc\uc2dc\ub294 \uae08\ub9ac \uc608\uace0 \uc904\uc774\ub294\ub370 \u2026 \uc5f0\uc900 \uc778\uc0ac\ub4e4  \ucd94\uac00 \uc778\uc0c1 , \uc2dc\uc7a5\uc740 10\uc6d4 \ub3d9\uacb0 \ucabd",
-            "seendate": "20261002T060000Z",
-            "socialimage": "https://image.fnnews.com/resource/media/image/2026/10/02/202610021405450315_e.jpg",
-            "domain": "fnnews.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/fed-policymakers-lean-against-october-rate-hike",
-            "url_mobile": "",
-            "title": "Fed policymakers lean against October rate hike",
-            "seendate": "20261002T080000Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/b5da231e147ea9e1aa9e61ee3d2971840821422fd02b31a088807c91bacb0fc5?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://fox11online.com/news/nation-world/stubborn-inflation-and-consistent-growth-shift-federal-reserve-debate-to-timing-of-next-hike-economy-gdp-pce-consumer-spending",
-            "url_mobile": "",
-            "title": "Stubborn inflation and consistent growth shift Fed debate to timing of next hike",
-            "seendate": "20260930T193000Z",
-            "socialimage": "https://fox11online.com/resources/media2/16x9/8192/1320/0x1/90/8ee95586-83e7-46d9-ac66-75da3f589f7c-GettyImages2288353363.jpg",
-            "domain": "fox11online.com",
+            "title": "AP News in Brief at 12 : 04 a . m . EDT",
+            "seendate": "20261010T064500Z",
+            "socialimage": "https://bloximages.newyork1.vip.townnews.com/woonsocketcall.com/content/tncms/custom/image/9c2d53b0-bba9-11ee-bab5-7f9eb3465271.png",
+            "domain": "woonsocketcall.com",
             "language": "English",
             "sourcecountry": "United States"
           }
@@ -364,81 +218,8 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-08T21:31:39.818443+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://time.mk/ai/f8fb5ead76/mk/",
-            "url_mobile": "",
-            "title": "Time . ai",
-            "seendate": "20261006T083000Z",
-            "socialimage": "",
-            "domain": "time.mk",
-            "language": "Macedonian",
-            "sourcecountry": "Macedonia"
-          },
-          {
-            "url": "https://plusinfo.mk/ecb-ochekuva-nov-energetski-shok-se-stravuva-deka-rastot-na-cenite-na-energensite-e-se-prelee-na-drugite-ceni/",
-            "url_mobile": "",
-            "title": "\u0415\u0426\u0411 \u041e\u0427\u0415\u041a\u0423\u0412\u0410 \u041d\u041e\u0412 \u0415\u041d\u0415\u0420\u0413\u0415\u0422\u0421\u041a\u0418 \u0428\u041e\u041a \u0421\u0435 \u0441\u0442\u0440\u0430\u0432\u0443\u0432\u0430 \u0434\u0435\u043a\u0430 \u0440\u0430\u0441\u0442\u043e\u0442 \u043d\u0430 \u0446\u0435\u043d\u0438\u0442\u0435 \u043d\u0430 \u0435\u043d\u0435\u0440\u0433\u0435\u043d\u0441\u0438\u0442\u0435 \u045c\u0435 \u0441\u0435 \u043f\u0440\u0435\u043b\u0435\u0435 \u043d\u0430 \u0434\u0440\u0443\u0433\u0438\u0442\u0435 \u0446\u0435\u043d\u0438",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://plusinfo.mk/wp-content/uploads/2026/04/ECB.jpg",
-            "domain": "plusinfo.mk",
-            "language": "Macedonian",
-            "sourcecountry": "Macedonia"
-          },
-          {
-            "url": "https://www.investor.bg/a/515-ikonomika-i-makrodanni/437559-germanskite-fabrichni-porachki-se-srivat-nanasyayki-udar-na-vazstanovyavaneto-na-stranata",
-            "url_mobile": "",
-            "title": "\u0413\u0435\u0440\u043c\u0430\u043d\u0441\u043a\u0438\u0442\u0435 \u0444\u0430\u0431\u0440\u0438\u0447\u043d\u0438 \u043f\u043e\u0440\u044a\u0447\u043a\u0438 \u0441\u0435 \u0441\u0440\u0438\u0432\u0430\u0442 , \u043d\u0430\u043d\u0430\u0441\u044f\u0439\u043a\u0438 \u0443\u0434\u0430\u0440 \u043d\u0430 \u0432\u044a\u0437\u0441\u0442\u0430\u043d\u043e\u0432\u044f\u0432\u0430\u043d\u0435\u0442\u043e \u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0430\u0442\u0430",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://www.investor.bg/media/files/resized/article/1280x720/730/9b66d54dc788512262645840fe46a730-470008833.jpg",
-            "domain": "investor.bg",
-            "language": "Bulgarian",
-            "sourcecountry": "Bulgaria"
-          },
-          {
-            "url": "https://www.naftemporiki.gr/finance/markets/2171215/to-galliko-chreos-pnigei-to-eyro-vythizetai-to-nomisma-fygi-sto-dolario/",
-            "url_mobile": "",
-            "title": "\u03a4\u03bf \u03b3\u03b1\u03bb\u03bb\u03b9\u03ba\u03cc \u03c7\u03c1\u03ad\u03bf\u03c2 \u00ab \u03c0\u03bd\u03af\u03b3\u03b5\u03b9 \u00bb \u03c4\u03bf \u03b5\u03c5\u03c1\u03ce : \u0392\u03c5\u03b8\u03af\u03b6\u03b5\u03c4\u03b1\u03b9 \u03c4\u03bf \u03bd\u03cc\u03bc\u03b9\u03c3\u03bc\u03b1 , \u03c6\u03c5\u03b3\u03ae \u03c3\u03c4\u03bf \u03b4\u03bf\u03bb\u03ac\u03c1\u03b9\u03bf",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://www.naftemporiki.gr/wp-content/uploads/2026/10/euro-vithizetai.jpg",
-            "domain": "naftemporiki.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://vz.ru/news/2026/10/6/1459337.html",
-            "url_mobile": "https://vz.ru/amp/news/2026/10/6/1459337.html",
-            "title": "\u0420\u043e\u0441\u0442 \u0434\u043e\u043b\u0433\u0430 \u0424\u0440\u0430\u043d\u0446\u0438\u0438 \u0443\u0441\u0438\u043b\u0438\u043b \u0440\u0438\u0441\u043a\u0438 \u043d\u043e\u0432\u043e\u0433\u043e \u043a\u0440\u0438\u0437\u0438\u0441\u0430 \u0435\u0432\u0440\u043e\u0437\u043e\u043d\u044b :: \u041d\u043e\u0432\u043e\u0441\u0442\u0438 \u0434\u043d\u044f / \u0412\u0417\u0413\u041b\u042f\u0414",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://img.vz.ru/upimg/soc/soc_1459337.png",
-            "domain": "vz.ru",
-            "language": "Russian",
-            "sourcecountry": "Russia"
-          },
-          {
-            "url": "https://www.cityam.com/old-fault-lines-are-threatening-to-rock-the-eurozone/",
-            "url_mobile": "",
-            "title": "Old fault lines are threatening to rock the Eurozone",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://www.cityam.com/wp-content/uploads/2026/10/Eurozone-e1791217412850.jpg",
-            "domain": "cityam.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.epochtimes.de/politik/ausland/euro-auf-jahrestief-loest-frankreich-eine-neue-eurokrise-aus-a5628418.html",
-            "url_mobile": "",
-            "title": "Euro auf Jahrestief : L\u00f6st Frankreich eine neue Eurokrise aus ? ",
-            "seendate": "20261006T083000Z",
-            "socialimage": "https://images-de.epochtimes.de/uploads/2026/10/GettyImages-2280380492.jpg",
-            "domain": "epochtimes.de",
-            "language": "German",
-            "sourcecountry": "Germany"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-12T23:15:44.600496+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:ecb.europa.eu": {
       "fetched_at_utc": "2026-09-28T22:23:57.007320+00:00",
@@ -468,31 +249,8 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-10-06T21:25:57.107302+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.snb.ch/en/publications/quarterly-bulletin/2026/quartbul_2026_3_komplett",
-            "url_mobile": "",
-            "title": "Quarterly Bulletin 3 / 2026",
-            "seendate": "20260930T144500Z",
-            "socialimage": "",
-            "domain": "snb.ch",
-            "language": "English",
-            "sourcecountry": "Switzerland"
-          },
-          {
-            "url": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20261001",
-            "url_mobile": "",
-            "title": "FDF and SNB enter into new profit distribution agreement",
-            "seendate": "20261001T194500Z",
-            "socialimage": "",
-            "domain": "snb.ch",
-            "language": "English",
-            "sourcecountry": "Switzerland"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-12T23:27:54.093320+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
       "fetched_at_utc": "2026-10-08T21:39:49.469510+00:00",
