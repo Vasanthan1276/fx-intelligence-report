@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-12T23:27:54.093342+00:00",
+  "updated_at_utc": "2026-10-13T21:41:49.165432+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-10-12T23:08:48.544006+00:00",
@@ -29,9 +29,29 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-10-09T21:09:29.914933+00:00",
+      "fetched_at_utc": "2026-10-13T21:28:06.077569+00:00",
       "payload": {
         "articles": [
+          {
+            "url": "https://www.turkiyegazetesi.com.tr/tasarruf-ortagim/altinda-en-kritik-carsamba-fiyatlarin-yonu-icin-kirilma-haftasi-1821747",
+            "url_mobile": "",
+            "title": "Alt\u0131nda en kritik \u00e7ar\u015famba ! Fiyatlar\u0131n y\u00f6n\u00fc i\u00e7in k\u0131r\u0131lma haftas\u0131",
+            "seendate": "20261010T064500Z",
+            "socialimage": "https://i.turkiyegazetesi.com.tr/images/2026/10/10/altinda-en-kritik-carsamba-fiyatlarin-yonu-icin-kirilma-haftasi-1821747_20261010085613.jpg",
+            "domain": "turkiyegazetesi.com.tr",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://townhall.com/columnists/pauldriessen/2026/10/10/we-must-embrace-not-pause-ai-and-data-centers-n2684451",
+            "url_mobile": "",
+            "title": "We Must Embrace , Not Pause , AI and Data Centers",
+            "seendate": "20261010T064500Z",
+            "socialimage": "https://media.townhall.com/cdn/hodl/2026/257/e5b13212-9b58-4d8b-8286-3a967cb847a2-1200x630.jpg",
+            "domain": "townhall.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
           {
             "url": "https://www.wmdt.com/2026/10/gov-meyer-signs-housing-development-reform-bills/",
             "url_mobile": "",
@@ -46,7 +66,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-10-12T23:11:10.791823+00:00",
+      "fetched_at_utc": "2026-10-13T21:28:35.472439+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -54,11 +74,11 @@
       "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-12T23:13:06.180408+00:00",
+      "fetched_at_utc": "2026-10-13T21:29:52.658116+00:00",
       "payload": {}
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
-      "fetched_at_utc": "2026-10-09T21:14:20.145733+00:00",
+      "fetched_at_utc": "2026-10-13T21:31:50.477242+00:00",
       "payload": {}
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
@@ -66,7 +86,7 @@
       "payload": {}
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-10-12T23:18:14.623945+00:00",
+      "fetched_at_utc": "2026-10-13T21:34:53.338195+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
@@ -74,7 +94,7 @@
       "payload": {}
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-10-12T23:21:14.913513+00:00",
+      "fetched_at_utc": "2026-10-13T21:37:06.872726+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
@@ -86,7 +106,7 @@
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-09T21:19:51.758932+00:00",
+      "fetched_at_utc": "2026-10-13T21:39:04.607742+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
@@ -94,11 +114,11 @@
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-09T21:22:56.883255+00:00",
+      "fetched_at_utc": "2026-10-13T21:41:29.823258+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-10-09T21:23:10.902110+00:00",
+      "fetched_at_utc": "2026-10-13T21:41:49.165412+00:00",
       "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
@@ -173,7 +193,7 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-10-09T21:20:54.155911+00:00",
+      "fetched_at_utc": "2026-10-13T21:39:27.263509+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:bankofengland.co.uk": {
@@ -181,7 +201,7 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-12T23:09:44.765249+00:00",
+      "fetched_at_utc": "2026-10-13T21:27:10.267545+00:00",
       "payload": {
         "articles": [
           {
@@ -218,7 +238,7 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-12T23:15:44.600496+00:00",
+      "fetched_at_utc": "2026-10-13T21:31:34.406182+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:ecb.europa.eu": {
@@ -253,11 +273,11 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-10-08T21:39:49.469510+00:00",
+      "fetched_at_utc": "2026-10-13T21:39:57.946487+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
-      "fetched_at_utc": "2026-10-09T21:12:32.214033+00:00",
+      "fetched_at_utc": "2026-10-13T21:30:03.851295+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:boj.or.jp": {
