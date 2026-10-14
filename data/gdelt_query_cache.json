@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-13T21:41:49.165432+00:00",
+  "updated_at_utc": "2026-10-14T20:35:42.295446+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-10-12T23:08:48.544006+00:00",
@@ -29,7 +29,7 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-10-13T21:28:06.077569+00:00",
+      "fetched_at_utc": "2026-10-14T20:19:41.638660+00:00",
       "payload": {
         "articles": [
           {
@@ -66,11 +66,11 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-10-13T21:28:35.472439+00:00",
+      "fetched_at_utc": "2026-10-14T20:20:45.355219+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-12T23:12:09.242339+00:00",
+      "fetched_at_utc": "2026-10-14T20:21:30.053836+00:00",
       "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
@@ -82,11 +82,11 @@
       "payload": {}
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-09T21:14:36.665316+00:00",
+      "fetched_at_utc": "2026-10-14T20:26:44.771653+00:00",
       "payload": {}
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-10-13T21:34:53.338195+00:00",
+      "fetched_at_utc": "2026-10-14T20:28:17.826384+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
@@ -94,35 +94,35 @@
       "payload": {}
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-10-13T21:37:06.872726+00:00",
+      "fetched_at_utc": "2026-10-14T20:30:19.227722+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-10-12T23:21:30.119510+00:00",
+      "fetched_at_utc": "2026-10-14T20:30:57.398754+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-09T21:19:33.944326+00:00",
+      "fetched_at_utc": "2026-10-14T20:31:20.774525+00:00",
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-13T21:39:04.607742+00:00",
+      "fetched_at_utc": "2026-10-14T20:31:57.241413+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-07T21:40:45.978043+00:00",
+      "fetched_at_utc": "2026-10-14T20:34:54.231120+00:00",
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-13T21:41:29.823258+00:00",
+      "fetched_at_utc": "2026-10-14T20:35:28.195566+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-10-13T21:41:49.165412+00:00",
+      "fetched_at_utc": "2026-10-14T20:35:42.295428+00:00",
       "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-12T23:17:56.525750+00:00",
+      "fetched_at_utc": "2026-10-14T20:27:51.021745+00:00",
       "payload": {}
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
@@ -193,7 +193,7 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-10-13T21:39:27.263509+00:00",
+      "fetched_at_utc": "2026-10-14T20:33:21.711209+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:bankofengland.co.uk": {
@@ -201,41 +201,8 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-13T21:27:10.267545+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.newsandsentinel.com/opinion/local-columns/2026/10/mid-ohio-valley-climate-corner-vote-not-just-for-climate-but-affordability/",
-            "url_mobile": "",
-            "title": "Mid - Ohio Valley Climate Corner : Vote not just for climate , but affordability",
-            "seendate": "20261010T064500Z",
-            "socialimage": "https://ogden_images.s3.amazonaws.com/www.newsandsentinel.com/images/2026/01/08161315/Image-MOV-Climate-Corner-2.jpg",
-            "domain": "newsandsentinel.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.gazettextra.com/news/nation_world/ap-news-in-brief-at-12-04-a-m-edt/article_f833cdbb-ff2e-5f42-965b-9b371c884967.html",
-            "url_mobile": "",
-            "title": "AP News in Brief at 12 : 04 a . m . EDT",
-            "seendate": "20261010T064500Z",
-            "socialimage": "https://bloximages.newyork1.vip.townnews.com/gazettextra.com/content/tncms/custom/image/bd5993ec-56a6-11ec-a43c-8f7b005e099d.jpg",
-            "domain": "gazettextra.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.woonsocketcall.com/news/national_and_world_news/ap-news-in-brief-at-12-04-a-m-edt/article_e52b742b-83ac-53a0-80bc-a4829bcbc907.html",
-            "url_mobile": "",
-            "title": "AP News in Brief at 12 : 04 a . m . EDT",
-            "seendate": "20261010T064500Z",
-            "socialimage": "https://bloximages.newyork1.vip.townnews.com/woonsocketcall.com/content/tncms/custom/image/9c2d53b0-bba9-11ee-bab5-7f9eb3465271.png",
-            "domain": "woonsocketcall.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-14T20:19:25.194193+00:00",
+      "payload": {}
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-10-13T21:31:34.406182+00:00",
