@@ -1,29 +1,129 @@
 {
-  "updated_at_utc": "2026-10-14T20:35:42.295446+00:00",
+  "updated_at_utc": "2026-10-15T20:19:05.600094+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-12T23:08:48.544006+00:00",
+      "fetched_at_utc": "2026-10-15T19:59:27.749193+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.boerse-express.com/news/articles/gold-etf-zufluesse-erreichen-31-milliarden-952008",
+            "url": "https://www.euronews.com/2026/10/15/euro-slides-to-fresh-lows-against-us-dollar-and-british-pound-despite-ecb-rate-hikes",
             "url_mobile": "",
-            "title": "Gold : ETF - Zufl\u00fcsse erreichen 31 Milliarden",
-            "seendate": "20261010T064500Z",
-            "socialimage": "https://www.boerse-express.com/assets/12bcf7022d/gold-etf-zufluesse-erreichen-31-milliarden-952008__FillWzEyMDAsMTIwMF0.jpg",
-            "domain": "boerse-express.com",
-            "language": "German",
-            "sourcecountry": "Austria"
+            "title": "Euro slides to fresh lows against US dollar and British pound despite ECB rate hikes",
+            "seendate": "20261015T153000Z",
+            "socialimage": "https://images.euronews.com/articles/stories/09/95/34/83/1200x675_cmsv2_6779aa0a-0c9e-5556-a48c-2bae38d54fcb-9953483.jpg",
+            "domain": "euronews.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://economictimes.indiatimes.com/markets/commodities/news/brent-commands-a-war-premium-as-middle-east-supply-risks-keep-oil-on-edge/articleshow/134848278.cms",
-            "url_mobile": "https://m.economictimes.com/markets/commodities/news/brent-commands-a-war-premium-as-middle-east-supply-risks-keep-oil-on-edge/amp_articleshow/134848278.cms",
-            "title": "Brent commands a war premium as Middle East supply risks keep oil on edge",
-            "seendate": "20261010T064500Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-134848528,width-1200,height-900,imgsize-20779,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
+            "url": "https://www.aol.co.uk/articles/euro-slides-fresh-lows-against-122534000.html",
+            "url_mobile": "",
+            "title": "Euro slides to fresh lows against US dollar and British pound despite ECB rate hikes",
+            "seendate": "20261015T131500Z",
+            "socialimage": "https://hermes.media.static.aol.com/media/2026/10/15/8f204e58-0736-33d4-b70d-43b6802a18e8/35749618-401a-4d90-ad63-08fd2d2097c4.jpg",
+            "domain": "aol.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.boerse-online.de/nachrichten/rohstoffe/bitcoin-groesste-kursexplosion-aller-zeiten-und-trotzdem-weniger-schwankung-20417818.html",
+            "url_mobile": "",
+            "title": "Bitcoin : Grte Kursexplosion aller Zeiten und trotzdem weniger Schwankung ? ",
+            "seendate": "20261015T183000Z",
+            "socialimage": "https://images.boersenmedien.com/images/5a117647-3f72-4d44-804b-6b51bbfe9a69.jpg",
+            "domain": "boerse-online.de",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.aktiencheck.de/kolumnen/Artikel-Kryptowaehrungen_Bitcoin_trotzt_Gegenwind-20174229",
+            "url_mobile": "",
+            "title": "Kryptow\u00e4hrungen : \u201e Bitcoin trotzt dem Gegenwind  () ",
+            "seendate": "20261015T141500Z",
+            "socialimage": "",
+            "domain": "aktiencheck.de",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://zalebs.com/business/naira-edges-higher-against-dollar-at-nigerias-official-fx-window/",
+            "url_mobile": "",
+            "title": "Naira Gains Slightly as Nigeria Official FX Rate Improves",
+            "seendate": "20261015T164500Z",
+            "socialimage": "https://zalebs.com/wp-content/uploads/2026/10/dollar-naira-exchange-rate-today-fb6f.webp",
+            "domain": "zalebs.com",
+            "language": "English",
+            "sourcecountry": "South Africa"
+          },
+          {
+            "url": "https://www.finanzen.net/nachricht/aktien/flucht-in-defensive-coca-cola-aktie-mit-allzeithoch-warum-zins-und-ki-sorgen-anleger-zum-getraenkehersteller-treiben-00-15986822",
+            "url_mobile": "",
+            "title": "Coca - Cola - Aktie an der NYSE mit Rekordhoch : Rotation in defensive Aktien treibt den Kurs",
+            "seendate": "20261015T141500Z",
+            "socialimage": "",
+            "domain": "finanzen.net",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.finanzen.net/nachricht/devisen/bitcoin-faellt-voruebergehend-unter-80-000-us-dollar-schwaeche-im-tech-sektor-15987794",
+            "url_mobile": "",
+            "title": "Bitcoin f\u00e4llt vor\u00fcbergehend unter 80 . 000 US - Dollar - Schw\u00e4che im Tech - Sektor",
+            "seendate": "20261015T161500Z",
+            "socialimage": "",
+            "domain": "finanzen.net",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.wallstreet-online.de/nachricht/21528238-cyberleek-meldet-zurueck-gta-vi-leaks-richtig-brisant",
+            "url_mobile": "",
+            "title": "Cyberleek meldet sich zur\u00fcck : Neue GTA - VI - Leaks : Jetzt wird es richtig brisant | wallstreetONLINE",
+            "seendate": "20261015T123000Z",
+            "socialimage": "https://assets.wallstreet-online.de/_media/22033/unternehmen/size_1280/grand-theft-auto-vi-1.webp",
+            "domain": "wallstreet-online.de",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://de.euronews.com/2026/10/15/euro-fallt-auf-neue-tiefstande-gegenuber-dollar-und-pfund-trotz-ezb-zinserhohungen",
+            "url_mobile": "",
+            "title": "Euro f\u00e4llt auf neue Tiefst\u00e4nde gegen\u00fcber Dollar und Pfund trotz EZB - Zinserh\u00f6hungen",
+            "seendate": "20261015T153000Z",
+            "socialimage": "https://images.euronews.com/articles/stories/09/95/34/83/1200x675_cmsv2_6779aa0a-0c9e-5556-a48c-2bae38d54fcb-9953483.jpg",
+            "domain": "de.euronews.com",
+            "language": "German",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.prokerala.com/news/articles/a1824919.html",
+            "url_mobile": "",
+            "title": "RBI clarifies scope and calculation of Foreign Exchange Risk Reserve",
+            "seendate": "20261015T151500Z",
+            "socialimage": "",
+            "domain": "prokerala.com",
             "language": "English",
             "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.financial-news.co.uk/hong-kong-just-raised-rates-into-a-year-of-strong-economic-growth/",
+            "url_mobile": "",
+            "title": "Hong Kong just raised rates into a year of strong economic growth",
+            "seendate": "20261015T114500Z",
+            "socialimage": "",
+            "domain": "financial-news.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69850080-dax-legt-zu-technologiewerte-unter-druck-003.htm",
+            "url_mobile": "",
+            "title": "Dax legt zu - Technologiewerte unter Druck",
+            "seendate": "20261015T161500Z",
+            "socialimage": "https://www.finanznachrichten.de/content/g/fb.png",
+            "domain": "finanznachrichten.de",
+            "language": "German",
+            "sourcecountry": "Germany"
           }
         ]
       }
@@ -70,12 +170,58 @@
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-14T20:21:30.053836+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-10-15T20:03:43.355057+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/greenback-eases-18-month-high-us-treasury-yields-fall-fed-hike-bets-ease",
+            "url_mobile": "",
+            "title": "Greenback eases from 18 - month high as US Treasury yields fall ; Fed hike bets ease",
+            "seendate": "20261015T140000Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/af0c34b5bb1dbc342b6c499612d48b6148a3d110a8f88792108ea7cf7e742d37?&f=webp",
+            "domain": "businesstimes.com.sg",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          }
+        ]
+      }
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-13T21:29:52.658116+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-10-15T20:04:19.858064+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/15/india-expected-to-overtake-japan-as-world039s-4th-largest-economy-in-2027-imf",
+            "url_mobile": "",
+            "title": "India expected to overtake Japan as world 4th largest economy in 2027 : IMF",
+            "seendate": "20261015T160000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/10/15/4164138.JPG",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://thefrontierpost.com/india-expected-to-overtake-japan-as-worlds-4th-largest-economy-in-2027-imf/",
+            "url_mobile": "https://thefrontierpost.com/india-expected-to-overtake-japan-as-worlds-4th-largest-economy-in-2027-imf/amp/",
+            "title": "India expected to overtake Japan as world 4th largest economy in 2027 : IMF \u2013 The Frontier Post",
+            "seendate": "20261015T183000Z",
+            "socialimage": "https://jetpack.com/redirect/?source=sigenerate&query=t%3DeyJpbWciOiJodHRwczpcL1wvdGhlZnJvbnRpZXJwb3N0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNlwvMTBcL211bWJhaS1za3lsaW5lMTc5MjA4MzAzNC0wLTY0MHg0ODAtMS53ZWJwIiwidHh0IjoiSW5kaWEgZXhwZWN0ZWQgdG8gb3ZlcnRha2UgSmFwYW4gYXMgd29ybGQmIzgyMTc7cyA0dGggbGFyZ2VzdCBlY29ub215IGluIDIwMjc6IElNRiIsInRlbXBsYXRlIjoiaGlnaHdheSIsImZvbnQiOiIiLCJibG9nX2lkIjoxMzc1ODIzNDN9.-exguiVwEx1CDGVLTn_vyTcP_p3iv4yunGk4WmzHrdoMQ",
+            "domain": "thefrontierpost.com",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.deccanchronicle.com/business/fm-attends-world-bank-imf-annual-meetings-g-20-and-g7-finance-ministers-meet-in-bangkok-1996097",
+            "url_mobile": "https://www.deccanchronicle.com/amp/business/fm-attends-world-bank-imf-annual-meetings-g-20-and-g7-finance-ministers-meet-in-bangkok-1996097",
+            "title": "FM Attends World Bank - IMF Annual Meetings , G - 20 and G7 Finance Ministers Meet In Bangkok",
+            "seendate": "20261015T140000Z",
+            "socialimage": "https://www.deccanchronicle.com/h-upload/2026/10/15/2101125-untitled-design-18.jpg",
+            "domain": "deccanchronicle.com",
+            "language": "English",
+            "sourcecountry": "India"
+          }
+        ]
+      }
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
       "fetched_at_utc": "2026-10-13T21:31:50.477242+00:00",
@@ -90,8 +236,41 @@
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-12T23:19:11.934800+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-10-15T20:11:40.814085+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.akm.ru/news/tsb_rf_ustanovil_na_16_oktyabrya_2026_goda_kursy_inostrannykh_valyut_k_rublyu/",
+            "url_mobile": "",
+            "title": "\u0426\u0411 \u0420\u0424 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b \u043d\u0430 16 \u043e\u043a\u0442\u044f\u0431\u0440\u044f 2026 \u0433\u043e\u0434\u0430 \u043a\u0443\u0440\u0441\u044b \u0438\u043d\u043e\u0441\u0442\u0440\u0430\u043d\u043d\u044b\u0445 \u0432\u0430\u043b\u044e\u0442 \u043a \u0440\u0443\u0431\u043b\u044e",
+            "seendate": "20261015T154500Z",
+            "socialimage": "https://www.akm.ru/upload/iblock/344/ib3ikr3bjilivs6ulkprw80z6u10j4u5/TSB-Bank-Rossii-TSentrobank-rezervy.jpg",
+            "domain": "akm.ru",
+            "language": "Russian",
+            "sourcecountry": "Russia"
+          },
+          {
+            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/greenback-eases-18-month-high-us-treasury-yields-fall-fed-hike-bets-ease",
+            "url_mobile": "",
+            "title": "Greenback eases from 18 - month high as US Treasury yields fall ; Fed hike bets ease",
+            "seendate": "20261015T140000Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/af0c34b5bb1dbc342b6c499612d48b6148a3d110a8f88792108ea7cf7e742d37?&f=webp",
+            "domain": "businesstimes.com.sg",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://www.actionforex.com/action-insight/market-overview/657648-hot-us-ppi-fails-to-lift-yields-as-ai-credit-fears-put-nasdaq-at-a-tipping-point/",
+            "url_mobile": "",
+            "title": "Hot US PPI Fails to Lift Yields as AI Credit Fears Put Nasdaq at a Tipping Point",
+            "seendate": "20261015T144500Z",
+            "socialimage": "https://www.actionforex.com/wp-content/uploads/2026/10/f-special200.jpg",
+            "domain": "actionforex.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          }
+        ]
+      }
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
       "fetched_at_utc": "2026-10-14T20:30:19.227722+00:00",
@@ -102,7 +281,7 @@
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-14T20:31:20.774525+00:00",
+      "fetched_at_utc": "2026-10-15T20:14:39.166384+00:00",
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
@@ -114,11 +293,11 @@
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-14T20:35:28.195566+00:00",
+      "fetched_at_utc": "2026-10-15T20:18:30.075398+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-10-14T20:35:42.295428+00:00",
+      "fetched_at_utc": "2026-10-15T20:19:05.600074+00:00",
       "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
@@ -209,38 +388,15 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:ecb.europa.eu": {
-      "fetched_at_utc": "2026-09-28T22:23:57.007320+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260928~a875675544.en.html",
-            "url_mobile": "",
-            "title": "Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
-            "seendate": "20260928T163000Z",
-            "socialimage": "",
-            "domain": "ecb.europa.eu",
-            "language": "English",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2026/html/ecb.ebbox202606_03~93f1f1d53c.en.html",
-            "url_mobile": "",
-            "title": "Main results of the latest euro area demographic projections",
-            "seendate": "20260924T083000Z",
-            "socialimage": "",
-            "domain": "ecb.europa.eu",
-            "language": "English",
-            "sourcecountry": "Greece"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-15T20:08:26.554257+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
       "fetched_at_utc": "2026-10-12T23:27:54.093320+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-10-13T21:39:57.946487+00:00",
+      "fetched_at_utc": "2026-10-15T20:17:14.411384+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
