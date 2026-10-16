@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-15T20:20:02.315874+00:00",
+  "generated_at_utc": "2026-10-16T19:53:26.666913+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -29,11 +29,11 @@
       "directional_accuracy_pct": 45.5
     },
     "10": {
-      "directional_calls": 11,
+      "directional_calls": 13,
       "correct": 5,
-      "incorrect": 6,
-      "neutral_move": 0,
-      "directional_accuracy_pct": 45.5
+      "incorrect": 7,
+      "neutral_move": 1,
+      "directional_accuracy_pct": 41.7
     }
   },
   "by_currency": {
@@ -53,10 +53,10 @@
         "directional_accuracy_pct": 100.0
       },
       "10": {
-        "directional_calls": 3,
+        "directional_calls": 4,
         "correct": 2,
         "incorrect": 1,
-        "neutral_move": 0,
+        "neutral_move": 1,
         "directional_accuracy_pct": 66.7
       }
     },
@@ -76,11 +76,11 @@
         "directional_accuracy_pct": 25.0
       },
       "10": {
-        "directional_calls": 3,
+        "directional_calls": 4,
         "correct": 3,
-        "incorrect": 0,
+        "incorrect": 1,
         "neutral_move": 0,
-        "directional_accuracy_pct": 100.0
+        "directional_accuracy_pct": 75.0
       }
     },
     "EUR": {
@@ -693,6 +693,20 @@
     {
       "run_date_sgt": "2026-10-03",
       "market_date": "2026-10-02",
+      "future_date": "2026-10-16",
+      "currency": "USD",
+      "horizon_trading_days": 10,
+      "shadow_score": 3.62,
+      "shadow_confidence_pct": 73,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.279822,
+      "future_rate_sgd": 1.279214,
+      "rate_change_pct": -0.047,
+      "outcome": "neutral_move"
+    },
+    {
+      "run_date_sgt": "2026-10-03",
+      "market_date": "2026-10-02",
       "future_date": "2026-10-05",
       "currency": "JPY",
       "horizon_trading_days": 1,
@@ -716,6 +730,20 @@
       "entry_rate_sgd": 0.811684,
       "future_rate_sgd": 0.809067,
       "rate_change_pct": -0.322,
+      "outcome": "incorrect"
+    },
+    {
+      "run_date_sgt": "2026-10-03",
+      "market_date": "2026-10-02",
+      "future_date": "2026-10-16",
+      "currency": "JPY",
+      "horizon_trading_days": 10,
+      "shadow_score": 3.62,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.811684,
+      "future_rate_sgd": 0.809526,
+      "rate_change_pct": -0.266,
       "outcome": "incorrect"
     }
   ]
