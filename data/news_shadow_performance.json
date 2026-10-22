@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-21T20:35:22.855251+00:00",
+  "generated_at_utc": "2026-10-22T20:32:22.941821+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -15,11 +15,11 @@
   "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
   "overall": {
     "1": {
-      "directional_calls": 16,
+      "directional_calls": 18,
       "correct": 3,
-      "incorrect": 3,
-      "neutral_move": 10,
-      "directional_accuracy_pct": 50.0
+      "incorrect": 4,
+      "neutral_move": 11,
+      "directional_accuracy_pct": 42.9
     },
     "5": {
       "directional_calls": 13,
@@ -39,10 +39,10 @@
   "by_currency": {
     "USD": {
       "1": {
-        "directional_calls": 6,
+        "directional_calls": 7,
         "correct": 2,
         "incorrect": 0,
-        "neutral_move": 4,
+        "neutral_move": 5,
         "directional_accuracy_pct": 100.0
       },
       "5": {
@@ -131,11 +131,11 @@
     },
     "AUD": {
       "1": {
-        "directional_calls": 2,
+        "directional_calls": 3,
         "correct": 1,
-        "incorrect": 1,
+        "incorrect": 2,
         "neutral_move": 0,
-        "directional_accuracy_pct": 50.0
+        "directional_accuracy_pct": 33.3
       },
       "5": {
         "directional_calls": 2,
@@ -787,6 +787,34 @@
       "future_rate_sgd": 1.277194,
       "rate_change_pct": -0.099,
       "outcome": "neutral_move"
+    },
+    {
+      "run_date_sgt": "2026-10-22",
+      "market_date": "2026-10-21",
+      "future_date": "2026-10-22",
+      "currency": "USD",
+      "horizon_trading_days": 1,
+      "shadow_score": 3.7,
+      "shadow_confidence_pct": 84,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.277194,
+      "future_rate_sgd": 1.277555,
+      "rate_change_pct": 0.028,
+      "outcome": "neutral_move"
+    },
+    {
+      "run_date_sgt": "2026-10-22",
+      "market_date": "2026-10-21",
+      "future_date": "2026-10-22",
+      "currency": "AUD",
+      "horizon_trading_days": 1,
+      "shadow_score": 3.32,
+      "shadow_confidence_pct": 77,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.898378,
+      "future_rate_sgd": 0.895807,
+      "rate_change_pct": -0.286,
+      "outcome": "incorrect"
     }
   ]
 }
