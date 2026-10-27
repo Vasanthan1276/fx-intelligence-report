@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-26T21:27:22.769281+00:00",
+  "updated_at_utc": "2026-10-27T21:07:35.695415+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-10-21T20:18:46.881900+00:00",
@@ -256,11 +256,11 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-10-26T21:11:29.977631+00:00",
+      "fetched_at_utc": "2026-10-27T20:53:00.764762+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-26T21:11:42.835753+00:00",
+      "fetched_at_utc": "2026-10-27T20:54:10.086580+00:00",
       "payload": {
         "articles": [
           {
@@ -294,6 +294,16 @@
             "sourcecountry": "Pakistan"
           },
           {
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
+            "url_mobile": "",
+            "title": "Currency exchange rates in Pakistan today \u2013 27 October 2026",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
             "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-24-october-2026/",
             "url_mobile": "",
             "title": "Currency exchange rates in Pakistan today \u2013 24 October 2026",
@@ -302,16 +312,6 @@
             "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://econotimes.com/Yen-Strengthens-as-AI-Spending-Worries-Rattle-Global-Markets-1760893",
-            "url_mobile": "",
-            "title": "Yen Strengthens as AI Spending Worries Rattle Global Markets",
-            "seendate": "20261023T040000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/d963474046d879c5fc72d78a96ef09303f732925057f2b4cb9e8a2e4aecfcf6f.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
           },
           {
             "url": "https://www.ntvbd.com/economy/news-1824709",
@@ -344,34 +344,14 @@
             "sourcecountry": "Singapore"
           },
           {
-            "url": "https://www.designboom.com/competition/classics-the-small-luxury-design-award-2027/",
-            "url_mobile": "",
-            "title": "designboom competitions | designboom . com",
-            "seendate": "20261023T100000Z",
-            "socialimage": "https://www.designboom.com/twitterimages/uploads/2026/10/CLASSICS-the-Small-Luxury-Design-Award-2027-designboom-1200.jpg",
-            "domain": "designboom.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.winnipegfreepress.com/business/2026/10/22/asian-shares-slip-as-sharp-drops-for-ai-stocks-overwhelm-markets-worldwide-and-oil-prices-jump",
-            "url_mobile": "",
-            "title": "Asian shares slip as sharp drops for AI stocks overwhelm markets worldwide and oil prices jump \u2013 Winnipeg Free Press",
-            "seendate": "20261023T050000Z",
-            "socialimage": "",
-            "domain": "winnipegfreepress.com",
-            "language": "English",
-            "sourcecountry": "Canada"
-          },
-          {
-            "url": "https://www.morningstar.com/news/dow-jones/2026102358/emea-morning-briefing-ai-jitters-ripple-through-markets",
-            "url_mobile": "",
-            "title": "EMEA Morning Briefing : AI Jitters Ripple Through Markets",
-            "seendate": "20261023T044500Z",
-            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
-            "domain": "morningstar.com",
-            "language": "English",
-            "sourcecountry": "China"
+            "url": "https://akhbarlibya24.net/2026/10/27/%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D9%8A%D8%B6%D8%BA%D8%B7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%8A%D9%88%D8%B1%D9%88-%D9%88%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
+            "url_mobile": "https://akhbarlibya24.net/2026/10/27/%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D9%8A%D8%B6%D8%BA%D8%B7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%8A%D9%88%D8%B1%D9%88-%D9%88%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1/amp",
+            "title": "\u0627\u0631\u062a\u0641\u0627\u0639 \u0627\u0644\u0646\u0641\u0637 \u064a\u0636\u063a\u0637 \u0639\u0644\u0649 \u0627\u0644\u064a\u0648\u0631\u0648 \u0648\u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0633\u062a\u0641\u064a\u062f \u0645\u0646 \u062a\u0631\u0642\u0628 \u0627\u0644\u0623\u0633\u0648\u0627\u0642",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://akhbarlibya24.net/wp-content/uploads/2026/09/IMG_6821.jpeg",
+            "domain": "akhbarlibya24.net",
+            "language": "Arabic",
+            "sourcecountry": "Libya"
           },
           {
             "url": "http://www.kitco.com/news/article/2026-10-23/wall-street-doubts-golds-near-term-strength-main-street-maintains-bullish",
@@ -382,6 +362,26 @@
             "domain": "kitco.com",
             "language": "English",
             "sourcecountry": "China"
+          },
+          {
+            "url": "http://www.pittsburghstar.com/news/279395225/u-s-stocks-flounder-friday-dow-takes-biggest-hit-with-600-points-slide",
+            "url_mobile": "",
+            "title": "U . S . stocks flounder Friday , Dow takes biggest hit with +600 points slide",
+            "seendate": "20261024T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "pittsburghstar.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.batonrougepost.com/news/279395225/u-s-stocks-flounder-friday-dow-takes-biggest-hit-with-600-points-slide",
+            "url_mobile": "",
+            "title": "U . S . stocks flounder Friday , Dow takes biggest hit with +600 points slide",
+            "seendate": "20261024T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "batonrougepost.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
@@ -641,128 +641,128 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-22T20:22:52.604309+00:00",
+      "fetched_at_utc": "2026-10-27T21:00:20.707093+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.ghanamma.com/2026/10/22/bank-of-ghana-announces-official-daily-exchange-rates-for-thursday-october-22-2026/",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-24-october-2026/",
             "url_mobile": "",
-            "title": "Bank of Ghana Announces Official Daily Exchange Rates for Thursday , October 22 , 2026 \u2013 Ghanamma . com",
-            "seendate": "20261022T091500Z",
-            "socialimage": "",
-            "domain": "ghanamma.com",
-            "language": "English",
-            "sourcecountry": "Ghana"
-          },
-          {
-            "url": "https://www.ghanamma.com/2026/10/20/bank-of-ghana-releases-daily-exchange-rates-for-october-20-2026/",
-            "url_mobile": "",
-            "title": "Bank Of Ghana Releases Daily Exchange Rates For October 20 2026 \u2013 Ghanamma . com",
-            "seendate": "20261020T140000Z",
-            "socialimage": "",
-            "domain": "ghanamma.com",
-            "language": "English",
-            "sourcecountry": "Ghana"
-          },
-          {
-            "url": "https://www.kanald.ro/curs-valutar-bnr-luni-19-octombrie-2026-cu-cate-procente-a-scazut-azi-moneda-euro-20547874",
-            "url_mobile": "https://www.kanald.ro/curs-valutar-bnr-luni-19-octombrie-2026-cu-cate-procente-a-scazut-azi-moneda-euro-20547874/amp",
-            "title": "Curs valutar BNR luni , 19 octombrie 2026 : Cu c\u00e2te procente a sc\u0103zut azi moneda euro",
-            "seendate": "20261019T113000Z",
-            "socialimage": "https://cdn.knd.ro/media/521/2862/1791/20547874/1/cursul-valutar-3.jpg",
-            "domain": "kanald.ro",
-            "language": "Romanian",
-            "sourcecountry": "Romania"
-          },
-          {
-            "url": "https://www.kanald.ro/curs-valutar-marti-20-octombrie-2026-pretul-aurului-a-scazut-in-timp-ce-moneda-euro-este-in-usoara-crestere-azi-20548008",
-            "url_mobile": "https://www.kanald.ro/curs-valutar-marti-20-octombrie-2026-pretul-aurului-a-scazut-in-timp-ce-moneda-euro-este-in-usoara-crestere-azi-20548008/amp",
-            "title": "Curs valutar BNR 20 octombrie 2026 . Euro cre\u0219te , dolarul scade",
-            "seendate": "20261020T113000Z",
-            "socialimage": "https://cdn.knd.ro/media/521/2862/1791/20548008/1/curs-3.jpg",
-            "domain": "kanald.ro",
-            "language": "Romanian",
-            "sourcecountry": "Romania"
-          },
-          {
-            "url": "https://www.kanald.ro/cursul-valutar-bnr-miercuri-21-octombrie-2026-euro-si-lira-sterlina-sunt-in-crestere-cat-valoreaza-principalele-monede-azi-20548138",
-            "url_mobile": "https://www.kanald.ro/cursul-valutar-bnr-miercuri-21-octombrie-2026-euro-si-lira-sterlina-sunt-in-crestere-cat-valoreaza-principalele-monede-azi-20548138/amp",
-            "title": "Curs valutar BNR 21 octombrie 2026 . Euro \u0219i lira cresc",
-            "seendate": "20261021T110000Z",
-            "socialimage": "https://cdn.knd.ro/media/521/2862/1791/20548138/1/curs-valutar-5.jpg",
-            "domain": "kanald.ro",
-            "language": "Romanian",
-            "sourcecountry": "Romania"
-          },
-          {
-            "url": "https://bin.ua/news/finance/finances/349750-dolar-ssha-dorozhchaye-do-yevro-zalishayetsya.html",
-            "url_mobile": "",
-            "title": "\u0414\u043e\u043b\u0430\u0440 \u0421\u0428\u0410 \u0434\u043e\u0440\u043e\u0436\u0447\u0430\u0454 \u0434\u043e \u0454\u0432\u0440\u043e , \u0437\u0430\u043b\u0438\u0448\u0430\u0454\u0442\u044c\u0441\u044f \u0441\u0442\u0430\u0431\u0456\u043b\u044c\u043d\u0438\u043c \u0449\u043e\u0434\u043e \u0444\u0443\u043d\u0442\u0430 \u0441\u0442\u0435\u0440\u043b\u0456\u043d\u0433\u0456\u0432 \u0442\u0430 \u0454\u043d\u0438",
-            "seendate": "20261019T094500Z",
-            "socialimage": "https://bin.ua/uploads/posts/2026-10/1792393170_yu490.jpg",
-            "domain": "bin.ua",
-            "language": "Ukrainian",
-            "sourcecountry": "Ukraine"
-          },
-          {
-            "url": "https://adevarul.ro/economie/curs-valutar-bnr-19-octombrie-2026-euro-a-2564956.html",
-            "url_mobile": "",
-            "title": "Curs valutar BNR , 19 octombrie 2026 . Euro a sc\u0103zut , iar dolarul \u0219i lira sterlin\u0103 au crescut . Cum au evoluat principalele valute",
-            "seendate": "20261019T110000Z",
-            "socialimage": "https://cdn.adh.reperio.news/image-2/2e677222-58ca-4e6c-b6a4-0c58791ad6eb/index.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
-            "domain": "adevarul.ro",
-            "language": "Romanian",
-            "sourcecountry": "Romania"
-          },
-          {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-funt-kurs-funta-do-zlotego-pln-gbp-19-10-2026-7341613600249856a.html",
-            "url_mobile": "",
-            "title": "Ile kosztuje funt ? Kurs funta do z\u0142otego PLN / GBP 19 . 10 . 2026",
-            "seendate": "20261019T060000Z",
-            "socialimage": "https://v.wpimg.pl/NTliNDdkYTUNCzh3SxBsIE5TbC0NSWJ2GUt0Zktad2ZcEWEiDQcrJgkZIWoDGTskDR4-ahQHYTUcAGEyVUQqPR8ZIiUdRCs5DgwqawdYeWAJDCgnSVIrbA5EenZQCmM1DQh5aV1aeWFVC3pzAFp_Yk4U",
-            "domain": "money.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
-            "url": "https://www.ghanamma.com/2026/10/19/ghana-cedi-gains-against-dollar-as-bank-of-ghana-rates-drop/",
-            "url_mobile": "",
-            "title": "Ghana Cedi Gains Against Dollar As Bank Of Ghana Rates Drop \u2013 Ghanamma . com",
-            "seendate": "20261019T100000Z",
-            "socialimage": "",
-            "domain": "ghanamma.com",
-            "language": "English",
-            "sourcecountry": "Ghana"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/20-Oct-2026/today-currency-exchange-rates-in-pakistan-dollar-euro-riyal-dirham-20-october-2026",
-            "url_mobile": "",
-            "title": "Today Currency Exchange Rates in Pakistan , Dollar , Euro , Riyal , Dirham",
-            "seendate": "20261020T061500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/01/pakistani-rupee-largely-stable-against-us-dollar-euro-pound-riyal-30-jan-2024-forex-rates-1706587889-8321.jpg",
-            "domain": "en.dailypakistan.com.pk",
+            "title": "Currency exchange rates in Pakistan today \u2013 24 October 2026",
+            "seendate": "20261024T071500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/08/currency.webp",
+            "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://en.dailypakistan.com.pk/19-Oct-2026/today-currency-exchange-rates-in-pakistan-dollar-euro-riyal-dirham-19-october-2026",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-26-october-2026/",
             "url_mobile": "",
-            "title": "Today Currency Exchange Rates in Pakistan , Dollar , Euro , Riyal , Dirham",
-            "seendate": "20261019T064500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/01/pakistani-rupee-largely-stable-against-us-dollar-euro-pound-riyal-30-jan-2024-forex-rates-1706587889-8321.jpg",
-            "domain": "en.dailypakistan.com.pk",
+            "title": "Currency exchange rates in Pakistan today \u2013 26 October 2026",
+            "seendate": "20261026T050000Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/12/today-s-currency-exchange-rates-in-pakistan-dollar-euro-pound-riyal-rates-on-may-25-2023-1684987420-6451.jpg",
+            "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://en.dailypakistan.com.pk/21-Oct-2026/today-currency-exchange-rates-in-pakistan-dollar-euro-riyal-dirham-21-october-2026",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
+            "url_mobile": "",
+            "title": "Currency exchange rates in Pakistan today \u2013 27 October 2026",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.libyaakhbar.com/business-news/2903630.html",
+            "url_mobile": "",
+            "title": "\u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0631\u062a\u0641\u0639 \u0648\u0627\u0644\u0635\u0643\u0648\u0643 \u062a\u062a\u0631\u0627\u062c\u0639 .. \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0645\u0648\u0627\u0632\u064a\u0629 \u0627\u0644\u0644\u064a\u0628\u064a\u0629",
+            "seendate": "20261024T210000Z",
+            "socialimage": "https://www.libyaakhbar.com/wp-content/uploads/2026/05/dollar2026.webp",
+            "domain": "libyaakhbar.com",
+            "language": "Arabic",
+            "sourcecountry": "Libya"
+          },
+          {
+            "url": "https://en.dailypakistan.com.pk/24-Oct-2026/today-currency-exchange-rates-in-pakistan-dollar-euro-riyal-dirham-24-october-2026",
             "url_mobile": "",
             "title": "Today Currency Exchange Rates in Pakistan , Dollar , Euro , Riyal , Dirham",
-            "seendate": "20261021T053000Z",
+            "seendate": "20261024T053000Z",
             "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
             "domain": "en.dailypakistan.com.pk",
             "language": "English",
             "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.libyaakhbar.com/business-news/2903295.html",
+            "url_mobile": "",
+            "title": "\u062a\u063a\u064a\u064a\u0631 \u062c\u062f\u064a\u062f .. \u0623\u0633\u0639\u0627\u0631 \u0635\u0631\u0641 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0623\u062c\u0646\u0628\u064a\u0629 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062f\u064a\u0646\u0627\u0631 \u0641\u064a \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0645\u0648\u0627\u0632\u064a ( \u0627\u0644\u0633\u0628\u062a 24 \u0627\u0643\u062a\u0648\u0628\u0631 2026 ) ",
+            "seendate": "20261024T141500Z",
+            "socialimage": "https://www.libyaakhbar.com/wp-content/uploads/2026/05/dollar2026.webp",
+            "domain": "libyaakhbar.com",
+            "language": "Arabic",
+            "sourcecountry": "Libya"
+          },
+          {
+            "url": "https://en.dailypakistan.com.pk/25-Oct-2026/currency-exchange-rates-in-pakistan-today-us-dollar-pound-euro-riyal-25-october-2026",
+            "url_mobile": "",
+            "title": "Currency Exchange Rates in Pakistan Today : US Dollar , Pound , Euro , Riyal",
+            "seendate": "20261025T053000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2026/10/news-346672.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.dostor.org/5751645",
+            "url_mobile": "",
+            "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0623\u062d\u062f 25 \u0623\u0643\u062a\u0648\u0628\u0631 2026 .. \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0633\u062c\u0644 55 . 35 \u062c\u0646\u064a\u0647 \u0644\u0644\u0628\u064a\u0639",
+            "seendate": "20261025T123000Z",
+            "socialimage": "https://cdn.dostor.org/media/img/large/2026/10/25/2026_10_25_14_56_35_103_7234.png",
+            "domain": "dostor.org",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
+          },
+          {
+            "url": "https://glavcom.ua/economics/personal-money/kurs-valjut-24-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151157.html",
+            "url_mobile": "https://glavcom.ua/amp/economics/personal-money/kurs-valjut-24-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151157.html",
+            "title": "\u041a\u0443\u0440\u0441 \u0432\u0430\u043b\u044e\u0442 24 \u0436\u043e\u0432\u0442\u043d\u044f 2026 : \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0448\u0442\u0443\u044e\u0442\u044c \u0434\u043e\u043b\u0430\u0440 , \u0454\u0432\u0440\u043e \u0456 \u0437\u043b\u043e\u0442\u0438\u0439",
+            "seendate": "20261024T081500Z",
+            "socialimage": "",
+            "domain": "glavcom.ua",
+            "language": "Ukrainian",
+            "sourcecountry": "Ukraine"
+          },
+          {
+            "url": "https://www.libyaakhbar.com/business-news/2903357.html",
+            "url_mobile": "",
+            "title": "\u0627\u0631\u062a\u0641\u0627\u0639 \u062c\u0645\u0627\u0639\u064a .. \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0648\u0627\u0644\u0630\u0647\u0628 \u0641\u064a \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0645\u0648\u0627\u0632\u064a \u0627\u0644\u0644\u064a\u0628\u064a \u0627\u0644\u064a\u0648\u0645",
+            "seendate": "20261024T141500Z",
+            "socialimage": "https://www.libyaakhbar.com/wp-content/uploads/2026/10/1792850072_dollaarr.jpg",
+            "domain": "libyaakhbar.com",
+            "language": "Arabic",
+            "sourcecountry": "Libya"
+          },
+          {
+            "url": "https://glavcom.ua/economics/personal-money/kurs-valjut-25-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151280.html",
+            "url_mobile": "https://glavcom.ua/amp/economics/personal-money/kurs-valjut-25-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151280.html",
+            "title": "\u041a\u0443\u0440\u0441 \u0432\u0430\u043b\u044e\u0442 25 \u0436\u043e\u0432\u0442\u043d\u044f 2026 : \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0448\u0442\u0443\u044e\u0442\u044c \u0434\u043e\u043b\u0430\u0440 , \u0454\u0432\u0440\u043e \u0456 \u0437\u043b\u043e\u0442\u0438\u0439",
+            "seendate": "20261025T110000Z",
+            "socialimage": "",
+            "domain": "glavcom.ua",
+            "language": "Ukrainian",
+            "sourcecountry": "Ukraine"
+          },
+          {
+            "url": "https://www.dostor.org/5749970",
+            "url_mobile": "",
+            "title": "\u0633\u0639\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0623\u062c\u0646\u0628\u064a\u0629 \u0648\u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0633\u0628\u062a 24 \u0623\u0643\u062a\u0648\u0628\u0631 2026 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u0645\u0635\u0631\u064a \u0641\u064a \u0627\u0644\u0628\u0646\u0648\u0643",
+            "seendate": "20261024T101500Z",
+            "socialimage": "https://cdn.dostor.org/media/img/large/2026/10/24/2026_10_24_7_13_14_786_1837.png",
+            "domain": "dostor.org",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
           }
         ]
       }
@@ -1022,128 +1022,128 @@
       }
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-10-19T21:21:14.737285+00:00",
+      "fetched_at_utc": "2026-10-27T21:02:40.191862+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.163.com/dy/article/L9B7J3FE05199N88.html",
-            "url_mobile": "https://m.163.com/dy/article/L9B7J3FE05199N88.html",
-            "title": "\u6c14\u70b8 \uff01 \u6fb3\u6d32\u7ecf\u6d4e\u8fc5\u901f\u6076\u5316 \uff01 \u5de5\u515a\u8981\u8d1f\u5168\u8d23 \uff01 ",
-            "seendate": "20261015T204500Z",
+            "url": "https://www.morningstar.com/news/dow-jones/2026102010808/dow-jones-top-markets-headlines-at-9-pm-et-us-stocks-mixed-as-strong-earnings-offset-ai-credit-fears-more",
+            "url_mobile": "",
+            "title": "Dow Jones Top Markets Headlines at 9 PM ET : U . S . Stocks Mixed as Strong Earnings Offset AI Credit Fears | More ... ",
+            "seendate": "20261021T023000Z",
+            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+            "domain": "morningstar.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.morningstar.com/news/dow-jones/20261021460/dow-jones-top-markets-headlines-at-1-am-et-asian-equities-rebound-as-risk-sentiment-improves-more",
+            "url_mobile": "",
+            "title": "Dow Jones Top Markets Headlines at 1 AM ET : Asian Equities Rebound as Risk Sentiment Improves | More ... ",
+            "seendate": "20261021T070000Z",
+            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+            "domain": "morningstar.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.163.com/dy/article/L9UB7P9N0556J08E.html",
+            "url_mobile": "https://m.163.com/dy/article/L9UB7P9N0556J08E.html",
+            "title": "\u6fb3\u6d32\u6700\u6d3b\u4e0d\u8d77\u57ce\u5e02\u516c\u5e03 : \u6089\u5c3c\u58a8\u5c14\u672c\u6ca1\u8fdb\u524d\u4e94 , \u7b2c\u4e00\u540d\u7adf\u7136\u662f \u2026 ",
+            "seendate": "20261023T070000Z",
             "socialimage": "",
             "domain": "163.com",
             "language": "Chinese",
             "sourcecountry": "China"
           },
           {
-            "url": "https://www.armidaleexpress.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
+            "url": "https://www.smartcompany.com.au/entrepreneurs/swipejobs-founder-katrina-leslie-crowned-ey-entrepreneur-of-the-year/",
             "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T170000Z",
-            "socialimage": "https://www.armidaleexpress.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "armidaleexpress.com.au",
+            "title": "Swipejob Katrina Leslie crowned EY Entrepreneur of the Year",
+            "seendate": "20261023T061500Z",
+            "socialimage": "https://assets.smartcompany.com.au/wp-content/uploads/sites/4/2026/10/Katrina-Leslie-EOY-Winner-2-1.jpeg?quality=70",
+            "domain": "smartcompany.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.newcastleherald.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
+            "url": "https://econotimes.com/Australian-Dollar-Hits-Highest-Since-Sept-29-as-Inflation-Risks-Grow-1759060",
             "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T170000Z",
-            "socialimage": "https://www.newcastleherald.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "newcastleherald.com.au",
+            "title": "Australian Dollar Hits Highest Since Sept . 29 as Inflation Risks Grow",
+            "seendate": "20261021T150000Z",
+            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/3eb6cb01973396a33a46f9d9832318e5e5bc75e1bc9b5cc704f8e0b88014b5ff.webp",
+            "domain": "econotimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.smh.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
+            "url_mobile": "",
+            "title": "UBS talks about leaving Switzerland",
+            "seendate": "20261021T013000Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
+            "domain": "smh.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.theage.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
+            "url_mobile": "",
+            "title": "UBS talks about leaving Switzerland",
+            "seendate": "20261021T013000Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
+            "domain": "theage.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.watoday.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
+            "url_mobile": "",
+            "title": "UBS talks about leaving Switzerland",
+            "seendate": "20261021T231500Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
+            "domain": "watoday.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.brisbanetimes.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
+            "url_mobile": "",
+            "title": "UBS talks about leaving Switzerland",
+            "seendate": "20261021T021500Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_brisbanetimes_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
+            "domain": "brisbanetimes.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.163.com/dy/article/L9P8G5U805198NMR.html",
+            "url_mobile": "https://m.163.com/dy/article/L9P8G5U805198NMR.html",
+            "title": "\u5c45\u6c11\u6297\u8bae\u5361\u4f4f\u4f9b\u7535 \uff0c \u6fb3\u6d32\u7248CoreWeave  \u66b4\u8dcc45 %\uff01 AI\u57fa\u5efa\u4ea4\u4ed8\u62c5\u5fe7\u8513\u5ef6|\u9ad8\u76db|\u7535\u529b",
+            "seendate": "20261021T073000Z",
+            "socialimage": "",
+            "domain": "163.com",
+            "language": "Chinese",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.rnz.co.nz/news/business/2075443/inflation-tumbles-to-3-point-7-percent-but-expected-to-rise-again-soon",
+            "url_mobile": "",
+            "title": "Inflation tumbles to 3 . 7 %, but expected to rise again soon",
+            "seendate": "20261021T231500Z",
+            "socialimage": "https://media.rnztools.nz/rnz/image/upload/s--pR9XiLW1--/t_tohu-badge-facebook/f_auto/q_auto/4JGD5E7_Media_4_jfif",
+            "domain": "rnz.co.nz",
             "language": "English",
             "sourcecountry": ""
           },
           {
-            "url": "https://www.singletonargus.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
+            "url": "https://business.scoop.co.nz/2026/10/22/inflation-tumbles-to-3-7-but-expected-to-rise-again-soon/",
             "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T170000Z",
-            "socialimage": "https://www.singletonargus.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "singletonargus.com.au",
+            "title": "Business . Scoop \u00bb Inflation Tumbles To 3 . 7 %, But Expected To Rise Again Soon",
+            "seendate": "20261022T070000Z",
+            "socialimage": "",
+            "domain": "business.scoop.co.nz",
             "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.portnews.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
-            "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T173000Z",
-            "socialimage": "https://www.portnews.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "portnews.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.gloucesteradvocate.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
-            "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T173000Z",
-            "socialimage": "https://www.gloucesteradvocate.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "gloucesteradvocate.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.edenmagnet.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
-            "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T174500Z",
-            "socialimage": "https://www.edenmagnet.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "edenmagnet.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.southernhighlandnews.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
-            "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T171500Z",
-            "socialimage": "https://www.southernhighlandnews.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "southernhighlandnews.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.manningrivertimes.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
-            "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T183000Z",
-            "socialimage": "https://www.manningrivertimes.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "manningrivertimes.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.narrominenewsonline.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
-            "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T183000Z",
-            "socialimage": "https://www.narrominenewsonline.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "narrominenewsonline.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.gleninnesexaminer.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
-            "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T183000Z",
-            "socialimage": "https://www.gleninnesexaminer.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "gleninnesexaminer.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.ulladullatimes.com.au/story/9369558/sectors-dig-in-to-weather-nations-job-market-slowdown/",
-            "url_mobile": "",
-            "title": "Sectors dig in to weather nation job market slowdown",
-            "seendate": "20261015T190000Z",
-            "socialimage": "https://www.ulladullatimes.com.au/images/transform/v1/crop/frm/silverstone-feed-data/330689fe-956f-4d70-94e8-f3a854987070.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "ulladullatimes.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
+            "sourcecountry": "New Zealand"
           }
         ]
       }
@@ -1200,7 +1200,7 @@
       }
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-26T21:23:53.740139+00:00",
+      "fetched_at_utc": "2026-10-27T21:05:10.550891+00:00",
       "payload": {
         "articles": [
           {
@@ -1217,128 +1217,128 @@
       }
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-22T20:29:29.526795+00:00",
+      "fetched_at_utc": "2026-10-27T21:07:35.695394+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-19-10-2026-7341613649541120a.html",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-26-october-2026/",
             "url_mobile": "",
-            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 19 . 10 . 2026",
-            "seendate": "20261019T060000Z",
-            "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
-            "domain": "money.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
-            "url": "https://www.livemint.com/market/singapore-dollar-gains-on-yen-as-carry-funder-analysts-say-11792634002797.html",
-            "url_mobile": "https://www.livemint.com/market/singapore-dollar-gains-on-yen-as-carry-funder-analysts-say/amp-11792634002797.html",
-            "title": "Singapore Dollar Gains on Yen as Carry Funder , Analysts Say",
-            "seendate": "20261022T033000Z",
-            "socialimage": "https://www.livemint.com/lm-img/img/2024/12/06/600x338/market_2_1733466021722_1733466033367.jpg",
-            "domain": "livemint.com",
+            "title": "Currency exchange rates in Pakistan today \u2013 26 October 2026",
+            "seendate": "20261026T050000Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/12/today-s-currency-exchange-rates-in-pakistan-dollar-euro-pound-riyal-rates-on-may-25-2023-1684987420-6451.jpg",
+            "domain": "pakobserver.net",
             "language": "English",
-            "sourcecountry": "India"
+            "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://novini.bg/article/2026102107251430155",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
             "url_mobile": "",
-            "title": "\u041a\u0443\u0440\u0441\u044a\u0442 \u043d\u0430 \u0435\u0432\u0440\u043e\u0442\u043e \u043e\u0442\u0441\u0442\u044a\u043f\u0432\u0430 \u043b\u0435\u043a\u043e \u0441\u043f\u0440\u044f\u043c\u043e \u0432\u043e\u0434\u0435\u0449\u0438\u0442\u0435 \u0441\u0432\u0435\u0442\u043e\u0432\u043d\u0438 \u0432\u0430\u043b\u0443\u0442\u0438",
-            "seendate": "20261021T101500Z",
-            "socialimage": "https://sportal365images.com/process/smp-images-production/novini.bg/14042025/e01461f2-7caf-4cd6-9639-1742751745e3.jpg?operations=autocrop(1280:720)",
-            "domain": "novini.bg",
-            "language": "Bulgarian",
-            "sourcecountry": "Bulgaria"
+            "title": "Currency exchange rates in Pakistan today \u2013 27 October 2026",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.snb.ch/en/publications/communication/summaries/zus_20261022",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-24-october-2026/",
             "url_mobile": "",
-            "title": "Monetary policy assessment of September 2026 : Summary of discussion",
-            "seendate": "20261022T101500Z",
+            "title": "Currency exchange rates in Pakistan today \u2013 24 October 2026",
+            "seendate": "20261024T071500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/08/currency.webp",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://glavcom.ua/economics/personal-money/kurs-valjut-25-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151280.html",
+            "url_mobile": "https://glavcom.ua/amp/economics/personal-money/kurs-valjut-25-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151280.html",
+            "title": "\u041a\u0443\u0440\u0441 \u0432\u0430\u043b\u044e\u0442 25 \u0436\u043e\u0432\u0442\u043d\u044f 2026 : \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0448\u0442\u0443\u044e\u0442\u044c \u0434\u043e\u043b\u0430\u0440 , \u0454\u0432\u0440\u043e \u0456 \u0437\u043b\u043e\u0442\u0438\u0439",
+            "seendate": "20261025T110000Z",
             "socialimage": "",
-            "domain": "snb.ch",
-            "language": "English",
-            "sourcecountry": "Switzerland"
-          },
-          {
-            "url": "https://english.news.cn/20261020/6b677ad0f2104a868d40b416e0fbd080/c.html",
-            "url_mobile": "",
-            "title": "Market exchange rates in China -- Oct . 20 - Xinhua",
-            "seendate": "20261020T043000Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://www.prealpina.it/news/economia/564000/il-franco-svizzero-torna-a-correre.html",
-            "url_mobile": "",
-            "title": "Il franco svizzero torna a correre",
-            "seendate": "20261020T030000Z",
-            "socialimage": "https://prealpina.cdn.m33cloud.com/resizer/600/315/true/gn4/52280/GN4_DAT_52280715.jpg--il_franco_svizzero_torna_a_correre.webp",
-            "domain": "prealpina.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://www.investor.bg/a/538-pazari/438246-koi-aktivi-ubezhishta-ustoyavat-na-strahovete-okolo-ai-petrola-i-sabitiyata-vav-frantsiya",
-            "url_mobile": "",
-            "title": "\u041a\u043e\u0438 \u0430\u043a\u0442\u0438\u0432\u0438 \u0443\u0431\u0435\u0436\u0438\u0449\u0430 \u0443\u0441\u0442\u043e\u044f\u0432\u0430\u0442 \u043d\u0430 \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0435\u0442\u0435 \u043e\u043a\u043e\u043b\u043e AI , \u043f\u0435\u0442\u0440\u043e\u043b\u0430 \u0438 \u0441\u044a\u0431\u0438\u0442\u0438\u044f\u0442\u0430 \u0432\u044a\u0432 \u0424\u0440\u0430\u043d\u0446\u0438\u044f ? ",
-            "seendate": "20261020T114500Z",
-            "socialimage": "https://www.investor.bg/media/files/resized/article/1280x720/c09/405ca562adf40d847146aff4ca0e7c09-471409980.jpg",
-            "domain": "investor.bg",
-            "language": "Bulgarian",
-            "sourcecountry": "Bulgaria"
-          },
-          {
-            "url": "https://bin.ua/news/finance/finances/349750-dolar-ssha-dorozhchaye-do-yevro-zalishayetsya.html",
-            "url_mobile": "",
-            "title": "\u0414\u043e\u043b\u0430\u0440 \u0421\u0428\u0410 \u0434\u043e\u0440\u043e\u0436\u0447\u0430\u0454 \u0434\u043e \u0454\u0432\u0440\u043e , \u0437\u0430\u043b\u0438\u0448\u0430\u0454\u0442\u044c\u0441\u044f \u0441\u0442\u0430\u0431\u0456\u043b\u044c\u043d\u0438\u043c \u0449\u043e\u0434\u043e \u0444\u0443\u043d\u0442\u0430 \u0441\u0442\u0435\u0440\u043b\u0456\u043d\u0433\u0456\u0432 \u0442\u0430 \u0454\u043d\u0438",
-            "seendate": "20261019T094500Z",
-            "socialimage": "https://bin.ua/uploads/posts/2026-10/1792393170_yu490.jpg",
-            "domain": "bin.ua",
+            "domain": "glavcom.ua",
             "language": "Ukrainian",
             "sourcecountry": "Ukraine"
           },
           {
-            "url": "https://www.akm.ru/news/tsb_rf_ustanovil_na_20_oktyabrya_2026_goda_kursy_inostrannykh_valyut_k_rublyu/",
-            "url_mobile": "",
-            "title": "\u0426\u0411 \u0420\u0424 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b \u043d\u0430 20 \u043e\u043a\u0442\u044f\u0431\u0440\u044f 2026 \u0433\u043e\u0434\u0430 \u043a\u0443\u0440\u0441\u044b \u0438\u043d\u043e\u0441\u0442\u0440\u0430\u043d\u043d\u044b\u0445 \u0432\u0430\u043b\u044e\u0442 \u043a \u0440\u0443\u0431\u043b\u044e",
-            "seendate": "20261019T191500Z",
-            "socialimage": "https://www.akm.ru/upload/iblock/f3c/js9dy62qoxeht35rsbg0d2xzg80gdbki/AKM-TSB-tsentralnyy-bank.jpeg",
-            "domain": "akm.ru",
-            "language": "Russian",
-            "sourcecountry": "Russia"
+            "url": "https://glavcom.ua/economics/personal-money/kurs-valjut-24-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151157.html",
+            "url_mobile": "https://glavcom.ua/amp/economics/personal-money/kurs-valjut-24-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151157.html",
+            "title": "\u041a\u0443\u0440\u0441 \u0432\u0430\u043b\u044e\u0442 24 \u0436\u043e\u0432\u0442\u043d\u044f 2026 : \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0448\u0442\u0443\u044e\u0442\u044c \u0434\u043e\u043b\u0430\u0440 , \u0454\u0432\u0440\u043e \u0456 \u0437\u043b\u043e\u0442\u0438\u0439",
+            "seendate": "20261024T081500Z",
+            "socialimage": "",
+            "domain": "glavcom.ua",
+            "language": "Ukrainian",
+            "sourcecountry": "Ukraine"
           },
           {
-            "url": "https://www.capital.gr/agores/4024995/i-amfisbitisi-tou-rali-tis-texnitis-noimosunis-enisxuei-ti-zitisi-gia-amerikanika-omologa/",
-            "url_mobile": "https://www.capital.gr/agores/4024995/i-amfisbitisi-tou-rali-tis-texnitis-noimosunis-enisxuei-ti-zitisi-gia-amerikanika-omologa/?amp=true",
-            "title": "\u0397 \u03b1\u03bc\u03c6\u03b9\u03c3\u03b2\u03ae\u03c4\u03b7\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03c1\u03ac\u03bb\u03b9 \u03c4\u03b7\u03c2 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae\u03c2 \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7\u03c2 \u03b5\u03bd\u03b9\u03c3\u03c7\u03cd\u03b5\u03b9 \u03c4\u03b7 \u03b6\u03ae\u03c4\u03b7\u03c3\u03b7 \u03b3\u03b9\u03b1 ... ",
-            "seendate": "20261022T063000Z",
-            "socialimage": "https://www.capital.gr/Content/ImagesDatabase/fb/1000x523/crop/both/ed/edf100e5f3f5447e82867c3579114038.jpg",
-            "domain": "capital.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://econotimes.com/FXStreet-Reports-Dollar-Gain-Against-Swiss-Franc-Amid-Rate-Gap-1757136",
+            "url": "http://www.pittsburghstar.com/news/279395225/u-s-stocks-flounder-friday-dow-takes-biggest-hit-with-600-points-slide",
             "url_mobile": "",
-            "title": "FXStreet Reports Dollar Gain Against Swiss Franc Amid Rate Gap",
-            "seendate": "20261020T010000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/ccae0729cd3d0b92f139a9a68f2ac0e9e2f6b4f4a74dc723ea4952f4de757909.webp",
-            "domain": "econotimes.com",
+            "title": "U . S . stocks flounder Friday , Dow takes biggest hit with +600 points slide",
+            "seendate": "20261024T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "pittsburghstar.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://econotimes.com/Roche-Prepares-Giredestrant-Launch-Ahead-of-Two-FDA-Review-Dates-1760348",
+            "url": "http://www.batonrougepost.com/news/279395225/u-s-stocks-flounder-friday-dow-takes-biggest-hit-with-600-points-slide",
             "url_mobile": "",
-            "title": "Roche Prepares Giredestrant Launch Ahead of Two FDA Review Dates",
-            "seendate": "20261022T160000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/4a220761240d15acdb1e3b2e0b2e3082460ae6b0c991430daa6b1d3028b0b526.webp",
-            "domain": "econotimes.com",
+            "title": "U . S . stocks flounder Friday , Dow takes biggest hit with +600 points slide",
+            "seendate": "20261024T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "batonrougepost.com",
             "language": "English",
             "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.laosnews.net/news/279395225/wall-street-dives-ahead-of-weekend-dow-dips-more-than-600-points",
+            "url_mobile": "",
+            "title": "Wall Street dives ahead of weekend , Dow dips more than 600 points",
+            "seendate": "20261024T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "laosnews.net",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.pakistantelegraph.com/news/279395225/u-s-stocks-flounder-friday-dow-takes-biggest-hit-with-600-points-slide",
+            "url_mobile": "",
+            "title": "U . S . stocks flounder Friday , Dow takes biggest hit with +600 points slide",
+            "seendate": "20261023T230000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "pakistantelegraph.com",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "http://www.myanmarnews.net/news/279395225/wall-street-dives-ahead-of-weekend-dow-dips-more-than-600-points",
+            "url_mobile": "",
+            "title": "Wall Street dives ahead of weekend , Dow dips more than 600 points",
+            "seendate": "20261024T003000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "myanmarnews.net",
+            "language": "English",
+            "sourcecountry": "Myanmar"
+          },
+          {
+            "url": "http://www.argentinastar.com/news/279395225/u-s-stocks-flounder-friday-dow-takes-biggest-hit-with-600-points-slide",
+            "url_mobile": "",
+            "title": "U . S . stocks flounder Friday , Dow takes biggest hit with +600 points slide",
+            "seendate": "20261024T004500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "argentinastar.com",
+            "language": "English",
+            "sourcecountry": "Argentina"
+          },
+          {
+            "url": "http://www.sydneysun.com/news/279395225/u-s-stocks-flounder-friday-dow-takes-biggest-hit-with-600-points-slide",
+            "url_mobile": "",
+            "title": "U . S . stocks flounder Friday , Dow takes biggest hit with +600 points slide",
+            "seendate": "20261023T233000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8dc4e70/7f9bbb4a-a508-456f-b2e2-db6b46c50fe4/6/US-stocks-dow-tumbles-600x315.jpg",
+            "domain": "sydneysun.com",
+            "language": "English",
+            "sourcecountry": "Australia"
           }
         ]
       }
@@ -1435,7 +1435,7 @@
       }
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-26T21:19:59.312582+00:00",
+      "fetched_at_utc": "2026-10-27T21:01:02.617624+00:00",
       "payload": {
         "articles": [
           {
@@ -1459,36 +1459,6 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://econotimes.com/UK-Inflation-Rises-After-Bank-of-England-s-Divided-September-Hold-1760785",
-            "url_mobile": "",
-            "title": "UK Inflation Rises After Bank of England Divided September Hold",
-            "seendate": "20261023T010000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/eb56281392d13e3cf67452141c1a7d67a3da3756913da8eb8d6605424fd3fc38.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.currencynews.co.uk/forecast/20261023-47562_pound-to-dollar-hits-best-exchange-rate-in-five-weeks-as-sterling-climbs.html",
-            "url_mobile": "",
-            "title": "Pound to Dollar Hits Best Exchange Rate in Five Weeks as Sterling Climbs",
-            "seendate": "20261023T084500Z",
-            "socialimage": "",
-            "domain": "currencynews.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.morningstar.com/markets/why-bonds-stumbled-stocks-mostly-stood-strong-q3-what-lies-ahead-investors",
-            "url_mobile": "",
-            "title": "Why Bonds Stumbled and Stocks ( Mostly ) Stood Strong in Q3 , and What Lies Ahead for Investors",
-            "seendate": "20261023T123000Z",
-            "socialimage": "https://media.morningstar.com/resizer/v2/STHQ6NGHQNB7NNQ2GOXJ3SLNPM.png?auth=733e3bad6cd693bfa2735e1bf3872aedf9889b624054ef9cb88e809211581ea7&quality=80&crop=0,0:2400,1350",
-            "domain": "morningstar.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
             "url": "https://www.aol.co.uk/articles/3-nightmares-haunting-andy-burnham-060000000.html",
             "url_mobile": "",
             "title": "The 3 nightmares haunting Andy Burnham and John Healey before crunch Budget",
@@ -1499,41 +1469,11 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.boursorama.com/actualite-economique/actualites/gb-pmi-les-entreprises-enregistrent-leur-meilleur-mois-d-activite-depuis-fevrier-df4de85a5c10ba27673c5cde5b638de4",
-            "url_mobile": "https://www.boursorama.com/actualite-economique/actualites-amp/gb-pmi-les-entreprises-enregistrent-leur-meilleur-mois-d-activite-depuis-fevrier-df4de85a5c10ba27673c5cde5b638de4",
-            "title": "GB / PMI : Les entreprises enregistrent leur meilleur mois dactivit\u00e9 depuis f\u00e9vrier - 23 / 10 / 2026 \u00e0 11 : 37",
-            "seendate": "20261023T120000Z",
-            "socialimage": "",
-            "domain": "boursorama.com",
-            "language": "French",
-            "sourcecountry": "France"
-          },
-          {
             "url": "https://econotimes.com/UK-Economy-Faces-Rising-Inflation-and-Borrowing-Ahead-of-Budget-1761824",
             "url_mobile": "",
             "title": "UK Economy Faces Rising Inflation and Borrowing Ahead of Budget",
             "seendate": "20261024T030000Z",
             "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/d6724e0757aacc076051defc79c1b6714814817b7a10c304ea66249298c2a949.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.theguardian.com/business/2026/oct/23/uk-consumer-confidence-falls-fastest-since-covid-cost-of-living",
-            "url_mobile": "",
-            "title": "UK consumer confidence falls at fastest rate since Covid as cost of living bites",
-            "seendate": "20261023T043000Z",
-            "socialimage": "https://i.guim.co.uk/img/media/beb7d211c357532b1fb71fd027d947ef985ba7e5/716_0_4840_3872/master/4840.jpg?&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6f6a28bbed10ff0429f4efd3eb364996",
-            "domain": "theguardian.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://econotimes.com/FXStreet-Reports-Sterling-Fell-0-16-Against-Dollar-After-Reaching-1-3419-1760888",
-            "url_mobile": "",
-            "title": "FXStreet Reports Sterling Fell 0 . 16 % Against Dollar After Reaching $1 . 3419",
-            "seendate": "20261023T040000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/a574bd69efa93fe634d266338c4228d6a836ee9c4334b9198022fe10293efe04.webp",
             "domain": "econotimes.com",
             "language": "English",
             "sourcecountry": "United States"
@@ -1549,12 +1489,72 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.actionforex.com/contributors/fundamental-analysis/658403-pound-benefits-from-a-hawkish-boe/",
+            "url": "https://www.ibtimes.co.uk/uk-retail-sales-consumer-confidence-fall-budget-1827534",
             "url_mobile": "",
-            "title": "Pound Benefits from a Hawkish BoE",
-            "seendate": "20261023T031500Z",
-            "socialimage": "https://www.actionforex.com/wp-content/uploads/2018/07/f-gbp54.jpg",
-            "domain": "actionforex.com",
+            "title": "Britain Retail Slump Deepens After Fuel Costs Rise and Consumer Confidence Suffers Biggest Fall Since COVID",
+            "seendate": "20261024T081500Z",
+            "socialimage": "https://d.ibtimes.co.uk/en/full/1838873/britains-retail-gloom-deepens.png",
+            "domain": "ibtimes.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.middleeastmonitor.com/20261025-could-hormuz-become-americas-suez/",
+            "url_mobile": "https://www.middleeastmonitor.com/20261025-could-hormuz-become-americas-suez/?amp",
+            "title": "Could Hormuz become America Suez ? \u2013 Middle East Monitor",
+            "seendate": "20261025T124500Z",
+            "socialimage": "https://www.middleeastmonitor.com/wp-content/uploads/2021/12/Egypt-navy-.jpg",
+            "domain": "middleeastmonitor.com",
+            "language": "English",
+            "sourcecountry": "Israel"
+          },
+          {
+            "url": "https://freebeacon.com/culture/the-latest-bond-thriller/",
+            "url_mobile": "",
+            "title": "The Latest Bond Thriller",
+            "seendate": "20261025T110000Z",
+            "socialimage": "",
+            "domain": "freebeacon.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.aol.co.uk/articles/most-levelling-projects-still-unfinished-060027000.html",
+            "url_mobile": "",
+            "title": "Most levelling up projects still unfinished years after funding allocated",
+            "seendate": "20261024T064500Z",
+            "socialimage": "https://hermes.media.static.aol.com/media/2026/10/24/61e80bd3-287f-37fb-8884-9f0a447fe695/ba68cab9-6f22-4de0-8e9c-88404ab9062f.jpg",
+            "domain": "aol.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.dailypost.co.uk/news/cost-of-living/market-leading-isa-482-rate-34811572",
+            "url_mobile": "",
+            "title": "  Market - leading  ISA has 4 . 82 % rate and Santander deal  pays customers \u00a3250  ",
+            "seendate": "20261024T094500Z",
+            "socialimage": "https://i2-prod.liverpoolecho.co.uk/news/article34811569.ece/ALTERNATES/s1200/0_ISAs-Individual-Savings-Account.jpg",
+            "domain": "dailypost.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.mirror.co.uk/money/santander-customers-can-250-paid-37806221",
+            "url_mobile": "https://www.mirror.co.uk/money/santander-customers-can-250-paid-37806221.amp",
+            "title": "Santander customers  can get \u00a3250 paid into account through  outstanding  deal",
+            "seendate": "20261024T103000Z",
+            "socialimage": "https://i2-prod.mirror.co.uk/article37806218.ece/ALTERNATES/s1200d/1_Santander-In-London.jpg",
+            "domain": "mirror.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.liverpoolecho.co.uk/news/cost-of-living/market-leading-isa-482-rate-34811572",
+            "url_mobile": "https://www.liverpoolecho.co.uk/news/cost-of-living/market-leading-isa-482-rate-34811572.amp",
+            "title": "  Market - leading  ISA has 4 . 82 % rate and Santander deal  pays customers \u00a3250  ",
+            "seendate": "20261024T113000Z",
+            "socialimage": "https://i2-prod.liverpoolecho.co.uk/article34811569.ece/ALTERNATES/s1200d/0_ISAs-Individual-Savings-Account.jpg",
+            "domain": "liverpoolecho.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           }
@@ -1562,61 +1562,8 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-26T21:21:15.308614+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.afr.com/property/residential/double-whammy-predicted-for-new-home-building-20261023-p61815",
-            "url_mobile": "",
-            "title": "Higher borrowing costs and weaker home prices a double whammy for new home building",
-            "seendate": "20261023T060000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.2135%2C$multiply_3%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_109/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/299bdac44f65a1462efd545d5c45c5a91c3554f7",
-            "domain": "afr.com",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.morningstar.com/news/dow-jones/2026102214000/australian-private-sector-business-activity-stalls-in-october",
-            "url_mobile": "",
-            "title": "Australian Private Sector Business Activity Stalls in October",
-            "seendate": "20261023T011500Z",
-            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
-            "domain": "morningstar.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.afr.com/rear-window/the-lightning-fast-winners-of-jpmorgan-s-famed-5km-challenge-20261022-p61666",
-            "url_mobile": "",
-            "title": "Reserve Bank of Australia runs rings around corporate Australia at JPMorgan Corporate Challenge",
-            "seendate": "20261023T000000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.2394%2C$multiply_3%2C$ratio_1.777778%2C$width_1059%2C$x_183%2C$y_74/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/b440f4f5b5a56cb0fbe9fba3d6424917f6ea2e66",
-            "domain": "afr.com",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.morningstar.com/markets/why-bonds-stumbled-stocks-mostly-stood-strong-q3-what-lies-ahead-investors",
-            "url_mobile": "",
-            "title": "Why Bonds Stumbled and Stocks ( Mostly ) Stood Strong in Q3 , and What Lies Ahead for Investors",
-            "seendate": "20261023T123000Z",
-            "socialimage": "https://media.morningstar.com/resizer/v2/STHQ6NGHQNB7NNQ2GOXJ3SLNPM.png?auth=733e3bad6cd693bfa2735e1bf3872aedf9889b624054ef9cb88e809211581ea7&quality=80&crop=0,0:2400,1350",
-            "domain": "morningstar.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://econotimes.com/RBA-Warns-Inflation-Outlook-Has-Worsened-as-Australian-Dollar-Slips-1760891",
-            "url_mobile": "",
-            "title": "RBA Warns Inflation Outlook Has Worsened as Australian Dollar Slips",
-            "seendate": "20261023T040000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/7951d598b30f456d1115c47a603ceca03b4a5f3fa4d46dd864708838cb66df15.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-27T21:02:23.398539+00:00",
+      "payload": {}
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
       "fetched_at_utc": "2026-10-22T20:28:25.478650+00:00",
@@ -1750,7 +1697,7 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-26T21:09:25.267565+00:00",
+      "fetched_at_utc": "2026-10-27T20:51:54.920166+00:00",
       "payload": {
         "articles": [
           {
@@ -1784,16 +1731,6 @@
             "sourcecountry": "South Korea"
           },
           {
-            "url": "https://hindi.moneycontrol.com/news/your-money/gold-silver-price-today-23-october-mcx-gold-price-fall-silver-silp-18k-22k-24k-2449991.html",
-            "url_mobile": "https://hindi.moneycontrol.com/news/your-money/gold-silver-price-today-23-october-mcx-gold-price-fall-silver-silp-18k-22k-24k-2449991.html/amp",
-            "title": "Gold Silver Price : MCX \u092a\u0930 \u0938\u094b\u0928\u0947 \u0915\u0947 \u0926\u093e\u092e \u092b\u093f\u0930 \u0917\u093f\u0930\u0947 , \u091a\u093e\u0902\u0926\u0940 \u20b94 , 191 \u0939\u0941\u0908 \u0914\u0930 \u0938\u0938\u094d\u0924\u0940 , \u0905\u092c \u0915\u094d\u092f\u093e \u0939\u094b \u0928\u093f\u0935\u0947\u0936 \u0930\u0923\u0928\u0940\u0924\u093f",
-            "seendate": "20261023T100000Z",
-            "socialimage": "https://images.moneycontrol.com/static-hindinews/2026/10/Gold-And-Silver-news.jpg",
-            "domain": "hindi.moneycontrol.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
-          },
-          {
             "url": "https://econotimes.com/Krugman-Outlines-AI-Inflation-and-Debt-Risks-to-U-S-Economy-1762931",
             "url_mobile": "",
             "title": "Krugman Outlines AI , Inflation and Debt Risks to U . S . Economy",
@@ -1814,32 +1751,12 @@
             "sourcecountry": "India"
           },
           {
-            "url": "https://www.breitbart.com/politics/2026/10/22/breitbart-business-digest-wall-street-is-daring-kevin-warsh-to-raise-interest-rates/",
-            "url_mobile": "https://www.breitbart.com/politics/2026/10/22/breitbart-business-digest-wall-street-is-daring-kevin-warsh-to-raise-interest-rates/amp/",
-            "title": "Breitbart Business Digest : Wall Street Is Daring Kevin Warsh to Raise Interest Rates",
-            "seendate": "20261023T071500Z",
-            "socialimage": "https://media.breitbart.com/media/2026/10/nyse-warsh-getty-640x335.png",
-            "domain": "breitbart.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
             "url": "https://econotimes.com/Bank-of-Korea-holds-rate-at-3-while-assessing-earlier-increases-1762307",
             "url_mobile": "",
             "title": "Bank of Korea holds rate at 3 % while assessing earlier increases",
             "seendate": "20261024T151500Z",
             "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/60a1df2873afa5c1ce923cd6d182505b74ea101d1100c2cba305580683264d99.webp",
             "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.fool.com/investing/2026/10/25/donald-trump-proclaimed-tariffs-dont-cause-inflation-they-cause-wealth-federal-reserve-economists/?source=iedfolrf0000001",
-            "url_mobile": "",
-            "title": "President Donald Trump Just Proclaimed ,  Tariffs Dont Cause Inflation , They Cause Wealth , but Data From Federal Reserve Economists Show Otherwise",
-            "seendate": "20261025T083000Z",
-            "socialimage": "https://cdn.content.foolcdn.com/images/1umn9qeh/production/bd3b3e865d83ce26ebe6d6d990f7e1175e79dc57-3000x2000.jpg",
-            "domain": "fool.com",
             "language": "English",
             "sourcecountry": "United States"
           },
@@ -1854,30 +1771,60 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.ksat.com/business/2026/10/22/average-long-term-us-mortgage-rate-eases-to-732-in-first-pullback-since-late-august/",
+            "url": "https://www.fool.com/investing/2026/10/25/donald-trump-proclaimed-tariffs-dont-cause-inflation-they-cause-wealth-federal-reserve-economists/?source=iedfolrf0000001",
             "url_mobile": "",
-            "title": "Average long - term US mortgage rate eases to 7 . 32 % in first pullback since late August",
-            "seendate": "20261022T211500Z",
-            "socialimage": "https://bc.gmg.io/image/upload/c_thumb,q_auto,w_700,f_jpg/media/gmg/4EVRC4PE7RCHXHHT5MVLQK5TNE.jpg?api_key=ksat_9a37fc89631abedf",
-            "domain": "ksat.com",
+            "title": "President Donald Trump Just Proclaimed ,  Tariffs Dont Cause Inflation , They Cause Wealth , but Data From Federal Reserve Economists Show Otherwise",
+            "seendate": "20261025T083000Z",
+            "socialimage": "https://cdn.content.foolcdn.com/images/1umn9qeh/production/bd3b3e865d83ce26ebe6d6d990f7e1175e79dc57-3000x2000.jpg",
+            "domain": "fool.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.businesstoday.in/personal-finance/story/gold-silver-prices-today-yellow-metal-hits-3-month-low-silver-drops-50-as-crude-surge-deepens-bullion-sell-off-563185-2026-10-23",
-            "url_mobile": "https://www.businesstoday.in/amp/personal-finance/story/gold-silver-prices-today-yellow-metal-hits-3-month-low-silver-drops-50-as-crude-surge-deepens-bullion-sell-off-563185-2026-10-23",
-            "title": "Gold , silver prices today : Yellow metal hits 3 month low , silver drops 50 % as crude surge deepens bullion sell off",
-            "seendate": "20261023T040000Z",
-            "socialimage": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202610/on-wednesday-gold-and-silver-prices-slipped-in-early-trade-as-investors-assessed-geopolitical-tensi-090031303-original-sixteen-to-nine.jpeg",
-            "domain": "businesstoday.in",
+            "url": "http://www.idahostatejournal.com/news/national/inflation-earnings-reports-and-the-mood-of-consumers-and-the-federal-reserve-fill-out-a/article_c6bfe07e-b9fb-5695-b36d-b762a28ea441.html",
+            "url_mobile": "https://www.idahostatejournal.com/news/national/inflation-earnings-reports-and-the-mood-of-consumers-and-the-federal-reserve-fill-out-a/article_c6bfe07e-b9fb-5695-b36d-b762a28ea441.amp.html",
+            "title": "Inflation , earnings reports and the mood of consumers and the Federal Reserve fill out a busy week",
+            "seendate": "20261024T180000Z",
+            "socialimage": "https://bloximages.chicago2.vip.townnews.com/idahostatejournal.com/content/tncms/assets/v3/editorial/1/cb/1cb50b45-b204-50e7-a636-a6bb41646d06/6ad9e3653fac8.image.jpg?crop=1763%2C926%2C0%2C124",
+            "domain": "idahostatejournal.com",
             "language": "English",
-            "sourcecountry": "India"
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.winnipegfreepress.com/business/2026/10/24/inflation-earnings-reports-and-the-mood-of-consumers-and-the-federal-reserve-fill-out-a-busy-week",
+            "url_mobile": "",
+            "title": "Inflation , earnings reports and the mood of consumers and the Federal Reserve fill out a busy week \u2013 Winnipeg Free Press",
+            "seendate": "20261024T083000Z",
+            "socialimage": "",
+            "domain": "winnipegfreepress.com",
+            "language": "English",
+            "sourcecountry": "Canada"
+          },
+          {
+            "url": "http://www.dailyadvance.com/news/national/inflation-earnings-reports-and-the-mood-of-consumers-and-the-federal-reserve-fill-out-a/article_55c4e0d2-cdde-51c0-863b-49afb57d0d66.html",
+            "url_mobile": "",
+            "title": "Inflation , earnings reports and the mood of consumers and the Federal Reserve fill out a busy week",
+            "seendate": "20261024T153000Z",
+            "socialimage": "https://bloximages.newyork1.vip.townnews.com/dailyadvance.com/content/tncms/assets/v3/editorial/5/39/5397759b-50ab-52d8-b5b3-3465a7dc526c/6ada1b7030485.image.jpg?crop=1763%2C926%2C0%2C124",
+            "domain": "dailyadvance.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.bnnbloomberg.ca/business/economics/2026/10/25/fed-expected-to-hold-rates-steady-days-ahead-of-us-midterms/",
+            "url_mobile": "",
+            "title": "Fed expected to hold rates steady days ahead of U . S . midterms",
+            "seendate": "20261025T033000Z",
+            "socialimage": "https://www.bnnbloomberg.ca/resizer/v2/ANPNPFLXSZFHN3Z6LJUL42KY4U.jpg?smart=true&auth=5963f932bf25546319b3a35f24f1716a0ae3cf3f8e7e2d8d48c89f46cb46138b",
+            "domain": "bnnbloomberg.ca",
+            "language": "English",
+            "sourcecountry": "Canada"
           }
         ]
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-26T21:15:52.895149+00:00",
+      "fetched_at_utc": "2026-10-27T20:57:44.356829+00:00",
       "payload": {
         "articles": [
           {
@@ -1891,62 +1838,12 @@
             "sourcecountry": "Egypt"
           },
           {
-            "url": "https://www.edaily.co.kr/News/Read?newsId=04214806645615872&mediaCodeNo=257",
-            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=04214806645615872 eNo=257",
-            "title": "ECB \uae08\ub9ac\uc778\uc0c1 , 12\uc6d4 \ud55c\ucc28\ub840\ub85c \ub05d ?\u2026 \u4f5b\uad6d\ucc44 5 % \uc5d0\ub3c4  \uac1c\uc785 \uc5c6\ub2e4  ",
-            "seendate": "20261023T063000Z",
-            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/10/PS26102301003.jpg",
-            "domain": "edaily.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.mikrometoxos.gr/ekt-erchetai-nea-afxisi-epitokion-ton-dekemvrio-sto-275-vlepoun-to-epitokio-oi-oikonomologoi/",
-            "url_mobile": "",
-            "title": "\u0395\u039a\u03a4 : \u0388\u03c1\u03c7\u03b5\u03c4\u03b1\u03b9 \u03bd\u03ad\u03b1 \u03b1\u03cd\u03be\u03b7\u03c3\u03b7 \u03b5\u03c0\u03b9\u03c4\u03bf\u03ba\u03af\u03c9\u03bd \u03c4\u03bf\u03bd \u0394\u03b5\u03ba\u03ad\u03bc\u03b2\u03c1\u03b9\u03bf \u2013 \u03a3\u03c4\u03bf 2 , 75 % \u03b2\u03bb\u03ad\u03c0\u03bf\u03c5\u03bd \u03c4\u03bf \u03b5\u03c0\u03b9\u03c4\u03cc\u03ba\u03b9\u03bf \u03bf\u03b9 \u03bf\u03b9\u03ba\u03bf\u03bd\u03bf\u03bc\u03bf\u03bb\u03cc\u03b3\u03bf\u03b9",
-            "seendate": "20261023T083000Z",
-            "socialimage": "https://www.mikrometoxos.gr/wp-content/uploads/2026/03/EKT.jpg",
-            "domain": "mikrometoxos.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
             "url": "https://www.kathimerini.gr/economy/international/564544843/provlepseis-gia-mono-mia-ayxisi-epitokion-apo-ekt-ton-dekemvrio/",
             "url_mobile": "",
             "title": "\u03a0\u03c1\u03bf\u03b2\u03bb\u03ad\u03c8\u03b5\u03b9\u03c2 \u03b3\u03b9\u03b1 \u03bc\u03cc\u03bd\u03bf \u03bc\u03af\u03b1 \u03b1\u03cd\u03be\u03b7\u03c3\u03b7 \u03b5\u03c0\u03b9\u03c4\u03bf\u03ba\u03af\u03c9\u03bd \u03b1\u03c0\u03cc \u0395\u039a\u03a4 \u03c4\u03bf\u03bd \u0394\u03b5\u03ba\u03ad\u03bc\u03b2\u03c1\u03b9\u03bf",
             "seendate": "20261024T064500Z",
             "socialimage": "https://www.kathimerini.gr/wp-content/uploads/2026/10/swm-227b7a537c3b9d57979601626c1e807c_2024-11-14T194648Z_1122020027_RC265BAQX33I_RTRMADP_5_ECB-POLICY-SCH-1-1200x630.jpg",
             "domain": "kathimerini.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://arabic.euronews.com/2026/10/23/france-slips-into-contraction-as-europes-growth-slows-how-bad-could-it-get",
-            "url_mobile": "",
-            "title": "\u0641\u0631\u0646\u0633\u0627 \u062a\u0639\u0648\u062f \u0644\u0644\u0627\u0646\u0643\u0645\u0627\u0634 \u0645\u0639 \u062a\u0628\u0627\u0637\u0624 \u0646\u0645\u0648 \u0623\u0648\u0631\u0648\u0628\u0627 : \u0645\u0627 \u062d\u062c\u0645 \u0627\u0644\u062a\u062f\u0647\u0648\u0631 \u0627\u0644\u0645\u062d\u062a\u0645\u0644 \u061f ",
-            "seendate": "20261023T123000Z",
-            "socialimage": "https://images.euronews.com/articles/stories/09/96/43/01/1200x675_cmsv2_7d28ca4a-ef31-59f7-bf0d-b31b30ccc4a3-9964301.jpg",
-            "domain": "arabic.euronews.com",
-            "language": "Arabic",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://investinglive.com/central-banks/ecb-s-panetta-says-rising-yields-a-drag-on-growth-not-a-crisis-ahead-of-rate-meeting/",
-            "url_mobile": "",
-            "title": "ECB Panetta says rising yields a drag on growth , not a crisis , ahead of rate meeting",
-            "seendate": "20261022T231500Z",
-            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/EUR%20still%20heavy%20chart%20update%2023%20October%202026-featured-1792704542.jpg?&format=webp",
-            "domain": "investinglive.com",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://www.capital.gr/diethni/4025203/bloomberg-gia-ekt-mia-akomi-auxisi-epitokion-ton-dekembrio-kai-meta-pausi-eos-to-2028/",
-            "url_mobile": "https://www.capital.gr/diethni/4025203/bloomberg-gia-ekt-mia-akomi-auxisi-epitokion-ton-dekembrio-kai-meta-pausi-eos-to-2028/?amp=true",
-            "title": "Bloomberg \u03b3\u03b9\u03b1 \u0395\u039a\u03a4 : \u039c\u03af\u03b1 \u03b1\u03ba\u03cc\u03bc\u03b7 \u03b1\u03cd\u03be\u03b7\u03c3\u03b7 \u03b5\u03c0\u03b9\u03c4\u03bf\u03ba\u03af\u03c9\u03bd \u03c4\u03bf\u03bd \u0394\u03b5\u03ba\u03ad\u03bc\u03b2\u03c1\u03b9\u03bf \u03ba\u03b1\u03b9 \u03bc\u03b5\u03c4\u03ac \u03c0\u03b1\u03cd\u03c3\u03b7 ... ",
-            "seendate": "20261023T060000Z",
-            "socialimage": "https://www.capital.gr/Content/ImagesDatabase/fb/1000x523/crop/both/5a/5a469f3f50bb4801b46299b9e7406dd6.jpg",
-            "domain": "capital.gr",
             "language": "Greek",
             "sourcecountry": "Greece"
           },
@@ -1971,16 +1868,6 @@
             "sourcecountry": "Poland"
           },
           {
-            "url": "https://www.euro2day.gr/news/world/article/2375001/se-hamhlo-tetramhnoy-h-epiheirhmatikh-drasthriotht.html",
-            "url_mobile": "https://www.euro2day.gr/amp/news/world/article/2375001/se-hamhlo-tetramhnoy-h-epiheirhmatikh-drasthriotht.html",
-            "title": "\u03a3\u03b5 \u03c7\u03b1\u03bc\u03b7\u03bb\u03cc \u03c4\u03b5\u03c4\u03c1\u03b1\u03bc\u03ae\u03bd\u03bf\u03c5 \u03b7 \u03b5\u03c0\u03b9\u03c7\u03b5\u03b9\u03c1\u03b7\u03bc\u03b1\u03c4\u03b9\u03ba\u03ae \u03b4\u03c1\u03b1\u03c3\u03c4\u03b7\u03c1\u03b9\u03cc\u03c4\u03b7\u03c4\u03b1 \u03b5\u03c5\u03c1\u03c9\u03b6\u03ce\u03bd\u03b7\u03c2",
-            "seendate": "20261023T091500Z",
-            "socialimage": "",
-            "domain": "euro2day.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
             "url": "https://sofokleous10.gr/2026/10/24/bloomberg-%CF%84%CE%BF%CE%BD-%CE%B4%CE%B5%CE%BA%CE%AD%CE%BC%CE%B2%CF%81%CE%B9%CE%BF-%CE%B7-%CE%BD%CE%AD%CE%B1-%CE%B1%CF%8D%CE%BE%CE%B7%CF%83%CE%B7-%CE%B5%CF%80%CE%B9%CF%84%CE%BF%CE%BA%CE%AF%CF%89/",
             "url_mobile": "",
             "title": "Bloomberg : \u03a4\u03bf\u03bd \u0394\u03b5\u03ba\u03ad\u03bc\u03b2\u03c1\u03b9\u03bf \u03b7 \u03bd\u03ad\u03b1 \u03b1\u03cd\u03be\u03b7\u03c3\u03b7 \u03b5\u03c0\u03b9\u03c4\u03bf\u03ba\u03af\u03c9\u03bd \u03b1\u03c0\u03cc \u0395\u039a\u03a4 - \u00ab \u03a0\u03b1\u03cd\u03c3\u03b7 \u00bb \u03c4\u03b7\u03bd \u03a0\u03ad\u03bc\u03c0\u03c4\u03b7",
@@ -1991,14 +1878,74 @@
             "sourcecountry": "Greece"
           },
           {
-            "url": "https://effektivtlandbrug.landbrugnet.dk/artikler/marked/125676/europaeisk-vaekstindikator-skuffer-markant",
+            "url": "https://www.poslovni.hr/financije/dolar-ojacao-u-odnosu-na-euro-oslabio-u-odnosu-na-jen-4560993",
             "url_mobile": "",
-            "title": "Europ\u00e6isk v\u00e6kstindikator skuffer markant",
-            "seendate": "20261023T133000Z",
-            "socialimage": "",
-            "domain": "effektivtlandbrug.landbrugnet.dk",
-            "language": "Danish",
-            "sourcecountry": ""
+            "title": "Dolar oja\u010dao u odnosu na euro , oslabio u odnosu na jen",
+            "seendate": "20261025T094500Z",
+            "socialimage": "https://www.poslovni.hr/wp-content/uploads/2026/06/21euro.jpg",
+            "domain": "poslovni.hr",
+            "language": "Croatian",
+            "sourcecountry": "Croatia"
+          },
+          {
+            "url": "https://www.gdnonline.com:443/Details/1410645/Euro-zone-private-sector-growth-slows",
+            "url_mobile": "",
+            "title": "International Business : Euro zone private sector growth slows",
+            "seendate": "20261024T083000Z",
+            "socialimage": "https://www.gdnonline.com/gdnimages/20261024%5C20261023_224004_2.jpg",
+            "domain": "gdnonline.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.gdnonline.com:443/Details/1410645",
+            "url_mobile": "",
+            "title": "International Business : Euro zone private sector growth slows",
+            "seendate": "20261024T030000Z",
+            "socialimage": "https://www.gdnonline.com/gdnimages/20261024%5C20261023_224004_2.jpg",
+            "domain": "gdnonline.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.etoday.co.kr/news/view/2639679",
+            "url_mobile": "https://m.etoday.co.kr/news/view/2639679",
+            "title": " [ \uae40\ub0a8\ud604\uc758 \ucc44\uad8c\uc370 ] \uc8fc\uac00\uc5d0\uc11c \uc720\uac00 \u00b7 FOMC\ub85c \uad00\uc2ec \ud55c\ud074\ub9ad \uc774\ub3d9",
+            "seendate": "20261024T171500Z",
+            "socialimage": "https://img.etoday.co.kr/pto_db/2026/07/20260727141401_2364568_1200_800.jpg",
+            "domain": "etoday.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns-11792841534411.html",
+            "url_mobile": "https://www.livemint.com/market/stock-market-news/silver-price-has-broken-below-2-lakh-for-the-first-time-since-december-2025-is-this-the-right-time-to-buy-for-returns/amp-11792841534411.html",
+            "title": "Silver price has broken below \u20b92 lakh for the first time since December 2025 : Is this the right time to buy for returns ? ",
+            "seendate": "20261024T124500Z",
+            "socialimage": "https://www.livemint.com/lm-img/img/2026/10/24/600x338/Silver_Below_2_Lakh__Time_to_Buy__1792842381698_IdiX_1792842393865_e3TU_4c42da55-881d-4808-9898-6f43cf8eab37_xqHO.png",
+            "domain": "livemint.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.infranken.de/ratgeber/karriere-geld/tagesgeld-zinsen-ezb-leitzins-inflation-sparer-lockangebote-kredit-neukunden-tmr-1-art-6405048",
+            "url_mobile": "",
+            "title": "Bis 4 , 5 % aufs Tagesgeld : Die aktuell h\u00f6chsten Zinsen und die Bedingungen",
+            "seendate": "20261025T110000Z",
+            "socialimage": "https://www.infranken.de/storage/image/3/6/2/7/4507263_die-ing-bank-fuehrt-am-wochenende-vom-20-bis-21-maerz-2026-planmaessige-ser_default_1FKXLi_FxqnYC.jpg",
+            "domain": "infranken.de",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.businesstimes.com.sg/companies-markets/euro-sinks-french-debt-worries-yen-gains-week-ai-rout",
+            "url_mobile": "",
+            "title": "Euro sinks on French debt worries ; yen gains for week on AI rout",
+            "seendate": "20261025T124500Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/e8772154e84614fd6a0fcf523037ea98c22ac32ee498575d568233c9517f7011?&f=webp",
+            "domain": "businesstimes.com.sg",
+            "language": "English",
+            "sourcecountry": "Singapore"
           }
         ]
       }

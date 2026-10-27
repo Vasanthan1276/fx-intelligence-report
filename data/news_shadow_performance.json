@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-26T21:28:11.452568+00:00",
+  "generated_at_utc": "2026-10-27T21:10:24.254647+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -15,18 +15,18 @@
   "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
   "overall": {
     "1": {
-      "directional_calls": 19,
+      "directional_calls": 20,
       "correct": 4,
-      "incorrect": 4,
+      "incorrect": 5,
       "neutral_move": 11,
-      "directional_accuracy_pct": 50.0
+      "directional_accuracy_pct": 44.4
     },
     "5": {
-      "directional_calls": 15,
-      "correct": 7,
+      "directional_calls": 16,
+      "correct": 8,
       "incorrect": 6,
       "neutral_move": 2,
-      "directional_accuracy_pct": 53.8
+      "directional_accuracy_pct": 57.1
     },
     "10": {
       "directional_calls": 13,
@@ -46,8 +46,8 @@
         "directional_accuracy_pct": 100.0
       },
       "5": {
-        "directional_calls": 5,
-        "correct": 3,
+        "directional_calls": 6,
+        "correct": 4,
         "incorrect": 0,
         "neutral_move": 2,
         "directional_accuracy_pct": 100.0
@@ -108,11 +108,11 @@
     },
     "GBP": {
       "1": {
-        "directional_calls": 2,
+        "directional_calls": 3,
         "correct": 0,
-        "incorrect": 0,
+        "incorrect": 1,
         "neutral_move": 2,
-        "directional_accuracy_pct": null
+        "directional_accuracy_pct": 0.0
       },
       "5": {
         "directional_calls": 2,
@@ -817,6 +817,20 @@
       "outcome": "neutral_move"
     },
     {
+      "run_date_sgt": "2026-10-21",
+      "market_date": "2026-10-20",
+      "future_date": "2026-10-27",
+      "currency": "USD",
+      "horizon_trading_days": 5,
+      "shadow_score": 3.62,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.278466,
+      "future_rate_sgd": 1.281166,
+      "rate_change_pct": 0.211,
+      "outcome": "correct"
+    },
+    {
       "run_date_sgt": "2026-10-22",
       "market_date": "2026-10-21",
       "future_date": "2026-10-22",
@@ -857,6 +871,20 @@
       "future_rate_sgd": 0.897798,
       "rate_change_pct": 0.222,
       "outcome": "correct"
+    },
+    {
+      "run_date_sgt": "2026-10-27",
+      "market_date": "2026-10-26",
+      "future_date": "2026-10-27",
+      "currency": "GBP",
+      "horizon_trading_days": 1,
+      "shadow_score": 3.68,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.709258,
+      "future_rate_sgd": 1.707547,
+      "rate_change_pct": -0.1,
+      "outcome": "incorrect"
     }
   ]
 }
