@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-27T21:10:24.254647+00:00",
+  "generated_at_utc": "2026-10-28T21:31:58.947136+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -22,11 +22,11 @@
       "directional_accuracy_pct": 44.4
     },
     "5": {
-      "directional_calls": 16,
-      "correct": 8,
+      "directional_calls": 18,
+      "correct": 10,
       "incorrect": 6,
       "neutral_move": 2,
-      "directional_accuracy_pct": 57.1
+      "directional_accuracy_pct": 62.5
     },
     "10": {
       "directional_calls": 13,
@@ -46,8 +46,8 @@
         "directional_accuracy_pct": 100.0
       },
       "5": {
-        "directional_calls": 6,
-        "correct": 4,
+        "directional_calls": 7,
+        "correct": 5,
         "incorrect": 0,
         "neutral_move": 2,
         "directional_accuracy_pct": 100.0
@@ -138,11 +138,11 @@
         "directional_accuracy_pct": 50.0
       },
       "5": {
-        "directional_calls": 2,
-        "correct": 1,
+        "directional_calls": 3,
+        "correct": 2,
         "incorrect": 1,
         "neutral_move": 0,
-        "directional_accuracy_pct": 50.0
+        "directional_accuracy_pct": 66.7
       },
       "10": {
         "directional_calls": 2,
@@ -847,6 +847,20 @@
     {
       "run_date_sgt": "2026-10-22",
       "market_date": "2026-10-21",
+      "future_date": "2026-10-28",
+      "currency": "USD",
+      "horizon_trading_days": 5,
+      "shadow_score": 3.7,
+      "shadow_confidence_pct": 84,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.277194,
+      "future_rate_sgd": 1.282134,
+      "rate_change_pct": 0.387,
+      "outcome": "correct"
+    },
+    {
+      "run_date_sgt": "2026-10-22",
+      "market_date": "2026-10-21",
       "future_date": "2026-10-22",
       "currency": "AUD",
       "horizon_trading_days": 1,
@@ -857,6 +871,20 @@
       "future_rate_sgd": 0.895807,
       "rate_change_pct": -0.286,
       "outcome": "incorrect"
+    },
+    {
+      "run_date_sgt": "2026-10-22",
+      "market_date": "2026-10-21",
+      "future_date": "2026-10-28",
+      "currency": "AUD",
+      "horizon_trading_days": 5,
+      "shadow_score": 3.32,
+      "shadow_confidence_pct": 77,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.898378,
+      "future_rate_sgd": 0.901706,
+      "rate_change_pct": 0.37,
+      "outcome": "correct"
     },
     {
       "run_date_sgt": "2026-10-23",
