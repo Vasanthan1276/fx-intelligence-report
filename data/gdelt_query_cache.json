@@ -1,129 +1,89 @@
 {
-  "updated_at_utc": "2026-10-28T21:29:52.983993+00:00",
+  "updated_at_utc": "2026-10-29T21:38:02.085947+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-21T20:18:46.881900+00:00",
+      "fetched_at_utc": "2026-10-29T21:20:11.327003+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-rises-to-94-80-against-us-dollar-but-crude-oil-threatens-recovery/articleshow/135040171.cms",
-            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/rupee-rises-to-94-80-against-us-dollar-but-crude-oil-threatens-recovery/amp_articleshow/135040171.cms",
-            "title": "Rupee rises to 94 . 80 against US dollar , but crude oil threatens recovery",
-            "seendate": "20261019T060000Z",
-            "socialimage": "https://static.toiimg.com/thumb/msid-135040546,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-            "domain": "timesofindia.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.thehindu.com/brandhub/pr-release/what-a-pip-count-cannot-tell-you-about-a-forex-trade/article71607268.ece",
-            "url_mobile": "https://www.thehindu.com/brandhub/pr-release/what-a-pip-count-cannot-tell-you-about-a-forex-trade/article71607268.ece/amp/",
-            "title": "What a Pip Count Cannot Tell You About a Forex Trade",
-            "seendate": "20261021T133000Z",
-            "socialimage": "https://th-i.thgim.com/public/incoming/maqas9/article71607269.ece/alternates/LANDSCAPE_1200/Screenshot%202026-10-21%20151756.png",
-            "domain": "thehindu.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-hits-6-week-high-surges-53-paise-to-94-38-against-dollar-on-jio-ipo-inflows-rbi-support/articleshow/135096229.cms",
-            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/rupee-hits-6-week-high-surges-53-paise-to-94-38-against-dollar-on-jio-ipo-inflows-rbi-support/amp_articleshow/135096229.cms",
-            "title": "Rupee hits 6 - week high , surges 53 paise to 94 . 38 against dollar on Jio IPO inflows , RBI support",
-            "seendate": "20261021T171500Z",
-            "socialimage": "https://static.toiimg.com/thumb/msid-135096389,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-            "domain": "timesofindia.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.business-standard.com/opinion/columns/rbi-supplements-financial-muscle-with-regulatory-heft-126101800823_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/opinion/columns/rbi-supplements-financial-muscle-with-regulatory-heft-126101800823_1.html",
-            "title": "RBI supplements financial muscle with regulatory heft",
-            "seendate": "20261018T191500Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-09/25/thumb/fitandfill/1200X628/1790359992-4619.jpg",
-            "domain": "business-standard.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-gains-29-paise-against-dollar-in-early-trade-but-crude-prices-limit-gains/articleshow/135082744.cms",
-            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/rupee-gains-29-paise-against-dollar-in-early-trade-but-crude-prices-limit-gains/amp_articleshow/135082744.cms",
-            "title": "Rupee gains 29 paise against dollar in early trade , but crude prices limit gains",
-            "seendate": "20261021T054500Z",
-            "socialimage": "https://static.toiimg.com/thumb/msid-135082800,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-            "domain": "timesofindia.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.business-standard.com/finance/news/rupee-rises-9-paise-to-94-80-against-us-dollar-during-early-trade-126101900186_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/finance/news/rupee-rises-9-paise-to-94-80-against-us-dollar-during-early-trade-126101900186_1.html",
-            "title": "Rupee rises 9 paise to 94 . 80 against US dollar during early trade",
-            "seendate": "20261019T073000Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-10/13/thumb/fitandfill/1200X628/1791878856-9728.JPG",
-            "domain": "business-standard.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.deccanchronicle.com/business/economics/rupee-rises-9-paise-to-9480-against-us-dollar-crude-oil-surge-threatens-recovery-1997089",
-            "url_mobile": "https://www.deccanchronicle.com/amp/business/economics/rupee-rises-9-paise-to-9480-against-us-dollar-crude-oil-surge-threatens-recovery-1997089",
-            "title": "Rupee Rises 9 Paise to 94 . 80 Against US Dollar",
-            "seendate": "20261019T054500Z",
-            "socialimage": "https://www.deccanchronicle.com/h-upload/2026/07/15/2064034-rupee.jpg",
-            "domain": "deccanchronicle.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.manilatimes.net/2026/10/20/business/top-business/peso-drops-to-new-low/2449062",
-            "url_mobile": "https://www.manilatimes.net/2026/10/20/business/top-business/peso-drops-to-new-low/2449062/amp",
-            "title": "Peso drops to new low | The Manila Times",
-            "seendate": "20261019T201500Z",
-            "socialimage": "https://manilatimes.net/manilatimes/uploads/images/2026/10/20/1266585.jpg",
-            "domain": "manilatimes.net",
-            "language": "English",
-            "sourcecountry": "Philippines"
-          },
-          {
-            "url": "https://www.business-standard.com/finance/news/rupee-rises-29-paise-to-94-62-against-us-dollar-during-early-trade-126102100233_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/finance/news/rupee-rises-29-paise-to-94-62-against-us-dollar-during-early-trade-126102100233_1.html",
-            "title": "Rupee rises 29 paise to 94 . 62 against US dollar during early trade",
-            "seendate": "20261021T053000Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/17/thumb/fitandfill/1200X628/1786944805-4909.jpg",
-            "domain": "business-standard.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.deccanchronicle.com/business/economics/rupee-rises-29-paise-to-9462-against-us-dollar-on-jio-ipo-inflows-1997511",
-            "url_mobile": "https://www.deccanchronicle.com/amp/business/economics/rupee-rises-29-paise-to-9462-against-us-dollar-on-jio-ipo-inflows-1997511",
-            "title": "Rupee Rises 29 Paise to 94 . 62 Against US Dollar on Jio IPO Inflows",
-            "seendate": "20261021T061500Z",
-            "socialimage": "https://www.deccanchronicle.com/h-upload/2026/07/15/2064033-rupee.jpg",
-            "domain": "deccanchronicle.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.moneycontrol.com/news/currency/rupee-opens-9-paise-higher-at-94-87-against-dollar-rbi-intervention-offsets-crude-pressure-14055070.html",
-            "url_mobile": "https://www.moneycontrol.com/news/currency/rupee-opens-9-paise-higher-at-94-87-against-dollar-rbi-intervention-offsets-crude-pressure-14055070.html/amp",
-            "title": "Rupee opens 9 paise higher at 94 . 87 against dollar , RBI intervention offsets crude pressure",
-            "seendate": "20261019T054500Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/08/20260824104442_rupeertr111111.png",
-            "domain": "moneycontrol.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/20-Oct-2026/today-currency-exchange-rates-in-pakistan-dollar-euro-riyal-dirham-20-october-2026",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-26-october-2026/",
             "url_mobile": "",
-            "title": "Today Currency Exchange Rates in Pakistan , Dollar , Euro , Riyal , Dirham",
-            "seendate": "20261020T061500Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/01/pakistani-rupee-largely-stable-against-us-dollar-euro-pound-riyal-30-jan-2024-forex-rates-1706587889-8321.jpg",
-            "domain": "en.dailypakistan.com.pk",
+            "title": "Currency exchange rates in Pakistan today \u2013 26 October 2026",
+            "seendate": "20261026T050000Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/12/today-s-currency-exchange-rates-in-pakistan-dollar-euro-pound-riyal-rates-on-may-25-2023-1684987420-6451.jpg",
+            "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
+            "url_mobile": "",
+            "title": "Currency exchange rates in Pakistan today \u2013 27 October 2026",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-chinas-yuan-hits-four-year-high-as-dollar-weakens-ahead-of-policy-meetings/articleshow/135202635.cms",
+            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/global-market-chinas-yuan-hits-four-year-high-as-dollar-weakens-ahead-of-policy-meetings/amp_articleshow/135202635.cms",
+            "title": "Global Market : China yuan hits four - year high as dollar weakens ahead of policy meetings",
+            "seendate": "20261026T050000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-135202655,width-1200,height-900,imgsize-2317562,overlay-etmarkets/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69930152-wachstum-digitales-gold-neue-nachfrage-koennte-den-goldmarkt-staerken-413.htm",
+            "url_mobile": "",
+            "title": "Wachstum : Digitales Gold : Neue Nachfrage k\u00f6nnte den Goldmarkt st\u00e4rken",
+            "seendate": "20261026T050000Z",
+            "socialimage": "https://assets.wallstreet-online.de/_media/16544/2026/size_1280/gold-globus-und-digitale-finanzwelt-teaser-bild.png",
+            "domain": "finanznachrichten.de",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69930153-goldrausch-osisko-gold-group-finanzierung-staerkt-cariboo-projekt-413.htm",
+            "url_mobile": "",
+            "title": "Goldrausch : Osisko Gold Group : Finanzierung st\u00e4rkt Cariboo - Projekt",
+            "seendate": "20261026T050000Z",
+            "socialimage": "https://assets.wallstreet-online.de/_media/16544/2026/10/22/bohr-highlights.png",
+            "domain": "finanznachrichten.de",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.wallstreet-online.de/nachricht/21581319-ausweitung-produktion-uranmarkt-wandel-unternehmen-strategien",
+            "url_mobile": "",
+            "title": "Ausweitung der Produktion : Uranmarkt im Wandel : Zwei Unternehmen , zwei Strategien | wallstreetONLINE",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://assets.wallstreet-online.de/_media/16544/2026/size_1280/teaser-bild-ki.png",
+            "domain": "wallstreet-online.de",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-tuesday-october-27-2026/",
+            "url_mobile": "",
+            "title": "Brazil Stocks Face Test After 13 . 9 % Plunge | Morning Call , Oct 27",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://www.riotimesonline.com/wp-content/uploads/2026/07/Avenida_Paulista2C_SC3A3o_Paulo_2016_06-scaled.jpg",
+            "domain": "riotimesonline.com",
+            "language": "English",
+            "sourcecountry": "Brazil"
+          },
+          {
+            "url": "https://www.southcoastregister.com.au/story/9370069/el-salvador-how-the-country-became-a-safe-place-for-travellers/",
+            "url_mobile": "",
+            "title": "El Salvador : how the country became a safe place for travellers | South Coast Register",
+            "seendate": "20261026T071500Z",
+            "socialimage": "https://www.southcoastregister.com.au/images/transform/v1/crop/frm/130854433/b4c0b828-7983-4f19-b7bc-67c22caada44.jpg/r0_142_2135_1263_w1200_h630_fmax.jpg",
+            "domain": "southcoastregister.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
           }
         ]
       }
@@ -256,7 +216,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-10-28T21:17:17.852435+00:00",
+      "fetched_at_utc": "2026-10-29T21:22:26.629531+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -872,7 +832,7 @@
       }
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-10-28T21:25:34.954802+00:00",
+      "fetched_at_utc": "2026-10-29T21:34:33.433877+00:00",
       "payload": {
         "articles": [
           {
@@ -894,36 +854,6 @@
             "domain": "smartcompany.com.au",
             "language": "English",
             "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.watoday.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
-            "url_mobile": "",
-            "title": "UBS talks about leaving Switzerland",
-            "seendate": "20261021T231500Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
-            "domain": "watoday.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.rnz.co.nz/news/business/2075443/inflation-tumbles-to-3-point-7-percent-but-expected-to-rise-again-soon",
-            "url_mobile": "",
-            "title": "Inflation tumbles to 3 . 7 %, but expected to rise again soon",
-            "seendate": "20261021T231500Z",
-            "socialimage": "https://media.rnztools.nz/rnz/image/upload/s--pR9XiLW1--/t_tohu-badge-facebook/f_auto/q_auto/4JGD5E7_Media_4_jfif",
-            "domain": "rnz.co.nz",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://business.scoop.co.nz/2026/10/22/inflation-tumbles-to-3-7-but-expected-to-rise-again-soon/",
-            "url_mobile": "",
-            "title": "Business . Scoop \u00bb Inflation Tumbles To 3 . 7 %, But Expected To Rise Again Soon",
-            "seendate": "20261022T070000Z",
-            "socialimage": "",
-            "domain": "business.scoop.co.nz",
-            "language": "English",
-            "sourcecountry": "New Zealand"
           }
         ]
       }
@@ -933,21 +863,8 @@
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-28T21:27:27.854811+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://thaipublica.org/2026/10/asean-weekly-roundup-377/",
-            "url_mobile": "",
-            "title": "ASEAN Roundup \u0e2d\u0e34\u0e19\u0e42\u0e14\u0e19\u0e35\u0e40\u0e0b\u0e35\u0e22\u0e40\u0e23\u0e48\u0e07\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e14\u0e31\u0e19\u0e40\u0e28\u0e23\u0e29\u0e10\u0e01\u0e34\u0e08\u0e42\u0e15 8 % ",
-            "seendate": "20261025T083000Z",
-            "socialimage": "https://thaipublica.org/wp-content/uploads/2025/02/Indonesia.jpg",
-            "domain": "thaipublica.org",
-            "language": "Thai",
-            "sourcecountry": "Thailand"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-29T21:36:34.159743+00:00",
+      "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-10-27T21:05:10.550891+00:00",
@@ -1196,7 +1113,7 @@
       "payload": {}
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-10-28T21:28:35.424934+00:00",
+      "fetched_at_utc": "2026-10-29T21:38:02.085928+00:00",
       "payload": {
         "articles": [
           {
@@ -1217,69 +1134,9 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-28T21:16:12.919571+00:00",
+      "fetched_at_utc": "2026-10-29T21:20:28.403909+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://econotimes.com/Krugman-Outlines-AI-Inflation-and-Debt-Risks-to-U-S-Economy-1762931",
-            "url_mobile": "",
-            "title": "Krugman Outlines AI , Inflation and Debt Risks to U . S . Economy",
-            "seendate": "20261025T111500Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/c2d1da802f7153dc76cff1fe728c4bf7c05ac135c8aaabe89fa099e7a78eb56e.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.business-standard.com/markets/news/q2-results-us-fed-decision-crude-oil-may-drive-stock-markets-this-week-126102500192_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/markets/news/q2-results-us-fed-decision-crude-oil-may-drive-stock-markets-this-week-126102500192_1.html",
-            "title": "Q2 results , US Fed decision , crude oil may drive stock markets this week",
-            "seendate": "20261025T103000Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/28/thumb/fitandfill/1200X628/1787894930-8896.jpg",
-            "domain": "business-standard.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.fool.com/investing/2026/10/25/donald-trump-proclaimed-tariffs-dont-cause-inflation-they-cause-wealth-federal-reserve-economists/?source=iedfolrf0000001",
-            "url_mobile": "",
-            "title": "President Donald Trump Just Proclaimed ,  Tariffs Dont Cause Inflation , They Cause Wealth , but Data From Federal Reserve Economists Show Otherwise",
-            "seendate": "20261025T083000Z",
-            "socialimage": "https://cdn.content.foolcdn.com/images/1umn9qeh/production/bd3b3e865d83ce26ebe6d6d990f7e1175e79dc57-3000x2000.jpg",
-            "domain": "fool.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.bnnbloomberg.ca/business/economics/2026/10/25/fed-expected-to-hold-rates-steady-days-ahead-of-us-midterms/",
-            "url_mobile": "",
-            "title": "Fed expected to hold rates steady days ahead of U . S . midterms",
-            "seendate": "20261025T033000Z",
-            "socialimage": "https://www.bnnbloomberg.ca/resizer/v2/ANPNPFLXSZFHN3Z6LJUL42KY4U.jpg?smart=true&auth=5963f932bf25546319b3a35f24f1716a0ae3cf3f8e7e2d8d48c89f46cb46138b",
-            "domain": "bnnbloomberg.ca",
-            "language": "English",
-            "sourcecountry": "Canada"
-          },
-          {
-            "url": "https://www.livehindustan.com/business/share-market/stock-market-outlook-fedreserve-to-q2-results-these-will-impact-speed-of-share-bazar-201792920186536.html",
-            "url_mobile": "https://www.livehindustan.com/business/share-market/stock-market-outlook-fedreserve-to-q2-results-these-will-impact-speed-of-share-bazar-201792920186536.amp.html",
-            "title": "\u0915\u0902\u092a\u0928\u093f\u092f\u094b\u0902 \u0915\u0947 \u0924\u093f\u092e\u093e\u0939\u0940 \u0928\u0924\u0940\u091c\u0947 , \u092b\u0947\u0921 \u0930\u093f\u091c\u0930\u094d\u0935 \u0915\u0940 \u092c\u0948\u0920\u0915 \u0938\u0947 \u0924\u092f \u0939\u094b\u0917\u0940 \u0936\u0947\u092f\u0930 \u092c\u093e\u091c\u093e\u0930 \u0915\u0940 \u0926\u093f\u0936\u093e ; \u0915\u091a\u094d\u091a\u0947 \u0924\u0947\u0932 \u0915\u0947 \u0930\u0947\u091f \u0928\u0947 \u092c\u0922\u093c\u093e\u0908 \u091f\u0947\u0902\u0936\u0928",
-            "seendate": "20261025T110000Z",
-            "socialimage": "",
-            "domain": "livehindustan.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.aol.com/articles/america-farmers-flashing-warning-signals-114500000.html",
-            "url_mobile": "",
-            "title": "America farmers are flashing warning signals about inflation , and the Fed is paying attention . Protect yourself now",
-            "seendate": "20261025T124500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/f0401c606a4d04bda599480a364473280c7fc25d/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/10/25/2944f252-147c-3350-899f-f325a6e3fae4/14ebf1b7-53f5-4e86-ba28-07ad612e7472.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
           {
             "url": "https://maharashtratimes.com/business/business-news/gold-prices-downward-trend-continues-silver-rates-plummet-brings-great-cheers-to-customers-ahead-of-diwali/articleshow/135223682.cms",
             "url_mobile": "https://maharashtratimes.com/business/business-news/gold-prices-downward-trend-continues-silver-rates-plummet-brings-great-cheers-to-customers-ahead-of-diwali/amp_articleshow/135223682.cms",
@@ -1291,46 +1148,6 @@
             "sourcecountry": "India"
           },
           {
-            "url": "http://www.bruneinews.net/news/279391920/india-interest-rate-gap-with-g7-in-focus-as-rbi-weighs-inflation-risks-report",
-            "url_mobile": "",
-            "title": "India interest rate gap with G7 in focus as RBI weighs inflation risks : Report",
-            "seendate": "20261025T081500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c662b37/9b196003-fcc6-4a2b-b53d-b3b785d8cd2a/0/ANI-20261022082843-600x315.jpg",
-            "domain": "bruneinews.net",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "http://www.cambodiantimes.com/news/279391920/india-interest-rate-gap-with-g7-in-focus-as-rbi-weighs-inflation-risks-report",
-            "url_mobile": "",
-            "title": "India interest rate gap with G7 in focus as RBI weighs inflation risks : Report",
-            "seendate": "20261025T093000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c662b37/9b196003-fcc6-4a2b-b53d-b3b785d8cd2a/0/ANI-20261022082843-600x315.jpg",
-            "domain": "cambodiantimes.com",
-            "language": "English",
-            "sourcecountry": "Cambodia"
-          },
-          {
-            "url": "https://bworldonline.com/banking-finance/2026/10/25/789007/yields-on-govt-debt-rise-with-bsp-move-in-focus/",
-            "url_mobile": "",
-            "title": "Yields on govt debt rise with BSP move in focus - BusinessWorld Online",
-            "seendate": "20261025T111500Z",
-            "socialimage": "http://bworldonline.com/wp-content/uploads/2026/10/YIELD-colored-10.26.26.jpg",
-            "domain": "bworldonline.com",
-            "language": "English",
-            "sourcecountry": "Philippines"
-          },
-          {
-            "url": "https://www.aol.com/articles/4-investments-could-sense-federal-113010000.html",
-            "url_mobile": "",
-            "title": "4 Investments That Could Make Sense If the Federal Reserve Raises Interest Rates",
-            "seendate": "20261025T124500Z",
-            "socialimage": "https://hermes.media.static.aol.com/media/2026/10/25/05da2963-9790-3ad3-8031-0447a2f01117/edba3ccf-0238-42c5-be8d-3beed99a92db.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
             "url": "http://www.myanmarnews.net/news/279395118/us-consumer-sentiment-near-record-low-as-inflation-fears-persist",
             "url_mobile": "",
             "title": "US consumer sentiment near record low as inflation fears persist",
@@ -1339,6 +1156,106 @@
             "domain": "myanmarnews.net",
             "language": "English",
             "sourcecountry": "Myanmar"
+          },
+          {
+            "url": "http://www.milwaukeesun.com/news/279395118/us-consumer-sentiment-stays-near-record-low-in-october",
+            "url_mobile": "",
+            "title": "US consumer sentiment stays near record low in October",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/6152fc5/826cf994-0945-4128-bf85-ccc02d3b221a/1/pexels-kampus-8422706-600x315.jpg",
+            "domain": "milwaukeesun.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.ohiostandard.com/news/279395118/us-consumer-sentiment-stays-near-record-low-in-october",
+            "url_mobile": "",
+            "title": "US consumer sentiment stays near record low in October",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/6152fc5/826cf994-0945-4128-bf85-ccc02d3b221a/1/pexels-kampus-8422706-600x315.jpg",
+            "domain": "ohiostandard.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://unn.ua/news/zoloto-trymaietsia-vyshche-dollar4000-za-untsiiu-investory-chekaiut-na-rishennia-frs-ssha",
+            "url_mobile": "https://unn.ua/amp/zoloto-trymaietsia-vyshche-dollar4000-za-untsiiu-investory-chekaiut-na-rishennia-frs-ssha",
+            "title": "\u0417\u043e\u043b\u043e\u0442\u043e \u0442\u0440\u0438\u043c\u0430\u0454\u0442\u044c\u0441\u044f \u0432\u0438\u0449\u0435 $4000 \u0437\u0430 \u0443\u043d\u0446\u0456\u044e \u2013 \u0456\u043d\u0432\u0435\u0441\u0442\u043e\u0440\u0438 \u0447\u0435\u043a\u0430\u044e\u0442\u044c \u043d\u0430 \u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0424\u0420\u0421 \u0421\u0428\u0410",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://unn.ua/img/2026/10/26/1793058572-4366-large.webp",
+            "domain": "unn.ua",
+            "language": "Ukrainian",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://en.shafaqna.com/487331/indian-shares-muted-open-oil-prices-fed/",
+            "url_mobile": "",
+            "title": "Indian Shares Muted Open as Oil Prices Weigh on Sentiment",
+            "seendate": "20261026T050000Z",
+            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2026/10/en.shafaqna-Indian-stocks-await-corporate-earnings.jpeg",
+            "domain": "en.shafaqna.com",
+            "language": "English",
+            "sourcecountry": "Saudi Arabia"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-chinas-yuan-hits-four-year-high-as-dollar-weakens-ahead-of-policy-meetings/articleshow/135202635.cms",
+            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/global-market-chinas-yuan-hits-four-year-high-as-dollar-weakens-ahead-of-policy-meetings/amp_articleshow/135202635.cms",
+            "title": "Global Market : China yuan hits four - year high as dollar weakens ahead of policy meetings",
+            "seendate": "20261026T050000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-135202655,width-1200,height-900,imgsize-2317562,overlay-etmarkets/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.riotimesonline.com/global-economy-briefing-october-27-2026/",
+            "url_mobile": "",
+            "title": "Brazil Stocks Plunge 13 . 9 % as Fed Week Begins | Global Economy , Oct 27",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://www.riotimesonline.com/wp-content/uploads/2026/10/gc_467072973.jpg",
+            "domain": "riotimesonline.com",
+            "language": "English",
+            "sourcecountry": "Brazil"
+          },
+          {
+            "url": "https://isp.netscape.com:443/pf/story/0001/20261026/be3a56f58a77c5be863f0289d280be92",
+            "url_mobile": "",
+            "title": "Shares fall in Asia after a decline on Wall Street , and oil prices fall more than 1 % ",
+            "seendate": "20261026T050000Z",
+            "socialimage": "",
+            "domain": "isp.netscape.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.ohiostandard.com/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
+            "url_mobile": "",
+            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
+            "domain": "ohiostandard.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.myanmarnews.net/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
+            "url_mobile": "",
+            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
+            "domain": "myanmarnews.net",
+            "language": "English",
+            "sourcecountry": "Myanmar"
+          },
+          {
+            "url": "https://econotimes.com/Sterling-Holds-Near-1-3373-as-FXStreet-Flags-1-3420-Hurdle-1763380",
+            "url_mobile": "",
+            "title": "Sterling Holds Near $1 . 3373 as FXStreet Flags $1 . 3420 Hurdle",
+            "seendate": "20261026T071500Z",
+            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/a574bd69efa93fe634d266338c4228d6a836ee9c4334b9198022fe10293efe04.webp",
+            "domain": "econotimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
@@ -1636,7 +1553,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:boj.or.jp": {
-      "fetched_at_utc": "2026-10-28T21:19:12.803989+00:00",
+      "fetched_at_utc": "2026-10-29T21:25:55.510818+00:00",
       "payload": {}
     }
   }
