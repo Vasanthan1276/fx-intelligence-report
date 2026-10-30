@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-29T21:38:02.085947+00:00",
+  "updated_at_utc": "2026-10-30T21:15:42.953093+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-10-29T21:20:11.327003+00:00",
@@ -287,128 +287,38 @@
       }
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-22T20:19:53.176615+00:00",
+      "fetched_at_utc": "2026-10-30T21:03:46.960265+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/boj-chief-says-underlying-inflation-quite-close-price-goal",
+            "url": "https://www.riotimesonline.com/global-economy-briefing-october-27-2026/",
             "url_mobile": "",
-            "title": "BOJ chief says underlying inflation  quite close  to price goal",
-            "seendate": "20261019T063000Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/69de54fa11956634319cc3150556aee2b8a54409c466bd17a96988a934d280db?&f=webp",
-            "domain": "businesstimes.com.sg",
+            "title": "Brazil Stocks Plunge 13 . 9 % as Fed Week Begins | Global Economy , Oct 27",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://www.riotimesonline.com/wp-content/uploads/2026/10/gc_467072973.jpg",
+            "domain": "riotimesonline.com",
             "language": "English",
-            "sourcecountry": "Singapore"
+            "sourcecountry": "Brazil"
           },
           {
-            "url": "https://www.shorouknews.com/news/view.aspx?cdate=19102026&id=ff0ad4db-7d96-4c86-a106-6e930600fa7e",
+            "url": "http://www.ohiostandard.com/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
             "url_mobile": "",
-            "title": "\u0631\u0626\u064a\u0633\u0629 \u0648\u0632\u0631\u0627\u0621 \u0627\u0644\u064a\u0627\u0628\u0627\u0646 \u062a\u0646\u0641\u064a \u0645\u0633\u0626\u0648\u0644\u064a\u062a\u0647\u0627 \u0639\u0646 \u0636\u0639\u0641 \u0627\u0644\u064a\u0646 \u0648\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0641\u0627\u0626\u062f\u0629",
-            "seendate": "20261019T083000Z",
-            "socialimage": "https://www.shorouknews.com/uploadedimages/Sections/Politics/original/c03554d1-99bf-484c-984e-4fa50d1.jpg",
-            "domain": "shorouknews.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://www.nikkei.com/article/DGXZQOFL220DV0S6A021C2000000/",
-            "url_mobile": "",
-            "title": "\u5916\u70ba8\u664230\u5206 \u5186\u76f8\u5834 \u3001 \u6a2a\u3070\u3044\u3067158\u5186\u53f0\u524d\u534a \u5bfe\u30e6\u30fc\u30ed\u3067\u306f\u4e0b\u843d",
-            "seendate": "20261022T003000Z",
-            "socialimage": "https://www.nikkei.com/.resources/k-components/rectangle.rev-d54ea30.png",
-            "domain": "nikkei.com",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://www.aol.com/articles/japan-shifting-wage-driven-inflation-005428000.html",
-            "url_mobile": "",
-            "title": "Japan shifting to wage - driven inflation phase , finance minister says",
-            "seendate": "20261021T014500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/4aef0fea8cdbea778d12038318dcd4d42dadaa5d/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/10/21/4e4e58f9-fbcf-3ca4-aeda-7d5ced84567e/7d55f0e6-df86-4e6e-945b-88df0c9895a1.jpg",
-            "domain": "aol.com",
+            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
+            "domain": "ohiostandard.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.newspim.com/news/view/20261020000029",
-            "url_mobile": "https://m.newspim.com/news/view/20261020000029",
-            "title": " [ \ucc44\uad8c / \uc678\ud658 ] \u7f8e \uad6d\ucc44 \uae08\ub9ac \u00b7 \ub2ec\ub7ec \ub3d9\ubc18 \uc0c1\uc2b9 \u2026 AI\uc8fc \ubc18\ub4f1\uc5d0 \uc2dc\uc7a5 \ubd84\uc704\uae30 \ubc18\uc804",
-            "seendate": "20261020T001500Z",
-            "socialimage": "https://img.newspim.com/news/2026/10/20/2610200726453880_t1.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://econotimes.com/Dollar-Trades-Near-158-25-Against-Yen-Before-Japan-Inflation-Data-1756823",
+            "url": "http://www.myanmarnews.net/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
             "url_mobile": "",
-            "title": "Dollar Trades Near \u00a5158 . 25 Against Yen Before Japan Inflation Data",
-            "seendate": "20261019T201500Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/3ed03da4baf7be359bc1b76310a2e8d5c95cbc8ff4b59f1972c09b4307313b8c.webp",
-            "domain": "econotimes.com",
+            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
+            "domain": "myanmarnews.net",
             "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://econotimes.com/Dollar-Pauses-as-Five-Central-Banks-Prepare-Rate-Decisions-1760116",
-            "url_mobile": "",
-            "title": "Dollar Pauses as Five Central Banks Prepare Rate Decisions",
-            "seendate": "20261022T111500Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/07da701be89bf9e7a25197bb4b784397b701a921401280f17741e002a1b7edcf.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.albayan.ae/economy/business/world-economy/1559253",
-            "url_mobile": "https://www.albayan.ae/amp/economy/business/world-economy/1559253",
-            "title": "\u0627\u0644\u0630\u0647\u0628 \u064a\u062a\u0631\u0627\u062c\u0639 \u0648\u0633\u0637 \u0627\u0644\u062a\u0631\u0643\u064a\u0632 \u0639\u0644\u0649 \u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u062a\u0636\u062e\u0645",
-            "seendate": "20261020T141500Z",
-            "socialimage": "https://www.albayan.ae/assets/images/2026/10/20/5374898.jpg",
-            "domain": "albayan.ae",
-            "language": "Arabic",
-            "sourcecountry": "United Arab Emirates"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/bank-of-japan-may-raise-inflation-forecast-stand-pat-on-rates-sources-say/articleshow/135063146.cms",
-            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/bank-of-japan-may-raise-inflation-forecast-stand-pat-on-rates-sources-say/amp_articleshow/135063146.cms",
-            "title": "Bank of Japan may raise inflation forecast , stand pat on rates , sources say",
-            "seendate": "20261020T071500Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-135063177,width-1200,height-900,imgsize-81226,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.aol.com/articles/bank-japan-may-raise-inflation-055159000.html",
-            "url_mobile": "",
-            "title": "Bank of Japan may raise inflation forecast , stand pat on rates , sources say",
-            "seendate": "20261020T071500Z",
-            "socialimage": "https://assets.aolcdn.com/uploader/aolfp/images/og-image.png",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-slips-investors-await-fed-rate-signals",
-            "url_mobile": "",
-            "title": "Gold slips as investors await Fed rate signals",
-            "seendate": "20261021T021500Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/ff7d2079362885777df3fca17d529e581c70c4776e3ad4254496570646b874dd?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://www.newspim.com/news/view/20261021000014",
-            "url_mobile": "https://m.newspim.com/news/view/20261021000014",
-            "title": " [ \uae08 / \uc720\uac00 ] \uc774\ub780 \u00b7 \ud30c\ud0a4\uc2a4\ud0c4 \uc911\uc7ac \ub17c\uc758\uc5d0 \uc720\uac00 \ud558\ub77d \u2026 \uae08\uac12\ub3c4 \ud6c4\ud1f4",
-            "seendate": "20261020T213000Z",
-            "socialimage": "https://img.newspim.com/news/2021/03/19/2103190516292000_733_tc.jpg",
-            "domain": "newspim.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
+            "sourcecountry": "Myanmar"
           }
         ]
       }
@@ -541,29 +451,9 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-27T21:00:20.707093+00:00",
+      "fetched_at_utc": "2026-10-30T21:07:26.422401+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-24-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 24 October 2026",
-            "seendate": "20261024T071500Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/08/currency.webp",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-26-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 26 October 2026",
-            "seendate": "20261026T050000Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/12/today-s-currency-exchange-rates-in-pakistan-dollar-euro-pound-riyal-rates-on-may-25-2023-1684987420-6451.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
           {
             "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
             "url_mobile": "",
@@ -573,241 +463,18 @@
             "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.libyaakhbar.com/business-news/2903630.html",
-            "url_mobile": "",
-            "title": "\u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0631\u062a\u0641\u0639 \u0648\u0627\u0644\u0635\u0643\u0648\u0643 \u062a\u062a\u0631\u0627\u062c\u0639 .. \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0645\u0648\u0627\u0632\u064a\u0629 \u0627\u0644\u0644\u064a\u0628\u064a\u0629",
-            "seendate": "20261024T210000Z",
-            "socialimage": "https://www.libyaakhbar.com/wp-content/uploads/2026/05/dollar2026.webp",
-            "domain": "libyaakhbar.com",
-            "language": "Arabic",
-            "sourcecountry": "Libya"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/24-Oct-2026/today-currency-exchange-rates-in-pakistan-dollar-euro-riyal-dirham-24-october-2026",
-            "url_mobile": "",
-            "title": "Today Currency Exchange Rates in Pakistan , Dollar , Euro , Riyal , Dirham",
-            "seendate": "20261024T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.libyaakhbar.com/business-news/2903295.html",
-            "url_mobile": "",
-            "title": "\u062a\u063a\u064a\u064a\u0631 \u062c\u062f\u064a\u062f .. \u0623\u0633\u0639\u0627\u0631 \u0635\u0631\u0641 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0623\u062c\u0646\u0628\u064a\u0629 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062f\u064a\u0646\u0627\u0631 \u0641\u064a \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0645\u0648\u0627\u0632\u064a ( \u0627\u0644\u0633\u0628\u062a 24 \u0627\u0643\u062a\u0648\u0628\u0631 2026 ) ",
-            "seendate": "20261024T141500Z",
-            "socialimage": "https://www.libyaakhbar.com/wp-content/uploads/2026/05/dollar2026.webp",
-            "domain": "libyaakhbar.com",
-            "language": "Arabic",
-            "sourcecountry": "Libya"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/25-Oct-2026/currency-exchange-rates-in-pakistan-today-us-dollar-pound-euro-riyal-25-october-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today : US Dollar , Pound , Euro , Riyal",
-            "seendate": "20261025T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2026/10/news-346672.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.dostor.org/5751645",
-            "url_mobile": "",
-            "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0623\u062d\u062f 25 \u0623\u0643\u062a\u0648\u0628\u0631 2026 .. \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0633\u062c\u0644 55 . 35 \u062c\u0646\u064a\u0647 \u0644\u0644\u0628\u064a\u0639",
-            "seendate": "20261025T123000Z",
-            "socialimage": "https://cdn.dostor.org/media/img/large/2026/10/25/2026_10_25_14_56_35_103_7234.png",
-            "domain": "dostor.org",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://glavcom.ua/economics/personal-money/kurs-valjut-24-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151157.html",
-            "url_mobile": "https://glavcom.ua/amp/economics/personal-money/kurs-valjut-24-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151157.html",
-            "title": "\u041a\u0443\u0440\u0441 \u0432\u0430\u043b\u044e\u0442 24 \u0436\u043e\u0432\u0442\u043d\u044f 2026 : \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0448\u0442\u0443\u044e\u0442\u044c \u0434\u043e\u043b\u0430\u0440 , \u0454\u0432\u0440\u043e \u0456 \u0437\u043b\u043e\u0442\u0438\u0439",
-            "seendate": "20261024T081500Z",
-            "socialimage": "",
-            "domain": "glavcom.ua",
-            "language": "Ukrainian",
-            "sourcecountry": "Ukraine"
-          },
-          {
-            "url": "https://www.libyaakhbar.com/business-news/2903357.html",
-            "url_mobile": "",
-            "title": "\u0627\u0631\u062a\u0641\u0627\u0639 \u062c\u0645\u0627\u0639\u064a .. \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0648\u0627\u0644\u0630\u0647\u0628 \u0641\u064a \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0645\u0648\u0627\u0632\u064a \u0627\u0644\u0644\u064a\u0628\u064a \u0627\u0644\u064a\u0648\u0645",
-            "seendate": "20261024T141500Z",
-            "socialimage": "https://www.libyaakhbar.com/wp-content/uploads/2026/10/1792850072_dollaarr.jpg",
-            "domain": "libyaakhbar.com",
-            "language": "Arabic",
-            "sourcecountry": "Libya"
-          },
-          {
-            "url": "https://glavcom.ua/economics/personal-money/kurs-valjut-25-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151280.html",
-            "url_mobile": "https://glavcom.ua/amp/economics/personal-money/kurs-valjut-25-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151280.html",
-            "title": "\u041a\u0443\u0440\u0441 \u0432\u0430\u043b\u044e\u0442 25 \u0436\u043e\u0432\u0442\u043d\u044f 2026 : \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0448\u0442\u0443\u044e\u0442\u044c \u0434\u043e\u043b\u0430\u0440 , \u0454\u0432\u0440\u043e \u0456 \u0437\u043b\u043e\u0442\u0438\u0439",
-            "seendate": "20261025T110000Z",
-            "socialimage": "",
-            "domain": "glavcom.ua",
-            "language": "Ukrainian",
-            "sourcecountry": "Ukraine"
-          },
-          {
-            "url": "https://www.dostor.org/5749970",
-            "url_mobile": "",
-            "title": "\u0633\u0639\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0623\u062c\u0646\u0628\u064a\u0629 \u0648\u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0633\u0628\u062a 24 \u0623\u0643\u062a\u0648\u0628\u0631 2026 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u0645\u0635\u0631\u064a \u0641\u064a \u0627\u0644\u0628\u0646\u0648\u0643",
-            "seendate": "20261024T101500Z",
-            "socialimage": "https://cdn.dostor.org/media/img/large/2026/10/24/2026_10_24_7_13_14_786_1837.png",
-            "domain": "dostor.org",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
           }
         ]
       }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-10-23T20:12:47.208807+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.hurriyetdailynews.com/uk-inflation-jumps-more-than-expected-on-rising-fuel-costs-228413",
-            "url_mobile": "https://www.hurriyetdailynews.com/amp/uk-inflation-jumps-more-than-expected-on-rising-fuel-costs-228413",
-            "title": "UK inflation jumps more than expected on rising fuel costs",
-            "seendate": "20261021T080000Z",
-            "socialimage": "",
-            "domain": "hurriyetdailynews.com",
-            "language": "English",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.aol.co.uk/articles/uk-inflation-rises-more-expected-060204000.html",
-            "url_mobile": "",
-            "title": "UK inflation rises by more than expected to 3 . 5 % as war drives up fuel prices",
-            "seendate": "20261021T063000Z",
-            "socialimage": "https://hermes.media.static.aol.com/media/2026/10/21/c32a28a4-0ba7-3b15-bc9c-cdc571a7246b/312a3569-db01-4b2d-b7cb-a692e32f8597.jpg",
-            "domain": "aol.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.somersetlive.co.uk/news/cost-of-living/cost-living-blow-uk-households-11207820",
-            "url_mobile": "",
-            "title": "Cost of living blow for united kingdom households as inflation soars again",
-            "seendate": "20261021T084500Z",
-            "socialimage": "https://i2-prod.bristolpost.co.uk/news/uk-world-news/article11207819.ece/ALTERNATES/s1200/0_Woman-experiencing-financial-stress-at-home-creating-budget.jpg",
-            "domain": "somersetlive.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.grimsbytelegraph.co.uk/news/cost-of-living/cost-living-blow-uk-households-11207820",
-            "url_mobile": "",
-            "title": "Cost of living blow for united kingdom households as inflation soars again",
-            "seendate": "20261021T084500Z",
-            "socialimage": "https://i2-prod.bristolpost.co.uk/news/uk-world-news/article11207819.ece/ALTERNATES/s1200/0_Woman-experiencing-financial-stress-at-home-creating-budget.jpg",
-            "domain": "grimsbytelegraph.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://econotimes.com/UK-Inflation-Rises-After-Bank-of-England-s-Divided-September-Hold-1760785",
-            "url_mobile": "",
-            "title": "UK Inflation Rises After Bank of England Divided September Hold",
-            "seendate": "20261023T010000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/eb56281392d13e3cf67452141c1a7d67a3da3756913da8eb8d6605424fd3fc38.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.lbc.co.uk/article/uk-inflation-september-fuel-surge-5HjdkC6_2/",
-            "url_mobile": "",
-            "title": "UK inflation accelerates to 3 . 5 % in September after fuel surge",
-            "seendate": "20261021T084500Z",
-            "socialimage": "https://images.globalplayer.com/images/850167?crop=16_9&signature=JvT9XuI7F3KwiduWeQXsYi7nnzY=",
-            "domain": "lbc.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://isp.netscape.com:443/pf/story/0001/20261021/f390b0105bf3cb9b35f6a42761e96233",
-            "url_mobile": "",
-            "title": "UK inflation rise to highest in almost a year as Iran war drives fuel prices higher",
-            "seendate": "20261021T130000Z",
-            "socialimage": "",
-            "domain": "isp.netscape.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.aol.co.uk/articles/uk-inflation-expected-accelerated-september-014544000.html",
-            "url_mobile": "",
-            "title": "UK inflation expected to have accelerated in September after fuel surge",
-            "seendate": "20261021T023000Z",
-            "socialimage": "https://hermes.media.static.aol.com/media/2026/10/21/6b1845e7-400f-3753-a348-7204e6e73c99/19480676-f2be-4352-a279-b0789841d6e6.jpg",
-            "domain": "aol.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.lbc.co.uk/article/1b16339b2fe046889239079ebbb91a52-5HjdkBq_2/",
-            "url_mobile": "",
-            "title": "UK inflation expected to have accelerated in September after fuel surge",
-            "seendate": "20261021T041500Z",
-            "socialimage": "https://images.globalplayer.com/images/850150?crop=16_9&signature=V-18R23QYPIl1O5UN3kYXxpHxKM=",
-            "domain": "lbc.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.dailyrecord.co.uk/news/scottish-news/uk-inflation-rises-highest-rate-37793543",
-            "url_mobile": "https://www.dailyrecord.co.uk/news/scottish-news/uk-inflation-rises-highest-rate-37793543.amp",
-            "title": "UK inflation rises to highest rate in almost a year as fuel prices spike",
-            "seendate": "20261021T084500Z",
-            "socialimage": "https://i2-prod.dailyrecord.co.uk/article37712842.ece/ALTERNATES/s1200d/1_GettyImages-2296261656.jpg",
-            "domain": "dailyrecord.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.aol.co.uk/articles/poll-household-expense-putting-biggest-133400000.html",
-            "url_mobile": "",
-            "title": "POLL : Which household expense is putting the biggest strain on your budget right now ? ",
-            "seendate": "20261021T143000Z",
-            "socialimage": "https://hermes.media.transform.aol.com/92f2a859d446678aaae272dbe2eaae76237a98af/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/10/21/f539ec82-2d25-390c-a31c-c4c5ea5c5c0b/391038f4-fab9-4899-9d7f-fd0555a6646f.jpg",
-            "domain": "aol.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.thebusinessdesk.com/northwest/news/2181145-inflation-jumps-to-3.5-as-fuel-prices-pile-pressure-on-households/",
-            "url_mobile": "",
-            "title": "Inflation jumps to 3 . 5 % as fuel prices pile pressure on households",
-            "seendate": "20261021T083000Z",
-            "socialimage": "https://www.thebusinessdesk.com/_files/images/mar_22/tara-clark-Gk8LG7dsHWA-unsplash-e1648021700386.jpg",
-            "domain": "thebusinessdesk.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-30T21:09:17.220888+00:00",
+      "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-28T21:24:21.798186+00:00",
+      "fetched_at_utc": "2026-10-30T21:09:29.092827+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-26-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 26 October 2026",
-            "seendate": "20261026T050000Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/12/today-s-currency-exchange-rates-in-pakistan-dollar-euro-pound-riyal-rates-on-may-25-2023-1684987420-6451.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
           {
             "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
             "url_mobile": "",
@@ -815,16 +482,6 @@
             "seendate": "20261027T051500Z",
             "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
             "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/25-Oct-2026/currency-exchange-rates-in-pakistan-today-us-dollar-pound-euro-riyal-25-october-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today : US Dollar , Pound , Euro , Riyal",
-            "seendate": "20261025T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2026/10/news-346672.jpg",
-            "domain": "en.dailypakistan.com.pk",
             "language": "English",
             "sourcecountry": "Pakistan"
           }
@@ -859,44 +516,21 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-10-26T21:22:23.946514+00:00",
+      "fetched_at_utc": "2026-10-30T21:12:34.680158+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-29T21:36:34.159743+00:00",
+      "fetched_at_utc": "2026-10-30T21:12:50.560210+00:00",
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-27T21:05:10.550891+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.manilatimes.net/2026/10/26/tmt-newswire/media-outreach-newswire/aeon-bank-debuts-financial-purr-sona-a-new-ai-powered-interactive-feature-of-neko-sensei/2453630",
-            "url_mobile": "https://www.manilatimes.net/2026/10/26/tmt-newswire/media-outreach-newswire/aeon-bank-debuts-financial-purr-sona-a-new-ai-powered-interactive-feature-of-neko-sensei/2453630/amp",
-            "title": "AEON Bank Debuts  Financial Purr - Sona , A New AI - Powered Interactive Feature of Neko Sensei",
-            "seendate": "20261026T071500Z",
-            "socialimage": "https://manilatimes.net/manilatimes/uploads/images/2026/10/26/1275999.png",
-            "domain": "manilatimes.net",
-            "language": "English",
-            "sourcecountry": "Philippines"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-10-30T21:13:39.376777+00:00",
+      "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-28T21:29:41.716227+00:00",
+      "fetched_at_utc": "2026-10-30T21:15:42.953075+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-26-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 26 October 2026",
-            "seendate": "20261026T050000Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/12/today-s-currency-exchange-rates-in-pakistan-dollar-euro-pound-riyal-rates-on-may-25-2023-1684987420-6451.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
           {
             "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
             "url_mobile": "",
@@ -906,16 +540,6 @@
             "domain": "pakobserver.net",
             "language": "English",
             "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://glavcom.ua/economics/personal-money/kurs-valjut-25-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151280.html",
-            "url_mobile": "https://glavcom.ua/amp/economics/personal-money/kurs-valjut-25-zhovtnja-2026-skilki-koshtujut-dolar-jevro-i-zlotij-1151280.html",
-            "title": "\u041a\u0443\u0440\u0441 \u0432\u0430\u043b\u044e\u0442 25 \u0436\u043e\u0432\u0442\u043d\u044f 2026 : \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0448\u0442\u0443\u044e\u0442\u044c \u0434\u043e\u043b\u0430\u0440 , \u0454\u0432\u0440\u043e \u0456 \u0437\u043b\u043e\u0442\u0438\u0439",
-            "seendate": "20261025T110000Z",
-            "socialimage": "",
-            "domain": "glavcom.ua",
-            "language": "Ukrainian",
-            "sourcecountry": "Ukraine"
           }
         ]
       }
@@ -1109,7 +733,7 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-27T21:02:23.398539+00:00",
+      "fetched_at_utc": "2026-10-30T21:10:30.400655+00:00",
       "payload": {}
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
@@ -1134,7 +758,7 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-29T21:20:28.403909+00:00",
+      "fetched_at_utc": "2026-10-30T20:59:54.152236+00:00",
       "payload": {
         "articles": [
           {
@@ -1188,26 +812,6 @@
             "sourcecountry": ""
           },
           {
-            "url": "https://en.shafaqna.com/487331/indian-shares-muted-open-oil-prices-fed/",
-            "url_mobile": "",
-            "title": "Indian Shares Muted Open as Oil Prices Weigh on Sentiment",
-            "seendate": "20261026T050000Z",
-            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2026/10/en.shafaqna-Indian-stocks-await-corporate-earnings.jpeg",
-            "domain": "en.shafaqna.com",
-            "language": "English",
-            "sourcecountry": "Saudi Arabia"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-chinas-yuan-hits-four-year-high-as-dollar-weakens-ahead-of-policy-meetings/articleshow/135202635.cms",
-            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/global-market-chinas-yuan-hits-four-year-high-as-dollar-weakens-ahead-of-policy-meetings/amp_articleshow/135202635.cms",
-            "title": "Global Market : China yuan hits four - year high as dollar weakens ahead of policy meetings",
-            "seendate": "20261026T050000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-135202655,width-1200,height-900,imgsize-2317562,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
             "url": "https://www.riotimesonline.com/global-economy-briefing-october-27-2026/",
             "url_mobile": "",
             "title": "Brazil Stocks Plunge 13 . 9 % as Fed Week Begins | Global Economy , Oct 27",
@@ -1216,16 +820,6 @@
             "domain": "riotimesonline.com",
             "language": "English",
             "sourcecountry": "Brazil"
-          },
-          {
-            "url": "https://isp.netscape.com:443/pf/story/0001/20261026/be3a56f58a77c5be863f0289d280be92",
-            "url_mobile": "",
-            "title": "Shares fall in Asia after a decline on Wall Street , and oil prices fall more than 1 % ",
-            "seendate": "20261026T050000Z",
-            "socialimage": "",
-            "domain": "isp.netscape.com",
-            "language": "English",
-            "sourcecountry": "United States"
           },
           {
             "url": "http://www.ohiostandard.com/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
@@ -1248,12 +842,42 @@
             "sourcecountry": "Myanmar"
           },
           {
-            "url": "https://econotimes.com/Sterling-Holds-Near-1-3373-as-FXStreet-Flags-1-3420-Hurdle-1763380",
+            "url": "https://www.rttnews.com/3703088/asian-markets-trade-mixed.aspx",
+            "url_mobile": "https://www.rttnews.com/amp/3703088/asian-markets-trade-mixed.aspx",
+            "title": "Asian Markets Trade Mixed",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://cdn.rttnews.com/articleimages/ustopstories/2026/october/asianupanddownv3-26102026-lt.jpg",
+            "domain": "rttnews.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.myanmarnews.net/news/279399205/sensex-falls-over-300-points-nifty-slips-below-22690-as-crude-prices-hover-near-usd-115",
             "url_mobile": "",
-            "title": "Sterling Holds Near $1 . 3373 as FXStreet Flags $1 . 3420 Hurdle",
-            "seendate": "20261026T071500Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/a574bd69efa93fe634d266338c4228d6a836ee9c4334b9198022fe10293efe04.webp",
-            "domain": "econotimes.com",
+            "title": "Sensex falls over 300 points , Nifty slips below 22 , 690 as crude prices hover near USD 115",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/1e9bcd4/71561c9d-fc5c-45cb-a1fa-199a9de709ed/0/ANI-20261027040505-600x315.jpg",
+            "domain": "myanmarnews.net",
+            "language": "English",
+            "sourcecountry": "Myanmar"
+          },
+          {
+            "url": "http://www.milwaukeesun.com/news/279399205/sensex-falls-over-300-points-nifty-slips-below-22690-as-crude-prices-hover-near-usd-115",
+            "url_mobile": "",
+            "title": "Sensex falls over 300 points , Nifty slips below 22 , 690 as crude prices hover near USD 115",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/1e9bcd4/71561c9d-fc5c-45cb-a1fa-199a9de709ed/0/ANI-20261027040505-600x315.jpg",
+            "domain": "milwaukeesun.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.thesunchronicle.com/business/5-things-to-watch-from-the-federal-reserves-next-meeting/article_7fe45c06-8782-5837-af1d-665ff6a49949.html",
+            "url_mobile": "",
+            "title": "5 things to watch from the Federal Reserve next meeting",
+            "seendate": "20261027T051500Z",
+            "socialimage": "https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/editorial/b/4f/b4f51444-9e38-5b01-bb3a-712e18cdad0c/6ad1ca7b1a8fb.image.jpg?crop=1763%2C926%2C0%2C125",
+            "domain": "thesunchronicle.com",
             "language": "English",
             "sourcecountry": "United States"
           }
@@ -1426,79 +1050,9 @@
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
-      "fetched_at_utc": "2026-10-28T21:18:55.449956+00:00",
+      "fetched_at_utc": "2026-10-30T21:04:22.702769+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://finans.sabah.com.tr/borsa/asya-borsalari-karisik-seyrediyor-7686732",
-            "url_mobile": "https://m.sabah.com.tr/finans/borsa/asya-borsalari-karisik-seyrediyor-7686732/amp",
-            "title": "Asya borsalar\u0131 kar\u0131\u015f\u0131k seyrediyor",
-            "seendate": "20261023T084500Z",
-            "socialimage": "https://isbh.tmgrup.com.tr/sbh/2026/10/23/asya-borsalari-karisik-seyrediyor-1792738648808.jpg",
-            "domain": "finans.sabah.com.tr",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.memurlar.net/haber/1181763/bist-100-gunu-yuzde-3-08-dususle-11-220-puandan-kapatti.html",
-            "url_mobile": "",
-            "title": "BIST 100 G\u00fcn Y\u00fczde 3 , 08 Dle 11 . 220 Puandan Kapatt",
-            "seendate": "20261022T160000Z",
-            "socialimage": "https://www.memurlar.net/common/news/images/1181763/headline.jpg",
-            "domain": "memurlar.net",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.cna.com.tw:443/news/aopl/202610230034.aspx",
-            "url_mobile": "",
-            "title": "\u65e5\u672c9\u6708\u6838\u5fc3CPI\u5347\u81f32 . 1 % \u8d85\u51fa\u76ee\u6a19 \u65e5\u9280\u518d\u5347\u606f\u9810\u671f\u5347\u9ad8 | \u570b\u969b",
-            "seendate": "20261023T031500Z",
-            "socialimage": "https://imgcdn.cna.com.tw/www/webphotos/WebCover/800/20261023/1998x1499_039520887846.jpg",
-            "domain": "cna.com.tw",
-            "language": "Chinese",
-            "sourcecountry": "Taiwan"
-          },
-          {
-            "url": "https://econotimes.com/AUD-JPY-Trades-Near-110-60-as-FXStreet-Cites-Bank-of-Japan-Signals-1760246",
-            "url_mobile": "",
-            "title": "AUD / JPY Trades Near 110 . 60 as FXStreet Cites Bank of Japan Signals",
-            "seendate": "20261022T141500Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/a9409f3839de90cd77c74733694069c68be524201fc4d28d221d02d0dff51599.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://wallstreetcn.com/articles/3784280",
-            "url_mobile": "",
-            "title": "\u65e5\u672c\u6838\u5fc3CPI\u5e74\u5185\u9996\u78342 %\uff0c \u8d85\u8fc780 % \u7ecf\u6d4e\u5b66\u5bb6\u9884\u8ba112\u6708\u52a0\u606f",
-            "seendate": "20261023T053000Z",
-            "socialimage": "https://wpimg-wscn.awtmt.com/dd288548-6b48-4f07-8213-a30f61bcf3a1.jpeg",
-            "domain": "wallstreetcn.com",
-            "language": "Chinese",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.cnnturk.com/ekonomi/son-dakika-borsa-persembe-gununu-dususle-tamamladi-3483258",
-            "url_mobile": "",
-            "title": "SON DAK\u0130KA | Borsa per\u015fembe g\u00fcn\u00fcn\u00fc d\u00fc\u015f\u00fc\u015fle tamamlad\u0131 - Son Dakika Ekonomi Haberleri",
-            "seendate": "20261022T161500Z",
-            "socialimage": "",
-            "domain": "cnnturk.com",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-23/doc-iniweywq4885807.shtml",
-            "url_mobile": "",
-            "title": "\u65e5\u7ecf\u6307\u6570\u6536\u8dcc0 . 3 %\uff0c \u7535\u5b50\u4e0e\u94f6\u884c\u80a1\u62d6\u7d2f\u5927\u76d8 \uff0c \u5e02\u573a\u4ecd\u53d7AI\u6295\u8d44\u62c5\u5fe7\u5f71\u54cd",
-            "seendate": "20261023T071500Z",
-            "socialimage": "",
-            "domain": "finance.sina.com.cn",
-            "language": "Chinese",
-            "sourcecountry": "China"
-          },
           {
             "url": "https://nyheter24.se/nyheter/ekonomi/naringsliv/1524853-klomaskin-nytt-grepp-for-inflationstrott-japan",
             "url_mobile": "",
@@ -1510,44 +1064,94 @@
             "sourcecountry": "Sweden"
           },
           {
-            "url": "https://www.haberler.com/ekonomi/orta-dogu-gerilimi-ve-yapay-zeka-endiseleri-20357660-haberi/",
-            "url_mobile": "https://www.haberler.com/amp/orta-dogu-gerilimi-ve-yapay-zeka-endiseleri-20357660-haberi/",
-            "title": "Orta Do\u011fu gerilimi ve yapay zeka endi\u015feleri k\u00fcresel piyasalar\u0131 sat\u0131c\u0131l\u0131 seyrettiriyor",
-            "seendate": "20261023T063000Z",
+            "url": "https://finans.sabah.com.tr/ekonomi/piyasalar-haftayi-kayipla-tamamladi-gozler-merkez-bankalarinda-7687358",
+            "url_mobile": "https://m.sabah.com.tr/finans/ekonomi/piyasalar-haftayi-kayipla-tamamladi-gozler-merkez-bankalarinda-7687358/amp",
+            "title": "Piyasalar haftay\u0131 kay\u0131pla tamamlad\u0131 : G\u00f6zler merkez bankalar\u0131nda",
+            "seendate": "20261024T094500Z",
+            "socialimage": "https://isbh.tmgrup.com.tr/sbh/2026/10/24/piyasalar-haftayi-kayipla-tamamladi-gozler-merkez-bankalarinda-1792829777700.jpg",
+            "domain": "finans.sabah.com.tr",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalar-merkez-bankalarinin-faiz-kararlarina-odaklandi/4099260",
+            "url_mobile": "",
+            "title": "K\u00fcresel piyasalar , merkez bankalar\u0131n\u0131n faiz kararlar\u0131na odakland\u0131",
+            "seendate": "20261024T083000Z",
+            "socialimage": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/10/24/thumbs_b_c_71f426d0e5244d1902b89e81e53e9e41.jpg",
+            "domain": "aa.com.tr",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://www.haberler.com/ekonomi/kuresel-borsalar-yapay-zeka-endisesiyle-1-trilyon-20361389-haberi/",
+            "url_mobile": "https://www.haberler.com/amp/kuresel-borsalar-yapay-zeka-endisesiyle-1-trilyon-20361389-haberi/",
+            "title": "K\u00fcresel borsalar yapay zeka endi\u015fesiyle 1 trilyon dolar\u0131 a\u015fan kay\u0131p ya\u015fad\u0131",
+            "seendate": "20261024T083000Z",
             "socialimage": "",
             "domain": "haberler.com",
             "language": "Turkish",
             "sourcecountry": "Turkey"
           },
           {
-            "url": "https://econotimes.com/Japan-s-Core-Inflation-Reaches-2-1-Ahead-of-Bank-of-Japan-Meeting-1760802",
+            "url": "https://www.bloomberght.com/gelecek-hafta-piyasalar-merkez-bankalarinin-faiz-kararlarina-odaklandi-3792461",
             "url_mobile": "",
-            "title": "Japan Core Inflation Reaches 2 . 1 % Ahead of Bank of Japan Meeting",
-            "seendate": "20261023T021500Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/4bc30b4f33702058c215c203e063cc0d3284525c8f79eb5ae174bae1518d08f3.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "title": "Gelecek hafta piyasalar , merkez bankalar\u0131n\u0131n faiz kararlar\u0131na odakland\u0131",
+            "seendate": "20261024T103000Z",
+            "socialimage": "",
+            "domain": "bloomberght.com",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
           },
           {
-            "url": "https://english.kontan.co.id/news/hold-hike-and-cut-bank-indonesia-says-theres-logic-to-the-policy-mix",
-            "url_mobile": "https://amp.kontan.co.id/news/hold-hike-and-cut-bank-indonesia-says-theres-logic-to-the-policy-mix",
-            "title": "Hold , Hike and Cut ? Bank Indonesia Says There Logic to The Policy Mix",
-            "seendate": "20261023T100000Z",
-            "socialimage": "https://foto.kontan.co.id/pMzZfsh9CMaVJGtn438EFCRoiFo=/smart/filters:format(webp)/2026/09/22/1747555045p.jpg",
-            "domain": "english.kontan.co.id",
-            "language": "English",
-            "sourcecountry": "Indonesia"
+            "url": "https://www.boerse-express.com/news/articles/dax-oelpreis-und-frankreich-belasten-955935",
+            "url_mobile": "",
+            "title": "DAX : \u00d6lpreis und Frankreich belasten",
+            "seendate": "20261024T081500Z",
+            "socialimage": "https://www.boerse-express.com/assets/a5d1433255/dax-oelpreis-und-frankreich-belasten-955935__FillWzEyMDAsMTIwMF0.jpg",
+            "domain": "boerse-express.com",
+            "language": "German",
+            "sourcecountry": "Austria"
           },
           {
-            "url": "https://n.yam.com/Article/20261023756125",
+            "url": "https://kibrisgazetesi.com/kuresel-piyasalar-merkez-bankalarinin-faiz-kararlarina-odaklandi-2/",
             "url_mobile": "",
-            "title": "\u65e5\u672c10\u5e74\u50b5\u6b96\u5229\u7387\u6f32\u52e2\u6050\u7d42\u7d50 \u806f\u6e96\u6703\u653f\u7b56\u594f\u6548\u65e5\u9280\u5927\u5e45\u5347\u606f\u58d3\u529b\u6e1b",
-            "seendate": "20261023T001500Z",
-            "socialimage": "https://ni.yam.com/20261023/483a5510-489b-4e59-b3a5-5a82d54bc905-98db3a0645908012.webp",
-            "domain": "n.yam.com",
-            "language": "Chinese",
-            "sourcecountry": "Taiwan"
+            "title": "K\u00fcresel piyasalar , merkez bankalar\u0131n\u0131n faiz kararlar\u0131na odakland\u0131 - K\u0131br\u0131s Gazetesi - K\u0131br\u0131s Haber , KKTC Son Dakika ve G\u00fcndem Haberleri",
+            "seendate": "20261024T131500Z",
+            "socialimage": "https://kibrisgazetesi.com/wp-content/uploads/2026/10/tak-kuresel-piyasalar-merkez-bankalarinin-faiz-kararlarina-odakl-01-fb191.webp",
+            "domain": "kibrisgazetesi.com",
+            "language": "Turkish",
+            "sourcecountry": "Cyprus"
+          },
+          {
+            "url": "https://www.livemint.com/economy/india-economic-data-hul-q2-results-fed-boj-meetings-11792915815219.html",
+            "url_mobile": "https://www.livemint.com/economy/india-economic-data-hul-q2-results-fed-boj-meetings/amp-11792915815219.html",
+            "title": "The week ahead in numbers : Govt H1 fiscal data , factory output , HUL Q2 earnings",
+            "seendate": "20261025T123000Z",
+            "socialimage": "https://www.livemint.com/lm-img/img/2026/10/25/600x338/abcn_1792922211616_4TGu_1792922211779_Do2K_f0f34907-8685-4d0f-b567-3e7b9874a468_RI8K.jpg",
+            "domain": "livemint.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.e15.cz/nazory-a-analyzy/to-si-nedovolil-ani-obavany-sef-nissanu-volkswagen-chce-setrit-i-na-uspesne-skodovce-1436810",
+            "url_mobile": "",
+            "title": "To si nedovolil ani ob\u00e1van\u00fd \u0161\u00e9f Nissanu . Volkswagen chce \u0161et\u0159it i na \u00fasp\u011b\u0161n\u00e9 \u0160kodovce",
+            "seendate": "20261024T083000Z",
+            "socialimage": "https://1884403144.rsc.cdn77.org/foto/11am-e15/MTIwMHg2MzAvZmlsdGVyczpub191cHNjYWxlKDEpOndhdGVybWFyayhodHRwczovL2ltZy5jbmNlbnRlci5jei9kaXN0L2Fzc2V0cy9lMTUvd2F0ZXJtYXJrLWUxNS5wbmcsLTEwLDEwLDApOmZvY2FsKDM5eDI5NDoxMTY3eDY3MikvaW1n/10009539.jpg?v=0&st=vNm7VnB1Gszm0xJMCAYNiaEOWjjI2rKRHWUkAgMFFBo&ts=1600812000&e=0",
+            "domain": "e15.cz",
+            "language": "Czech",
+            "sourcecountry": "Czech Republic"
+          },
+          {
+            "url": "https://www.realtid.se/bors-finans/klomaskin-nytt-grepp-for-inflationstrott-japan/",
+            "url_mobile": "",
+            "title": "Klomaskin \u2013 nytt grepp f\u00f6r inflationstr\u00f6tt japan",
+            "seendate": "20261026T071500Z",
+            "socialimage": "https://images.realtid.se/app/uploads/2026/10/en-kvinna-satsar-for-att-vinna-toalettpa.jpg?&quality=75&aspect_ratio=16%3A9",
+            "domain": "realtid.se",
+            "language": "Swedish",
+            "sourcecountry": "Sweden"
           }
         ]
       }
