@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T21:15:42.953093+00:00",
+  "updated_at_utc": "2026-11-02T23:54:48.790389+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-10-29T21:20:11.327003+00:00",
@@ -220,71 +220,8 @@
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-28T21:17:33.916266+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.vetogate.com/5757193",
-            "url_mobile": "",
-            "title": "\u0627\u0631\u062a\u0641\u0627\u0639 \u0633\u0639\u0631 \u0627\u0644\u0640100 \u064a\u0646 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062c\u0646\u064a\u0647 \u0641\u064a \u0628\u0646\u0643 \u0645\u0635\u0631",
-            "seendate": "20261025T094500Z",
-            "socialimage": "",
-            "domain": "vetogate.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-26-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 26 October 2026",
-            "seendate": "20261026T050000Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2023/12/today-s-currency-exchange-rates-in-pakistan-dollar-euro-pound-riyal-rates-on-may-25-2023-1684987420-6451.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 27 October 2026",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.ntvbd.com/economy/news-1824709",
-            "url_mobile": "https://www.ntvbd.com/economy/news-1824709?amp",
-            "title": "\u0986\u099c \u0995\u09a4 \u099f\u09be\u0995\u09be\u09df \u09ae\u09bf\u09b2\u099b\u09c7 \u09a1\u09b2\u09be\u09b0 - \u0987\u0989\u09b0\u09cb - \u09b0\u09c1\u09aa\u09bf",
-            "seendate": "20261025T103000Z",
-            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_24m/public/images/2026/10/25/ttaakaa_ddlaar_o_riyyel.jpg",
-            "domain": "ntvbd.com",
-            "language": "Bengali",
-            "sourcecountry": "Bangladesh"
-          },
-          {
-            "url": "https://www.businesstimes.com.sg/companies-markets/euro-sinks-french-debt-worries-yen-gains-week-ai-rout",
-            "url_mobile": "",
-            "title": "Euro sinks on French debt worries ; yen gains for week on AI rout",
-            "seendate": "20261025T124500Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/e8772154e84614fd6a0fcf523037ea98c22ac32ee498575d568233c9517f7011?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://akhbarlibya24.net/2026/10/27/%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D9%8A%D8%B6%D8%BA%D8%B7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%8A%D9%88%D8%B1%D9%88-%D9%88%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
-            "url_mobile": "https://akhbarlibya24.net/2026/10/27/%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D9%8A%D8%B6%D8%BA%D8%B7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%8A%D9%88%D8%B1%D9%88-%D9%88%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1/amp",
-            "title": "\u0627\u0631\u062a\u0641\u0627\u0639 \u0627\u0644\u0646\u0641\u0637 \u064a\u0636\u063a\u0637 \u0639\u0644\u0649 \u0627\u0644\u064a\u0648\u0631\u0648 \u0648\u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0633\u062a\u0641\u064a\u062f \u0645\u0646 \u062a\u0631\u0642\u0628 \u0627\u0644\u0623\u0633\u0648\u0627\u0642",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://akhbarlibya24.net/wp-content/uploads/2026/09/IMG_6821.jpeg",
-            "domain": "akhbarlibya24.net",
-            "language": "Arabic",
-            "sourcecountry": "Libya"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:42:55.910979+00:00",
+      "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-10-30T21:03:46.960265+00:00",
@@ -451,189 +388,44 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-30T21:07:26.422401+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 27 October 2026",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:46:16.142953+00:00",
+      "payload": {}
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-10-30T21:09:17.220888+00:00",
+      "fetched_at_utc": "2026-11-02T23:47:23.788080+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-30T21:09:29.092827+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 27 October 2026",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:47:40.343416+00:00",
+      "payload": {}
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-10-29T21:34:33.433877+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.163.com/dy/article/L9UB7P9N0556J08E.html",
-            "url_mobile": "https://m.163.com/dy/article/L9UB7P9N0556J08E.html",
-            "title": "\u6fb3\u6d32\u6700\u6d3b\u4e0d\u8d77\u57ce\u5e02\u516c\u5e03 : \u6089\u5c3c\u58a8\u5c14\u672c\u6ca1\u8fdb\u524d\u4e94 , \u7b2c\u4e00\u540d\u7adf\u7136\u662f \u2026 ",
-            "seendate": "20261023T070000Z",
-            "socialimage": "",
-            "domain": "163.com",
-            "language": "Chinese",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.smartcompany.com.au/entrepreneurs/swipejobs-founder-katrina-leslie-crowned-ey-entrepreneur-of-the-year/",
-            "url_mobile": "",
-            "title": "Swipejob Katrina Leslie crowned EY Entrepreneur of the Year",
-            "seendate": "20261023T061500Z",
-            "socialimage": "https://assets.smartcompany.com.au/wp-content/uploads/sites/4/2026/10/Katrina-Leslie-EOY-Winner-2-1.jpeg?quality=70",
-            "domain": "smartcompany.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:48:58.079299+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
       "fetched_at_utc": "2026-10-30T21:12:34.680158+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-30T21:12:50.560210+00:00",
+      "fetched_at_utc": "2026-11-02T23:50:06.897725+00:00",
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-30T21:13:39.376777+00:00",
+      "fetched_at_utc": "2026-11-02T23:51:08.796572+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-10-30T21:15:42.953075+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-27-october-2026/",
-            "url_mobile": "",
-            "title": "Currency exchange rates in Pakistan today \u2013 27 October 2026",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
-            "domain": "pakobserver.net",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:52:42.110609+00:00",
+      "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-28T21:29:52.983974+00:00",
+      "fetched_at_utc": "2026-11-02T23:53:45.791132+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-10-26T21:27:22.769261+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://caifuhao.eastmoney.com/news/20261020133751551595350",
-            "url_mobile": "",
-            "title": "\u7a81\u53d15\u5927\u5229\u597d \uff01 \u5b87\u6811\u6da88 %\uff0c 36\u4e2a\u7269\u7406AI\u96c6\u4f53\u6da8\u505c \uff0c \u9f99\u5934\u66b4\u6da827 %_ \u8d22\u5bcc\u53f7 _ \u4e1c\u65b9\u8d22\u5bcc\u7f51",
-            "seendate": "20261020T081500Z",
-            "socialimage": "",
-            "domain": "caifuhao.eastmoney.com",
-            "language": "Chinese",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.smh.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
-            "url_mobile": "",
-            "title": "UBS talks about leaving Switzerland",
-            "seendate": "20261021T013000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
-            "domain": "smh.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.theage.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
-            "url_mobile": "",
-            "title": "UBS talks about leaving Switzerland",
-            "seendate": "20261021T013000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
-            "domain": "theage.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.watoday.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
-            "url_mobile": "",
-            "title": "UBS talks about leaving Switzerland",
-            "seendate": "20261021T231500Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
-            "domain": "watoday.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.brisbanetimes.com.au/business/banking-and-finance/could-a-164-year-old-swiss-giant-quit-switzerland-20261021-p617bj.html",
-            "url_mobile": "",
-            "title": "UBS talks about leaving Switzerland",
-            "seendate": "20261021T021500Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_13/t_crop_custom/q_86%2Cf_auto/t_metro_brisbanetimes_opinion_no_age_social_wm/0281da7d93431e8f17c40f70c2f7827d9138f202",
-            "domain": "brisbanetimes.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.livemint.com/companies/news/franck-muller-india-luxury-watch-market-growth-11792604599452.html",
-            "url_mobile": "https://www.livemint.com/companies/news/franck-muller-india-luxury-watch-market-growth/amp-11792604599452.html",
-            "title": "India luxury watch boom is ticking . Franck Muller wants a bigger share",
-            "seendate": "20261022T060000Z",
-            "socialimage": "https://www.livemint.com/lm-img/img/2026/10/21/600x338/FM_1727507464784_1792604665034_0Lml_bbfe8b0a-714e-4aab-aee3-316397aaa3d2_A9wq.jpg",
-            "domain": "livemint.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.snb.ch/en/publications/communication/summaries/zus_20261022",
-            "url_mobile": "",
-            "title": "Monetary policy assessment of September 2026 : Summary of discussion",
-            "seendate": "20261022T101500Z",
-            "socialimage": "",
-            "domain": "snb.ch",
-            "language": "English",
-            "sourcecountry": "Switzerland"
-          },
-          {
-            "url": "https://thepienews.com/talent-beyond-borders-changing-the-narrative-around-international-students-from-tuition-to-talent/",
-            "url_mobile": "",
-            "title": "Talent Beyond Borders : changing the narrative around international students \u2013 from tuition to talent",
-            "seendate": "20261020T114500Z",
-            "socialimage": "https://thepienews.b-cdn.net/wp-content/uploads/2026/10/Screenshot-2026-10-20-at-09.23.39.jpg",
-            "domain": "thepienews.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:54:14.936542+00:00",
+      "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-10-28T21:23:46.125591+00:00",
@@ -733,25 +525,12 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-30T21:10:30.400655+00:00",
+      "fetched_at_utc": "2026-11-02T23:48:43.367310+00:00",
       "payload": {}
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-10-29T21:38:02.085928+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://navbharattimes.indiatimes.com/business/business-news/malaysia-export-surges-oover-54-percent-to-a-record-level-threat-to-china/articleshow/135205075.cms",
-            "url_mobile": "https://navbharattimes.indiatimes.com/business/business-news/malaysia-export-surges-oover-54-percent-to-a-record-level-threat-to-china/amp_articleshow/135205075.cms",
-            "title": "\u091a\u0940\u0928 \u0915\u094b \u091a\u0941\u0928\u094c\u0924\u0940 \u0926\u0947 \u0930\u0939\u093e \u092f\u0939 \u091b\u094b\u091f\u093e \u0938\u093e \u0926\u0947\u0936 , \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u092a\u0930 \u092a\u0939\u0941\u0902\u091a\u093e \u090f\u0915\u094d\u0938\u092a\u094b\u0930\u094d\u091f , \u0924\u093e\u0907\u0935\u093e\u0928 \u0915\u094b 175 % \u092c\u0922\u093c \u0917\u092f\u093e \u0928\u093f\u0930\u094d\u092f\u093e\u0924",
-            "seendate": "20261026T071500Z",
-            "socialimage": "https://static.langimg.com/nbt/thumb/135205135/china-vs-malaysia.jpg?imgsize=208444&resizemode=75",
-            "domain": "navbharattimes.indiatimes.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:51:41.821008+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:bankofengland.co.uk": {
       "fetched_at_utc": "2026-09-15T19:57:21.561420+00:00",
@@ -885,131 +664,8 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-28T21:20:41.980729+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.elwatannews.com/news/details/8384092",
-            "url_mobile": "",
-            "title": "\u0643\u0631\u064a\u0645 \u064a\u062d\u064a\u0649 \u0623\u0633\u062a\u0627\u0630 \u0627\u0644\u062a\u0645\u0648\u064a\u0644 : \u0623\u0632\u0645\u0629 \u0627\u0644\u0637\u0627\u0642\u0629 \u062a\u0647\u062f\u062f \u0628\u062a\u0641\u0627\u0642\u0645 \u0627\u0644\u062a\u0636\u062e\u0645 \u0648\u062a\u0636\u0639 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0623\u0648\u0631\u0648\u0628\u064a \u0623\u0645\u0627\u0645 \u062a\u062d\u062f\u064a\u0627\u062a \u0635\u0639\u0628\u0629",
-            "seendate": "20261025T124500Z",
-            "socialimage": "https://media.elwatannews.com/media/img/Large/2026/10/25/2026_10_25_14_11_54_267.JPG",
-            "domain": "elwatannews.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://www.pb.pl/fed-ebc-i-wybory-co-czeka-rynki-w-nadchodzacym-tygodniu-1269390",
-            "url_mobile": "",
-            "title": "Fed , EBC i wybory . Co czeka rynki w nadchodz\u0105cym tygodniu ? ",
-            "seendate": "20261025T110000Z",
-            "socialimage": "https://images.pb.pl/filtered/19093a4a-e183-494f-a181-dfaf287b2c35/1700067f-43b1-4290-a285-09b91e70617a_og_1200_630.jpg",
-            "domain": "pb.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
-            "url": "https://www.poslovni.hr/financije/dolar-ojacao-u-odnosu-na-euro-oslabio-u-odnosu-na-jen-4560993",
-            "url_mobile": "",
-            "title": "Dolar oja\u010dao u odnosu na euro , oslabio u odnosu na jen",
-            "seendate": "20261025T094500Z",
-            "socialimage": "https://www.poslovni.hr/wp-content/uploads/2026/06/21euro.jpg",
-            "domain": "poslovni.hr",
-            "language": "Croatian",
-            "sourcecountry": "Croatia"
-          },
-          {
-            "url": "https://www.infranken.de/ratgeber/karriere-geld/tagesgeld-zinsen-ezb-leitzins-inflation-sparer-lockangebote-kredit-neukunden-tmr-1-art-6405048",
-            "url_mobile": "",
-            "title": "Bis 4 , 5 % aufs Tagesgeld : Die aktuell h\u00f6chsten Zinsen und die Bedingungen",
-            "seendate": "20261025T110000Z",
-            "socialimage": "https://www.infranken.de/storage/image/3/6/2/7/4507263_die-ing-bank-fuehrt-am-wochenende-vom-20-bis-21-maerz-2026-planmaessige-ser_default_1FKXLi_FxqnYC.jpg",
-            "domain": "infranken.de",
-            "language": "German",
-            "sourcecountry": "Germany"
-          },
-          {
-            "url": "https://www.businesstimes.com.sg/companies-markets/euro-sinks-french-debt-worries-yen-gains-week-ai-rout",
-            "url_mobile": "",
-            "title": "Euro sinks on French debt worries ; yen gains for week on AI rout",
-            "seendate": "20261025T124500Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/e8772154e84614fd6a0fcf523037ea98c22ac32ee498575d568233c9517f7011?&f=webp",
-            "domain": "businesstimes.com.sg",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-chinas-yuan-hits-four-year-high-as-dollar-weakens-ahead-of-policy-meetings/articleshow/135202635.cms",
-            "url_mobile": "https://m.economictimes.com/markets/us-stocks/news/global-market-chinas-yuan-hits-four-year-high-as-dollar-weakens-ahead-of-policy-meetings/amp_articleshow/135202635.cms",
-            "title": "Global Market : China yuan hits four - year high as dollar weakens ahead of policy meetings",
-            "seendate": "20261026T050000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-135202655,width-1200,height-900,imgsize-2317562,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.albayan.ae/economy/business/world-economy/1560331",
-            "url_mobile": "https://www.albayan.ae/amp/economy/business/world-economy/1560331",
-            "title": "\u062a\u0631\u064a\u0644\u064a\u0648\u0646\u0627\u062a \u0627\u0644\u062f\u064a\u0648\u0646 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u0643\u0627\u0628\u0648\u0633 \u064a\u0637\u0627\u0631\u062f \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u0627\u062a \u0627\u0644\u0643\u0628\u0631\u0649",
-            "seendate": "20261025T053000Z",
-            "socialimage": "https://www.albayan.ae/assets/images/2026/10/24/5381589.jpg",
-            "domain": "albayan.ae",
-            "language": "Arabic",
-            "sourcecountry": "United Arab Emirates"
-          },
-          {
-            "url": "https://www.bt.dk/bolig/boligejere-sidder-i-rente-saksen-se-dine-muligheder-for-at-vriste-dig-fri",
-            "url_mobile": "",
-            "title": "Boligejere sidder i rente - saksen : Se dine muligheder for at vriste dig fri",
-            "seendate": "20261026T071500Z",
-            "socialimage": "https://akamai-aptoma-production.bmcdn.dk/users/berlingske/images/165132524.webp?t[strip]=true&t[resize][width]=1440&t[quality]=70&accessToken=1fe932a9da10f04d193b596dc9fd219cf45d5900ff61a976eefe5a730f0f07ec",
-            "domain": "bt.dk",
-            "language": "Danish",
-            "sourcecountry": "Denmark"
-          },
-          {
-            "url": "http://www.ohiostandard.com/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
-            "url_mobile": "",
-            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
-            "domain": "ohiostandard.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.myanmarnews.net/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
-            "url_mobile": "",
-            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
-            "domain": "myanmarnews.net",
-            "language": "English",
-            "sourcecountry": "Myanmar"
-          },
-          {
-            "url": "https://biz.heraldcorp.com/article/10913081",
-            "url_mobile": "",
-            "title": " [ \uc99d\uc2dc \uc608\ubcf4 ] \uacb0\uad6d \uc5f4\uc1e0\ub294  \uc0bc\uc804\ub2c9\uc2a4 \u2026 28 \u00b7 29\uc77c\uc774 \uc9c4\uc9dc \uc911\uc694\ud55c \uc774\uc720",
-            "seendate": "20261025T110000Z",
-            "socialimage": "https://wimg.heraldcorp.com/news/cms/2026/10/23/rcv.YNA.20261023.PYH2026102314390001300_P1.jpg",
-            "domain": "biz.heraldcorp.com",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.riotimesonline.com/global-economy-briefing-october-27-2026/",
-            "url_mobile": "",
-            "title": "Brazil Stocks Plunge 13 . 9 % as Fed Week Begins | Global Economy , Oct 27",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://www.riotimesonline.com/wp-content/uploads/2026/10/gc_467072973.jpg",
-            "domain": "riotimesonline.com",
-            "language": "English",
-            "sourcecountry": "Brazil"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:44:45.905700+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:ecb.europa.eu": {
       "fetched_at_utc": "2026-10-28T21:21:52.859591+00:00",
@@ -1029,24 +685,11 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-10-22T20:32:21.408362+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.snb.ch/en/publications/communication/summaries/zus_20261022",
-            "url_mobile": "",
-            "title": "Monetary policy assessment of September 2026 : Summary of discussion",
-            "seendate": "20261022T101500Z",
-            "socialimage": "",
-            "domain": "snb.ch",
-            "language": "English",
-            "sourcecountry": "Switzerland"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-02T23:54:48.790366+00:00",
+      "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-10-28T21:28:51.889257+00:00",
+      "fetched_at_utc": "2026-11-02T23:52:11.793359+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
