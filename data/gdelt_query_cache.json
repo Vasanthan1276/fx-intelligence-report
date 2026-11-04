@@ -1,8 +1,8 @@
 {
-  "updated_at_utc": "2026-11-03T22:08:28.249513+00:00",
+  "updated_at_utc": "2026-11-04T22:23:04.399788+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-03T21:53:42.015110+00:00",
+      "fetched_at_utc": "2026-11-04T22:03:54.197286+00:00",
       "payload": {
         "articles": [
           {
@@ -19,134 +19,24 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-10-23T20:04:28.234622+00:00",
+      "fetched_at_utc": "2026-11-04T22:05:37.095070+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.thenews.com.pk/latest/1420292-ai-could-boost-us-gdp-to-44-trillion-by-2030-anthropic-model-forecasts",
-            "url_mobile": "https://www.thenews.com.pk/amp/1420292-ai-could-boost-us-gdp-to-44-trillion-by-2030-anthropic-model-forecasts",
-            "title": "AI could boost US GDP to $44 trillion by 2030 , Anthropic model forecasts",
-            "seendate": "20261017T153000Z",
-            "socialimage": "https://www.thenews.com.pk/assets/uploads/2026-10-17/1420292_050504_updates.jpg",
-            "domain": "thenews.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.portfolio.hu/gazdasag/20261019/kilottek-az-olajarak-es-a-felelemindex-pont-amikor-a-tisza-kormany-es-az-mnb-is-fontos-lepesre-keszul-870360",
+            "url": "https://www.dailyforex.com/forex-technical-analysis/2026/11/audusd-forecast-3-november-2026/251344",
             "url_mobile": "",
-            "title": "Kil\u0151ttek az olaj\u00e1rak \u00e9s a f\u00e9lelemindex \u2013 pont amikor a Tisza - korm\u00e1ny \u00e9s az MNB is fontos l\u00e9p\u00e9sre k\u00e9sz\u00fcl",
-            "seendate": "20261019T054500Z",
-            "socialimage": "https://pcdn.hu/articles/images-xl/t/o/z/tozsde-grafikon-tzsde-rfolyamess-zuhans-technikai-elemzs-rszvnypiac-rfolyam-vls-862858.jpg",
-            "domain": "portfolio.hu",
-            "language": "Hungarian",
-            "sourcecountry": "Hungary"
-          },
-          {
-            "url": "https://www.memurlar.net/haber/1181430/piyasalarin-gozu-tcmb-nin-faiz-kararinda-ekonomistler-ne-bekliyor.html",
-            "url_mobile": "",
-            "title": "Piyasalar\u00fdn G\u00f6z\u00fc TCMBnin Faiz Karar\u00fdnda : Ekonomistler Ne Bekliyor ? ",
-            "seendate": "20261018T190000Z",
-            "socialimage": "https://www.memurlar.net/common/news/images/1181430/headline.jpg",
-            "domain": "memurlar.net",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.dunya.com/ekonomi/kuresel-piyasalarda-gozler-fedin-faiz-kararlari-ve-kritik-verilere-cevrildi-haberi-844234",
-            "url_mobile": "",
-            "title": "K\u00fcresel piyasalarda g\u00f6zler Fedin faiz kararlar\u0131 ve kritik verilere \u00e7evrildi",
-            "seendate": "20261017T113000Z",
-            "socialimage": "https://image.dunya.com/rcman/Cw1280h720q95gc/storage/files/images/2026/10/17/yogun-borsa-katinda-dusunen-trader-7rcz_cover.jpg",
-            "domain": "dunya.com",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.lankadeepa.lk/business/%E0%B6%86%E0%B7%83%E0%B6%BA%E0%B7%80-09-%E0%B7%80%E0%B6%B1%E0%B6%BA%E0%B6%A7-%E0%B6%89%E0%B7%84%E0%B7%85%E0%B6%B8-%E0%B6%8B%E0%B6%AF%E0%B6%B0%E0%B6%B8%E0%B6%B1%E0%B6%BA-%E0%B6%BD%E0%B6%9A%E0%B7%80/9-699519",
-            "url_mobile": "",
-            "title": "\u0d86\u0dc3\u0dd2\u0dba\u0dcf\u0dc0\u0dda 09 \u0dc0\u0dd0\u0db1\u0dd2\u0dba\u0da7 \u0d89\u0dc4\u0dc5\u0db8 \u0d8b\u0daf\u0dca\u0db0\u0db8\u0db1\u0dba \u0dbd\u0d82\u0d9a\u0dcf\u0dc0\u0dda - Lankadeepa Online",
-            "seendate": "20261020T140000Z",
-            "socialimage": "https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.lankadeepa.lk/assets/uploads/image_8df7de9e07.png",
-            "domain": "lankadeepa.lk",
-            "language": "Sinhalese",
-            "sourcecountry": "Sri Lanka"
-          },
-          {
-            "url": "https://gulfnews.com/business/retail/dubai-gold-prices-gain-as-rate-hike-bets-fizzle-1.500715545",
-            "url_mobile": "/amp/story/business%2Fretail%2Fdubai-gold-prices-gain-as-rate-hike-bets-fizzle-1.500715545",
-            "title": "Dubai Gold Prices Rise Amid US Fed Rate Hike Uncertainty",
-            "seendate": "20261019T070000Z",
-            "socialimage": "https://media.assettype.com/gulfnews%2F2026-09-19%2Ft74tobza%2F20251018217f.jpg?&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-            "domain": "gulfnews.com",
-            "language": "English",
-            "sourcecountry": "United Arab Emirates"
-          },
-          {
-            "url": "https://www.cnnturk.com/ekonomi/altin-fiyatlari-17-ekim-guncel-gram-ceyrek-cumhuriyet-altini-bugun-ne-kadar-kapalicarsi-altin-fiyatlari-son-durum-3480638",
-            "url_mobile": "",
-            "title": "ALTIN F\u0130YATLARI 17 EK\u0130M G\u00dcNCEL | Gram , \u00c7eyrek , Cumhuriyet Alt\u0131n\u0131 Bug\u00fcn Ne Kadar ? Kapal\u0131\u00e7ar\u015f\u0131 Alt\u0131n Fiyatlar\u0131 Son Durum",
-            "seendate": "20261017T071500Z",
+            "title": "Why AUD / USD Is Facing Its Most Important Test Yet",
+            "seendate": "20261103T111500Z",
             "socialimage": "",
-            "domain": "cnnturk.com",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.rtvslo.si/gospodarstvo/beg-iz-ui-delnic-a-rast-dolgocasnih-nalozb/797076",
-            "url_mobile": "",
-            "title": "Beg iz UI - delnic , a rast  dolgo\u010dasnih  nalo\u017eb",
-            "seendate": "20261018T063000Z",
-            "socialimage": "https://img.rtvcdn.si/_up/upload/2026/10/15/67113334_fp-fb.jpg",
-            "domain": "rtvslo.si",
-            "language": "Slovenian",
-            "sourcecountry": "Slovenia"
-          },
-          {
-            "url": "https://www.rtvslo.si/gospodarstvo/borzni-komentar/beg-iz-ui-delnic-a-rast-dolgocasnih-nalozb/797076",
-            "url_mobile": "",
-            "title": "Beg iz UI - delnic , a rast  dolgo\u010dasnih  nalo\u017eb",
-            "seendate": "20261018T070000Z",
-            "socialimage": "https://img.rtvcdn.si/_up/upload/2026/10/15/67113334_fp-fb.jpg",
-            "domain": "rtvslo.si",
-            "language": "Slovenian",
-            "sourcecountry": "Slovenia"
-          },
-          {
-            "url": "https://www.letemsvetemapplem.eu/2026/10/21/zlato-pod-tlakem-americke-inflace-co-rozhodne-o-dalsim-vyvoji/",
-            "url_mobile": "",
-            "title": "Zlato pod tlakem americk\u00e9 inflace . Co rozhodne o dal\u0161\u00edm v\u00fdvoji ? ",
-            "seendate": "20261021T224500Z",
-            "socialimage": "https://www.letemsvetemapplem.eu/wp-content/uploads/2026/10/Zlato-pod-tlakom-americkej-inflacie--535x300.jpg",
-            "domain": "letemsvetemapplem.eu",
-            "language": "Czech",
-            "sourcecountry": "Czech Republic"
-          },
-          {
-            "url": "https://www.businesstoday.in/markets/stocks/story/tcs-infosys-wipro-hcl-tech-mphasis-coforge-shares-rallied-up-to-5-today-heres-why-563190-2026-10-23",
-            "url_mobile": "https://www.businesstoday.in/amp/markets/stocks/story/tcs-infosys-wipro-hcl-tech-mphasis-coforge-shares-rallied-up-to-5-today-heres-why-563190-2026-10-23",
-            "title": "TCS , Infosys , Wipro , HCL Tech , Mphasis , Coforge shares rallied up to 5 % today ; here why",
-            "seendate": "20261023T050000Z",
-            "socialimage": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202610/6adadcf8ce901-tata-elxsi-ltd--tech-mahindra-ltd--persistent-systems-ltd-and-tata-technologies-ltd-added-1-per-cent-230511821-16x9.png",
-            "domain": "businesstoday.in",
+            "domain": "dailyforex.com",
             "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.portfolio.hu/uzlet/20261016/bejelzett-a-felelemindex-nagyon-beutottek-az-amerikai-tozsdeket-870060",
-            "url_mobile": "https://www.portfolio.hu/uzlet/20261016/bejelzett-a-felelemindex-nagyon-beutottek-az-amerikai-tozsdeket-870060?amp",
-            "title": "Bejelzett a f\u00e9lelemindex , nagyon be\u00fct\u00f6tt\u00e9k az amerikai t\u0151zsd\u00e9ket",
-            "seendate": "20261016T211500Z",
-            "socialimage": "https://pcdn.hu/articles/images-xl/g/e/t/gettyimages-487259374-arfolyam-befektetes-elemzes-gazdasag-grafikon-penzugy-piac-reszveny-sp-781006.jpg",
-            "domain": "portfolio.hu",
-            "language": "Hungarian",
-            "sourcecountry": "Hungary"
+            "sourcecountry": "United Kingdom"
           }
         ]
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-10-29T21:22:26.629531+00:00",
+      "fetched_at_utc": "2026-11-04T22:06:38.216161+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -154,41 +44,8 @@
       "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-30T21:03:46.960265+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.riotimesonline.com/global-economy-briefing-october-27-2026/",
-            "url_mobile": "",
-            "title": "Brazil Stocks Plunge 13 . 9 % as Fed Week Begins | Global Economy , Oct 27",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://www.riotimesonline.com/wp-content/uploads/2026/10/gc_467072973.jpg",
-            "domain": "riotimesonline.com",
-            "language": "English",
-            "sourcecountry": "Brazil"
-          },
-          {
-            "url": "http://www.ohiostandard.com/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
-            "url_mobile": "",
-            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
-            "domain": "ohiostandard.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.myanmarnews.net/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
-            "url_mobile": "",
-            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
-            "domain": "myanmarnews.net",
-            "language": "English",
-            "sourcecountry": "Myanmar"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-04T22:08:42.386331+00:00",
+      "payload": {}
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
       "fetched_at_utc": "2026-10-22T20:21:42.803796+00:00",
@@ -322,7 +179,7 @@
       "payload": {}
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-11-02T23:47:23.788080+00:00",
+      "fetched_at_utc": "2026-11-04T22:12:45.683704+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
@@ -330,7 +187,7 @@
       "payload": {}
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-11-03T22:03:42.756321+00:00",
+      "fetched_at_utc": "2026-11-04T22:15:38.458583+00:00",
       "payload": {
         "articles": [
           {
@@ -401,11 +258,11 @@
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-02T23:50:06.897725+00:00",
+      "fetched_at_utc": "2026-11-04T22:17:43.920266+00:00",
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-03T22:06:40.730434+00:00",
+      "fetched_at_utc": "2026-11-04T22:18:26.981065+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
@@ -417,11 +274,24 @@
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-11-02T23:54:14.936542+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-11-04T22:22:35.637648+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.haberler.com/ekonomi/isvicre-de-yillik-enflasyon-ekimde-yuzde-1-5-e-20391236-haberi/",
+            "url_mobile": "https://www.haberler.com/amp/isvicre-de-yillik-enflasyon-ekimde-yuzde-1-5-e-20391236-haberi/",
+            "title": "\u0130svi\u00e7rede y\u0131ll\u0131k enflasyon ekimde y\u00fczde 1 , 5  e \u00e7\u0131karak beklentiyi a\u015ft\u0131",
+            "seendate": "20261103T111500Z",
+            "socialimage": "",
+            "domain": "haberler.com",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          }
+        ]
+      }
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-03T22:00:50.291684+00:00",
+      "fetched_at_utc": "2026-11-04T22:11:45.094328+00:00",
       "payload": {
         "articles": [
           {
@@ -563,126 +433,56 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-10-30T20:59:54.152236+00:00",
+      "fetched_at_utc": "2026-11-04T22:05:01.635878+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://maharashtratimes.com/business/business-news/gold-prices-downward-trend-continues-silver-rates-plummet-brings-great-cheers-to-customers-ahead-of-diwali/articleshow/135223682.cms",
-            "url_mobile": "https://maharashtratimes.com/business/business-news/gold-prices-downward-trend-continues-silver-rates-plummet-brings-great-cheers-to-customers-ahead-of-diwali/amp_articleshow/135223682.cms",
-            "title": "Gold Silver Price Fall Update 27 October 2026 ; \u090f\u0935\u0922\u0940 \u0921\u093f\u092e\u093e\u0902\u0921 \u0905\u0938\u0942\u0928\u0939\u0940 \u0938\u094b\u0928\u0947 \u0926\u0930\u093e\u0924 \u0918\u0938\u0930\u0923\u0940\u091a\u093e \u091f\u094d\u0930\u0947\u0902\u0921 , \u091a\u093e\u0902\u0926\u0940\u091a\u0940 \u0915\u093f\u0902\u092e\u0924 \u0927\u0921\u093e\u092el ; \u0927\u0928\u0924\u094d\u0930\u092f\u094b\u0926\u0936\u0940 - \u0926\u093f\u0935\u093e\u0933\u0940\u092a\u0942\u0930\u094d\u0935\u0940 \u0917\u094d\u0930\u093e\u0939\u0915\u093e\u0902\u092e\u0927\u094d\u092f\u0947 \u0906\u0928\u0902\u0926\u0940 \u0906\u0928\u0902\u0926 ! ",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://static.langimg.com/mt/thumb/135223741/todays-goldsilver-rate-on-mcx-27-oct-2026.jpg?imgsize=180336&resizemode=75",
-            "domain": "maharashtratimes.com",
-            "language": "Marathi",
+            "url": "https://www.dailyforex.com/forex-technical-analysis/2026/11/audusd-forecast-3-november-2026/251344",
+            "url_mobile": "",
+            "title": "Why AUD / USD Is Facing Its Most Important Test Yet",
+            "seendate": "20261103T111500Z",
+            "socialimage": "",
+            "domain": "dailyforex.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.dailyforex.com/forex-technical-analysis/2026/11/eurusd-signal-3-november-2026/251357",
+            "url_mobile": "",
+            "title": "EUR / USD Signal 03 / 11 : Rebound Meets Key Resistance at 1 . 1226",
+            "seendate": "20261103T111500Z",
+            "socialimage": "",
+            "domain": "dailyforex.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://hindi.moneycontrol.com/news/your-money/gold-silver-prices-today-ahead-of-dhanteras-gold-reaches-1-lakh-37-thousand-while-silver-plunges-by-over-7000-rupee-will-these-lower-prices-boost-demand-2453510.html",
+            "url_mobile": "https://hindi.moneycontrol.com/news/your-money/gold-silver-prices-today-ahead-of-dhanteras-gold-reaches-1-lakh-37-thousand-while-silver-plunges-by-over-7000-rupee-will-these-lower-prices-boost-demand-2453510.html/amp",
+            "title": "Gold - silver prices Today : \u0927\u0928\u0924\u0947\u0930\u0938 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0938\u094b\u0928\u093e \u20b91 . 37 \u0932\u093e\u0916 \u092a\u0930 \u0906\u092f\u093e , \u091a\u093e\u0902\u0926\u0940 \u20b97000 \u0938\u0947 \u091c\u094d\u092f\u093e\u0926\u093e \u0932\u0941\u0922\u093c\u0915\u0940 , \u0915\u094d\u092f\u093e \u0915\u092e \u0926\u093e\u092e \u092c\u0922\u093c\u093e\u090f\u0902\u0917\u0947 \u092e\u093e\u0902\u0917 ? ",
+            "seendate": "20261103T111500Z",
+            "socialimage": "https://images.moneycontrol.com/static-hindinews/2026/11/GoldSilverNew.jpg",
+            "domain": "hindi.moneycontrol.com",
+            "language": "Hindi",
             "sourcecountry": "India"
           },
           {
-            "url": "http://www.myanmarnews.net/news/279395118/us-consumer-sentiment-near-record-low-as-inflation-fears-persist",
+            "url": "https://econotimes.com/France-24-Links-Trump-Tariffs-to-Rising-U-S-Small-Business-Bankruptcies-1770383",
             "url_mobile": "",
-            "title": "US consumer sentiment near record low as inflation fears persist",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/6152fc5/826cf994-0945-4128-bf85-ccc02d3b221a/1/pexels-kampus-8422706-600x315.jpg",
-            "domain": "myanmarnews.net",
-            "language": "English",
-            "sourcecountry": "Myanmar"
-          },
-          {
-            "url": "http://www.milwaukeesun.com/news/279395118/us-consumer-sentiment-stays-near-record-low-in-october",
-            "url_mobile": "",
-            "title": "US consumer sentiment stays near record low in October",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/6152fc5/826cf994-0945-4128-bf85-ccc02d3b221a/1/pexels-kampus-8422706-600x315.jpg",
-            "domain": "milwaukeesun.com",
+            "title": "France 24 Links Trump Tariffs to Rising U . S . Small - Business Bankruptcies",
+            "seendate": "20261104T013000Z",
+            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/30dd66aa0871af98613eea7ca5bc2d1992560679886ecfe86b59671da88063d0.webp",
+            "domain": "econotimes.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.ohiostandard.com/news/279395118/us-consumer-sentiment-stays-near-record-low-in-october",
+            "url": "https://newsroomamerica.com/?before=119284",
             "url_mobile": "",
-            "title": "US consumer sentiment stays near record low in October",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/6152fc5/826cf994-0945-4128-bf85-ccc02d3b221a/1/pexels-kampus-8422706-600x315.jpg",
-            "domain": "ohiostandard.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://unn.ua/news/zoloto-trymaietsia-vyshche-dollar4000-za-untsiiu-investory-chekaiut-na-rishennia-frs-ssha",
-            "url_mobile": "https://unn.ua/amp/zoloto-trymaietsia-vyshche-dollar4000-za-untsiiu-investory-chekaiut-na-rishennia-frs-ssha",
-            "title": "\u0417\u043e\u043b\u043e\u0442\u043e \u0442\u0440\u0438\u043c\u0430\u0454\u0442\u044c\u0441\u044f \u0432\u0438\u0449\u0435 $4000 \u0437\u0430 \u0443\u043d\u0446\u0456\u044e \u2013 \u0456\u043d\u0432\u0435\u0441\u0442\u043e\u0440\u0438 \u0447\u0435\u043a\u0430\u044e\u0442\u044c \u043d\u0430 \u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0424\u0420\u0421 \u0421\u0428\u0410",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://unn.ua/img/2026/10/26/1793058572-4366-large.webp",
-            "domain": "unn.ua",
-            "language": "Ukrainian",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://www.riotimesonline.com/global-economy-briefing-october-27-2026/",
-            "url_mobile": "",
-            "title": "Brazil Stocks Plunge 13 . 9 % as Fed Week Begins | Global Economy , Oct 27",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://www.riotimesonline.com/wp-content/uploads/2026/10/gc_467072973.jpg",
-            "domain": "riotimesonline.com",
-            "language": "English",
-            "sourcecountry": "Brazil"
-          },
-          {
-            "url": "http://www.ohiostandard.com/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
-            "url_mobile": "",
-            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
-            "domain": "ohiostandard.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.myanmarnews.net/news/279399101/rbi-steps-up-liquidity-support-as-tighter-cash-conditions-push-up-borrowing-rates-report",
-            "url_mobile": "",
-            "title": "RBI steps up liquidity support as tighter cash conditions push up borrowing rates : Report",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/fc0d30f/19f2711a-15b4-4b05-bfab-958554329c37/0/ANI-20261027021229-600x315.jpg",
-            "domain": "myanmarnews.net",
-            "language": "English",
-            "sourcecountry": "Myanmar"
-          },
-          {
-            "url": "https://www.rttnews.com/3703088/asian-markets-trade-mixed.aspx",
-            "url_mobile": "https://www.rttnews.com/amp/3703088/asian-markets-trade-mixed.aspx",
-            "title": "Asian Markets Trade Mixed",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://cdn.rttnews.com/articleimages/ustopstories/2026/october/asianupanddownv3-26102026-lt.jpg",
-            "domain": "rttnews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.myanmarnews.net/news/279399205/sensex-falls-over-300-points-nifty-slips-below-22690-as-crude-prices-hover-near-usd-115",
-            "url_mobile": "",
-            "title": "Sensex falls over 300 points , Nifty slips below 22 , 690 as crude prices hover near USD 115",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/1e9bcd4/71561c9d-fc5c-45cb-a1fa-199a9de709ed/0/ANI-20261027040505-600x315.jpg",
-            "domain": "myanmarnews.net",
-            "language": "English",
-            "sourcecountry": "Myanmar"
-          },
-          {
-            "url": "http://www.milwaukeesun.com/news/279399205/sensex-falls-over-300-points-nifty-slips-below-22690-as-crude-prices-hover-near-usd-115",
-            "url_mobile": "",
-            "title": "Sensex falls over 300 points , Nifty slips below 22 , 690 as crude prices hover near USD 115",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/1e9bcd4/71561c9d-fc5c-45cb-a1fa-199a9de709ed/0/ANI-20261027040505-600x315.jpg",
-            "domain": "milwaukeesun.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.thesunchronicle.com/business/5-things-to-watch-from-the-federal-reserves-next-meeting/article_7fe45c06-8782-5837-af1d-665ff6a49949.html",
-            "url_mobile": "",
-            "title": "5 things to watch from the Federal Reserve next meeting",
-            "seendate": "20261027T051500Z",
-            "socialimage": "https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/editorial/b/4f/b4f51444-9e38-5b01-bb3a-712e18cdad0c/6ad1ca7b1a8fb.image.jpg?crop=1763%2C926%2C0%2C125",
-            "domain": "thesunchronicle.com",
+            "title": "newsroomamerica . com",
+            "seendate": "20261103T021500Z",
+            "socialimage": "",
+            "domain": "newsroomamerica.com",
             "language": "English",
             "sourcecountry": "United States"
           }
@@ -690,7 +490,7 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-03T21:58:29.807900+00:00",
+      "fetched_at_utc": "2026-11-04T22:09:55.364302+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:ecb.europa.eu": {
@@ -711,11 +511,11 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-11-02T23:54:48.790366+00:00",
+      "fetched_at_utc": "2026-11-04T22:23:04.399767+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-11-02T23:52:11.793359+00:00",
+      "fetched_at_utc": "2026-11-04T22:19:37.672758+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
