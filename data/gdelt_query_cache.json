@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-04T22:23:04.399788+00:00",
+  "updated_at_utc": "2026-11-05T22:29:39.428658+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-11-04T22:03:54.197286+00:00",
@@ -36,7 +36,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-11-04T22:06:38.216161+00:00",
+      "fetched_at_utc": "2026-11-05T22:14:32.871380+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -175,16 +175,102 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-03T21:59:38.470759+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-11-05T22:18:55.738455+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.brantfordexpositor.ca/press-releases/business-wire/dream-industrial-reit-reports-strong-q3-2026-results/",
+            "url_mobile": "",
+            "title": "Dream Industrial REIT Reports Strong Q3 2026 Results",
+            "seendate": "20261104T013000Z",
+            "socialimage": "https://www.brantfordexpositor.ca/wp-content/uploads/sites/20/2026/11/bw20261103438610_whitby2c_ontario.jpeg",
+            "domain": "brantfordexpositor.ca",
+            "language": "English",
+            "sourcecountry": "Canada"
+          },
+          {
+            "url": "https://www.elliotlakestandard.ca/press-releases/business-wire/dream-industrial-reit-reports-strong-q3-2026-results/",
+            "url_mobile": "",
+            "title": "Dream Industrial REIT Reports Strong Q3 2026 Results",
+            "seendate": "20261104T013000Z",
+            "socialimage": "https://www.elliotlakestandard.ca/wp-content/uploads/sites/18/2026/11/bw20261103438610_whitby2c_ontario.jpeg",
+            "domain": "elliotlakestandard.ca",
+            "language": "English",
+            "sourcecountry": "Canada"
+          }
+        ]
+      }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-11-04T22:12:45.683704+00:00",
+      "fetched_at_utc": "2026-11-05T22:20:03.311842+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-03T22:02:32.277506+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-11-05T22:20:42.288222+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "http://www.srilankasource.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "srilankasource.com",
+            "language": "English",
+            "sourcecountry": "Sri Lanka"
+          },
+          {
+            "url": "http://www.caribbeanherald.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "caribbeanherald.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.bignewsnetwork.com/news/279415016/us-stocks-plunge-thursday-dow-jones-sheds-1-834-points",
+            "url_mobile": "",
+            "title": "U . S . stocks plunge Thursday , Dow Jones sheds 1 , 834 points",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "bignewsnetwork.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.newyorktelegraph.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "newyorktelegraph.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.sandiegosun.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "sandiegosun.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.asiabulletin.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "asiabulletin.com",
+            "language": "English",
+            "sourcecountry": "China"
+          }
+        ]
+      }
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
       "fetched_at_utc": "2026-11-04T22:15:38.458583+00:00",
@@ -262,7 +348,7 @@
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-04T22:18:26.981065+00:00",
+      "fetched_at_utc": "2026-11-05T22:24:46.372185+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
@@ -270,11 +356,11 @@
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-02T23:53:45.791132+00:00",
+      "fetched_at_utc": "2026-11-05T22:28:38.193447+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-11-04T22:22:35.637648+00:00",
+      "fetched_at_utc": "2026-11-05T22:29:39.428640+00:00",
       "payload": {
         "articles": [
           {
@@ -338,7 +424,7 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-03T22:03:09.477716+00:00",
+      "fetched_at_utc": "2026-11-05T22:21:02.834907+00:00",
       "payload": {
         "articles": [
           {
@@ -425,7 +511,7 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-11-03T22:07:17.691875+00:00",
+      "fetched_at_utc": "2026-11-05T22:25:47.984083+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:bankofengland.co.uk": {
@@ -433,7 +519,7 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-04T22:05:01.635878+00:00",
+      "fetched_at_utc": "2026-11-05T22:13:21.736194+00:00",
       "payload": {
         "articles": [
           {
