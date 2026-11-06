@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-05T22:29:39.428658+00:00",
+  "updated_at_utc": "2026-11-06T21:59:24.790212+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-11-04T22:03:54.197286+00:00",
@@ -36,7 +36,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-11-05T22:14:32.871380+00:00",
+      "fetched_at_utc": "2026-11-06T21:45:51.837380+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -44,8 +44,111 @@
       "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-04T22:08:42.386331+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-11-06T21:47:36.146623+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.jiji.com/jc/article?k=2026110501071&g=eco",
+            "url_mobile": "",
+            "title": "\u5186\u5b89\u5727\u529b \u3001 \u4e00\u670d\u304b \u7c73\u653f\u7b56\u52d5\u5411\u306b\u306f\u4e0d\u900f\u660e\u611f \u2015 \u70ba\u66ff\u5e02\u5834 \uff1a \u6642\u4e8b\u30c9\u30c3\u30c8\u30b3\u30e0",
+            "seendate": "20261106T003000Z",
+            "socialimage": "https://www.jiji.com/news2/kiji_photos/202611/20261105ax26S_o.jpg",
+            "domain": "jiji.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "https://www.businesstimes.com.sg/international/global/japanese-savers-move-money-out-banks-bonds-prove-more-attractive",
+            "url_mobile": "",
+            "title": "Japanese savers move money out of banks as bonds prove more attractive",
+            "seendate": "20261106T023000Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/1c3535ab609fb1b0119cbaa486e9394853b06d89cc3047ba4785de2e85d9453d?&f=webp",
+            "domain": "businesstimes.com.sg",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://www.boj.or.jp/about/nichigin_gp/ngp_release/ngp261106.htm",
+            "url_mobile": "",
+            "title": "\u5b66\u751f\u5411\u3051\u30b3\u30f3\u30c6\u30b9\u30c8 \u300c \u7b2c22\u56de \u65e5\u9280\u30b0\u30e9\u30f3\u30d7\u30ea \u300d \u6c7a\u52dd\u5927\u4f1a\u306e\u5b9f\u65bd\u306b\u3064\u3044\u3066 : \u65e5\u672c\u9280\u884c Bank of Japan",
+            "seendate": "20261106T043000Z",
+            "socialimage": "https://www.boj.or.jp/common2/img/common/og_img.jpg",
+            "domain": "boj.or.jp",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "https://247wallst.com/companies/dxj/",
+            "url_mobile": "",
+            "title": "WisdomTree Japan Hedged Equity Fund ( DXJ ) Stock Price , News & Analysis",
+            "seendate": "20261106T033000Z",
+            "socialimage": "",
+            "domain": "247wallst.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.nikkei.com/article/DGXZQOUB298LY0Z21C26A0000000/",
+            "url_mobile": "",
+            "title": "GPIF \u3001 7 \u301c 9\u6708\u306f5 . 2\u5146\u5186\u904b\u7528\u640d\u5931 \u56fd\u5185\u50b5\u6bd4\u7387\u306f\u57fa\u672c\u914d\u5206\u4e26\u307f",
+            "seendate": "20261106T093000Z",
+            "socialimage": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3839284006112026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&s=622ac9fcb81c699373d9dc9f9d8cede3",
+            "domain": "nikkei.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "https://247wallst.com/companies/ewj/",
+            "url_mobile": "",
+            "title": "iShares MSCI Japan Index Fund ( EWJ ) Stock Price , News & Analysis",
+            "seendate": "20261106T033000Z",
+            "socialimage": "",
+            "domain": "247wallst.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.jiji.com/jc/article?k=2026110500909&g=soc",
+            "url_mobile": "",
+            "title": "\u539f\u767a\u4e8b\u6545\u8ce0\u511f \u3001 \u5229\u6255\u3044\u8cbb\u6025\u5897\u304c\u73fe\u5b9f\u306b \u5e74\uff11\uff10\uff10\uff10\u5104\u5186\u8d85\u8a66\u7b97\u3082 \u2015 \u56fd\u8ca0\u62c5 \u3001 \u6771\u96fb\u306e\u8cc7\u91d1\u5de5\u9762\u3067 \u30fb \u4f1a\u8a08\u691c\u67fb\u9662 \uff1a \u6642\u4e8b\u30c9\u30c3\u30c8\u30b3\u30e0",
+            "seendate": "20261106T003000Z",
+            "socialimage": "https://www.jiji.com/news2/kiji_photos/202611/20261105at16S_o.jpg",
+            "domain": "jiji.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "https://www.livemint.com/market/yen-rises-on-haven-demand-as-cibc-nomura-see-room-for-more-gain-11793918153390.html",
+            "url_mobile": "https://www.livemint.com/market/yen-rises-on-haven-demand-as-cibc-nomura-see-room-for-more-gain/amp-11793918153390.html",
+            "title": "Yen Rises on Haven Demand as CIBC , Nomura See Room for More Gain",
+            "seendate": "20261106T003000Z",
+            "socialimage": "https://www.livemint.com/lm-img/img/2024/12/06/600x338/market_2_1733466021722_1733466033367.jpg",
+            "domain": "livemint.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.nikkei.com/article/DGXZQOUB0445J0U6A101C2000000/",
+            "url_mobile": "",
+            "title": "11\u67089 \u301c 13\u65e5\u306e\u65b0\u898f\u8a2d\u5b9a\u30d5\u30a1\u30f3\u30c9 - \u65e5\u672c\u7d4c\u6e08\u65b0\u805e",
+            "seendate": "20261106T040000Z",
+            "socialimage": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3825514004112026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&s=6499ecd7e6aad7a069a2c2796abd2e6d",
+            "domain": "nikkei.com",
+            "language": "Japanese",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "https://newsonjapan.com/article/151274.php",
+            "url_mobile": "",
+            "title": "Japan Stocks Plunge Nearly 6 % on Friday as Nikkei Loses 3 , 643 Points",
+            "seendate": "20261106T110000Z",
+            "socialimage": "",
+            "domain": "newsonjapan.com",
+            "language": "English",
+            "sourcecountry": "Japan"
+          }
+        ]
+      }
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
       "fetched_at_utc": "2026-10-22T20:21:42.803796+00:00",
@@ -175,34 +278,134 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-05T22:18:55.738455+00:00",
+      "fetched_at_utc": "2026-11-06T21:49:44.901840+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.brantfordexpositor.ca/press-releases/business-wire/dream-industrial-reit-reports-strong-q3-2026-results/",
+            "url": "https://www.beritasatu.com/ekonomi/3039110/rupiah-hari-ini-dibuka-melemah-016-persen-ke-rp-18111",
             "url_mobile": "",
-            "title": "Dream Industrial REIT Reports Strong Q3 2026 Results",
-            "seendate": "20261104T013000Z",
-            "socialimage": "https://www.brantfordexpositor.ca/wp-content/uploads/sites/20/2026/11/bw20261103438610_whitby2c_ontario.jpeg",
-            "domain": "brantfordexpositor.ca",
-            "language": "English",
-            "sourcecountry": "Canada"
+            "title": "Rupiah Hari Ini Dibuka Melemah 0 , 16 Persen ke Rp 18 . 111",
+            "seendate": "20261106T050000Z",
+            "socialimage": "https://img2.beritasatu.com/cache/beritasatu/960x620-w/2026/10/1793344585-1058x652.webp",
+            "domain": "beritasatu.com",
+            "language": "Indonesian",
+            "sourcecountry": "Indonesia"
           },
           {
-            "url": "https://www.elliotlakestandard.ca/press-releases/business-wire/dream-industrial-reit-reports-strong-q3-2026-results/",
+            "url": "https://www.teleborsa.it/News/2026/11/06/analisi-tecnica-eur-gbp-del-5-11-2026-69_TLB-AUTO.html",
+            "url_mobile": "https://www.teleborsa.it/AMP/News/2026/11/06/analisi-tecnica-eur-gbp-del-5-11-2026-69_TLB-AUTO.html",
+            "title": "Analisi Tecnica : EUR / GBP del 5 / 11 / 2026",
+            "seendate": "20261106T083000Z",
+            "socialimage": "https://images.teleborsa.it/t/stabile/116995.t.W600.H340.M4.jpg",
+            "domain": "teleborsa.it",
+            "language": "Italian",
+            "sourcecountry": "Italy"
+          },
+          {
+            "url": "https://www.onlinekhabar.com/2026/11/2052175/the-value-of-most-foreign-currencies-including-the-dollar-euro-and-pound-fell",
             "url_mobile": "",
-            "title": "Dream Industrial REIT Reports Strong Q3 2026 Results",
-            "seendate": "20261104T013000Z",
-            "socialimage": "https://www.elliotlakestandard.ca/wp-content/uploads/sites/18/2026/11/bw20261103438610_whitby2c_ontario.jpeg",
-            "domain": "elliotlakestandard.ca",
+            "title": "\u0921\u0932\u0930 , \u092f\u0941\u0930\u094b \u0930 \u092a\u093e\u0909\u0923\u094d\u0921\u0938\u0939\u093f\u0924 \u0905\u0927\u093f\u0915\u093e\u0902\u0936 \u0935\u093f\u0926\u0947\u0936\u0940 \u092e\u0941\u0926\u094d\u0930\u093e\u0915\u094b \u092d\u093e\u0909 \u0918\u091f\u094d\u092f\u094b",
+            "seendate": "20261106T010000Z",
+            "socialimage": "https://www.onlinekhabar.com/wp-content/uploads/2026/10/Dollar--1024x574.png",
+            "domain": "onlinekhabar.com",
+            "language": "Nepali",
+            "sourcecountry": "Nepal"
+          },
+          {
+            "url": "https://www.elbadil.com/878530/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%A7%D8%B1%D8%A8%D8%B9%D8%A7%D8%A1-4-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1/",
+            "url_mobile": "",
+            "title": "\u0633\u0639\u0631 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0641\u064a \u0645\u0635\u0631 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621 4 \u0646\u0648\u0641\u0645\u0628\u0631 2026 .. \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0639\u0646\u062f 55 . 37 \u062c\u0646\u064a\u0647\u0627\u064b \u0628\u0632\u064a\u0627\u062f\u0629 \u0637\u0641\u064a\u0641\u0629",
+            "seendate": "20261106T110000Z",
+            "socialimage": "https://www.elbadil.com/uploads/2026/11/beb899f8dae1b7759f801684c7c620ed34581066.webp",
+            "domain": "elbadil.com",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
+          },
+          {
+            "url": "https://www.freemalaysiatoday.com/category/business/2026/11/06/ringgit-opens-lower-amid-mixed-us-economic-market-signals",
+            "url_mobile": "",
+            "title": "Ringgit opens lower amid mixed US economic , market signals",
+            "seendate": "20261106T020000Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/a03957c5-ringgit_down-new-2024-3.webp",
+            "domain": "freemalaysiatoday.com",
             "language": "English",
-            "sourcecountry": "Canada"
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.elbadil.com/878301/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%A7%D8%AB%D9%86%D9%8A%D9%86-2-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1/",
+            "url_mobile": "",
+            "title": "\u0633\u0639\u0631 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0641\u064a \u0645\u0635\u0631 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0627\u062b\u0646\u064a\u0646 2 \u0646\u0648\u0641\u0645\u0628\u0631 2026 .. \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u062a\u0631\u0627\u062c\u0639 \u0625\u0644\u0649 55 . 87 \u062c\u0646\u064a\u0647",
+            "seendate": "20261106T110000Z",
+            "socialimage": "https://www.elbadil.com/uploads/2026/11/5a2440fac0aa3c5170c55a94119ca67aa83aa2ce.webp",
+            "domain": "elbadil.com",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
+          },
+          {
+            "url": "https://www.vesti.bg/pari/evroto-otnovo-poskypva-spriamo-dolara-na-fona-na-sriva-pri-ai-akciite-6275485",
+            "url_mobile": "",
+            "title": "\u0415\u0432\u0440\u043e\u0442\u043e \u043e\u0442\u043d\u043e\u0432\u043e \u043f\u043e\u0441\u043a\u044a\u043f\u0432\u0430 \u0441\u043f\u0440\u044f\u043c\u043e \u0434\u043e\u043b\u0430\u0440\u0430 \u043d\u0430 \u0444\u043e\u043d\u0430 \u043d\u0430 \u0441\u0440\u0438\u0432\u0430 \u043f\u0440\u0438 AI \u0430\u043a\u0446\u0438\u0438\u0442\u0435",
+            "seendate": "20261106T113000Z",
+            "socialimage": "https://m4.netinfo.bg/media/images/50221/50221692/1920-1080-valuti.jpg",
+            "domain": "vesti.bg",
+            "language": "Bulgarian",
+            "sourcecountry": "Bulgaria"
+          },
+          {
+            "url": "https://www.elbadil.com/878416/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D8%A7%D8%A1-3-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1/",
+            "url_mobile": "",
+            "title": "\u0633\u0639\u0631 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0641\u064a \u0645\u0635\u0631 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621 3 \u0646\u0648\u0641\u0645\u0628\u0631 2026 .. \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u062a\u0631\u0627\u062c\u0639 \u0625\u0644\u0649 55 . 43 \u062c\u0646\u064a\u0647",
+            "seendate": "20261106T110000Z",
+            "socialimage": "https://www.elbadil.com/uploads/2026/11/c3fb64c11e84185c52b9a9c916611efd2b2e7748.webp",
+            "domain": "elbadil.com",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
+          },
+          {
+            "url": "https://cyprusnews.eu/business-news/stelneis-e500-sto-exoteriko-pote-i-chreosi-einai-miden-kai-pote-allazei-o-logariasmos/",
+            "url_mobile": "",
+            "title": "\u03a3\u03c4\u03ad\u03bb\u03bd\u03b5\u03b9\u03c2 \u20ac500 \u03c3\u03c4\u03bf \u03b5\u03be\u03c9\u03c4\u03b5\u03c1\u03b9\u03ba\u03cc : \u03a0\u03cc\u03c4\u03b5 \u03b7 \u03c7\u03c1\u03ad\u03c9\u03c3\u03b7 \u03b5\u03af\u03bd\u03b1\u03b9 \u03bc\u03b7\u03b4\u03ad\u03bd \u03ba\u03b1\u03b9 \u03c0\u03cc\u03c4\u03b5 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03bf \u03bb\u03bf\u03b3\u03b1\u03c1\u03b9\u03b1\u03c3\u03bc\u03cc\u03c2",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://moneymatters.cy/wp-content/uploads/2026/11/guide-mm-transfer-20261105-2b9b796367.jpg",
+            "domain": "cyprusnews.eu",
+            "language": "Greek",
+            "sourcecountry": "Greece"
+          },
+          {
+            "url": "https://www.aol.com/articles/dollar-holds-yen-gains-equity-012415000.html",
+            "url_mobile": "",
+            "title": "Dollar holds , yen gains as equity rout saps risk appetite ahead of payrolls",
+            "seendate": "20261106T023000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/1bc8fc328efca7470c3c11190d3e257a90071579/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/06/b264f779-f154-3280-af85-ca535d1d7a78/c7626141-c56e-46be-90ec-355667317a58.jpg",
+            "domain": "aol.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.asiaone.com:443/money/dollar-holds-yen-gains-equity-rout-saps-risk-appetite-ahead-payrolls",
+            "url_mobile": "",
+            "title": "Dollar holds , yen gains as equity rout saps risk appetite ahead of payrolls",
+            "seendate": "20261106T073000Z",
+            "socialimage": "https://media.asiaone.com/sites/default/files/styles/article_top_image/public/original_images/Nov2026/dollar%20and%20yen.JPG?itok=B29Xj3JW",
+            "domain": "asiaone.com",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://www.nile.eg/%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%8A%D8%B5%D8%B9%D8%AF-%D9%88%D8%B3%D8%B7-%D8%A5%D9%82%D8%A8%D8%A7%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%B0-%D8%A7%D9%84%D8%A2%D9%85",
+            "url_mobile": "",
+            "title": "\u0642\u0646\u0627\u0629 \u0627\u0644\u0646\u064a\u0644 \u0644\u0644\u0623\u062e\u0628\u0627\u0631 | \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0635\u0639\u062f \u0648\u0633\u0637 \u0625\u0642\u0628\u0627\u0644 \u0639\u0644\u0649 \u0627\u0644\u0645\u0644\u0627\u0630 \u0627\u0644\u0622\u0645\u0646",
+            "seendate": "20261106T093000Z",
+            "socialimage": "",
+            "domain": "nile.eg",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
           }
         ]
       }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-11-05T22:20:03.311842+00:00",
+      "fetched_at_utc": "2026-11-06T21:51:30.690823+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
@@ -340,27 +543,150 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-10-30T21:12:34.680158+00:00",
+      "fetched_at_utc": "2026-11-06T21:54:52.337443+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-04T22:17:43.920266+00:00",
+      "fetched_at_utc": "2026-11-06T21:55:03.955890+00:00",
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-05T22:24:46.372185+00:00",
+      "fetched_at_utc": "2026-11-06T21:55:25.367883+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-03T22:08:28.249494+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-11-06T21:57:34.960084+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.vesti.bg/pari/evroto-otnovo-poskypva-spriamo-dolara-na-fona-na-sriva-pri-ai-akciite-6275485",
+            "url_mobile": "",
+            "title": "\u0415\u0432\u0440\u043e\u0442\u043e \u043e\u0442\u043d\u043e\u0432\u043e \u043f\u043e\u0441\u043a\u044a\u043f\u0432\u0430 \u0441\u043f\u0440\u044f\u043c\u043e \u0434\u043e\u043b\u0430\u0440\u0430 \u043d\u0430 \u0444\u043e\u043d\u0430 \u043d\u0430 \u0441\u0440\u0438\u0432\u0430 \u043f\u0440\u0438 AI \u0430\u043a\u0446\u0438\u0438\u0442\u0435",
+            "seendate": "20261106T113000Z",
+            "socialimage": "https://m4.netinfo.bg/media/images/50221/50221692/1920-1080-valuti.jpg",
+            "domain": "vesti.bg",
+            "language": "Bulgarian",
+            "sourcecountry": "Bulgaria"
+          },
+          {
+            "url": "https://www.aol.com/articles/dollar-holds-yen-gains-equity-012415000.html",
+            "url_mobile": "",
+            "title": "Dollar holds , yen gains as equity rout saps risk appetite ahead of payrolls",
+            "seendate": "20261106T023000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/1bc8fc328efca7470c3c11190d3e257a90071579/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/06/b264f779-f154-3280-af85-ca535d1d7a78/c7626141-c56e-46be-90ec-355667317a58.jpg",
+            "domain": "aol.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.asiaone.com:443/money/dollar-holds-yen-gains-equity-rout-saps-risk-appetite-ahead-payrolls",
+            "url_mobile": "",
+            "title": "Dollar holds , yen gains as equity rout saps risk appetite ahead of payrolls",
+            "seendate": "20261106T073000Z",
+            "socialimage": "https://media.asiaone.com/sites/default/files/styles/article_top_image/public/original_images/Nov2026/dollar%20and%20yen.JPG?itok=B29Xj3JW",
+            "domain": "asiaone.com",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://www.livemint.com/market/stock-market-news/golds-safe-haven-status-is-fading-don-t-accumulate-indiscriminately-says-hitesh-jain-of-yes-securities-11793849608912.html",
+            "url_mobile": "https://www.livemint.com/market/stock-market-news/golds-safe-haven-status-is-fading-don-t-accumulate-indiscriminately-says-hitesh-jain-of-yes-securities/amp-11793849608912.html",
+            "title": "Gold safe - haven status is fading ; dont accumulate indiscriminately , says Hitesh Jain of Yes Securities",
+            "seendate": "20261106T033000Z",
+            "socialimage": "https://www.livemint.com/lm-img/img/2026/11/05/600x338/Final_photo_1793874240756_nmwq_1793874271963_qjDn_dcf19a49-2d91-4c52-b302-810246470c52_lLOZ.jpg",
+            "domain": "livemint.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "http://www.asiabulletin.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "asiabulletin.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "http://www.srilankasource.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "srilankasource.com",
+            "language": "English",
+            "sourcecountry": "Sri Lanka"
+          },
+          {
+            "url": "http://www.caribbeanherald.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "caribbeanherald.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.bignewsnetwork.com/news/279415016/us-stocks-plunge-thursday-dow-jones-sheds-1-834-points",
+            "url_mobile": "",
+            "title": "U . S . stocks plunge Thursday , Dow Jones sheds 1 , 834 points",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "bignewsnetwork.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.newyorktelegraph.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "newyorktelegraph.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.sandiegosun.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261105T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "sandiegosun.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.azerbaijannews.net/news/279415016/dow-jones-sinks-1-834-points-thursday-nasdaq-sheds-1-422",
+            "url_mobile": "",
+            "title": "Dow Jones sinks 1 , 834 points Thursday , Nasdaq sheds 1 , 422",
+            "seendate": "20261105T223000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "azerbaijannews.net",
+            "language": "English",
+            "sourcecountry": "Azerbaijan"
+          },
+          {
+            "url": "http://www.russiaherald.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261106T003000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "russiaherald.com",
+            "language": "English",
+            "sourcecountry": "Russia"
+          }
+        ]
+      }
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-05T22:28:38.193447+00:00",
+      "fetched_at_utc": "2026-11-06T21:58:39.852044+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-11-05T22:29:39.428640+00:00",
+      "fetched_at_utc": "2026-11-06T21:58:54.555651+00:00",
       "payload": {
         "articles": [
           {
@@ -511,8 +837,41 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-11-05T22:25:47.984083+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-11-06T21:56:05.919497+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.manilatimes.net/2026/11/06/tmt-newswire/pr-newswire/malaysia-among-worlds-big-14-study-destinations-ranks-3rd-for-international-student-growth/2463869",
+            "url_mobile": "https://www.manilatimes.net/2026/11/06/tmt-newswire/pr-newswire/malaysia-among-worlds-big-14-study-destinations-ranks-3rd-for-international-student-growth/2463869/amp",
+            "title": "MALAYSIA AMONG WORLD  BIG 14  STUDY DESTINATIONS , RANKS 3RD FOR INTERNATIONAL STUDENT GROWTH",
+            "seendate": "20261106T093000Z",
+            "socialimage": "https://manilatimes.net/manilatimes/uploads/images/2026/11/06/1295553.jpg",
+            "domain": "manilatimes.net",
+            "language": "English",
+            "sourcecountry": "Philippines"
+          },
+          {
+            "url": "https://www.therakyatpost.com/news/2026/11/06/google-pledges-to-pay-for-all-its-power-and-water-in-malaysia/",
+            "url_mobile": "",
+            "title": "Google Pledges To Pay for All Its Power And Water In Malaysia",
+            "seendate": "20261106T080000Z",
+            "socialimage": "https://www.therakyatpost.com/wp-content/uploads/2026/11/mantapfeatimg.jpg",
+            "domain": "therakyatpost.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.yicai.com/news/103427704.html",
+            "url_mobile": "",
+            "title": "\u4e2d\u56fd\u6807\u51c6\u8d70\u51fa\u53bb\u4e0e\u5bf9\u5916\u6295\u8d44\u6d1e\u5bdf",
+            "seendate": "20261106T033000Z",
+            "socialimage": "",
+            "domain": "yicai.com",
+            "language": "Chinese",
+            "sourcecountry": "China"
+          }
+        ]
+      }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:bankofengland.co.uk": {
       "fetched_at_utc": "2026-09-15T19:57:21.561420+00:00",
@@ -597,7 +956,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-11-04T22:23:04.399767+00:00",
+      "fetched_at_utc": "2026-11-06T21:59:24.790187+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
