@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-11-06T21:59:24.831348+00:00",
-  "run_date_sgt": "2026-11-07",
-  "market_date": "2026-11-06",
+  "generated_at_utc": "2026-11-10T01:07:48.430294+00:00",
+  "run_date_sgt": "2026-11-10",
+  "market_date": "2026-11-09",
   "phase": "Phase 3A.3 \u2014 direction semantics & source-quality shadow mode",
-  "source": "Pair-aware relevance-filtered GDELT + official central-bank communications (0/7 usable; 4 thin; 53 API calls; 0 cache hits; 39 rate-limit retries)",
+  "source": "Pair-aware relevance-filtered GDELT + official central-bank communications (1/7 usable; 2 thin; 60 API calls; 0 cache hits; 53 rate-limit retries)",
   "lookback": "96h",
   "fallback_lookback": "7d",
   "official_lookback_days": 10,
@@ -28,7 +28,7 @@
       "source_diversity": 0,
       "agreement_pct": null,
       "query_attempts": 4,
-      "query_successes": 1,
+      "query_successes": 0,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [],
       "official_feed_errors": [],
@@ -39,8 +39,8 @@
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-12-09",
-      "days_to_policy_event": 33,
-      "event_risk_label": "Normal",
+      "days_to_policy_event": 29,
+      "event_risk_label": "Moderate",
       "event_calendar_source": "Federal Reserve FOMC calendar"
     },
     "JPY": {
@@ -50,20 +50,38 @@
       "score": 2.5,
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 42,
-      "article_count": 5,
-      "retrieved_article_count": 15,
-      "rejected_article_count": 10,
+      "article_count": 3,
+      "retrieved_article_count": 3,
+      "rejected_article_count": 0,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
-      "official_article_count": 5,
+      "official_article_count": 3,
       "media_article_count": 0,
       "source_diversity": 1,
       "agreement_pct": null,
-      "query_attempts": 2,
-      "query_successes": 1,
+      "query_attempts": 3,
+      "query_successes": 0,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
+        {
+          "title": "Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026",
+          "url": "http://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
+          "domain": "boj.or.jp",
+          "seen_utc": "2026-11-09T23:50:00+00:00",
+          "direction": "neutral",
+          "headline_score": 2.5,
+          "weight": 1.441,
+          "signal_terms": [],
+          "source_type": "official",
+          "source_name": "Bank of Japan updates",
+          "official": true,
+          "query_tag": "official-feed",
+          "relevance_score": 96,
+          "relevance_reasons": [
+            "official policy/macro/FX content"
+          ]
+        },
         {
           "title": "Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
           "url": "http://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
@@ -71,7 +89,7 @@
           "seen_utc": "2026-11-04T23:50:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 1.124,
+          "weight": 0.937,
           "signal_terms": [],
           "source_type": "official",
           "source_name": "Bank of Japan updates",
@@ -99,69 +117,17 @@
           "relevance_reasons": [
             "official policy/macro/FX content"
           ]
-        },
-        {
-          "title": "Outlook for Economic Activity and Prices (October 2026, The Bank's View)",
-          "url": "http://www.boj.or.jp/en/mopo/outlook/gor2610a.pdf",
-          "domain": "boj.or.jp",
-          "seen_utc": "2026-10-30T04:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.937,
-          "signal_terms": [],
-          "source_type": "official",
-          "source_name": "Bank of Japan updates",
-          "official": true,
-          "query_tag": "official-feed",
-          "relevance_score": 96,
-          "relevance_reasons": [
-            "official policy/macro/FX content"
-          ]
-        },
-        {
-          "title": "Statement on Monetary Policy",
-          "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
-          "domain": "boj.or.jp",
-          "seen_utc": "2026-10-30T04:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.937,
-          "signal_terms": [],
-          "source_type": "official",
-          "source_name": "Bank of Japan updates",
-          "official": true,
-          "query_tag": "official-feed",
-          "relevance_score": 96,
-          "relevance_reasons": [
-            "official policy/macro/FX content"
-          ]
-        },
-        {
-          "title": "(Reference) Outlook Report and Indicators Related to Underlying Inflation",
-          "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030b.pdf",
-          "domain": "boj.or.jp",
-          "seen_utc": "2026-10-30T03:02:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.937,
-          "signal_terms": [],
-          "source_type": "official",
-          "source_name": "Bank of Japan updates",
-          "official": true,
-          "query_tag": "official-feed",
-          "relevance_score": 96,
-          "relevance_reasons": [
-            "official policy/macro/FX content"
-          ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Japanese+yen%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrec"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Japanese+yen%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrec",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+Japan%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxrec",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Japan+inflation%22+OR+%22Japan+wages%22+OR+%22Japan+GDP%22%29&mode=ArtList&maxr"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-12-18",
-      "days_to_policy_event": 42,
+      "days_to_policy_event": 38,
       "event_risk_label": "Normal",
       "event_calendar_source": "Bank of Japan MPM schedule"
     },
@@ -172,18 +138,18 @@
       "score": 2.5,
       "label": "Relevant coverage / insufficient directional evidence",
       "confidence_pct": 42,
-      "article_count": 5,
-      "retrieved_article_count": 5,
-      "rejected_article_count": 0,
+      "article_count": 2,
+      "retrieved_article_count": 14,
+      "rejected_article_count": 12,
       "directional_article_count": 0,
       "official_directional_count": 0,
       "media_directional_count": 0,
-      "official_article_count": 5,
+      "official_article_count": 2,
       "media_article_count": 0,
       "source_diversity": 1,
       "agreement_pct": null,
-      "query_attempts": 2,
-      "query_successes": 0,
+      "query_attempts": 3,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -191,25 +157,6 @@
           "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
           "domain": "ecb.europa.eu",
           "seen_utc": "2026-11-04T00:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 1.131,
-          "signal_terms": [],
-          "source_type": "official",
-          "source_name": "ECB press releases and speeches",
-          "official": true,
-          "query_tag": "official-feed",
-          "relevance_score": 100,
-          "relevance_reasons": [
-            "official policy/macro/FX content",
-            "target central bank"
-          ]
-        },
-        {
-          "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-          "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-          "domain": "ecb.europa.eu",
-          "seen_utc": "2026-10-30T14:00:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
           "weight": 0.943,
@@ -231,42 +178,6 @@
           "seen_utc": "2026-11-05T08:00:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 1.124,
-          "signal_terms": [],
-          "source_type": "official",
-          "source_name": "ECB press releases and speeches",
-          "official": true,
-          "query_tag": "official-feed",
-          "relevance_score": 96,
-          "relevance_reasons": [
-            "official policy/macro/FX content"
-          ]
-        },
-        {
-          "title": "Christine Lagarde, Boris Vuj\u010di\u0107: Monetary policy statement (with Q&A)",
-          "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-          "domain": "ecb.europa.eu",
-          "seen_utc": "2026-10-29T14:00:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.937,
-          "signal_terms": [],
-          "source_type": "official",
-          "source_name": "ECB press releases and speeches",
-          "official": true,
-          "query_tag": "official-feed",
-          "relevance_score": 96,
-          "relevance_reasons": [
-            "official policy/macro/FX content"
-          ]
-        },
-        {
-          "title": "Monetary policy decisions",
-          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-          "domain": "ecb.europa.eu",
-          "seen_utc": "2026-10-29T13:15:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
           "weight": 0.937,
           "signal_terms": [],
           "source_type": "official",
@@ -282,33 +193,33 @@
       "official_feed_errors": [],
       "query_errors": [
         "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22euro%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&maxrecords=12&",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22European+Central+Bank%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtLis"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22euro+area+inflation%22+OR+%22euro+area+growth%22+OR+%22eurozone+GDP%22%29&mode="
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-12-17",
-      "days_to_policy_event": 41,
+      "days_to_policy_event": 37,
       "event_risk_label": "Normal",
       "event_calendar_source": "ECB Governing Council calendar"
     },
     "GBP": {
-      "status": "Thin",
-      "coverage_quality": "Thin",
-      "evidence_eligible": false,
-      "score": 2.5,
-      "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 42,
-      "article_count": 3,
-      "retrieved_article_count": 15,
-      "rejected_article_count": 12,
-      "directional_article_count": 0,
+      "status": "Available",
+      "coverage_quality": "Adequate",
+      "evidence_eligible": true,
+      "score": 4.28,
+      "label": "Strong strengthening bias",
+      "confidence_pct": 78,
+      "article_count": 6,
+      "retrieved_article_count": 14,
+      "rejected_article_count": 7,
+      "directional_article_count": 2,
       "official_directional_count": 0,
-      "media_directional_count": 0,
-      "official_article_count": 3,
-      "media_article_count": 0,
-      "source_diversity": 1,
-      "agreement_pct": null,
-      "query_attempts": 3,
-      "query_successes": 2,
+      "media_directional_count": 2,
+      "official_article_count": 2,
+      "media_article_count": 4,
+      "source_diversity": 5,
+      "agreement_pct": 100,
+      "query_attempts": 2,
+      "query_successes": 1,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [
         {
@@ -318,7 +229,7 @@
           "seen_utc": "2026-11-05T12:00:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 1.305,
+          "weight": 0.943,
           "signal_terms": [],
           "source_type": "official",
           "source_name": "Bank of England news",
@@ -349,35 +260,109 @@
           ]
         },
         {
-          "title": "Remit for the Monetary Policy Committee - October 2026",
-          "url": "https://www.bankofengland.co.uk/letter/2026/mpc-remit-2026",
-          "domain": "bankofengland.co.uk",
-          "seen_utc": "2026-10-28T14:16:49+00:00",
+          "title": "Bank of England hikes rates to 4 % as inflation fears mount",
+          "url": "http://www.northkoreatimes.com/news/279414658/bank-of-england-hikes-rates-to-4-as-inflation-fears-mount",
+          "domain": "northkoreatimes.com",
+          "seen_utc": "2026-11-08T13:00:00+00:00",
+          "direction": "strengthening",
+          "headline_score": 4.75,
+          "weight": 0.816,
+          "signal_terms": [
+            "+hikes rate",
+            "+hikes rates"
+          ],
+          "source_type": "media",
+          "source_name": "northkoreatimes.com",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
+          ]
+        },
+        {
+          "title": "BoE hikes rate for first time in 3 years ; retreating oil prices may allow for more options ahead",
+          "url": "https://www.journalgazette.net/ap/business/boe-hikes-rate-for-first-time-in-3-years-retreating-oil-prices-may-allow-for/article_aaeed8cb-4cd1-56d9-a660-7310666e9da4.html",
+          "domain": "journalgazette.net",
+          "seen_utc": "2026-11-06T09:30:00+00:00",
+          "direction": "strengthening",
+          "headline_score": 3.62,
+          "weight": 0.589,
+          "signal_terms": [
+            "+hikes rate"
+          ],
+          "source_type": "media",
+          "source_name": "journalgazette.net",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
+          "relevance_reasons": [
+            "target central bank"
+          ]
+        },
+        {
+          "title": "BBC expert \u00a31 , 000 warning to savers after Bank of England decision",
+          "url": "https://www.aol.co.uk/articles/bbc-expert-1-000-warning-134800000.html",
+          "domain": "aol.co.uk",
+          "seen_utc": "2026-11-08T14:30:00+00:00",
           "direction": "neutral",
           "headline_score": 2.5,
-          "weight": 0.937,
+          "weight": 0.816,
           "signal_terms": [],
-          "source_type": "official",
-          "source_name": "Bank of England news",
-          "official": true,
-          "query_tag": "official-feed",
-          "relevance_score": 96,
+          "source_type": "media",
+          "source_name": "aol.co.uk",
+          "official": false,
+          "query_tag": "plan-2:96h",
+          "relevance_score": 92,
           "relevance_reasons": [
-            "official policy/macro/FX content"
+            "target central bank"
           ]
         }
       ],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+England%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList&maxr"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28sterling+OR+%22British+pound%22%29+%28forex+OR+currency+OR+%22exchange+rate%22%29&"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-12-17",
-      "days_to_policy_event": 41,
+      "days_to_policy_event": 37,
       "event_risk_label": "Normal",
       "event_calendar_source": "Bank of England MPC calendar"
     },
     "AUD": {
+      "status": "Unavailable",
+      "coverage_quality": "Unavailable",
+      "evidence_eligible": false,
+      "score": 2.5,
+      "label": "Unavailable",
+      "confidence_pct": 0,
+      "article_count": 0,
+      "retrieved_article_count": 3,
+      "rejected_article_count": 3,
+      "directional_article_count": 0,
+      "official_directional_count": 0,
+      "media_directional_count": 0,
+      "official_article_count": 0,
+      "media_article_count": 0,
+      "source_diversity": 0,
+      "agreement_pct": null,
+      "query_attempts": 4,
+      "query_successes": 1,
+      "horizon": "Short term (1\u201310 trading days)",
+      "articles": [],
+      "official_feed_errors": [],
+      "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Australian+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&m",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Australia+inflation%22+OR+%22Australia+jobs%22+OR+%22Australia+GDP%22%29&mode=A",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
+      ],
+      "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
+      "next_policy_event": "2026-12-08",
+      "days_to_policy_event": 28,
+      "event_risk_label": "Moderate",
+      "event_calendar_source": "Reserve Bank of Australia board schedule"
+    },
+    "MYR": {
       "status": "Unavailable",
       "coverage_quality": "Unavailable",
       "evidence_eligible": false,
@@ -400,59 +385,9 @@
       "articles": [],
       "official_feed_errors": [],
       "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Australian+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&m",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Reserve+Bank+of+Australia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=Ar",
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Australia+inflation%22+OR+%22Australia+jobs%22+OR+%22Australia+GDP%22%29&mode=A"
-      ],
-      "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
-      "next_policy_event": "2026-12-08",
-      "days_to_policy_event": 32,
-      "event_risk_label": "Normal",
-      "event_calendar_source": "Reserve Bank of Australia board schedule"
-    },
-    "MYR": {
-      "status": "Thin",
-      "coverage_quality": "Thin",
-      "evidence_eligible": false,
-      "score": 2.5,
-      "label": "Relevant coverage / insufficient directional evidence",
-      "confidence_pct": 31,
-      "article_count": 1,
-      "retrieved_article_count": 3,
-      "rejected_article_count": 2,
-      "directional_article_count": 0,
-      "official_directional_count": 0,
-      "media_directional_count": 0,
-      "official_article_count": 0,
-      "media_article_count": 1,
-      "source_diversity": 1,
-      "agreement_pct": null,
-      "query_attempts": 4,
-      "query_successes": 3,
-      "horizon": "Short term (1\u201310 trading days)",
-      "articles": [
-        {
-          "title": "MALAYSIA AMONG WORLD  BIG 14  STUDY DESTINATIONS , RANKS 3RD FOR INTERNATIONAL STUDENT GROWTH",
-          "url": "https://www.manilatimes.net/2026/11/06/tmt-newswire/pr-newswire/malaysia-among-worlds-big-14-study-destinations-ranks-3rd-for-international-student-growth/2463869",
-          "domain": "manilatimes.net",
-          "seen_utc": "2026-11-06T09:30:00+00:00",
-          "direction": "neutral",
-          "headline_score": 2.5,
-          "weight": 0.884,
-          "signal_terms": [],
-          "source_type": "media",
-          "source_name": "manilatimes.net",
-          "official": false,
-          "query_tag": "plan-3:7d",
-          "relevance_score": 78,
-          "relevance_reasons": [
-            "target-country macro"
-          ]
-        }
-      ],
-      "official_feed_errors": [],
-      "query_errors": [
-        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Malaysian+ringgit%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&mode=ArtList&m",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+Negara+Malaysia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&mode=ArtList",
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Malaysia+inflation%22+OR+%22Malaysia+growth%22+OR+%22Malaysia+GDP%22%29&mode=Ar"
       ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": null,
@@ -478,15 +413,17 @@
       "source_diversity": 0,
       "agreement_pct": null,
       "query_attempts": 4,
-      "query_successes": 4,
+      "query_successes": 3,
       "horizon": "Short term (1\u201310 trading days)",
       "articles": [],
       "official_feed_errors": [],
-      "query_errors": [],
+      "query_errors": [
+        "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3"
+      ],
       "method": "Target relevance gate + pair-aware direction semantics + strict official-content gate + paced/cached GDELT",
       "next_policy_event": "2026-12-10",
-      "days_to_policy_event": 34,
-      "event_risk_label": "Normal",
+      "days_to_policy_event": 30,
+      "event_risk_label": "Moderate",
       "event_calendar_source": "Swiss National Bank monetary policy assessment schedule"
     }
   }

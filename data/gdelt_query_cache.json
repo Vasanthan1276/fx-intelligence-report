@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-06T21:59:24.790212+00:00",
+  "updated_at_utc": "2026-11-10T01:06:50.044037+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-11-04T22:03:54.197286+00:00",
@@ -555,7 +555,7 @@
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-06T21:57:34.960084+00:00",
+      "fetched_at_utc": "2026-11-10T01:06:15.044306+00:00",
       "payload": {
         "articles": [
           {
@@ -567,6 +567,26 @@
             "domain": "vesti.bg",
             "language": "Bulgarian",
             "sourcecountry": "Bulgaria"
+          },
+          {
+            "url": "https://ria.ru/20261109/voyna-2130154762.html",
+            "url_mobile": "",
+            "title": "\u041a\u0438\u0435\u0432\u0443 \u0440\u0430\u043d\u043e \u0440\u0430\u0434\u043e\u0432\u0430\u0442\u044c\u0441\u044f : \u041f\u0443\u0442\u0438\u043d \u0432\u044b\u0438\u0433\u0440\u0430\u043b \u0435\u0449\u0435 \u043e\u0434\u043d\u0443 \u0432\u043e\u0439\u043d\u0443",
+            "seendate": "20261109T053000Z",
+            "socialimage": "https://cdnn21.imgria.ru/images/sharing/article/2130154762.jpg",
+            "domain": "ria.ru",
+            "language": "Russian",
+            "sourcecountry": "Russia"
+          },
+          {
+            "url": "https://www.cdt.ch/news/economia/la-fiducia-nel-franco-svizzero-ce-ma-ha-un-prezzo-443907",
+            "url_mobile": "",
+            "title": "La fiducia nel franco svizzero c  \u00e8 , ma ha un prezzo",
+            "seendate": "20261107T060000Z",
+            "socialimage": "https://naxos-cdn01.gruppocdt.ch/cdt/stories/2026/11/06/960x640/2aeb9922-a88e-4718-9548-1fc0085d3a35.jpeg",
+            "domain": "cdt.ch",
+            "language": "Italian",
+            "sourcecountry": "Switzerland"
           },
           {
             "url": "https://www.aol.com/articles/dollar-holds-yen-gains-equity-012415000.html",
@@ -599,94 +619,74 @@
             "sourcecountry": "India"
           },
           {
-            "url": "http://www.asiabulletin.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "http://www.newyorkstatesman.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
             "url_mobile": "",
             "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
+            "seendate": "20261106T013000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "asiabulletin.com",
+            "domain": "newyorkstatesman.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.australiannews.net/news/279415016/dow-jones-sinks-1-834-points-thursday-nasdaq-sheds-1-422",
+            "url_mobile": "",
+            "title": "Dow Jones sinks 1 , 834 points Thursday , Nasdaq sheds 1 , 422",
+            "seendate": "20261106T013000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "australiannews.net",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "http://www.hongkongherald.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url_mobile": "",
+            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
+            "seendate": "20261106T013000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "domain": "hongkongherald.com",
             "language": "English",
             "sourcecountry": "China"
           },
           {
-            "url": "http://www.srilankasource.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "http://www.ohiostandard.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
             "url_mobile": "",
             "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
+            "seendate": "20261106T020000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "srilankasource.com",
-            "language": "English",
-            "sourcecountry": "Sri Lanka"
-          },
-          {
-            "url": "http://www.caribbeanherald.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
-            "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "caribbeanherald.com",
+            "domain": "ohiostandard.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.bignewsnetwork.com/news/279415016/us-stocks-plunge-thursday-dow-jones-sheds-1-834-points",
-            "url_mobile": "",
-            "title": "U . S . stocks plunge Thursday , Dow Jones sheds 1 , 834 points",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "bignewsnetwork.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.newyorktelegraph.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "http://www.londonmercury.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
             "url_mobile": "",
             "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
+            "seendate": "20261106T020000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "newyorktelegraph.com",
+            "domain": "londonmercury.com",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "United Kingdom"
           },
           {
-            "url": "http://www.sandiegosun.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
-            "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "sandiegosun.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.azerbaijannews.net/news/279415016/dow-jones-sinks-1-834-points-thursday-nasdaq-sheds-1-422",
+            "url": "http://www.myanmarnews.net/news/279415016/dow-jones-sinks-1-834-points-thursday-nasdaq-sheds-1-422",
             "url_mobile": "",
             "title": "Dow Jones sinks 1 , 834 points Thursday , Nasdaq sheds 1 , 422",
-            "seendate": "20261105T223000Z",
+            "seendate": "20261106T020000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "azerbaijannews.net",
+            "domain": "myanmarnews.net",
             "language": "English",
-            "sourcecountry": "Azerbaijan"
-          },
-          {
-            "url": "http://www.russiaherald.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
-            "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261106T003000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "russiaherald.com",
-            "language": "English",
-            "sourcecountry": "Russia"
+            "sourcecountry": "Myanmar"
           }
         ]
       }
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-06T21:58:39.852044+00:00",
+      "fetched_at_utc": "2026-11-10T01:06:36.403471+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-11-06T21:58:54.555651+00:00",
+      "fetched_at_utc": "2026-11-10T01:06:50.044016+00:00",
       "payload": {
         "articles": [
           {
@@ -703,135 +703,165 @@
       }
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-04T22:11:45.094328+00:00",
+      "fetched_at_utc": "2026-11-10T00:58:30.174389+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.theglobeandmail.com/investing/article-global-markets-were-already-fragile-big-ai-bets-could-break-them/",
+            "url": "https://www.tayyar.org/News/Business/747615/_guid=747615",
             "url_mobile": "",
-            "title": "Global markets were already fragile . Big AI bets could break them",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.theglobeandmail.com/resizer/v2/ZGYOARJH7VD4PKE7UKSTIOVZ3A.jpg?auth=495dd998b34a82a356f28ea02fc8f62d6199a93d84721e46bfe8c48afeeae1ee&quality=80&smart=true",
-            "domain": "theglobeandmail.com",
-            "language": "English",
-            "sourcecountry": "Canada"
+            "title": "tayyar . org - \u0628\u0646\u0643 \u0625\u0646\u062c\u0644\u062a\u0631\u0627 \u064a\u0631\u0641\u0639 \u0627\u0644\u0641\u0627\u0626\u062f\u0629 \u0644\u0644\u0645\u0631\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0645\u0646\u0630 2023",
+            "seendate": "20261106T063000Z",
+            "socialimage": "https://static.tayyar.org/Content/ResizedImages/663/423/outside/132~bank.jpg",
+            "domain": "tayyar.org",
+            "language": "Arabic",
+            "sourcecountry": "Lebanon"
           },
           {
-            "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/03/in-new-memoir-harper-says-he-offered-carney-a-job-but-not-finance-minister/",
-            "url_mobile": "",
-            "title": "Stephen Harper says he offered Carney a job but not finance minister",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.bnnbloomberg.ca/resizer/v2/CGIMCQBPPUL2WKY7UCVHIANO2Q.jpg?smart=true&auth=30f89995abca890831573641e747d3000d41699670c1fe090196e989d98457d7",
-            "domain": "bnnbloomberg.ca",
+            "url": "https://www.express.co.uk/finance/personalfinance/2263711/interest-rate-rise-impact-on-annuity-deals",
+            "url_mobile": "https://www.express.co.uk/finance/personalfinance/2263711/interest-rate-rise-impact-on-annuity-deals/amp",
+            "title": "The hidden catch behind better annuity deals | Personal Finance | Finance",
+            "seendate": "20261106T083000Z",
+            "socialimage": "https://cdn.images.express.co.uk/img/dynamic/23/1200x630/7220634.jpg",
+            "domain": "express.co.uk",
             "language": "English",
-            "sourcecountry": "Canada"
+            "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.stcatharinesstandard.ca/politics/federal/harper-s-new-memoir-revisits-carney-rivalry-poilievre-and-a-day-of-fear-on-the-hill/article_a79194a5-a44e-5ee6-a208-0d6b64cf7725.html",
+            "url": "https://www.aol.co.uk/articles/bbc-expert-1-000-warning-134800000.html",
             "url_mobile": "",
-            "title": "Harper new memoir disputes Carney finance job claim",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://bloximages.chicago2.vip.townnews.com/stcatharinesstandard.ca/content/tncms/assets/v3/editorial/c/1b/c1b8a7fc-8058-5e0f-a893-c253170d238e/6ae93827b0adf.image.jpg?crop=1171%2C615%2C0%2C577",
-            "domain": "stcatharinesstandard.ca",
+            "title": "BBC expert \u00a31 , 000 warning to savers after Bank of England decision",
+            "seendate": "20261108T143000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/1f7bebd2a5f46e91b48a767d39c879b46b6ba825/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/08/8e5ad07c-9040-3209-9c83-b0c6a8e13f75/232d522d-a8f3-4659-b77d-a8f02d1c8ed2.jpg",
+            "domain": "aol.co.uk",
             "language": "English",
-            "sourcecountry": "Canada"
+            "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.brandonsun.com/entertainment/2026/11/03/in-new-memoir-harper-says-he-offered-carney-a-job-but-not-finance-minister",
+            "url": "https://www.journalgazette.net/ap/business/boe-hikes-rate-for-first-time-in-3-years-retreating-oil-prices-may-allow-for/article_aaeed8cb-4cd1-56d9-a660-7310666e9da4.html",
             "url_mobile": "",
-            "title": "In new memoir , Harper says he offered Carney a job but not finance minister \u2013 Brandon Sun",
-            "seendate": "20261103T111500Z",
-            "socialimage": "",
-            "domain": "brandonsun.com",
+            "title": "BoE hikes rate for first time in 3 years ; retreating oil prices may allow for more options ahead",
+            "seendate": "20261106T093000Z",
+            "socialimage": "https://bloximages.chicago2.vip.townnews.com/journalgazette.net/content/tncms/assets/v3/editorial/b/65/b6513a95-250d-5ea7-8720-438eaf5337ed/6aecf55ebbf59.image.jpg?crop=1763%2C926%2C0%2C124",
+            "domain": "journalgazette.net",
             "language": "English",
-            "sourcecountry": "Canada"
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.walesonline.co.uk/news/cost-of-living/bbc-moneybox-expert-warning-more-34881124",
+            "url_mobile": "",
+            "title": "BBC Moneybox expert warning to some with more than \u00a311 , 000 in savings accounts",
+            "seendate": "20261108T160000Z",
+            "socialimage": "https://i2-prod.liverpoolecho.co.uk/news/article34881123.ece/ALTERNATES/s1200/0_ATM-cash-machine-on-wall-for-free-cash-withdrawal.jpg",
+            "domain": "walesonline.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o",
+            "url_mobile": "",
+            "title": "  My mortgage has gone up already : How rising interest rates are hitting people pockets",
+            "seendate": "20261107T020000Z",
+            "socialimage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/1e6b/live/b1102500-d9fb-11f1-b441-2b33b063138f.png",
+            "domain": "bbc.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.dailymail.com/money/markets/article-16269397/Banks-rate-hike-madness-puts-choke-hold-growth-bring-hardship-thousands-warns-MAGGIE-PAGANO.html",
+            "url_mobile": "",
+            "title": "Bank rate hike madness puts a choke hold on growth and will bring hardship to thousands , warns MAGGIE PAGANO",
+            "seendate": "20261106T010000Z",
+            "socialimage": "https://i.dailymail.com/1s/2026/11/05/20/112332777-0-image-a-3_1793910255708.jpg",
+            "domain": "dailymail.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.oxfordmail.co.uk/news/26701112.bank-england-interest-rate-rise-4-per-cent-expected/",
+            "url_mobile": "",
+            "title": "Bank of England interest rate rise to 4 per cent expected",
+            "seendate": "20261106T053000Z",
+            "socialimage": "https://www.oxfordmail.co.uk/resources/images/19277670.jpg?type=og-image",
+            "domain": "oxfordmail.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.echo-news.co.uk/news/26709291.interest-rates-rise---much-will-mortgage-payments-go/",
+            "url_mobile": "",
+            "title": "Interest rates rise - how much will mortgage payments go up ? ",
+            "seendate": "20261108T103000Z",
+            "socialimage": "https://www.echo-news.co.uk/resources/images/21677891.jpg?type=og-image",
+            "domain": "echo-news.co.uk",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "https://www.theguardian.com/business/2026/nov/06/uk-house-prices-fall-at-steepest-rate-in-more-than-three-years",
+            "url_mobile": "",
+            "title": "UK house prices fall at steepest rate in more than three years",
+            "seendate": "20261106T093000Z",
+            "socialimage": "https://i.guim.co.uk/img/media/2ebb696b77a37ed8196d914f97c1d230ff695a79/388_4_4206_3367/master/4206.jpg?&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9970bb260e9cc640bbcabdefc2a0d2fa",
+            "domain": "theguardian.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
+          },
+          {
+            "url": "http://www.northkoreatimes.com/news/279414658/bank-of-england-hikes-rates-to-4-as-inflation-fears-mount",
+            "url_mobile": "",
+            "title": "Bank of England hikes rates to 4 % as inflation fears mount",
+            "seendate": "20261108T130000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/ece3cb9/9dba59bd-ba7e-45e0-b1d6-b6d489f61668/1/Bank-of-England-600x315.jpg",
+            "domain": "northkoreatimes.com",
+            "language": "English",
+            "sourcecountry": "North Korea"
+          },
+          {
+            "url": "http://www.neworleanssun.com/news/279414658/bank-of-england-hikes-rates-to-4-as-inflation-fears-mount",
+            "url_mobile": "",
+            "title": "Bank of England hikes rates to 4 % as inflation fears mount",
+            "seendate": "20261108T130000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/ece3cb9/9dba59bd-ba7e-45e0-b1d6-b6d489f61668/1/Bank-of-England-600x315.jpg",
+            "domain": "neworleanssun.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-05T22:21:02.834907+00:00",
+      "fetched_at_utc": "2026-11-10T00:59:55.265349+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.illawarramercury.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
+            "url": "https://www.morningstar.com/news/dow-jones/2026110913473/australian-mortgage-holder-confidence-at-record-low",
             "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.illawarramercury.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "illawarramercury.com.au",
+            "title": "Australian Mortgage Holder Confidence at Record Low",
+            "seendate": "20261110T003000Z",
+            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+            "domain": "morningstar.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.perthnow.com.au/lifestyle/personal-finance/millions-of-households-face-severe-cash-crunch-as-37-per-cent-deplete-savings-c-23110843",
+            "url_mobile": "",
+            "title": "Millions of households face severe cash crunch as 37 per cent deplete savings",
+            "seendate": "20261109T070000Z",
+            "socialimage": "https://images.perthnow.com.au/publication/C-23110843/f8dcf4644d3aaccff85c9dd275ffd5978ea32164-16x9-x0y0w2048h1152.jpg?imwidth=1200",
+            "domain": "perthnow.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.dailyforex.com/forex-technical-analysis/2026/11/audusd-forecast-3-november-2026/251344",
+            "url": "https://www.perthnow.com.au/news/business/the-greatest-loss-of-wealth-in-history-raises-doubts-about-the-future-of-artificial-intelligence-c-23124204",
             "url_mobile": "",
-            "title": "Why AUD / USD Is Facing Its Most Important Test Yet",
-            "seendate": "20261103T111500Z",
-            "socialimage": "",
-            "domain": "dailyforex.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.areanews.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
-            "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.areanews.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "areanews.com.au",
+            "title": "The greatest loss of wealth in history raises doubts about the future of artificial intelligence",
+            "seendate": "20261106T030000Z",
+            "socialimage": "https://images.perthnow.com.au/publication/C-23124204/74eee1c4bf42f933108a490bf4bd314a9bb36973-16x9-x0y209w4000h2250.jpg?imwidth=1200",
+            "domain": "perthnow.com.au",
             "language": "English",
             "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.cootamundraherald.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
-            "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.cootamundraherald.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "cootamundraherald.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.newcastleherald.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
-            "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.newcastleherald.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "newcastleherald.com.au",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://www.irrigator.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
-            "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.irrigator.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "irrigator.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.blayneychronicle.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
-            "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.blayneychronicle.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "blayneychronicle.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.rttnews.com/3707612/australia-hikes-key-rate-to-4-85-highest-since-2008.aspx",
-            "url_mobile": "https://www.rttnews.com/amp/3707612/australia-hikes-key-rate-to-4-85-highest-since-2008.aspx",
-            "title": "Australia Hikes Key Rate To 4 . 85 %; Highest Since 2008",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://cdn.rttnews.com/articleimages/ustopstories/2026/november/australia-03112026-lt.jpg",
-            "domain": "rttnews.com",
-            "language": "English",
-            "sourcecountry": "United States"
           }
         ]
       }
@@ -935,8 +965,131 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-04T22:09:55.364302+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-11-10T00:56:11.751732+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://alquds.com/ar/posts/270104",
+            "url_mobile": "",
+            "title": "\u0631\u0626\u064a\u0633 \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u0637\u064a \u0627\u0644\u0641\u064a\u062f\u0631\u0627\u0644\u064a \u0628\u0646\u064a\u0648\u064a\u0648\u0631\u0643 : \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a \u0645\u062a\u064a\u0646 \u0644\u0643\u0646 \u0627\u0644\u062a\u0636\u062e\u0645 \u0644\u0627 \u064a\u0632\u0627\u0644 \u0645\u0631\u062a\u0641\u0639\u0627\u064b",
+            "seendate": "20261106T123000Z",
+            "socialimage": "https://cdn.alquds.com/uploads/1e27d8f314491249dca2a2de88f6e1f4.jpg",
+            "domain": "alquds.com",
+            "language": "Arabic",
+            "sourcecountry": "Israel"
+          },
+          {
+            "url": "https://www.e15.cz/nazory-a-analyzy/michluv-preventivni-uder-cnb-zvedla-sazby-na-ctyri-procenta-a-rozpoutala-novou-bitvu-s-babisem-1437148",
+            "url_mobile": "",
+            "title": "Michl\u016fv preventivn\u00ed \u00fader . \u010cNB zvedla sazby na \u010dty\u0159i procenta a rozpoutala novou bitvu s Babi\u0161em",
+            "seendate": "20261106T110000Z",
+            "socialimage": "https://1884403144.rsc.cdn77.org/foto/ales-michl-cnb-guverner-koruna/MTIwMHg2MzAvZmlsdGVyczpub191cHNjYWxlKDEpOndhdGVybWFyayhodHRwczovL2ltZy5jbmNlbnRlci5jei9kaXN0L2Fzc2V0cy9lMTUvd2F0ZXJtYXJrLWUxNS5wbmcsLTEwLDEwLDApOmZvY2FsKDUzMngyOTQ6ODIzeDY3MykvaW1n/9988293.jpg?v=0&st=Hw-4PxfTItmqWhL8IvPfgFI20XCHTqovWmgy3nuNrU8&ts=1600812000&e=0",
+            "domain": "e15.cz",
+            "language": "Czech",
+            "sourcecountry": "Czech Republic"
+          },
+          {
+            "url": "https://www.tanjug.rs/ekonomija/svet/296001/predsednica-evropske-centralne-banke-lagard-inflacija-ce-verovatno-ostati-visoka/vest",
+            "url_mobile": "https://www.tanjug.rs/ekonomija/svet/296001/predsednica-evropske-centralne-banke-lagard-inflacija-ce-verovatno-ostati-visoka/amp",
+            "title": "Predsednica Evropske centralne banke Lagard : Inflacija \u0107e verovatno ostati visoka",
+            "seendate": "20261107T183000Z",
+            "socialimage": "https://www.tanjug.rs/data/images/2026-11-07/439975_germany-european-central-bank-lagarde_s.jpg",
+            "domain": "tanjug.rs",
+            "language": "Serbian",
+            "sourcecountry": "Serbia"
+          },
+          {
+            "url": "https://www.journalgazette.net/ap/business/boe-hikes-rate-for-first-time-in-3-years-retreating-oil-prices-may-allow-for/article_aaeed8cb-4cd1-56d9-a660-7310666e9da4.html",
+            "url_mobile": "",
+            "title": "BoE hikes rate for first time in 3 years ; retreating oil prices may allow for more options ahead",
+            "seendate": "20261106T093000Z",
+            "socialimage": "https://bloximages.chicago2.vip.townnews.com/journalgazette.net/content/tncms/assets/v3/editorial/b/65/b6513a95-250d-5ea7-8720-438eaf5337ed/6aecf55ebbf59.image.jpg?crop=1763%2C926%2C0%2C124",
+            "domain": "journalgazette.net",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.mikrometoxos.gr/stournaras-anaptyxi-konta-sto-2-eos-to-2028-kabanaki-gia-tin-akriveia-kai-ton-plithorismo/",
+            "url_mobile": "",
+            "title": "\u03a3\u03c4\u03bf\u03c5\u03c1\u03bd\u03ac\u03c1\u03b1\u03c2 : \u0391\u03bd\u03ac\u03c0\u03c4\u03c5\u03be\u03b7 \u03ba\u03bf\u03bd\u03c4\u03ac \u03c3\u03c4\u03bf 2 % \u03ad\u03c9\u03c2 \u03c4\u03bf 2028 \u2013 \u039a\u03b1\u03bc\u03c0\u03b1\u03bd\u03ac\u03ba\u03b9 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03b1\u03ba\u03c1\u03af\u03b2\u03b5\u03b9\u03b1 \u03ba\u03b1\u03b9 \u03c4\u03bf\u03bd \u03c0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03cc",
+            "seendate": "20261106T010000Z",
+            "socialimage": "https://www.mikrometoxos.gr/wp-content/uploads/2025/12/stournaras-2-e1671696238449-1024x586-1.jpg",
+            "domain": "mikrometoxos.gr",
+            "language": "Greek",
+            "sourcecountry": "Greece"
+          },
+          {
+            "url": "https://www.nin.rs/svet/vesti/128662/ecb-razmatra-novo-povecanje-kamatnih-stopa-zbog-visoke-inflacije",
+            "url_mobile": "",
+            "title": "ECB razmatra novo pove\u0107anje kamatnih stopa zbog visoke inflacije",
+            "seendate": "20261108T143000Z",
+            "socialimage": "https://www.nin.rs/data/images/2026-10-14/129007_tan2026-09-1015441904-5_og.jpg",
+            "domain": "nin.rs",
+            "language": "Serbian",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://www.expressen.se/debatt/debatt-frankrike-visar-varfor-euron-fortfarande-ar-en-dalig-ide/",
+            "url_mobile": "",
+            "title": "DEBATT : Frankrike visar varf\u00f6r euron fortfarande \u00e4r en d\u00e5lig id\u00e9",
+            "seendate": "20261107T180000Z",
+            "socialimage": "https://static.bonniernews.se/images/a6/67/a66710ca65b54ef6a49e36835d29cf1e/16x9/original.png",
+            "domain": "expressen.se",
+            "language": "Swedish",
+            "sourcecountry": "Sweden"
+          },
+          {
+            "url": "https://www.finanzen.net/nachricht/devisen/devisen-euro-gibt-weiter-nach-kurs-faellt-wieder-unter-1-12er-marke-16043645",
+            "url_mobile": "",
+            "title": "Devisen : Euro gibt weiter nach - Kurs f\u00e4llt wieder unter 1 , 12er - Marke",
+            "seendate": "20261106T083000Z",
+            "socialimage": "",
+            "domain": "finanzen.net",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.plovdiv24.bg/novini/Bylgaria/Britanski-finansist-Ako-stana-ministur-v-Bulgariya-veroyatno-shte-mi-tryabvat-bodigardove-3053134",
+            "url_mobile": "",
+            "title": "\u0411\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u0438 \u0444\u0438\u043d\u0430\u043d\u0441\u0438\u0441\u0442 : \u0410\u043a\u043e \u0441\u0442\u0430\u043d\u0430 \u043c\u0438\u043d\u0438\u0441\u0442\u044a\u0440 \u0432 \u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f , \u0432\u0435\u0440\u043e\u044f\u0442\u043d\u043e \u0449\u0435 \u043c\u0438 \u0442\u0440\u044f\u0431\u0432\u0430\u0442 \u0431\u043e\u0434\u0438\u0433\u0430\u0440\u0434\u043e\u0432\u0435",
+            "seendate": "20261108T093000Z",
+            "socialimage": "https://i.id24.bg/i/3053134.webp",
+            "domain": "plovdiv24.bg",
+            "language": "Bulgarian",
+            "sourcecountry": "Bulgaria"
+          },
+          {
+            "url": "https://www.moravskoslezskenovinky.cz/zpravy/byznys/evropa-doplaci-na-drahe-energie-inflace-roste-prumysl-slabne/",
+            "url_mobile": "",
+            "title": "Moravskoslezsk\u00e9 novinky - Dom\u00e1c\u00ed - Evropa dopl\u00e1c\u00ed na drah\u00e9 energie . Inflace roste , pr\u016fmysl sl\u00e1bne",
+            "seendate": "20261106T080000Z",
+            "socialimage": "https://www.moravskoslezskenovinky.cz/repository/zpravy/7c3d0f33-d923-11f1-a43a-525400759392.jpg",
+            "domain": "moravskoslezskenovinky.cz",
+            "language": "Czech",
+            "sourcecountry": "Czech Republic"
+          },
+          {
+            "url": "https://www.b92.net/svi-komentari/283167",
+            "url_mobile": "",
+            "title": "Svi komentari - Nema\u010dki lanci dobijaju kineskog vlasnika : Posao vredan 2 , 2 milijarde evra",
+            "seendate": "20261108T103000Z",
+            "socialimage": "https://www.b92.net/data/images/2026-11-08/286472_shutterstock-1445581070_f.jpg",
+            "domain": "b92.net",
+            "language": "Serbian",
+            "sourcecountry": "Serbia"
+          },
+          {
+            "url": "https://www.b92.net/biz/svet/vesti/283167/nemacki-lanci-dobijaju-kineskog-vlasnika-posao-vredan-22-milijarde-evra/vest",
+            "url_mobile": "",
+            "title": "Nema\u010dki lanci dobijaju kineskog vlasnika : Posao vredan 2 , 2 milijarde evra",
+            "seendate": "20261108T103000Z",
+            "socialimage": "https://www.b92.net/data/images/2026-11-08/286472_shutterstock-1445581070_f.jpg",
+            "domain": "b92.net",
+            "language": "Serbian",
+            "sourcecountry": "Serbia"
+          }
+        ]
+      }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:ecb.europa.eu": {
       "fetched_at_utc": "2026-10-28T21:21:52.859591+00:00",
@@ -960,7 +1113,7 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-11-04T22:19:37.672758+00:00",
+      "fetched_at_utc": "2026-11-10T01:05:42.573659+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
