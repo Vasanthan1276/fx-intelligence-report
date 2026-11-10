@@ -1,19 +1,129 @@
 {
-  "updated_at_utc": "2026-11-10T01:06:50.044037+00:00",
+  "updated_at_utc": "2026-11-10T22:42:23.239630+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-04T22:03:54.197286+00:00",
+      "fetched_at_utc": "2026-11-10T22:28:08.916368+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.dailyforex.com/forex-technical-analysis/2026/11/eurusd-signal-3-november-2026/251357",
-            "url_mobile": "",
-            "title": "EUR / USD Signal 03 / 11 : Rebound Meets Key Resistance at 1 . 1226",
-            "seendate": "20261103T111500Z",
-            "socialimage": "",
-            "domain": "dailyforex.com",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-extends-winning-streak-breaks-below-94-against-dollar-whats-next/articleshow/135670806.cms",
+            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/rupee-extends-winning-streak-breaks-below-94-against-dollar-whats-next/amp_articleshow/135670806.cms",
+            "title": "Rupee extends winning streak , breaks below 94 against dollar : What next",
+            "seendate": "20261109T053000Z",
+            "socialimage": "https://static.toiimg.com/thumb/msid-135671269,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "domain": "timesofindia.indiatimes.com",
             "language": "English",
-            "sourcecountry": "United Kingdom"
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://bworldonline.com/corporate/2026/11/08/792187/business-group-seeks-govt-support-as-rising-costs-squeeze-margins/",
+            "url_mobile": "",
+            "title": "Business group seeks govt support as rising costs squeeze margins",
+            "seendate": "20261108T133000Z",
+            "socialimage": "http://bworldonline.com/wp-content/uploads/2024/09/Buildings-skyline-1.jpg",
+            "domain": "bworldonline.com",
+            "language": "English",
+            "sourcecountry": "Philippines"
+          },
+          {
+            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
+            "url_mobile": "",
+            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
+            "seendate": "20261110T053000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://bworldonline.com/opinion/2026/11/08/792108/the-philippine-peso-more-for-less/",
+            "url_mobile": "",
+            "title": "The Philippine Peso : More for less - BusinessWorld Online",
+            "seendate": "20261108T133000Z",
+            "socialimage": "https://bworldonline.com/wp-content/uploads/2026/10/US-dollar-peso.jpg",
+            "domain": "bworldonline.com",
+            "language": "English",
+            "sourcecountry": "Philippines"
+          },
+          {
+            "url": "https://www.prokerala.com/news/articles/a1834545.html",
+            "url_mobile": "",
+            "title": "Rupee gains 25 paise against US dollar on lower crude , positive global cues",
+            "seendate": "20261109T070000Z",
+            "socialimage": "",
+            "domain": "prokerala.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.independent.co.ug/depreciating-shilling-threatens-kiruddu-hospitals-medical-equipment-procurement/",
+            "url_mobile": "",
+            "title": "Depreciating shilling threatens Kiruddu Hospital medical equipment procurement",
+            "seendate": "20261108T103000Z",
+            "socialimage": "https://www.independent.co.ug/wp-content/uploads/2026/11/A-woman-stands-outside-Kiruddu-Hospital-in-Makindye.jpg",
+            "domain": "independent.co.ug",
+            "language": "English",
+            "sourcecountry": "Uganda"
+          },
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/11/10/ringgit-opens-marginally-higher-against-greenback-amid-cautious-market-sentiment",
+            "url_mobile": "",
+            "title": "Ringgit opens marginally higher against greenback amid cautious market sentiment",
+            "seendate": "20261110T023000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/10/4204172.jpeg",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70092898-us-boersen-lassen-nach-inflation-bremst-anleger-aus-003.htm",
+            "url_mobile": "",
+            "title": "US - B\u00f6rsen lassen nach - Inflation bremst Anleger aus",
+            "seendate": "20261110T220000Z",
+            "socialimage": "https://www.finanznachrichten.de/content/g/fb.png",
+            "domain": "finanznachrichten.de",
+            "language": "German",
+            "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.madhyamam.com/business/market/gold-rate-in-india-1570850",
+            "url_mobile": "https://www.madhyamam.com/amp/business/market/gold-rate-in-india-1570850",
+            "title": "\u0d38\u0d4d\u0d35\u0d7c\u0d23 \u0d35\u0d3f\u0d32 \u0d05\u0d28\u0d4d\u0d24\u0d3e\u0d30\u0d3e\u0d37\u0d4d\u0d1f\u0d4d\u0d30 \u0d35\u0d3f\u0d2a\u0d23\u0d3f\u0d2f\u0d3f\u0d7d 21 \u0d36\u0d24\u0d2e\u0d3e\u0d28\u0d02 \u0d07\u0d1f\u0d3f\u0d1e\u0d4d\u0d1e\u0d2a\u0d4d\u0d2a\u0d4b\u0d7e \u0d07\u0d28\u0d4d\u0d24\u0d4d\u0d2f\u0d2f\u0d3f\u0d32\u0d47\u0d24\u0d4d 15 \u0d36\u0d24\u0d2e\u0d3e\u0d28\u0d02 \u0d2e\u0d3e\u0d24\u0d4d\u0d30\u0d02 : \u0d15\u0d3e\u0d30\u0d23\u0d2e\u0d46\u0d28\u0d4d\u0d24\u0d4d ? | gold rate in india",
+            "seendate": "20261110T060000Z",
+            "socialimage": "https://www.madhyamam.com/h-upload/2026/11/10/2945693-untitled-1.jpg",
+            "domain": "madhyamam.com",
+            "language": "Malayalam",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://en.globes.co.il/en/article-fri-ta-35-has-strongest-session-since-march-1001562380",
+            "url_mobile": "",
+            "title": "Fri : TA 35 has strongest session since March",
+            "seendate": "20261108T113000Z",
+            "socialimage": "https://images.globes.co.il/images/NewGlobes/big_image_800/2018/Globes_Archive_800x392.2018729T150619.jpg",
+            "domain": "en.globes.co.il",
+            "language": "English",
+            "sourcecountry": "Israel"
+          },
+          {
+            "url": "https://www.thehindubusinessline.com/markets/markets-closed-today-for-diwali-balipratipada-trading-to-resume-on-november-11/article71684945.ece",
+            "url_mobile": "https://www.thehindubusinessline.com/markets/markets-closed-today-for-diwali-balipratipada-trading-to-resume-on-november-11/article71684945.ece/amp/",
+            "title": "Markets closed today for Diwali - Balipratipada , trading to resume on November 11",
+            "seendate": "20261110T050000Z",
+            "socialimage": "https://bl-i.thgim.com/public/incoming/nokyyc/article71681704.ece/alternates/LANDSCAPE_1200/iStock-2260474979%202.jpg",
+            "domain": "thehindubusinessline.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://dunyanews.tv/en/Business/981940-us-dollar-holds-onto-payrolls-gains-nz-dollar-rises-after-election",
+            "url_mobile": "https://dunyanews.tv/amp/english/981940.php",
+            "title": "US dollar holds onto payrolls gains , NZ dollar rises after election",
+            "seendate": "20261109T063000Z",
+            "socialimage": "https://img.dunyanews.tv/news/2026/November/11-09-26/news_big_images/981940_17628977.jpg",
+            "domain": "dunyanews.tv",
+            "language": "English",
+            "sourcecountry": "Pakistan"
           }
         ]
       }
@@ -40,112 +150,245 @@
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-03T21:56:37.667826+00:00",
-      "payload": {}
-    },
-    "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-06T21:47:36.146623+00:00",
+      "fetched_at_utc": "2026-11-10T22:31:16.734673+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.jiji.com/jc/article?k=2026110501071&g=eco",
-            "url_mobile": "",
-            "title": "\u5186\u5b89\u5727\u529b \u3001 \u4e00\u670d\u304b \u7c73\u653f\u7b56\u52d5\u5411\u306b\u306f\u4e0d\u900f\u660e\u611f \u2015 \u70ba\u66ff\u5e02\u5834 \uff1a \u6642\u4e8b\u30c9\u30c3\u30c8\u30b3\u30e0",
-            "seendate": "20261106T003000Z",
-            "socialimage": "https://www.jiji.com/news2/kiji_photos/202611/20261105ax26S_o.jpg",
-            "domain": "jiji.com",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
+            "url": "https://www.ntvbd.com/economy/news-1833285",
+            "url_mobile": "https://www.ntvbd.com/economy/news-1833285?amp",
+            "title": "\u09a1\u09b2\u09be\u09b0 \u0985\u09aa\u09b0\u09bf\u09ac\u09b0\u09cd\u09a4\u09bf\u09a4 , \u0995\u09ae\u09c7\u099b\u09c7 \u09aa\u09be\u0989\u09a8\u09cd\u09a1 - \u0987\u0989\u09b0\u09cb\u09b0 \u09a6\u09be\u09ae",
+            "seendate": "20261109T070000Z",
+            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_24m/public/images/2026/11/09/2.jpg",
+            "domain": "ntvbd.com",
+            "language": "Bengali",
+            "sourcecountry": "Bangladesh"
           },
           {
-            "url": "https://www.businesstimes.com.sg/international/global/japanese-savers-move-money-out-banks-bonds-prove-more-attractive",
+            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
             "url_mobile": "",
-            "title": "Japanese savers move money out of banks as bonds prove more attractive",
-            "seendate": "20261106T023000Z",
-            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/1c3535ab609fb1b0119cbaa486e9394853b06d89cc3047ba4785de2e85d9453d?&f=webp",
-            "domain": "businesstimes.com.sg",
+            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
+            "seendate": "20261110T053000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
             "language": "English",
-            "sourcecountry": "Singapore"
+            "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.boj.or.jp/about/nichigin_gp/ngp_release/ngp261106.htm",
+            "url": "https://www.thestar.com.my/business/business-news/2026/11/10/ringgit-opens-marginally-higher-against-greenback-amid-cautious-market-sentiment",
             "url_mobile": "",
-            "title": "\u5b66\u751f\u5411\u3051\u30b3\u30f3\u30c6\u30b9\u30c8 \u300c \u7b2c22\u56de \u65e5\u9280\u30b0\u30e9\u30f3\u30d7\u30ea \u300d \u6c7a\u52dd\u5927\u4f1a\u306e\u5b9f\u65bd\u306b\u3064\u3044\u3066 : \u65e5\u672c\u9280\u884c Bank of Japan",
-            "seendate": "20261106T043000Z",
-            "socialimage": "https://www.boj.or.jp/common2/img/common/og_img.jpg",
-            "domain": "boj.or.jp",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://247wallst.com/companies/dxj/",
-            "url_mobile": "",
-            "title": "WisdomTree Japan Hedged Equity Fund ( DXJ ) Stock Price , News & Analysis",
-            "seendate": "20261106T033000Z",
-            "socialimage": "",
-            "domain": "247wallst.com",
+            "title": "Ringgit opens marginally higher against greenback amid cautious market sentiment",
+            "seendate": "20261110T023000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/10/4204172.jpeg",
+            "domain": "thestar.com.my",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://www.nikkei.com/article/DGXZQOUB298LY0Z21C26A0000000/",
+            "url": "http://www.milwaukeesun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
-            "title": "GPIF \u3001 7 \u301c 9\u6708\u306f5 . 2\u5146\u5186\u904b\u7528\u640d\u5931 \u56fd\u5185\u50b5\u6bd4\u7387\u306f\u57fa\u672c\u914d\u5206\u4e26\u307f",
-            "seendate": "20261106T093000Z",
-            "socialimage": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3839284006112026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&s=622ac9fcb81c699373d9dc9f9d8cede3",
-            "domain": "nikkei.com",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
-          },
-          {
-            "url": "https://247wallst.com/companies/ewj/",
-            "url_mobile": "",
-            "title": "iShares MSCI Japan Index Fund ( EWJ ) Stock Price , News & Analysis",
-            "seendate": "20261106T033000Z",
-            "socialimage": "",
-            "domain": "247wallst.com",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261110T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "milwaukeesun.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.jiji.com/jc/article?k=2026110500909&g=soc",
+            "url": "http://www.austinglobe.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
             "url_mobile": "",
-            "title": "\u539f\u767a\u4e8b\u6545\u8ce0\u511f \u3001 \u5229\u6255\u3044\u8cbb\u6025\u5897\u304c\u73fe\u5b9f\u306b \u5e74\uff11\uff10\uff10\uff10\u5104\u5186\u8d85\u8a66\u7b97\u3082 \u2015 \u56fd\u8ca0\u62c5 \u3001 \u6771\u96fb\u306e\u8cc7\u91d1\u5de5\u9762\u3067 \u30fb \u4f1a\u8a08\u691c\u67fb\u9662 \uff1a \u6642\u4e8b\u30c9\u30c3\u30c8\u30b3\u30e0",
-            "seendate": "20261106T003000Z",
-            "socialimage": "https://www.jiji.com/news2/kiji_photos/202611/20261105at16S_o.jpg",
-            "domain": "jiji.com",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "austinglobe.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://www.livemint.com/market/yen-rises-on-haven-demand-as-cibc-nomura-see-room-for-more-gain-11793918153390.html",
-            "url_mobile": "https://www.livemint.com/market/yen-rises-on-haven-demand-as-cibc-nomura-see-room-for-more-gain/amp-11793918153390.html",
-            "title": "Yen Rises on Haven Demand as CIBC , Nomura See Room for More Gain",
-            "seendate": "20261106T003000Z",
-            "socialimage": "https://www.livemint.com/lm-img/img/2024/12/06/600x338/market_2_1733466021722_1733466033367.jpg",
-            "domain": "livemint.com",
+            "url": "http://www.shanghainews.net/news/279416723/technology-stocks-in-demand-friday-nasdaq-surges-264-points",
+            "url_mobile": "",
+            "title": "Technology stocks in demand Friday , Nasdaq surges 264 points",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "shanghainews.net",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "http://www.nashvilleherald.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "nashvilleherald.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.texasguardian.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "texasguardian.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.afghanistansun.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T020000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "afghanistansun.com",
+            "language": "English",
+            "sourcecountry": "Afghanistan"
+          },
+          {
+            "url": "http://www.myanmarnews.net/news/279416723/technology-stocks-in-demand-friday-nasdaq-surges-264-points",
+            "url_mobile": "",
+            "title": "Technology stocks in demand Friday , Nasdaq surges 264 points",
+            "seendate": "20261107T020000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "myanmarnews.net",
+            "language": "English",
+            "sourcecountry": "Myanmar"
+          },
+          {
+            "url": "http://www.malaysiasun.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "malaysiasun.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          }
+        ]
+      }
+    },
+    "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
+      "fetched_at_utc": "2026-11-10T22:31:35.842811+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://www.edaily.co.kr/News/Read?newsId=04585446645644408&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=04585446645644408 eNo=257",
+            "title": "\uc18c\ub4dd\uc740 \ub298\uc5c8\ub294\ub370 \uc9c0\uac11 \ub2eb\uc740 \uc77c\ubcf8 \u2026 9\uc6d4 \uac00\uacc4\uc9c0\ucd9c 6 . 8 % \u2193",
+            "seendate": "20261110T060000Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26111001147.jpg",
+            "domain": "edaily.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.morningstar.com/news/dow-jones/2026110914427/boj-opinion-summary-shows-board-remains-in-favor-of-more-tightening",
+            "url_mobile": "",
+            "title": "BOJ Opinion Summary Shows Board Remains in Favor of More Tightening",
+            "seendate": "20261110T050000Z",
+            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+            "domain": "morningstar.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-edges-up-as-softer-crude-tempers-inflation-concerns/articleshow/135667365.cms",
+            "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-edges-up-as-softer-crude-tempers-inflation-concerns/amp_articleshow/135667365.cms",
+            "title": "Gold edges up as softer crude tempers inflation concerns",
+            "seendate": "20261109T020000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-135667392,width-1200,height-900,imgsize-172310,overlay-etmarkets/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
             "language": "English",
             "sourcecountry": "India"
           },
           {
-            "url": "https://www.nikkei.com/article/DGXZQOUB0445J0U6A101C2000000/",
+            "url": "https://www.aol.com/articles/analysis-market-rout-tests-bojs-043226000.html",
             "url_mobile": "",
-            "title": "11\u67089 \u301c 13\u65e5\u306e\u65b0\u898f\u8a2d\u5b9a\u30d5\u30a1\u30f3\u30c9 - \u65e5\u672c\u7d4c\u6e08\u65b0\u805e",
-            "seendate": "20261106T040000Z",
-            "socialimage": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3825514004112026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&s=6499ecd7e6aad7a069a2c2796abd2e6d",
-            "domain": "nikkei.com",
-            "language": "Japanese",
-            "sourcecountry": "Japan"
+            "title": "Analysis - Market rout tests BOJ upbeat view of financial conditions",
+            "seendate": "20261110T053000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/5af3da75b528db6199c0952dda44eb4aaedaef88/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/10/19164c9c-eb3f-3224-8d84-ccf9717e72a1/5d191f74-41de-4396-9d83-70b83db7e0fb.jpg",
+            "domain": "aol.com",
+            "language": "English",
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://newsonjapan.com/article/151274.php",
+            "url": "https://econotimes.com/BOJ-Opinions-Show-Split-Over-Pace-of-Further-Rate-Increases-1774140",
             "url_mobile": "",
-            "title": "Japan Stocks Plunge Nearly 6 % on Friday as Nikkei Loses 3 , 643 Points",
-            "seendate": "20261106T110000Z",
-            "socialimage": "",
-            "domain": "newsonjapan.com",
+            "title": "BOJ Opinions Show Split Over Pace of Further Rate Increases",
+            "seendate": "20261110T023000Z",
+            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/bea10763eb96dd0fe6afaa93ae73581e29d6767430673ddd6c4508bf7bc9d9ae.webp",
+            "domain": "econotimes.com",
             "language": "English",
-            "sourcecountry": "Japan"
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.edaily.co.kr/News/Read?newsId=02968406645644408&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=02968406645644408 eNo=257",
+            "title": "\ube14\ub8f8\ubc84\uadf8  \uc815\ud655\ub3c4 1\uc704  \ud658\uc728 \uc804\ubb38\uac00  \uc5d4\ud654 , \ub0b4\ub144 147\uc5d4\uae4c\uc9c0 \uc624\ub97c \uac83  ",
+            "seendate": "20261110T003000Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26111000391.jpg",
+            "domain": "edaily.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://econotimes.com/BOJ-Sets-Planned-Monthly-JGB-Offers-at-2-3-Trillion-for-October-December-1773409",
+            "url_mobile": "",
+            "title": "BOJ Sets Planned Monthly JGB Offers at \u00a52 . 3 Trillion for October - December",
+            "seendate": "20261109T010000Z",
+            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/34cd5a2bb38b7211c8727b072d63cb1a778e4cb69fed75f822d6be15914ddc45.webp",
+            "domain": "econotimes.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.edaily.co.kr/News/Read?newsId=03608006645644408&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=03608006645644408 eNo=257",
+            "title": "  \ud558\ub8e8 68\uc870\uc6d0  \uac1c\uc785\uc5d0\ub3c4 \u2026 \uc5d4\ud654 \uc804\ub9dd  147\uc5d4 vs 170\uc5d4  \uadf9\uba85\ud55c \uc5c7\uac08\ub9bc",
+            "seendate": "20261110T020000Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26111000700.jpg",
+            "domain": "edaily.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-jumps-after-strong-us-payrolls-report/articleshow/135626197.cms",
+            "url_mobile": "https://m.economictimes.com/markets/forex/forex-news/dollar-jumps-after-strong-us-payrolls-report/amp_articleshow/135626197.cms",
+            "title": "Dollar jumps after strong US payrolls report",
+            "seendate": "20261107T050000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-135626248,width-1200,height-900,imgsize-94362,overlay-etmarkets/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://dunyanews.tv/en/Business/981940-us-dollar-holds-onto-payrolls-gains-nz-dollar-rises-after-election",
+            "url_mobile": "https://dunyanews.tv/amp/english/981940.php",
+            "title": "US dollar holds onto payrolls gains , NZ dollar rises after election",
+            "seendate": "20261109T063000Z",
+            "socialimage": "https://img.dunyanews.tv/news/2026/November/11-09-26/news_big_images/981940_17628977.jpg",
+            "domain": "dunyanews.tv",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.cdt.ch/news/economia/la-fiducia-nel-franco-svizzero-ce-ma-ha-un-prezzo-443907",
+            "url_mobile": "",
+            "title": "La fiducia nel franco svizzero c  \u00e8 , ma ha un prezzo",
+            "seendate": "20261107T060000Z",
+            "socialimage": "https://naxos-cdn01.gruppocdt.ch/cdt/stories/2026/11/06/960x640/2aeb9922-a88e-4718-9548-1fc0085d3a35.jpeg",
+            "domain": "cdt.ch",
+            "language": "Italian",
+            "sourcecountry": "Switzerland"
+          },
+          {
+            "url": "https://www.laregione.ch/economia/economia/1961715/yen-miliardi-giappone-luglio-intervento-euro",
+            "url_mobile": "https://amp.laregione.ch/economia/economia/1961715/yen-miliardi-giappone-luglio-intervento-euro",
+            "title": "Giappone , intervento record da 45 , 3 miliardi di euro per sostenere lo yen",
+            "seendate": "20261109T050000Z",
+            "socialimage": "",
+            "domain": "laregione.ch",
+            "language": "Italian",
+            "sourcecountry": "Switzerland"
           }
         ]
       }
@@ -278,128 +521,128 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-06T21:49:44.901840+00:00",
+      "fetched_at_utc": "2026-11-10T22:35:19.127451+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.beritasatu.com/ekonomi/3039110/rupiah-hari-ini-dibuka-melemah-016-persen-ke-rp-18111",
+            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
             "url_mobile": "",
-            "title": "Rupiah Hari Ini Dibuka Melemah 0 , 16 Persen ke Rp 18 . 111",
-            "seendate": "20261106T050000Z",
-            "socialimage": "https://img2.beritasatu.com/cache/beritasatu/960x620-w/2026/10/1793344585-1058x652.webp",
-            "domain": "beritasatu.com",
-            "language": "Indonesian",
-            "sourcecountry": "Indonesia"
+            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
+            "seendate": "20261110T053000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.teleborsa.it/News/2026/11/06/analisi-tecnica-eur-gbp-del-5-11-2026-69_TLB-AUTO.html",
-            "url_mobile": "https://www.teleborsa.it/AMP/News/2026/11/06/analisi-tecnica-eur-gbp-del-5-11-2026-69_TLB-AUTO.html",
-            "title": "Analisi Tecnica : EUR / GBP del 5 / 11 / 2026",
-            "seendate": "20261106T083000Z",
-            "socialimage": "https://images.teleborsa.it/t/stabile/116995.t.W600.H340.M4.jpg",
-            "domain": "teleborsa.it",
-            "language": "Italian",
-            "sourcecountry": "Italy"
-          },
-          {
-            "url": "https://www.onlinekhabar.com/2026/11/2052175/the-value-of-most-foreign-currencies-including-the-dollar-euro-and-pound-fell",
+            "url": "https://www.thestar.com.my/business/business-news/2026/11/10/ringgit-opens-marginally-higher-against-greenback-amid-cautious-market-sentiment",
             "url_mobile": "",
-            "title": "\u0921\u0932\u0930 , \u092f\u0941\u0930\u094b \u0930 \u092a\u093e\u0909\u0923\u094d\u0921\u0938\u0939\u093f\u0924 \u0905\u0927\u093f\u0915\u093e\u0902\u0936 \u0935\u093f\u0926\u0947\u0936\u0940 \u092e\u0941\u0926\u094d\u0930\u093e\u0915\u094b \u092d\u093e\u0909 \u0918\u091f\u094d\u092f\u094b",
-            "seendate": "20261106T010000Z",
-            "socialimage": "https://www.onlinekhabar.com/wp-content/uploads/2026/10/Dollar--1024x574.png",
-            "domain": "onlinekhabar.com",
-            "language": "Nepali",
-            "sourcecountry": "Nepal"
-          },
-          {
-            "url": "https://www.elbadil.com/878530/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%A7%D8%B1%D8%A8%D8%B9%D8%A7%D8%A1-4-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1/",
-            "url_mobile": "",
-            "title": "\u0633\u0639\u0631 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0641\u064a \u0645\u0635\u0631 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621 4 \u0646\u0648\u0641\u0645\u0628\u0631 2026 .. \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0639\u0646\u062f 55 . 37 \u062c\u0646\u064a\u0647\u0627\u064b \u0628\u0632\u064a\u0627\u062f\u0629 \u0637\u0641\u064a\u0641\u0629",
-            "seendate": "20261106T110000Z",
-            "socialimage": "https://www.elbadil.com/uploads/2026/11/beb899f8dae1b7759f801684c7c620ed34581066.webp",
-            "domain": "elbadil.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://www.freemalaysiatoday.com/category/business/2026/11/06/ringgit-opens-lower-amid-mixed-us-economic-market-signals",
-            "url_mobile": "",
-            "title": "Ringgit opens lower amid mixed US economic , market signals",
-            "seendate": "20261106T020000Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/a03957c5-ringgit_down-new-2024-3.webp",
-            "domain": "freemalaysiatoday.com",
+            "title": "Ringgit opens marginally higher against greenback amid cautious market sentiment",
+            "seendate": "20261110T023000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/10/4204172.jpeg",
+            "domain": "thestar.com.my",
             "language": "English",
             "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://www.elbadil.com/878301/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%A7%D8%AB%D9%86%D9%8A%D9%86-2-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1/",
+            "url": "https://www.naftemporiki.gr/finance/markets/2186786/diorthosi-meta-to-alma/",
             "url_mobile": "",
-            "title": "\u0633\u0639\u0631 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0641\u064a \u0645\u0635\u0631 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0627\u062b\u0646\u064a\u0646 2 \u0646\u0648\u0641\u0645\u0628\u0631 2026 .. \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u062a\u0631\u0627\u062c\u0639 \u0625\u0644\u0649 55 . 87 \u062c\u0646\u064a\u0647",
-            "seendate": "20261106T110000Z",
-            "socialimage": "https://www.elbadil.com/uploads/2026/11/5a2440fac0aa3c5170c55a94119ca67aa83aa2ce.webp",
-            "domain": "elbadil.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://www.vesti.bg/pari/evroto-otnovo-poskypva-spriamo-dolara-na-fona-na-sriva-pri-ai-akciite-6275485",
-            "url_mobile": "",
-            "title": "\u0415\u0432\u0440\u043e\u0442\u043e \u043e\u0442\u043d\u043e\u0432\u043e \u043f\u043e\u0441\u043a\u044a\u043f\u0432\u0430 \u0441\u043f\u0440\u044f\u043c\u043e \u0434\u043e\u043b\u0430\u0440\u0430 \u043d\u0430 \u0444\u043e\u043d\u0430 \u043d\u0430 \u0441\u0440\u0438\u0432\u0430 \u043f\u0440\u0438 AI \u0430\u043a\u0446\u0438\u0438\u0442\u0435",
-            "seendate": "20261106T113000Z",
-            "socialimage": "https://m4.netinfo.bg/media/images/50221/50221692/1920-1080-valuti.jpg",
-            "domain": "vesti.bg",
-            "language": "Bulgarian",
-            "sourcecountry": "Bulgaria"
-          },
-          {
-            "url": "https://www.elbadil.com/878416/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D8%A7%D8%A1-3-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1/",
-            "url_mobile": "",
-            "title": "\u0633\u0639\u0631 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0641\u064a \u0645\u0635\u0631 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621 3 \u0646\u0648\u0641\u0645\u0628\u0631 2026 .. \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u062a\u0631\u0627\u062c\u0639 \u0625\u0644\u0649 55 . 43 \u062c\u0646\u064a\u0647",
-            "seendate": "20261106T110000Z",
-            "socialimage": "https://www.elbadil.com/uploads/2026/11/c3fb64c11e84185c52b9a9c916611efd2b2e7748.webp",
-            "domain": "elbadil.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://cyprusnews.eu/business-news/stelneis-e500-sto-exoteriko-pote-i-chreosi-einai-miden-kai-pote-allazei-o-logariasmos/",
-            "url_mobile": "",
-            "title": "\u03a3\u03c4\u03ad\u03bb\u03bd\u03b5\u03b9\u03c2 \u20ac500 \u03c3\u03c4\u03bf \u03b5\u03be\u03c9\u03c4\u03b5\u03c1\u03b9\u03ba\u03cc : \u03a0\u03cc\u03c4\u03b5 \u03b7 \u03c7\u03c1\u03ad\u03c9\u03c3\u03b7 \u03b5\u03af\u03bd\u03b1\u03b9 \u03bc\u03b7\u03b4\u03ad\u03bd \u03ba\u03b1\u03b9 \u03c0\u03cc\u03c4\u03b5 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03bf \u03bb\u03bf\u03b3\u03b1\u03c1\u03b9\u03b1\u03c3\u03bc\u03cc\u03c2",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://moneymatters.cy/wp-content/uploads/2026/11/guide-mm-transfer-20261105-2b9b796367.jpg",
-            "domain": "cyprusnews.eu",
+            "title": "\u0394\u03b9\u03cc\u03c1\u03b8\u03c9\u03c3\u03b7 \u03bc\u03b5\u03c4\u03ac \u03c4\u03bf \u03ac\u03bb\u03bc\u03b1",
+            "seendate": "20261110T060000Z",
+            "socialimage": "https://www.naftemporiki.gr/wp-content/uploads/2025/12/dolario_gen_euro.jpg",
+            "domain": "naftemporiki.gr",
             "language": "Greek",
             "sourcecountry": "Greece"
           },
           {
-            "url": "https://www.aol.com/articles/dollar-holds-yen-gains-equity-012415000.html",
+            "url": "https://naija247news.com/naira-strengthens-to-%E2%82%A61346-79-as-fx-turnover-jumps-184-to-233m/",
             "url_mobile": "",
-            "title": "Dollar holds , yen gains as equity rout saps risk appetite ahead of payrolls",
-            "seendate": "20261106T023000Z",
-            "socialimage": "https://hermes.media.transform.aol.com/1bc8fc328efca7470c3c11190d3e257a90071579/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/06/b264f779-f154-3280-af85-ca535d1d7a78/c7626141-c56e-46be-90ec-355667317a58.jpg",
-            "domain": "aol.com",
+            "title": "Naira Strengthens To \u20a61 , 346 . 79 As FX Turnover Jumps 184 % To $233m",
+            "seendate": "20261107T173000Z",
+            "socialimage": "https://naija247news.com/wp-content/uploads/2026/11/Global-Markets_-Naira-Crypto-and-Stocks.png",
+            "domain": "naija247news.com",
+            "language": "English",
+            "sourcecountry": "Nigeria"
+          },
+          {
+            "url": "https://npinvestor.dk/nyheder/dollaren-faar-bedste-dag-siden-juni-efter-165-000-nye-amerikanske-job/",
+            "url_mobile": "",
+            "title": "Dollaren f\u00e5r bedste dag siden juni efter 165 . 000 nye amerikanske job",
+            "seendate": "20261107T093000Z",
+            "socialimage": "https://npinvestor.dk/wp-content/uploads/2026/11/npinv-news-519144.jpg",
+            "domain": "npinvestor.dk",
+            "language": "Danish",
+            "sourcecountry": "Denmark"
+          },
+          {
+            "url": "https://finans.mynet.com/haber/detay/doviz/8-kasim-2026-dolar-bugun-kac-tl-serbest-piyasa-dolar-kuru/583345/",
+            "url_mobile": "",
+            "title": "8 Kas\u0131m 2026 Dolar Bug\u00fcn Ka\u00e7 TL ? Serbest Piyasa Dolar Kuru",
+            "seendate": "20261108T103000Z",
+            "socialimage": "https://imgrosetta.mynet.com.tr/file/26079710/26079710-1200x675.jpg",
+            "domain": "finans.mynet.com",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://www.sozcu.com.tr/dolar-kazanimlarini-geri-verdi-piyasalar-abd-enflasyonunu-bekliyor-p379735",
+            "url_mobile": "https://www.sozcu.com.tr/amp/dolar-kazanimlarini-geri-verdi-piyasalar-abd-enflasyonunu-bekliyor-p379735",
+            "title": "Dolar kazan\u0131mlar\u0131n\u0131 geri verdi : Piyasalar ABD enflasyonunu bekliyor",
+            "seendate": "20261110T060000Z",
+            "socialimage": "https://sozcu01.sozcucdn.com/sozcu/production/uploads/images/2026/11/624jpg-NB-MGzqbt0mDoHn5V8vgBg.jpg?&mode=crop&scale=both",
+            "domain": "sozcu.com.tr",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://dunyanews.tv/en/Business/981940-us-dollar-holds-onto-payrolls-gains-nz-dollar-rises-after-election",
+            "url_mobile": "https://dunyanews.tv/amp/english/981940.php",
+            "title": "US dollar holds onto payrolls gains , NZ dollar rises after election",
+            "seendate": "20261109T063000Z",
+            "socialimage": "https://img.dunyanews.tv/news/2026/November/11-09-26/news_big_images/981940_17628977.jpg",
+            "domain": "dunyanews.tv",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.dailypolitical.com/2026/11/06/rit-capital-partners-lonrcp-stock-price-down-0-6-time-to-sell.html",
+            "url_mobile": "",
+            "title": "RIT Capital Partners ( LON : RCP ) Stock Price Down 0 . 6 % \u2013 Time to Sell ? ",
+            "seendate": "20261107T060000Z",
+            "socialimage": "",
+            "domain": "dailypolitical.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.asiaone.com:443/money/dollar-holds-yen-gains-equity-rout-saps-risk-appetite-ahead-payrolls",
+            "url": "http://www.milwaukeesun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
-            "title": "Dollar holds , yen gains as equity rout saps risk appetite ahead of payrolls",
-            "seendate": "20261106T073000Z",
-            "socialimage": "https://media.asiaone.com/sites/default/files/styles/article_top_image/public/original_images/Nov2026/dollar%20and%20yen.JPG?itok=B29Xj3JW",
-            "domain": "asiaone.com",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261110T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "milwaukeesun.com",
             "language": "English",
-            "sourcecountry": "Singapore"
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://www.nile.eg/%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%8A%D8%B5%D8%B9%D8%AF-%D9%88%D8%B3%D8%B7-%D8%A5%D9%82%D8%A8%D8%A7%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%B0-%D8%A7%D9%84%D8%A2%D9%85",
+            "url": "http://www.austinglobe.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
             "url_mobile": "",
-            "title": "\u0642\u0646\u0627\u0629 \u0627\u0644\u0646\u064a\u0644 \u0644\u0644\u0623\u062e\u0628\u0627\u0631 | \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u064a\u0635\u0639\u062f \u0648\u0633\u0637 \u0625\u0642\u0628\u0627\u0644 \u0639\u0644\u0649 \u0627\u0644\u0645\u0644\u0627\u0630 \u0627\u0644\u0622\u0645\u0646",
-            "seendate": "20261106T093000Z",
-            "socialimage": "",
-            "domain": "nile.eg",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "austinglobe.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.shanghainews.net/news/279416723/technology-stocks-in-demand-friday-nasdaq-surges-264-points",
+            "url_mobile": "",
+            "title": "Technology stocks in demand Friday , Nasdaq surges 264 points",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "shanghainews.net",
+            "language": "English",
+            "sourcecountry": "China"
           }
         ]
       }
@@ -409,133 +652,173 @@
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-05T22:20:42.288222+00:00",
+      "fetched_at_utc": "2026-11-10T22:35:55.805433+00:00",
       "payload": {
         "articles": [
           {
-            "url": "http://www.srilankasource.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
             "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "srilankasource.com",
+            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
+            "seendate": "20261110T053000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
             "language": "English",
-            "sourcecountry": "Sri Lanka"
+            "sourcecountry": "Pakistan"
           },
           {
-            "url": "http://www.caribbeanherald.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "https://www.actionforex.com/contributors/fundamental-analysis/660249-a-bruising-week-for-the-australian-dollar/",
             "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "caribbeanherald.com",
+            "title": "A Bruising Week for the Australian Dollar",
+            "seendate": "20261109T070000Z",
+            "socialimage": "https://www.actionforex.com/wp-content/uploads/2020/03/f-aud110.jpg",
+            "domain": "actionforex.com",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "United Kingdom"
           },
           {
-            "url": "http://www.bignewsnetwork.com/news/279415016/us-stocks-plunge-thursday-dow-jones-sheds-1-834-points",
+            "url": "http://www.milwaukeesun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
-            "title": "U . S . stocks plunge Thursday , Dow Jones sheds 1 , 834 points",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "bignewsnetwork.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.newyorktelegraph.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
-            "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "newyorktelegraph.com",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261110T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "milwaukeesun.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.sandiegosun.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "http://www.austinglobe.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
             "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "sandiegosun.com",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "austinglobe.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.asiabulletin.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "http://www.shanghainews.net/news/279416723/technology-stocks-in-demand-friday-nasdaq-surges-264-points",
             "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261105T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "asiabulletin.com",
+            "title": "Technology stocks in demand Friday , Nasdaq surges 264 points",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "shanghainews.net",
             "language": "English",
             "sourcecountry": "China"
+          },
+          {
+            "url": "http://www.nashvilleherald.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "nashvilleherald.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.texasguardian.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "texasguardian.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.afghanistansun.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T020000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "afghanistansun.com",
+            "language": "English",
+            "sourcecountry": "Afghanistan"
+          },
+          {
+            "url": "http://www.myanmarnews.net/news/279416723/technology-stocks-in-demand-friday-nasdaq-surges-264-points",
+            "url_mobile": "",
+            "title": "Technology stocks in demand Friday , Nasdaq surges 264 points",
+            "seendate": "20261107T020000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "myanmarnews.net",
+            "language": "English",
+            "sourcecountry": "Myanmar"
+          },
+          {
+            "url": "http://www.malaysiasun.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "malaysiasun.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
           }
         ]
       }
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-11-04T22:15:38.458583+00:00",
+      "fetched_at_utc": "2026-11-10T22:37:33.382485+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.illawarramercury.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
+            "url": "https://tr.euronews.com/2026/11/05/avustralyada-italyan-sef-pizzaya-ananas-koymayi-reddedince-kovuldu",
             "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.illawarramercury.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "illawarramercury.com.au",
+            "title": "Avustralyada \u0130talyan \u015fef , pizzaya ananas koymay\u0131 reddedince kovuldu",
+            "seendate": "20261106T010000Z",
+            "socialimage": "https://images.euronews.com/articles/stories/09/98/18/17/1200x675_cmsv2_015250ff-a005-5c1a-80e0-6ec398d53c76-9981817.jpg",
+            "domain": "tr.euronews.com",
+            "language": "Turkish",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://theconversation.com/view-from-the-hill-an-over-committed-albanese-is-scrambling-to-keep-his-eyes-on-the-main-game-295659",
+            "url_mobile": "",
+            "title": "View from The Hill : an over - committed Albanese is scrambling to keep his eyes on the main game",
+            "seendate": "20261106T083000Z",
+            "socialimage": "https://images.theconversation.com/files/770461/original/file-20261106-64-88c5yo.jpg?ixlib=rb-4.1.1&rect=0%2C0%2C4432%2C2216&q=45&auto=format&fit=crop",
+            "domain": "theconversation.com",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.areanews.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
+            "url": "https://www.crikey.com.au/2026/11/10/angus-taylor-red-tape-economy-policy/",
             "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.areanews.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "areanews.com.au",
+            "title": "Angus Taylor invents the world freshest policy pitch ! ",
+            "seendate": "20261110T023000Z",
+            "socialimage": "https://assets.crikey.com.au/wp-content/uploads/sites/3/2026/11/Red-tape_1680x945.jpg?quality=70",
+            "domain": "crikey.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.cootamundraherald.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
+            "url": "https://www.miragenews.com/report-highlights-opportunities-as-regional-1774469/",
             "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.cootamundraherald.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "cootamundraherald.com.au",
+            "title": "Report Highlights Opportunities as Regional Employers Seek Workers",
+            "seendate": "20261110T000000Z",
+            "socialimage": "https://cdn1.miragenews.com/wp-content/uploads/2019/04/news-and-developments.jpg",
+            "domain": "miragenews.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.naroomanewsonline.com.au/story/9386817/parties-thrash-it-out-as-nz-election-reaches-endgame/",
+            "url_mobile": "",
+            "title": "Parties thrash it out as NZ election reaches endgame",
+            "seendate": "20261106T010000Z",
+            "socialimage": "https://www.naroomanewsonline.com.au/images/transform/v1/crop/frm/silverstone-feed-data/3366a23c-6697-434f-afd7-f287d2caacfb.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "naroomanewsonline.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.newcastleherald.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
+            "url": "https://www.westernadvocate.com.au/story/9386817/parties-thrash-it-out-as-nz-election-reaches-endgame/",
             "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.newcastleherald.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "newcastleherald.com.au",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://www.irrigator.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
-            "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.irrigator.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "irrigator.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.blayneychronicle.com.au/story/9384716/treasurer-urged-to-rein-in-spending-as-rates-rise-again/",
-            "url_mobile": "",
-            "title": "Treasurer urged to rein in spending as rates rise again",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://www.blayneychronicle.com.au/images/transform/v1/crop/frm/silverstone-feed-data/28ff1a7d-866a-417e-aa5b-cb8c73c4334b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "blayneychronicle.com.au",
+            "title": "Parties thrash it out as NZ election reaches endgame",
+            "seendate": "20261106T020000Z",
+            "socialimage": "https://www.westernadvocate.com.au/images/transform/v1/crop/frm/silverstone-feed-data/3366a23c-6697-434f-afd7-f287d2caacfb.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "westernadvocate.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           }
@@ -543,7 +826,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-11-06T21:54:52.337443+00:00",
+      "fetched_at_utc": "2026-11-10T22:38:10.220207+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
@@ -555,18 +838,18 @@
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-10T01:06:15.044306+00:00",
+      "fetched_at_utc": "2026-11-10T22:41:46.104945+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.vesti.bg/pari/evroto-otnovo-poskypva-spriamo-dolara-na-fona-na-sriva-pri-ai-akciite-6275485",
+            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
             "url_mobile": "",
-            "title": "\u0415\u0432\u0440\u043e\u0442\u043e \u043e\u0442\u043d\u043e\u0432\u043e \u043f\u043e\u0441\u043a\u044a\u043f\u0432\u0430 \u0441\u043f\u0440\u044f\u043c\u043e \u0434\u043e\u043b\u0430\u0440\u0430 \u043d\u0430 \u0444\u043e\u043d\u0430 \u043d\u0430 \u0441\u0440\u0438\u0432\u0430 \u043f\u0440\u0438 AI \u0430\u043a\u0446\u0438\u0438\u0442\u0435",
-            "seendate": "20261106T113000Z",
-            "socialimage": "https://m4.netinfo.bg/media/images/50221/50221692/1920-1080-valuti.jpg",
-            "domain": "vesti.bg",
-            "language": "Bulgarian",
-            "sourcecountry": "Bulgaria"
+            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
+            "seendate": "20261110T053000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
           },
           {
             "url": "https://ria.ru/20261109/voyna-2130154762.html",
@@ -589,100 +872,90 @@
             "sourcecountry": "Switzerland"
           },
           {
-            "url": "https://www.aol.com/articles/dollar-holds-yen-gains-equity-012415000.html",
+            "url": "http://www.milwaukeesun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
-            "title": "Dollar holds , yen gains as equity rout saps risk appetite ahead of payrolls",
-            "seendate": "20261106T023000Z",
-            "socialimage": "https://hermes.media.transform.aol.com/1bc8fc328efca7470c3c11190d3e257a90071579/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/06/b264f779-f154-3280-af85-ca535d1d7a78/c7626141-c56e-46be-90ec-355667317a58.jpg",
-            "domain": "aol.com",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261110T220000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "milwaukeesun.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.asiaone.com:443/money/dollar-holds-yen-gains-equity-rout-saps-risk-appetite-ahead-payrolls",
+            "url": "http://www.austinglobe.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
             "url_mobile": "",
-            "title": "Dollar holds , yen gains as equity rout saps risk appetite ahead of payrolls",
-            "seendate": "20261106T073000Z",
-            "socialimage": "https://media.asiaone.com/sites/default/files/styles/article_top_image/public/original_images/Nov2026/dollar%20and%20yen.JPG?itok=B29Xj3JW",
-            "domain": "asiaone.com",
-            "language": "English",
-            "sourcecountry": "Singapore"
-          },
-          {
-            "url": "https://www.livemint.com/market/stock-market-news/golds-safe-haven-status-is-fading-don-t-accumulate-indiscriminately-says-hitesh-jain-of-yes-securities-11793849608912.html",
-            "url_mobile": "https://www.livemint.com/market/stock-market-news/golds-safe-haven-status-is-fading-don-t-accumulate-indiscriminately-says-hitesh-jain-of-yes-securities/amp-11793849608912.html",
-            "title": "Gold safe - haven status is fading ; dont accumulate indiscriminately , says Hitesh Jain of Yes Securities",
-            "seendate": "20261106T033000Z",
-            "socialimage": "https://www.livemint.com/lm-img/img/2026/11/05/600x338/Final_photo_1793874240756_nmwq_1793874271963_qjDn_dcf19a49-2d91-4c52-b302-810246470c52_lLOZ.jpg",
-            "domain": "livemint.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "http://www.newyorkstatesman.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
-            "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261106T013000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "newyorkstatesman.com",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "austinglobe.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.australiannews.net/news/279415016/dow-jones-sinks-1-834-points-thursday-nasdaq-sheds-1-422",
+            "url": "http://www.shanghainews.net/news/279416723/technology-stocks-in-demand-friday-nasdaq-surges-264-points",
             "url_mobile": "",
-            "title": "Dow Jones sinks 1 , 834 points Thursday , Nasdaq sheds 1 , 422",
-            "seendate": "20261106T013000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "australiannews.net",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "http://www.hongkongherald.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
-            "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261106T013000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "hongkongherald.com",
+            "title": "Technology stocks in demand Friday , Nasdaq surges 264 points",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "shanghainews.net",
             "language": "English",
             "sourcecountry": "China"
           },
           {
-            "url": "http://www.ohiostandard.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "http://www.nashvilleherald.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
             "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261106T020000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "ohiostandard.com",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "nashvilleherald.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.londonmercury.com/news/279415016/carnage-on-wall-street-thursday-nasdaq-plunges-5-50-percent",
+            "url": "http://www.texasguardian.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
             "url_mobile": "",
-            "title": "Carnage on Wall Street Thursday , Nasdaq plunges 5 . 50 percent",
-            "seendate": "20261106T020000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
-            "domain": "londonmercury.com",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "texasguardian.com",
             "language": "English",
-            "sourcecountry": "United Kingdom"
+            "sourcecountry": "United States"
           },
           {
-            "url": "http://www.myanmarnews.net/news/279415016/dow-jones-sinks-1-834-points-thursday-nasdaq-sheds-1-422",
+            "url": "http://www.afghanistansun.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
             "url_mobile": "",
-            "title": "Dow Jones sinks 1 , 834 points Thursday , Nasdaq sheds 1 , 422",
-            "seendate": "20261106T020000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e174f71/23498ee5-9af0-4319-9af3-e2431b77a7f8/3/US-stocks-plunge-2-600x315.jpg",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T020000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "afghanistansun.com",
+            "language": "English",
+            "sourcecountry": "Afghanistan"
+          },
+          {
+            "url": "http://www.myanmarnews.net/news/279416723/technology-stocks-in-demand-friday-nasdaq-surges-264-points",
+            "url_mobile": "",
+            "title": "Technology stocks in demand Friday , Nasdaq surges 264 points",
+            "seendate": "20261107T020000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
             "domain": "myanmarnews.net",
             "language": "English",
             "sourcecountry": "Myanmar"
+          },
+          {
+            "url": "http://www.malaysiasun.com/news/279416723/nasdaq-rebounds-ends-week-with-with-264-points-gain",
+            "url_mobile": "",
+            "title": "Nasdaq rebounds , ends week with with 264 points gain",
+            "seendate": "20261107T000000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8226f81/f3626eee-6c2e-4bdc-b844-22bc109578b3/4/IMG-0797-600x315.jpeg",
+            "domain": "malaysiasun.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
           }
         ]
       }
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-10T01:06:36.403471+00:00",
+      "fetched_at_utc": "2026-11-10T22:42:23.239611+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
@@ -703,29 +976,9 @@
       }
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-10T00:58:30.174389+00:00",
+      "fetched_at_utc": "2026-11-10T22:35:36.884400+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.tayyar.org/News/Business/747615/_guid=747615",
-            "url_mobile": "",
-            "title": "tayyar . org - \u0628\u0646\u0643 \u0625\u0646\u062c\u0644\u062a\u0631\u0627 \u064a\u0631\u0641\u0639 \u0627\u0644\u0641\u0627\u0626\u062f\u0629 \u0644\u0644\u0645\u0631\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0645\u0646\u0630 2023",
-            "seendate": "20261106T063000Z",
-            "socialimage": "https://static.tayyar.org/Content/ResizedImages/663/423/outside/132~bank.jpg",
-            "domain": "tayyar.org",
-            "language": "Arabic",
-            "sourcecountry": "Lebanon"
-          },
-          {
-            "url": "https://www.express.co.uk/finance/personalfinance/2263711/interest-rate-rise-impact-on-annuity-deals",
-            "url_mobile": "https://www.express.co.uk/finance/personalfinance/2263711/interest-rate-rise-impact-on-annuity-deals/amp",
-            "title": "The hidden catch behind better annuity deals | Personal Finance | Finance",
-            "seendate": "20261106T083000Z",
-            "socialimage": "https://cdn.images.express.co.uk/img/dynamic/23/1200x630/7220634.jpg",
-            "domain": "express.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
           {
             "url": "https://www.aol.co.uk/articles/bbc-expert-1-000-warning-134800000.html",
             "url_mobile": "",
@@ -735,16 +988,6 @@
             "domain": "aol.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.journalgazette.net/ap/business/boe-hikes-rate-for-first-time-in-3-years-retreating-oil-prices-may-allow-for/article_aaeed8cb-4cd1-56d9-a660-7310666e9da4.html",
-            "url_mobile": "",
-            "title": "BoE hikes rate for first time in 3 years ; retreating oil prices may allow for more options ahead",
-            "seendate": "20261106T093000Z",
-            "socialimage": "https://bloximages.chicago2.vip.townnews.com/journalgazette.net/content/tncms/assets/v3/editorial/b/65/b6513a95-250d-5ea7-8720-438eaf5337ed/6aecf55ebbf59.image.jpg?crop=1763%2C926%2C0%2C124",
-            "domain": "journalgazette.net",
-            "language": "English",
-            "sourcecountry": "United States"
           },
           {
             "url": "https://www.walesonline.co.uk/news/cost-of-living/bbc-moneybox-expert-warning-more-34881124",
@@ -767,26 +1010,6 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.dailymail.com/money/markets/article-16269397/Banks-rate-hike-madness-puts-choke-hold-growth-bring-hardship-thousands-warns-MAGGIE-PAGANO.html",
-            "url_mobile": "",
-            "title": "Bank rate hike madness puts a choke hold on growth and will bring hardship to thousands , warns MAGGIE PAGANO",
-            "seendate": "20261106T010000Z",
-            "socialimage": "https://i.dailymail.com/1s/2026/11/05/20/112332777-0-image-a-3_1793910255708.jpg",
-            "domain": "dailymail.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.oxfordmail.co.uk/news/26701112.bank-england-interest-rate-rise-4-per-cent-expected/",
-            "url_mobile": "",
-            "title": "Bank of England interest rate rise to 4 per cent expected",
-            "seendate": "20261106T053000Z",
-            "socialimage": "https://www.oxfordmail.co.uk/resources/images/19277670.jpg?type=og-image",
-            "domain": "oxfordmail.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
             "url": "https://www.echo-news.co.uk/news/26709291.interest-rates-rise---much-will-mortgage-payments-go/",
             "url_mobile": "",
             "title": "Interest rates rise - how much will mortgage payments go up ? ",
@@ -797,14 +1020,24 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.theguardian.com/business/2026/nov/06/uk-house-prices-fall-at-steepest-rate-in-more-than-three-years",
+            "url": "http://www.businessghana.com/site/news/business/359332/Interest-rates-hiked-to-4-per-cent-in-first-increase-in-over-three-years",
             "url_mobile": "",
-            "title": "UK house prices fall at steepest rate in more than three years",
-            "seendate": "20261106T093000Z",
-            "socialimage": "https://i.guim.co.uk/img/media/2ebb696b77a37ed8196d914f97c1d230ff695a79/388_4_4206_3367/master/4206.jpg?&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9970bb260e9cc640bbcabdefc2a0d2fa",
-            "domain": "theguardian.com",
+            "title": "Interest rates hiked to 4 per cent in first increase in over three years",
+            "seendate": "20261110T053000Z",
+            "socialimage": "http://www.businessghana.com/cms/img/news/2026-11-09-1356034.jpg",
+            "domain": "businessghana.com",
             "language": "English",
-            "sourcecountry": "United Kingdom"
+            "sourcecountry": "Ghana"
+          },
+          {
+            "url": "http://www.businessghana.com/site/news/business/359327/Interest-rates-hiked-to-4-per-cent-in-first-increase-in-over-three-years",
+            "url_mobile": "",
+            "title": "Interest rates hiked to 4 per cent in first increase in over three years",
+            "seendate": "20261110T053000Z",
+            "socialimage": "",
+            "domain": "businessghana.com",
+            "language": "English",
+            "sourcecountry": "Ghana"
           },
           {
             "url": "http://www.northkoreatimes.com/news/279414658/bank-of-england-hikes-rates-to-4-as-inflation-fears-mount",
@@ -823,6 +1056,46 @@
             "seendate": "20261108T130000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/ece3cb9/9dba59bd-ba7e-45e0-b1d6-b6d489f61668/1/Bank-of-England-600x315.jpg",
             "domain": "neworleanssun.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.japanherald.com/news/279414658/bank-of-england-hikes-rates-to-4-as-inflation-fears-mount",
+            "url_mobile": "",
+            "title": "Bank of England hikes rates to 4 % as inflation fears mount",
+            "seendate": "20261108T130000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/ece3cb9/9dba59bd-ba7e-45e0-b1d6-b6d489f61668/1/Bank-of-England-600x315.jpg",
+            "domain": "japanherald.com",
+            "language": "English",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "http://www.laosnews.net/news/279414658/uk-central-bank-raises-rates-for-first-time-in-over-three-years",
+            "url_mobile": "",
+            "title": "UK central bank raises rates for first time in over three years",
+            "seendate": "20261108T133000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/ece3cb9/9dba59bd-ba7e-45e0-b1d6-b6d489f61668/1/Bank-of-England-600x315.jpg",
+            "domain": "laosnews.net",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.massachusettssun.com/news/279414658/bank-of-england-hikes-rates-to-4-as-inflation-fears-mount",
+            "url_mobile": "",
+            "title": "Bank of England hikes rates to 4 % as inflation fears mount",
+            "seendate": "20261108T133000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/ece3cb9/9dba59bd-ba7e-45e0-b1d6-b6d489f61668/1/Bank-of-England-600x315.jpg",
+            "domain": "massachusettssun.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.tucsonpost.com/news/279414658/bank-of-england-hikes-rates-to-4-as-inflation-fears-mount",
+            "url_mobile": "",
+            "title": "Bank of England hikes rates to 4 % as inflation fears mount",
+            "seendate": "20261108T160000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/ece3cb9/9dba59bd-ba7e-45e0-b1d6-b6d489f61668/1/Bank-of-England-600x315.jpg",
+            "domain": "tucsonpost.com",
             "language": "English",
             "sourcecountry": "United States"
           }
@@ -867,7 +1140,7 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-11-06T21:56:05.919497+00:00",
+      "fetched_at_utc": "2026-11-10T22:40:48.235534+00:00",
       "payload": {
         "articles": [
           {
@@ -908,58 +1181,128 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-05T22:13:21.736194+00:00",
+      "fetched_at_utc": "2026-11-10T22:29:05.729806+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.dailyforex.com/forex-technical-analysis/2026/11/audusd-forecast-3-november-2026/251344",
-            "url_mobile": "",
-            "title": "Why AUD / USD Is Facing Its Most Important Test Yet",
-            "seendate": "20261103T111500Z",
-            "socialimage": "",
-            "domain": "dailyforex.com",
+            "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-edges-up-as-softer-crude-tempers-inflation-concerns/articleshow/135667365.cms",
+            "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-edges-up-as-softer-crude-tempers-inflation-concerns/amp_articleshow/135667365.cms",
+            "title": "Gold edges up as softer crude tempers inflation concerns",
+            "seendate": "20261109T020000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-135667392,width-1200,height-900,imgsize-172310,overlay-etmarkets/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
             "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.dailyforex.com/forex-technical-analysis/2026/11/eurusd-signal-3-november-2026/251357",
-            "url_mobile": "",
-            "title": "EUR / USD Signal 03 / 11 : Rebound Meets Key Resistance at 1 . 1226",
-            "seendate": "20261103T111500Z",
-            "socialimage": "",
-            "domain": "dailyforex.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://hindi.moneycontrol.com/news/your-money/gold-silver-prices-today-ahead-of-dhanteras-gold-reaches-1-lakh-37-thousand-while-silver-plunges-by-over-7000-rupee-will-these-lower-prices-boost-demand-2453510.html",
-            "url_mobile": "https://hindi.moneycontrol.com/news/your-money/gold-silver-prices-today-ahead-of-dhanteras-gold-reaches-1-lakh-37-thousand-while-silver-plunges-by-over-7000-rupee-will-these-lower-prices-boost-demand-2453510.html/amp",
-            "title": "Gold - silver prices Today : \u0927\u0928\u0924\u0947\u0930\u0938 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0938\u094b\u0928\u093e \u20b91 . 37 \u0932\u093e\u0916 \u092a\u0930 \u0906\u092f\u093e , \u091a\u093e\u0902\u0926\u0940 \u20b97000 \u0938\u0947 \u091c\u094d\u092f\u093e\u0926\u093e \u0932\u0941\u0922\u093c\u0915\u0940 , \u0915\u094d\u092f\u093e \u0915\u092e \u0926\u093e\u092e \u092c\u0922\u093c\u093e\u090f\u0902\u0917\u0947 \u092e\u093e\u0902\u0917 ? ",
-            "seendate": "20261103T111500Z",
-            "socialimage": "https://images.moneycontrol.com/static-hindinews/2026/11/GoldSilverNew.jpg",
-            "domain": "hindi.moneycontrol.com",
-            "language": "Hindi",
             "sourcecountry": "India"
           },
           {
-            "url": "https://econotimes.com/France-24-Links-Trump-Tariffs-to-Rising-U-S-Small-Business-Bankruptcies-1770383",
+            "url": "https://katu.com/news/nation-world/larger-series-of-interest-rate-hikes-more-likely-after-hot-october-cpi-federal-reserve",
             "url_mobile": "",
-            "title": "France 24 Links Trump Tariffs to Rising U . S . Small - Business Bankruptcies",
-            "seendate": "20261104T013000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/30dd66aa0871af98613eea7ca5bc2d1992560679886ecfe86b59671da88063d0.webp",
-            "domain": "econotimes.com",
+            "title": "Larger series of interest rate hikes more likely after hot October CPI",
+            "seendate": "20261110T220000Z",
+            "socialimage": "https://katu.com/resources/media2/16x9/5557/1320/0x1/90/213ef0e7-f6d3-4fe8-a33e-00f12ea7b6b2-GettyImages2302420293.jpg",
+            "domain": "katu.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://newsroomamerica.com/?before=119284",
+            "url": "https://www.moneycontrol.com/news/business/markets/wall-street-jumps-as-oil-slide-cools-inflation-worries-nvidia-slumps-14075800.html",
+            "url_mobile": "https://www.moneycontrol.com/news/business/markets/wall-street-jumps-as-oil-slide-cools-inflation-worries-nvidia-slumps-14075800.html/amp",
+            "title": "Wall Street jumps as oil slide cools inflation worries ; Nvidia slumps",
+            "seendate": "20261110T043000Z",
+            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/10/20261017031041_sensex_nifty_market.jpg",
+            "domain": "moneycontrol.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-drops-as-strong-us-payrolls-boost-dollar-yields/articleshow/135626183.cms",
+            "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-drops-as-strong-us-payrolls-boost-dollar-yields/amp_articleshow/135626183.cms",
+            "title": "Gold drops as strong US payrolls boost dollar , yields",
+            "seendate": "20261107T050000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-135626233,width-1200,height-900,imgsize-210344,overlay-economictimes/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.newspim.com/news/view/20261110000034",
+            "url_mobile": "https://m.newspim.com/news/view/20261110000034",
+            "title": " [ \ucc44\uad8c / \uc678\ud658 ] \ubbf8 \uad6d\ucc44 \uae08\ub9ac \uc0c1\uc2b9 \u00b7 \ub2ec\ub7ec \uc57d\uc138 \u2026 \uc774\ub780 \ud655\uc804 \uc6b0\ub824 \uc644\ud654 \uc18d CPI \uc8fc\ubaa9",
+            "seendate": "20261110T000000Z",
+            "socialimage": "https://img.newspim.com/news/2021/05/21/2105210442513010_t1.jpg",
+            "domain": "newspim.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "http://www.kitco.com/news/article/2026-11-09/gold-silver-advance-dollar-weakens-fed-rate-expectations-face-inflation",
             "url_mobile": "",
-            "title": "newsroomamerica . com",
-            "seendate": "20261103T021500Z",
-            "socialimage": "",
-            "domain": "newsroomamerica.com",
+            "title": "Gold , silver advance as dollar weakens , Fed rate expectations face inflation test - Kitco PM Report",
+            "seendate": "20261110T030000Z",
+            "socialimage": "https://image-api.prod.kitco.com/image/5768df25-c265-4c2d-a489-e51917a45667.jpeg?top=0&left=0.30227889951594&.395442201&scale_width=1920&token=6cf3a9d390a1d72c730ba300fe44fdf5e66aacd55f32eaf3f0877fbe04e5f4df",
+            "domain": "kitco.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.fool.com/investing/2026/11/08/if-the-fed-raises-interest-rates-in-december-im-ma/",
+            "url_mobile": "",
+            "title": "If the Fed Raises Interest Rates in December , Im Making This 1 Investing Move",
+            "seendate": "20261108T090000Z",
+            "socialimage": "https://g.foolcdn.com/editorial/images/892968/gettyimages-172781953.jpg",
+            "domain": "fool.com",
             "language": "English",
             "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.morningstar.com/markets/what-do-high-interest-rates-mean-homebuyers",
+            "url_mobile": "",
+            "title": "What Do High Interest Rates Mean for Homebuyers ? ",
+            "seendate": "20261110T003000Z",
+            "socialimage": "https://media.morningstar.com/resizer/v2/XGCWCYHMHVFATEA3DR2UPEMFYQ.png?auth=d0667487ba393fdbb01b4ecbea1aad07caf2e5fa07a7b5f59537f7d0a8dfed0b&quality=80&crop=0,0:2400,1350",
+            "domain": "morningstar.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://japantoday.com/category/business/inflation-housing-jobs-and-corporate-earnings-will-dominate-the-business-calendar-this-week",
+            "url_mobile": "",
+            "title": "Inflation , housing , jobs and corporate earnings will dominate the business calendar this week",
+            "seendate": "20261108T000000Z",
+            "socialimage": "",
+            "domain": "japantoday.com",
+            "language": "English",
+            "sourcecountry": "Japan"
+          },
+          {
+            "url": "https://lurer.com/article/760439/am",
+            "url_mobile": "",
+            "title": "Lurer . com | \u0531\u0544\u0546 - \u0578\u0582\u0574 \u0570\u0578\u056f\u057f\u0565\u0574\u0562\u0565\u0580\u056b\u0576 \u057d\u057f\u0565\u0572\u056e\u057e\u0565\u056c \u0567 165 \u0570\u0561\u0566\u0561\u0580 \u0561\u0577\u056d\u0561\u057f\u0561\u057f\u0565\u0572 , \u057d\u0561\u056f\u0561\u0575\u0576 \u0563\u0576\u0561\u0573\u0568 \u0577\u0561\u0580\u0578\u0582\u0576\u0561\u056f\u0578\u0582\u0574 \u0567 \u0576\u057e\u0561\u0566\u0565\u0581\u0576\u0565\u056c \u0563\u0576\u0578\u0572\u0578\u0582\u0576\u0561\u056f\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0568",
+            "seendate": "20261107T100000Z",
+            "socialimage": "https://lurer.com/rs.php?image=/disc/07-11-26/06bb8b737f6fdb8888ec66340e2968ff.webp",
+            "domain": "lurer.com",
+            "language": "Armenian",
+            "sourcecountry": "Armenia"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-jumps-after-strong-us-payrolls-report/articleshow/135626197.cms",
+            "url_mobile": "https://m.economictimes.com/markets/forex/forex-news/dollar-jumps-after-strong-us-payrolls-report/amp_articleshow/135626197.cms",
+            "title": "Dollar jumps after strong US payrolls report",
+            "seendate": "20261107T050000Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-135626248,width-1200,height-900,imgsize-94362,overlay-etmarkets/articleshow.jpg",
+            "domain": "economictimes.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.edaily.co.kr/News/Read?newsId=02968406645644408&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=02968406645644408 eNo=257",
+            "title": "\ube14\ub8f8\ubc84\uadf8  \uc815\ud655\ub3c4 1\uc704  \ud658\uc728 \uc804\ubb38\uac00  \uc5d4\ud654 , \ub0b4\ub144 147\uc5d4\uae4c\uc9c0 \uc624\ub97c \uac83  ",
+            "seendate": "20261110T003000Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26111000391.jpg",
+            "domain": "edaily.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           }
         ]
       }
@@ -1113,7 +1456,7 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-11-10T01:05:42.573659+00:00",
+      "fetched_at_utc": "2026-11-10T22:41:26.841490+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {

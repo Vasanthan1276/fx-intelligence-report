@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-10T01:07:49.739657+00:00",
+  "generated_at_utc": "2026-11-10T22:44:16.624517+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -15,10 +15,10 @@
   "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
   "overall": {
     "1": {
-      "directional_calls": 20,
+      "directional_calls": 21,
       "correct": 4,
       "incorrect": 5,
-      "neutral_move": 11,
+      "neutral_move": 12,
       "directional_accuracy_pct": 44.4
     },
     "5": {
@@ -108,10 +108,10 @@
     },
     "GBP": {
       "1": {
-        "directional_calls": 3,
+        "directional_calls": 4,
         "correct": 0,
         "incorrect": 1,
-        "neutral_move": 2,
+        "neutral_move": 3,
         "directional_accuracy_pct": 0.0
       },
       "5": {
@@ -1039,6 +1039,20 @@
       "future_rate_sgd": 1.717368,
       "rate_change_pct": 0.474,
       "outcome": "correct"
+    },
+    {
+      "run_date_sgt": "2026-11-10",
+      "market_date": "2026-11-09",
+      "future_date": "2026-11-10",
+      "currency": "GBP",
+      "horizon_trading_days": 1,
+      "shadow_score": 4.28,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.717368,
+      "future_rate_sgd": 1.715842,
+      "rate_change_pct": -0.089,
+      "outcome": "neutral_move"
     }
   ]
 }
