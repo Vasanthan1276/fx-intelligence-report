@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-10T22:44:16.009275+00:00",
+  "generated_at_utc": "2026-11-11T23:13:27.762484+00:00",
   "model_version": "2.2-phase2c-baseline",
   "note": "Official 2026 decision dates embedded for reliable daily event-risk scoring.",
   "sources": {
@@ -76,45 +76,45 @@
   "next_events": {
     "JPY": {
       "next_policy_meeting_date": "2026-12-18",
-      "days_to_policy_meeting": 38,
+      "days_to_policy_meeting": 37,
       "event_risk_label": "Normal",
       "policy_calendar_source": "Bank of Japan MPM schedule"
     },
-    "AUD": {
-      "next_policy_meeting_date": "2026-12-08",
-      "days_to_policy_meeting": 28,
-      "event_risk_label": "Moderate",
-      "policy_calendar_source": "Reserve Bank of Australia board schedule"
-    },
     "EUR": {
       "next_policy_meeting_date": "2026-12-17",
-      "days_to_policy_meeting": 37,
+      "days_to_policy_meeting": 36,
       "event_risk_label": "Normal",
       "policy_calendar_source": "ECB Governing Council calendar"
     },
-    "USD": {
-      "next_policy_meeting_date": "2026-12-09",
-      "days_to_policy_meeting": 29,
+    "AUD": {
+      "next_policy_meeting_date": "2026-12-08",
+      "days_to_policy_meeting": 27,
       "event_risk_label": "Moderate",
-      "policy_calendar_source": "Federal Reserve FOMC calendar"
+      "policy_calendar_source": "Reserve Bank of Australia board schedule"
+    },
+    "GBP": {
+      "next_policy_meeting_date": "2026-12-17",
+      "days_to_policy_meeting": 36,
+      "event_risk_label": "Normal",
+      "policy_calendar_source": "Bank of England MPC calendar"
     },
     "CHF": {
       "next_policy_meeting_date": "2026-12-10",
-      "days_to_policy_meeting": 30,
+      "days_to_policy_meeting": 29,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "Swiss National Bank monetary policy assessment schedule"
+    },
+    "USD": {
+      "next_policy_meeting_date": "2026-12-09",
+      "days_to_policy_meeting": 28,
+      "event_risk_label": "Moderate",
+      "policy_calendar_source": "Federal Reserve FOMC calendar"
     },
     "MYR": {
       "next_policy_meeting_date": null,
       "days_to_policy_meeting": null,
       "event_risk_label": "Calendar rollover needed",
       "policy_calendar_source": "Bank Negara Malaysia MPC schedule"
-    },
-    "GBP": {
-      "next_policy_meeting_date": "2026-12-17",
-      "days_to_policy_meeting": 37,
-      "event_risk_label": "Normal",
-      "policy_calendar_source": "Bank of England MPC calendar"
     }
   }
 }
