@@ -219,17 +219,48 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 @media(max-width:1180px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.perf-cards{grid-template-columns:repeat(2,1fr)}.methodology{grid-template-columns:repeat(3,1fr)}.driver-columns{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:1050px){.hero{grid-template-columns:1fr}.status-panel{min-width:300px}}
 @media(max-width:680px){.container{padding:20px 14px 40px}.perf-cards{grid-template-columns:1fr}.performance-meta{flex-direction:column}.topbar{display:block}.status-panel{margin-top:18px;min-width:0}.cards{grid-template-columns:1fr}.methodology{grid-template-columns:1fr}.chart-wrap{height:300px}.mini-grid{grid-template-columns:1fr 1fr}.urgency-grid{grid-template-columns:1fr}.forward-grid{grid-template-columns:1fr}.shadow-grid{grid-template-columns:1fr 1fr}.score-split{grid-template-columns:1fr}.driver-columns{grid-template-columns:1fr}.daily-change-row{align-items:flex-start;flex-direction:column}.daily-change-row strong{justify-content:flex-start}}
+
+.review-nav{display:flex;flex-wrap:wrap;gap:8px;padding:12px 0 20px;align-items:center}
+.review-nav a{padding:9px 14px;border:1px solid var(--line);border-radius:9px;text-decoration:none;background:var(--panel);font-size:.85rem}
+.review-nav a:hover,.review-nav a:focus-visible{border-color:var(--cyan);color:var(--cyan)}
+#layout-toggle{margin-left:auto}
+.model-lock{font-size:.8rem;font-weight:700;color:var(--cyan)}
+.status-panel summary,summary{cursor:pointer;font-weight:700;color:var(--cyan);padding:6px 0}
+.status-panel:not([open]){min-width:250px}
+.review-panel{margin:24px 0;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--panel);scroll-margin-top:18px}
+.review-panel p{line-height:1.6;color:var(--muted);font-size:.85rem}
+.review-panel h2{margin:0 0 12px}
+.review-panel h3{margin-top:24px}
+.review-panel .table-panel{border-radius:10px;overflow-x:auto}
+.review-panel td{white-space:normal;min-width:100px;font-size:.8rem}
+.review-panel th{font-size:.75rem}
+.freshness-banner{border-radius:12px;padding:15px 18px;line-height:1.6;font-size:.88rem;border:1px solid var(--line)}
+.warning{background:#2b2418;border-color:#806432;color:#ffe1a0}
+.healthy{background:#0e2c2b;border-color:#287260;color:#adf3d8}
+.workflow-check{font-size:.78rem;color:var(--muted);line-height:1.6}
+.job-failed{color:var(--red);font-weight:700}
+.why-panel{padding:12px 15px;background:#091625;border:1px solid var(--line);border-radius:10px;margin-top:15px}
+.why-panel p{font-size:.84rem;line-height:1.6;color:#c2d3e7}
+#chart-error{padding:15px;color:var(--amber)}
+.classic-layout .review-only{display:none}
+.classic-layout .review-nav a[href="#quick-review"]{display:none}
+@media(max-width:680px){.review-panel{padding:14px}.review-nav{gap:6px}.review-nav a{padding:8px;font-size:.78rem}#layout-toggle{margin-left:0}.status-panel:not([open]){min-width:0}}
 </style>
+<script>window.fxReviewConfig = {"marketDate": "2026-11-12", "snapshotAt": "2026-11-12T22:44:27.061103+00:00", "status": {"schema_version": 1, "state": "no_new_market_data", "run_context": "local", "using_cached_snapshot": true, "last_attempt_at_utc": "2026-11-13T09:29:46.430624+00:00", "completed_at_utc": "2026-11-13T09:29:58.267107+00:00", "last_successful_check_at_utc": "2026-11-13T09:29:58.267122+00:00", "last_model_update_at_utc": "2026-11-12T22:44:27.061103+00:00", "market_date": "2026-11-12", "run_url": null, "fx_fetch": {"checked_at_utc": "2026-11-13T09:29:46.959101+00:00", "sources": [{"name": "ECB Data Portal API", "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY+GBP+AUD+MYR+CHF+SGD.EUR.SP00.A", "status": "available", "attempts": [{"attempt": 1, "status": "received"}], "latest_observation": "2026-11-12"}], "selected_source": "ECB Data Portal API"}, "previous_failure": null}};</script>
+<script src="dashboard-health.js" defer></script>
 </head>
 <body>
 <div class="container">
-  <header class="topbar">
+  <nav class="review-nav" aria-label="Dashboard sections"><a href="#overview">Overview</a><a href="#quick-review">Currencies</a><a href="#validation-audit">Validation</a><a href="#source-health">Source health</a><a href="#chartSection">History</a><a href="#methodology">Guide</a><a id="layout-toggle" href="?layout=classic">Classic layout</a></nav>
+  <header class="topbar" id="overview">
     <div>
       <div class="eyebrow">Personal currency decision support · Phase 3A.3 direction-semantics shadow mode · 7 currencies</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">The Phase 2C baseline remains frozen. Phase 3A.3 keeps the separate news/event shadow layer pair-aware and relevance-filtered, with stricter official-source admission, English-language interpretation and minimum directional evidence.</p>
+      <p class="subtitle">When to convert SGD into foreign currency. Review value, timing and evidence across seven currencies.</p>
+      <p class="model-lock">Phase 2C baseline frozen · Phase 3A.3 shadow only · 0% news weight</p>
+      <p class="subtitle">Snapshot updated <strong id="snapshot-time">2026-11-12T22:44:27.061103+00:00 UTC</strong> · daily reference rates, not live quotes</p>
     </div>
-    <div class="status-panel">
+    <details class="status-panel" id="source-details"><summary>Snapshot & source details</summary>
       <div><span>Market data</span><strong>2026-11-12</strong></div>
       <div><span>Model</span><strong>2.2-phase2c-baseline</strong></div>
       <div><span>Monitoring release</span><strong>3.3-phase3a3-direction-semantics</strong></div>
@@ -243,12 +274,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <div><span>News/event shadow</span><strong>Pair-aware relevance-filtered GDELT + official central-bank communications (0/7 usable; 4 thin; 64 API calls; 0 cache hits; 53 rate-limit retries)</strong></div>
       <div><span>Shadow run (SGT)</span><strong>2026-11-13</strong></div>
       <div><span>Cross-check</span><strong>Yahoo Finance market snapshot (validation only)</strong></div>
-    </div>
+    </details>
   </header>
 
+  <div id="freshness-banner" class="freshness-banner warning" role="status">Snapshot observation: 2026-11-12. Freshness needs JavaScript to evaluate against today's date. Last recorded update: no_new_market_data. Check source health and Actions.</div>
+  <p id="workflow-check" class="workflow-check">Current GitHub job status not checked yet. <a href="https://github.com/Vasanthan1276/fx-intelligence-report/actions/workflows/update-fx.yml">View Actions</a></p>
   <section class="hero">
     <div class="hero-card">
-      <h3>Best current opportunity</h3>
+      <h3>Highest-ranked recorded opportunity</h3>
       <div class="hero-opportunity"><span>JPY</span> · Wait</div>
       <div class="hero-score"><strong>3.49/5</strong><span class="delta-badge delta-up" title="Change vs 2026-11-11">▲ 0.01</span><span>Opportunity · ¥100 = S$0.8052</span></div>
       <div class="hero-split">
@@ -265,10 +298,11 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <p class="hero-macro">Macro view: Bank of Japan policy rate is 1.25% and up 50 bp over 6 months.</p>
       <p class="hero-macro">Forward view: Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes. Model-implied forward policy bias: Tightening bias — after considering recent policy trend, IMF inflation and growth outlook.</p>
       <p class="hero-macro">Timing view: Forward policy bias is tightening bias (model-implied, not futures-implied).</p>
+      <details class="why-panel" open><summary>Why this action?</summary><p>Opportunity 3.49/5 combines market 3.65 at 70% and macro 3.12 at 30%. In the 3.00–3.49 band, Light Accumulate requires urgency ≥4.00; otherwise the action is Wait. Recorded urgency: 3.11/5. Displayed components are rounded.</p></details>
       <p class="hero-macro">Phase 3A.3 shadow: 2.50/5 · Relevant coverage / insufficient directional evidence · 42% headline confidence. This does not affect the action.</p>
     </div>
     <div class="hero-side">
-      <h3>Suggested action</h3>
+      <h3>Recorded Phase 2C action</h3>
       <div class="big-action">Wait for a better rate unless funds are needed</div>
       <p><strong>Historical valuation:</strong> Exceptional Historical Value<br>
       <strong>Attractive-value threshold:</strong> S$0.8731 per ¥100<br>
@@ -277,15 +311,19 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <strong>Buy urgency:</strong> 3.11/5 · Moderate<br>
       <strong>Model/data quality:</strong> 84% · 76% signal agreement<br>
       <strong>Next policy event:</strong> 2026-12-18 · 36 days · Normal risk</p>
-      <p>0% of your planned discretionary conversion is the model's current suggested first tranche. Phase 3A.3 keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
+      <p>0% of your planned discretionary conversion is the model's recorded suggested first tranche. Phase 3A.3 keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
     </div>
   </section>
 
+  <section class="review-only review-panel" id="quick-review">
+      <div class="section-header"><div><h2>At a glance</h2><p>SGD cost per unit; JPY per ¥100. Lower cost buys more foreign currency. Select a currency for its full evidence.</p></div></div>
+      <div class="table-panel"><table><thead><tr><th>Currency</th><th>SGD cost</th><th>Opportunity /5</th><th>Urgency /5</th><th>Recorded action</th><th>Tranche</th><th>Macro coverage</th></tr></thead><tbody><tr><td><a href="#currency-JPY"><strong>JPY</strong></a></td><td>0.8052</td><td>3.49</td><td>3.11</td><td>Wait</td><td>0%</td><td>100%</td></tr><tr><td><a href="#currency-AUD"><strong>AUD</strong></a></td><td>0.8771</td><td>3.46</td><td>2.38</td><td>Wait</td><td>0%</td><td>100%</td></tr><tr><td><a href="#currency-EUR"><strong>EUR</strong></a></td><td>1.4249</td><td>3.44</td><td>2.75</td><td>Wait</td><td>0%</td><td>100%</td></tr><tr><td><a href="#currency-GBP"><strong>GBP</strong></a></td><td>1.7045</td><td>2.90</td><td>2.38</td><td>Wait</td><td>0%</td><td>100%</td></tr><tr><td><a href="#currency-CHF"><strong>CHF</strong></a></td><td>1.5434</td><td>2.81</td><td>2.05</td><td>Wait</td><td>0%</td><td>100%</td></tr><tr><td><a href="#currency-USD"><strong>USD</strong></a></td><td>1.2859</td><td>2.58</td><td>2.95</td><td>Wait</td><td>0%</td><td>100%</td></tr><tr><td><a href="#currency-MYR"><strong>MYR</strong></a></td><td>0.3153</td><td>2.43</td><td>2.29</td><td>Wait</td><td>0%</td><td>100%</td></tr></tbody></table></div>
+    </section>
   <div class="section-header">
     <div><h2>Currency opportunity ranking</h2><p>Highest Opportunity Score first. Forward Outlook and Buy Urgency are shown separately so valuation is not confused with timing pressure.</p></div>
   </div>
   <section class="cards">
-        <article class="currency-card" data-code="JPY" data-score="3.49">
+        <article class="currency-card" id="currency-JPY" data-code="JPY" data-score="3.49">
           <div class="card-topline">
             <div>
               <div class="rank">#1 opportunity</div>
@@ -391,6 +429,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             <div class="allocation">Suggested tranche: 0%</div>
           </div>
 
+          <details class="why-panel"><summary>Why this recorded action?</summary><p>Opportunity 3.49/5 combines market 3.65 at 70% and macro 3.12 at 30%. In the 3.00–3.49 band, Light Accumulate requires urgency ≥4.00; otherwise the action is Wait. Recorded urgency: 3.11/5. Displayed components are rounded.</p></details>
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 8% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Bank of Japan policy rate is 1.25% and up 50 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 0.7%; 2027: 0.7%, 2.3 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 2.0%; 2027: 2.6%, 0.4 pp above Singapore next year.</li></ul></div>
@@ -401,7 +440,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </article>
         
 
-        <article class="currency-card" data-code="AUD" data-score="3.46">
+        <article class="currency-card" id="currency-AUD" data-code="AUD" data-score="3.46">
           <div class="card-topline">
             <div>
               <div class="rank">#2 opportunity</div>
@@ -507,6 +546,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             <div class="allocation">Suggested tranche: 0%</div>
           </div>
 
+          <details class="why-panel"><summary>Why this recorded action?</summary><p>Opportunity 3.46/5 combines market 3.62 at 70% and macro 3.08 at 30%. In the 3.00–3.49 band, Light Accumulate requires urgency ≥4.00; otherwise the action is Wait. Recorded urgency: 2.38/5. Displayed components are rounded.</p></details>
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 33rd cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Reserve Bank of Australia policy rate is 4.60% and up 50 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 1.9%; 2027: 1.6%, 1.4 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 3.9%; 2027: 3.1%, 0.9 pp above Singapore next year.</li></ul></div>
@@ -517,7 +557,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </article>
         
 
-        <article class="currency-card" data-code="EUR" data-score="3.44">
+        <article class="currency-card" id="currency-EUR" data-code="EUR" data-score="3.44">
           <div class="card-topline">
             <div>
               <div class="rank">#3 opportunity</div>
@@ -623,6 +663,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             <div class="allocation">Suggested tranche: 0%</div>
           </div>
 
+          <details class="why-panel"><summary>Why this recorded action?</summary><p>Opportunity 3.44/5 combines market 4.05 at 70% and macro 2.02 at 30%. In the 3.00–3.49 band, Light Accumulate requires urgency ≥4.00; otherwise the action is Wait. Recorded urgency: 2.75/5. Displayed components are rounded.</p></details>
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 16% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>European Central Bank policy rate is 2.50% and up 50 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 1.3%; 2027: 1.4%, 1.6 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 3.7%; 2027: 3.2%, 1.0 pp above Singapore next year.</li></ul></div>
@@ -633,7 +674,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </article>
         
 
-        <article class="currency-card" data-code="GBP" data-score="2.9">
+        <article class="currency-card" id="currency-GBP" data-code="GBP" data-score="2.9">
           <div class="card-topline">
             <div>
               <div class="rank">#4 opportunity</div>
@@ -739,6 +780,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             <div class="allocation">Suggested tranche: 0%</div>
           </div>
 
+          <details class="why-panel"><summary>Why this recorded action?</summary><p>Opportunity 2.90/5 combines market 3.43 at 70% and macro 1.68 at 30%. Below 3.00, the opportunity band determines Wait, Expensive or Avoid; urgency cannot upgrade it to Buy. Recorded urgency: 2.38/5. Displayed components are rounded.</p></details>
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 40th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Bank of England policy rate is 3.75% and unchanged.</li><li>IMF real-GDP growth outlook is 2026: 1.3%; 2027: 1.2%, 1.8 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 3.3%; 2027: 2.8%, 0.6 pp above Singapore next year.</li></ul></div>
@@ -749,7 +791,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </article>
         
 
-        <article class="currency-card" data-code="CHF" data-score="2.81">
+        <article class="currency-card" id="currency-CHF" data-code="CHF" data-score="2.81">
           <div class="card-topline">
             <div>
               <div class="rank">#5 opportunity</div>
@@ -855,6 +897,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             <div class="allocation">Suggested tranche: 0%</div>
           </div>
 
+          <details class="why-panel"><summary>Why this recorded action?</summary><p>Opportunity 2.81/5 combines market 3.12 at 70% and macro 2.10 at 30%. Below 3.00, the opportunity band determines Wait, Expensive or Avoid; urgency cannot upgrade it to Buy. Recorded urgency: 2.05/5. Displayed components are rounded.</p></details>
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 66th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Swiss National Bank policy rate is 0.00% and unchanged.</li><li>IMF real-GDP growth outlook is 2026: 1.9%; 2027: 1.2%, 1.8 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 0.7%; 2027: 0.8%, 1.4 pp below Singapore next year.</li></ul></div>
@@ -865,7 +908,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </article>
         
 
-        <article class="currency-card" data-code="USD" data-score="2.58">
+        <article class="currency-card" id="currency-USD" data-code="USD" data-score="2.58">
           <div class="card-topline">
             <div>
               <div class="rank">#6 opportunity</div>
@@ -971,6 +1014,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             <div class="allocation">Suggested tranche: 0%</div>
           </div>
 
+          <details class="why-panel"><summary>Why this recorded action?</summary><p>Opportunity 2.58/5 combines market 2.90 at 70% and macro 1.85 at 30%. Below 3.00, the opportunity band determines Wait, Expensive or Avoid; urgency cannot upgrade it to Buy. Recorded urgency: 2.95/5. Displayed components are rounded.</p></details>
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 19% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is above its 200-day average, reducing timing attractiveness.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Federal Reserve policy rate is 3.88% and up 25 bp over 6 months.</li><li>IMF real-GDP growth outlook is 2026: 2.3%; 2027: 2.3%, 0.7 pp below Singapore next year.</li><li>IMF inflation outlook is 2026: 3.6%; 2027: 2.8%, 0.6 pp above Singapore next year.</li></ul></div>
@@ -981,7 +1025,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </article>
         
 
-        <article class="currency-card" data-code="MYR" data-score="2.43">
+        <article class="currency-card" id="currency-MYR" data-code="MYR" data-score="2.43">
           <div class="card-topline">
             <div>
               <div class="rank">#7 opportunity</div>
@@ -1087,6 +1131,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
             <div class="allocation">Suggested tranche: 0%</div>
           </div>
 
+          <details class="why-panel"><summary>Why this recorded action?</summary><p>Opportunity 2.43/5 combines market 2.19 at 70% and macro 3.00 at 30%. Below 3.00, the opportunity band determines Wait, Expensive or Avoid; urgency cannot upgrade it to Buy. Recorded urgency: 2.29/5. Displayed components are rounded.</p></details>
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 76th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Bank Negara Malaysia policy rate is 2.75% and unchanged.</li><li>IMF real-GDP growth outlook is 2026: 5.2%; 2027: 4.6%, 1.6 pp above Singapore next year.</li><li>IMF inflation outlook is 2026: 2.2%; 2027: 1.9%, 0.3 pp below Singapore next year.</li></ul></div>
@@ -1097,11 +1142,26 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </article>
         </section>
 
+  <section class="review-panel" id="source-health"><h2>Source health & data gaps</h2>
+      <p>Check context: <strong>local</strong>. A local check is not a deployed workflow run.</p>
+      <p>Last attempt: <strong>2026-11-13T09:29:46.430624+00:00</strong> · Last successful FX check: <strong>2026-11-13T09:29:58.267122+00:00</strong></p>
+      <p>Model snapshot: <strong>2026-11-12T22:44:27.061103+00:00</strong> (UTC). Rechecking an unchanged ECB market date does not refresh macro or news inputs. All data below belongs to that snapshot.</p>
+      <ul><li><strong>ECB Data Portal API</strong> — available; 1 attempt(s). 2026-11-12</li></ul>
+      <p></p>
+      <p>Source links: <a href="https://data.ecb.europa.eu/data/datasets/EXR">ECB rates</a> · <a href="https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip">ECB historical ZIP</a> · <a href="https://data.bis.org/topics/CBPOL">BIS policy</a> · <a href="https://www.imf.org/external/datamapper/">IMF forecasts</a> · <a href="https://github.com/Vasanthan1276/fx-intelligence-report/actions/workflows/update-fx.yml">Scheduled runs and logs</a></p>
+      <div class="table-panel"><table><thead><tr><th>Currency</th><th>FX observation</th><th>BIS observation</th><th>Macro gaps</th><th>Yahoo check</th><th>Shadow coverage / errors</th><th>Next policy event</th></tr></thead><tbody><tr><td>JPY</td><td>2026-11-12</td><td>2026-10-01</td><td>No missing macro inputs</td><td>Good</td><td>Thin · ineligible<details><summary>1 reported source errors</summary><ul><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+of+Japan%22+%28rates+OR+inflation+OR+policy+OR+economy%29&amp;mode=ArtList&amp;maxrec</li></ul></details></td><td>2026-12-18</td></tr><tr><td>AUD</td><td>2026-11-12</td><td>2026-10-01</td><td>No missing macro inputs</td><td>Excellent</td><td>Unavailable · ineligible<details><summary>3 reported source errors</summary><ul><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Australian+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&amp;mode=ArtList&amp;m</li><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Reserve+Bank+of+Australia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&amp;mode=Ar</li><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Australia+inflation%22+OR+%22Australia+jobs%22+OR+%22Australia+GDP%22%29&amp;mode=A</li></ul></details></td><td>2026-12-08</td></tr><tr><td>EUR</td><td>2026-11-12</td><td>2026-10-01</td><td>No missing macro inputs</td><td>Excellent</td><td>Thin · ineligible<details><summary>3 reported source errors</summary><ul><li>Expecting value: line 1 column 1 (char 0)</li><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22European+Central+Bank%22+%28rates+OR+inflation+OR+policy+OR+economy%29&amp;mode=ArtLis</li><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22euro+area+inflation%22+OR+%22euro+area+growth%22+OR+%22eurozone+GDP%22%29&amp;mode=</li></ul></details></td><td>2026-12-17</td></tr><tr><td>GBP</td><td>2026-11-12</td><td>2026-10-01</td><td>No missing macro inputs</td><td>Excellent</td><td>Thin · ineligible<details><summary>0 reported source errors</summary><ul></ul></details></td><td>2026-12-17</td></tr><tr><td>CHF</td><td>2026-11-12</td><td>2026-10-01</td><td>No missing macro inputs</td><td>Excellent</td><td>Unavailable · ineligible<details><summary>1 reported source errors</summary><ul><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Switzerland+inflation%22+OR+%22Swiss+growth%22+OR+%22Switzerland+GDP%22%29&amp;mode</li></ul></details></td><td>2026-12-10</td></tr><tr><td>USD</td><td>2026-11-12</td><td>2026-10-01</td><td>No missing macro inputs</td><td>Excellent</td><td>Thin · ineligible<details><summary>2 reported source errors</summary><ul><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22US+dollar%22+%28forex+OR+currency+OR+%22exchange+rate%22%29&amp;mode=ArtList&amp;maxrecord</li><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3</li></ul></details></td><td>2026-12-09</td></tr><tr><td>MYR</td><td>2026-11-12</td><td>2026-10-01</td><td>No missing macro inputs</td><td>Excellent</td><td>Unavailable · ineligible<details><summary>3 reported source errors</summary><ul><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Bank+Negara+Malaysia%22+%28rates+OR+inflation+OR+policy+OR+economy%29&amp;mode=ArtList</li><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28%22Malaysia+inflation%22+OR+%22Malaysia+growth%22+OR+%22Malaysia+GDP%22%29&amp;mode=Ar</li><li>429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%28inflation+OR+%22monetary+policy%22+OR+%22interest+rate%22+OR+economy%29+domainis%3</li></ul></details></td><td>Calendar rollover needed / unknown</td></tr></tbody></table></div>
+      <p>BIS is monthly; IMF values are forecasts for the displayed years, not daily observations. IMF release vintage and Yahoo quote time are not recorded in older snapshots, so their freshness cannot be independently established here. Headline confidence and model/data quality are not probabilities of success.</p>
+    </section>
+  <section class="review-panel" id="validation-audit"><h2>Validation diagnostics</h2>
+      <p>Original performance statistics below are retained for continuity. This separate audit explicitly checks the logged shadow evidence flag, coverage, confidence and unique market dates. Counts may therefore differ.</p>
+      <h3>Phase 2C baseline</h3><p>84 logged days · 84 distinct market dates · 84 rows without an exact signal creation timestamp.</p><div class="table-panel"><table><thead><tr><th>Horizon</th><th>Matured</th><th>Pending</th><th>Evidence excluded</th><th>Neutral signal</th><th>Missing rate</th><th>Missing date</th><th>Duplicate</th></tr></thead><tbody><tr><td>1D</td><td>567</td><td>7</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td></tr><tr><td>5D</td><td>539</td><td>35</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td></tr><tr><td>10D</td><td>504</td><td>70</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td></tr><tr><td>20D</td><td>434</td><td>140</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td></tr></tbody></table></div><h3>Phase 3A.3 evidence-gated audit</h3><p>70 logged days · 70 distinct market dates · 70 rows without an exact signal creation timestamp.</p><div class="table-panel"><table><thead><tr><th>Horizon</th><th>Matured</th><th>Pending</th><th>Evidence excluded</th><th>Neutral signal</th><th>Missing rate</th><th>Missing date</th><th>Duplicate</th></tr></thead><tbody><tr><td>1D</td><td>22</td><td>0</td><td>457</td><td>11</td><td>0</td><td>0</td><td>0</td></tr><tr><td>5D</td><td>20</td><td>2</td><td>457</td><td>11</td><td>0</td><td>0</td><td>0</td></tr><tr><td>10D</td><td>20</td><td>2</td><td>457</td><td>11</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div>
+      <p>Accuracy uses decisive outcomes only; neutral moves are excluded from its denominator. Overlapping horizons and currency correlations mean observations are not independent. These are reference-rate comparisons, not a tradable return or proof of predictive value. Signal timestamps missing from older logs prevent a full audit of information available at the time. New logs record UTC creation times; historical timestamps are not backfilled.</p>
+    </section>
   
     <div class="section-header"><div><h2>Baseline performance</h2><p>Retrospective check of whether following each historical Buy/Accumulate or Wait/Avoid action was helpful after 1, 5, 10 and 20 trading days.</p></div></div>
     <section class="performance-panel">
       <div class="performance-meta"><strong>84 baseline market-day observations</strong><span>Helpful rate excludes moves within ±0.10% as neutral. This is monitoring evidence, not a forecast-accuracy probability.</span></div>
-      <div class="perf-cards"><div class="perf-card"><span>1 trading day</span><strong>58%</strong><small>+0.03% average action benefit · n=567</small></div><div class="perf-card"><span>5 trading days</span><strong>59%</strong><small>+0.17% average action benefit · n=539</small></div><div class="perf-card"><span>10 trading days</span><strong>56%</strong><small>+0.29% average action benefit · n=504</small></div><div class="perf-card"><span>20 trading days</span><strong>64%</strong><small>+0.43% average action benefit · n=434</small></div></div>
+      <div class="perf-cards"><div class="perf-card"><span>1 trading day</span><strong>58%</strong><small>+0.03% average action benefit · 357 decisive / 567 matured</small></div><div class="perf-card"><span>5 trading days</span><strong>59%</strong><small>+0.17% average action benefit · 440 decisive / 539 matured</small></div><div class="perf-card"><span>10 trading days</span><strong>56%</strong><small>+0.29% average action benefit · 445 decisive / 504 matured</small></div><div class="perf-card"><span>20 trading days</span><strong>64%</strong><small>+0.43% average action benefit · 406 decisive / 434 matured</small></div></div>
       <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th><th>20D</th></tr></thead><tbody><tr><td><strong>JPY</strong><span>Japanese Yen</span></td><td><strong>59% helpful</strong><span>+0.04% avg benefit · n=83</span></td><td><strong>63% helpful</strong><span>+0.46% avg benefit · n=79</span></td><td><strong>79% helpful</strong><span>+0.99% avg benefit · n=74</span></td><td><strong>76% helpful</strong><span>+0.64% avg benefit · n=64</span></td></tr><tr><td><strong>AUD</strong><span>Australian Dollar</span></td><td><strong>53% helpful</strong><span>+0.03% avg benefit · n=83</span></td><td><strong>56% helpful</strong><span>+0.15% avg benefit · n=79</span></td><td><strong>49% helpful</strong><span>+0.20% avg benefit · n=74</span></td><td><strong>48% helpful</strong><span>+0.28% avg benefit · n=64</span></td></tr><tr><td><strong>EUR</strong><span>Euro</span></td><td><strong>70% helpful</strong><span>+0.05% avg benefit · n=83</span></td><td><strong>76% helpful</strong><span>+0.25% avg benefit · n=79</span></td><td><strong>64% helpful</strong><span>+0.38% avg benefit · n=74</span></td><td><strong>78% helpful</strong><span>+0.88% avg benefit · n=64</span></td></tr><tr><td><strong>GBP</strong><span>British Pound</span></td><td><strong>55% helpful</strong><span>+0.02% avg benefit · n=83</span></td><td><strong>51% helpful</strong><span>+0.07% avg benefit · n=79</span></td><td><strong>47% helpful</strong><span>+0.07% avg benefit · n=74</span></td><td><strong>57% helpful</strong><span>+0.24% avg benefit · n=64</span></td></tr><tr><td><strong>CHF</strong><span>Swiss Franc</span></td><td><strong>59% helpful</strong><span>+0.03% avg benefit · n=69</span></td><td><strong>59% helpful</strong><span>+0.12% avg benefit · n=65</span></td><td><strong>50% helpful</strong><span>+0.19% avg benefit · n=60</span></td><td><strong>67% helpful</strong><span>+0.59% avg benefit · n=50</span></td></tr><tr><td><strong>USD</strong><span>US Dollar</span></td><td><strong>52% helpful</strong><span>+0.00% avg benefit · n=83</span></td><td><strong>62% helpful</strong><span>+0.11% avg benefit · n=79</span></td><td><strong>59% helpful</strong><span>+0.20% avg benefit · n=74</span></td><td><strong>70% helpful</strong><span>+0.42% avg benefit · n=64</span></td></tr><tr><td><strong>MYR</strong><span>Malaysian Ringgit</span></td><td><strong>54% helpful</strong><span>-0.01% avg benefit · n=83</span></td><td><strong>44% helpful</strong><span>+0.00% avg benefit · n=79</span></td><td><strong>42% helpful</strong><span>+0.03% avg benefit · n=74</span></td><td><strong>53% helpful</strong><span>+0.02% avg benefit · n=64</span></td></tr></tbody></table></div>
       <div class="performance-note"><strong>How to read it:</strong> positive average action benefit means the model's practical action beat the opposite choice in SGD-cost terms over that horizon. For Buy/Accumulate, a later higher FX cost counts as helpful; for Wait/Avoid, a later lower FX cost counts as helpful.</div>
     </section>
@@ -1111,7 +1171,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <div class="section-header"><div><h2>Phase 3A.3 shadow performance</h2><p>Tests whether the separate news/event bias anticipated the later FX direction. It remains completely outside the frozen Phase 2C recommendation.</p></div></div>
     <section class="performance-panel shadow-performance-panel">
       <div class="performance-meta"><strong>Shadow-mode validation</strong><span>Only directional calls are scored. Future FX moves within ±0.10% are neutral and excluded from directional accuracy.</span></div>
-      <div class="perf-cards"><div class="perf-card shadow-perf-card"><span>1 trading day</span><strong>50%</strong><small>5 correct · 5 incorrect · n=22</small></div><div class="perf-card shadow-perf-card"><span>5 trading days</span><strong>67%</strong><small>12 correct · 6 incorrect · n=20</small></div><div class="perf-card shadow-perf-card"><span>10 trading days</span><strong>47%</strong><small>8 correct · 9 incorrect · n=20</small></div></div>
+      <div class="perf-cards"><div class="perf-card shadow-perf-card"><span>1 trading day</span><strong>50%</strong><small>5 correct · 5 incorrect · 12 neutral · 22 matured</small></div><div class="perf-card shadow-perf-card"><span>5 trading days</span><strong>67%</strong><small>12 correct · 6 incorrect · 2 neutral · 20 matured</small></div><div class="perf-card shadow-perf-card"><span>10 trading days</span><strong>47%</strong><small>8 correct · 9 incorrect · 3 neutral · 20 matured</small></div></div>
       <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th></tr></thead><tbody><tr><td><strong>JPY</strong><span>Japanese Yen</span></td><td><strong>0% correct</strong><span>0 correct · 2 neutral · n=4</span></td><td><strong>25% correct</strong><span>1 correct · 0 neutral · n=4</span></td><td><strong>75% correct</strong><span>3 correct · 0 neutral · n=4</span></td></tr><tr><td><strong>AUD</strong><span>Australian Dollar</span></td><td><strong>50% correct</strong><span>2 correct · 0 neutral · n=4</span></td><td><strong>75% correct</strong><span>3 correct · 0 neutral · n=4</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=4</span></td></tr><tr><td><strong>EUR</strong><span>Euro</span></td><td><strong>—</strong><span>0 correct · 1 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td></tr><tr><td><strong>GBP</strong><span>British Pound</span></td><td><strong>0% correct</strong><span>0 correct · 3 neutral · n=4</span></td><td><strong>67% correct</strong><span>2 correct · 0 neutral · n=3</span></td><td><strong>67% correct</strong><span>2 correct · 0 neutral · n=3</span></td></tr><tr><td><strong>CHF</strong><span>Swiss Franc</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>USD</strong><span>US Dollar</span></td><td><strong>100% correct</strong><span>3 correct · 5 neutral · n=8</span></td><td><strong>100% correct</strong><span>5 correct · 2 neutral · n=7</span></td><td><strong>75% correct</strong><span>3 correct · 3 neutral · n=7</span></td></tr><tr><td><strong>MYR</strong><span>Malaysian Ringgit</span></td><td><strong>—</strong><span>0 correct · 1 neutral · n=1</span></td><td><strong>100% correct</strong><span>1 correct · 0 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td></tr></tbody></table></div>
       <div class="performance-note"><strong>Purpose:</strong> Phase 3A.3 is an experiment. We are measuring whether headline/event intelligence adds leading information before allowing it to influence any model score.</div>
     </section>
@@ -1123,11 +1183,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   <section class="chart-panel" id="chartSection">
     <div class="chart-toolbar">
       <h3 id="chartTitle">JPY cost history</h3>
-      <select id="currencySelect" onchange="showCurrency(this.value, false)">
+      <select id="currencySelect" aria-label="Chart currency" onchange="showCurrency(this.value, false)">
         <option value="JPY" selected>JPY — Japanese Yen</option><option value="AUD" >AUD — Australian Dollar</option><option value="EUR" >EUR — Euro</option><option value="GBP" >GBP — British Pound</option><option value="CHF" >CHF — Swiss Franc</option><option value="USD" >USD — US Dollar</option><option value="MYR" >MYR — Malaysian Ringgit</option>
       </select>
     </div>
-    <div class="chart-wrap"><canvas id="fxChart"></canvas></div>
+    <p id="chart-error" role="status" hidden></p>
+    <div class="chart-wrap"><canvas id="fxChart" aria-label="Currency reference-rate history"></canvas></div>
   </section>
 
   <div class="section-header">
@@ -1282,7 +1343,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   <div class="section-header">
     <div><h2>Phase 3A.3 semantics & source-quality experiment · Phase 2C baseline remains frozen</h2><p>Phase 3A.3 observes only headlines that pass the target-currency relevance gate, uses pair-aware direction semantics, and admits official central-bank items only when they contain policy, macro, rate or FX content. Shadow intelligence is measured independently and cannot change Opportunity, Forward Outlook, Buy Urgency or the recommendation.</p></div>
   </div>
-  <section class="methodology">
+  <section class="methodology" id="methodology">
     <div class="method-card"><strong>Frozen</strong><span>Phase 2C core weights are locked during the baseline observation period so later changes can be measured cleanly.</span></div>
     <div class="method-card"><strong>Δ Daily</strong><span>Opportunity, Forward Outlook and Buy Urgency changes are compared with the previous available market day.</span></div>
     <div class="method-card"><strong>70%</strong><span>Market intelligence in the Opportunity Score when full macro data is available: historical value, trend, momentum and volatility.</span></div>
@@ -1294,12 +1355,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: valuation rarity.</span></div>
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: upcoming policy-event setup.</span></div>
     <div class="method-card"><strong>Quality</strong><span>Model/data quality reflects history length, source validation and macro coverage. It is not a probability that the recommendation will be correct.</span></div>
-    <div class="method-card"><strong>Shadow</strong><span>GDELT headlines from the last 72 hours are screened for strengthening/weakening signals. Headline heuristics do not read full article text.</span></div>
+    <div class="method-card"><strong>Shadow</strong><span>GDELT headlines from the last 96 hours (with a 7-day fallback) are screened for strengthening/weakening signals. Headline heuristics do not read full article text.</span></div>
     <div class="method-card"><strong>0%</strong><span>Phase 3A.3 news/event weight in the recommendation. It stays at zero until shadow-mode performance provides evidence that it adds value.</span></div>
   </section>
 
   <div class="notice"><strong>Phase 3A.3 shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The shadow layer now applies a hard target-currency relevance gate, pair-aware cross-currency direction semantics, a stricter official-content gate, English-language filtering and context-aware classification before scoring. Coverage is Strong, Adequate, Thin or Unavailable, and a minimum-evidence rule must pass before a directional call is validated. The shadow layer is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> scoring is still headline/summary heuristic analysis rather than full-text or LLM interpretation, but generic uses of words such as “easing” no longer count unless they refer to monetary policy. Explicit against/versus and ticker-pair relationships are interpreted from the target currency viewpoint, but the headline-only model may still miss nuance, conditional statements or more complex multi-asset relationships. “Headline confidence” measures data coverage, source diversity, official-source participation and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
-  <footer>Generated automatically by GitHub Actions · Last build 2026-11-12T22:44:27.061103+00:00</footer>
+  <footer>Model snapshot: 2026-11-12T22:44:27.061103+00:00 UTC · Page rendered: 2026-11-13T09:32:16.235696+00:00 UTC</footer>
 </div>
 
 <script>
@@ -1311,11 +1372,16 @@ async function loadHistory() {
   if (historyData) return historyData;
   const response = await fetch('data/fx_history.json', {cache:'no-store'});
   if (!response.ok) throw new Error('Could not load FX history data');
-  historyData = await response.json();
+  const loaded = await response.json();
+  if (!Array.isArray(loaded.records) || !loaded.records.length) throw new Error('Historical dataset is empty or malformed');
+  historyData = loaded;
   return historyData;
 }
 
 async function showCurrency(code, shouldScroll = true) {
+  const errorBox = document.getElementById('chart-error');
+  errorBox.hidden = true;
+  try {
   const select = document.getElementById('currencySelect');
   select.value = code;
   document.getElementById('chartTitle').textContent = `${code} cost history`;
@@ -1323,7 +1389,9 @@ async function showCurrency(code, shouldScroll = true) {
     document.getElementById('chartSection').scrollIntoView({behavior:'smooth', block:'start'});
   }
   const data = await loadHistory();
-  const filtered = data.records.filter(row => row[code] !== null && row[code] !== undefined);
+  const filtered = data.records.filter(row => Number.isFinite(row[code]) && row[code] > 0);
+  if (!filtered.length) throw new Error('No historical observations for ' + code);
+  if (typeof Chart === 'undefined') throw new Error('Chart library unavailable');
   const labels = filtered.map(row => row.date);
   const values = filtered.map(row => row[code]);
   const meta = currencyMeta[code];
@@ -1350,6 +1418,12 @@ async function showCurrency(code, shouldScroll = true) {
       scales:{x:{ticks:{color:'#7188a2', maxTicksLimit:8}, grid:{color:'rgba(86,110,140,.10)'}},y:{ticks:{color:'#7188a2'}, grid:{color:'rgba(86,110,140,.12)'}}}
     }
   });
+  } catch (err) {
+    if (chart) { chart.destroy(); chart = null; }
+    historyData = null;
+    errorBox.hidden = false;
+    errorBox.textContent = 'History unavailable: ' + err.message + '. Select a currency to retry. Recorded recommendations above are unchanged.';
+  }
 }
 
 // Build the initial chart without moving the viewport. This fixes the previous
