@@ -246,7 +246,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 .classic-layout .review-nav a[href="#quick-review"]{display:none}
 @media(max-width:680px){.review-panel{padding:14px}.review-nav{gap:6px}.review-nav a{padding:8px;font-size:.78rem}#old-dashboard-link{margin-left:0}.status-panel:not([open]){min-width:0}}
 </style>
-<script>window.fxReviewConfig = {"marketDate": "2026-11-13", "snapshotAt": "2026-11-13T22:22:59.352564+00:00", "status": {"schema_version": 1, "state": "updated", "run_context": "github_actions", "using_cached_snapshot": false, "last_attempt_at_utc": "2026-11-13T22:04:44.925321+00:00", "completed_at_utc": "2026-11-13T22:23:00.215313+00:00", "last_successful_check_at_utc": "2026-11-13T22:23:00.215332+00:00", "last_model_update_at_utc": "2026-11-13T22:22:59.352564+00:00", "market_date": "2026-11-13", "run_url": "https://github.com/Vasanthan1276/fx-intelligence-report/actions/runs/43516171730", "fx_fetch": {"checked_at_utc": "2026-11-13T22:04:46.455814+00:00", "sources": [{"name": "ECB Data Portal API", "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY+GBP+AUD+MYR+CHF+SGD.EUR.SP00.A", "status": "available", "attempts": [{"attempt": 1, "status": "received"}], "latest_observation": "2026-11-13"}], "selected_source": "ECB Data Portal API"}, "previous_failure": null}};</script>
+<script>window.fxReviewConfig = {"marketDate": "2026-11-13", "snapshotAt": "2026-11-13T22:22:59.352564+00:00", "status": {"schema_version": 1, "state": "no_new_market_data", "run_context": "github_actions", "using_cached_snapshot": true, "last_attempt_at_utc": "2026-11-13T22:45:01.688364+00:00", "completed_at_utc": "2026-11-13T22:45:07.199771+00:00", "last_successful_check_at_utc": "2026-11-13T22:45:07.199780+00:00", "last_model_update_at_utc": "2026-11-13T22:22:59.352564+00:00", "market_date": "2026-11-13", "run_url": "https://github.com/Vasanthan1276/fx-intelligence-report/actions/runs/43521745880", "fx_fetch": {"checked_at_utc": "2026-11-13T22:45:03.107852+00:00", "sources": [{"name": "ECB Data Portal API", "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY+GBP+AUD+MYR+CHF+SGD.EUR.SP00.A", "status": "available", "attempts": [{"attempt": 1, "status": "received"}], "latest_observation": "2026-11-13"}], "selected_source": "ECB Data Portal API"}, "previous_failure": null}};</script>
 <script src="dashboard-health.js" defer></script>
 </head>
 <body>
@@ -277,7 +277,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     </details>
   </header>
 
-  <div id="freshness-banner" class="freshness-banner warning" role="status">Snapshot observation: 2026-11-13. Freshness needs JavaScript to evaluate against today's date. Last recorded update: updated. Check source health and Actions.</div>
+  <div id="freshness-banner" class="freshness-banner warning" role="status">Snapshot observation: 2026-11-13. Freshness needs JavaScript to evaluate against today's date. Last recorded update: no_new_market_data. Check source health and Actions.</div>
   <p id="workflow-check" class="workflow-check">Current GitHub job status not checked yet. <a href="https://github.com/Vasanthan1276/fx-intelligence-report/actions/workflows/update-fx.yml">View Actions</a></p>
   <section class="hero">
     <div class="hero-card">
@@ -1144,7 +1144,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
   <section class="review-panel" id="source-health"><h2>Source health & data gaps</h2>
       <p>Check context: <strong>github_actions</strong>. A local check is not a deployed workflow run.</p>
-      <p>Last attempt: <strong>2026-11-13T22:04:44.925321+00:00</strong> · Last successful FX check: <strong>2026-11-13T22:23:00.215332+00:00</strong></p>
+      <p>Last attempt: <strong>2026-11-13T22:45:01.688364+00:00</strong> · Last successful FX check: <strong>2026-11-13T22:45:07.199780+00:00</strong></p>
       <p>Model snapshot: <strong>2026-11-13T22:22:59.352564+00:00</strong> (UTC). Rechecking an unchanged ECB market date does not refresh macro or news inputs. All data below belongs to that snapshot.</p>
       <ul><li><strong>ECB Data Portal API</strong> — available; 1 attempt(s). 2026-11-13</li></ul>
       <p></p>
@@ -1360,7 +1360,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   </section>
 
   <div class="notice"><strong>Phase 3A.3 shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The shadow layer now applies a hard target-currency relevance gate, pair-aware cross-currency direction semantics, a stricter official-content gate, English-language filtering and context-aware classification before scoring. Coverage is Strong, Adequate, Thin or Unavailable, and a minimum-evidence rule must pass before a directional call is validated. The shadow layer is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> scoring is still headline/summary heuristic analysis rather than full-text or LLM interpretation, but generic uses of words such as “easing” no longer count unless they refer to monetary policy. Explicit against/versus and ticker-pair relationships are interpreted from the target currency viewpoint, but the headline-only model may still miss nuance, conditional statements or more complex multi-asset relationships. “Headline confidence” measures data coverage, source diversity, official-source participation and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
-  <footer>Model snapshot: 2026-11-13T22:22:59.352564+00:00 UTC · Page rendered: 2026-11-13T22:23:00.347075+00:00 UTC</footer>
+  <footer>Model snapshot: 2026-11-13T22:22:59.352564+00:00 UTC · Page rendered: 2026-11-13T22:45:07.338717+00:00 UTC</footer>
 </div>
 
 <script>
