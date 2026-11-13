@@ -345,3 +345,7 @@ The golden fixture was captured from original commit `ab46feb6144ecf0ee68e7df4a0
 4. Consider reducing GDELT request volume after collecting transport diagnostics; do not change admission rules or live weights in this reliability patch.
 
 See [review findings and test plan](docs/REVIEW.md). Merge and GitHub Pages publication require the owner's explicit approval.
+
+### Dashboard layouts
+
+The navigation's **Old dashboard** link opens `legacy.html`, preserving the original layout. Its **Updated dashboard** link returns to the new overview. Both pages regenerate from the same data on every scheduled update and show the same freshness and failure warnings. Previously shared `?layout=classic` links redirect to the old layout. This presentation choice does not affect recommendations or shadow weights.
