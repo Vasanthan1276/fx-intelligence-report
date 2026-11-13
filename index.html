@@ -223,7 +223,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 .review-nav{display:flex;flex-wrap:wrap;gap:8px;padding:12px 0 20px;align-items:center}
 .review-nav a{padding:9px 14px;border:1px solid var(--line);border-radius:9px;text-decoration:none;background:var(--panel);font-size:.85rem}
 .review-nav a:hover,.review-nav a:focus-visible{border-color:var(--cyan);color:var(--cyan)}
-#layout-toggle{margin-left:auto}
+#old-dashboard-link{margin-left:auto}
 .model-lock{font-size:.8rem;font-weight:700;color:var(--cyan)}
 .status-panel summary,summary{cursor:pointer;font-weight:700;color:var(--cyan);padding:6px 0}
 .status-panel:not([open]){min-width:250px}
@@ -244,14 +244,14 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 #chart-error{padding:15px;color:var(--amber)}
 .classic-layout .review-only{display:none}
 .classic-layout .review-nav a[href="#quick-review"]{display:none}
-@media(max-width:680px){.review-panel{padding:14px}.review-nav{gap:6px}.review-nav a{padding:8px;font-size:.78rem}#layout-toggle{margin-left:0}.status-panel:not([open]){min-width:0}}
+@media(max-width:680px){.review-panel{padding:14px}.review-nav{gap:6px}.review-nav a{padding:8px;font-size:.78rem}#old-dashboard-link{margin-left:0}.status-panel:not([open]){min-width:0}}
 </style>
 <script>window.fxReviewConfig = {"marketDate": "2026-11-12", "snapshotAt": "2026-11-12T22:44:27.061103+00:00", "status": {"schema_version": 1, "state": "no_new_market_data", "run_context": "local", "using_cached_snapshot": true, "last_attempt_at_utc": "2026-11-13T09:29:46.430624+00:00", "completed_at_utc": "2026-11-13T09:29:58.267107+00:00", "last_successful_check_at_utc": "2026-11-13T09:29:58.267122+00:00", "last_model_update_at_utc": "2026-11-12T22:44:27.061103+00:00", "market_date": "2026-11-12", "run_url": null, "fx_fetch": {"checked_at_utc": "2026-11-13T09:29:46.959101+00:00", "sources": [{"name": "ECB Data Portal API", "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY+GBP+AUD+MYR+CHF+SGD.EUR.SP00.A", "status": "available", "attempts": [{"attempt": 1, "status": "received"}], "latest_observation": "2026-11-12"}], "selected_source": "ECB Data Portal API"}, "previous_failure": null}};</script>
 <script src="dashboard-health.js" defer></script>
 </head>
 <body>
 <div class="container">
-  <nav class="review-nav" aria-label="Dashboard sections"><a href="#overview">Overview</a><a href="#quick-review">Currencies</a><a href="#validation-audit">Validation</a><a href="#source-health">Source health</a><a href="#chartSection">History</a><a href="#methodology">Guide</a><a id="layout-toggle" href="?layout=classic">Classic layout</a></nav>
+  <nav class="review-nav" aria-label="Dashboard sections"><a href="#overview">Overview</a><a href="#quick-review">Currencies</a><a href="#validation-audit">Validation</a><a href="#source-health">Source health</a><a href="#chartSection">History</a><a href="#methodology">Guide</a><a id="old-dashboard-link" href="legacy.html">Old dashboard</a></nav>
   <header class="topbar" id="overview">
     <div>
       <div class="eyebrow">Personal currency decision support · Phase 3A.3 direction-semantics shadow mode · 7 currencies</div>
@@ -1360,7 +1360,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   </section>
 
   <div class="notice"><strong>Phase 3A.3 shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The shadow layer now applies a hard target-currency relevance gate, pair-aware cross-currency direction semantics, a stricter official-content gate, English-language filtering and context-aware classification before scoring. Coverage is Strong, Adequate, Thin or Unavailable, and a minimum-evidence rule must pass before a directional call is validated. The shadow layer is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> scoring is still headline/summary heuristic analysis rather than full-text or LLM interpretation, but generic uses of words such as “easing” no longer count unless they refer to monetary policy. Explicit against/versus and ticker-pair relationships are interpreted from the target currency viewpoint, but the headline-only model may still miss nuance, conditional statements or more complex multi-asset relationships. “Headline confidence” measures data coverage, source diversity, official-source participation and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
-  <footer>Model snapshot: 2026-11-12T22:44:27.061103+00:00 UTC · Page rendered: 2026-11-13T09:32:16.235696+00:00 UTC</footer>
+  <footer>Model snapshot: 2026-11-12T22:44:27.061103+00:00 UTC · Page rendered: 2026-11-13T10:14:44.436037+00:00 UTC</footer>
 </div>
 
 <script>
