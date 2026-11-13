@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-12T22:44:27.000952+00:00",
+  "updated_at_utc": "2026-11-13T22:21:59.818136+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-11-10T22:28:08.916368+00:00",
@@ -129,7 +129,7 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-11-12T22:26:22.304470+00:00",
+      "fetched_at_utc": "2026-11-13T22:07:30.423049+00:00",
       "payload": {
         "articles": [
           {
@@ -163,6 +163,16 @@
             "sourcecountry": "India"
           },
           {
+            "url": "https://www.penzcentrum.hu/megtakaritas/20261113/mi-folyik-a-tozsdeken-brutalis-melyrepulesben-az-amerikai-papirok-az-nvidia-botrany-utan-kozben-egy-magyar-reszveny-nagyon-kilott-1209026",
+            "url_mobile": "https://www.penzcentrum.hu/megtakaritas/20261113/mi-folyik-a-tozsdeken-brutalis-melyrepulesben-az-amerikai-papirok-az-nvidia-botrany-utan-kozben-egy-magyar-reszveny-nagyon-kilott-1209026/amp",
+            "title": "Mi folyik a t\u0151zsd\u00e9ken ? Brut\u00e1lis m\u00e9lyrep\u00fcl\u00e9sben az amerikai pap\u00edrok az NVIDIA botr\u00e1ny ut\u00e1n \u2013 k\u00f6zben egy magyar r\u00e9szv\u00e9ny nagyon kil\u0151tt",
+            "seendate": "20261113T180000Z",
+            "socialimage": "https://cdn.penzcentrum.hu/images/articles/lead/2024/10/1729060641-eOAQWBhT7_lg.jpg",
+            "domain": "penzcentrum.hu",
+            "language": "Hungarian",
+            "sourcecountry": "Hungary"
+          },
+          {
             "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-holds-near-one-week-low-as-hot-us-inflation-boosts-fed-hike-bets/articleshow/135722357.cms",
             "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-holds-near-one-week-low-as-hot-us-inflation-boosts-fed-hike-bets/amp_articleshow/135722357.cms",
             "title": "Gold holds near one - week low as hot US inflation boosts Fed hike bets",
@@ -191,16 +201,6 @@
             "domain": "timeturk.com",
             "language": "Turkish",
             "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.afr.com/world/north-america/we-ended-woke-hegseth-rejects-calls-to-quit-after-midterm-wipeout-20261106-p61bwf",
-            "url_mobile": "",
-            "title": "Pete Hegseth and Marco Rubio fight for political futures after Trump midterm defeat",
-            "seendate": "20261106T050000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_2.6475%2C$multiply_1%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/9233f062a1a502539d01bc4adbe61c78e611fa14c28de8327002829628661cf4",
-            "domain": "afr.com",
-            "language": "English",
-            "sourcecountry": "Australia"
           },
           {
             "url": "https://www.sabah.com.tr/trend/galeri/ekonomi/son-dakika-altinda-100-dolarlik-kayip-dusus-devam-edecek-mi",
@@ -243,20 +243,20 @@
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://lurer.com/article/760386/am",
+            "url": "https://www.ntv.com.tr/ntvpara/altin/galeri-altin-yatirimcilari-dikkat-baski-devam-edebilir-1750343",
             "url_mobile": "",
-            "title": "Lurer . com | \u0539\u0580\u0561\u0574\u0583\u0568 \u0574\u056b\u057b\u0561\u0576\u056f\u0575\u0561\u056c \u0568\u0576\u057f\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580\u056b \u0561\u0580\u0564\u0575\u0578\u0582\u0576\u0584\u0578\u0582\u0574 \u0531\u0544\u0546 - \u056b \u056f\u0578\u0580\u0578\u0582\u057d\u057f\u0576\u0565\u0580\u0568 \u0563\u0576\u0561\u0570\u0561\u057f\u0578\u0582\u0574 \u0567 3 \u057f\u0580\u056b\u056c\u056b\u0578\u0576 \u0564\u0578\u056c\u0561\u0580",
-            "seendate": "20261107T100000Z",
-            "socialimage": "https://lurer.com/rs.php?image=/disc/07-11-26/31964091e58adfd0e2cb4a281ac3725a.webp",
-            "domain": "lurer.com",
-            "language": "Armenian",
-            "sourcecountry": "Armenia"
+            "title": "Alt\u0131n yat\u0131r\u0131mc\u0131lar\u0131 dikkat , bask\u0131 devam edebilir",
+            "seendate": "20261111T053000Z",
+            "socialimage": "https://images.ntv.com.tr/images/altin13-809596.jpg?format=webp",
+            "domain": "ntv.com.tr",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
           }
         ]
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-11-11T22:57:04.557466+00:00",
+      "fetched_at_utc": "2026-11-13T22:08:03.891060+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -551,7 +551,7 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-12T22:33:10.941979+00:00",
+      "fetched_at_utc": "2026-11-13T22:13:17.684399+00:00",
       "payload": {
         "articles": [
           {
@@ -682,7 +682,7 @@
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-11T23:03:33.695255+00:00",
+      "fetched_at_utc": "2026-11-13T22:14:08.315847+00:00",
       "payload": {
         "articles": [
           {
@@ -716,14 +716,24 @@
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.actionforex.com/contributors/fundamental-analysis/660249-a-bruising-week-for-the-australian-dollar/",
+            "url": "https://en.dailypakistan.com.pk/12-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-12-november-2026",
             "url_mobile": "",
-            "title": "A Bruising Week for the Australian Dollar",
-            "seendate": "20261109T070000Z",
-            "socialimage": "https://www.actionforex.com/wp-content/uploads/2020/03/f-aud110.jpg",
-            "domain": "actionforex.com",
+            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
+            "seendate": "20261112T053000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/08/us-dollar-euro-dirham-pound-riyal-rate-in-pakistan-today-currency-rates-29-august-2024-1724900541-9059.jpg",
+            "domain": "en.dailypakistan.com.pk",
             "language": "English",
-            "sourcecountry": "United Kingdom"
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://investinglive.com/central-banks/anz-says-rba-hike-bets-have-cooled-but-3-7-core-inflation-will-keep-it-cautious/",
+            "url_mobile": "",
+            "title": "ANZ says RBA hike bets have cooled , but 3 . 7 % core inflation will keep it cautious",
+            "seendate": "20261112T034500Z",
+            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/Important%20level%20for%20AUD%20around%20here%2012%20November%202026-featured-1794452511.jpg?&format=webp",
+            "domain": "investinglive.com",
+            "language": "English",
+            "sourcecountry": ""
           },
           {
             "url": "http://www.milwaukeesun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
@@ -736,102 +746,72 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.irishsun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T050000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "irishsun.com",
-            "language": "English",
-            "sourcecountry": "Ireland"
-          },
-          {
-            "url": "http://www.zimbabwestar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T050000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "zimbabwestar.com",
-            "language": "English",
-            "sourcecountry": "Zimbabwe"
-          },
-          {
-            "url": "http://www.afghanistansun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T050000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "afghanistansun.com",
-            "language": "English",
-            "sourcecountry": "Afghanistan"
-          },
-          {
-            "url": "http://www.nepalnational.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T050000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "nepalnational.com",
-            "language": "English",
-            "sourcecountry": "Nepal"
-          },
-          {
-            "url": "http://www.iranherald.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T050000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "iranherald.com",
-            "language": "English",
-            "sourcecountry": "Iran"
-          },
-          {
-            "url": "http://www.stlouisstar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url": "http://www.parisguardian.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
             "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
             "seendate": "20261111T053000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "stlouisstar.com",
+            "domain": "parisguardian.com",
+            "language": "English",
+            "sourcecountry": "France"
+          },
+          {
+            "url": "http://www.indiagazette.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url_mobile": "",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261111T063000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "indiagazette.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "http://www.jamaicantimes.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url_mobile": "",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261111T063000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "jamaicantimes.com",
+            "language": "English",
+            "sourcecountry": "Jamaica"
+          },
+          {
+            "url": "http://www.newzealandstar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url_mobile": "",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261111T063000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "newzealandstar.com",
+            "language": "English",
+            "sourcecountry": "New Zealand"
+          },
+          {
+            "url": "http://www.theusnews.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url_mobile": "",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261111T063000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "theusnews.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.caribbeanherald.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url": "http://www.mexicostar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
             "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T053000Z",
+            "seendate": "20261111T063000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "caribbeanherald.com",
+            "domain": "mexicostar.com",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Mexico"
           }
         ]
       }
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-11-10T22:37:33.382485+00:00",
+      "fetched_at_utc": "2026-11-13T22:15:32.863656+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://tr.euronews.com/2026/11/05/avustralyada-italyan-sef-pizzaya-ananas-koymayi-reddedince-kovuldu",
-            "url_mobile": "",
-            "title": "Avustralyada \u0130talyan \u015fef , pizzaya ananas koymay\u0131 reddedince kovuldu",
-            "seendate": "20261106T010000Z",
-            "socialimage": "https://images.euronews.com/articles/stories/09/98/18/17/1200x675_cmsv2_015250ff-a005-5c1a-80e0-6ec398d53c76-9981817.jpg",
-            "domain": "tr.euronews.com",
-            "language": "Turkish",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://theconversation.com/view-from-the-hill-an-over-committed-albanese-is-scrambling-to-keep-his-eyes-on-the-main-game-295659",
-            "url_mobile": "",
-            "title": "View from The Hill : an over - committed Albanese is scrambling to keep his eyes on the main game",
-            "seendate": "20261106T083000Z",
-            "socialimage": "https://images.theconversation.com/files/770461/original/file-20261106-64-88c5yo.jpg?ixlib=rb-4.1.1&rect=0%2C0%2C4432%2C2216&q=45&auto=format&fit=crop",
-            "domain": "theconversation.com",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
           {
             "url": "https://www.crikey.com.au/2026/11/10/angus-taylor-red-tape-economy-policy/",
             "url_mobile": "",
@@ -853,24 +833,14 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.naroomanewsonline.com.au/story/9386817/parties-thrash-it-out-as-nz-election-reaches-endgame/",
+            "url": "https://www.rttnews.com/3713315/australian-market-notably-lower.aspx",
             "url_mobile": "",
-            "title": "Parties thrash it out as NZ election reaches endgame",
-            "seendate": "20261106T010000Z",
-            "socialimage": "https://www.naroomanewsonline.com.au/images/transform/v1/crop/frm/silverstone-feed-data/3366a23c-6697-434f-afd7-f287d2caacfb.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "naroomanewsonline.com.au",
+            "title": "Australian Market Notably Lower",
+            "seendate": "20261112T013000Z",
+            "socialimage": "",
+            "domain": "rttnews.com",
             "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.westernadvocate.com.au/story/9386817/parties-thrash-it-out-as-nz-election-reaches-endgame/",
-            "url_mobile": "",
-            "title": "Parties thrash it out as NZ election reaches endgame",
-            "seendate": "20261106T020000Z",
-            "socialimage": "https://www.westernadvocate.com.au/images/transform/v1/crop/frm/silverstone-feed-data/3366a23c-6697-434f-afd7-f287d2caacfb.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
-            "domain": "westernadvocate.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
+            "sourcecountry": "United States"
           }
         ]
       }
@@ -941,7 +911,7 @@
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-12T22:42:03.774018+00:00",
+      "fetched_at_utc": "2026-11-13T22:21:08.608188+00:00",
       "payload": {
         "articles": [
           {
@@ -995,16 +965,6 @@
             "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://ria.ru/20261109/voyna-2130154762.html",
-            "url_mobile": "",
-            "title": "\u041a\u0438\u0435\u0432\u0443 \u0440\u0430\u043d\u043e \u0440\u0430\u0434\u043e\u0432\u0430\u0442\u044c\u0441\u044f : \u041f\u0443\u0442\u0438\u043d \u0432\u044b\u0438\u0433\u0440\u0430\u043b \u0435\u0449\u0435 \u043e\u0434\u043d\u0443 \u0432\u043e\u0439\u043d\u0443",
-            "seendate": "20261109T053000Z",
-            "socialimage": "https://cdnn21.imgria.ru/images/sharing/article/2130154762.jpg",
-            "domain": "ria.ru",
-            "language": "Russian",
-            "sourcecountry": "Russia"
-          },
-          {
             "url": "http://www.milwaukeesun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
             "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
@@ -1035,48 +995,58 @@
             "sourcecountry": "India"
           },
           {
-            "url": "http://www.irishsun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url": "http://www.jamaicantimes.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
             "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T050000Z",
+            "seendate": "20261111T063000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "irishsun.com",
+            "domain": "jamaicantimes.com",
             "language": "English",
-            "sourcecountry": "Ireland"
+            "sourcecountry": "Jamaica"
           },
           {
-            "url": "http://www.zimbabwestar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url": "http://www.newzealandstar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
             "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T050000Z",
+            "seendate": "20261111T063000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "zimbabwestar.com",
+            "domain": "newzealandstar.com",
             "language": "English",
-            "sourcecountry": "Zimbabwe"
+            "sourcecountry": "New Zealand"
           },
           {
-            "url": "http://www.afghanistansun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url": "http://www.theusnews.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
             "url_mobile": "",
             "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T050000Z",
+            "seendate": "20261111T063000Z",
             "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "afghanistansun.com",
+            "domain": "theusnews.com",
             "language": "English",
-            "sourcecountry": "Afghanistan"
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.mexicostar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
+            "url_mobile": "",
+            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
+            "seendate": "20261111T063000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
+            "domain": "mexicostar.com",
+            "language": "English",
+            "sourcecountry": "Mexico"
           }
         ]
       }
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-12T22:43:18.526357+00:00",
+      "fetched_at_utc": "2026-11-13T22:21:22.083806+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-11-11T23:12:28.252545+00:00",
+      "fetched_at_utc": "2026-11-13T22:21:59.818115+00:00",
       "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-12T22:34:14.449465+00:00",
+      "fetched_at_utc": "2026-11-13T22:13:51.090279+00:00",
       "payload": {
         "articles": [
           {
@@ -1140,12 +1110,12 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.aol.co.uk/articles/starbucks-plans-hire-7-500-050100000.html",
+            "url": "https://www.lbc.co.uk/article/3ccd061a27fd424d8dedfd7bd00ebfed-5HjdmKH_2/",
             "url_mobile": "",
-            "title": "Starbucks plans to hire 7 , 500 staff in major united kingdom expansion plan",
-            "seendate": "20261109T060000Z",
-            "socialimage": "https://hermes.media.static.aol.com/media/2026/11/09/cf5c7a6d-0fb4-3547-9968-e8c6995ca3fc/b3be1648-380b-4167-91f9-d7e65e9eca31.jpg",
-            "domain": "aol.co.uk",
+            "title": "27 % fall in first - time buyer inquiries seen by Zoopla as people  pause and wait  ",
+            "seendate": "20261113T004500Z",
+            "socialimage": "https://images.globalplayer.com/images/855411?crop=16_9&signature=HpvbvaYPHUgPOp1_ZFpZwIIP8BM=",
+            "domain": "lbc.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           },
@@ -1190,12 +1160,12 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.propertywire.com/news/uk/landlords-retaining-portfolios-see-yields-rise-to-9/",
+            "url": "https://www.aol.co.uk/articles/andy-burnham-failing-families-data-000100000.html",
             "url_mobile": "",
-            "title": "Landlords retaining portfolios see yields rise to 9 % ",
-            "seendate": "20261109T070000Z",
-            "socialimage": "https://www.propertywire.com/wp-content/uploads/2026/11/property-news-1794204103399.webp",
-            "domain": "propertywire.com",
+            "title": "Andy Burnham  failing familie as data shows 40 % rise in food prices , says SNP",
+            "seendate": "20261113T004500Z",
+            "socialimage": "https://hermes.media.static.aol.com/media/2026/11/13/e4a6777a-80c8-3dcc-b9d4-c1f8fc610782/3d4a1b51-25af-48d3-a9c8-2ed875a90123.jpg",
+            "domain": "aol.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           }
@@ -1203,7 +1173,7 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-10T00:59:55.265349+00:00",
+      "fetched_at_utc": "2026-11-13T22:14:32.927938+00:00",
       "payload": {
         "articles": [
           {
@@ -1217,22 +1187,82 @@
             "sourcecountry": "China"
           },
           {
-            "url": "https://www.perthnow.com.au/lifestyle/personal-finance/millions-of-households-face-severe-cash-crunch-as-37-per-cent-deplete-savings-c-23110843",
+            "url": "https://investinglive.com/central-banks/anz-says-rba-hike-bets-have-cooled-but-3-7-core-inflation-will-keep-it-cautious/",
             "url_mobile": "",
-            "title": "Millions of households face severe cash crunch as 37 per cent deplete savings",
-            "seendate": "20261109T070000Z",
-            "socialimage": "https://images.perthnow.com.au/publication/C-23110843/f8dcf4644d3aaccff85c9dd275ffd5978ea32164-16x9-x0y0w2048h1152.jpg?imwidth=1200",
-            "domain": "perthnow.com.au",
+            "title": "ANZ says RBA hike bets have cooled , but 3 . 7 % core inflation will keep it cautious",
+            "seendate": "20261112T034500Z",
+            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/Important%20level%20for%20AUD%20around%20here%2012%20November%202026-featured-1794452511.jpg?&format=webp",
+            "domain": "investinglive.com",
+            "language": "English",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://www.smh.com.au/money/borrowing/most-australians-don-t-have-a-mortgage-rate-rises-could-leave-them-better-off-20261110-p61cua.html",
+            "url_mobile": "",
+            "title": "Most Australians dont have a mortgage . Rate rises could leave them better off",
+            "seendate": "20261110T010000Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.706%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/4a7e4f2262acceea1a63a8bfaedffc843f2c2f25",
+            "domain": "smh.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.perthnow.com.au/news/business/the-greatest-loss-of-wealth-in-history-raises-doubts-about-the-future-of-artificial-intelligence-c-23124204",
+            "url": "https://www.brisbanetimes.com.au/money/borrowing/most-australians-don-t-have-a-mortgage-rate-rises-could-leave-them-better-off-20261110-p61cua.html",
             "url_mobile": "",
-            "title": "The greatest loss of wealth in history raises doubts about the future of artificial intelligence",
-            "seendate": "20261106T030000Z",
-            "socialimage": "https://images.perthnow.com.au/publication/C-23124204/74eee1c4bf42f933108a490bf4bd314a9bb36973-16x9-x0y209w4000h2250.jpg?imwidth=1200",
-            "domain": "perthnow.com.au",
+            "title": "Most Australians dont have a mortgage . Rate rises could leave them better off",
+            "seendate": "20261110T020000Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.706%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_brisbanetimes_opinion_no_age_social_wm/4a7e4f2262acceea1a63a8bfaedffc843f2c2f25",
+            "domain": "brisbanetimes.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://english.news.cn/20261111/64c2762a4a6b471dbf1b9138bf0377e2/c.html",
+            "url_mobile": "",
+            "title": "Australia reports largest quarterly fall in value of new home loans - Xinhua",
+            "seendate": "20261111T040000Z",
+            "socialimage": "",
+            "domain": "english.news.cn",
+            "language": "English",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://english.news.cn/asiapacific/20261111/9260ff1212cb4744adedb4940ada4ce9/c.html",
+            "url_mobile": "",
+            "title": "Australia reports largest quarterly fall in value of new home loans - Xinhua",
+            "seendate": "20261111T040000Z",
+            "socialimage": "",
+            "domain": "english.news.cn",
+            "language": "English",
+            "sourcecountry": ""
+          },
+          {
+            "url": "https://en.shafaqna.com/490460/australia-consumer-mood-drops/",
+            "url_mobile": "",
+            "title": "Australia consumer mood drops - Shafaqna English | International Shia News & Fatwas",
+            "seendate": "20261110T043000Z",
+            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2026/11/en.shafaqna-Australia-consumer-mood-drops.jpeg",
+            "domain": "en.shafaqna.com",
+            "language": "English",
+            "sourcecountry": "Saudi Arabia"
+          },
+          {
+            "url": "https://www.insurancejournal.com/news/international/2026/11/12/892331.htm",
+            "url_mobile": "https://amp.insurancejournal.com/news/international/2026/11/12/892331.htm",
+            "title": "Australian Companies Face  AI Washing  Claims After Wave of Job Cuts , Offshoring",
+            "seendate": "20261112T064500Z",
+            "socialimage": "https://www.insurancejournal.com/app/uploads/2026/02/artificial-intelligence-796868682-Depositphotos-scaled.jpg",
+            "domain": "insurancejournal.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.theadviser.com.au/borrower/49205-new-home-loans-suffer-largest-drop-on-record",
+            "url_mobile": "",
+            "title": "New home loans suffer largest drop on record",
+            "seendate": "20261111T063000Z",
+            "socialimage": "https://res.cloudinary.com/momentum-media-group-pty-ltd/image/upload/v1794361529/The%20Adviser/arrow-decline_ta_ift3mb.jpg",
+            "domain": "theadviser.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           }
@@ -1408,128 +1438,128 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-10T00:56:11.751732+00:00",
+      "fetched_at_utc": "2026-11-13T22:12:41.406449+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://alquds.com/ar/posts/270104",
+            "url": "https://dialogos.com.cy/dioikitis-kt-proeidopoiei-gia-energeiaki-akriveia-kai-kindynoys-apo-tn/",
             "url_mobile": "",
-            "title": "\u0631\u0626\u064a\u0633 \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u0637\u064a \u0627\u0644\u0641\u064a\u062f\u0631\u0627\u0644\u064a \u0628\u0646\u064a\u0648\u064a\u0648\u0631\u0643 : \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a \u0645\u062a\u064a\u0646 \u0644\u0643\u0646 \u0627\u0644\u062a\u0636\u062e\u0645 \u0644\u0627 \u064a\u0632\u0627\u0644 \u0645\u0631\u062a\u0641\u0639\u0627\u064b",
-            "seendate": "20261106T123000Z",
-            "socialimage": "https://cdn.alquds.com/uploads/1e27d8f314491249dca2a2de88f6e1f4.jpg",
-            "domain": "alquds.com",
+            "title": "\u0394\u03b9\u03bf\u03b9\u03ba\u03b7\u03c4\u03ae\u03c2 \u039a\u03a4 : \u03a0\u03c1\u03bf\u03b5\u03b9\u03b4\u03bf\u03c0\u03bf\u03b9\u03b5\u03af \u03b3\u03b9\u03b1 \u03b5\u03bd\u03b5\u03c1\u03b3\u03b5\u03b9\u03b1\u03ba\u03ae \u03b1\u03ba\u03c1\u03af\u03b2\u03b5\u03b9\u03b1 \u03ba\u03b1\u03b9 \u03ba\u03b9\u03bd\u03b4\u03cd\u03bd\u03bf\u03c5\u03c2 \u03b1\u03c0\u03cc \u03a4\u039d",
+            "seendate": "20261112T064500Z",
+            "socialimage": "",
+            "domain": "dialogos.com.cy",
+            "language": "Greek",
+            "sourcecountry": "Cyprus"
+          },
+          {
+            "url": "https://www.hellenicshippingnews.com/ing-our-latest-views-on-the-major-central-banks-9/",
+            "url_mobile": "",
+            "title": "ING : Our latest views on the major central banks | Hellenic Shipping News Worldwide",
+            "seendate": "20261111T023000Z",
+            "socialimage": "",
+            "domain": "hellenicshippingnews.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://www.hellenicshippingnews.com/outlook-2027-the-world-right-now/",
+            "url_mobile": "",
+            "title": "Outlook 2027 : The world right now | Hellenic Shipping News Worldwide",
+            "seendate": "20261111T023000Z",
+            "socialimage": "",
+            "domain": "hellenicshippingnews.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
+            "url": "https://arabic.euronews.com/2026/11/13/france-and-germany-are-close-to-reaching-an-agreement-on-de-cos-for-the-top-ecb-position-a",
+            "url_mobile": "",
+            "title": "\u0641\u0631\u0646\u0633\u0627 \u0648\u0623\u0644\u0645\u0627\u0646\u064a\u0627 \u062a\u0642\u062a\u0631\u0628\u0627\u0646 \u0645\u0646 \u0627\u062a\u0641\u0627\u0642 \u0639\u0644\u0649 \u062f\u064a \u0643\u0648\u0633 \u0644\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u0645\u0631\u0643\u0632\u064a \u0627\u0644\u0623\u0648\u0631\u0648\u0628\u064a \u0628\u0639\u062f \u062a\u062b\u0628\u064a\u062a \u0645\u0631\u0634\u062d\u064a\u0646",
+            "seendate": "20261113T180000Z",
+            "socialimage": "https://images.euronews.com/articles/stories/09/99/21/20/1200x675_cmsv2_bfda8024-3d62-562e-9b33-7c31581fd51a-9992120.jpg",
+            "domain": "arabic.euronews.com",
             "language": "Arabic",
-            "sourcecountry": "Israel"
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://www.e15.cz/nazory-a-analyzy/michluv-preventivni-uder-cnb-zvedla-sazby-na-ctyri-procenta-a-rozpoutala-novou-bitvu-s-babisem-1437148",
+            "url": "https://www.pressian.com/pages/articles/2026110917082776262",
+            "url_mobile": "https://m.pressian.com/m/pages/articles/2026110917082776262",
+            "title": "\uadf9\uc6b0\uc5d0 \ub9de\uc124 2027 \ud504\ub791\uc2a4\uc758 \uc120\ud0dd\uc740 \ub77c\uac00\ub974\ub4dc ? \uba5c\ub791\uc211 ? ",
+            "seendate": "20261110T033000Z",
+            "socialimage": "https://cdn.pressian.com/_resources/10/2026/11/10/2026101819083158844_x.jpg",
+            "domain": "pressian.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
+          },
+          {
+            "url": "https://www.miragenews.com/ecb-experience-in-monetary-policy-communication-1775435/",
             "url_mobile": "",
-            "title": "Michl\u016fv preventivn\u00ed \u00fader . \u010cNB zvedla sazby na \u010dty\u0159i procenta a rozpoutala novou bitvu s Babi\u0161em",
-            "seendate": "20261106T110000Z",
-            "socialimage": "https://1884403144.rsc.cdn77.org/foto/ales-michl-cnb-guverner-koruna/MTIwMHg2MzAvZmlsdGVyczpub191cHNjYWxlKDEpOndhdGVybWFyayhodHRwczovL2ltZy5jbmNlbnRlci5jei9kaXN0L2Fzc2V0cy9lMTUvd2F0ZXJtYXJrLWUxNS5wbmcsLTEwLDEwLDApOmZvY2FsKDUzMngyOTQ6ODIzeDY3MykvaW1n/9988293.jpg?v=0&st=Hw-4PxfTItmqWhL8IvPfgFI20XCHTqovWmgy3nuNrU8&ts=1600812000&e=0",
-            "domain": "e15.cz",
-            "language": "Czech",
-            "sourcecountry": "Czech Republic"
-          },
-          {
-            "url": "https://www.tanjug.rs/ekonomija/svet/296001/predsednica-evropske-centralne-banke-lagard-inflacija-ce-verovatno-ostati-visoka/vest",
-            "url_mobile": "https://www.tanjug.rs/ekonomija/svet/296001/predsednica-evropske-centralne-banke-lagard-inflacija-ce-verovatno-ostati-visoka/amp",
-            "title": "Predsednica Evropske centralne banke Lagard : Inflacija \u0107e verovatno ostati visoka",
-            "seendate": "20261107T183000Z",
-            "socialimage": "https://www.tanjug.rs/data/images/2026-11-07/439975_germany-european-central-bank-lagarde_s.jpg",
-            "domain": "tanjug.rs",
-            "language": "Serbian",
-            "sourcecountry": "Serbia"
-          },
-          {
-            "url": "https://www.journalgazette.net/ap/business/boe-hikes-rate-for-first-time-in-3-years-retreating-oil-prices-may-allow-for/article_aaeed8cb-4cd1-56d9-a660-7310666e9da4.html",
-            "url_mobile": "",
-            "title": "BoE hikes rate for first time in 3 years ; retreating oil prices may allow for more options ahead",
-            "seendate": "20261106T093000Z",
-            "socialimage": "https://bloximages.chicago2.vip.townnews.com/journalgazette.net/content/tncms/assets/v3/editorial/b/65/b6513a95-250d-5ea7-8720-438eaf5337ed/6aecf55ebbf59.image.jpg?crop=1763%2C926%2C0%2C124",
-            "domain": "journalgazette.net",
+            "title": "ECB Experience in Monetary Policy Communication : Science and Practice",
+            "seendate": "20261111T053000Z",
+            "socialimage": "https://www.ecb.europa.eu/sp261110_1/ecb.sp261110_1.en_img0.png?63e07fc0adb8bac5483430d66f7e3398",
+            "domain": "miragenews.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.mikrometoxos.gr/stournaras-anaptyxi-konta-sto-2-eos-to-2028-kabanaki-gia-tin-akriveia-kai-ton-plithorismo/",
+            "url": "https://www.politico.eu/article/germanys-missing-pipeline-of-economic-superstars-european-central-bank-president/",
             "url_mobile": "",
-            "title": "\u03a3\u03c4\u03bf\u03c5\u03c1\u03bd\u03ac\u03c1\u03b1\u03c2 : \u0391\u03bd\u03ac\u03c0\u03c4\u03c5\u03be\u03b7 \u03ba\u03bf\u03bd\u03c4\u03ac \u03c3\u03c4\u03bf 2 % \u03ad\u03c9\u03c2 \u03c4\u03bf 2028 \u2013 \u039a\u03b1\u03bc\u03c0\u03b1\u03bd\u03ac\u03ba\u03b9 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03b1\u03ba\u03c1\u03af\u03b2\u03b5\u03b9\u03b1 \u03ba\u03b1\u03b9 \u03c4\u03bf\u03bd \u03c0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03cc",
-            "seendate": "20261106T010000Z",
-            "socialimage": "https://www.mikrometoxos.gr/wp-content/uploads/2025/12/stournaras-2-e1671696238449-1024x586-1.jpg",
-            "domain": "mikrometoxos.gr",
+            "title": "Germany missing pipeline of economic superstars \u2013 POLITICO",
+            "seendate": "20261111T063000Z",
+            "socialimage": "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/11/08/GettyImages-2302002044-scaled.jpg",
+            "domain": "politico.eu",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.parkiet.com/gielda/art45476831-tansza-ropa-wspiera-popyt",
+            "url_mobile": "",
+            "title": "Ta\u0144sza ropa wspiera popyt",
+            "seendate": "20261112T064500Z",
+            "socialimage": "https://i.gremicdn.pl/image/free/4564627b7ffa4005ef3c6f538789204c/?t=crop:1742:1080:nowe:89:0,resize:fill:2000:1250&ctx=preview",
+            "domain": "parkiet.com",
+            "language": "Polish",
+            "sourcecountry": "Poland"
+          },
+          {
+            "url": "https://www.kathimerini.gr/economy/local/564583228/oi-misoi-ellines-den-mporoyn-na-kalypsoyn-ektaktes-dapanes/",
+            "url_mobile": "",
+            "title": "\u039f\u03b9 \u03bc\u03b9\u03c3\u03bf\u03af \u0395\u03bb\u03bb\u03b7\u03bd\u03b5\u03c2 \u03b4\u03b5\u03bd \u03bc\u03c0\u03bf\u03c1\u03bf\u03cd\u03bd \u03bd\u03b1 \u03ba\u03b1\u03bb\u03cd\u03c8\u03bf\u03c5\u03bd \u03ad\u03ba\u03c4\u03b1\u03ba\u03c4\u03b5\u03c2 \u03b4\u03b1\u03c0\u03ac\u03bd\u03b5\u03c2",
+            "seendate": "20261112T064500Z",
+            "socialimage": "https://www.kathimerini.gr/wp-content/uploads/2026/11/swm-5d2df65279aa24d3dbed701976865877_Athena-5-1-1200x630.jpg",
+            "domain": "kathimerini.gr",
             "language": "Greek",
             "sourcecountry": "Greece"
           },
           {
-            "url": "https://www.nin.rs/svet/vesti/128662/ecb-razmatra-novo-povecanje-kamatnih-stopa-zbog-visoke-inflacije",
+            "url": "https://english.news.cn/20261110/c8468abd5ef94cd7bf603d0a7dee25e5/c.html",
             "url_mobile": "",
-            "title": "ECB razmatra novo pove\u0107anje kamatnih stopa zbog visoke inflacije",
-            "seendate": "20261108T143000Z",
-            "socialimage": "https://www.nin.rs/data/images/2026-10-14/129007_tan2026-09-1015441904-5_og.jpg",
-            "domain": "nin.rs",
-            "language": "Serbian",
+            "title": "Roundup : Eurogroup discusses filling 3 top ECB posts - Xinhua",
+            "seendate": "20261110T003000Z",
+            "socialimage": "",
+            "domain": "english.news.cn",
+            "language": "English",
             "sourcecountry": ""
           },
           {
-            "url": "https://www.expressen.se/debatt/debatt-frankrike-visar-varfor-euron-fortfarande-ar-en-dalig-ide/",
+            "url": "https://english.news.cn/europe/20261110/7f0f10836dd94d2ab5ba4406ac870c74/c.html",
             "url_mobile": "",
-            "title": "DEBATT : Frankrike visar varf\u00f6r euron fortfarande \u00e4r en d\u00e5lig id\u00e9",
-            "seendate": "20261107T180000Z",
-            "socialimage": "https://static.bonniernews.se/images/a6/67/a66710ca65b54ef6a49e36835d29cf1e/16x9/original.png",
-            "domain": "expressen.se",
-            "language": "Swedish",
-            "sourcecountry": "Sweden"
-          },
-          {
-            "url": "https://www.finanzen.net/nachricht/devisen/devisen-euro-gibt-weiter-nach-kurs-faellt-wieder-unter-1-12er-marke-16043645",
-            "url_mobile": "",
-            "title": "Devisen : Euro gibt weiter nach - Kurs f\u00e4llt wieder unter 1 , 12er - Marke",
-            "seendate": "20261106T083000Z",
+            "title": "Roundup : Eurogroup discusses filling 3 top ECB posts - Xinhua",
+            "seendate": "20261110T003000Z",
             "socialimage": "",
-            "domain": "finanzen.net",
-            "language": "German",
-            "sourcecountry": "Germany"
+            "domain": "english.news.cn",
+            "language": "English",
+            "sourcecountry": ""
           },
           {
-            "url": "https://www.plovdiv24.bg/novini/Bylgaria/Britanski-finansist-Ako-stana-ministur-v-Bulgariya-veroyatno-shte-mi-tryabvat-bodigardove-3053134",
+            "url": "http://www.myanmarnews.net/news/279422791/eurogroup-discusses-filling-3-top-ecb-posts",
             "url_mobile": "",
-            "title": "\u0411\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u0438 \u0444\u0438\u043d\u0430\u043d\u0441\u0438\u0441\u0442 : \u0410\u043a\u043e \u0441\u0442\u0430\u043d\u0430 \u043c\u0438\u043d\u0438\u0441\u0442\u044a\u0440 \u0432 \u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f , \u0432\u0435\u0440\u043e\u044f\u0442\u043d\u043e \u0449\u0435 \u043c\u0438 \u0442\u0440\u044f\u0431\u0432\u0430\u0442 \u0431\u043e\u0434\u0438\u0433\u0430\u0440\u0434\u043e\u0432\u0435",
-            "seendate": "20261108T093000Z",
-            "socialimage": "https://i.id24.bg/i/3053134.webp",
-            "domain": "plovdiv24.bg",
-            "language": "Bulgarian",
-            "sourcecountry": "Bulgaria"
-          },
-          {
-            "url": "https://www.moravskoslezskenovinky.cz/zpravy/byznys/evropa-doplaci-na-drahe-energie-inflace-roste-prumysl-slabne/",
-            "url_mobile": "",
-            "title": "Moravskoslezsk\u00e9 novinky - Dom\u00e1c\u00ed - Evropa dopl\u00e1c\u00ed na drah\u00e9 energie . Inflace roste , pr\u016fmysl sl\u00e1bne",
-            "seendate": "20261106T080000Z",
-            "socialimage": "https://www.moravskoslezskenovinky.cz/repository/zpravy/7c3d0f33-d923-11f1-a43a-525400759392.jpg",
-            "domain": "moravskoslezskenovinky.cz",
-            "language": "Czech",
-            "sourcecountry": "Czech Republic"
-          },
-          {
-            "url": "https://www.b92.net/svi-komentari/283167",
-            "url_mobile": "",
-            "title": "Svi komentari - Nema\u010dki lanci dobijaju kineskog vlasnika : Posao vredan 2 , 2 milijarde evra",
-            "seendate": "20261108T103000Z",
-            "socialimage": "https://www.b92.net/data/images/2026-11-08/286472_shutterstock-1445581070_f.jpg",
-            "domain": "b92.net",
-            "language": "Serbian",
-            "sourcecountry": "Serbia"
-          },
-          {
-            "url": "https://www.b92.net/biz/svet/vesti/283167/nemacki-lanci-dobijaju-kineskog-vlasnika-posao-vredan-22-milijarde-evra/vest",
-            "url_mobile": "",
-            "title": "Nema\u010dki lanci dobijaju kineskog vlasnika : Posao vredan 2 , 2 milijarde evra",
-            "seendate": "20261108T103000Z",
-            "socialimage": "https://www.b92.net/data/images/2026-11-08/286472_shutterstock-1445581070_f.jpg",
-            "domain": "b92.net",
-            "language": "Serbian",
-            "sourcecountry": "Serbia"
+            "title": "Eurogroup discusses filling 3 top ECB posts",
+            "seendate": "20261110T003000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/210e097/43ff3158-4919-45ca-9799-09f5bdb036f9/0/CbsbeeE000281-20261110-PRMFN0A001-600x315.jpg",
+            "domain": "myanmarnews.net",
+            "language": "English",
+            "sourcecountry": "Myanmar"
           }
         ]
       }
@@ -1556,7 +1586,7 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-11-10T22:41:26.841490+00:00",
+      "fetched_at_utc": "2026-11-13T22:19:53.616913+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
