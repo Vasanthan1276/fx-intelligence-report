@@ -1,6 +1,6 @@
 # FX Intelligence reliability review — 13 November 2026
 
-Status: proposed on `review/fx-reliability-transparency`. No merge, deployment, account change or live-model change is authorised by this review.
+Status: reviewed on `review/fx-reliability-transparency`. The owner subsequently approved opening a PR and applying the dashboard changes, with the original layout retained. Live-model and account changes remain outside scope.
 
 ## Existing design and what works
 
@@ -26,7 +26,7 @@ The README contains the project roadmap. Phase 2C is deliberately frozen; Phase 
 | Shadow evaluator did not explicitly inspect logged `news_evidence_eligible` | Current sample has no count discrepancy, but future/legacy inconsistencies could matter | Additional evidence-gated audit with pending/excluded/missing/duplicate counts; retain original metrics for continuity |
 | Exact creation timestamps absent from older logs | Cannot establish exact historical information availability or execution timing | Record timestamps prospectively; prominently label this limitation; do not invent historical timestamps |
 | Chart errors only went to the console | Empty history or a missing CDN script leaves a blank chart | Visible errors with currency-selection retry |
-| Long source box consumes the first screen | Important recommendation pushed down | Compact header, navigation and summary table; classic option preserves familiar details |
+| Long source box consumes the first screen | Important recommendation pushed down | Compact header, navigation and summary table; separate Old dashboard page preserves the original layout using the same refreshed data |
 
 The official [ECB reference-rate downloads page](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) links `eurofxref-hist.zip` for time series and states its working-day publication cadence. During this review the ZIP had 7,135 observations from 1999-01-04 to 2026-11-12. A read-only API smoke check returned 1,793 rows for the requested seven-year window, also ending 2026-11-12. A real staged same-date check then completed without changing the model snapshot.
 
@@ -68,3 +68,7 @@ A portable HTML preview contains the exact generated dashboard, embedded history
 - MYR's embedded calendar has passed its final listed 2026 event. Updating that calendar can affect urgency and requires separate approval.
 - GDELT still shows rate limiting and thin coverage. This patch exposes it but does not expand source access or alter shadow semantics.
 - After approval, merge will cause the existing main-branch GitHub Pages workflow to publish. No merge, deployment, model-weight change, currency transaction, credential exposure, new paid service or account change has been performed.
+
+## Old dashboard retention
+
+`legacy_dashboard.py` preserves the original renderer from `ab46feb`, with return navigation, the same source-health monitoring and the tested history-error handling added. `dashboard.py` builds both `index.html` and `legacy.html`; the scheduled workflow commits both. The legacy page is an alternative layout of the current snapshot, not a frozen archive. No model or historical data changes are introduced by this follow-up.
