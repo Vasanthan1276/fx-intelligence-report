@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import html
 import json
+from datetime import datetime, timezone
+from review_ui import build_review, why
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -153,7 +155,7 @@ def meeting_text(item):
     if days is None:
         return date
     if days == 0:
-        return f"{date} · today"
+        return f"{date} · on snapshot day"
     if days == 1:
         return f"{date} · 1 day"
     return f"{date} · {days} days"
@@ -294,7 +296,7 @@ def build_shadow_performance_section(performance, currencies):
         n = stats.get("directional_calls", 0)
         accuracy = stats.get("directional_accuracy_pct")
         accuracy_text = "Pending" if not n or accuracy is None else f"{accuracy:.0f}%"
-        detail = "No matured directional calls yet" if not n else f"{stats.get('correct', 0)} correct · {stats.get('incorrect', 0)} incorrect · n={n}"
+        detail = "No matured directional calls yet" if not n else f"{stats.get('correct', 0)} correct · {stats.get('incorrect', 0)} incorrect · {stats.get('neutral_move', 0)} neutral · {n} matured"
         cards.append(f'<div class="perf-card shadow-perf-card"><span>{horizon} trading day{"s" if horizon != 1 else ""}</span><strong>{accuracy_text}</strong><small>{html.escape(detail)}</small></div>')
     rows = []
     for item in currencies:
@@ -338,7 +340,7 @@ def build_currency_cards(currencies):
         inflation_outlook = outlook_text(item.get("inflation_current_year"), item.get("inflation_current_pct"), item.get("inflation_next_year"), item.get("inflation_next_pct"))
 
         cards.append(f"""
-        <article class="currency-card" data-code="{item['code']}" data-score="{item['score']}">
+        <article class="currency-card" id="currency-{item['code']}" data-code="{item['code']}" data-score="{item['score']}">
           <div class="card-topline">
             <div>
               <div class="rank">#{rank} opportunity</div>
@@ -423,6 +425,7 @@ def build_currency_cards(currencies):
             <div class="allocation">{allocation}</div>
           </div>
 
+          <details class="why-panel"><summary>Why this recorded action?</summary><p>{html.escape(why(item))}</p></details>
           <div class="driver-columns">
             <div><h4>Market signals</h4><ul>{market_drivers}</ul></div>
             <div><h4>Macro signals</h4><ul>{macro_drivers}</ul></div>
@@ -488,7 +491,7 @@ def build_performance_section(performance, currencies):
         helpful = stats.get("helpful_rate_pct")
         avg = stats.get("average_action_benefit_pct")
         helpful_text = "Pending" if not matured or helpful is None else f"{helpful:.0f}%"
-        avg_text = "No matured signals yet" if not matured or avg is None else f"{avg:+.2f}% average action benefit · n={matured}"
+        avg_text = "No matured signals yet" if not matured or avg is None else f"{avg:+.2f}% average action benefit · {stats.get('helpful', 0) + stats.get('unhelpful', 0)} decisive / {matured} matured"
         summary_cards.append(f'<div class="perf-card"><span>{horizon} trading day{"s" if horizon != 1 else ""}</span><strong>{helpful_text}</strong><small>{html.escape(avg_text)}</small></div>')
     rows = []
     for item in currencies:
@@ -523,6 +526,17 @@ def main():
             shadow_performance = json.loads(SHADOW_PERFORMANCE_PATH.read_text(encoding="utf-8"))
         except Exception:
             shadow_performance = {}
+    status_path = DATA_DIR / "run_status.json"
+    audit_path = DATA_DIR / "validation_audit.json"
+    try:
+        status = json.loads(status_path.read_text()) if status_path.exists() else {}
+    except (ValueError, OSError):
+        status = {"state": "failed", "error": "Published run status is unreadable"}
+    try:
+        audit = json.loads(audit_path.read_text()) if audit_path.exists() else {}
+    except (ValueError, OSError):
+        audit = {}
+    compact_html, health_html, diagnostics_html, health_config = build_review(data, status, audit)
     currencies = data["currencies"]
     best = currencies[0]
     generated = data.get("generated_at_utc", "")
@@ -788,17 +802,48 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
 @media(max-width:1180px){{.cards{{grid-template-columns:repeat(2,minmax(0,1fr))}}.perf-cards{{grid-template-columns:repeat(2,1fr)}}.methodology{{grid-template-columns:repeat(3,1fr)}}.driver-columns{{grid-template-columns:repeat(2,1fr)}}}}
 @media(max-width:1050px){{.hero{{grid-template-columns:1fr}}.status-panel{{min-width:300px}}}}
 @media(max-width:680px){{.container{{padding:20px 14px 40px}}.perf-cards{{grid-template-columns:1fr}}.performance-meta{{flex-direction:column}}.topbar{{display:block}}.status-panel{{margin-top:18px;min-width:0}}.cards{{grid-template-columns:1fr}}.methodology{{grid-template-columns:1fr}}.chart-wrap{{height:300px}}.mini-grid{{grid-template-columns:1fr 1fr}}.urgency-grid{{grid-template-columns:1fr}}.forward-grid{{grid-template-columns:1fr}}.shadow-grid{{grid-template-columns:1fr 1fr}}.score-split{{grid-template-columns:1fr}}.driver-columns{{grid-template-columns:1fr}}.daily-change-row{{align-items:flex-start;flex-direction:column}}.daily-change-row strong{{justify-content:flex-start}}}}
+
+.review-nav{{display:flex;flex-wrap:wrap;gap:8px;padding:12px 0 20px;align-items:center}}
+.review-nav a{{padding:9px 14px;border:1px solid var(--line);border-radius:9px;text-decoration:none;background:var(--panel);font-size:.85rem}}
+.review-nav a:hover,.review-nav a:focus-visible{{border-color:var(--cyan);color:var(--cyan)}}
+#layout-toggle{{margin-left:auto}}
+.model-lock{{font-size:.8rem;font-weight:700;color:var(--cyan)}}
+.status-panel summary,summary{{cursor:pointer;font-weight:700;color:var(--cyan);padding:6px 0}}
+.status-panel:not([open]){{min-width:250px}}
+.review-panel{{margin:24px 0;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--panel);scroll-margin-top:18px}}
+.review-panel p{{line-height:1.6;color:var(--muted);font-size:.85rem}}
+.review-panel h2{{margin:0 0 12px}}
+.review-panel h3{{margin-top:24px}}
+.review-panel .table-panel{{border-radius:10px;overflow-x:auto}}
+.review-panel td{{white-space:normal;min-width:100px;font-size:.8rem}}
+.review-panel th{{font-size:.75rem}}
+.freshness-banner{{border-radius:12px;padding:15px 18px;line-height:1.6;font-size:.88rem;border:1px solid var(--line)}}
+.warning{{background:#2b2418;border-color:#806432;color:#ffe1a0}}
+.healthy{{background:#0e2c2b;border-color:#287260;color:#adf3d8}}
+.workflow-check{{font-size:.78rem;color:var(--muted);line-height:1.6}}
+.job-failed{{color:var(--red);font-weight:700}}
+.why-panel{{padding:12px 15px;background:#091625;border:1px solid var(--line);border-radius:10px;margin-top:15px}}
+.why-panel p{{font-size:.84rem;line-height:1.6;color:#c2d3e7}}
+#chart-error{{padding:15px;color:var(--amber)}}
+.classic-layout .review-only{{display:none}}
+.classic-layout .review-nav a[href="#quick-review"]{{display:none}}
+@media(max-width:680px){{.review-panel{{padding:14px}}.review-nav{{gap:6px}}.review-nav a{{padding:8px;font-size:.78rem}}#layout-toggle{{margin-left:0}}.status-panel:not([open]){{min-width:0}}}}
 </style>
+<script>window.fxReviewConfig = {health_config};</script>
+<script src="dashboard-health.js" defer></script>
 </head>
 <body>
 <div class="container">
-  <header class="topbar">
+  <nav class="review-nav" aria-label="Dashboard sections"><a href="#overview">Overview</a><a href="#quick-review">Currencies</a><a href="#validation-audit">Validation</a><a href="#source-health">Source health</a><a href="#chartSection">History</a><a href="#methodology">Guide</a><a id="layout-toggle" href="?layout=classic">Classic layout</a></nav>
+  <header class="topbar" id="overview">
     <div>
       <div class="eyebrow">Personal currency decision support · Phase 3A.3 direction-semantics shadow mode · 7 currencies</div>
       <h1>V FX Intelligence</h1>
-      <p class="subtitle">The Phase 2C baseline remains frozen. Phase 3A.3 keeps the separate news/event shadow layer pair-aware and relevance-filtered, with stricter official-source admission, English-language interpretation and minimum directional evidence.</p>
+      <p class="subtitle">When to convert SGD into foreign currency. Review value, timing and evidence across seven currencies.</p>
+      <p class="model-lock">Phase 2C baseline frozen · Phase 3A.3 shadow only · 0% news weight</p>
+      <p class="subtitle">Snapshot updated <strong id="snapshot-time">{html.escape(generated)} UTC</strong> · daily reference rates, not live quotes</p>
     </div>
-    <div class="status-panel">
+    <details class="status-panel" id="source-details"><summary>Snapshot & source details</summary>
       <div><span>Market data</span><strong>{market_date}</strong></div>
       <div><span>Model</span><strong>{model_version}</strong></div>
       <div><span>Monitoring release</span><strong>{app_release}</strong></div>
@@ -812,12 +857,14 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <div><span>News/event shadow</span><strong>{news_event_source}</strong></div>
       <div><span>Shadow run (SGT)</span><strong>{news_run_date_sgt}</strong></div>
       <div><span>Cross-check</span><strong>{validation_source}</strong></div>
-    </div>
+    </details>
   </header>
 
+  <div id="freshness-banner" class="freshness-banner warning" role="status">Snapshot observation: {market_date}. Freshness needs JavaScript to evaluate against today's date. Last recorded update: {html.escape(str(status.get('state', 'unknown')))}. Check source health and Actions.</div>
+  <p id="workflow-check" class="workflow-check">Current GitHub job status not checked yet. <a href="https://github.com/Vasanthan1276/fx-intelligence-report/actions/workflows/update-fx.yml">View Actions</a></p>
   <section class="hero">
     <div class="hero-card">
-      <h3>Best current opportunity</h3>
+      <h3>Highest-ranked recorded opportunity</h3>
       <div class="hero-opportunity"><span>{best['code']}</span> · {html.escape(best['recommendation'])}</div>
       <div class="hero-score"><strong>{best['score']:.2f}/5</strong>{score_delta_badge(best, 'opportunity_score')}<span>Opportunity · {rate_text(best)}</span></div>
       <div class="hero-split">
@@ -834,10 +881,11 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <p class="hero-macro">Macro view: {html.escape(best_macro_driver)}</p>
       <p class="hero-macro">Forward view: {html.escape(best_forward_driver)}</p>
       <p class="hero-macro">Timing view: {html.escape(best.get('urgency_drivers', ['No urgency signal available.'])[0])}</p>
+      <details class="why-panel" open><summary>Why this action?</summary><p>{html.escape(why(best))}</p></details>
       <p class="hero-macro">Phase 3A.3 shadow: {best_shadow_score:.2f}/5 · {html.escape(best_shadow_label)} · {best_shadow_confidence}% headline confidence. This does not affect the action.</p>
     </div>
     <div class="hero-side">
-      <h3>Suggested action</h3>
+      <h3>Recorded Phase 2C action</h3>
       <div class="big-action">{html.escape(best['suggested_action'])}</div>
       <p><strong>Historical valuation:</strong> {html.escape(best.get('zone_status', '—'))}<br>
       <strong>Attractive-value threshold:</strong> {level_text(best, best.get('buy_zone_upper_sgd'))}<br>
@@ -846,15 +894,18 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
       <strong>Buy urgency:</strong> {best_urgency:.2f}/5 · {html.escape(best_urgency_label)}<br>
       <strong>Model/data quality:</strong> {best_decision_confidence}% · {best_signal_agreement}% signal agreement<br>
       <strong>Next policy event:</strong> {html.escape(meeting_text(best))} · {html.escape(best.get('event_risk_label', '—'))} risk</p>
-      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's current suggested first tranche. Phase 3A.3 keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
+      <p>{best['suggested_buy_pct']}% of your planned discretionary conversion is the model's recorded suggested first tranche. Phase 3A.3 keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
     </div>
   </section>
 
+  {compact_html}
   <div class="section-header">
     <div><h2>Currency opportunity ranking</h2><p>Highest Opportunity Score first. Forward Outlook and Buy Urgency are shown separately so valuation is not confused with timing pressure.</p></div>
   </div>
   <section class="cards">{cards_html}</section>
 
+  {health_html}
+  {diagnostics_html}
   {performance_html}
 
   {shadow_performance_html}
@@ -865,11 +916,12 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   <section class="chart-panel" id="chartSection">
     <div class="chart-toolbar">
       <h3 id="chartTitle">{best['code']} cost history</h3>
-      <select id="currencySelect" onchange="showCurrency(this.value, false)">
+      <select id="currencySelect" aria-label="Chart currency" onchange="showCurrency(this.value, false)">
         {''.join(f'<option value="{item["code"]}" {"selected" if item["code"] == best["code"] else ""}>{item["code"]} — {html.escape(item["name"])}</option>' for item in currencies)}
       </select>
     </div>
-    <div class="chart-wrap"><canvas id="fxChart"></canvas></div>
+    <p id="chart-error" role="status" hidden></p>
+    <div class="chart-wrap"><canvas id="fxChart" aria-label="Currency reference-rate history"></canvas></div>
   </section>
 
   <div class="section-header">
@@ -885,7 +937,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
   <div class="section-header">
     <div><h2>Phase 3A.3 semantics & source-quality experiment · Phase 2C baseline remains frozen</h2><p>Phase 3A.3 observes only headlines that pass the target-currency relevance gate, uses pair-aware direction semantics, and admits official central-bank items only when they contain policy, macro, rate or FX content. Shadow intelligence is measured independently and cannot change Opportunity, Forward Outlook, Buy Urgency or the recommendation.</p></div>
   </div>
-  <section class="methodology">
+  <section class="methodology" id="methodology">
     <div class="method-card"><strong>Frozen</strong><span>Phase 2C core weights are locked during the baseline observation period so later changes can be measured cleanly.</span></div>
     <div class="method-card"><strong>Δ Daily</strong><span>Opportunity, Forward Outlook and Buy Urgency changes are compared with the previous available market day.</span></div>
     <div class="method-card"><strong>70%</strong><span>Market intelligence in the Opportunity Score when full macro data is available: historical value, trend, momentum and volatility.</span></div>
@@ -897,12 +949,12 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: valuation rarity.</span></div>
     <div class="method-card"><strong>20%</strong><span>Buy Urgency: upcoming policy-event setup.</span></div>
     <div class="method-card"><strong>Quality</strong><span>Model/data quality reflects history length, source validation and macro coverage. It is not a probability that the recommendation will be correct.</span></div>
-    <div class="method-card"><strong>Shadow</strong><span>GDELT headlines from the last 72 hours are screened for strengthening/weakening signals. Headline heuristics do not read full article text.</span></div>
+    <div class="method-card"><strong>Shadow</strong><span>GDELT headlines from the last 96 hours (with a 7-day fallback) are screened for strengthening/weakening signals. Headline heuristics do not read full article text.</span></div>
     <div class="method-card"><strong>0%</strong><span>Phase 3A.3 news/event weight in the recommendation. It stays at zero until shadow-mode performance provides evidence that it adds value.</span></div>
   </section>
 
   <div class="notice"><strong>Phase 3A.3 shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The shadow layer now applies a hard target-currency relevance gate, pair-aware cross-currency direction semantics, a stricter official-content gate, English-language filtering and context-aware classification before scoring. Coverage is Strong, Adequate, Thin or Unavailable, and a minimum-evidence rule must pass before a directional call is validated. The shadow layer is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> scoring is still headline/summary heuristic analysis rather than full-text or LLM interpretation, but generic uses of words such as “easing” no longer count unless they refer to monetary policy. Explicit against/versus and ticker-pair relationships are interpreted from the target currency viewpoint, but the headline-only model may still miss nuance, conditional statements or more complex multi-asset relationships. “Headline confidence” measures data coverage, source diversity, official-source participation and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
-  <footer>Generated automatically by GitHub Actions · Last build {html.escape(generated)}</footer>
+  <footer>Model snapshot: {html.escape(generated)} UTC · Page rendered: {datetime.now(timezone.utc).isoformat()} UTC</footer>
 </div>
 
 <script>
@@ -914,11 +966,16 @@ async function loadHistory() {{
   if (historyData) return historyData;
   const response = await fetch('data/fx_history.json', {{cache:'no-store'}});
   if (!response.ok) throw new Error('Could not load FX history data');
-  historyData = await response.json();
+  const loaded = await response.json();
+  if (!Array.isArray(loaded.records) || !loaded.records.length) throw new Error('Historical dataset is empty or malformed');
+  historyData = loaded;
   return historyData;
 }}
 
 async function showCurrency(code, shouldScroll = true) {{
+  const errorBox = document.getElementById('chart-error');
+  errorBox.hidden = true;
+  try {{
   const select = document.getElementById('currencySelect');
   select.value = code;
   document.getElementById('chartTitle').textContent = `${{code}} cost history`;
@@ -926,7 +983,9 @@ async function showCurrency(code, shouldScroll = true) {{
     document.getElementById('chartSection').scrollIntoView({{behavior:'smooth', block:'start'}});
   }}
   const data = await loadHistory();
-  const filtered = data.records.filter(row => row[code] !== null && row[code] !== undefined);
+  const filtered = data.records.filter(row => Number.isFinite(row[code]) && row[code] > 0);
+  if (!filtered.length) throw new Error('No historical observations for ' + code);
+  if (typeof Chart === 'undefined') throw new Error('Chart library unavailable');
   const labels = filtered.map(row => row.date);
   const values = filtered.map(row => row[code]);
   const meta = currencyMeta[code];
@@ -953,6 +1012,12 @@ async function showCurrency(code, shouldScroll = true) {{
       scales:{{x:{{ticks:{{color:'#7188a2', maxTicksLimit:8}}, grid:{{color:'rgba(86,110,140,.10)'}}}},y:{{ticks:{{color:'#7188a2'}}, grid:{{color:'rgba(86,110,140,.12)'}}}}}}
     }}
   }});
+  }} catch (err) {{
+    if (chart) {{ chart.destroy(); chart = null; }}
+    historyData = null;
+    errorBox.hidden = false;
+    errorBox.textContent = 'History unavailable: ' + err.message + '. Select a currency to retry. Recorded recommendations above are unchanged.';
+  }}
 }}
 
 // Build the initial chart without moving the viewport. This fixes the previous
