@@ -806,7 +806,7 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
 .review-nav{{display:flex;flex-wrap:wrap;gap:8px;padding:12px 0 20px;align-items:center}}
 .review-nav a{{padding:9px 14px;border:1px solid var(--line);border-radius:9px;text-decoration:none;background:var(--panel);font-size:.85rem}}
 .review-nav a:hover,.review-nav a:focus-visible{{border-color:var(--cyan);color:var(--cyan)}}
-#layout-toggle{{margin-left:auto}}
+#old-dashboard-link{{margin-left:auto}}
 .model-lock{{font-size:.8rem;font-weight:700;color:var(--cyan)}}
 .status-panel summary,summary{{cursor:pointer;font-weight:700;color:var(--cyan);padding:6px 0}}
 .status-panel:not([open]){{min-width:250px}}
@@ -827,14 +827,14 @@ footer{{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}}
 #chart-error{{padding:15px;color:var(--amber)}}
 .classic-layout .review-only{{display:none}}
 .classic-layout .review-nav a[href="#quick-review"]{{display:none}}
-@media(max-width:680px){{.review-panel{{padding:14px}}.review-nav{{gap:6px}}.review-nav a{{padding:8px;font-size:.78rem}}#layout-toggle{{margin-left:0}}.status-panel:not([open]){{min-width:0}}}}
+@media(max-width:680px){{.review-panel{{padding:14px}}.review-nav{{gap:6px}}.review-nav a{{padding:8px;font-size:.78rem}}#old-dashboard-link{{margin-left:0}}.status-panel:not([open]){{min-width:0}}}}
 </style>
 <script>window.fxReviewConfig = {health_config};</script>
 <script src="dashboard-health.js" defer></script>
 </head>
 <body>
 <div class="container">
-  <nav class="review-nav" aria-label="Dashboard sections"><a href="#overview">Overview</a><a href="#quick-review">Currencies</a><a href="#validation-audit">Validation</a><a href="#source-health">Source health</a><a href="#chartSection">History</a><a href="#methodology">Guide</a><a id="layout-toggle" href="?layout=classic">Classic layout</a></nav>
+  <nav class="review-nav" aria-label="Dashboard sections"><a href="#overview">Overview</a><a href="#quick-review">Currencies</a><a href="#validation-audit">Validation</a><a href="#source-health">Source health</a><a href="#chartSection">History</a><a href="#methodology">Guide</a><a id="old-dashboard-link" href="legacy.html">Old dashboard</a></nav>
   <header class="topbar" id="overview">
     <div>
       <div class="eyebrow">Personal currency decision support · Phase 3A.3 direction-semantics shadow mode · 7 currencies</div>
@@ -1033,6 +1033,8 @@ window.addEventListener('load', () => {{
 
     OUTPUT_PATH.write_text(html_page, encoding="utf-8")
     print(f"Dashboard written to {OUTPUT_PATH}")
+    from legacy_dashboard import main as render_old_dashboard
+    render_old_dashboard()
 
 
 if __name__ == "__main__":
