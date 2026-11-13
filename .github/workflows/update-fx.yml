@@ -1,53 +1,55 @@
 name: Update FX Intelligence
-
 on:
   workflow_dispatch:
   schedule:
-    # Primary run: 16:30 UTC Monday-Friday = 00:30 Singapore time the following day.
+    # 00:30 / 01:30 Singapore time the following day (Tuesday–Saturday).
     - cron: "30 16 * * 1-5"
-    # Backup run one hour later. main.py exits as a no-op when the same market date
-    # has already been processed by this monitoring release, so a successful primary
-    # run will not create a second data commit.
     - cron: "30 17 * * 1-5"
-
 permissions:
   contents: write
-
 concurrency:
-  group: fx-intelligence-update
+  group: fx-intelligence-update-${{ github.ref }}
   cancel-in-progress: false
-
 jobs:
   update:
+    # Review branches must never update or publish the main dashboard.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-
+    timeout-minutes: 40
     steps:
       - name: Check out repository
+        id: checkout
         uses: actions/checkout@v4
-
       - name: Set up Python
+        id: python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-
       - name: Install dependencies
+        id: dependencies
         run: pip install -r requirements.txt
-
       - name: Update FX data, scores and performance
-        run: python main.py
-
-      - name: Rebuild dashboard
-        run: python dashboard.py
-
-      - name: Commit updated data
+        id: update
+        run: python run_update.py
+      - name: Record setup failure
+        if: always() && steps.checkout.outcome == 'success' && steps.update.outcome == 'skipped'
+        run: python3 run_update.py --record-failure "Update did not run; setup failed or was cancelled. See Actions."
+      - name: Rebuild dashboard, including failure status
+        id: dashboard
+        if: always() && steps.checkout.outcome == 'success'
+        run: python3 dashboard.py
+      - name: Commit snapshot and health status
+        if: always() && steps.dashboard.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data index.html
+          git add data index.html legacy.html
           if git diff --cached --quiet; then
-            echo "No changes to commit. Primary run may already have processed this market date."
+            echo "No changes to commit."
           else
-            git commit -m "Update FX intelligence data"
+            git commit -m "Update FX snapshot and source health"
             git push
           fi
+      # A failed step keeps the overall run red even if its status is published.
+      # There is deliberately no continue-on-error.

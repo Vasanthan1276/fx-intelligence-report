@@ -102,15 +102,17 @@ For example, a currency can be at **Exceptional Historical Value** while the act
 
 ## Recommendation scale
 
-| Opportunity Score | Recommendation |
-|---|---|
-| 4.50–5.00 | Exceptional Buy |
-| 4.00–4.49 | Buy |
-| 3.50–3.99 | Accumulate |
-| 3.00–3.49 | Light Accumulate |
-| 2.25–2.99 | Wait |
-| 1.50–2.24 | Expensive |
-| 0.00–1.49 | Avoid |
+| Opportunity Score | Urgency condition | Recommendation | Tranche |
+|---|---|---|---|
+| ≥4.50 | ≥3.75 / <3.75 | Exceptional Buy / Strong Buy | 40% / 30% |
+| 4.00–4.49 | ≥3.50 / <3.50 | Buy Now / Buy | 30% / 25% |
+| 3.50–3.99 | ≥4.00 / 2.50–3.99 / <2.50 | Accumulate Now / Accumulate / Patient Accumulate | 20% / 15% / 10% |
+| 3.00–3.49 | ≥4.00 / <4.00 | Light Accumulate / Wait | 10% / 0% |
+| 2.25–2.99 | Any | Wait | 0% |
+| 1.50–2.24 | Any | Expensive | 0% |
+| <1.50 | Any | Avoid | 0% |
+
+This table documents the existing `recommendation_from_score` function; it does not change the model.
 
 Suggested tranche percentages are staged-conversion guidance, not financial advice.
 
@@ -205,7 +207,7 @@ These figures are monitoring statistics, not proof of future predictive accuracy
 
 ### Exchange rates
 
-**Primary:** European Central Bank daily reference-rate history, transformed into SGD cross-rates.
+**Primary:** European Central Bank Data Portal API daily reference-rate history, transformed into SGD cross-rates. **Fallback:** the official [historical CSV ZIP](https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip). The bare CSV URL returned legacy 2010 sample data during the November 2026 review and is no longer used.
 
 **Secondary validation:** Yahoo Finance market snapshot when available.
 
@@ -268,7 +270,7 @@ GitHub Actions runs on weekdays:
 
 The workflow can also be run manually from the **Actions** tab.
 
-The backup run exists for resilience. If the primary run has already completed successfully, the second run should normally result in no meaningful new model data.
+The backup run exists for resilience. If the primary run has already completed successfully, the second run should normally result in no meaningful new model data. It still records a successful FX check; it does not relabel old macro/news inputs as newly fetched.
 
 ## GitHub Pages setup
 
@@ -310,3 +312,40 @@ The intended use is **staged currency buying with transparent evidence**, rather
 - Phase 3A.2 — relevance filtering ✅
 - **Phase 3A.3 — direction semantics, official-source quality and GDELT pacing/cache ✅**
 - Future Phase 3B — deeper semantic/full-text news interpretation, only if shadow performance demonstrates value
+
+
+## Reliability and review improvements (proposed, November 2026)
+
+Run `python run_update.py` for updates, then `python dashboard.py` for the page. The wrapper stages a complete update, validates its JSON and history logs, and promotes files only after calculations complete. Run it from an isolated checkout when experimenting. Direct `main.py` execution bypasses staging and is not the supported operational entry point.
+
+- ECB GETs retry transient network errors and HTTP 408/429/500/502/503/504 at most three times per source, with bounded backoff. Invalid data triggers the alternate official source; it is never accepted as current merely because HTTP succeeded.
+- Empty, incomplete, implausible, future-dated, or >14-day-old history is rejected. The 14-day ingestion limit preserves the previous hard guard. The page's more sensitive freshness warning independently compares the observation with the expected ECB working-day release (two hours of grace; weekends and TARGET closing days accounted for).
+- `data/run_status.json` distinguishes a completed update, a successful check with no new market date, and failure with a retained snapshot. It records attempts, source errors, chosen source, model timestamp, check time and workflow link. A backup run never fabricates a new observation or advances the model timestamp just for checking.
+- The page checks public GitHub job status on load without credentials. If that check fails, it says status is unavailable. It also warns when the weekday backup schedule has been missed, allowing eight hours for observed GitHub scheduling delays. If setup, publishing or checkout fails before status can be published, Actions and the overdue warning remain the fallback monitors.
+- Failed updates keep the Actions run red, while the workflow attempts to rebuild and commit the failure banner using the previous model snapshot. Job-level timeout, cancellation or failure to push can still prevent status publication; no static site can guarantee otherwise.
+- Missing BIS/IMF components retain the existing Phase 2C reduced-coverage behavior. No weights or thresholds were changed. Source gaps are visible per currency. Same-market-date no-op runs recheck ECB only; ancillary inputs retain their snapshot timestamps.
+- `data/validation_audit.json` adds matured/pending/excluded/missing/duplicate counts without rewriting the historical performance series. Its shadow audit explicitly requires the logged evidence-eligibility flag. Old performance is retrospective and lacks exact creation times; new log entries include UTC creation times. Neither the old metrics nor this audit establish predictive value.
+- Review navigation, a compact currency table, source-health details, readable action explanations and visible chart errors are added. `?layout=classic` retains the familiar expanded source panel and original detailed sections, with shared safety/status improvements.
+
+### Verification
+
+```sh
+python -m unittest discover -s tests -v
+node --test tests/dashboard.test.cjs
+python dashboard.py
+```
+
+The golden fixture was captured from original commit `ab46feb6144ecf0ee68e7df4a0ebf55af60d73ac` with a fixed date and deterministic inputs. It compares all currency output fields under full, partial and missing macro coverage. It is a regression guard, not performance evidence.
+
+### Next steps, requiring separate scope/approval
+
+1. Record IMF release vintages and Yahoo quote timestamps; assess their staleness explicitly.
+2. Audit exact signal availability versus reference-fixing time before considering predictive claims; continue accumulating evidence at 0% news weight.
+3. Review expired official policy calendars (including MYR) in a separate model-input change with approval, because calendar changes can affect urgency.
+4. Consider reducing GDELT request volume after collecting transport diagnostics; do not change admission rules or live weights in this reliability patch.
+
+See [review findings and test plan](docs/REVIEW.md). Merge and GitHub Pages publication require the owner's explicit approval.
+
+### Dashboard layouts
+
+The navigation's **Old dashboard** link opens `legacy.html`, preserving the original layout. Its **Updated dashboard** link returns to the new overview. Both pages regenerate from the same data on every scheduled update and show the same freshness and failure warnings. Previously shared `?layout=classic` links redirect to the old layout. This presentation choice does not affect recommendations or shadow weights.

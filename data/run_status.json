@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "state": "no_new_market_data",
+  "run_context": "local",
+  "using_cached_snapshot": true,
+  "last_attempt_at_utc": "2026-11-13T09:29:46.430624+00:00",
+  "completed_at_utc": "2026-11-13T09:29:58.267107+00:00",
+  "last_successful_check_at_utc": "2026-11-13T09:29:58.267122+00:00",
+  "last_model_update_at_utc": "2026-11-12T22:44:27.061103+00:00",
+  "market_date": "2026-11-12",
+  "run_url": null,
+  "fx_fetch": {
+    "checked_at_utc": "2026-11-13T09:29:46.959101+00:00",
+    "sources": [
+      {
+        "name": "ECB Data Portal API",
+        "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY+GBP+AUD+MYR+CHF+SGD.EUR.SP00.A",
+        "status": "available",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "received"
+          }
+        ],
+        "latest_observation": "2026-11-12"
+      }
+    ],
+    "selected_source": "ECB Data Portal API"
+  },
+  "previous_failure": null
+}

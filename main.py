@@ -16,6 +16,7 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 import requests
+from reliability import fetch_history, validate_history
 
 try:
     import yfinance as yf
@@ -35,7 +36,7 @@ ECB_API_URL = (
     "https://data-api.ecb.europa.eu/service/data/EXR/"
     f"D.{ECB_QUERY}.EUR.SP00.A"
 )
-ECB_STATIC_CSV = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.csv"
+ECB_STATIC_ZIP = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip"
 
 # Foreign currencies we want to evaluate from the perspective of a Singapore-dollar buyer.
 # unit=100 for JPY so the dashboard shows the familiar cost of JPY 100.
@@ -1346,12 +1347,13 @@ def update_news_shadow_log(news_shadow: Dict[str, dict], signals: List[CurrencyS
     path = DATA_DIR / "news_shadow_log.json"
     try:
         records = json.loads(path.read_text(encoding="utf-8")).get("records", []) if path.exists() else []
-    except Exception:
-        records = []
+    except Exception as exc:
+        raise ValueError("Cannot read shadow log; refusing to replace historical data") from exc
     run_date_sgt = datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
     by_code = {signal.code: signal for signal in signals}
     row = {
         "run_date_sgt": run_date_sgt,
+        "observed_at_utc": datetime.now(timezone.utc).isoformat(),
         "market_date": market_date,
         "app_release": APP_RELEASE,
         "shadow_mode": True,
@@ -1459,81 +1461,16 @@ def write_news_shadow_performance(series_map: Dict[str, pd.Series]) -> None:
     (DATA_DIR / "news_shadow_performance.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
+# Transport and validation are separate from the frozen scoring functions.
+FX_FETCH_DIAGNOSTICS = {}
+
+
 def fetch_ecb_history(years: int = 7) -> Tuple[pd.DataFrame, str]:
-    """Fetch official ECB daily reference rates and return a wide dataframe.
-
-    ECB rates are quoted as units of foreign currency per EUR.
-    The returned dataframe is indexed by date and contains USD/JPY/GBP/AUD/MYR/CHF/SGD.
-    """
-    start_period = (pd.Timestamp.utcnow().normalize() - pd.DateOffset(years=years)).date().isoformat()
-
-    # Primary method: ECB Data Portal API.
-    try:
-        response = _http_get(
-            ECB_API_URL,
-            params={"format": "csvdata", "startPeriod": start_period},
-        )
-        raw = pd.read_csv(io.StringIO(response.text))
-        required = {"TIME_PERIOD", "OBS_VALUE", "CURRENCY"}
-        if not required.issubset(raw.columns):
-            raise ValueError(f"Unexpected ECB API columns: {list(raw.columns)}")
-
-        raw["TIME_PERIOD"] = pd.to_datetime(raw["TIME_PERIOD"], errors="coerce")
-        raw["OBS_VALUE"] = pd.to_numeric(raw["OBS_VALUE"], errors="coerce")
-        raw = raw.dropna(subset=["TIME_PERIOD", "OBS_VALUE", "CURRENCY"])
-        wide = raw.pivot_table(
-            index="TIME_PERIOD",
-            columns="CURRENCY",
-            values="OBS_VALUE",
-            aggfunc="last",
-        ).sort_index()
-        wide.index.name = "Date"
-        validate_ecb_dataframe(wide)
-        return wide, "ECB Data Portal API"
-    except Exception as api_error:
-        print(f"ECB API fetch failed; trying ECB historical CSV fallback: {api_error}")
-
-    # Fallback method: ECB historical CSV download.
-    response = _http_get(ECB_STATIC_CSV)
-    wide = pd.read_csv(io.StringIO(response.text))
-    if "Date" not in wide.columns:
-        raise ValueError("ECB CSV fallback does not contain a Date column.")
-    wide["Date"] = pd.to_datetime(wide["Date"], errors="coerce")
-    wide = wide.dropna(subset=["Date"]).set_index("Date").sort_index()
-    for column in ECB_CURRENCIES:
-        if column in wide.columns:
-            wide[column] = pd.to_numeric(wide[column], errors="coerce")
-    wide = wide.loc[wide.index >= pd.Timestamp(start_period)]
-    validate_ecb_dataframe(wide)
-    return wide, "ECB historical CSV fallback"
+    return fetch_history(years, _http_get, FX_FETCH_DIAGNOSTICS)
 
 
 def validate_ecb_dataframe(df: pd.DataFrame) -> None:
-    missing = [c for c in ECB_CURRENCIES if c not in df.columns]
-    if missing:
-        raise ValueError(f"ECB data is missing required currencies: {missing}")
-    if df.empty:
-        raise ValueError("ECB data is empty.")
-
-    latest_date = pd.Timestamp(df.dropna(subset=["SGD"]).index.max()).tz_localize(None)
-    age_days = (pd.Timestamp.utcnow().tz_localize(None).normalize() - latest_date.normalize()).days
-    if age_days > 14:
-        raise ValueError(f"ECB data appears stale. Latest observation is {latest_date.date()}.")
-
-    latest = df.loc[latest_date]
-    plausibility = {
-        "USD": (0.5, 2.5),
-        "JPY": (50.0, 300.0),
-        "GBP": (0.4, 1.5),
-        "AUD": (0.8, 3.0),
-        "MYR": (2.0, 8.0),
-        "CHF": (0.5, 1.8),
-        "SGD": (0.8, 3.0),
-    }
-    for code, (low, high) in plausibility.items():
-        value = float(latest[code])
-        if not low <= value <= high:
-            raise ValueError(f"Implausible ECB value for {code}: {value}")
+    validate_history(df)
 
 
 def build_sgd_cost_series(ecb: pd.DataFrame) -> Dict[str, pd.Series]:
@@ -2972,14 +2909,15 @@ def update_score_log(signals: List[CurrencySignal]) -> None:
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
             records = payload.get("records", [])
-        except Exception:
-            records = []
+        except Exception as exc:
+            raise ValueError("Cannot read score log; refusing to replace historical data") from exc
     else:
         records = []
 
     run_date = max(signal.data_date for signal in signals)
     new_row = {
         "date": run_date,
+        "observed_at_utc": datetime.now(timezone.utc).isoformat(),
         "model_version": MODEL_VERSION,
         "app_release": APP_RELEASE,
         "scores": {signal.code: signal.score for signal in signals},
