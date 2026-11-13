@@ -77,12 +77,11 @@
     } catch (_) { label.textContent='GitHub job check unavailable (network or API limit). Published status and timestamps shown above; use the Actions link.'; }
   }
   document.addEventListener('DOMContentLoaded',()=>{
-    const classic=new URLSearchParams(location.search).get('layout')==='classic';
-    document.body.classList.toggle('classic-layout',classic);
-    document.getElementById('layout-toggle').href=classic?'?':'?layout=classic';
-    document.getElementById('layout-toggle').textContent=classic?'Review layout':'Classic layout';
-    const sourcePanel=document.getElementById('source-details');
-    if(classic && sourcePanel) sourcePanel.open=true;
+    // Keep previously shared Classic-layout URLs working.
+    if(new URLSearchParams(location.search).get('layout')==='classic' && !location.pathname.endsWith('/legacy.html')) {
+      location.replace('legacy.html');
+      return;
+    }
     paint(); setInterval(paint,60000); checkWorkflow();
   });
 })(typeof window!=='undefined'?window:this);
