@@ -1,129 +1,19 @@
 {
-  "updated_at_utc": "2026-11-17T00:40:55.681629+00:00",
+  "updated_at_utc": "2026-11-17T23:54:52.903048+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-10T22:28:08.916368+00:00",
+      "fetched_at_utc": "2026-11-17T23:37:56.306067+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-extends-winning-streak-breaks-below-94-against-dollar-whats-next/articleshow/135670806.cms",
-            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/rupee-extends-winning-streak-breaks-below-94-against-dollar-whats-next/amp_articleshow/135670806.cms",
-            "title": "Rupee extends winning streak , breaks below 94 against dollar : What next",
-            "seendate": "20261109T053000Z",
-            "socialimage": "https://static.toiimg.com/thumb/msid-135671269,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-            "domain": "timesofindia.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://bworldonline.com/corporate/2026/11/08/792187/business-group-seeks-govt-support-as-rising-costs-squeeze-margins/",
+            "url": "https://www.finanzen.net/nachricht/devisen/devisen-euro-gibt-weiter-nach-und-faellt-auf-jahrestief-16067546",
             "url_mobile": "",
-            "title": "Business group seeks govt support as rising costs squeeze margins",
-            "seendate": "20261108T133000Z",
-            "socialimage": "http://bworldonline.com/wp-content/uploads/2024/09/Buildings-skyline-1.jpg",
-            "domain": "bworldonline.com",
-            "language": "English",
-            "sourcecountry": "Philippines"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261110T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://bworldonline.com/opinion/2026/11/08/792108/the-philippine-peso-more-for-less/",
-            "url_mobile": "",
-            "title": "The Philippine Peso : More for less - BusinessWorld Online",
-            "seendate": "20261108T133000Z",
-            "socialimage": "https://bworldonline.com/wp-content/uploads/2026/10/US-dollar-peso.jpg",
-            "domain": "bworldonline.com",
-            "language": "English",
-            "sourcecountry": "Philippines"
-          },
-          {
-            "url": "https://www.prokerala.com/news/articles/a1834545.html",
-            "url_mobile": "",
-            "title": "Rupee gains 25 paise against US dollar on lower crude , positive global cues",
-            "seendate": "20261109T070000Z",
+            "title": "Devisen : Euro gibt weiter nach und f\u00e4llt auf Jahrestief",
+            "seendate": "20261116T081500Z",
             "socialimage": "",
-            "domain": "prokerala.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.independent.co.ug/depreciating-shilling-threatens-kiruddu-hospitals-medical-equipment-procurement/",
-            "url_mobile": "",
-            "title": "Depreciating shilling threatens Kiruddu Hospital medical equipment procurement",
-            "seendate": "20261108T103000Z",
-            "socialimage": "https://www.independent.co.ug/wp-content/uploads/2026/11/A-woman-stands-outside-Kiruddu-Hospital-in-Makindye.jpg",
-            "domain": "independent.co.ug",
-            "language": "English",
-            "sourcecountry": "Uganda"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/11/10/ringgit-opens-marginally-higher-against-greenback-amid-cautious-market-sentiment",
-            "url_mobile": "",
-            "title": "Ringgit opens marginally higher against greenback amid cautious market sentiment",
-            "seendate": "20261110T023000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/10/4204172.jpeg",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70092898-us-boersen-lassen-nach-inflation-bremst-anleger-aus-003.htm",
-            "url_mobile": "",
-            "title": "US - B\u00f6rsen lassen nach - Inflation bremst Anleger aus",
-            "seendate": "20261110T220000Z",
-            "socialimage": "https://www.finanznachrichten.de/content/g/fb.png",
-            "domain": "finanznachrichten.de",
+            "domain": "finanzen.net",
             "language": "German",
             "sourcecountry": "Germany"
-          },
-          {
-            "url": "https://www.madhyamam.com/business/market/gold-rate-in-india-1570850",
-            "url_mobile": "https://www.madhyamam.com/amp/business/market/gold-rate-in-india-1570850",
-            "title": "\u0d38\u0d4d\u0d35\u0d7c\u0d23 \u0d35\u0d3f\u0d32 \u0d05\u0d28\u0d4d\u0d24\u0d3e\u0d30\u0d3e\u0d37\u0d4d\u0d1f\u0d4d\u0d30 \u0d35\u0d3f\u0d2a\u0d23\u0d3f\u0d2f\u0d3f\u0d7d 21 \u0d36\u0d24\u0d2e\u0d3e\u0d28\u0d02 \u0d07\u0d1f\u0d3f\u0d1e\u0d4d\u0d1e\u0d2a\u0d4d\u0d2a\u0d4b\u0d7e \u0d07\u0d28\u0d4d\u0d24\u0d4d\u0d2f\u0d2f\u0d3f\u0d32\u0d47\u0d24\u0d4d 15 \u0d36\u0d24\u0d2e\u0d3e\u0d28\u0d02 \u0d2e\u0d3e\u0d24\u0d4d\u0d30\u0d02 : \u0d15\u0d3e\u0d30\u0d23\u0d2e\u0d46\u0d28\u0d4d\u0d24\u0d4d ? | gold rate in india",
-            "seendate": "20261110T060000Z",
-            "socialimage": "https://www.madhyamam.com/h-upload/2026/11/10/2945693-untitled-1.jpg",
-            "domain": "madhyamam.com",
-            "language": "Malayalam",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://en.globes.co.il/en/article-fri-ta-35-has-strongest-session-since-march-1001562380",
-            "url_mobile": "",
-            "title": "Fri : TA 35 has strongest session since March",
-            "seendate": "20261108T113000Z",
-            "socialimage": "https://images.globes.co.il/images/NewGlobes/big_image_800/2018/Globes_Archive_800x392.2018729T150619.jpg",
-            "domain": "en.globes.co.il",
-            "language": "English",
-            "sourcecountry": "Israel"
-          },
-          {
-            "url": "https://www.thehindubusinessline.com/markets/markets-closed-today-for-diwali-balipratipada-trading-to-resume-on-november-11/article71684945.ece",
-            "url_mobile": "https://www.thehindubusinessline.com/markets/markets-closed-today-for-diwali-balipratipada-trading-to-resume-on-november-11/article71684945.ece/amp/",
-            "title": "Markets closed today for Diwali - Balipratipada , trading to resume on November 11",
-            "seendate": "20261110T050000Z",
-            "socialimage": "https://bl-i.thgim.com/public/incoming/nokyyc/article71681704.ece/alternates/LANDSCAPE_1200/iStock-2260474979%202.jpg",
-            "domain": "thehindubusinessline.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://dunyanews.tv/en/Business/981940-us-dollar-holds-onto-payrolls-gains-nz-dollar-rises-after-election",
-            "url_mobile": "https://dunyanews.tv/amp/english/981940.php",
-            "title": "US dollar holds onto payrolls gains , NZ dollar rises after election",
-            "seendate": "20261109T063000Z",
-            "socialimage": "https://img.dunyanews.tv/news/2026/November/11-09-26/news_big_images/981940_17628977.jpg",
-            "domain": "dunyanews.tv",
-            "language": "English",
-            "sourcecountry": "Pakistan"
           }
         ]
       }
@@ -256,132 +146,22 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-11-17T00:26:09.553717+00:00",
+      "fetched_at_utc": "2026-11-17T23:40:06.103960+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-12T22:27:48.816680+00:00",
+      "fetched_at_utc": "2026-11-17T23:40:46.413653+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-12-11-2026-7350122190649792a.html",
+            "url": "https://www.vetogate.com/5770484",
             "url_mobile": "",
-            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 12 . 11 . 2026",
-            "seendate": "20261112T064500Z",
-            "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
-            "domain": "money.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
-            "url": "https://www.ntvbd.com/economy/news-1833285",
-            "url_mobile": "https://www.ntvbd.com/economy/news-1833285?amp",
-            "title": "\u09a1\u09b2\u09be\u09b0 \u0985\u09aa\u09b0\u09bf\u09ac\u09b0\u09cd\u09a4\u09bf\u09a4 , \u0995\u09ae\u09c7\u099b\u09c7 \u09aa\u09be\u0989\u09a8\u09cd\u09a1 - \u0987\u0989\u09b0\u09cb\u09b0 \u09a6\u09be\u09ae",
-            "seendate": "20261109T070000Z",
-            "socialimage": "https://ncdn.ntvbd.com/sites/default/files/styles/social_gpi_ntv_24m/public/images/2026/11/09/2.jpg",
-            "domain": "ntvbd.com",
-            "language": "Bengali",
-            "sourcecountry": "Bangladesh"
-          },
-          {
-            "url": "https://english.news.cn/20261111/8429cf7b6c1c475a9d49e3988c9e1848/c.html",
-            "url_mobile": "",
-            "title": "Market exchange rates in China -- Nov . 11 - Xinhua",
-            "seendate": "20261111T050000Z",
+            "title": "\u0633\u0639\u0631 \u0627\u0644\u064a\u0646 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u0641\u064a \u0628\u0646\u0643 \u0645\u0635\u0631 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0633\u0628\u062a",
+            "seendate": "20261114T200000Z",
             "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://www.phillyvoice.com/us-dollar-global-trade-foreign-exchange-businesses-0599988/",
-            "url_mobile": "",
-            "title": "How the U . S . Dollar Changing Role Affects Global Trade",
-            "seendate": "20261112T013000Z",
-            "socialimage": "https://media.phillyvoice.com/media/images/pexels-bilal-ahmed-297238753-1.2e16d0ba.fill-1200x630-c0.jpg",
-            "domain": "phillyvoice.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261110T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/11-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-11-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/08/us-dollar-euro-dirham-pound-riyal-rate-in-pakistan-today-currency-rates-29-august-2024-1724900541-9059.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/12-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-12-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261112T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/08/us-dollar-euro-dirham-pound-riyal-rate-in-pakistan-today-currency-rates-29-august-2024-1724900541-9059.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.freemalaysiatoday.com/category/business/2026/11/12/ringgit-opens-almost-flat-amid-cautious-sentiment",
-            "url_mobile": "",
-            "title": "Ringgit opens almost flat amid cautious sentiment",
-            "seendate": "20261112T034500Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/7737d1de-us-vs-ringgit_flat-d3-2024.webp",
-            "domain": "freemalaysiatoday.com",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/11/10/ringgit-opens-marginally-higher-against-greenback-amid-cautious-market-sentiment",
-            "url_mobile": "",
-            "title": "Ringgit opens marginally higher against greenback amid cautious market sentiment",
-            "seendate": "20261110T023000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/10/4204172.jpeg",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.thestar.com.my/business/business-news/2026/11/11/ringgit-opens-higher-against-major-currencies-flat-vs-greenback",
-            "url_mobile": "",
-            "title": "Ringgit opens higher against major currencies , flat vs greenback",
-            "seendate": "20261111T023000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/11/4206166.jpeg",
-            "domain": "thestar.com.my",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.prnewswire.com/news-releases/aflac-incorporated-announces-4-9-increase-in-the-first-quarter-2027-dividend-302937426.html",
-            "url_mobile": "",
-            "title": "Aflac Incorporated Announces 4 . 9 % Increase in the First Quarter 2027 Dividend",
-            "seendate": "20261112T070000Z",
-            "socialimage": "",
-            "domain": "prnewswire.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.milwaukeesun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261110T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "milwaukeesun.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "domain": "vetogate.com",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
           }
         ]
       }
@@ -514,29 +294,9 @@
       }
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
-      "fetched_at_utc": "2026-11-11T23:00:56.501841+00:00",
+      "fetched_at_utc": "2026-11-17T23:44:32.634220+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.e15.cz/nazory-a-analyzy/michluv-preventivni-uder-cnb-zvedla-sazby-na-ctyri-procenta-a-rozpoutala-novou-bitvu-s-babisem-1437148",
-            "url_mobile": "",
-            "title": "Michl\u016fv preventivn\u00ed \u00fader . \u010cNB zvedla sazby na \u010dty\u0159i procenta a rozpoutala novou bitvu s Babi\u0161em",
-            "seendate": "20261106T110000Z",
-            "socialimage": "https://1884403144.rsc.cdn77.org/foto/ales-michl-cnb-guverner-koruna/MTIwMHg2MzAvZmlsdGVyczpub191cHNjYWxlKDEpOndhdGVybWFyayhodHRwczovL2ltZy5jbmNlbnRlci5jei9kaXN0L2Fzc2V0cy9lMTUvd2F0ZXJtYXJrLWUxNS5wbmcsLTEwLDEwLDApOmZvY2FsKDUzMngyOTQ6ODIzeDY3MykvaW1n/9988293.jpg?v=0&st=Hw-4PxfTItmqWhL8IvPfgFI20XCHTqovWmgy3nuNrU8&ts=1600812000&e=0",
-            "domain": "e15.cz",
-            "language": "Czech",
-            "sourcecountry": "Czech Republic"
-          },
-          {
-            "url": "https://banker.ua/uk/v-ievropi-znovu-pryskoriuietsia-zrostannia-tsin-na-produkty/",
-            "url_mobile": "",
-            "title": "\u0412 \u0404\u0432\u0440\u043e\u043f\u0456 \u0437\u043d\u043e\u0432\u0443 \u043f\u0440\u0438\u0441\u043a\u043e\u0440\u044e\u0454\u0442\u044c\u0441\u044f \u0437\u0440\u043e\u0441\u0442\u0430\u043d\u043d\u044f \u0446\u0456\u043d \u043d\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0438 : \u0434\u0435 \u0445\u0430\u0440\u0447\u043e\u0432\u0430 \u0456\u043d\u0444\u043b\u044f\u0446\u0456\u044f \u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448\u0430",
-            "seendate": "20261106T113000Z",
-            "socialimage": "https://banker.ua/wp-content/uploads/2026/11/v-ievropi-znovu-pryskoriuietsia.jpg",
-            "domain": "banker.ua",
-            "language": "Ukrainian",
-            "sourcecountry": "Ukraine"
-          },
           {
             "url": "https://www.miragenews.com/ecb-experience-in-monetary-policy-communication-1775435/",
             "url_mobile": "",
@@ -648,7 +408,7 @@
       }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-11-17T00:33:17.940435+00:00",
+      "fetched_at_utc": "2026-11-17T23:46:20.140088+00:00",
       "payload": {
         "articles": [
           {
@@ -675,7 +435,7 @@
       }
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-17T00:33:36.103898+00:00",
+      "fetched_at_utc": "2026-11-17T23:46:51.986934+00:00",
       "payload": {
         "articles": [
           {
@@ -687,46 +447,6 @@
             "domain": "ibtimes.com.au",
             "language": "English",
             "sourcecountry": "Australia"
-          },
-          {
-            "url": "http://www.haitisun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
-            "url_mobile": "",
-            "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c89f661/59eda55b-10dc-4bd7-b5f9-50a3fee10a81/4/US-stock-market-600x315.jpg",
-            "domain": "haitisun.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.bangladeshsun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
-            "url_mobile": "",
-            "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c89f661/59eda55b-10dc-4bd7-b5f9-50a3fee10a81/4/US-stock-market-600x315.jpg",
-            "domain": "bangladeshsun.com",
-            "language": "English",
-            "sourcecountry": "Bangladesh"
-          },
-          {
-            "url": "http://www.australiannews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
-            "url_mobile": "",
-            "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c89f661/59eda55b-10dc-4bd7-b5f9-50a3fee10a81/4/US-stock-market-600x315.jpg",
-            "domain": "australiannews.net",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "http://www.myanmarnews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
-            "url_mobile": "",
-            "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c89f661/59eda55b-10dc-4bd7-b5f9-50a3fee10a81/4/US-stock-market-600x315.jpg",
-            "domain": "myanmarnews.net",
-            "language": "English",
-            "sourcecountry": "Myanmar"
           }
         ]
       }
@@ -769,199 +489,23 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-11-10T22:38:10.220207+00:00",
+      "fetched_at_utc": "2026-11-17T23:48:44.828618+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-12T22:38:35.448995+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://english.news.cn/20261111/8429cf7b6c1c475a9d49e3988c9e1848/c.html",
-            "url_mobile": "",
-            "title": "Market exchange rates in China -- Nov . 11 - Xinhua",
-            "seendate": "20261111T050000Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261110T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/11-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-11-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/08/us-dollar-euro-dirham-pound-riyal-rate-in-pakistan-today-currency-rates-29-august-2024-1724900541-9059.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/12-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-12-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261112T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/08/us-dollar-euro-dirham-pound-riyal-rate-in-pakistan-today-currency-rates-29-august-2024-1724900541-9059.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.morningstar.com/news/dow-jones/202611119653/asian-equities-mixed-as-markets-weigh-nvidia-leadership-crisis",
-            "url_mobile": "",
-            "title": "Asian Equities Mixed as Markets Weigh Nvidia Leadership Crisis",
-            "seendate": "20261112T033000Z",
-            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
-            "domain": "morningstar.com",
-            "language": "English",
-            "sourcecountry": "China"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-17T23:49:45.146817+00:00",
+      "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-11-06T21:55:25.367883+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-13T22:21:08.608188+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.money.pl/pieniadze/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-12-11-2026-7350122190649792a.html",
-            "url_mobile": "",
-            "title": "Ile kosztuje frank szwajcarski ? Kurs franka do z\u0142otego PLN / CHF 12 . 11 . 2026",
-            "seendate": "20261112T064500Z",
-            "socialimage": "https://v.wpimg.pl/ZDdiMGFkdSUFCzt0aRB4MEZTby4vSXZmEUt3ZWlaY3ZUEWIhLwc_NgEZImkhGS80BR49aTYHdSUUAGIxd0Q-LRcZISY_RD8pBgwpaCRaOXRQDH4ha1w4JwFEeSR1XncmVFouanEKYiBTC30mIghscUYU",
-            "domain": "money.pl",
-            "language": "Polish",
-            "sourcecountry": "Poland"
-          },
-          {
-            "url": "https://english.news.cn/20261111/8429cf7b6c1c475a9d49e3988c9e1848/c.html",
-            "url_mobile": "",
-            "title": "Market exchange rates in China -- Nov . 11 - Xinhua",
-            "seendate": "20261111T050000Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/10-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-10-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261110T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/11-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-11-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/08/us-dollar-euro-dirham-pound-riyal-rate-in-pakistan-today-currency-rates-29-august-2024-1724900541-9059.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://en.dailypakistan.com.pk/12-Nov-2026/currency-exchange-rates-in-pakistan-today-latest-us-dollar-pound-euro-dirham-forex-update-12-november-2026",
-            "url_mobile": "",
-            "title": "Currency Exchange Rates in Pakistan Today \u2013 Latest US Dollar , Pound , Euro , Dirham Forex Update",
-            "seendate": "20261112T053000Z",
-            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/08/us-dollar-euro-dirham-pound-riyal-rate-in-pakistan-today-currency-rates-29-august-2024-1724900541-9059.jpg",
-            "domain": "en.dailypakistan.com.pk",
-            "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "http://www.milwaukeesun.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261110T220000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "milwaukeesun.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.parisguardian.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "parisguardian.com",
-            "language": "English",
-            "sourcecountry": "France"
-          },
-          {
-            "url": "http://www.indiagazette.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T063000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "indiagazette.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "http://www.jamaicantimes.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T063000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "jamaicantimes.com",
-            "language": "English",
-            "sourcecountry": "Jamaica"
-          },
-          {
-            "url": "http://www.newzealandstar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T063000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "newzealandstar.com",
-            "language": "English",
-            "sourcecountry": "New Zealand"
-          },
-          {
-            "url": "http://www.theusnews.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T063000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "theusnews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.mexicostar.com/news/279424719/u-s-stocks-slide-tuesday-as-sell-off-in-nvidia-extends",
-            "url_mobile": "",
-            "title": "U . S . stocks slide Tuesday as sell - off in Nvidia extends",
-            "seendate": "20261111T063000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/bb592cd/865dc709-3e48-4b13-b02b-2e038b097d6c/4/Wall-Street-600x315.jpeg",
-            "domain": "mexicostar.com",
-            "language": "English",
-            "sourcecountry": "Mexico"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-17T23:52:26.206985+00:00",
+      "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-17T00:40:55.681609+00:00",
+      "fetched_at_utc": "2026-11-17T23:53:26.038787+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
@@ -969,228 +513,45 @@
       "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-13T22:13:51.090279+00:00",
+      "fetched_at_utc": "2026-11-17T23:46:02.882576+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.aol.co.uk/articles/uk-interest-rates-could-rise-050000000.html",
+            "url": "https://www.currencynews.co.uk/forecast/20261116-47784_pound-to-euro-week-ahead-forecast-banks-warn-sterling-is-overvalued.html",
             "url_mobile": "",
-            "title": "UK interest rates could rise to 5 %, think tank warns amid 4 . 4 % inflation forecast",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://hermes.media.transform.aol.com/615435c6145e97e0f9cb08e59e779f2d83d292bb/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/11/7130a414-8004-37f0-9e5a-b17b62009c0a/e40c3ea6-1824-4117-aa2d-026c63dbc55e.jpg",
-            "domain": "aol.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-as-strong-us-inflation-data-bolsters-dollar-fed-hike-expectations/articleshow/135751745.cms",
-            "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-slips-as-strong-us-inflation-data-bolsters-dollar-fed-hike-expectations/amp_articleshow/135751745.cms",
-            "title": "Gold slips as strong US inflation data bolsters dollar , Fed hike expectations",
-            "seendate": "20261112T013000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-135751750,width-1200,height-900,imgsize-106600,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "http://www.businessghana.com/site/news/business/359332/Interest-rates-hiked-to-4-per-cent-in-first-increase-in-over-three-years",
-            "url_mobile": "",
-            "title": "Interest rates hiked to 4 per cent in first increase in over three years",
-            "seendate": "20261110T053000Z",
-            "socialimage": "http://www.businessghana.com/cms/img/news/2026-11-09-1356034.jpg",
-            "domain": "businessghana.com",
-            "language": "English",
-            "sourcecountry": "Ghana"
-          },
-          {
-            "url": "http://www.businessghana.com/site/news/business/359327/Interest-rates-hiked-to-4-per-cent-in-first-increase-in-over-three-years",
-            "url_mobile": "",
-            "title": "Interest rates hiked to 4 per cent in first increase in over three years",
-            "seendate": "20261110T053000Z",
+            "title": "Pound - to - Euro Week Ahead Forecast : Banks Warn Sterling Is Overvalued",
+            "seendate": "20261116T081500Z",
             "socialimage": "",
-            "domain": "businessghana.com",
-            "language": "English",
-            "sourcecountry": "Ghana"
-          },
-          {
-            "url": "https://www.hellenicshippingnews.com/ing-our-latest-views-on-the-major-central-banks-9/",
-            "url_mobile": "",
-            "title": "ING : Our latest views on the major central banks | Hellenic Shipping News Worldwide",
-            "seendate": "20261111T023000Z",
-            "socialimage": "",
-            "domain": "hellenicshippingnews.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.actionforex.com/live-comments/660499-uk-inflation-seen-above-target-until-2030-as-niesr-warns-of-persistent-wage-pressures/",
-            "url_mobile": "",
-            "title": "UK Inflation Seen Above Target Until 2030 as NIESR Warns of Persistent Wage Pressures",
-            "seendate": "20261111T023000Z",
-            "socialimage": "https://www.actionforex.com/wp-content/uploads/featured-images/f-uk1.jpg",
-            "domain": "actionforex.com",
+            "domain": "currencynews.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.lbc.co.uk/article/3ccd061a27fd424d8dedfd7bd00ebfed-5HjdmKH_2/",
+            "url": "https://www.aol.com/articles/world-facing-credit-crunch-060000000.html",
             "url_mobile": "",
-            "title": "27 % fall in first - time buyer inquiries seen by Zoopla as people  pause and wait  ",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://images.globalplayer.com/images/855411?crop=16_9&signature=HpvbvaYPHUgPOp1_ZFpZwIIP8BM=",
-            "domain": "lbc.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://wwd.com/sourcing-journal/industry-news/cpi-october-inflation-apparel-footwear-holiday-1239410049/",
-            "url_mobile": "",
-            "title": "Sticky Inflation Remained Stubbornly Entrenched in October , Keeping Fashion Prices Elevated",
-            "seendate": "20261111T023000Z",
-            "socialimage": "https://wwd.com/wp-content/uploads/2026/11/blsusshopper.jpg?&crop=1",
-            "domain": "wwd.com",
+            "title": "The world is facing a new credit crunch",
+            "seendate": "20261115T074500Z",
+            "socialimage": "https://hermes.media.static.aol.com/media/2026/11/15/b817338f-9f36-3d49-8e73-f946a9ef8ec4/93ba9709-a86e-4980-8eaf-d9050c17cf9c.jpeg",
+            "domain": "aol.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.miragenews.com/ecb-experience-in-monetary-policy-communication-1775435/",
+            "url": "https://www.notiziegeopolitiche.net/venezuela-al-via-a-caracas-il-quarto-round-di-negoziati-tra-governo-e-opposizione/",
             "url_mobile": "",
-            "title": "ECB Experience in Monetary Policy Communication : Science and Practice",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://www.ecb.europa.eu/sp261110_1/ecb.sp261110_1.en_img0.png?63e07fc0adb8bac5483430d66f7e3398",
-            "domain": "miragenews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.middleeasteye.net/live-blog/live-blog-update/nearly-80-percent-britons-see-israel-threat-world-peace",
-            "url_mobile": "",
-            "title": "Nearly 80 percent of Britons see Israel as a threat to world peace",
-            "seendate": "20261110T060000Z",
-            "socialimage": "https://www.middleeasteye.net/sites/default/files/2026-11/Gaza_Deaths_November_Collapse.jpg",
-            "domain": "middleeasteye.net",
-            "language": "English",
-            "sourcecountry": "Israel"
-          },
-          {
-            "url": "https://www.fow.com/insights/bank-of-england-warns-ai-trading-agents-could-amplify-market-stress",
-            "url_mobile": "",
-            "title": "Bank of England warns AI trading agents could amplify market stress",
-            "seendate": "20261112T030000Z",
-            "socialimage": "https://images.ctfassets.net/cy2jgjrgaerj/2bLLm9uBCnWcEJAcbOIasF/9f2e85894c15bf9f4d87062423656239/Jonathan_Hall.png",
-            "domain": "fow.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.aol.co.uk/articles/andy-burnham-failing-families-data-000100000.html",
-            "url_mobile": "",
-            "title": "Andy Burnham  failing familie as data shows 40 % rise in food prices , says SNP",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://hermes.media.static.aol.com/media/2026/11/13/e4a6777a-80c8-3dcc-b9d4-c1f8fc610782/3d4a1b51-25af-48d3-a9c8-2ed875a90123.jpg",
-            "domain": "aol.co.uk",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
+            "title": "Venezuela , al via a Caracas il quarto round di negoziati tra governo e opposizione",
+            "seendate": "20261114T210000Z",
+            "socialimage": "https://www.notiziegeopolitiche.net/wp-content/uploads/2026/11/Maria-Corina-Machado-WIKI-Wikimedia-Commons-Kevin-Payravi-WikiPortraits-CC-BY-SA-4.0.jpg",
+            "domain": "notiziegeopolitiche.net",
+            "language": "Italian",
+            "sourcecountry": "Italy"
           }
         ]
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-13T22:14:32.927938+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.morningstar.com/news/dow-jones/2026110913473/australian-mortgage-holder-confidence-at-record-low",
-            "url_mobile": "",
-            "title": "Australian Mortgage Holder Confidence at Record Low",
-            "seendate": "20261110T003000Z",
-            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
-            "domain": "morningstar.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://investinglive.com/central-banks/anz-says-rba-hike-bets-have-cooled-but-3-7-core-inflation-will-keep-it-cautious/",
-            "url_mobile": "",
-            "title": "ANZ says RBA hike bets have cooled , but 3 . 7 % core inflation will keep it cautious",
-            "seendate": "20261112T034500Z",
-            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/Important%20level%20for%20AUD%20around%20here%2012%20November%202026-featured-1794452511.jpg?&format=webp",
-            "domain": "investinglive.com",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://www.smh.com.au/money/borrowing/most-australians-don-t-have-a-mortgage-rate-rises-could-leave-them-better-off-20261110-p61cua.html",
-            "url_mobile": "",
-            "title": "Most Australians dont have a mortgage . Rate rises could leave them better off",
-            "seendate": "20261110T010000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.706%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/4a7e4f2262acceea1a63a8bfaedffc843f2c2f25",
-            "domain": "smh.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.brisbanetimes.com.au/money/borrowing/most-australians-don-t-have-a-mortgage-rate-rises-could-leave-them-better-off-20261110-p61cua.html",
-            "url_mobile": "",
-            "title": "Most Australians dont have a mortgage . Rate rises could leave them better off",
-            "seendate": "20261110T020000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.706%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_brisbanetimes_opinion_no_age_social_wm/4a7e4f2262acceea1a63a8bfaedffc843f2c2f25",
-            "domain": "brisbanetimes.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://english.news.cn/20261111/64c2762a4a6b471dbf1b9138bf0377e2/c.html",
-            "url_mobile": "",
-            "title": "Australia reports largest quarterly fall in value of new home loans - Xinhua",
-            "seendate": "20261111T040000Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://english.news.cn/asiapacific/20261111/9260ff1212cb4744adedb4940ada4ce9/c.html",
-            "url_mobile": "",
-            "title": "Australia reports largest quarterly fall in value of new home loans - Xinhua",
-            "seendate": "20261111T040000Z",
-            "socialimage": "",
-            "domain": "english.news.cn",
-            "language": "English",
-            "sourcecountry": ""
-          },
-          {
-            "url": "https://en.shafaqna.com/490460/australia-consumer-mood-drops/",
-            "url_mobile": "",
-            "title": "Australia consumer mood drops - Shafaqna English | International Shia News & Fatwas",
-            "seendate": "20261110T043000Z",
-            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2026/11/en.shafaqna-Australia-consumer-mood-drops.jpeg",
-            "domain": "en.shafaqna.com",
-            "language": "English",
-            "sourcecountry": "Saudi Arabia"
-          },
-          {
-            "url": "https://www.insurancejournal.com/news/international/2026/11/12/892331.htm",
-            "url_mobile": "https://amp.insurancejournal.com/news/international/2026/11/12/892331.htm",
-            "title": "Australian Companies Face  AI Washing  Claims After Wave of Job Cuts , Offshoring",
-            "seendate": "20261112T064500Z",
-            "socialimage": "https://www.insurancejournal.com/app/uploads/2026/02/artificial-intelligence-796868682-Depositphotos-scaled.jpg",
-            "domain": "insurancejournal.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.theadviser.com.au/borrower/49205-new-home-loans-suffer-largest-drop-on-record",
-            "url_mobile": "",
-            "title": "New home loans suffer largest drop on record",
-            "seendate": "20261111T063000Z",
-            "socialimage": "https://res.cloudinary.com/momentum-media-group-pty-ltd/image/upload/v1794361529/The%20Adviser/arrow-decline_ta_ift3mb.jpg",
-            "domain": "theadviser.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-17T23:47:11.066314+00:00",
+      "payload": {}
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
       "fetched_at_utc": "2026-11-17T00:39:29.834318+00:00",
@@ -1201,79 +562,9 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-17T00:24:54.035467+00:00",
+      "fetched_at_utc": "2026-11-17T23:38:55.996336+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://econotimes.com/Gold-Falls-to-Its-Lowest-Since-October-2025-as-Rate-Concerns-Build-1776095",
-            "url_mobile": "",
-            "title": "Gold Falls to Its Lowest Since October 2025 as Rate Concerns Build",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/0711c86ff72dd7be2c54615912a719ec31e2d8d5dfb49c3d147a73682a7a66f0.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.aljazeera.com/economy/2026/11/13/us-treasury-warns-against-rate-hikes-during-us-iran-war-energy-shock",
-            "url_mobile": "https://www.aljazeera.com/amp/economy/2026/11/13/us-treasury-warns-against-rate-hikes-during-us-iran-war-energy-shock",
-            "title": "US Treasury warns against rate hikes during US - Iran war energy  shock  | US - Israel war on Iran News",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aee21e3-1793991139.jpg",
-            "domain": "aljazeera.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://790waeb.iheart.com/content/2026-11-13-wholesale-prices-rise-less-than-expected-in-october/",
-            "url_mobile": "",
-            "title": "Wholesale Prices Rise Less Than Expected In October",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6af71fa5af6eb30fc7427cf4?ops=gravity(%22north%22),fit(1200,675),quality(65)",
-            "domain": "790waeb.iheart.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://veropatriot.iheart.com/content/2026-11-13-wholesale-prices-rise-less-than-expected-in-october/",
-            "url_mobile": "",
-            "title": "Wholesale Prices Rise Less Than Expected In October",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6af71fa5af6eb30fc7427cf4?ops=gravity(%22north%22),fit(1200,675),quality(65)",
-            "domain": "veropatriot.iheart.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://ktok.iheart.com/content/2026-11-13-wholesale-prices-rise-less-than-expected-in-october/",
-            "url_mobile": "",
-            "title": "Wholesale Prices Rise Less Than Expected In October",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6af71fa5af6eb30fc7427cf4?ops=gravity(%22north%22),fit(1200,675),quality(65)",
-            "domain": "ktok.iheart.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://600kcol.iheart.com/content/2026-11-13-wholesale-prices-rise-less-than-expected-in-october/",
-            "url_mobile": "",
-            "title": "Wholesale Prices Rise Less Than Expected In October",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://i.iheart.com/v3/re/assets.getty/6af71fa5af6eb30fc7427cf4?ops=gravity(%22north%22),fit(1200,675),quality(65)",
-            "domain": "600kcol.iheart.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.orlandosentinel.com/2026/11/13/wholesale-inflation-declined-october/",
-            "url_mobile": "",
-            "title": "Wholesale inflation declined in October yet remains elevated",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://www.orlandosentinel.com/wp-content/uploads/2026/11/Producer_Prices_91358-2.jpg",
-            "domain": "orlandosentinel.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
           {
             "url": "https://www.currencynews.co.uk/forecast/20261116-47783_pound-to-dollar-weekly-forecast-banks-target-1-37-1-39-despite-usd-rally.html",
             "url_mobile": "",
@@ -1283,16 +574,6 @@
             "domain": "currencynews.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.orlandosentinel.com/2026/11/13/wall-street-futures-nvidia-microsoft/",
-            "url_mobile": "",
-            "title": "On Wall Street , stocks sway as market aims for a winning week",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://www.orlandosentinel.com/wp-content/uploads/2026/11/Financial_Markets_Wall_Street_32744_aa374c.jpg",
-            "domain": "orlandosentinel.com",
-            "language": "English",
-            "sourcecountry": "United States"
           },
           {
             "url": "https://www.insidermonkey.com/news/what-citi-expects-from-alibaba-baba-before-november-19-1865512/",
@@ -1305,22 +586,22 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70128043-bitcoin-falls-below-dollar-69-000-after-nvidia-ceo-exit-why-385.htm",
+            "url": "https://littleapplepost.com/posts/d34492de-e62d-4cff-8a92-69bc4fae244c",
             "url_mobile": "",
-            "title": "Bitcoin Falls Below $69 , 000 After Nvidia CEO Exit . Why ? ",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://www.finanznachrichten.de/chart-nvidia-corporation-aktie-intraday-tradegate.png",
-            "domain": "finanznachrichten.de",
+            "title": "Dramatic drop in US home sales in October",
+            "seendate": "20261114T210000Z",
+            "socialimage": "https://media.eaglewebservices.com/public/2022/7/1659001075252.jpeg",
+            "domain": "littleapplepost.com",
             "language": "English",
-            "sourcecountry": "Germany"
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://www.fortmorgantimes.com/2026/11/13/wholesale-inflation-declined-october/",
+            "url": "https://wtop.com/virginia/2026/11/virginia-runs-394-million-ahead-of-revenue-forecast-through-october/",
             "url_mobile": "",
-            "title": "Wholesale inflation declined in October yet remains elevated",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://www.fortmorgantimes.com/wp-content/uploads/2026/11/Producer_Prices_91358-2.jpg",
-            "domain": "fortmorgantimes.com",
+            "title": "Virginia runs $394 million ahead of revenue forecast through October \u2013 WTOP News",
+            "seendate": "20261114T200000Z",
+            "socialimage": "https://wtop.com/wp-content/uploads/2026/11/Money_Matters-Six_Figure_Nest_Egg_2_335-scaled.jpg",
+            "domain": "wtop.com",
             "language": "English",
             "sourcecountry": "United States"
           }
@@ -1328,19 +609,9 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-17T00:29:32.389355+00:00",
+      "fetched_at_utc": "2026-11-17T23:43:30.340833+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://arabic.euronews.com/2026/11/13/france-and-germany-are-close-to-reaching-an-agreement-on-de-cos-for-the-top-ecb-position-a",
-            "url_mobile": "",
-            "title": "\u0641\u0631\u0646\u0633\u0627 \u0648\u0623\u0644\u0645\u0627\u0646\u064a\u0627 \u062a\u0642\u062a\u0631\u0628\u0627\u0646 \u0645\u0646 \u0627\u062a\u0641\u0627\u0642 \u0639\u0644\u0649 \u062f\u064a \u0643\u0648\u0633 \u0644\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u0645\u0631\u0643\u0632\u064a \u0627\u0644\u0623\u0648\u0631\u0648\u0628\u064a \u0628\u0639\u062f \u062a\u062b\u0628\u064a\u062a \u0645\u0631\u0634\u062d\u064a\u0646",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://images.euronews.com/articles/stories/09/99/21/20/1200x675_cmsv2_bfda8024-3d62-562e-9b33-7c31581fd51a-9992120.jpg",
-            "domain": "arabic.euronews.com",
-            "language": "Arabic",
-            "sourcecountry": "United States"
-          },
           {
             "url": "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/hohe-lebenskosten-nur-die-halfte-der-menschen-kann-sparen-4357017",
             "url_mobile": "",
@@ -1360,16 +631,6 @@
             "domain": "mz.de",
             "language": "German",
             "sourcecountry": ""
-          },
-          {
-            "url": "https://de.euronews.com/2026/11/13/ezb-prasidentschaft-frankreich-und-deutschland-einigen-sich-fast-auf-pablo-hernandez-de-co",
-            "url_mobile": "",
-            "title": "EZB - Pr\u00e4sidentschaft : Frankreich und Deutschland einigen sich fast auf Pablo Hern\u00e1ndez de Cos",
-            "seendate": "20261113T180000Z",
-            "socialimage": "https://images.euronews.com/articles/stories/09/99/21/20/1200x675_cmsv2_bfda8024-3d62-562e-9b33-7c31581fd51a-9992120.jpg",
-            "domain": "de.euronews.com",
-            "language": "German",
-            "sourcecountry": "United States"
           }
         ]
       }
@@ -1392,11 +653,11 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-11-12T22:44:27.000930+00:00",
+      "fetched_at_utc": "2026-11-17T23:54:52.903031+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-11-17T00:39:41.626992+00:00",
+      "fetched_at_utc": "2026-11-17T23:51:52.544574+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
