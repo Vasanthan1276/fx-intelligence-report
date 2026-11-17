@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-11-13T22:45:07.123901+00:00",
-  "snapshot_at_utc": "2026-11-13T22:22:59.352564+00:00",
+  "generated_at_utc": "2026-11-17T00:42:49.577306+00:00",
+  "snapshot_at_utc": "2026-11-17T00:42:48.560815+00:00",
   "note": "Diagnostic counts only. Original performance files and frozen model are unchanged. Horizon samples overlap and are not independent; no spread, fees or execution timing are modelled.",
   "baseline": {
-    "logged_days": 85,
-    "unique_market_dates": 85,
+    "logged_days": 86,
+    "unique_market_dates": 86,
     "rows_without_observed_timestamp": 84,
     "horizons": {
       "1": {
-        "matured": 574,
+        "matured": 581,
         "pending": 7,
         "missing_entry": 14,
         "missing_market_date": 0,
@@ -17,7 +17,7 @@
         "duplicate": 0
       },
       "5": {
-        "matured": 546,
+        "matured": 553,
         "pending": 35,
         "missing_entry": 14,
         "missing_market_date": 0,
@@ -26,7 +26,7 @@
         "duplicate": 0
       },
       "10": {
-        "matured": 511,
+        "matured": 518,
         "pending": 70,
         "missing_entry": 14,
         "missing_market_date": 0,
@@ -35,7 +35,7 @@
         "duplicate": 0
       },
       "20": {
-        "matured": 441,
+        "matured": 448,
         "pending": 140,
         "missing_entry": 14,
         "missing_market_date": 0,
@@ -46,8 +46,8 @@
     }
   },
   "shadow": {
-    "logged_days": 71,
-    "unique_market_dates": 71,
+    "logged_days": 72,
+    "unique_market_dates": 72,
     "rows_without_observed_timestamp": 70,
     "horizons": {
       "1": {
@@ -55,16 +55,16 @@
         "pending": 0,
         "missing_entry": 0,
         "missing_market_date": 0,
-        "excluded_evidence": 464,
+        "excluded_evidence": 471,
         "excluded_neutral": 11,
         "duplicate": 0
       },
       "5": {
-        "matured": 20,
-        "pending": 2,
+        "matured": 21,
+        "pending": 1,
         "missing_entry": 0,
         "missing_market_date": 0,
-        "excluded_evidence": 464,
+        "excluded_evidence": 471,
         "excluded_neutral": 11,
         "duplicate": 0
       },
@@ -73,7 +73,7 @@
         "pending": 2,
         "missing_entry": 0,
         "missing_market_date": 0,
-        "excluded_evidence": 464,
+        "excluded_evidence": 471,
         "excluded_neutral": 11,
         "duplicate": 0
       }
