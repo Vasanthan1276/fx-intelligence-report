@@ -1,8 +1,8 @@
 {
-  "updated_at_utc": "2026-11-17T23:54:52.903048+00:00",
+  "updated_at_utc": "2026-11-18T23:19:27.122972+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-17T23:37:56.306067+00:00",
+      "fetched_at_utc": "2026-11-18T23:00:57.094325+00:00",
       "payload": {
         "articles": [
           {
@@ -150,21 +150,8 @@
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-17T23:40:46.413653+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.vetogate.com/5770484",
-            "url_mobile": "",
-            "title": "\u0633\u0639\u0631 \u0627\u0644\u064a\u0646 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u0641\u064a \u0628\u0646\u0643 \u0645\u0635\u0631 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0633\u0628\u062a",
-            "seendate": "20261114T200000Z",
-            "socialimage": "",
-            "domain": "vetogate.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-18T23:05:17.174873+00:00",
+      "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-11-11T22:58:46.833024+00:00",
@@ -311,7 +298,7 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-17T00:31:54.157114+00:00",
+      "fetched_at_utc": "2026-11-18T23:08:48.916068+00:00",
       "payload": {
         "articles": [
           {
@@ -323,16 +310,6 @@
             "domain": "currencynews.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.ammonnews.net/article/1045335",
-            "url_mobile": "",
-            "title": "\u0627\u0644\u064a\u0646 \u064a\u0642\u062a\u0631\u0628 \u0645\u0646 \u0623\u062f\u0646\u0649 \u0645\u0633\u062a\u0648\u064a\u0627\u062a\u0647 \u0641\u064a \u0634\u0647\u0631\u064a\u0646 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 | \u0627\u0642\u062a\u0635\u0627\u062f",
-            "seendate": "20261116T081500Z",
-            "socialimage": "https://www.ammonnews.net/image.php?token=1a46bbf044a20ff83fc22d159bb94851&size=",
-            "domain": "ammonnews.net",
-            "language": "Arabic",
-            "sourcecountry": "Jordan"
           },
           {
             "url": "https://www.business-standard.com/companies/news/thomas-cook-india-expects-demerger-of-resorts-business-by-oct-2027-md-126111500166_1.html",
@@ -355,6 +332,16 @@
             "sourcecountry": "India"
           },
           {
+            "url": "https://www.ammonnews.net/article/1045335",
+            "url_mobile": "",
+            "title": "\u0627\u0644\u064a\u0646 \u064a\u0642\u062a\u0631\u0628 \u0645\u0646 \u0623\u062f\u0646\u0649 \u0645\u0633\u062a\u0648\u064a\u0627\u062a\u0647 \u0641\u064a \u0634\u0647\u0631\u064a\u0646 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 | \u0627\u0642\u062a\u0635\u0627\u062f",
+            "seendate": "20261116T081500Z",
+            "socialimage": "https://www.ammonnews.net/image.php?token=1a46bbf044a20ff83fc22d159bb94851&size=",
+            "domain": "ammonnews.net",
+            "language": "Arabic",
+            "sourcecountry": "Jordan"
+          },
+          {
             "url": "https://www.currencynews.co.uk/forecast/20261116-47783_pound-to-dollar-weekly-forecast-banks-target-1-37-1-39-despite-usd-rally.html",
             "url_mobile": "",
             "title": "Pound to Dollar Weekly Forecast : Banks Target 1 . 37 - 1 . 39 Despite USD Rally",
@@ -363,79 +350,16 @@
             "domain": "currencynews.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "http://www.haitisun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
-            "url_mobile": "",
-            "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c89f661/59eda55b-10dc-4bd7-b5f9-50a3fee10a81/4/US-stock-market-600x315.jpg",
-            "domain": "haitisun.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.bangladeshsun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
-            "url_mobile": "",
-            "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c89f661/59eda55b-10dc-4bd7-b5f9-50a3fee10a81/4/US-stock-market-600x315.jpg",
-            "domain": "bangladeshsun.com",
-            "language": "English",
-            "sourcecountry": "Bangladesh"
-          },
-          {
-            "url": "http://www.australiannews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
-            "url_mobile": "",
-            "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c89f661/59eda55b-10dc-4bd7-b5f9-50a3fee10a81/4/US-stock-market-600x315.jpg",
-            "domain": "australiannews.net",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "http://www.myanmarnews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
-            "url_mobile": "",
-            "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
-            "seendate": "20261113T004500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/c89f661/59eda55b-10dc-4bd7-b5f9-50a3fee10a81/4/US-stock-market-600x315.jpg",
-            "domain": "myanmarnews.net",
-            "language": "English",
-            "sourcecountry": "Myanmar"
           }
         ]
       }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-11-17T23:46:20.140088+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "http://forex.cnfol.com/jingjiyaowen/20261111/32420569.shtml",
-            "url_mobile": "",
-            "title": "\u82f1\u56fd\u901a\u80c0\u52302030\u5e74\u624d\u56de\u76ee\u6807 \uff0c \u82f1\u592e\u884c\u771f\u7684\u53ea\u9700\u518d\u52a0\u606f\u4e00\u6b21 \uff1f_ \u6c47\u5e02\u89c2\u5bdf _ \u5916\u6c47 _ \u4e2d\u91d1\u5728\u7ebf",
-            "seendate": "20261111T050000Z",
-            "socialimage": "http://images.cnfol.com/wx.jpg",
-            "domain": "forex.cnfol.com",
-            "language": "Chinese",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://www.actionforex.com/live-comments/660499-uk-inflation-seen-above-target-until-2030-as-niesr-warns-of-persistent-wage-pressures/",
-            "url_mobile": "",
-            "title": "UK Inflation Seen Above Target Until 2030 as NIESR Warns of Persistent Wage Pressures",
-            "seendate": "20261111T023000Z",
-            "socialimage": "https://www.actionforex.com/wp-content/uploads/featured-images/f-uk1.jpg",
-            "domain": "actionforex.com",
-            "language": "English",
-            "sourcecountry": "United Kingdom"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-18T23:10:22.494772+00:00",
+      "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-17T23:46:51.986934+00:00",
+      "fetched_at_utc": "2026-11-18T23:11:03.440337+00:00",
       "payload": {
         "articles": [
           {
@@ -489,7 +413,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-11-17T23:48:44.828618+00:00",
+      "fetched_at_utc": "2026-11-18T23:14:16.157271+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
@@ -497,7 +421,7 @@
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-06T21:55:25.367883+00:00",
+      "fetched_at_utc": "2026-11-18T23:15:46.373178+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
@@ -505,7 +429,7 @@
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-17T23:53:26.038787+00:00",
+      "fetched_at_utc": "2026-11-18T23:19:27.122952+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
@@ -562,7 +486,7 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-17T23:38:55.996336+00:00",
+      "fetched_at_utc": "2026-11-18T23:02:38.768401+00:00",
       "payload": {
         "articles": [
           {
@@ -574,42 +498,12 @@
             "domain": "currencynews.co.uk",
             "language": "English",
             "sourcecountry": "United Kingdom"
-          },
-          {
-            "url": "https://www.insidermonkey.com/news/what-citi-expects-from-alibaba-baba-before-november-19-1865512/",
-            "url_mobile": "",
-            "title": "What Citi Expects From Alibaba ( BABA ) Before November 19",
-            "seendate": "20261114T210000Z",
-            "socialimage": "https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2021/05/18051557/pascal-bernardon-zt0HWquGXlQ-unsplash.jpg",
-            "domain": "insidermonkey.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://littleapplepost.com/posts/d34492de-e62d-4cff-8a92-69bc4fae244c",
-            "url_mobile": "",
-            "title": "Dramatic drop in US home sales in October",
-            "seendate": "20261114T210000Z",
-            "socialimage": "https://media.eaglewebservices.com/public/2022/7/1659001075252.jpeg",
-            "domain": "littleapplepost.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://wtop.com/virginia/2026/11/virginia-runs-394-million-ahead-of-revenue-forecast-through-october/",
-            "url_mobile": "",
-            "title": "Virginia runs $394 million ahead of revenue forecast through October \u2013 WTOP News",
-            "seendate": "20261114T200000Z",
-            "socialimage": "https://wtop.com/wp-content/uploads/2026/11/Money_Matters-Six_Figure_Nest_Egg_2_335-scaled.jpg",
-            "domain": "wtop.com",
-            "language": "English",
-            "sourcecountry": "United States"
           }
         ]
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-17T23:43:30.340833+00:00",
+      "fetched_at_utc": "2026-11-18T23:07:33.591466+00:00",
       "payload": {
         "articles": [
           {
@@ -657,7 +551,7 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-11-17T23:51:52.544574+00:00",
+      "fetched_at_utc": "2026-11-18T23:17:27.527985+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
