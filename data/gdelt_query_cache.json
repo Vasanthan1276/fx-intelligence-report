@@ -1,8 +1,8 @@
 {
-  "updated_at_utc": "2026-11-18T23:19:27.122972+00:00",
+  "updated_at_utc": "2026-11-19T23:25:07.685561+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-18T23:00:57.094325+00:00",
+      "fetched_at_utc": "2026-11-19T23:10:08.071284+00:00",
       "payload": {
         "articles": [
           {
@@ -14,44 +14,24 @@
             "domain": "finanzen.net",
             "language": "German",
             "sourcecountry": "Germany"
+          },
+          {
+            "url": "https://www.aol.com/articles/bofa-sees-path-capital-return-182141000.html",
+            "url_mobile": "",
+            "title": "BofA sees path for capital return to Brazil if fiscal  homework  is done",
+            "seendate": "20261119T193000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/7c1742270aba00b63f115299483b5d2389cd0f66/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/19/75d550fb-0b1b-3e79-af50-a33ff3be6e96/d14216c4-af52-4afd-8517-f19e2f666428.jpg",
+            "domain": "aol.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-11-13T22:07:30.423049+00:00",
+      "fetched_at_utc": "2026-11-19T23:12:16.951695+00:00",
       "payload": {
         "articles": [
-          {
-            "url": "https://www.ntv.com.tr/ntvpara/kripto-para/abd-enflasyonu-kripto-piyasasini-vurdu-1750345",
-            "url_mobile": "",
-            "title": "ABD enflasyonu kripto piyasas\u0131n\u0131 vurdu",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://images.ntv.com.tr/images/bitcoindusus-439413.jpg?format=webp",
-            "domain": "ntv.com.tr",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.ntv.com.tr/ntvpara/doviz/abd-enflasyon-verisi-sonrasi-dolarda-sahin-gorunum-1750348",
-            "url_mobile": "",
-            "title": "ABD enflasyon verisi sonras\u0131 dolarda \u015fahin g\u00f6r\u00fcn\u00fcm",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://images.ntv.com.tr/images/dolar-569359.jpg?format=webp",
-            "domain": "ntv.com.tr",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.moneycontrol.com/news/business/personal-finance/gold-and-silver-price-today-november-10-check-rates-of-24k-22k-gold-in-delhi-mumbai-kolkata-other-cities-14075921.html",
-            "url_mobile": "https://www.moneycontrol.com/news/business/personal-finance/gold-and-silver-price-today-november-10-check-rates-of-24k-22k-gold-in-delhi-mumbai-kolkata-other-cities-14075921.html/amp",
-            "title": "Gold and silver price today , November 10 : Check rates of 24K , 22K gold in Delhi , Mumbai , Kolkata other cities",
-            "seendate": "20261110T043000Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/10/20261019032033_Gold-Prices-Across-India-on-October-19.png",
-            "domain": "moneycontrol.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
           {
             "url": "https://www.penzcentrum.hu/megtakaritas/20261113/mi-folyik-a-tozsdeken-brutalis-melyrepulesben-az-amerikai-papirok-az-nvidia-botrany-utan-kozben-egy-magyar-reszveny-nagyon-kilott-1209026",
             "url_mobile": "https://www.penzcentrum.hu/megtakaritas/20261113/mi-folyik-a-tozsdeken-brutalis-melyrepulesben-az-amerikai-papirok-az-nvidia-botrany-utan-kozben-egy-magyar-reszveny-nagyon-kilott-1209026/amp",
@@ -63,84 +43,54 @@
             "sourcecountry": "Hungary"
           },
           {
-            "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-holds-near-one-week-low-as-hot-us-inflation-boosts-fed-hike-bets/articleshow/135722357.cms",
-            "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-holds-near-one-week-low-as-hot-us-inflation-boosts-fed-hike-bets/amp_articleshow/135722357.cms",
-            "title": "Gold holds near one - week low as hot US inflation boosts Fed hike bets",
-            "seendate": "20261111T020000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-135722419,width-1200,height-900,imgsize-93522,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
-            "language": "English",
-            "sourcecountry": "India"
+            "url": "https://www.digi24.ro/digieconomic/financiar/romania-a-avut-cea-mai-mare-crestere-economica-din-ue-in-trimestrul-3-din-2026-pib-ul-european-a-incetinit-iar-angajarile-au-stagnat-127067",
+            "url_mobile": "https://www.digi24.ro/digieconomic/amphtml/financiar/romania-a-avut-cea-mai-mare-crestere-economica-din-ue-in-trimestrul-3-din-2026-pib-ul-european-a-incetinit-iar-angajarile-au-stagnat-127067",
+            "title": "Rom\u00e2nia a avut cea mai mare cre\u0219tere economic\u0103 din UE \u00een trimestrul 3 din 2026 . PIB - ul european a \u00eencetinit , iar angaj\u0103rile au stagnat",
+            "seendate": "20261113T180000Z",
+            "socialimage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwMSUyRjAxJTJGMjUxNjg5N18yNTE2/ODk3X3pvbmEtZXVyby5qcGcmdz0xMjAw/Jmg9NjMwJnpjPTEmaGFzaD0wZGIxMjFh/MGE5MjRlYzYwNWQxYjIzZjhmOWE3Njg2ZQ==.thumb.jpg",
+            "domain": "digi24.ro",
+            "language": "Romanian",
+            "sourcecountry": "Romania"
           },
           {
-            "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-as-strong-us-inflation-data-bolsters-dollar-fed-hike-expectations/articleshow/135751745.cms",
-            "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-slips-as-strong-us-inflation-data-bolsters-dollar-fed-hike-expectations/amp_articleshow/135751745.cms",
-            "title": "Gold slips as strong US inflation data bolsters dollar , Fed hike expectations",
-            "seendate": "20261112T013000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-135751750,width-1200,height-900,imgsize-106600,overlay-etmarkets/articleshow.jpg",
-            "domain": "economictimes.indiatimes.com",
+            "url": "https://www.aljazeera.com/economy/2026/11/13/us-treasury-warns-against-rate-hikes-during-us-iran-war-energy-shock",
+            "url_mobile": "https://www.aljazeera.com/amp/economy/2026/11/13/us-treasury-warns-against-rate-hikes-during-us-iran-war-energy-shock",
+            "title": "US Treasury warns against rate hikes during US - Iran war energy  shock  | US - Israel war on Iran News",
+            "seendate": "20261113T180000Z",
+            "socialimage": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aee21e3-1793991139.jpg",
+            "domain": "aljazeera.com",
             "language": "English",
-            "sourcecountry": "India"
+            "sourcecountry": "United States"
           },
           {
-            "url": "https://www.timeturk.com/9-kasim-altin-fiyatlari-yukseliste-ons-4118-dolar-gram-6647-tl",
+            "url": "https://www.vg.hu/penz-es-tokepiac/2026/11/blue-chipek-rekordprofit-utan-ketteszakadt-a-mezony",
             "url_mobile": "",
-            "title": "9 Kas\u0131m alt\u0131n fiyatlar\u0131 y\u00fckseli\u015fte : Ons 4 . 118 dolar , gram 6 . 647 TL",
-            "seendate": "20261109T060000Z",
-            "socialimage": "https://cdn.timeturk.com/uploads/2026/11/9-kasim-altin-fiyatlari-yukseliste-ons-4-118-dolar-gram-6-647-tl.webp",
-            "domain": "timeturk.com",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
+            "title": "Rekordprofit ut\u00e1n kett\u00e9szakadt a mez\u0151ny , technikai k\u00f6rk\u00e9p a magyar blue chipekr\u0151l",
+            "seendate": "20261116T081500Z",
+            "socialimage": "https://cdn.vg.hu/2026/11/lv34Lc8vlwcIWSXsNapPlSyXXghe055_-x6xQTKrSMY/fill/1200/675/no/1/aHR0cHM6Ly9jbXNjZG4uYXBwLmNvbnRlbnQucHJpdmF0ZS9jb250ZW50L2U5MDU2YzVkMGRkZjRlNDU4NzM5YzM5MWIxOTE0ODJh.jpg",
+            "domain": "vg.hu",
+            "language": "Hungarian",
+            "sourcecountry": "Hungary"
           },
           {
-            "url": "https://www.sabah.com.tr/trend/galeri/ekonomi/son-dakika-altinda-100-dolarlik-kayip-dusus-devam-edecek-mi",
-            "url_mobile": "https://m.sabah.com.tr/trend/galeri/ekonomi/son-dakika-altinda-100-dolarlik-kayip-dusus-devam-edecek-mi/amp",
-            "title": "SON DAK\u0130KA | Alt\u0131nda 100 dolarl\u0131k kay\u0131p ! D\u00fc\u015f\u00fc\u015f devam edecek mi ? ",
-            "seendate": "20261111T050000Z",
-            "socialimage": "https://isbh.tmgrup.com.tr/sb/album/2026/11/11/altinda-100-dolarlik-kayip-dusus-devam-edecek-mi-1794369918334.jpeg",
-            "domain": "sabah.com.tr",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.afr.com/markets/currencies/wall-street-is-dumping-bitcoin-australians-reckon-she-ll-be-right-20261112-p61cl0",
+            "url": "https://www.currencynews.co.uk/forecast/20261116-47783_pound-to-dollar-weekly-forecast-banks-target-1-37-1-39-despite-usd-rally.html",
             "url_mobile": "",
-            "title": "Bitcoin price slumps after record US spot ETF outflows as post - election rally fades",
-            "seendate": "20261112T053000Z",
-            "socialimage": "https://static.ffx.io/images/$zoom_0.5295%2C$multiply_2%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/29cae1364271f8cb3fe8d96ac3be4a1b1d14ba30",
-            "domain": "afr.com",
+            "title": "Pound to Dollar Weekly Forecast : Banks Target 1 . 37 - 1 . 39 Despite USD Rally",
+            "seendate": "20261116T081500Z",
+            "socialimage": "",
+            "domain": "currencynews.co.uk",
             "language": "English",
-            "sourcecountry": "Australia"
+            "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.moneycontrol.com/news/business/personal-finance/bitcoin-trims-early-gains-trades-below-74-500-as-investors-await-us-inflation-data-14075963.html",
-            "url_mobile": "https://www.moneycontrol.com/news/business/personal-finance/bitcoin-trims-early-gains-trades-below-74-500-as-investors-await-us-inflation-data-14075963.html/amp",
-            "title": "Bitcoin trims early gains , trades below $74 , 500 as investors await US inflation data",
-            "seendate": "20261110T043000Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2025/12/20251216013633_Bitcoin.jpg",
-            "domain": "moneycontrol.com",
+            "url": "https://thezimbabwemail.com/banking/cbz-holdings-profit-non-funded-income-2026/",
+            "url_mobile": "https://thezimbabwemail.com/banking/cbz-holdings-profit-non-funded-income-2026/?amp=1",
+            "title": "CBZ Reports ZWG1 . 12bn Profit as Non - Funded Income Drives Growth - The Zimbabwe Mail CBZ Reports ZWG1 . 12bn Profit as Non - Funded Income Drives Growth | Zimbabwe News",
+            "seendate": "20261113T180000Z",
+            "socialimage": "https://thezimbabwemail.com/wp-content/uploads/2026/11/CBZ-1.jpg",
+            "domain": "thezimbabwemail.com",
             "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.perthnow.com.au/news/business/aussie-shares-flat-as-us-rates-outlook-hits-miners-c-23146617",
-            "url_mobile": "",
-            "title": "Aussie shares flat as US rates outlook hits miners",
-            "seendate": "20261111T023000Z",
-            "socialimage": "https://images.perthnow.com.au/publication/C-23146617/f3840e76c2a2af9b6a75301f5a2437f0766bf49d-16x9-x0y0w1280h720.jpg?imwidth=1200",
-            "domain": "perthnow.com.au",
-            "language": "English",
-            "sourcecountry": "Australia"
-          },
-          {
-            "url": "https://www.ntv.com.tr/ntvpara/altin/galeri-altin-yatirimcilari-dikkat-baski-devam-edebilir-1750343",
-            "url_mobile": "",
-            "title": "Alt\u0131n yat\u0131r\u0131mc\u0131lar\u0131 dikkat , bask\u0131 devam edebilir",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://images.ntv.com.tr/images/altin13-809596.jpg?format=webp",
-            "domain": "ntv.com.tr",
-            "language": "Turkish",
-            "sourcecountry": "Turkey"
+            "sourcecountry": "Zimbabwe"
           }
         ]
       }
@@ -154,151 +104,78 @@
       "payload": {}
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-11T22:58:46.833024+00:00",
+      "fetched_at_utc": "2026-11-19T23:14:24.748277+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.edaily.co.kr/News/Read?newsId=04585446645644408&mediaCodeNo=257",
-            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=04585446645644408 eNo=257",
-            "title": "\uc18c\ub4dd\uc740 \ub298\uc5c8\ub294\ub370 \uc9c0\uac11 \ub2eb\uc740 \uc77c\ubcf8 \u2026 9\uc6d4 \uac00\uacc4\uc9c0\ucd9c 6 . 8 % \u2193",
-            "seendate": "20261110T060000Z",
-            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26111001147.jpg",
-            "domain": "edaily.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.morningstar.com/news/dow-jones/2026110914427/boj-opinion-summary-shows-board-remains-in-favor-of-more-tightening",
+            "url": "https://www.ammonnews.net/article/1045336",
             "url_mobile": "",
-            "title": "BOJ Opinion Summary Shows Board Remains in Favor of More Tightening",
-            "seendate": "20261110T050000Z",
-            "socialimage": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
-            "domain": "morningstar.com",
-            "language": "English",
-            "sourcecountry": "China"
+            "title": "\u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u064a\u0646\u0643\u0645\u0634 \u0639\u0644\u0649 \u063a\u064a\u0631 \u0627\u0644\u0645\u062a\u0648\u0642\u0639 \u0628\u0641\u0639\u0644 \u0636\u063a\u0648\u0637 \u0627\u0644\u062a\u0636\u062e\u0645 \u0639\u0644\u0649 \u0627\u0644\u0623\u0633\u0631 | \u0627\u0642\u062a\u0635\u0627\u062f",
+            "seendate": "20261116T081500Z",
+            "socialimage": "https://www.ammonnews.net/image.php?token=04655c90cdffe11e6f1db503efed2734&size=",
+            "domain": "ammonnews.net",
+            "language": "Arabic",
+            "sourcecountry": "Jordan"
           },
           {
-            "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-edges-up-as-softer-crude-tempers-inflation-concerns/articleshow/135667365.cms",
-            "url_mobile": "https://m.economictimes.com/markets/commodities/news/gold-edges-up-as-softer-crude-tempers-inflation-concerns/amp_articleshow/135667365.cms",
-            "title": "Gold edges up as softer crude tempers inflation concerns",
-            "seendate": "20261109T020000Z",
-            "socialimage": "https://img.etimg.com/thumb/msid-135667392,width-1200,height-900,imgsize-172310,overlay-etmarkets/articleshow.jpg",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/bojs-takata-calls-for-early-rate-hikes-to-curb-inflation-risks/articleshow/135876217.cms",
+            "url_mobile": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/bojs-takata-calls-for-early-rate-hikes-to-curb-inflation-risks/amp_articleshow/135876217.cms",
+            "title": "BOJ Takata calls for early rate hikes to curb inflation risks",
+            "seendate": "20261116T081500Z",
+            "socialimage": "https://img.etimg.com/thumb/msid-135876314,width-1200,height-900,imgsize-215012,overlay-etmarkets/articleshow.jpg",
             "domain": "economictimes.indiatimes.com",
             "language": "English",
             "sourcecountry": "India"
           },
           {
-            "url": "https://www.aol.com/articles/analysis-market-rout-tests-bojs-043226000.html",
+            "url": "https://www.ammonnews.net/article/1045335",
             "url_mobile": "",
-            "title": "Analysis - Market rout tests BOJ upbeat view of financial conditions",
-            "seendate": "20261110T053000Z",
-            "socialimage": "https://hermes.media.transform.aol.com/5af3da75b528db6199c0952dda44eb4aaedaef88/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/10/19164c9c-eb3f-3224-8d84-ccf9717e72a1/5d191f74-41de-4396-9d83-70b83db7e0fb.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "title": "\u0627\u0644\u064a\u0646 \u064a\u0642\u062a\u0631\u0628 \u0645\u0646 \u0623\u062f\u0646\u0649 \u0645\u0633\u062a\u0648\u064a\u0627\u062a\u0647 \u0641\u064a \u0634\u0647\u0631\u064a\u0646 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 | \u0627\u0642\u062a\u0635\u0627\u062f",
+            "seendate": "20261116T081500Z",
+            "socialimage": "https://www.ammonnews.net/image.php?token=1a46bbf044a20ff83fc22d159bb94851&size=",
+            "domain": "ammonnews.net",
+            "language": "Arabic",
+            "sourcecountry": "Jordan"
           },
           {
-            "url": "https://econotimes.com/BOJ-Opinions-Show-Split-Over-Pace-of-Further-Rate-Increases-1774140",
+            "url": "https://sana.sy/economy/2636312/",
             "url_mobile": "",
-            "title": "BOJ Opinions Show Split Over Pace of Further Rate Increases",
-            "seendate": "20261110T023000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/bea10763eb96dd0fe6afaa93ae73581e29d6767430673ddd6c4508bf7bc9d9ae.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "title": "\u0645\u0624\u0634\u0631 \u0646\u064a\u0643\u064a \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u064a\u062a\u0631\u0627\u062c\u0639 1 . 6 \u0628\u0627\u0644\u0645\u0626\u0629 \u0628\u0627\u0644\u062a\u0632\u0627\u0645\u0646 \u0645\u0639 \u0627\u0646\u0643\u0645\u0627\u0634 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f",
+            "seendate": "20261116T081500Z",
+            "socialimage": "https://cdn.sananews.sy/2026/10/photo_2026-10-29_09-30-42.jpg",
+            "domain": "sana.sy",
+            "language": "Arabic",
+            "sourcecountry": "Syria"
           },
           {
-            "url": "https://www.edaily.co.kr/News/Read?newsId=02968406645644408&mediaCodeNo=257",
-            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=02968406645644408 eNo=257",
-            "title": "\ube14\ub8f8\ubc84\uadf8  \uc815\ud655\ub3c4 1\uc704  \ud658\uc728 \uc804\ubb38\uac00  \uc5d4\ud654 , \ub0b4\ub144 147\uc5d4\uae4c\uc9c0 \uc624\ub97c \uac83  ",
-            "seendate": "20261110T003000Z",
-            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26111000391.jpg",
-            "domain": "edaily.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://www.hellenicshippingnews.com/ing-our-latest-views-on-the-major-central-banks-9/",
+            "url": "https://www.nikkei.com/article/DGXZQOFD1516H0V11C26A1000000/",
             "url_mobile": "",
-            "title": "ING : Our latest views on the major central banks | Hellenic Shipping News Worldwide",
-            "seendate": "20261111T023000Z",
-            "socialimage": "",
-            "domain": "hellenicshippingnews.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "https://econotimes.com/BOJ-Sets-Planned-Monthly-JGB-Offers-at-2-3-Trillion-for-October-December-1773409",
-            "url_mobile": "",
-            "title": "BOJ Sets Planned Monthly JGB Offers at \u00a52 . 3 Trillion for October - December",
-            "seendate": "20261109T010000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/34cd5a2bb38b7211c8727b072d63cb1a778e4cb69fed75f822d6be15914ddc45.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.nikkan-gendai.com/articles/view/money/395437",
-            "url_mobile": "",
-            "title": "\u9ad8\u5e02\u653f\u6a29 \u300c \u7269\u4fa1\u9ad8\u5bfe\u7b56 \u300d \u3044\u3088\u3044\u3088\u30b8\u30ea\u8ca7 \u2026 \u6d88\u8cbb\u652f\u51fa10\u30ab\u6708\u9023\u7d9a\u30de\u30a4\u30ca\u30b9\u306f\u30b3\u30ed\u30ca\u798d\u30ec\u30d9\u30eb\u306e\u60e8\u4e8b\uff5c\u65e5\u520a\u30b2\u30f3\u30c0\u30a4DIGITAL",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://jmqvqzo7.user.webaccel.jp/img/article/000/395/437/d3035feccc45f9e64f050505c569575520261111094438657.jpg",
-            "domain": "nikkan-gendai.com",
+            "title": "\u6c7a\u7b97 : \u91d1\u5229\u4e0a\u6607\u3068\u682a\u9ad8\u304c\u8ffd\u3044\u98a8\u306b \u4e2d\u90e8\u5730\u9280\u306e4 \u301c 9\u6708 \u3001 \u5168\u884c\u304c\u5897\u76ca",
+            "seendate": "20261116T081500Z",
+            "socialimage": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3880877015112026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&s=efb2f00c8c0d18eeb9e8f90bb19acf05",
+            "domain": "nikkei.com",
             "language": "Japanese",
             "sourcecountry": "Japan"
           },
           {
-            "url": "https://www.edaily.co.kr/News/Read?newsId=03608006645644408&mediaCodeNo=257",
-            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=03608006645644408 eNo=257",
-            "title": "  \ud558\ub8e8 68\uc870\uc6d0  \uac1c\uc785\uc5d0\ub3c4 \u2026 \uc5d4\ud654 \uc804\ub9dd  147\uc5d4 vs 170\uc5d4  \uadf9\uba85\ud55c \uc5c7\uac08\ub9bc",
-            "seendate": "20261110T020000Z",
-            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26111000700.jpg",
-            "domain": "edaily.co.kr",
-            "language": "Korean",
-            "sourcecountry": "South Korea"
-          },
-          {
-            "url": "https://dunyanews.tv/en/Business/981940-us-dollar-holds-onto-payrolls-gains-nz-dollar-rises-after-election",
-            "url_mobile": "https://dunyanews.tv/amp/english/981940.php",
-            "title": "US dollar holds onto payrolls gains , NZ dollar rises after election",
-            "seendate": "20261109T063000Z",
-            "socialimage": "https://img.dunyanews.tv/news/2026/November/11-09-26/news_big_images/981940_17628977.jpg",
-            "domain": "dunyanews.tv",
+            "url": "https://www.ibtimes.com.au/nikkei-225-falls-below-60000-asian-markets-slide-1878666",
+            "url_mobile": "",
+            "title": "Nikkei 225 Tumbles 2 . 4 % Below 60 , 000 Mark as Japanese Stocks Lose Nearly 1 , 500 Points in Sharp Monday Selloff",
+            "seendate": "20261116T081500Z",
+            "socialimage": "https://d.ibtimes.com.au/en/full/1895331/10-nikkei-225-stocks-analysts-are-watching-2026.jpg",
+            "domain": "ibtimes.com.au",
             "language": "English",
-            "sourcecountry": "Pakistan"
-          },
-          {
-            "url": "https://www.laregione.ch/economia/economia/1961715/yen-miliardi-giappone-luglio-intervento-euro",
-            "url_mobile": "https://amp.laregione.ch/economia/economia/1961715/yen-miliardi-giappone-luglio-intervento-euro",
-            "title": "Giappone , intervento record da 45 , 3 miliardi di euro per sostenere lo yen",
-            "seendate": "20261109T050000Z",
-            "socialimage": "",
-            "domain": "laregione.ch",
-            "language": "Italian",
-            "sourcecountry": "Switzerland"
+            "sourcecountry": "Australia"
           }
         ]
       }
     },
     "7d|(\"euro area inflation\" OR \"euro area growth\" OR \"eurozone GDP\")": {
-      "fetched_at_utc": "2026-11-17T23:44:32.634220+00:00",
-      "payload": {
-        "articles": [
-          {
-            "url": "https://www.miragenews.com/ecb-experience-in-monetary-policy-communication-1775435/",
-            "url_mobile": "",
-            "title": "ECB Experience in Monetary Policy Communication : Science and Practice",
-            "seendate": "20261111T053000Z",
-            "socialimage": "https://www.ecb.europa.eu/sp261110_1/ecb.sp261110_1.en_img0.png?63e07fc0adb8bac5483430d66f7e3398",
-            "domain": "miragenews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        ]
-      }
+      "fetched_at_utc": "2026-11-19T23:16:34.274528+00:00",
+      "payload": {}
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-18T23:08:48.916068+00:00",
+      "fetched_at_utc": "2026-11-19T23:17:11.393160+00:00",
       "payload": {
         "articles": [
           {
@@ -312,26 +189,6 @@
             "sourcecountry": "United Kingdom"
           },
           {
-            "url": "https://www.business-standard.com/companies/news/thomas-cook-india-expects-demerger-of-resorts-business-by-oct-2027-md-126111500166_1.html",
-            "url_mobile": "https://www.business-standard.com/amp/companies/news/thomas-cook-india-expects-demerger-of-resorts-business-by-oct-2027-md-126111500166_1.html",
-            "title": "Thomas Cook India expects demerger of resorts business by Oct 2027 : MD",
-            "seendate": "20261115T074500Z",
-            "socialimage": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-11/05/thumb/fitandfill/1200X628/1793903168-182.jpg",
-            "domain": "business-standard.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.thehindubusinessline.com/companies/thomas-cook-india-targets-october-2027-for-resorts-business-demerger-eyes-acquisitions/article71704173.ece",
-            "url_mobile": "https://www.thehindubusinessline.com/companies/thomas-cook-india-targets-october-2027-for-resorts-business-demerger-eyes-acquisitions/article71704173.ece/amp/",
-            "title": "Thomas Cook India targets October 2027 for resorts business demerger ; eyes acquisitions",
-            "seendate": "20261115T074500Z",
-            "socialimage": "https://bl-i.thgim.com/public/incoming/w2ysuy/article71704190.ece/alternates/LANDSCAPE_1200/thomas%20cook.jpg",
-            "domain": "thehindubusinessline.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
             "url": "https://www.ammonnews.net/article/1045335",
             "url_mobile": "",
             "title": "\u0627\u0644\u064a\u0646 \u064a\u0642\u062a\u0631\u0628 \u0645\u0646 \u0623\u062f\u0646\u0649 \u0645\u0633\u062a\u0648\u064a\u0627\u062a\u0647 \u0641\u064a \u0634\u0647\u0631\u064a\u0646 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 | \u0627\u0642\u062a\u0635\u0627\u062f",
@@ -340,6 +197,16 @@
             "domain": "ammonnews.net",
             "language": "Arabic",
             "sourcecountry": "Jordan"
+          },
+          {
+            "url": "https://www.viata-libera.ro/economie/265804-a-patra-sedinta-consecutiva-de-scadere-pentru-euro",
+            "url_mobile": "",
+            "title": "A patra \u0219edin\u021b\u0103 consecutiv\u0103 de sc\u0103dere pentru euro",
+            "seendate": "20261119T193000Z",
+            "socialimage": "https://www.viata-libera.ro/media/k2/items/cache/96a0a5033df229a7ffca6f65d46174eb_L.jpg",
+            "domain": "viata-libera.ro",
+            "language": "Romanian",
+            "sourcecountry": "Romania"
           },
           {
             "url": "https://www.currencynews.co.uk/forecast/20261116-47783_pound-to-dollar-weekly-forecast-banks-target-1-37-1-39-despite-usd-rally.html",
@@ -359,7 +226,7 @@
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-18T23:11:03.440337+00:00",
+      "fetched_at_utc": "2026-11-19T23:18:25.306964+00:00",
       "payload": {
         "articles": [
           {
@@ -376,38 +243,58 @@
       }
     },
     "7d|(\"Australia inflation\" OR \"Australia jobs\" OR \"Australia GDP\")": {
-      "fetched_at_utc": "2026-11-13T22:15:32.863656+00:00",
+      "fetched_at_utc": "2026-11-19T23:19:41.396038+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.crikey.com.au/2026/11/10/angus-taylor-red-tape-economy-policy/",
+            "url": "https://www.theage.com.au/politics/victoria/the-smiling-assassin-how-warren-pickering-wants-to-soften-one-nation-and-smash-their-rivals-20261120-p617ds.html",
             "url_mobile": "",
-            "title": "Angus Taylor invents the world freshest policy pitch ! ",
-            "seendate": "20261110T023000Z",
-            "socialimage": "https://assets.crikey.com.au/wp-content/uploads/sites/3/2026/11/Red-tape_1680x945.jpg?quality=70",
-            "domain": "crikey.com.au",
+            "title": "Warren Pickering : How Victorian One Nation leader wants to soften party and smash rivals",
+            "seendate": "20261119T193000Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.35651596175199696%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_47%2C$y_152/t_crop_custom/q_86%2Cf_auto/2e1f3bcbc123f92a4e9316d1df049fe017c10149",
+            "domain": "theage.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.miragenews.com/report-highlights-opportunities-as-regional-1774469/",
+            "url": "https://www.brisbanetimes.com.au/politics/victoria/the-smiling-assassin-how-warren-pickering-wants-to-soften-one-nation-and-smash-their-rivals-20261120-p617ds.html",
             "url_mobile": "",
-            "title": "Report Highlights Opportunities as Regional Employers Seek Workers",
-            "seendate": "20261110T000000Z",
-            "socialimage": "https://cdn1.miragenews.com/wp-content/uploads/2019/04/news-and-developments.jpg",
-            "domain": "miragenews.com",
+            "title": "Warren Pickering : How Victorian One Nation leader wants to soften party and smash rivals",
+            "seendate": "20261119T193000Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.35651596175199696%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_47%2C$y_152/t_crop_custom/q_86%2Cf_auto/2e1f3bcbc123f92a4e9316d1df049fe017c10149",
+            "domain": "brisbanetimes.com.au",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.rttnews.com/3713315/australian-market-notably-lower.aspx",
+            "url": "https://www.areanews.com.au/story/9391656/awkward-moment-awaits-pm-with-potential-putin-photo/",
             "url_mobile": "",
-            "title": "Australian Market Notably Lower",
-            "seendate": "20261112T013000Z",
-            "socialimage": "",
-            "domain": "rttnews.com",
+            "title": "Awkward moment awaits PM with potential Putin photo",
+            "seendate": "20261115T074500Z",
+            "socialimage": "https://www.areanews.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a57558b9-f76e-4b9d-badb-07a39237a18b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "areanews.com.au",
             "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.muswellbrookchronicle.com.au/story/9391656/awkward-moment-awaits-pm-with-potential-putin-photo/",
+            "url_mobile": "",
+            "title": "Awkward moment awaits PM with potential Putin photo",
+            "seendate": "20261115T074500Z",
+            "socialimage": "https://www.muswellbrookchronicle.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a57558b9-f76e-4b9d-badb-07a39237a18b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "muswellbrookchronicle.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.southernhighlandnews.com.au/story/9391656/awkward-moment-awaits-pm-with-potential-putin-photo/",
+            "url_mobile": "",
+            "title": "Awkward moment awaits PM with potential Putin photo",
+            "seendate": "20261115T074500Z",
+            "socialimage": "https://www.southernhighlandnews.com.au/images/transform/v1/crop/frm/silverstone-feed-data/a57558b9-f76e-4b9d-badb-07a39237a18b.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "southernhighlandnews.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
           }
         ]
       }
@@ -417,7 +304,7 @@
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-17T23:49:45.146817+00:00",
+      "fetched_at_utc": "2026-11-19T23:20:51.834334+00:00",
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
@@ -425,15 +312,15 @@
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-17T23:52:26.206985+00:00",
+      "fetched_at_utc": "2026-11-19T23:23:37.647876+00:00",
       "payload": {}
     },
     "96h|\"Swiss National Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-18T23:19:27.122952+00:00",
+      "fetched_at_utc": "2026-11-19T23:23:48.503569+00:00",
       "payload": {}
     },
     "7d|(\"Switzerland inflation\" OR \"Swiss growth\" OR \"Switzerland GDP\")": {
-      "fetched_at_utc": "2026-11-13T22:21:59.818115+00:00",
+      "fetched_at_utc": "2026-11-19T23:24:28.211300+00:00",
       "payload": {}
     },
     "96h|\"Bank of England\" (rates OR inflation OR policy OR economy)": {
@@ -474,11 +361,11 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-17T23:47:11.066314+00:00",
+      "fetched_at_utc": "2026-11-19T23:18:40.633830+00:00",
       "payload": {}
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-11-17T00:39:29.834318+00:00",
+      "fetched_at_utc": "2026-11-19T23:22:04.921271+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:bankofengland.co.uk": {
@@ -547,7 +434,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-11-17T23:54:52.903031+00:00",
+      "fetched_at_utc": "2026-11-19T23:25:07.685541+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
