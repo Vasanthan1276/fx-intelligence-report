@@ -229,7 +229,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 .job-failed{color:var(--red);font-weight:700}
 #chart-error{padding:15px;color:var(--amber)}
 </style>
-<script>window.fxReviewConfig = {"marketDate": "2026-11-19", "snapshotAt": "2026-11-19T23:25:07.728022+00:00", "status": {"schema_version": 1, "state": "no_new_market_data", "run_context": "github_actions", "using_cached_snapshot": true, "last_attempt_at_utc": "2026-11-19T23:40:45.846423+00:00", "completed_at_utc": "2026-11-19T23:40:48.762114+00:00", "last_successful_check_at_utc": "2026-11-19T23:40:48.762119+00:00", "last_model_update_at_utc": "2026-11-19T23:25:07.728022+00:00", "market_date": "2026-11-19", "run_url": "https://github.com/Vasanthan1276/fx-intelligence-report/actions/runs/44639640872", "fx_fetch": {"checked_at_utc": "2026-11-19T23:40:46.297634+00:00", "sources": [{"name": "ECB Data Portal API", "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY+GBP+AUD+MYR+CHF+SGD.EUR.SP00.A", "status": "available", "attempts": [{"attempt": 1, "status": "received"}], "latest_observation": "2026-11-19"}], "selected_source": "ECB Data Portal API"}, "previous_failure": null}};</script>
+<script>window.fxReviewConfig = {"marketDate": "2026-11-20", "snapshotAt": "2026-11-20T23:06:16.217713+00:00", "status": {"schema_version": 1, "state": "updated", "run_context": "github_actions", "using_cached_snapshot": false, "last_attempt_at_utc": "2026-11-20T22:45:37.569386+00:00", "completed_at_utc": "2026-11-20T23:06:17.109903+00:00", "last_successful_check_at_utc": "2026-11-20T23:06:17.109912+00:00", "last_model_update_at_utc": "2026-11-20T23:06:16.217713+00:00", "market_date": "2026-11-20", "run_url": "https://github.com/Vasanthan1276/fx-intelligence-report/actions/runs/44831505080", "fx_fetch": {"checked_at_utc": "2026-11-20T22:45:39.180805+00:00", "sources": [{"name": "ECB Data Portal API", "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY+GBP+AUD+MYR+CHF+SGD.EUR.SP00.A", "status": "available", "attempts": [{"attempt": 1, "status": "received"}], "latest_observation": "2026-11-20"}], "selected_source": "ECB Data Portal API"}, "previous_failure": null}};</script>
 <script src="dashboard-health.js" defer></script>
 </head>
 <body>
@@ -237,8 +237,8 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   <nav class="legacy-navigation" aria-label="Dashboard layouts"><strong>Old dashboard</strong><a href="./">Updated dashboard</a><a href="./#source-health">Source health &amp; validation</a></nav>
   <aside class="legacy-notice" aria-label="Snapshot health">
     <p>Original layout, updated from the same data as the new dashboard. Phase 2C baseline unchanged; Phase 3A.3 news remains shadow-only with 0% recommendation weight. Scores and confidence labels are not probabilities of success.</p>
-    <p>Model snapshot: <strong id="snapshot-time">2026-11-19T23:25:07.728022+00:00 UTC</strong> · ECB daily reference rates, not live quotes.</p>
-    <div id="freshness-banner" class="freshness-banner warning" role="status">Snapshot observation: 2026-11-19. Freshness needs JavaScript to evaluate against today's date. Check source health before using these recorded recommendations.</div>
+    <p>Model snapshot: <strong id="snapshot-time">2026-11-20T23:06:16.217713+00:00 UTC</strong> · ECB daily reference rates, not live quotes.</p>
+    <div id="freshness-banner" class="freshness-banner warning" role="status">Snapshot observation: 2026-11-20. Freshness needs JavaScript to evaluate against today's date. Check source health before using these recorded recommendations.</div>
     <p id="workflow-check">Current job status not checked yet. <a href="https://github.com/Vasanthan1276/fx-intelligence-report/actions/workflows/update-fx.yml">View Actions</a></p>
   </aside>
   <header class="topbar">
@@ -248,18 +248,18 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <p class="subtitle">The Phase 2C baseline remains frozen. Phase 3A.3 keeps the separate news/event shadow layer pair-aware and relevance-filtered, with stricter official-source admission, English-language interpretation and minimum directional evidence.</p>
     </div>
     <div class="status-panel">
-      <div><span>Market data</span><strong>2026-11-19</strong></div>
+      <div><span>Market data</span><strong>2026-11-20</strong></div>
       <div><span>Model</span><strong>2.2-phase2c-baseline</strong></div>
       <div><span>Monitoring release</span><strong>3.3-phase3a3-direction-semantics</strong></div>
       <div><span>Baseline status</span><strong>Core scoring frozen</strong></div>
-      <div><span>Score-change comparison</span><strong>2026-11-18</strong></div>
+      <div><span>Score-change comparison</span><strong>2026-11-19</strong></div>
       <div><span>FX source</span><strong>ECB Data Portal API</strong></div>
       <div><span>Policy source</span><strong>BIS central bank policy rates (7/7 available)</strong></div>
       <div><span>Macro source</span><strong>IMF WEO unavailable for this run</strong></div>
       <div><span>Forward layer</span><strong>BIS + IMF + FX trend model</strong></div>
       <div><span>Event calendars</span><strong>Official 2026 central-bank schedules</strong></div>
-      <div><span>News/event shadow</span><strong>Pair-aware relevance-filtered GDELT + official central-bank communications (0/7 usable; 3 thin; 49 API calls; 0 cache hits; 33 rate-limit retries)</strong></div>
-      <div><span>Shadow run (SGT)</span><strong>2026-11-20</strong></div>
+      <div><span>News/event shadow</span><strong>Pair-aware relevance-filtered GDELT + official central-bank communications (0/7 usable; 5 thin; 65 API calls; 0 cache hits; 48 rate-limit retries)</strong></div>
+      <div><span>Shadow run (SGT)</span><strong>2026-11-21</strong></div>
       <div><span>Cross-check</span><strong>Yahoo Finance market snapshot (validation only)</strong></div>
     </div>
   </header>
@@ -268,33 +268,33 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <div class="hero-card">
       <h3>Best current opportunity</h3>
       <div class="hero-opportunity"><span>AUD</span> · Buy</div>
-      <div class="hero-score"><strong>4.08/5</strong><span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.45</span><span>Opportunity · A$1 = S$0.8656</span></div>
+      <div class="hero-score"><strong>4.28/5</strong><span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.20</span><span>Opportunity · A$1 = S$0.8589</span></div>
       <div class="hero-split">
-        <div>Market <strong>3.92/5</strong></div>
+        <div>Market <strong>4.15/5</strong></div>
         <div>Macro backdrop <strong>5.00/5</strong></div>
-        <div>Forward outlook <strong>2.13/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.40</span></strong></div>
-        <div>Buy urgency <strong>2.79/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.39</span> · Moderate</strong></div>
-        <div>Model/data quality <strong>63%</strong></div>
-        <div>Signal agreement <strong>45%</strong></div>
-        <div>News/event shadow <strong>2.50/5 · Unavailable</strong></div>
+        <div>Forward outlook <strong>2.00/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.13</span></strong></div>
+        <div>Buy urgency <strong>2.75/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.04</span> · Moderate</strong></div>
+        <div>Model/data quality <strong>62%</strong></div>
+        <div>Signal agreement <strong>40%</strong></div>
+        <div>News/event shadow <strong>2.50/5 · Relevant coverage / insufficient directional evidence</strong></div>
       </div>
-      <div class="daily-change-row"><span>Change vs 2026-11-18</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.45</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.40</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.39</span></strong></div>
-      <p class="hero-copy">5-year valuation is mid-range at the 23rd cost percentile.</p>
+      <div class="daily-change-row"><span>Change vs 2026-11-19</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.20</span> Forward <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.13</span> Urgency <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.04</span></strong></div>
+      <p class="hero-copy">5-year valuation is mid-range at the 20th cost percentile.</p>
       <p class="hero-macro">Macro view: Reserve Bank of Australia policy rate is 4.60% and up 50 bp over 6 months.</p>
       <p class="hero-macro">Forward view: Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes. Model-implied forward policy bias: Tightening bias — after considering recent policy trend, IMF inflation and growth outlook.</p>
       <p class="hero-macro">Timing view: Forward policy bias is tightening bias (model-implied, not futures-implied).</p>
-      <p class="hero-macro">Phase 3A.3 shadow: 2.50/5 · Unavailable · 0% headline confidence. This does not affect the action.</p>
+      <p class="hero-macro">Phase 3A.3 shadow: 2.50/5 · Relevant coverage / insufficient directional evidence · 33% headline confidence. This does not affect the action.</p>
     </div>
     <div class="hero-side">
       <h3>Suggested action</h3>
       <div class="big-action">Buy in stages</div>
       <p><strong>Historical valuation:</strong> Attractive Historical Value<br>
-      <strong>Attractive-value threshold:</strong> S$0.8785<br>
+      <strong>Attractive-value threshold:</strong> S$0.8784<br>
       <strong>Strong-value threshold:</strong> S$0.8584<br>
-      <strong>Forward outlook:</strong> 2.13/5 · Mixed / neutral<br>
-      <strong>Buy urgency:</strong> 2.79/5 · Moderate<br>
-      <strong>Model/data quality:</strong> 63% · 45% signal agreement<br>
-      <strong>Next policy event:</strong> 2026-12-08 · 19 days · Moderate risk</p>
+      <strong>Forward outlook:</strong> 2.00/5 · Mixed / neutral<br>
+      <strong>Buy urgency:</strong> 2.75/5 · Moderate<br>
+      <strong>Model/data quality:</strong> 62% · 40% signal agreement<br>
+      <strong>Next policy event:</strong> 2026-12-08 · 18 days · Moderate risk</p>
       <p>25% of your planned discretionary conversion is the model's current suggested first tranche. Phase 3A.3 keeps the Phase 2C scoring logic frozen. News/event intelligence is displayed and logged separately in shadow mode; it cannot change this action or tranche during the validation period.</p>
     </div>
   </section>
@@ -303,70 +303,70 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <div><h2>Currency opportunity ranking</h2><p>Highest Opportunity Score first. Forward Outlook and Buy Urgency are shown separately so valuation is not confused with timing pressure.</p></div>
   </div>
   <section class="cards">
-        <article class="currency-card" data-code="AUD" data-score="4.08">
+        <article class="currency-card" data-code="AUD" data-score="4.28">
           <div class="card-topline">
             <div>
               <div class="rank">#1 opportunity</div>
               <h2>AUD <span>Australian Dollar</span></h2>
             </div>
             <div class="score-ring score-strong">
-              <strong>4.08</strong><small>/ 5 opportunity</small>
+              <strong>4.28</strong><small>/ 5 opportunity</small>
             </div>
           </div>
 
           <div class="score-split">
-            <div><span>Market & valuation</span><strong class="score-good">3.92/5</strong></div>
+            <div><span>Market & valuation</span><strong class="score-strong">4.15/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-strong">5.00/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-weak">2.13/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.40</span></strong></div>
+            <div><span>Forward outlook</span><strong class="score-weak">2.00/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.13</span></strong></div>
           </div>
 
-          <div class="daily-change-row"><span>Change vs 2026-11-18</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.45</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.40</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.39</span></strong></div>
+          <div class="daily-change-row"><span>Change vs 2026-11-19</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.20</span> Forward <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.13</span> Urgency <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.04</span></strong></div>
 
           <div class="urgency-box urgency-normal">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.79/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.39</span> · Moderate</strong></div>
+              <div><span>Buy urgency</span><strong>2.75/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.04</span> · Moderate</strong></div>
               <div class="urgency-pill">Moderate event risk</div>
             </div>
             <div class="urgency-grid">
               <div><span>Forward policy bias</span><strong>Tightening bias</strong></div>
               <div><span>Forward FX momentum</span><strong>Strong weakening</strong></div>
-              <div><span>Next policy event</span><strong>2026-12-08 · 19 days</strong></div>
-              <div><span>Valuation rarity</span><strong>3.86/5</strong></div>
+              <div><span>Next policy event</span><strong>2026-12-08 · 18 days</strong></div>
+              <div><span>Valuation rarity</span><strong>3.99/5</strong></div>
             </div>
           </div>
 
           
       <div class="shadow-box shadow-neutral">
         <div class="shadow-head">
-          <div><span>Phase 3A.3 direction-semantics shadow intelligence</span><strong>2.50/5 · Unavailable</strong></div>
+          <div><span>Phase 3A.3 direction-semantics shadow intelligence</span><strong>2.50/5 · Relevant coverage / insufficient directional evidence</strong></div>
           <div class="shadow-pill">SHADOW ONLY</div>
         </div>
         <div class="coverage-row">
-          <span>Coverage quality</span><strong class="coverage-badge coverage-unavailable">Unavailable</strong>
-          <small>3/4 media queries successful</small>
+          <span>Coverage quality</span><strong class="coverage-badge coverage-thin">Thin</strong>
+          <small>2/4 media queries successful</small>
         </div>
         <div class="shadow-grid">
-          <div><span>Headline confidence</span><strong>0%</strong></div>
-          <div><span>Directional relevant items</span><strong>0/0</strong></div>
+          <div><span>Headline confidence</span><strong>33%</strong></div>
+          <div><span>Directional relevant items</span><strong>0/1</strong></div>
           <div><span>Official relevant items</span><strong>0</strong></div>
-          <div><span>Media relevant items</span><strong>0</strong></div>
+          <div><span>Media relevant items</span><strong>1</strong></div>
         </div>
-        <div class="shadow-secondary">Relevance filter: <strong>0</strong> kept of <strong>6</strong> retrieved · rejected: <strong>6</strong> · Evidence gate: <strong>NOT MET</strong></div>
-        <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>0</strong> · Source diversity: <strong>0</strong> · Agreement: <strong>—</strong></div>
-        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-08 · 19 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
-        <ul class="shadow-headlines"><li class="shadow-empty">No usable recent items returned for this run.</li></ul>
+        <div class="shadow-secondary">Relevance filter: <strong>1</strong> kept of <strong>18</strong> retrieved · rejected: <strong>17</strong> · Evidence gate: <strong>NOT MET</strong></div>
+        <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>0</strong> · Source diversity: <strong>1</strong> · Agreement: <strong>—</strong></div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-08 · 18 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li><a href="https://www.bandt.com.au/netflix-productions-contributed-2-5bn-to-aussie-gdp-in-past-decade/" target="_blank" rel="noopener noreferrer">Netflix Productions  Contributed $2 . 5BN To Aussie GDP  In Past Decade</a><span><b>Media</b> · bandt.com.au · neutral · relevance 86/100 · target currency/economy named</span></li></ul>
       </div>
     
 
           <div class="recommendation rec-buy">Buy</div>
-          <div class="rate-primary">A$1 = S$0.8656</div>
-          <div class="rate-secondary">S$1 buys 1.155 AUD</div>
+          <div class="rate-primary">A$1 = S$0.8589</div>
+          <div class="rate-secondary">S$1 buys 1.164 AUD</div>
 
           <div class="mini-grid">
-            <div><span>1 month</span><strong>-3.07%</strong></div>
-            <div><span>5Y cost percentile</span><strong>22.9%</strong></div>
-            <div><span>Model/data quality</span><strong>63% · Low</strong></div>
-            <div><span>Signal agreement</span><strong>45%</strong></div>
+            <div><span>1 month</span><strong>-4.40%</strong></div>
+            <div><span>5Y cost percentile</span><strong>20.3%</strong></div>
+            <div><span>Model/data quality</span><strong>62% · Low</strong></div>
+            <div><span>Signal agreement</span><strong>40%</strong></div>
           </div>
 
           <div class="macro-box">
@@ -383,12 +383,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
           <div class="forward-box">
             <div class="forward-head">
-              <div><span>Phase 2C forward outlook</span><strong>2.13/5 · Mixed / neutral</strong></div>
+              <div><span>Phase 2C forward outlook</span><strong>2.00/5 · Mixed / neutral</strong></div>
               <div class="forward-note">Model-implied, not futures-implied</div>
             </div>
             <div class="forward-grid">
               <div><span>Policy bias</span><strong>3.92/5</strong><small>Tightening bias</small></div>
-              <div><span>FX momentum</span><strong>0.67/5</strong><small>Strong weakening</small></div>
+              <div><span>FX momentum</span><strong>0.43/5</strong><small>Strong weakening</small></div>
               <div><span>Data quality</span><strong>80%</strong><small>High</small></div>
             </div>
           </div>
@@ -396,7 +396,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="zone-box">
             <div class="zone-head"><span>Historical valuation</span><strong>Attractive Historical Value</strong></div>
             <div class="zone-grid">
-              <div><span>Attractive historical value</span><strong>≤ S$0.8785</strong></div>
+              <div><span>Attractive historical value</span><strong>≤ S$0.8784</strong></div>
               <div><span>Strong historical value</span><strong>≤ S$0.8584</strong></div>
               <div><span>Exceptional historical value</span><strong>≤ S$0.8423</strong></div>
               <div><span>5Y fair value</span><strong>S$0.8919</strong></div>
@@ -410,44 +410,160 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           </div>
 
           <div class="driver-columns">
-            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 23rd cost percentile.</li><li>Buyer-friendly momentum: SGD cost fell 3.1% over roughly one month.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
+            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 20th cost percentile.</li><li>Buyer-friendly momentum: SGD cost fell 4.4% over roughly one month.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Reserve Bank of Australia policy rate is 4.60% and up 50 bp over 6 months.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Tightening bias — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure still favours the SGD buyer, reducing the need to chase the rate.</li><li>Over one month the currency became 3.07% cheaper in SGD terms.</li></ul></div>
-            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is tightening bias (model-implied, not futures-implied).</li><li>Forward FX momentum is strong weakening based on 7D/30D/90D price structure.</li><li>Next Reserve Bank of Australia board schedule event is in 19 days (2026-12-08); event risk is moderate.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Tightening bias — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure still favours the SGD buyer, reducing the need to chase the rate.</li><li>Over one month the currency became 4.40% cheaper in SGD terms.</li></ul></div>
+            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is tightening bias (model-implied, not futures-implied).</li><li>Forward FX momentum is strong weakening based on 7D/30D/90D price structure.</li><li>Next Reserve Bank of Australia board schedule event is in 18 days (2026-12-08); event risk is moderate.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('AUD')">View 5-year chart</button>
         </article>
         
 
-        <article class="currency-card" data-code="EUR" data-score="3.98">
+        <article class="currency-card" data-code="EUR" data-score="4.02">
           <div class="card-topline">
             <div>
               <div class="rank">#2 opportunity</div>
               <h2>EUR <span>Euro</span></h2>
             </div>
-            <div class="score-ring score-good">
-              <strong>3.98</strong><small>/ 5 opportunity</small>
+            <div class="score-ring score-strong">
+              <strong>4.02</strong><small>/ 5 opportunity</small>
             </div>
           </div>
 
           <div class="score-split">
-            <div><span>Market & valuation</span><strong class="score-strong">4.16/5</strong></div>
+            <div><span>Market & valuation</span><strong class="score-strong">4.21/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-neutral">2.95/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-neutral">2.44/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.47</span></strong></div>
+            <div><span>Forward outlook</span><strong class="score-neutral">2.41/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.03</span></strong></div>
           </div>
 
-          <div class="daily-change-row"><span>Change vs 2026-11-18</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.37</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.47</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.34</span></strong></div>
+          <div class="daily-change-row"><span>Change vs 2026-11-19</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.04</span> Forward <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.03</span> Urgency <span class="delta-badge delta-flat" title="Change vs 2026-11-19">• 0.00</span></strong></div>
 
           <div class="urgency-box urgency-elevated">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>3.02/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.34</span> · Moderate</strong></div>
+              <div><span>Buy urgency</span><strong>3.02/5 <span class="delta-badge delta-flat" title="Change vs 2026-11-19">• 0.00</span> · Moderate</strong></div>
               <div class="urgency-pill">Moderate event risk</div>
             </div>
             <div class="urgency-grid">
               <div><span>Forward policy bias</span><strong>Tightening bias</strong></div>
               <div><span>Forward FX momentum</span><strong>Weakening</strong></div>
-              <div><span>Next policy event</span><strong>2026-12-17 · 28 days</strong></div>
-              <div><span>Valuation rarity</span><strong>4.37/5</strong></div>
+              <div><span>Next policy event</span><strong>2026-12-17 · 27 days</strong></div>
+              <div><span>Valuation rarity</span><strong>4.43/5</strong></div>
+            </div>
+          </div>
+
+          
+      <div class="shadow-box shadow-neutral">
+        <div class="shadow-head">
+          <div><span>Phase 3A.3 direction-semantics shadow intelligence</span><strong>2.50/5 · Relevant coverage / insufficient directional evidence</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="coverage-row">
+          <span>Coverage quality</span><strong class="coverage-badge coverage-thin">Thin</strong>
+          <small>2/3 media queries successful</small>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>41%</strong></div>
+          <div><span>Directional relevant items</span><strong>0/1</strong></div>
+          <div><span>Official relevant items</span><strong>1</strong></div>
+          <div><span>Media relevant items</span><strong>0</strong></div>
+        </div>
+        <div class="shadow-secondary">Relevance filter: <strong>1</strong> kept of <strong>7</strong> retrieved · rejected: <strong>6</strong> · Evidence gate: <strong>NOT MET</strong></div>
+        <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>0</strong> · Source diversity: <strong>1</strong> · Agreement: <strong>—</strong></div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-17 · 27 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf" target="_blank" rel="noopener noreferrer">Philip R. Lane: The practice and science of monetary policy communication: the ECB experience</a><span><b>Official</b> · ECB press releases and speeches · neutral · relevance 100/100 · official policy/macro/FX content, target central bank</span></li></ul>
+      </div>
+    
+
+          <div class="recommendation rec-buy">Buy</div>
+          <div class="rate-primary">€1 = S$1.4160</div>
+          <div class="rate-secondary">S$1 buys 0.706 EUR</div>
+
+          <div class="mini-grid">
+            <div><span>1 month</span><strong>-1.31%</strong></div>
+            <div><span>5Y cost percentile</span><strong>11.4%</strong></div>
+            <div><span>Model/data quality</span><strong>71% · Medium</strong></div>
+            <div><span>Signal agreement</span><strong>61%</strong></div>
+          </div>
+
+          <div class="macro-box">
+            <div class="macro-head">
+              <div><span>Macro backdrop</span><strong>50% coverage</strong></div>
+              <div class="macro-weight">15% of opportunity score</div>
+            </div>
+            <div class="macro-grid">
+              <div><span>Policy rate</span><strong>2.50%</strong><small>6M +50 bp</small></div>
+              <div><span>Real GDP growth</span><strong>Unavailable</strong><small>IMF WEO</small></div>
+              <div><span>Inflation</span><strong>Unavailable</strong><small>IMF WEO</small></div>
+            </div>
+          </div>
+
+          <div class="forward-box">
+            <div class="forward-head">
+              <div><span>Phase 2C forward outlook</span><strong>2.41/5 · Mixed / neutral</strong></div>
+              <div class="forward-note">Model-implied, not futures-implied</div>
+            </div>
+            <div class="forward-grid">
+              <div><span>Policy bias</span><strong>3.66/5</strong><small>Tightening bias</small></div>
+              <div><span>FX momentum</span><strong>1.38/5</strong><small>Weakening</small></div>
+              <div><span>Data quality</span><strong>84%</strong><small>High</small></div>
+            </div>
+          </div>
+
+          <div class="zone-box">
+            <div class="zone-head"><span>Historical valuation</span><strong>Strong Historical Value</strong></div>
+            <div class="zone-grid">
+              <div><span>Attractive historical value</span><strong>≤ S$1.4499</strong></div>
+              <div><span>Strong historical value</span><strong>≤ S$1.4300</strong></div>
+              <div><span>Exceptional historical value</span><strong>≤ S$1.4135</strong></div>
+              <div><span>5Y fair value</span><strong>S$1.4598</strong></div>
+            </div>
+            <div class="zone-gap">In attractive historical-value range</div>
+          </div>
+
+          <div class="action-box">
+            <div><span>Model action</span><strong>Buy in stages</strong></div>
+            <div class="allocation">Suggested tranche: 25%</div>
+          </div>
+
+          <div class="driver-columns">
+            <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 11% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
+            <div><h4>Macro signals</h4><ul><li>European Central Bank policy rate is 2.50% and up 50 bp over 6 months.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Tightening bias — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure still favours the SGD buyer, reducing the need to chase the rate.</li><li>Over one month the currency became 1.31% cheaper in SGD terms.</li></ul></div>
+            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is tightening bias (model-implied, not futures-implied).</li><li>Forward FX momentum is weakening based on 7D/30D/90D price structure.</li><li>Next ECB Governing Council calendar event is in 27 days (2026-12-17); event risk is moderate.</li></ul></div>
+          </div>
+          <button class="chart-button" onclick="showCurrency('EUR')">View 5-year chart</button>
+        </article>
+        
+
+        <article class="currency-card" data-code="GBP" data-score="3.69">
+          <div class="card-topline">
+            <div>
+              <div class="rank">#3 opportunity</div>
+              <h2>GBP <span>British Pound</span></h2>
+            </div>
+            <div class="score-ring score-good">
+              <strong>3.69</strong><small>/ 5 opportunity</small>
+            </div>
+          </div>
+
+          <div class="score-split">
+            <div><span>Market & valuation</span><strong class="score-good">3.95/5</strong></div>
+            <div><span>Macro backdrop</span><strong class="score-weak">2.21/5</strong></div>
+            <div><span>Forward outlook</span><strong class="score-weak">1.87/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.16</span></strong></div>
+          </div>
+
+          <div class="daily-change-row"><span>Change vs 2026-11-19</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.17</span> Forward <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.16</span> Urgency <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.05</span></strong></div>
+
+          <div class="urgency-box urgency-normal">
+            <div class="urgency-head">
+              <div><span>Buy urgency</span><strong>2.34/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.05</span> · Low</strong></div>
+              <div class="urgency-pill">Moderate event risk</div>
+            </div>
+            <div class="urgency-grid">
+              <div><span>Forward policy bias</span><strong>Balanced / uncertain</strong></div>
+              <div><span>Forward FX momentum</span><strong>Weakening</strong></div>
+              <div><span>Next policy event</span><strong>2026-12-17 · 27 days</strong></div>
+              <div><span>Valuation rarity</span><strong>3.56/5</strong></div>
             </div>
           </div>
 
@@ -467,254 +583,22 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div><span>Official relevant items</span><strong>2</strong></div>
           <div><span>Media relevant items</span><strong>0</strong></div>
         </div>
-        <div class="shadow-secondary">Relevance filter: <strong>2</strong> kept of <strong>2</strong> retrieved · rejected: <strong>0</strong> · Evidence gate: <strong>NOT MET</strong></div>
+        <div class="shadow-secondary">Relevance filter: <strong>2</strong> kept of <strong>5</strong> retrieved · rejected: <strong>3</strong> · Evidence gate: <strong>NOT MET</strong></div>
         <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>0</strong> · Source diversity: <strong>1</strong> · Agreement: <strong>—</strong></div>
-        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-17 · 28 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
-        <ul class="shadow-headlines"><li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf" target="_blank" rel="noopener noreferrer">Philip R. Lane: The practice and science of monetary policy communication: the ECB experience</a><span><b>Official</b> · ECB press releases and speeches · neutral · relevance 100/100 · official policy/macro/FX content, target central bank</span></li><li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html" target="_blank" rel="noopener noreferrer">Philip R. Lane: The science and practice of monetary policy communication: the ECB experience</a><span><b>Official</b> · ECB press releases and speeches · neutral · relevance 100/100 · official policy/macro/FX content, target central bank</span></li></ul>
-      </div>
-    
-
-          <div class="recommendation rec-accumulate">Accumulate</div>
-          <div class="rate-primary">€1 = S$1.4176</div>
-          <div class="rate-secondary">S$1 buys 0.705 EUR</div>
-
-          <div class="mini-grid">
-            <div><span>1 month</span><strong>-1.13%</strong></div>
-            <div><span>5Y cost percentile</span><strong>12.6%</strong></div>
-            <div><span>Model/data quality</span><strong>71% · Medium</strong></div>
-            <div><span>Signal agreement</span><strong>62%</strong></div>
-          </div>
-
-          <div class="macro-box">
-            <div class="macro-head">
-              <div><span>Macro backdrop</span><strong>50% coverage</strong></div>
-              <div class="macro-weight">15% of opportunity score</div>
-            </div>
-            <div class="macro-grid">
-              <div><span>Policy rate</span><strong>2.50%</strong><small>6M +50 bp</small></div>
-              <div><span>Real GDP growth</span><strong>Unavailable</strong><small>IMF WEO</small></div>
-              <div><span>Inflation</span><strong>Unavailable</strong><small>IMF WEO</small></div>
-            </div>
-          </div>
-
-          <div class="forward-box">
-            <div class="forward-head">
-              <div><span>Phase 2C forward outlook</span><strong>2.44/5 · Mixed / neutral</strong></div>
-              <div class="forward-note">Model-implied, not futures-implied</div>
-            </div>
-            <div class="forward-grid">
-              <div><span>Policy bias</span><strong>3.66/5</strong><small>Tightening bias</small></div>
-              <div><span>FX momentum</span><strong>1.44/5</strong><small>Weakening</small></div>
-              <div><span>Data quality</span><strong>84%</strong><small>High</small></div>
-            </div>
-          </div>
-
-          <div class="zone-box">
-            <div class="zone-head"><span>Historical valuation</span><strong>Strong Historical Value</strong></div>
-            <div class="zone-grid">
-              <div><span>Attractive historical value</span><strong>≤ S$1.4499</strong></div>
-              <div><span>Strong historical value</span><strong>≤ S$1.4301</strong></div>
-              <div><span>Exceptional historical value</span><strong>≤ S$1.4135</strong></div>
-              <div><span>5Y fair value</span><strong>S$1.4599</strong></div>
-            </div>
-            <div class="zone-gap">In attractive historical-value range</div>
-          </div>
-
-          <div class="action-box">
-            <div><span>Model action</span><strong>Start or continue gradual buying</strong></div>
-            <div class="allocation">Suggested tranche: 15%</div>
-          </div>
-
-          <div class="driver-columns">
-            <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 13% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
-            <div><h4>Macro signals</h4><ul><li>European Central Bank policy rate is 2.50% and up 50 bp over 6 months.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Tightening bias — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure still favours the SGD buyer, reducing the need to chase the rate.</li><li>Over one month the currency became 1.13% cheaper in SGD terms.</li></ul></div>
-            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is tightening bias (model-implied, not futures-implied).</li><li>Forward FX momentum is weakening based on 7D/30D/90D price structure.</li><li>Next ECB Governing Council calendar event is in 28 days (2026-12-17); event risk is moderate.</li></ul></div>
-          </div>
-          <button class="chart-button" onclick="showCurrency('EUR')">View 5-year chart</button>
-        </article>
-        
-
-        <article class="currency-card" data-code="JPY" data-score="3.78">
-          <div class="card-topline">
-            <div>
-              <div class="rank">#3 opportunity</div>
-              <h2>JPY <span>Japanese Yen</span></h2>
-            </div>
-            <div class="score-ring score-good">
-              <strong>3.78</strong><small>/ 5 opportunity</small>
-            </div>
-          </div>
-
-          <div class="score-split">
-            <div><span>Market & valuation</span><strong class="score-good">3.56/5</strong></div>
-            <div><span>Macro backdrop</span><strong class="score-strong">5.00/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-good">3.06/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.09</span></strong></div>
-          </div>
-
-          <div class="daily-change-row"><span>Change vs 2026-11-18</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.52</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.09</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.15</span></strong></div>
-
-          <div class="urgency-box urgency-elevated">
-            <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>3.43/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.15</span> · Moderate</strong></div>
-              <div class="urgency-pill">Moderate event risk</div>
-            </div>
-            <div class="urgency-grid">
-              <div><span>Forward policy bias</span><strong>Tightening bias</strong></div>
-              <div><span>Forward FX momentum</span><strong>Mixed / range-bound</strong></div>
-              <div><span>Next policy event</span><strong>2026-12-18 · 29 days</strong></div>
-              <div><span>Valuation rarity</span><strong>4.59/5</strong></div>
-            </div>
-          </div>
-
-          
-      <div class="shadow-box shadow-positive">
-        <div class="shadow-head">
-          <div><span>Phase 3A.3 direction-semantics shadow intelligence</span><strong>3.62/5 · Relevant coverage / insufficient directional evidence</strong></div>
-          <div class="shadow-pill">SHADOW ONLY</div>
-        </div>
-        <div class="coverage-row">
-          <span>Coverage quality</span><strong class="coverage-badge coverage-thin">Thin</strong>
-          <small>1/2 media queries successful</small>
-        </div>
-        <div class="shadow-grid">
-          <div><span>Headline confidence</span><strong>42%</strong></div>
-          <div><span>Directional relevant items</span><strong>1/5</strong></div>
-          <div><span>Official relevant items</span><strong>4</strong></div>
-          <div><span>Media relevant items</span><strong>1</strong></div>
-        </div>
-        <div class="shadow-secondary">Relevance filter: <strong>5</strong> kept of <strong>10</strong> retrieved · rejected: <strong>5</strong> · Evidence gate: <strong>NOT MET</strong></div>
-        <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>1</strong> · Source diversity: <strong>2</strong> · Agreement: <strong>100%</strong></div>
-        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-18 · 29 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
-        <ul class="shadow-headlines"><li><a href="http://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm" target="_blank" rel="noopener noreferrer">Highlights of the Outlook for Economic Activity and Prices (October 2026)</a><span><b>Official</b> · Bank of Japan updates · neutral · relevance 96/100 · official policy/macro/FX content</span></li><li><a href="http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm" target="_blank" rel="noopener noreferrer">Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan&#x27;s Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)</a><span><b>Official</b> · Bank of Japan updates · neutral · relevance 96/100 · official policy/macro/FX content</span></li><li><a href="http://www.boj.or.jp/en/about/press/koen_2026/ko261112a.htm" target="_blank" rel="noopener noreferrer">Speech by Board Member ASADA in Nagasaki (Economic Activity, Prices, and Monetary Policy in Japan)</a><span><b>Official</b> · Bank of Japan updates · neutral · relevance 96/100 · official policy/macro/FX content</span></li><li><a href="http://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf" target="_blank" rel="noopener noreferrer">Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026</a><span><b>Official</b> · Bank of Japan updates · neutral · relevance 96/100 · official policy/macro/FX content</span></li><li><a href="https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/bojs-takata-calls-for-early-rate-hikes-to-curb-inflation-risks/articleshow/135876217.cms" target="_blank" rel="noopener noreferrer">BOJ Takata calls for early rate hikes to curb inflation risks</a><span><b>Media</b> · economictimes.indiatimes.com · strengthening · relevance 92/100 · target central bank</span></li></ul>
-      </div>
-    
-
-          <div class="recommendation rec-accumulate">Accumulate</div>
-          <div class="rate-primary">¥100 = S$0.8062</div>
-          <div class="rate-secondary">S$1 buys 124.041 JPY</div>
-
-          <div class="mini-grid">
-            <div><span>1 month</span><strong>-0.29%</strong></div>
-            <div><span>5Y cost percentile</span><strong>8.3%</strong></div>
-            <div><span>Model/data quality</span><strong>72% · Medium</strong></div>
-            <div><span>Signal agreement</span><strong>64%</strong></div>
-          </div>
-
-          <div class="macro-box">
-            <div class="macro-head">
-              <div><span>Macro backdrop</span><strong>50% coverage</strong></div>
-              <div class="macro-weight">15% of opportunity score</div>
-            </div>
-            <div class="macro-grid">
-              <div><span>Policy rate</span><strong>1.25%</strong><small>6M +50 bp</small></div>
-              <div><span>Real GDP growth</span><strong>Unavailable</strong><small>IMF WEO</small></div>
-              <div><span>Inflation</span><strong>Unavailable</strong><small>IMF WEO</small></div>
-            </div>
-          </div>
-
-          <div class="forward-box">
-            <div class="forward-head">
-              <div><span>Phase 2C forward outlook</span><strong>3.06/5 · Mixed / neutral</strong></div>
-              <div class="forward-note">Model-implied, not futures-implied</div>
-            </div>
-            <div class="forward-grid">
-              <div><span>Policy bias</span><strong>3.81/5</strong><small>Tightening bias</small></div>
-              <div><span>FX momentum</span><strong>2.45/5</strong><small>Mixed / range-bound</small></div>
-              <div><span>Data quality</span><strong>84%</strong><small>High</small></div>
-            </div>
-          </div>
-
-          <div class="zone-box">
-            <div class="zone-head"><span>Historical valuation</span><strong>Exceptional Historical Value</strong></div>
-            <div class="zone-grid">
-              <div><span>Attractive historical value</span><strong>≤ S$0.8728 per ¥100</strong></div>
-              <div><span>Strong historical value</span><strong>≤ S$0.8356 per ¥100</strong></div>
-              <div><span>Exceptional historical value</span><strong>≤ S$0.8088 per ¥100</strong></div>
-              <div><span>5Y fair value</span><strong>S$0.8972 per ¥100</strong></div>
-            </div>
-            <div class="zone-gap">In attractive historical-value range</div>
-          </div>
-
-          <div class="action-box">
-            <div><span>Model action</span><strong>Start or continue gradual buying</strong></div>
-            <div class="allocation">Suggested tranche: 15%</div>
-          </div>
-
-          <div class="driver-columns">
-            <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 8% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is above its 200-day average, reducing timing attractiveness.</li></ul></div>
-            <div><h4>Macro signals</h4><ul><li>Bank of Japan policy rate is 1.25% and up 50 bp over 6 months.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Tightening bias — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.29% cheaper in SGD terms.</li></ul></div>
-            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is tightening bias (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>Next Bank of Japan MPM schedule event is in 29 days (2026-12-18); event risk is moderate.</li></ul></div>
-          </div>
-          <button class="chart-button" onclick="showCurrency('JPY')">View 5-year chart</button>
-        </article>
-        
-
-        <article class="currency-card" data-code="GBP" data-score="3.52">
-          <div class="card-topline">
-            <div>
-              <div class="rank">#4 opportunity</div>
-              <h2>GBP <span>British Pound</span></h2>
-            </div>
-            <div class="score-ring score-good">
-              <strong>3.52</strong><small>/ 5 opportunity</small>
-            </div>
-          </div>
-
-          <div class="score-split">
-            <div><span>Market & valuation</span><strong class="score-good">3.75/5</strong></div>
-            <div><span>Macro backdrop</span><strong class="score-weak">2.21/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-weak">2.03/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.01</span></strong></div>
-          </div>
-
-          <div class="daily-change-row"><span>Change vs 2026-11-18</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.45</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.01</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.05</span></strong></div>
-
-          <div class="urgency-box urgency-normal">
-            <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.39/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.05</span> · Low</strong></div>
-              <div class="urgency-pill">Moderate event risk</div>
-            </div>
-            <div class="urgency-grid">
-              <div><span>Forward policy bias</span><strong>Balanced / uncertain</strong></div>
-              <div><span>Forward FX momentum</span><strong>Weakening</strong></div>
-              <div><span>Next policy event</span><strong>2026-12-17 · 28 days</strong></div>
-              <div><span>Valuation rarity</span><strong>3.40/5</strong></div>
-            </div>
-          </div>
-
-          
-      <div class="shadow-box shadow-neutral">
-        <div class="shadow-head">
-          <div><span>Phase 3A.3 direction-semantics shadow intelligence</span><strong>2.50/5 · Relevant coverage / insufficient directional evidence</strong></div>
-          <div class="shadow-pill">SHADOW ONLY</div>
-        </div>
-        <div class="coverage-row">
-          <span>Coverage quality</span><strong class="coverage-badge coverage-thin">Thin</strong>
-          <small>1/2 media queries successful</small>
-        </div>
-        <div class="shadow-grid">
-          <div><span>Headline confidence</span><strong>42%</strong></div>
-          <div><span>Directional relevant items</span><strong>0/4</strong></div>
-          <div><span>Official relevant items</span><strong>3</strong></div>
-          <div><span>Media relevant items</span><strong>1</strong></div>
-        </div>
-        <div class="shadow-secondary">Relevance filter: <strong>4</strong> kept of <strong>7</strong> retrieved · rejected: <strong>3</strong> · Evidence gate: <strong>NOT MET</strong></div>
-        <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>0</strong> · Source diversity: <strong>2</strong> · Agreement: <strong>—</strong></div>
-        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-17 · 28 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
-        <ul class="shadow-headlines"><li><a href="https://www.bankofengland.co.uk/minutes/2026/november/market-participants-group-meeting-18-november-2026" target="_blank" rel="noopener noreferrer">Minutes of the Market Participants Group meeting – 18 November 2026</a><span><b>Official</b> · Bank of England news · neutral · relevance 100/100 · official policy/macro/FX content, target central bank</span></li><li><a href="https://www.bankofengland.co.uk/speech/2026/november/clare-lombardelli-speech-at-the-bank-watchers-conference" target="_blank" rel="noopener noreferrer">The low-gear labour market − speech by Clare Lombardelli</a><span><b>Official</b> · Bank of England speeches · neutral · relevance 100/100 · official policy/macro/FX content, target central bank</span></li><li><a href="https://www.bankofengland.co.uk/speech/2026/november/andrew-bailey-speech-at-the-annual-institute-of-economic-development-conference-london" target="_blank" rel="noopener noreferrer">The UK’s regional growth: unlocking the economy’s full potential - speech by Andrew Bailey</a><span><b>Official</b> · Bank of England speeches · neutral · relevance 96/100 · official policy/macro/FX content</span></li><li><a href="https://www.currencynews.co.uk/forecast/20261116-47784_pound-to-euro-week-ahead-forecast-banks-warn-sterling-is-overvalued.html" target="_blank" rel="noopener noreferrer">Pound - to - Euro Week Ahead Forecast : Banks Warn Sterling Is Overvalued</a><span><b>Media</b> · currencynews.co.uk · neutral · relevance 86/100 · target currency/economy named</span></li></ul>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-17 · 27 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li><a href="https://www.bankofengland.co.uk/minutes/2026/november/market-participants-group-meeting-18-november-2026" target="_blank" rel="noopener noreferrer">Minutes of the Market Participants Group meeting – 18 November 2026</a><span><b>Official</b> · Bank of England news · neutral · relevance 100/100 · official policy/macro/FX content, target central bank</span></li><li><a href="https://www.bankofengland.co.uk/speech/2026/november/andrew-bailey-speech-at-the-annual-institute-of-economic-development-conference-london" target="_blank" rel="noopener noreferrer">The UK’s regional growth: unlocking the economy’s full potential - speech by Andrew Bailey</a><span><b>Official</b> · Bank of England speeches · neutral · relevance 96/100 · official policy/macro/FX content</span></li></ul>
       </div>
     
 
           <div class="recommendation rec-accumulate">Patient Accumulate</div>
-          <div class="rate-primary">£1 = S$1.6961</div>
-          <div class="rate-secondary">S$1 buys 0.590 GBP</div>
+          <div class="rate-primary">£1 = S$1.6910</div>
+          <div class="rate-secondary">S$1 buys 0.591 GBP</div>
 
           <div class="mini-grid">
-            <div><span>1 month</span><strong>-0.60%</strong></div>
-            <div><span>5Y cost percentile</span><strong>32.1%</strong></div>
-            <div><span>Model/data quality</span><strong>74% · Medium</strong></div>
-            <div><span>Signal agreement</span><strong>71%</strong></div>
+            <div><span>1 month</span><strong>-1.20%</strong></div>
+            <div><span>5Y cost percentile</span><strong>28.7%</strong></div>
+            <div><span>Model/data quality</span><strong>72% · Medium</strong></div>
+            <div><span>Signal agreement</span><strong>64%</strong></div>
           </div>
 
           <div class="macro-box">
@@ -731,12 +615,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
           <div class="forward-box">
             <div class="forward-head">
-              <div><span>Phase 2C forward outlook</span><strong>2.03/5 · Mixed / neutral</strong></div>
+              <div><span>Phase 2C forward outlook</span><strong>1.87/5 · Supports waiting</strong></div>
               <div class="forward-note">Model-implied, not futures-implied</div>
             </div>
             <div class="forward-grid">
               <div><span>Policy bias</span><strong>2.29/5</strong><small>Balanced / uncertain</small></div>
-              <div><span>FX momentum</span><strong>1.82/5</strong><small>Weakening</small></div>
+              <div><span>FX momentum</span><strong>1.53/5</strong><small>Weakening</small></div>
               <div><span>Data quality</span><strong>84%</strong><small>High</small></div>
             </div>
           </div>
@@ -758,44 +642,160 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           </div>
 
           <div class="driver-columns">
-            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 32nd cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
+            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 29th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Bank of England policy rate is 3.75% and unchanged.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure still favours the SGD buyer, reducing the need to chase the rate.</li><li>Over one month the currency became 0.60% cheaper in SGD terms.</li></ul></div>
-            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is weakening based on 7D/30D/90D price structure.</li><li>Next Bank of England MPC calendar event is in 28 days (2026-12-17); event risk is moderate.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure still favours the SGD buyer, reducing the need to chase the rate.</li><li>Over one month the currency became 1.20% cheaper in SGD terms.</li></ul></div>
+            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is weakening based on 7D/30D/90D price structure.</li><li>Next Bank of England MPC calendar event is in 27 days (2026-12-17); event risk is moderate.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('GBP')">View 5-year chart</button>
         </article>
         
 
-        <article class="currency-card" data-code="CHF" data-score="3.28">
+        <article class="currency-card" data-code="JPY" data-score="3.25">
+          <div class="card-topline">
+            <div>
+              <div class="rank">#4 opportunity</div>
+              <h2>JPY <span>Japanese Yen</span></h2>
+            </div>
+            <div class="score-ring score-good">
+              <strong>3.25</strong><small>/ 5 opportunity</small>
+            </div>
+          </div>
+
+          <div class="score-split">
+            <div><span>Market & valuation</span><strong class="score-neutral">2.94/5</strong></div>
+            <div><span>Macro backdrop</span><strong class="score-strong">5.00/5</strong></div>
+            <div><span>Forward outlook</span><strong class="score-good">3.43/5 <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.37</span></strong></div>
+          </div>
+
+          <div class="daily-change-row"><span>Change vs 2026-11-19</span><strong>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.53</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.37</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.14</span></strong></div>
+
+          <div class="urgency-box urgency-elevated">
+            <div class="urgency-head">
+              <div><span>Buy urgency</span><strong>3.57/5 <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.14</span> · High</strong></div>
+              <div class="urgency-pill">Moderate event risk</div>
+            </div>
+            <div class="urgency-grid">
+              <div><span>Forward policy bias</span><strong>Tightening bias</strong></div>
+              <div><span>Forward FX momentum</span><strong>Strengthening</strong></div>
+              <div><span>Next policy event</span><strong>2026-12-18 · 28 days</strong></div>
+              <div><span>Valuation rarity</span><strong>4.31/5</strong></div>
+            </div>
+          </div>
+
+          
+      <div class="shadow-box shadow-neutral">
+        <div class="shadow-head">
+          <div><span>Phase 3A.3 direction-semantics shadow intelligence</span><strong>2.50/5 · Relevant coverage / insufficient directional evidence</strong></div>
+          <div class="shadow-pill">SHADOW ONLY</div>
+        </div>
+        <div class="coverage-row">
+          <span>Coverage quality</span><strong class="coverage-badge coverage-thin">Thin</strong>
+          <small>2/3 media queries successful</small>
+        </div>
+        <div class="shadow-grid">
+          <div><span>Headline confidence</span><strong>42%</strong></div>
+          <div><span>Directional relevant items</span><strong>0/3</strong></div>
+          <div><span>Official relevant items</span><strong>3</strong></div>
+          <div><span>Media relevant items</span><strong>0</strong></div>
+        </div>
+        <div class="shadow-secondary">Relevance filter: <strong>3</strong> kept of <strong>22</strong> retrieved · rejected: <strong>19</strong> · Evidence gate: <strong>NOT MET</strong></div>
+        <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>0</strong> · Source diversity: <strong>1</strong> · Agreement: <strong>—</strong></div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-18 · 28 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li><a href="http://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm" target="_blank" rel="noopener noreferrer">Highlights of the Outlook for Economic Activity and Prices (October 2026)</a><span><b>Official</b> · Bank of Japan updates · neutral · relevance 96/100 · official policy/macro/FX content</span></li><li><a href="http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm" target="_blank" rel="noopener noreferrer">Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan&#x27;s Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)</a><span><b>Official</b> · Bank of Japan updates · neutral · relevance 96/100 · official policy/macro/FX content</span></li><li><a href="http://www.boj.or.jp/en/about/press/koen_2026/ko261112a.htm" target="_blank" rel="noopener noreferrer">Speech by Board Member ASADA in Nagasaki (Economic Activity, Prices, and Monetary Policy in Japan)</a><span><b>Official</b> · Bank of Japan updates · neutral · relevance 96/100 · official policy/macro/FX content</span></li></ul>
+      </div>
+    
+
+          <div class="recommendation rec-accumulate">Wait</div>
+          <div class="rate-primary">¥100 = S$0.8122</div>
+          <div class="rate-secondary">S$1 buys 123.129 JPY</div>
+
+          <div class="mini-grid">
+            <div><span>1 month</span><strong>+0.39%</strong></div>
+            <div><span>5Y cost percentile</span><strong>13.7%</strong></div>
+            <div><span>Model/data quality</span><strong>70% · Medium</strong></div>
+            <div><span>Signal agreement</span><strong>59%</strong></div>
+          </div>
+
+          <div class="macro-box">
+            <div class="macro-head">
+              <div><span>Macro backdrop</span><strong>50% coverage</strong></div>
+              <div class="macro-weight">15% of opportunity score</div>
+            </div>
+            <div class="macro-grid">
+              <div><span>Policy rate</span><strong>1.25%</strong><small>6M +50 bp</small></div>
+              <div><span>Real GDP growth</span><strong>Unavailable</strong><small>IMF WEO</small></div>
+              <div><span>Inflation</span><strong>Unavailable</strong><small>IMF WEO</small></div>
+            </div>
+          </div>
+
+          <div class="forward-box">
+            <div class="forward-head">
+              <div><span>Phase 2C forward outlook</span><strong>3.43/5 · Supportive of buying sooner</strong></div>
+              <div class="forward-note">Model-implied, not futures-implied</div>
+            </div>
+            <div class="forward-grid">
+              <div><span>Policy bias</span><strong>3.81/5</strong><small>Tightening bias</small></div>
+              <div><span>FX momentum</span><strong>3.11/5</strong><small>Strengthening</small></div>
+              <div><span>Data quality</span><strong>84%</strong><small>High</small></div>
+            </div>
+          </div>
+
+          <div class="zone-box">
+            <div class="zone-head"><span>Historical valuation</span><strong>Strong Historical Value</strong></div>
+            <div class="zone-grid">
+              <div><span>Attractive historical value</span><strong>≤ S$0.8728 per ¥100</strong></div>
+              <div><span>Strong historical value</span><strong>≤ S$0.8356 per ¥100</strong></div>
+              <div><span>Exceptional historical value</span><strong>≤ S$0.8088 per ¥100</strong></div>
+              <div><span>5Y fair value</span><strong>S$0.8972 per ¥100</strong></div>
+            </div>
+            <div class="zone-gap">In attractive historical-value range</div>
+          </div>
+
+          <div class="action-box">
+            <div><span>Model action</span><strong>Wait for a better rate unless funds are needed</strong></div>
+            <div class="allocation">Suggested tranche: 0%</div>
+          </div>
+
+          <div class="driver-columns">
+            <div><h4>Market signals</h4><ul><li>Historically attractive: current cost is in the cheapest 14% of the 5-year range.</li><li>One-month price movement is relatively stable.</li><li>Current cost is above its 200-day average, reducing timing attractiveness.</li></ul></div>
+            <div><h4>Macro signals</h4><ul><li>Bank of Japan policy rate is 1.25% and up 50 bp over 6 months.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Hawkish — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Tightening bias — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure suggests the foreign currency is gaining strength against SGD.</li><li>Over one month the currency became 0.39% more expensive in SGD terms.</li></ul></div>
+            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is tightening bias (model-implied, not futures-implied).</li><li>Forward FX momentum is strengthening based on 7D/30D/90D price structure.</li><li>Next Bank of Japan MPM schedule event is in 28 days (2026-12-18); event risk is moderate.</li></ul></div>
+          </div>
+          <button class="chart-button" onclick="showCurrency('JPY')">View 5-year chart</button>
+        </article>
+        
+
+        <article class="currency-card" data-code="CHF" data-score="3.11">
           <div class="card-topline">
             <div>
               <div class="rank">#5 opportunity</div>
               <h2>CHF <span>Swiss Franc</span></h2>
             </div>
             <div class="score-ring score-good">
-              <strong>3.28</strong><small>/ 5 opportunity</small>
+              <strong>3.11</strong><small>/ 5 opportunity</small>
             </div>
           </div>
 
           <div class="score-split">
-            <div><span>Market & valuation</span><strong class="score-good">3.45/5</strong></div>
+            <div><span>Market & valuation</span><strong class="score-good">3.25/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-neutral">2.30/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-weak">1.85/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.15</span></strong></div>
+            <div><span>Forward outlook</span><strong class="score-weak">2.08/5 <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.23</span></strong></div>
           </div>
 
-          <div class="daily-change-row"><span>Change vs 2026-11-18</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.22</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.15</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.12</span></strong></div>
+          <div class="daily-change-row"><span>Change vs 2026-11-19</span><strong>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.17</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.23</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.10</span></strong></div>
 
           <div class="urgency-box urgency-normal">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.05/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.12</span> · Low</strong></div>
+              <div><span>Buy urgency</span><strong>2.15/5 <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.10</span> · Low</strong></div>
               <div class="urgency-pill">Moderate event risk</div>
             </div>
             <div class="urgency-grid">
               <div><span>Forward policy bias</span><strong>Balanced / uncertain</strong></div>
               <div><span>Forward FX momentum</span><strong>Weakening</strong></div>
-              <div><span>Next policy event</span><strong>2026-12-10 · 21 days</strong></div>
-              <div><span>Valuation rarity</span><strong>2.03/5</strong></div>
+              <div><span>Next policy event</span><strong>2026-12-10 · 20 days</strong></div>
+              <div><span>Valuation rarity</span><strong>1.91/5</strong></div>
             </div>
           </div>
 
@@ -807,7 +807,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </div>
         <div class="coverage-row">
           <span>Coverage quality</span><strong class="coverage-badge coverage-unavailable">Unavailable</strong>
-          <small>4/4 media queries successful</small>
+          <small>3/4 media queries successful</small>
         </div>
         <div class="shadow-grid">
           <div><span>Headline confidence</span><strong>0%</strong></div>
@@ -817,20 +817,20 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
         </div>
         <div class="shadow-secondary">Relevance filter: <strong>0</strong> kept of <strong>0</strong> retrieved · rejected: <strong>0</strong> · Evidence gate: <strong>NOT MET</strong></div>
         <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>0</strong> · Source diversity: <strong>0</strong> · Agreement: <strong>—</strong></div>
-        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-10 · 21 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-10 · 20 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
         <ul class="shadow-headlines"><li class="shadow-empty">No usable recent items returned for this run.</li></ul>
       </div>
     
 
           <div class="recommendation rec-accumulate">Wait</div>
-          <div class="rate-primary">CHF1 = S$1.5306</div>
-          <div class="rate-secondary">S$1 buys 0.653 CHF</div>
+          <div class="rate-primary">CHF1 = S$1.5353</div>
+          <div class="rate-secondary">S$1 buys 0.651 CHF</div>
 
           <div class="mini-grid">
-            <div><span>1 month</span><strong>-1.40%</strong></div>
-            <div><span>5Y cost percentile</span><strong>59.5%</strong></div>
-            <div><span>Model/data quality</span><strong>73% · Medium</strong></div>
-            <div><span>Signal agreement</span><strong>68%</strong></div>
+            <div><span>1 month</span><strong>-0.96%</strong></div>
+            <div><span>5Y cost percentile</span><strong>61.7%</strong></div>
+            <div><span>Model/data quality</span><strong>77% · Medium</strong></div>
+            <div><span>Signal agreement</span><strong>78%</strong></div>
           </div>
 
           <div class="macro-box">
@@ -847,12 +847,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
           <div class="forward-box">
             <div class="forward-head">
-              <div><span>Phase 2C forward outlook</span><strong>1.85/5 · Supports waiting</strong></div>
+              <div><span>Phase 2C forward outlook</span><strong>2.08/5 · Mixed / neutral</strong></div>
               <div class="forward-note">Model-implied, not futures-implied</div>
             </div>
             <div class="forward-grid">
               <div><span>Policy bias</span><strong>2.50/5</strong><small>Balanced / uncertain</small></div>
-              <div><span>FX momentum</span><strong>1.32/5</strong><small>Weakening</small></div>
+              <div><span>FX momentum</span><strong>1.74/5</strong><small>Weakening</small></div>
               <div><span>Data quality</span><strong>84%</strong><small>High</small></div>
             </div>
           </div>
@@ -860,12 +860,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="zone-box">
             <div class="zone-head"><span>Historical valuation</span><strong>Above Historical Fair Value</strong></div>
             <div class="zone-grid">
-              <div><span>Attractive historical value</span><strong>≤ S$1.4929</strong></div>
+              <div><span>Attractive historical value</span><strong>≤ S$1.4930</strong></div>
               <div><span>Strong historical value</span><strong>≤ S$1.4590</strong></div>
               <div><span>Exceptional historical value</span><strong>≤ S$1.4405</strong></div>
-              <div><span>5Y fair value</span><strong>S$1.5177</strong></div>
+              <div><span>5Y fair value</span><strong>S$1.5178</strong></div>
             </div>
-            <div class="zone-gap">Needs 2.5% better rate</div>
+            <div class="zone-gap">Needs 2.8% better rate</div>
           </div>
 
           <div class="action-box">
@@ -874,44 +874,44 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           </div>
 
           <div class="driver-columns">
-            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 59th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
+            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 62nd cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Swiss National Bank policy rate is 0.00% and unchanged.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure still favours the SGD buyer, reducing the need to chase the rate.</li><li>Over one month the currency became 1.40% cheaper in SGD terms.</li></ul></div>
-            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is weakening based on 7D/30D/90D price structure.</li><li>Next Swiss National Bank monetary policy assessment schedule event is in 21 days (2026-12-10); event risk is moderate.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure still favours the SGD buyer, reducing the need to chase the rate.</li><li>Over one month the currency became 0.96% cheaper in SGD terms.</li></ul></div>
+            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is weakening based on 7D/30D/90D price structure.</li><li>Next Swiss National Bank monetary policy assessment schedule event is in 20 days (2026-12-10); event risk is moderate.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('CHF')">View 5-year chart</button>
         </article>
         
 
-        <article class="currency-card" data-code="MYR" data-score="2.69">
+        <article class="currency-card" data-code="MYR" data-score="2.76">
           <div class="card-topline">
             <div>
               <div class="rank">#6 opportunity</div>
               <h2>MYR <span>Malaysian Ringgit</span></h2>
             </div>
             <div class="score-ring score-neutral">
-              <strong>2.69</strong><small>/ 5 opportunity</small>
+              <strong>2.76</strong><small>/ 5 opportunity</small>
             </div>
           </div>
 
           <div class="score-split">
-            <div><span>Market & valuation</span><strong class="score-neutral">2.66/5</strong></div>
+            <div><span>Market & valuation</span><strong class="score-neutral">2.74/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-neutral">2.87/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-neutral">2.39/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.10</span></strong></div>
+            <div><span>Forward outlook</span><strong class="score-neutral">2.36/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.03</span></strong></div>
           </div>
 
-          <div class="daily-change-row"><span>Change vs 2026-11-18</span><strong>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-11-18">▼ 0.12</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.10</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.05</span></strong></div>
+          <div class="daily-change-row"><span>Change vs 2026-11-19</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.07</span> Forward <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.03</span> Urgency <span class="delta-badge delta-flat" title="Change vs 2026-11-19">• 0.00</span></strong></div>
 
           <div class="urgency-box urgency-normal">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>2.22/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.05</span> · Low</strong></div>
+              <div><span>Buy urgency</span><strong>2.22/5 <span class="delta-badge delta-flat" title="Change vs 2026-11-19">• 0.00</span> · Low</strong></div>
               <div class="urgency-pill">Calendar rollover needed event risk</div>
             </div>
             <div class="urgency-grid">
               <div><span>Forward policy bias</span><strong>Balanced / uncertain</strong></div>
               <div><span>Forward FX momentum</span><strong>Mixed / range-bound</strong></div>
               <div><span>Next policy event</span><strong>Calendar rollover needed</strong></div>
-              <div><span>Valuation rarity</span><strong>1.42/5</strong></div>
+              <div><span>Valuation rarity</span><strong>1.48/5</strong></div>
             </div>
           </div>
 
@@ -939,12 +939,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     
 
           <div class="recommendation rec-wait">Wait</div>
-          <div class="rate-primary">RM1 = S$0.3136</div>
-          <div class="rate-secondary">S$1 buys 3.189 MYR</div>
+          <div class="rate-primary">RM1 = S$0.3133</div>
+          <div class="rate-secondary">S$1 buys 3.192 MYR</div>
 
           <div class="mini-grid">
-            <div><span>1 month</span><strong>+0.15%</strong></div>
-            <div><span>5Y cost percentile</span><strong>71.6%</strong></div>
+            <div><span>1 month</span><strong>+0.10%</strong></div>
+            <div><span>5Y cost percentile</span><strong>70.3%</strong></div>
             <div><span>Model/data quality</span><strong>80% · High</strong></div>
             <div><span>Signal agreement</span><strong>87%</strong></div>
           </div>
@@ -963,12 +963,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
           <div class="forward-box">
             <div class="forward-head">
-              <div><span>Phase 2C forward outlook</span><strong>2.39/5 · Mixed / neutral</strong></div>
+              <div><span>Phase 2C forward outlook</span><strong>2.36/5 · Mixed / neutral</strong></div>
               <div class="forward-note">Model-implied, not futures-implied</div>
             </div>
             <div class="forward-grid">
               <div><span>Policy bias</span><strong>2.50/5</strong><small>Balanced / uncertain</small></div>
-              <div><span>FX momentum</span><strong>2.30/5</strong><small>Mixed / range-bound</small></div>
+              <div><span>FX momentum</span><strong>2.24/5</strong><small>Mixed / range-bound</small></div>
               <div><span>Data quality</span><strong>84%</strong><small>High</small></div>
             </div>
           </div>
@@ -990,79 +990,79 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           </div>
 
           <div class="driver-columns">
-            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 72nd cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
+            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 70th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is below its 200-day average, supporting longer-term value.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Bank Negara Malaysia policy rate is 2.75% and unchanged.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.15% more expensive in SGD terms.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.10% more expensive in SGD terms.</li></ul></div>
             <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>No later meeting is stored in the current calendar; refresh the annual schedule before the next policy cycle.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('MYR')">View 5-year chart</button>
         </article>
         
 
-        <article class="currency-card" data-code="USD" data-score="2.61">
+        <article class="currency-card" data-code="USD" data-score="2.73">
           <div class="card-topline">
             <div>
               <div class="rank">#7 opportunity</div>
               <h2>USD <span>US Dollar</span></h2>
             </div>
             <div class="score-ring score-neutral">
-              <strong>2.61</strong><small>/ 5 opportunity</small>
+              <strong>2.73</strong><small>/ 5 opportunity</small>
             </div>
           </div>
 
           <div class="score-split">
-            <div><span>Market & valuation</span><strong class="score-neutral">2.68/5</strong></div>
+            <div><span>Market & valuation</span><strong class="score-neutral">2.82/5</strong></div>
             <div><span>Macro backdrop</span><strong class="score-weak">2.21/5</strong></div>
-            <div><span>Forward outlook</span><strong class="score-good">3.03/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.17</span></strong></div>
+            <div><span>Forward outlook</span><strong class="score-neutral">2.96/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.07</span></strong></div>
           </div>
 
-          <div class="daily-change-row"><span>Change vs 2026-11-18</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.19</span> Forward <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.17</span> Urgency <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.17</span></strong></div>
+          <div class="daily-change-row"><span>Change vs 2026-11-19</span><strong>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.12</span> Forward <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.07</span> Urgency <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.02</span></strong></div>
 
           <div class="urgency-box urgency-elevated">
             <div class="urgency-head">
-              <div><span>Buy urgency</span><strong>3.12/5 <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.17</span> · Moderate</strong></div>
+              <div><span>Buy urgency</span><strong>3.10/5 <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.02</span> · Moderate</strong></div>
               <div class="urgency-pill">Moderate event risk</div>
             </div>
             <div class="urgency-grid">
               <div><span>Forward policy bias</span><strong>Balanced / uncertain</strong></div>
-              <div><span>Forward FX momentum</span><strong>Strengthening</strong></div>
-              <div><span>Next policy event</span><strong>2026-12-09 · 20 days</strong></div>
-              <div><span>Valuation rarity</span><strong>3.82/5</strong></div>
+              <div><span>Forward FX momentum</span><strong>Mixed / range-bound</strong></div>
+              <div><span>Next policy event</span><strong>2026-12-09 · 19 days</strong></div>
+              <div><span>Valuation rarity</span><strong>3.91/5</strong></div>
             </div>
           </div>
 
           
-      <div class="shadow-box shadow-neutral">
+      <div class="shadow-box shadow-positive">
         <div class="shadow-head">
-          <div><span>Phase 3A.3 direction-semantics shadow intelligence</span><strong>2.50/5 · Unavailable</strong></div>
+          <div><span>Phase 3A.3 direction-semantics shadow intelligence</span><strong>3.62/5 · Relevant coverage / insufficient directional evidence</strong></div>
           <div class="shadow-pill">SHADOW ONLY</div>
         </div>
         <div class="coverage-row">
-          <span>Coverage quality</span><strong class="coverage-badge coverage-unavailable">Unavailable</strong>
-          <small>2/4 media queries successful</small>
+          <span>Coverage quality</span><strong class="coverage-badge coverage-thin">Thin</strong>
+          <small>1/4 media queries successful</small>
         </div>
         <div class="shadow-grid">
-          <div><span>Headline confidence</span><strong>0%</strong></div>
-          <div><span>Directional relevant items</span><strong>0/0</strong></div>
+          <div><span>Headline confidence</span><strong>42%</strong></div>
+          <div><span>Directional relevant items</span><strong>1/2</strong></div>
           <div><span>Official relevant items</span><strong>0</strong></div>
-          <div><span>Media relevant items</span><strong>0</strong></div>
+          <div><span>Media relevant items</span><strong>2</strong></div>
         </div>
-        <div class="shadow-secondary">Relevance filter: <strong>0</strong> kept of <strong>8</strong> retrieved · rejected: <strong>8</strong> · Evidence gate: <strong>NOT MET</strong></div>
-        <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>0</strong> · Source diversity: <strong>0</strong> · Agreement: <strong>—</strong></div>
-        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-09 · 20 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
-        <ul class="shadow-headlines"><li class="shadow-empty">No usable recent items returned for this run.</li></ul>
+        <div class="shadow-secondary">Relevance filter: <strong>2</strong> kept of <strong>12</strong> retrieved · rejected: <strong>10</strong> · Evidence gate: <strong>NOT MET</strong></div>
+        <div class="shadow-secondary">Directional evidence: official <strong>0</strong> · media <strong>1</strong> · Source diversity: <strong>1</strong> · Agreement: <strong>100%</strong></div>
+        <div class="shadow-horizon"><strong>Event watch:</strong> 2026-12-09 · 19 days · Moderate risk<br>Impact horizon: Short term (1–10 trading days). Minimum evidence gate not met; the displayed score remains observational only. This layer does <strong>not</strong> alter the recommendation.</div>
+        <ul class="shadow-headlines"><li><a href="https://www.moneycontrol.com/news/business/commodities/gold-prices-plunge-over-7-this-week-set-for-worst-fall-since-march-as-fed-rate-hike-fears-ai-selloff-bite-14085245.html" target="_blank" rel="noopener noreferrer">Gold prices plunge over 7 % this week , set for worst fall since March as Fed rate hike fears , AI selloff bite</a><span><b>Media</b> · moneycontrol.com · strengthening · relevance 80/100 · target central bank, noise penalty</span></li><li><a href="https://www.moneycontrol.com/world/fed-tells-regional-staff-to-expect-lower-pay-hikes-in-2027-article-14085240.html" target="_blank" rel="noopener noreferrer">Fed tells regional staff to expect lower pay hikes in 2027</a><span><b>Media</b> · moneycontrol.com · neutral · relevance 92/100 · target central bank</span></li></ul>
       </div>
     
 
           <div class="recommendation rec-wait">Wait</div>
-          <div class="rate-primary">US$1 = S$1.2897</div>
-          <div class="rate-secondary">S$1 buys 0.775 USD</div>
+          <div class="rate-primary">US$1 = S$1.2884</div>
+          <div class="rate-secondary">S$1 buys 0.776 USD</div>
 
           <div class="mini-grid">
             <div><span>1 month</span><strong>+0.88%</strong></div>
-            <div><span>5Y cost percentile</span><strong>23.6%</strong></div>
-            <div><span>Model/data quality</span><strong>78% · Medium</strong></div>
-            <div><span>Signal agreement</span><strong>80%</strong></div>
+            <div><span>5Y cost percentile</span><strong>21.9%</strong></div>
+            <div><span>Model/data quality</span><strong>79% · Medium</strong></div>
+            <div><span>Signal agreement</span><strong>84%</strong></div>
           </div>
 
           <div class="macro-box">
@@ -1079,12 +1079,12 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
           <div class="forward-box">
             <div class="forward-head">
-              <div><span>Phase 2C forward outlook</span><strong>3.03/5 · Mixed / neutral</strong></div>
+              <div><span>Phase 2C forward outlook</span><strong>2.96/5 · Mixed / neutral</strong></div>
               <div class="forward-note">Model-implied, not futures-implied</div>
             </div>
             <div class="forward-grid">
               <div><span>Policy bias</span><strong>2.90/5</strong><small>Balanced / uncertain</small></div>
-              <div><span>FX momentum</span><strong>3.13/5</strong><small>Strengthening</small></div>
+              <div><span>FX momentum</span><strong>3.01/5</strong><small>Mixed / range-bound</small></div>
               <div><span>Data quality</span><strong>84%</strong><small>High</small></div>
             </div>
           </div>
@@ -1092,10 +1092,10 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           <div class="zone-box">
             <div class="zone-head"><span>Historical valuation</span><strong>Attractive Historical Value</strong></div>
             <div class="zone-grid">
-              <div><span>Attractive historical value</span><strong>≤ S$1.3118</strong></div>
+              <div><span>Attractive historical value</span><strong>≤ S$1.3106</strong></div>
               <div><span>Strong historical value</span><strong>≤ S$1.2871</strong></div>
               <div><span>Exceptional historical value</span><strong>≤ S$1.2792</strong></div>
-              <div><span>5Y fair value</span><strong>S$1.3395</strong></div>
+              <div><span>5Y fair value</span><strong>S$1.3394</strong></div>
             </div>
             <div class="zone-gap">In attractive historical-value range</div>
           </div>
@@ -1106,10 +1106,10 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
           </div>
 
           <div class="driver-columns">
-            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 24th cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is above its 200-day average, reducing timing attractiveness.</li></ul></div>
+            <div><h4>Market signals</h4><ul><li>5-year valuation is mid-range at the 22nd cost percentile.</li><li>One-month price movement is relatively stable.</li><li>Current cost is above its 200-day average, reducing timing attractiveness.</li></ul></div>
             <div><h4>Macro signals</h4><ul><li>Federal Reserve policy rate is 3.88% and up 25 bp over 6 months.</li></ul></div>
-            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Recent price structure suggests the foreign currency is gaining strength against SGD.</li><li>Over one month the currency became 0.88% more expensive in SGD terms.</li></ul></div>
-            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is strengthening based on 7D/30D/90D price structure.</li><li>Next Federal Reserve FOMC calendar event is in 20 days (2026-12-09); event risk is moderate.</li></ul></div>
+            <div><h4>Forward signals</h4><ul><li>Recent policy trend: Broadly neutral — based on actual 6- and 12-month policy-rate changes.</li><li>Model-implied forward policy bias: Balanced / uncertain — after considering recent policy trend, IMF inflation and growth outlook.</li><li>Forward FX momentum is mixed and does not show a decisive reversal yet.</li><li>Over one month the currency became 0.88% more expensive in SGD terms.</li></ul></div>
+            <div><h4>Timing & urgency</h4><ul><li>Forward policy bias is balanced / uncertain (model-implied, not futures-implied).</li><li>Forward FX momentum is mixed / range-bound based on 7D/30D/90D price structure.</li><li>Next Federal Reserve FOMC calendar event is in 19 days (2026-12-09); event risk is moderate.</li></ul></div>
           </div>
           <button class="chart-button" onclick="showCurrency('USD')">View 5-year chart</button>
         </article>
@@ -1118,9 +1118,9 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   
     <div class="section-header"><div><h2>Baseline performance</h2><p>Retrospective check of whether following each historical Buy/Accumulate or Wait/Avoid action was helpful after 1, 5, 10 and 20 trading days.</p></div></div>
     <section class="performance-panel">
-      <div class="performance-meta"><strong>89 baseline market-day observations</strong><span>Helpful rate excludes moves within ±0.10% as neutral. This is monitoring evidence, not a forecast-accuracy probability.</span></div>
-      <div class="perf-cards"><div class="perf-card"><span>1 trading day</span><strong>58%</strong><small>+0.03% average action benefit · n=602</small></div><div class="perf-card"><span>5 trading days</span><strong>60%</strong><small>+0.19% average action benefit · n=574</small></div><div class="perf-card"><span>10 trading days</span><strong>57%</strong><small>+0.34% average action benefit · n=539</small></div><div class="perf-card"><span>20 trading days</span><strong>64%</strong><small>+0.45% average action benefit · n=469</small></div></div>
-      <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th><th>20D</th></tr></thead><tbody><tr><td><strong>AUD</strong><span>Australian Dollar</span></td><td><strong>52% helpful</strong><span>+0.02% avg benefit · n=88</span></td><td><strong>59% helpful</strong><span>+0.21% avg benefit · n=84</span></td><td><strong>53% helpful</strong><span>+0.37% avg benefit · n=79</span></td><td><strong>52% helpful</strong><span>+0.47% avg benefit · n=69</span></td></tr><tr><td><strong>EUR</strong><span>Euro</span></td><td><strong>68% helpful</strong><span>+0.05% avg benefit · n=88</span></td><td><strong>78% helpful</strong><span>+0.29% avg benefit · n=84</span></td><td><strong>67% helpful</strong><span>+0.42% avg benefit · n=79</span></td><td><strong>80% helpful</strong><span>+0.90% avg benefit · n=69</span></td></tr><tr><td><strong>JPY</strong><span>Japanese Yen</span></td><td><strong>60% helpful</strong><span>+0.05% avg benefit · n=88</span></td><td><strong>61% helpful</strong><span>+0.44% avg benefit · n=84</span></td><td><strong>78% helpful</strong><span>+0.94% avg benefit · n=79</span></td><td><strong>77% helpful</strong><span>+0.62% avg benefit · n=69</span></td></tr><tr><td><strong>GBP</strong><span>British Pound</span></td><td><strong>57% helpful</strong><span>+0.03% avg benefit · n=88</span></td><td><strong>54% helpful</strong><span>+0.11% avg benefit · n=84</span></td><td><strong>51% helpful</strong><span>+0.14% avg benefit · n=79</span></td><td><strong>61% helpful</strong><span>+0.26% avg benefit · n=69</span></td></tr><tr><td><strong>CHF</strong><span>Swiss Franc</span></td><td><strong>61% helpful</strong><span>+0.04% avg benefit · n=74</span></td><td><strong>62% helpful</strong><span>+0.21% avg benefit · n=70</span></td><td><strong>54% helpful</strong><span>+0.31% avg benefit · n=65</span></td><td><strong>70% helpful</strong><span>+0.64% avg benefit · n=55</span></td></tr><tr><td><strong>MYR</strong><span>Malaysian Ringgit</span></td><td><strong>56% helpful</strong><span>+0.00% avg benefit · n=88</span></td><td><strong>48% helpful</strong><span>+0.02% avg benefit · n=84</span></td><td><strong>42% helpful</strong><span>+0.03% avg benefit · n=79</span></td><td><strong>48% helpful</strong><span>-0.01% avg benefit · n=69</span></td></tr><tr><td><strong>USD</strong><span>US Dollar</span></td><td><strong>51% helpful</strong><span>-0.00% avg benefit · n=88</span></td><td><strong>57% helpful</strong><span>+0.07% avg benefit · n=84</span></td><td><strong>54% helpful</strong><span>+0.13% avg benefit · n=79</span></td><td><strong>64% helpful</strong><span>+0.33% avg benefit · n=69</span></td></tr></tbody></table></div>
+      <div class="performance-meta"><strong>90 baseline market-day observations</strong><span>Helpful rate excludes moves within ±0.10% as neutral. This is monitoring evidence, not a forecast-accuracy probability.</span></div>
+      <div class="perf-cards"><div class="perf-card"><span>1 trading day</span><strong>58%</strong><small>+0.03% average action benefit · n=609</small></div><div class="perf-card"><span>5 trading days</span><strong>61%</strong><small>+0.19% average action benefit · n=581</small></div><div class="perf-card"><span>10 trading days</span><strong>58%</strong><small>+0.34% average action benefit · n=546</small></div><div class="perf-card"><span>20 trading days</span><strong>64%</strong><small>+0.46% average action benefit · n=476</small></div></div>
+      <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th><th>20D</th></tr></thead><tbody><tr><td><strong>AUD</strong><span>Australian Dollar</span></td><td><strong>51% helpful</strong><span>+0.01% avg benefit · n=89</span></td><td><strong>58% helpful</strong><span>+0.19% avg benefit · n=85</span></td><td><strong>53% helpful</strong><span>+0.40% avg benefit · n=80</span></td><td><strong>52% helpful</strong><span>+0.52% avg benefit · n=70</span></td></tr><tr><td><strong>EUR</strong><span>Euro</span></td><td><strong>67% helpful</strong><span>+0.05% avg benefit · n=89</span></td><td><strong>78% helpful</strong><span>+0.29% avg benefit · n=85</span></td><td><strong>67% helpful</strong><span>+0.43% avg benefit · n=80</span></td><td><strong>80% helpful</strong><span>+0.90% avg benefit · n=70</span></td></tr><tr><td><strong>GBP</strong><span>British Pound</span></td><td><strong>56% helpful</strong><span>+0.02% avg benefit · n=89</span></td><td><strong>55% helpful</strong><span>+0.11% avg benefit · n=85</span></td><td><strong>51% helpful</strong><span>+0.15% avg benefit · n=80</span></td><td><strong>61% helpful</strong><span>+0.27% avg benefit · n=70</span></td></tr><tr><td><strong>JPY</strong><span>Japanese Yen</span></td><td><strong>60% helpful</strong><span>+0.05% avg benefit · n=89</span></td><td><strong>62% helpful</strong><span>+0.44% avg benefit · n=85</span></td><td><strong>77% helpful</strong><span>+0.92% avg benefit · n=80</span></td><td><strong>77% helpful</strong><span>+0.61% avg benefit · n=70</span></td></tr><tr><td><strong>CHF</strong><span>Swiss Franc</span></td><td><strong>60% helpful</strong><span>+0.04% avg benefit · n=75</span></td><td><strong>62% helpful</strong><span>+0.20% avg benefit · n=71</span></td><td><strong>55% helpful</strong><span>+0.34% avg benefit · n=66</span></td><td><strong>71% helpful</strong><span>+0.65% avg benefit · n=56</span></td></tr><tr><td><strong>MYR</strong><span>Malaysian Ringgit</span></td><td><strong>56% helpful</strong><span>+0.00% avg benefit · n=89</span></td><td><strong>49% helpful</strong><span>+0.03% avg benefit · n=85</span></td><td><strong>43% helpful</strong><span>+0.04% avg benefit · n=80</span></td><td><strong>48% helpful</strong><span>-0.01% avg benefit · n=70</span></td></tr><tr><td><strong>USD</strong><span>US Dollar</span></td><td><strong>51% helpful</strong><span>+0.00% avg benefit · n=89</span></td><td><strong>57% helpful</strong><span>+0.07% avg benefit · n=85</span></td><td><strong>54% helpful</strong><span>+0.12% avg benefit · n=80</span></td><td><strong>63% helpful</strong><span>+0.31% avg benefit · n=70</span></td></tr></tbody></table></div>
       <div class="performance-note"><strong>How to read it:</strong> positive average action benefit means the model's practical action beat the opposite choice in SGD-cost terms over that horizon. For Buy/Accumulate, a later higher FX cost counts as helpful; for Wait/Avoid, a later lower FX cost counts as helpful.</div>
     </section>
     
@@ -1130,7 +1130,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <section class="performance-panel shadow-performance-panel">
       <div class="performance-meta"><strong>Shadow-mode validation</strong><span>Only directional calls are scored. Future FX moves within ±0.10% are neutral and excluded from directional accuracy.</span></div>
       <div class="perf-cards"><div class="perf-card shadow-perf-card"><span>1 trading day</span><strong>50%</strong><small>5 correct · 5 incorrect · n=22</small></div><div class="perf-card shadow-perf-card"><span>5 trading days</span><strong>65%</strong><small>13 correct · 7 incorrect · n=22</small></div><div class="perf-card shadow-perf-card"><span>10 trading days</span><strong>47%</strong><small>8 correct · 9 incorrect · n=20</small></div></div>
-      <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th></tr></thead><tbody><tr><td><strong>AUD</strong><span>Australian Dollar</span></td><td><strong>50% correct</strong><span>2 correct · 0 neutral · n=4</span></td><td><strong>75% correct</strong><span>3 correct · 0 neutral · n=4</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=4</span></td></tr><tr><td><strong>EUR</strong><span>Euro</span></td><td><strong>—</strong><span>0 correct · 1 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td></tr><tr><td><strong>JPY</strong><span>Japanese Yen</span></td><td><strong>0% correct</strong><span>0 correct · 2 neutral · n=4</span></td><td><strong>25% correct</strong><span>1 correct · 0 neutral · n=4</span></td><td><strong>75% correct</strong><span>3 correct · 0 neutral · n=4</span></td></tr><tr><td><strong>GBP</strong><span>British Pound</span></td><td><strong>0% correct</strong><span>0 correct · 3 neutral · n=4</span></td><td><strong>50% correct</strong><span>2 correct · 0 neutral · n=4</span></td><td><strong>67% correct</strong><span>2 correct · 0 neutral · n=3</span></td></tr><tr><td><strong>CHF</strong><span>Swiss Franc</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>MYR</strong><span>Malaysian Ringgit</span></td><td><strong>—</strong><span>0 correct · 1 neutral · n=1</span></td><td><strong>100% correct</strong><span>1 correct · 0 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td></tr><tr><td><strong>USD</strong><span>US Dollar</span></td><td><strong>100% correct</strong><span>3 correct · 5 neutral · n=8</span></td><td><strong>100% correct</strong><span>6 correct · 2 neutral · n=8</span></td><td><strong>75% correct</strong><span>3 correct · 3 neutral · n=7</span></td></tr></tbody></table></div>
+      <div class="performance-table-wrap"><table class="performance-table"><thead><tr><th>Currency</th><th>1D</th><th>5D</th><th>10D</th></tr></thead><tbody><tr><td><strong>AUD</strong><span>Australian Dollar</span></td><td><strong>50% correct</strong><span>2 correct · 0 neutral · n=4</span></td><td><strong>75% correct</strong><span>3 correct · 0 neutral · n=4</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=4</span></td></tr><tr><td><strong>EUR</strong><span>Euro</span></td><td><strong>—</strong><span>0 correct · 1 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td></tr><tr><td><strong>GBP</strong><span>British Pound</span></td><td><strong>0% correct</strong><span>0 correct · 3 neutral · n=4</span></td><td><strong>50% correct</strong><span>2 correct · 0 neutral · n=4</span></td><td><strong>67% correct</strong><span>2 correct · 0 neutral · n=3</span></td></tr><tr><td><strong>JPY</strong><span>Japanese Yen</span></td><td><strong>0% correct</strong><span>0 correct · 2 neutral · n=4</span></td><td><strong>25% correct</strong><span>1 correct · 0 neutral · n=4</span></td><td><strong>75% correct</strong><span>3 correct · 0 neutral · n=4</span></td></tr><tr><td><strong>CHF</strong><span>Swiss Franc</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td><td><span class="perf-pending">Pending</span></td></tr><tr><td><strong>MYR</strong><span>Malaysian Ringgit</span></td><td><strong>—</strong><span>0 correct · 1 neutral · n=1</span></td><td><strong>100% correct</strong><span>1 correct · 0 neutral · n=1</span></td><td><strong>0% correct</strong><span>0 correct · 0 neutral · n=1</span></td></tr><tr><td><strong>USD</strong><span>US Dollar</span></td><td><strong>100% correct</strong><span>3 correct · 5 neutral · n=8</span></td><td><strong>100% correct</strong><span>6 correct · 2 neutral · n=8</span></td><td><strong>75% correct</strong><span>3 correct · 3 neutral · n=7</span></td></tr></tbody></table></div>
       <div class="performance-note"><strong>Purpose:</strong> Phase 3A.3 is an experiment. We are measuring whether headline/event intelligence adds leading information before allowing it to influence any model score.</div>
     </section>
     
@@ -1142,7 +1142,7 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
     <div class="chart-toolbar">
       <h3 id="chartTitle">AUD cost history</h3>
       <select id="currencySelect" onchange="showCurrency(this.value, false)">
-        <option value="AUD" selected>AUD — Australian Dollar</option><option value="EUR" >EUR — Euro</option><option value="JPY" >JPY — Japanese Yen</option><option value="GBP" >GBP — British Pound</option><option value="CHF" >CHF — Swiss Franc</option><option value="MYR" >MYR — Malaysian Ringgit</option><option value="USD" >USD — US Dollar</option>
+        <option value="AUD" selected>AUD — Australian Dollar</option><option value="EUR" >EUR — Euro</option><option value="GBP" >GBP — British Pound</option><option value="JPY" >JPY — Japanese Yen</option><option value="CHF" >CHF — Swiss Franc</option><option value="MYR" >MYR — Malaysian Ringgit</option><option value="USD" >USD — US Dollar</option>
       </select>
     </div>
     <p id="chart-error" role="status" hidden></p><div class="chart-wrap"><canvas id="fxChart" aria-label="Currency reference-rate history"></canvas></div>
@@ -1157,117 +1157,117 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
       <tbody>
         <tr>
           <td><strong>AUD</strong><span>Australian Dollar</span></td>
-          <td><div class="table-score score-strong">4.08</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.45</span></span></td>
-          <td><div class="table-score urgency-normal">2.79</div><span>Moderate <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.39</span></span></td>
-          <td>2.13<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.40</span></span></td>
-          <td><div class="table-score shadow-neutral">2.50</div><span>Unavailable · shadow</span></td>
-          <td>3.92</td>
+          <td><div class="table-score score-strong">4.28</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.20</span></span></td>
+          <td><div class="table-score urgency-normal">2.75</div><span>Moderate <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.04</span></span></td>
+          <td>2.00<span>Mixed / neutral <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.13</span></span></td>
+          <td><div class="table-score shadow-neutral">2.50</div><span>Relevant coverage / insufficient directional evidence · shadow</span></td>
+          <td>4.15</td>
           <td>5.00<span>50% coverage</span></td>
           <td>3.92<span>Tightening bias</span></td>
-          <td>0.67<span>Strong weakening</span></td>
+          <td>0.43<span>Strong weakening</span></td>
           <td><span class="table-rec rec-buy">Buy</span></td>
-          <td>A$1 = S$0.8656</td>
-          <td>22.9%</td>
-          <td>2026-12-08 · 19 days<span>Reserve Bank of Australia board schedule</span></td>
+          <td>A$1 = S$0.8589</td>
+          <td>20.3%</td>
+          <td>2026-12-08 · 18 days<span>Reserve Bank of Australia board schedule</span></td>
           <td>Moderate<span>3.3/5</span></td>
-          <td>S$0.8785<span>In attractive historical-value range</span></td>
-          <td>63%<span>45% agreement</span></td>
+          <td>S$0.8784<span>In attractive historical-value range</span></td>
+          <td>62%<span>40% agreement</span></td>
         </tr>
         
 
         <tr>
           <td><strong>EUR</strong><span>Euro</span></td>
-          <td><div class="table-score score-good">3.98</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.37</span></span></td>
-          <td><div class="table-score urgency-elevated">3.02</div><span>Moderate <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.34</span></span></td>
-          <td>2.44<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.47</span></span></td>
+          <td><div class="table-score score-strong">4.02</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.04</span></span></td>
+          <td><div class="table-score urgency-elevated">3.02</div><span>Moderate <span class="delta-badge delta-flat" title="Change vs 2026-11-19">• 0.00</span></span></td>
+          <td>2.41<span>Mixed / neutral <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.03</span></span></td>
           <td><div class="table-score shadow-neutral">2.50</div><span>Relevant coverage / insufficient directional evidence · shadow</span></td>
-          <td>4.16</td>
+          <td>4.21</td>
           <td>2.95<span>50% coverage</span></td>
           <td>3.66<span>Tightening bias</span></td>
-          <td>1.44<span>Weakening</span></td>
-          <td><span class="table-rec rec-accumulate">Accumulate</span></td>
-          <td>€1 = S$1.4176</td>
-          <td>12.6%</td>
-          <td>2026-12-17 · 28 days<span>ECB Governing Council calendar</span></td>
+          <td>1.38<span>Weakening</span></td>
+          <td><span class="table-rec rec-buy">Buy</span></td>
+          <td>€1 = S$1.4160</td>
+          <td>11.4%</td>
+          <td>2026-12-17 · 27 days<span>ECB Governing Council calendar</span></td>
           <td>Moderate<span>3.3/5</span></td>
           <td>S$1.4499<span>In attractive historical-value range</span></td>
-          <td>71%<span>62% agreement</span></td>
-        </tr>
-        
-
-        <tr>
-          <td><strong>JPY</strong><span>Japanese Yen</span></td>
-          <td><div class="table-score score-good">3.78</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.52</span></span></td>
-          <td><div class="table-score urgency-elevated">3.43</div><span>Moderate <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.15</span></span></td>
-          <td>3.06<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.09</span></span></td>
-          <td><div class="table-score shadow-positive">3.62</div><span>Relevant coverage / insufficient directional evidence · shadow</span></td>
-          <td>3.56</td>
-          <td>5.00<span>50% coverage</span></td>
-          <td>3.81<span>Tightening bias</span></td>
-          <td>2.45<span>Mixed / range-bound</span></td>
-          <td><span class="table-rec rec-accumulate">Accumulate</span></td>
-          <td>¥100 = S$0.8062</td>
-          <td>8.3%</td>
-          <td>2026-12-18 · 29 days<span>Bank of Japan MPM schedule</span></td>
-          <td>Moderate<span>3.3/5</span></td>
-          <td>S$0.8728 per ¥100<span>In attractive historical-value range</span></td>
-          <td>72%<span>64% agreement</span></td>
+          <td>71%<span>61% agreement</span></td>
         </tr>
         
 
         <tr>
           <td><strong>GBP</strong><span>British Pound</span></td>
-          <td><div class="table-score score-good">3.52</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.45</span></span></td>
-          <td><div class="table-score urgency-normal">2.39</div><span>Low <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.05</span></span></td>
-          <td>2.03<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.01</span></span></td>
+          <td><div class="table-score score-good">3.69</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.17</span></span></td>
+          <td><div class="table-score urgency-normal">2.34</div><span>Low <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.05</span></span></td>
+          <td>1.87<span>Supports waiting <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.16</span></span></td>
           <td><div class="table-score shadow-neutral">2.50</div><span>Relevant coverage / insufficient directional evidence · shadow</span></td>
-          <td>3.75</td>
+          <td>3.95</td>
           <td>2.21<span>50% coverage</span></td>
           <td>2.29<span>Balanced / uncertain</span></td>
-          <td>1.82<span>Weakening</span></td>
+          <td>1.53<span>Weakening</span></td>
           <td><span class="table-rec rec-accumulate">Patient Accumulate</span></td>
-          <td>£1 = S$1.6961</td>
-          <td>32.1%</td>
-          <td>2026-12-17 · 28 days<span>Bank of England MPC calendar</span></td>
+          <td>£1 = S$1.6910</td>
+          <td>28.7%</td>
+          <td>2026-12-17 · 27 days<span>Bank of England MPC calendar</span></td>
           <td>Moderate<span>3.3/5</span></td>
           <td>S$1.6989<span>In attractive historical-value range</span></td>
-          <td>74%<span>71% agreement</span></td>
+          <td>72%<span>64% agreement</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><strong>JPY</strong><span>Japanese Yen</span></td>
+          <td><div class="table-score score-good">3.25</div><span>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.53</span></span></td>
+          <td><div class="table-score urgency-elevated">3.57</div><span>High <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.14</span></span></td>
+          <td>3.43<span>Supportive of buying sooner <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.37</span></span></td>
+          <td><div class="table-score shadow-neutral">2.50</div><span>Relevant coverage / insufficient directional evidence · shadow</span></td>
+          <td>2.94</td>
+          <td>5.00<span>50% coverage</span></td>
+          <td>3.81<span>Tightening bias</span></td>
+          <td>3.11<span>Strengthening</span></td>
+          <td><span class="table-rec rec-accumulate">Wait</span></td>
+          <td>¥100 = S$0.8122</td>
+          <td>13.7%</td>
+          <td>2026-12-18 · 28 days<span>Bank of Japan MPM schedule</span></td>
+          <td>Moderate<span>3.3/5</span></td>
+          <td>S$0.8728 per ¥100<span>In attractive historical-value range</span></td>
+          <td>70%<span>59% agreement</span></td>
         </tr>
         
 
         <tr>
           <td><strong>CHF</strong><span>Swiss Franc</span></td>
-          <td><div class="table-score score-good">3.28</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.22</span></span></td>
-          <td><div class="table-score urgency-normal">2.05</div><span>Low <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.12</span></span></td>
-          <td>1.85<span>Supports waiting <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.15</span></span></td>
+          <td><div class="table-score score-good">3.11</div><span>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.17</span></span></td>
+          <td><div class="table-score urgency-normal">2.15</div><span>Low <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.10</span></span></td>
+          <td>2.08<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.23</span></span></td>
           <td><div class="table-score shadow-neutral">2.50</div><span>Unavailable · shadow</span></td>
-          <td>3.45</td>
+          <td>3.25</td>
           <td>2.30<span>50% coverage</span></td>
           <td>2.50<span>Balanced / uncertain</span></td>
-          <td>1.32<span>Weakening</span></td>
+          <td>1.74<span>Weakening</span></td>
           <td><span class="table-rec rec-accumulate">Wait</span></td>
-          <td>CHF1 = S$1.5306</td>
-          <td>59.5%</td>
-          <td>2026-12-10 · 21 days<span>Swiss National Bank monetary policy assessment schedule</span></td>
+          <td>CHF1 = S$1.5353</td>
+          <td>61.7%</td>
+          <td>2026-12-10 · 20 days<span>Swiss National Bank monetary policy assessment schedule</span></td>
           <td>Moderate<span>3.3/5</span></td>
-          <td>S$1.4929<span>Needs 2.5% better rate</span></td>
-          <td>73%<span>68% agreement</span></td>
+          <td>S$1.4930<span>Needs 2.8% better rate</span></td>
+          <td>77%<span>78% agreement</span></td>
         </tr>
         
 
         <tr>
           <td><strong>MYR</strong><span>Malaysian Ringgit</span></td>
-          <td><div class="table-score score-neutral">2.69</div><span>Opportunity <span class="delta-badge delta-down" title="Change vs 2026-11-18">▼ 0.12</span></span></td>
-          <td><div class="table-score urgency-normal">2.22</div><span>Low <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.05</span></span></td>
-          <td>2.39<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.10</span></span></td>
+          <td><div class="table-score score-neutral">2.76</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.07</span></span></td>
+          <td><div class="table-score urgency-normal">2.22</div><span>Low <span class="delta-badge delta-flat" title="Change vs 2026-11-19">• 0.00</span></span></td>
+          <td>2.36<span>Mixed / neutral <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.03</span></span></td>
           <td><div class="table-score shadow-neutral">2.50</div><span>Unavailable · shadow</span></td>
-          <td>2.66</td>
+          <td>2.74</td>
           <td>2.87<span>50% coverage</span></td>
           <td>2.50<span>Balanced / uncertain</span></td>
-          <td>2.30<span>Mixed / range-bound</span></td>
+          <td>2.24<span>Mixed / range-bound</span></td>
           <td><span class="table-rec rec-wait">Wait</span></td>
-          <td>RM1 = S$0.3136</td>
-          <td>71.6%</td>
+          <td>RM1 = S$0.3133</td>
+          <td>70.3%</td>
           <td>Calendar rollover needed<span>Bank Negara Malaysia MPC schedule</span></td>
           <td>Calendar rollover needed<span>1.5/5</span></td>
           <td>S$0.3014<span>Needs 4.0% better rate</span></td>
@@ -1277,21 +1277,21 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
 
         <tr>
           <td><strong>USD</strong><span>US Dollar</span></td>
-          <td><div class="table-score score-neutral">2.61</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.19</span></span></td>
-          <td><div class="table-score urgency-elevated">3.12</div><span>Moderate <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.17</span></span></td>
-          <td>3.03<span>Mixed / neutral <span class="delta-badge delta-up" title="Change vs 2026-11-18">▲ 0.17</span></span></td>
-          <td><div class="table-score shadow-neutral">2.50</div><span>Unavailable · shadow</span></td>
-          <td>2.68</td>
+          <td><div class="table-score score-neutral">2.73</div><span>Opportunity <span class="delta-badge delta-up" title="Change vs 2026-11-19">▲ 0.12</span></span></td>
+          <td><div class="table-score urgency-elevated">3.10</div><span>Moderate <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.02</span></span></td>
+          <td>2.96<span>Mixed / neutral <span class="delta-badge delta-down" title="Change vs 2026-11-19">▼ 0.07</span></span></td>
+          <td><div class="table-score shadow-positive">3.62</div><span>Relevant coverage / insufficient directional evidence · shadow</span></td>
+          <td>2.82</td>
           <td>2.21<span>50% coverage</span></td>
           <td>2.90<span>Balanced / uncertain</span></td>
-          <td>3.13<span>Strengthening</span></td>
+          <td>3.01<span>Mixed / range-bound</span></td>
           <td><span class="table-rec rec-wait">Wait</span></td>
-          <td>US$1 = S$1.2897</td>
-          <td>23.6%</td>
-          <td>2026-12-09 · 20 days<span>Federal Reserve FOMC calendar</span></td>
+          <td>US$1 = S$1.2884</td>
+          <td>21.9%</td>
+          <td>2026-12-09 · 19 days<span>Federal Reserve FOMC calendar</span></td>
           <td>Moderate<span>3.3/5</span></td>
-          <td>S$1.3118<span>In attractive historical-value range</span></td>
-          <td>78%<span>80% agreement</span></td>
+          <td>S$1.3106<span>In attractive historical-value range</span></td>
+          <td>79%<span>84% agreement</span></td>
         </tr>
         </tbody>
     </table>
@@ -1317,13 +1317,13 @@ footer{color:#6f859e;font-size:.76rem;text-align:center;margin-top:26px}
   </section>
 
   <div class="notice"><strong>Phase 3A.3 shadow mode:</strong> the frozen Phase 2C baseline remains the sole source of Opportunity, Forward Outlook, Buy Urgency, suggested tranche and recommendation. The shadow layer now applies a hard target-currency relevance gate, pair-aware cross-currency direction semantics, a stricter official-content gate, English-language filtering and context-aware classification before scoring. Coverage is Strong, Adequate, Thin or Unavailable, and a minimum-evidence rule must pass before a directional call is validated. The shadow layer is logged separately and evaluated after 1, 5 and 10 trading days before any future decision is made about giving it model weight.<br><br><strong>Limitations:</strong> scoring is still headline/summary heuristic analysis rather than full-text or LLM interpretation, but generic uses of words such as “easing” no longer count unless they refer to monetary policy. Explicit against/versus and ticker-pair relationships are interpreted from the target currency viewpoint, but the headline-only model may still miss nuance, conditional statements or more complex multi-asset relationships. “Headline confidence” measures data coverage, source diversity, official-source participation and directional agreement; it is not a probability that the currency will move as indicated. The existing Phase 2C policy bias remains model-implied rather than futures-implied, and retail FX rates may differ from ECB reference rates.</div>
-  <footer>Generated automatically by GitHub Actions · Last build 2026-11-19T23:25:07.728022+00:00</footer>
+  <footer>Generated automatically by GitHub Actions · Last build 2026-11-20T23:06:16.217713+00:00</footer>
 </div>
 
 <script>
 let historyData = null;
 let chart = null;
-const currencyMeta = {"AUD": {"name": "Australian Dollar", "unit": 1, "symbol": "A$", "buyZone": 0.87846, "strongBuy": 0.858449, "exceptional": 0.842296, "fairValue": 0.891948}, "EUR": {"name": "Euro", "unit": 1, "symbol": "\u20ac", "buyZone": 1.4499, "strongBuy": 1.4301, "exceptional": 1.4135, "fairValue": 1.4599}, "JPY": {"name": "Japanese Yen", "unit": 100, "symbol": "\u00a5", "buyZone": 0.872844, "strongBuy": 0.835645, "exceptional": 0.808754, "fairValue": 0.897211}, "GBP": {"name": "British Pound", "unit": 1, "symbol": "\u00a3", "buyZone": 1.698948, "strongBuy": 1.673031, "exceptional": 1.639, "fairValue": 1.71023}, "CHF": {"name": "Swiss Franc", "unit": 1, "symbol": "CHF", "buyZone": 1.492947, "strongBuy": 1.458953, "exceptional": 1.440451, "fairValue": 1.517662}, "MYR": {"name": "Malaysian Ringgit", "unit": 1, "symbol": "RM", "buyZone": 0.301383, "strongBuy": 0.291293, "exceptional": 0.286768, "fairValue": 0.304388}, "USD": {"name": "US Dollar", "unit": 1, "symbol": "US$", "buyZone": 1.311794, "strongBuy": 1.287064, "exceptional": 1.279244, "fairValue": 1.339484}};
+const currencyMeta = {"AUD": {"name": "Australian Dollar", "unit": 1, "symbol": "A$", "buyZone": 0.878426, "strongBuy": 0.858449, "exceptional": 0.842296, "fairValue": 0.891945}, "EUR": {"name": "Euro", "unit": 1, "symbol": "\u20ac", "buyZone": 1.4499, "strongBuy": 1.43, "exceptional": 1.4135, "fairValue": 1.4598}, "GBP": {"name": "British Pound", "unit": 1, "symbol": "\u00a3", "buyZone": 1.698872, "strongBuy": 1.673031, "exceptional": 1.639, "fairValue": 1.710217}, "JPY": {"name": "Japanese Yen", "unit": 100, "symbol": "\u00a5", "buyZone": 0.872758, "strongBuy": 0.835574, "exceptional": 0.808754, "fairValue": 0.897159}, "CHF": {"name": "Swiss Franc", "unit": 1, "symbol": "CHF", "buyZone": 1.493027, "strongBuy": 1.458953, "exceptional": 1.440451, "fairValue": 1.517833}, "MYR": {"name": "Malaysian Ringgit", "unit": 1, "symbol": "RM", "buyZone": 0.301383, "strongBuy": 0.291293, "exceptional": 0.286768, "fairValue": 0.304388}, "USD": {"name": "US Dollar", "unit": 1, "symbol": "US$", "buyZone": 1.310644, "strongBuy": 1.287064, "exceptional": 1.279244, "fairValue": 1.339388}};
 
 async function loadHistory() {
   if (historyData) return historyData;
