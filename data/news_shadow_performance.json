@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-20T23:06:17.027113+00:00",
+  "generated_at_utc": "2026-11-24T03:19:07.017181+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -29,11 +29,11 @@
       "directional_accuracy_pct": 65.0
     },
     "10": {
-      "directional_calls": 20,
+      "directional_calls": 21,
       "correct": 8,
-      "incorrect": 9,
+      "incorrect": 10,
       "neutral_move": 3,
-      "directional_accuracy_pct": 47.1
+      "directional_accuracy_pct": 44.4
     }
   },
   "by_currency": {
@@ -122,11 +122,11 @@
         "directional_accuracy_pct": 50.0
       },
       "10": {
-        "directional_calls": 3,
+        "directional_calls": 4,
         "correct": 2,
-        "incorrect": 1,
+        "incorrect": 2,
         "neutral_move": 0,
-        "directional_accuracy_pct": 66.7
+        "directional_accuracy_pct": 50.0
       }
     },
     "AUD": {
@@ -1066,6 +1066,20 @@
       "entry_rate_sgd": 1.717368,
       "future_rate_sgd": 1.701019,
       "rate_change_pct": -0.952,
+      "outcome": "incorrect"
+    },
+    {
+      "run_date_sgt": "2026-11-10",
+      "market_date": "2026-11-09",
+      "future_date": "2026-11-23",
+      "currency": "GBP",
+      "horizon_trading_days": 10,
+      "shadow_score": 4.28,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.717368,
+      "future_rate_sgd": 1.688,
+      "rate_change_pct": -1.71,
       "outcome": "incorrect"
     },
     {
