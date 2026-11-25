@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-24T03:19:06.203270+00:00",
+  "updated_at_utc": "2026-11-25T01:21:20.372481+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-11-19T23:10:08.071284+00:00",
@@ -156,132 +156,132 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-11-17T23:40:06.103960+00:00",
+      "fetched_at_utc": "2026-11-25T01:01:35.714252+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-20T22:49:56.518491+00:00",
+      "fetched_at_utc": "2026-11-25T01:02:23.648373+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.tarunmitra.in/business/rupees-strength-in-forex-market-rise-against-dollar-euro/article-172870",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-dollars-riyal-dirham-euro-24-november-2026/",
             "url_mobile": "",
-            "title": "\u092b\u0949\u0930\u0947\u0915\u094d\u0938 \u092e\u093e\u0930\u094d\u0915\u0947\u091f \u092e\u0947\u0902 \u0930\u0941\u092a\u092f\u0947 \u0915\u093e \u0926\u092e - \u0921\u0949\u0932\u0930 , \u092f\u0942\u0930\u094b \u0914\u0930 \u092a\u0949\u0928\u094d\u0921 \u0915\u0947 \u092e\u0941\u0915\u093e\u092c\u0932\u0947 \u0906\u0908 \u0924\u0947\u091c\u0940",
-            "seendate": "20261120T054500Z",
-            "socialimage": "https://www.tarunmitra.in/media-webp/c600x315/2026-11/f8d76f13df4604aaff053645f2559cb0_1831407884.jpg",
-            "domain": "tarunmitra.in",
-            "language": "Hindi",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://cyprusnews.eu/newmoney/yperapodidei-to-iaponiko-gien-me-fonto-to-sell-off-tis-technologias-kai-ti-zitisi-gia-asfali-katafygia-voutia-eos-48-ston-nikkei-eidiseis-gia-tin-oikonomia/",
-            "url_mobile": "",
-            "title": "\u03a5\u03c0\u03b5\u03c1\u03b1\u03c0\u03bf\u03b4\u03af\u03b4\u03b5\u03b9 \u03c4\u03bf \u03b9\u03b1\u03c0\u03c9\u03bd\u03b9\u03ba\u03cc \u03b3\u03b9\u03b5\u03bd \u03bc\u03b5 \u03c6\u03cc\u03bd\u03c4\u03bf \u03c4\u03bf sell - off \u03c4\u03b7\u03c2 \u03c4\u03b5\u03c7\u03bd\u03bf\u03bb\u03bf\u03b3\u03af\u03b1\u03c2 \u03ba\u03b1\u03b9 \u03c4\u03b7 \u03b6\u03ae\u03c4\u03b7\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03b1\u03c3\u03c6\u03b1\u03bb\u03ae \u03ba\u03b1\u03c4\u03b1\u03c6\u03cd\u03b3\u03b9\u03b1 \u2013 \u0392\u03bf\u03c5\u03c4\u03b9\u03ac \u03ad\u03c9\u03c2 4 , 8 % \u03c3\u03c4\u03bf\u03bd Nikkei | \u0395\u03b9\u03b4\u03ae\u03c3\u03b5\u03b9\u03c2 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u039f\u03b9\u03ba\u03bf\u03bd\u03bf\u03bc\u03af\u03b1",
-            "seendate": "20261120T063000Z",
-            "socialimage": "https://www.newmoney.gr/wp-content/uploads/2026/08/Yen-123rf-1.jpg",
-            "domain": "cyprusnews.eu",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://www.vetogate.com/5774576",
-            "url_mobile": "",
-            "title": "\u0633\u0639\u0631 \u0627\u0644\u0640100 \u064a\u0646 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062c\u0646\u064a\u0647 \u0641\u064a \u0627\u0644\u0628\u0646\u0648\u0643 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u062c\u0645\u0639\u0629",
-            "seendate": "20261120T214500Z",
-            "socialimage": "",
-            "domain": "vetogate.com",
-            "language": "Arabic",
-            "sourcecountry": "Egypt"
-          },
-          {
-            "url": "https://www.moneycontrol.com/news/business/stocks/currency-check-rupee-opens-higher-at-93-20-per-dollar-asian-peers-trade-mixed-14085266.html",
-            "url_mobile": "https://www.moneycontrol.com/news/business/stocks/currency-check-rupee-opens-higher-at-93-20-per-dollar-asian-peers-trade-mixed-14085266.html/amp",
-            "title": "Currency Check | Rupee opens higher at 93 . 20 per dollar ; Asian peers trade mixed",
-            "seendate": "20261120T043000Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/11/20261104043903_473673123.jpg",
-            "domain": "moneycontrol.com",
+            "title": "Currency exchange rates in Pakistan today : Dollars , Riyal , Dirham & Euro 24 November 2026",
+            "seendate": "20261124T071500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
+            "domain": "pakobserver.net",
             "language": "English",
-            "sourcecountry": "India"
+            "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.thestar.com.my/business/business-news/2026/11/20/ringgit-opens-almost-flat-against-greenback",
+            "url": "https://www.guampdn.com/news/hard-month-for-guam-tourism-data-shows-rocky-start-to-fy-2027/article_f62ce9cc-01c2-417b-a90d-3c3116d02cbb.html",
             "url_mobile": "",
-            "title": "Ringgit opens almost flat against greenback",
-            "seendate": "20261120T023000Z",
-            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/20/4222550.jpeg",
+            "title": "  Hard month for Guam tourism : Data shows rocky start to FY 2027",
+            "seendate": "20261124T021500Z",
+            "socialimage": "https://bloximages.newyork1.vip.townnews.com/guampdn.com/content/tncms/assets/v3/editorial/1/53/1535f39d-e311-4bf1-a340-03db31dfc967/6afff7431812a.image.jpg?crop=1845%2C969%2C0%2C77",
+            "domain": "guampdn.com",
+            "language": "English",
+            "sourcecountry": "Guam"
+          },
+          {
+            "url": "https://en.dailypakistan.com.pk/24-Nov-2026/currency-rates-today-in-pakistan-us-dollar-pound-euro-riyal-latest-updates-24-nov-2026",
+            "url_mobile": "",
+            "title": "Currency Rates Today in Pakistan : US Dollar , Pound Euro , Riyal Latest Updates",
+            "seendate": "20261124T063000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/11/24/ringgit-opens-flat-against-us-mostly-higher-against-peers",
+            "url_mobile": "",
+            "title": "Ringgit opens flat against US$ , mostly higher against peers",
+            "seendate": "20261124T013000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/24/4228487.jpeg",
             "domain": "thestar.com.my",
             "language": "English",
             "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://www.freemalaysiatoday.com/category/business/2026/11/20/ringgit-opens-almost-flat-against-greenback-3",
+            "url": "https://www.freemalaysiatoday.com/category/business/2026/11/24/ringgit-opens-flat-against-us-dollar-mostly-higher-against-peers",
             "url_mobile": "",
-            "title": "Ringgit opens almost flat against greenback",
-            "seendate": "20261120T024500Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/3492fcc0-us-vs-ringgit_flat-d1-2024.webp",
+            "title": "Ringgit opens flat against US dollar , mostly higher against peers",
+            "seendate": "20261124T021500Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=80,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2023/03/92272a6e-us-vs-ringgit_flat-d3.jpg",
             "domain": "freemalaysiatoday.com",
             "language": "English",
             "sourcecountry": "Malaysia"
           },
           {
-            "url": "https://www.stcatharinesstandard.ca/business/asia-shares-drop-on-ai-worries-echoing-wall-street-s-decline-despite-the-strong-anthropic-debut/article_7cd09d41-bbc2-5a2d-a0f1-3ab596597a0e.html",
+            "url": "https://sbr.com.sg/news/straitsx-ocbc-pilot-cross-border-stablecoin-payments-businesses",
             "url_mobile": "",
-            "title": "Asia shares drop on AI worries , echoing Wall Street decline despite the strong Anthropic debut",
-            "seendate": "20261120T054500Z",
-            "socialimage": "https://bloximages.chicago2.vip.townnews.com/stcatharinesstandard.ca/content/tncms/assets/v3/editorial/4/82/48258a5a-717a-5bbd-9296-dfb841c86c47/6affbf1e579dc.image.jpg?crop=1620%2C851%2C0%2C114",
-            "domain": "stcatharinesstandard.ca",
+            "title": "StraitsX , OCBC pilot cross - border stablecoin payments for businesses",
+            "seendate": "20261124T011500Z",
+            "socialimage": "https://sbr.com.sg/s3/files/styles/opengraph/public/2026-11/pexels-dash-cryptocurrency-48865747-7584350-resized.jpg?h=e30c1286&itok=XoIjE1FY",
+            "domain": "sbr.com.sg",
+            "language": "English",
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://artdaily.com/news/203506/Peh-Family-s-impossibly-rare-1894-Hupeh-Dollar-at-Heritage-HKINF-World---Ancient-Coins-Auction",
+            "url_mobile": "",
+            "title": "Peh Family impossibly rare 1894 Hupeh Dollar at Heritage HKINF World & Ancient Coins Auction",
+            "seendate": "20261124T003000Z",
+            "socialimage": "",
+            "domain": "artdaily.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.nashvilleherald.com/news/279452544/u-s-stocks-end-mixed-tuesday-dow-gains-426-points-nasdaq-drops-356",
+            "url_mobile": "",
+            "title": "U . S . stocks end mixed Tuesday , Dow gains 426 points , Nasdaq drops 356",
+            "seendate": "20261124T214500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2590fdd/c339802e-e009-42c2-beb9-719bfbcfc1ec/4/US-stocks-dither-600x315.jpg",
+            "domain": "nashvilleherald.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.torontotelegraph.com/news/279452544/u-s-stocks-end-mixed-tuesday-dow-gains-426-points-nasdaq-drops-356",
+            "url_mobile": "",
+            "title": "U . S . stocks end mixed Tuesday , Dow gains 426 points , Nasdaq drops 356",
+            "seendate": "20261124T214500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2590fdd/c339802e-e009-42c2-beb9-719bfbcfc1ec/4/US-stocks-dither-600x315.jpg",
+            "domain": "torontotelegraph.com",
             "language": "English",
             "sourcecountry": "Canada"
           },
           {
-            "url": "https://www.moneycontrol.com/news/business/stocks/first-tick-top-global-cues-to-watch-in-today-s-trade-40-14084560.html",
-            "url_mobile": "https://www.moneycontrol.com/news/business/stocks/first-tick-top-global-cues-to-watch-in-today-s-trade-40-14084560.html/amp",
-            "title": "First Tick : Top global cues to watch in today trade",
-            "seendate": "20261120T043000Z",
-            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/07/20260704033422_market_flat.jpg",
-            "domain": "moneycontrol.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "http://www.cecildaily.com/ap/world/asia-shares-drop-on-ai-worries-echoing-wall-streets-decline-despite-the-strong-anthropic-debut/article_9ab3e714-fe37-5ba2-ab3a-1c95f6267006.html",
+            "url": "http://www.massachusettssun.com/news/279452544/u-s-stocks-end-mixed-tuesday-dow-gains-426-points-nasdaq-drops-356",
             "url_mobile": "",
-            "title": "Asia shares drop on AI worries , echoing Wall Street decline despite the strong Anthropic debut",
-            "seendate": "20261120T061500Z",
-            "socialimage": "https://bloximages.chicago2.vip.townnews.com/cecildaily.com/content/tncms/assets/v3/editorial/8/6a/86aa3a59-2d25-5ede-9585-c7263c725518/6affc0537af31.image.jpg?crop=1763%2C926%2C0%2C124",
-            "domain": "cecildaily.com",
+            "title": "U . S . stocks end mixed Tuesday , Dow gains 426 points , Nasdaq drops 356",
+            "seendate": "20261124T221500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2590fdd/c339802e-e009-42c2-beb9-719bfbcfc1ec/4/US-stocks-dither-600x315.jpg",
+            "domain": "massachusettssun.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.stardem.com/ap/world/asia-shares-drop-on-ai-worries-echoing-wall-streets-decline-despite-the-strong-anthropic-debut/article_bd76a2c3-b9c6-5e5c-96e4-acefda142225.html",
+            "url": "http://www.clevelandstar.com/news/279452544/u-s-stocks-end-mixed-tuesday-dow-gains-426-points-nasdaq-drops-356",
             "url_mobile": "",
-            "title": "Asia shares drop on AI worries , echoing Wall Street decline despite the strong Anthropic debut",
-            "seendate": "20261120T053000Z",
-            "socialimage": "https://bloximages.chicago2.vip.townnews.com/stardem.com/content/tncms/assets/v3/editorial/9/1c/91c0fd32-3bcb-5725-864c-3833077a3af9/6affbf9eab1e4.image.jpg?crop=1763%2C926%2C0%2C124",
-            "domain": "stardem.com",
+            "title": "U . S . stocks end mixed Tuesday , Dow gains 426 points , Nasdaq drops 356",
+            "seendate": "20261124T214500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2590fdd/c339802e-e009-42c2-beb9-719bfbcfc1ec/4/US-stocks-dither-600x315.jpg",
+            "domain": "clevelandstar.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.nigeriasun.com/news/279446207/dow-jones-plunges-950-points-nasdaq-loses-more-than-5-percent",
+            "url": "http://www.sierraleonetimes.com/news/279452544/u-s-stocks-end-mixed-tuesday-dow-gains-426-points-nasdaq-drops-356",
             "url_mobile": "",
-            "title": "Dow Jones plunges 950 points , Nasdaq loses more than 5 percent",
-            "seendate": "20261120T214500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e7716f9/f457b061-62fc-4d11-b684-f60e06c1e445/6/NYSE-down-day-NYSE-com-600x315.jpg",
-            "domain": "nigeriasun.com",
+            "title": "U . S . stocks end mixed Tuesday , Dow gains 426 points , Nasdaq drops 356",
+            "seendate": "20261124T213000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2590fdd/c339802e-e009-42c2-beb9-719bfbcfc1ec/4/US-stocks-dither-600x315.jpg",
+            "domain": "sierraleonetimes.com",
             "language": "English",
-            "sourcecountry": "Nigeria"
-          },
-          {
-            "url": "http://www.bignewsnetwork.com/news/279446207/horror-end-to-week-on-wall-street-nasdaq-plunges-1-261-points",
-            "url_mobile": "",
-            "title": "Horror end to week on Wall Street , Nasdaq plunges 1 , 261 points",
-            "seendate": "20261120T214500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e7716f9/f457b061-62fc-4d11-b684-f60e06c1e445/6/NYSE-down-day-NYSE-com-600x315.jpg",
-            "domain": "bignewsnetwork.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Sierra Leone"
           }
         ]
       }
@@ -381,54 +381,134 @@
       }
     },
     "96h|(sterling OR \"British pound\") (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-19T23:17:11.393160+00:00",
+      "fetched_at_utc": "2026-11-25T01:08:10.126681+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.currencynews.co.uk/forecast/20261116-47784_pound-to-euro-week-ahead-forecast-banks-warn-sterling-is-overvalued.html",
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-dollars-riyal-dirham-euro-24-november-2026/",
             "url_mobile": "",
-            "title": "Pound - to - Euro Week Ahead Forecast : Banks Warn Sterling Is Overvalued",
-            "seendate": "20261116T081500Z",
-            "socialimage": "",
-            "domain": "currencynews.co.uk",
+            "title": "Currency exchange rates in Pakistan today : Dollars , Riyal , Dirham & Euro 24 November 2026",
+            "seendate": "20261124T071500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
+            "domain": "pakobserver.net",
             "language": "English",
-            "sourcecountry": "United Kingdom"
+            "sourcecountry": "Pakistan"
           },
           {
-            "url": "https://www.ammonnews.net/article/1045335",
+            "url": "https://en.dailypakistan.com.pk/24-Nov-2026/currency-rates-today-in-pakistan-us-dollar-pound-euro-riyal-latest-updates-24-nov-2026",
             "url_mobile": "",
-            "title": "\u0627\u0644\u064a\u0646 \u064a\u0642\u062a\u0631\u0628 \u0645\u0646 \u0623\u062f\u0646\u0649 \u0645\u0633\u062a\u0648\u064a\u0627\u062a\u0647 \u0641\u064a \u0634\u0647\u0631\u064a\u0646 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 | \u0627\u0642\u062a\u0635\u0627\u062f",
-            "seendate": "20261116T081500Z",
-            "socialimage": "https://www.ammonnews.net/image.php?token=1a46bbf044a20ff83fc22d159bb94851&size=",
-            "domain": "ammonnews.net",
+            "title": "Currency Rates Today in Pakistan : US Dollar , Pound Euro , Riyal Latest Updates",
+            "seendate": "20261124T063000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.thestar.com.my/business/business-news/2026/11/24/ringgit-opens-flat-against-us-mostly-higher-against-peers",
+            "url_mobile": "",
+            "title": "Ringgit opens flat against US$ , mostly higher against peers",
+            "seendate": "20261124T013000Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/24/4228487.jpeg",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.freemalaysiatoday.com/category/business/2026/11/24/ringgit-opens-flat-against-us-dollar-mostly-higher-against-peers",
+            "url_mobile": "",
+            "title": "Ringgit opens flat against US dollar , mostly higher against peers",
+            "seendate": "20261124T021500Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=80,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2023/03/92272a6e-us-vs-ringgit_flat-d3.jpg",
+            "domain": "freemalaysiatoday.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://astanatv.kz/ru/news/183835/",
+            "url_mobile": "https://astanatv.kz/ru/amp/news/183835/",
+            "title": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0438 \u0435\u0432\u0440\u043e \u043f\u0440\u0438\u0431\u0430\u0432\u0438\u043b\u0438 \u0432 \u0446\u0435\u043d\u0435 - \u043a\u0443\u0440\u0441\u044b \u0432\u0430\u043b\u044e\u0442 \u043d\u0430 21 \u043d\u043e\u044f\u0431\u0440\u044f",
+            "seendate": "20261121T133000Z",
+            "socialimage": "https://astanatv.kz/cache/imagine/1200/uploads/article/2026/11/21/6b015d3520b8b113402707.jpg",
+            "domain": "astanatv.kz",
+            "language": "Russian",
+            "sourcecountry": "Kazakhstan"
+          },
+          {
+            "url": "https://www.libyaakhbar.com/business-news/2925698.html",
+            "url_mobile": "",
+            "title": "\u0627\u0631\u062a\u0641\u0627\u0639 \u0643\u0628\u064a\u0631 \u0628\u0627\u0644\u063a\u0631\u0641 .. \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u062f\u0648\u0644\u0627\u0631 \u0648\u0627\u0644\u064a\u0648\u0631\u0648 \u0648\u0627\u0644\u0628\u0627\u0648\u0646\u062f \u0648\u0627\u0644\u0630\u0647\u0628 \u0641\u064a \u062e\u062a\u0627\u0645 \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0645\u0648\u0627\u0632\u064a 24 \u0646\u0648\u0641\u0645\u0628\u0631 2026",
+            "seendate": "20261125T001500Z",
+            "socialimage": "https://www.libyaakhbar.com/wp-content/uploads/2026/06/dollar2.webp",
+            "domain": "libyaakhbar.com",
             "language": "Arabic",
-            "sourcecountry": "Jordan"
+            "sourcecountry": "Libya"
           },
           {
-            "url": "https://www.viata-libera.ro/economie/265804-a-patra-sedinta-consecutiva-de-scadere-pentru-euro",
-            "url_mobile": "",
-            "title": "A patra \u0219edin\u021b\u0103 consecutiv\u0103 de sc\u0103dere pentru euro",
-            "seendate": "20261119T193000Z",
-            "socialimage": "https://www.viata-libera.ro/media/k2/items/cache/96a0a5033df229a7ffca6f65d46174eb_L.jpg",
-            "domain": "viata-libera.ro",
-            "language": "Romanian",
-            "sourcecountry": "Romania"
+            "url": "https://www.cadena3.com/noticia/politica-y-economia/el-bcra-volvio-a-no-comprar-dolares-y-las-reservas-cayeron-a-su-menor-nivel-en-mas-de-un-mes_616208",
+            "url_mobile": "https://www.cadena3.com/amp/noticia/politica-y-economia/el-bcra-volvio-a-no-comprar-dolares-y-las-reservas-cayeron-a-su-menor-nivel-en-mas-de-un-mes_616208",
+            "title": "El BCRA volvi\u00f3 a no comprar d\u00f3lares y las reservas cayeron a su menor nivel en m\u00e1s de un mes",
+            "seendate": "20261124T223000Z",
+            "socialimage": "https://images-tools.cadena3.com/tools/r/31578836-39a7-4f69-8e48-8932e464cafb.jpg",
+            "domain": "cadena3.com",
+            "language": "Spanish",
+            "sourcecountry": "Argentina"
           },
           {
-            "url": "https://www.currencynews.co.uk/forecast/20261116-47783_pound-to-dollar-weekly-forecast-banks-target-1-37-1-39-despite-usd-rally.html",
+            "url": "http://www.jpost.com/international/article-915759",
             "url_mobile": "",
-            "title": "Pound to Dollar Weekly Forecast : Banks Target 1 . 37 - 1 . 39 Despite USD Rally",
-            "seendate": "20261116T081500Z",
-            "socialimage": "",
-            "domain": "currencynews.co.uk",
+            "title": "Donald Trump hosts third meme coin gala as token value plunges below $1",
+            "seendate": "20261123T003000Z",
+            "socialimage": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/746623",
+            "domain": "jpost.com",
             "language": "English",
-            "sourcecountry": "United Kingdom"
+            "sourcecountry": "Israel"
+          },
+          {
+            "url": "https://ehimalayatimes.com/2026/11/496911/",
+            "url_mobile": "",
+            "title": "\u0906\u091c\u0915\u094b \u0935\u093f\u0926\u0947\u0936\u0940 \u092e\u0941\u0926\u094d\u0930\u093e\u0915\u094b \u0935\u093f\u0928\u093f\u092e\u092f\u0926\u0930 : \u0905\u092e\u0947\u0930\u093f\u0915\u0940 \u0921\u0932\u0930\u0926\u0947\u0916\u093f \u0915\u0941\u092c\u0947\u0924\u0940 \u0926\u093f\u0928\u093e\u0930\u0938\u092e\u094d\u092e \u0915\u0924\u093f ? ",
+            "seendate": "20261124T031500Z",
+            "socialimage": "https://ehimalayatimes.com/wp-content/uploads/2025/01/nepal_rastra_bank.jpg",
+            "domain": "ehimalayatimes.com",
+            "language": "Nepali",
+            "sourcecountry": "Nepal"
+          },
+          {
+            "url": "https://leseco.ma/business/change-le-dollar-reprend-de-la-vigueur-le-dirham-sous-pression.html",
+            "url_mobile": "",
+            "title": "Change : le dollar reprend de la vigueur , le dirham sous pression",
+            "seendate": "20261124T201500Z",
+            "socialimage": "https://leseco.ma/wp-content/uploads/2022/01/changes.jpg",
+            "domain": "leseco.ma",
+            "language": "French",
+            "sourcecountry": "Morocco"
+          },
+          {
+            "url": "https://www.aol.com/articles/dollar-climbs-renewed-ai-euphoria-011359000.html",
+            "url_mobile": "",
+            "title": "Dollar climbs as renewed AI euphoria fuels Fed hike bets",
+            "seendate": "20261124T023000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/49a673ab90dd4c8c2957b4ee4e07989cedfd1db1/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/24/545b8d17-3934-3ae0-8b62-457f6e194103/b71f9137-0e00-4641-81ae-41f4e70f9fb4.jpg",
+            "domain": "aol.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/alliancebernstein-global-high-income-fund-inc-releases-monthly-portfolio-update-302948635.html",
+            "url_mobile": "",
+            "title": "AllianceBernstein Global High Income Fund , Inc . RELEASES MONTHLY PORTFOLIO UPDATE",
+            "seendate": "20261123T213000Z",
+            "socialimage": "",
+            "domain": "prnewswire.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-11-24T03:09:19.786188+00:00",
+      "fetched_at_utc": "2026-11-25T01:10:11.184347+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
@@ -624,7 +704,7 @@
       "payload": {}
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-24T03:14:07.043982+00:00",
+      "fetched_at_utc": "2026-11-25T01:15:44.061215+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
@@ -817,7 +897,7 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-11-24T03:14:40.786004+00:00",
+      "fetched_at_utc": "2026-11-25T01:16:20.258182+00:00",
       "payload": {
         "articles": [
           {
@@ -848,7 +928,7 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-24T03:01:34.447660+00:00",
+      "fetched_at_utc": "2026-11-25T01:00:46.153687+00:00",
       "payload": {
         "articles": [
           {
@@ -912,6 +992,16 @@
             "sourcecountry": "United States"
           },
           {
+            "url": "https://english.aawsat.com/business/5344936-gold-edges-lower-markets-await-us-inflation-data",
+            "url_mobile": "",
+            "title": "Gold Edges Lower as Markets Await US Inflation Data",
+            "seendate": "20261124T071500Z",
+            "socialimage": "https://english.aawsat.com/s3/files/styles/1200x600/public/2026-11/1889875.jpeg.webp",
+            "domain": "english.aawsat.com",
+            "language": "English",
+            "sourcecountry": "Syria"
+          },
+          {
             "url": "http://www.akilanews.com/main-news-detail/trumps-statement-on-indias-7-gdp-growth-has-sparked",
             "url_mobile": "",
             "title": "\u0a9f\u0acd\u0ab0\u0aae\u0acd\u0aaa\u0aa8\u0abe \u0aad\u0abe\u0ab0\u0aa4\u0aa8\u0abe \u0aed % GDP \u0ab5\u0ac3\u0aa6\u0acd\u0aa7\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0ab5\u0ac7\u0aa6\u0aa8 \u0aaa\u0ab0 \u0aa6\u0ac7\u0ab6\u0aae\u0abe\u0a82 \u0ab0\u0abe\u0a9c\u0a95\u0ac0\u0aaf \u0a97\u0ab0\u0aae\u0abe\u0ab5\u0acb :... ",
@@ -922,44 +1012,24 @@
             "sourcecountry": "India"
           },
           {
-            "url": "http://www.taiwansun.com/news/279446359/look-at-india-trump-cites-india-7-gdp-growth-to-slam-us-fed-over-high-interest-rates",
+            "url": "http://www.greekherald.com/news/279451643/us-recession-fears-rise-as-falling-household-wealth-and-market-turmoil-point-to-25-risk-report",
             "url_mobile": "",
-            "title": "  Look at India ...: Trump cites India 7 % GDP growth to slam US Fed over high interest rates",
-            "seendate": "20261121T003000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/6aee7aa/dbf6ee1a-dfe1-40e7-9dd3-3ac1ebc881ab/0/ANI-20261120223720-600x315.jpg",
-            "domain": "taiwansun.com",
+            "title": "US recession fears rise as falling household wealth and market turmoil point to 25 % risk : Report",
+            "seendate": "20261124T074500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8a47d88/1b122bfa-e15f-4390-ba0c-18ce6be2e96a/0/ANI-20261124055635-600x315.jpg",
+            "domain": "greekherald.com",
             "language": "English",
-            "sourcecountry": "China"
+            "sourcecountry": "Greece"
           },
           {
-            "url": "http://www.sandiegosun.com/news/279446359/look-at-india-trump-cites-india-7-gdp-growth-to-slam-us-fed-over-high-interest-rates",
+            "url": "http://www.zimbabwestar.com/news/279451643/us-recession-fears-rise-as-falling-household-wealth-and-market-turmoil-point-to-25-risk-report",
             "url_mobile": "",
-            "title": "  Look at India ...: Trump cites India 7 % GDP growth to slam US Fed over high interest rates",
-            "seendate": "20261121T003000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/6aee7aa/dbf6ee1a-dfe1-40e7-9dd3-3ac1ebc881ab/0/ANI-20261120223720-600x315.jpg",
-            "domain": "sandiegosun.com",
+            "title": "US recession fears rise as falling household wealth and market turmoil point to 25 % risk : Report",
+            "seendate": "20261124T074500Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8a47d88/1b122bfa-e15f-4390-ba0c-18ce6be2e96a/0/ANI-20261124055635-600x315.jpg",
+            "domain": "zimbabwestar.com",
             "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.northkoreatimes.com/news/279446359/look-at-india-trump-cites-india-7-gdp-growth-to-slam-us-fed-over-high-interest-rates",
-            "url_mobile": "",
-            "title": "  Look at India ...: Trump cites India 7 % GDP growth to slam US Fed over high interest rates",
-            "seendate": "20261121T003000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/6aee7aa/dbf6ee1a-dfe1-40e7-9dd3-3ac1ebc881ab/0/ANI-20261120223720-600x315.jpg",
-            "domain": "northkoreatimes.com",
-            "language": "English",
-            "sourcecountry": "North Korea"
-          },
-          {
-            "url": "https://www.aol.com/articles/japans-core-inflation-accelerates-october-234336000.html",
-            "url_mobile": "",
-            "title": "Japan core inflation accelerates in October , cementing rate hike expectations",
-            "seendate": "20261120T034500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/6dab99c348c3435cf211e5ea6c6a2af83568ecf7/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/20/23b6aabd-30f0-34b6-890a-d5b36da3ccd6/4f8edcea-aa20-4272-ad07-3e3a96adf795.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "sourcecountry": "Zimbabwe"
           },
           {
             "url": "https://www.businesstoday.in/world/story/fomc-meet-why-bill-ackman-wants-the-fed-to-abandon-its-outdated-2-inflation-target-now-568967-2026-11-23",
@@ -969,6 +1039,16 @@
             "socialimage": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202611/6b03a06f8ca0b-in-a-pointed-post-on-x-formerly-twitter--ackman-argued-that-financial-conditions-have-already-tigh-230950164-16x9.jpg",
             "domain": "businesstoday.in",
             "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.livehindustan.com/business/silver-price-crash-gold-price-fall-reasons-global-market-check-all-details-201795378843659.html",
+            "url_mobile": "https://www.livehindustan.com/business/silver-price-crash-gold-price-fall-reasons-global-market-check-all-details-201795378843659.amp.html",
+            "title": "Silver Price Crash : \u091a\u093e\u0902\u0926\u0940 \u090f\u0915 \u0926\u093f\u0928 \u092e\u0947\u0902 4 % \u091f\u0942\u091f\u0940 , \u0938\u094b\u0928\u093e \u092d\u0940 2 . 38 % \u092b\u093f\u0938\u0932\u093e ; \u0915\u094d\u092f\u093e \u0905\u092d\u0940 \u0914\u0930 \u0917\u093f\u0930\u0947\u0917\u0940 \u0915\u0940\u092e\u0924 ? ",
+            "seendate": "20261122T223000Z",
+            "socialimage": "",
+            "domain": "livehindustan.com",
+            "language": "Hindi",
             "sourcecountry": "India"
           }
         ]
@@ -1059,7 +1139,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:snb.ch": {
-      "fetched_at_utc": "2026-11-24T03:19:06.203252+00:00",
+      "fetched_at_utc": "2026-11-25T01:21:20.372463+00:00",
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {

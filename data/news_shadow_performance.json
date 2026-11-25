@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-24T03:19:07.017181+00:00",
+  "generated_at_utc": "2026-11-25T01:21:21.955230+00:00",
   "phase": "Phase 3A.3 direction-semantics shadow mode",
   "app_release": "3.3-phase3a3-direction-semantics",
   "horizons_trading_days": [
@@ -15,10 +15,10 @@
   "definition": "Pair-aware, relevance-filtered shadow news signals are evaluated separately and never change the frozen Phase 2C recommendation. Only Strong/Adequate coverage that passes the minimum-evidence gate can become a directional call; accuracy excludes future moves inside the neutral band.",
   "overall": {
     "1": {
-      "directional_calls": 22,
+      "directional_calls": 23,
       "correct": 5,
       "incorrect": 5,
-      "neutral_move": 12,
+      "neutral_move": 13,
       "directional_accuracy_pct": 50.0
     },
     "5": {
@@ -29,11 +29,11 @@
       "directional_accuracy_pct": 65.0
     },
     "10": {
-      "directional_calls": 21,
-      "correct": 8,
+      "directional_calls": 22,
+      "correct": 9,
       "incorrect": 10,
       "neutral_move": 3,
-      "directional_accuracy_pct": 44.4
+      "directional_accuracy_pct": 47.4
     }
   },
   "by_currency": {
@@ -53,19 +53,19 @@
         "directional_accuracy_pct": 100.0
       },
       "10": {
-        "directional_calls": 7,
-        "correct": 3,
+        "directional_calls": 8,
+        "correct": 4,
         "incorrect": 1,
         "neutral_move": 3,
-        "directional_accuracy_pct": 75.0
+        "directional_accuracy_pct": 80.0
       }
     },
     "JPY": {
       "1": {
-        "directional_calls": 4,
+        "directional_calls": 5,
         "correct": 0,
         "incorrect": 2,
-        "neutral_move": 2,
+        "neutral_move": 3,
         "directional_accuracy_pct": 0.0
       },
       "5": {
@@ -1109,6 +1109,34 @@
       "future_rate_sgd": 1.288834,
       "rate_change_pct": 0.823,
       "outcome": "correct"
+    },
+    {
+      "run_date_sgt": "2026-11-11",
+      "market_date": "2026-11-10",
+      "future_date": "2026-11-24",
+      "currency": "USD",
+      "horizon_trading_days": 10,
+      "shadow_score": 3.75,
+      "shadow_confidence_pct": 73,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 1.278313,
+      "future_rate_sgd": 1.289884,
+      "rate_change_pct": 0.905,
+      "outcome": "correct"
+    },
+    {
+      "run_date_sgt": "2026-11-24",
+      "market_date": "2026-11-23",
+      "future_date": "2026-11-24",
+      "currency": "JPY",
+      "horizon_trading_days": 1,
+      "shadow_score": 4.06,
+      "shadow_confidence_pct": 78,
+      "predicted_direction": "strengthen",
+      "entry_rate_sgd": 0.811677,
+      "future_rate_sgd": 0.810884,
+      "rate_change_pct": -0.098,
+      "outcome": "neutral_move"
     }
   ]
 }
