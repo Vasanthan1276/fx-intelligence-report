@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-25T01:21:20.372481+00:00",
+  "updated_at_utc": "2026-11-26T00:51:11.095774+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-11-19T23:10:08.071284+00:00",
@@ -156,7 +156,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:federalreserve.gov": {
-      "fetched_at_utc": "2026-11-25T01:01:35.714252+00:00",
+      "fetched_at_utc": "2026-11-26T00:38:36.733246+00:00",
       "payload": {}
     },
     "96h|\"Japanese yen\" (forex OR currency OR \"exchange rate\")": {
@@ -287,28 +287,28 @@
       }
     },
     "96h|\"Bank of Japan\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-24T03:04:28.509431+00:00",
+      "fetched_at_utc": "2026-11-26T00:40:10.836295+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.aol.com/articles/japans-core-inflation-accelerates-october-234336000.html",
+            "url": "https://www.vetogate.com/5777652",
             "url_mobile": "",
-            "title": "Japan core inflation accelerates in October , cementing rate hike expectations",
-            "seendate": "20261120T034500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/6dab99c348c3435cf211e5ea6c6a2af83568ecf7/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/20/23b6aabd-30f0-34b6-890a-d5b36da3ccd6/4f8edcea-aa20-4272-ad07-3e3a96adf795.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0630\u0647\u0628 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u0645\u0635\u0631 \u060c \u0627\u0646\u062e\u0641\u0627\u0636 \u0639\u064a\u0627\u0631\u064a 21 \u064824 \u0648\u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u0623\u0635\u0641\u0631 \u064a\u062a\u0647\u0627\u0648\u0649",
+            "seendate": "20261125T051500Z",
+            "socialimage": "",
+            "domain": "vetogate.com",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
           },
           {
-            "url": "https://www.bfmtv.com/economie/international/les-produits-alimentaires-coutent-de-plus-en-plus-cher-au-japon-l-inflation-accelere-legerement-a-2-2-en-octobre_AD-202611200148.html",
+            "url": "https://www.thestar.com.my/business/business-news/2026/11/25/japan039s-key-services-inflation-gauge-hits-36-year-high",
             "url_mobile": "",
-            "title": "Les produits alimentaires co\u00fbtent de plus en plus cher : au Japon , linflation acc\u00e9l\u00e8re l\u00e9g\u00e8rement \u00e0 2 , 2 % en octobre",
-            "seendate": "20261120T054500Z",
-            "socialimage": "https://io-fsly-bfmtv.cdn.nextradiotv.com/h1KwWMlUheZdtozsEhEos7RgCpI=/0x106:2048x1258/2048x0/images/Japon-drapeau-2124658.jpg",
-            "domain": "bfmtv.com",
-            "language": "French",
-            "sourcecountry": "France"
+            "title": "Japan key services inflation gauge hits 36 - year high",
+            "seendate": "20261125T014500Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/11/25/4230170.jpg",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
           },
           {
             "url": "https://www.jcp.or.jp/akahata/aik26/2026-11-24/2026112402_06_0.php",
@@ -321,34 +321,44 @@
             "sourcecountry": "Japan"
           },
           {
-            "url": "https://www.aol.com/articles/dollar-near-19-month-peak-014722000.html",
+            "url": "https://akhbaregy.com/2026/11/25/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1%D8%8C-%D8%A7%D9%86%D8%AE%D9%81%D8%A7%D8%B6-%D8%B9%D9%8A%D8%A7%D8%B1%D9%8A-2/",
             "url_mobile": "",
-            "title": "Dollar near 19 - month peak as AI jitters sap risk appetite",
-            "seendate": "20261120T034500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/4783ca1bf4b36674af94571a5a1b51746acad7d4/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/20/15f69508-7260-327c-b0db-7aaa90be02ae/a5fbf744-5d62-4a60-9631-ddf9080acccc.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://econotimes.com/EUR-JPY-Falls-Below-175-as-BoJ-Hike-Bets-and-Intervention-Signals-Lift-Yen-1780045",
-            "url_mobile": "",
-            "title": "EUR / JPY Falls Below 175 as BoJ Hike Bets and Intervention Signals Lift Yen",
-            "seendate": "20261120T063000Z",
-            "socialimage": "https://wfuxxvxhdynkhcrlavdu.supabase.co/storage/v1/object/public/article-media/articles/183941712dfe77c55fe5f0f1f952feefd8f90ca260ffb3b99fb5f86986f2c3df.webp",
-            "domain": "econotimes.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://english.news.cn/20261120/8339f7ba31c24aa9877c3b782e6ed807/c.html",
-            "url_mobile": "",
-            "title": "Japan core consumer prices in October rise 2 . 2 pct year on year - Xinhua",
-            "seendate": "20261120T041500Z",
+            "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0630\u0647\u0628 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u0645\u0635\u0631 \u060c \u0627\u0646\u062e\u0641\u0627\u0636 \u0639\u064a\u0627\u0631\u064a 21 \u064824 \u0648\u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u0623\u0635\u0641\u0631 \u064a\u062a\u0647\u0627\u0648\u0649",
+            "seendate": "20261125T051500Z",
             "socialimage": "",
-            "domain": "english.news.cn",
+            "domain": "akhbaregy.com",
+            "language": "Arabic",
+            "sourcecountry": "Saudi Arabia"
+          },
+          {
+            "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/bank-japan-likely-lift-rate-2-mid-2027-ex-board-member-says",
+            "url_mobile": "",
+            "title": "Bank of Japan likely to lift rate to 2 % by mid - 2027 , ex - board member says",
+            "seendate": "20261125T014500Z",
+            "socialimage": "https://cassette.sphdigital.com.sg/image/businesstimes/a5e8e025c6ecbb18b06bbad86797eda5f969c483ba7bdaeec3175e922bde14ab?t=og&f=webp",
+            "domain": "businesstimes.com.sg",
             "language": "English",
-            "sourcecountry": ""
+            "sourcecountry": "Singapore"
+          },
+          {
+            "url": "https://en.shafaqna.com/494730/japan-services-inflation-jumps-4-2/",
+            "url_mobile": "",
+            "title": "Japan services inflation jumps 4 . 2 % - Shafaqna English | International Shia News & Fatwas",
+            "seendate": "20261125T034500Z",
+            "socialimage": "https://en.shafaqna.com/wp-content/uploads/2026/11/en.shafaqna-Japan-services-inflation-jumps-4.2.jpg",
+            "domain": "en.shafaqna.com",
+            "language": "English",
+            "sourcecountry": "Saudi Arabia"
+          },
+          {
+            "url": "https://www.actionforex.com/live-comments/661994-japan-services-producer-prices-jump-4-2-but-freight-costs-drive-much-of-the-surge/",
+            "url_mobile": "",
+            "title": "Japan Services Producer Prices Jump 4 . 2 %, but Freight Costs Drive Much of the Surge",
+            "seendate": "20261125T014500Z",
+            "socialimage": "https://www.actionforex.com/wp-content/uploads/2018/03/f-japan5.jpg",
+            "domain": "actionforex.com",
+            "language": "English",
+            "sourcecountry": "United Kingdom"
           },
           {
             "url": "https://www.interest.co.nz/economy/141180/eyes-wall-street-japan-inflation-china-foreign-direct-investment-inflows-slow-taiwan",
@@ -512,9 +522,59 @@
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-24T03:09:54.362403+00:00",
+      "fetched_at_utc": "2026-11-26T00:46:08.442720+00:00",
       "payload": {
         "articles": [
+          {
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-dollars-riyal-dirham-euro-24-november-2026/",
+            "url_mobile": "",
+            "title": "Currency exchange rates in Pakistan today : Dollars , Riyal , Dirham & Euro 24 November 2026",
+            "seendate": "20261124T071500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://home.nzcity.co.nz/news/article.aspx?id=458712&fm=psp,tsf",
+            "url_mobile": "",
+            "title": "Kiwis are travelling closer to home - while the New Zealand dollar stays weak - 25 - Nov - 2026",
+            "seendate": "20261125T034500Z",
+            "socialimage": "",
+            "domain": "home.nzcity.co.nz",
+            "language": "English",
+            "sourcecountry": "New Zealand"
+          },
+          {
+            "url": "https://home.nzcity.co.nz/news/article.aspx?id=458712&fm=psp,tst",
+            "url_mobile": "",
+            "title": "Kiwis are travelling closer to home - while the New Zealand dollar stays weak - 25 - Nov - 2026",
+            "seendate": "20261125T034500Z",
+            "socialimage": "",
+            "domain": "home.nzcity.co.nz",
+            "language": "English",
+            "sourcecountry": "New Zealand"
+          },
+          {
+            "url": "https://en.dailypakistan.com.pk/24-Nov-2026/currency-rates-today-in-pakistan-us-dollar-pound-euro-riyal-latest-updates-24-nov-2026",
+            "url_mobile": "",
+            "title": "Currency Rates Today in Pakistan : US Dollar , Pound Euro , Riyal Latest Updates",
+            "seendate": "20261124T063000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://www.abc.net.au/news/2026-11-25/australian-superannuation-caught-in-finance-market-storm/107422362",
+            "url_mobile": "",
+            "title": "Australian superannuation in eye of once - in - a - generation global financial markets storm",
+            "seendate": "20261124T233000Z",
+            "socialimage": "https://live-production.wcms.abc-cdn.net.au/32b1ba50d157df0c5c25a38d4cc7fa54?impolicy=wcms_watermark_news&cropH=2700&cropW=4800&xPos=0&yPos=282&imformat=generic",
+            "domain": "abc.net.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
           {
             "url": "https://www.aol.com/articles/dollar-climbs-renewed-ai-euphoria-011359000.html",
             "url_mobile": "",
@@ -536,84 +596,54 @@
             "sourcecountry": "United States"
           },
           {
-            "url": "http://www.nigeriasun.com/news/279446207/dow-jones-plunges-950-points-nasdaq-loses-more-than-5-percent",
-            "url_mobile": "",
-            "title": "Dow Jones plunges 950 points , Nasdaq loses more than 5 percent",
-            "seendate": "20261120T214500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e7716f9/f457b061-62fc-4d11-b684-f60e06c1e445/6/NYSE-down-day-NYSE-com-600x315.jpg",
-            "domain": "nigeriasun.com",
+            "url": "https://www.manilatimes.net/2026/11/25/tmt-newswire/globenewswire/zspace-to-join-vection-technologies-to-expand-arvr-learning/2477679",
+            "url_mobile": "https://www.manilatimes.net/2026/11/25/tmt-newswire/globenewswire/zspace-to-join-vection-technologies-to-expand-arvr-learning/2477679/amp",
+            "title": "zSpace to Join Vection Technologies to Expand AR / VR Learning",
+            "seendate": "20261125T014500Z",
+            "socialimage": "https://manilatimes.net/manilatimes/uploads/images/2026/11/25/1324152.png",
+            "domain": "manilatimes.net",
             "language": "English",
-            "sourcecountry": "Nigeria"
+            "sourcecountry": "Philippines"
           },
           {
-            "url": "http://www.bignewsnetwork.com/news/279446207/horror-end-to-week-on-wall-street-nasdaq-plunges-1-261-points",
+            "url": "https://investinglive.com/news/australia-cpi-preview-4-8-looks-like-the-peak-but-the-core-print-will-move-the-rba/",
             "url_mobile": "",
-            "title": "Horror end to week on Wall Street , Nasdaq plunges 1 , 261 points",
-            "seendate": "20261120T214500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e7716f9/f457b061-62fc-4d11-b684-f60e06c1e445/6/NYSE-down-day-NYSE-com-600x315.jpg",
-            "domain": "bignewsnetwork.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.sandiegosun.com/news/279446207/dow-jones-plunges-950-points-nasdaq-loses-more-than-5-percent",
-            "url_mobile": "",
-            "title": "Dow Jones plunges 950 points , Nasdaq loses more than 5 percent",
-            "seendate": "20261121T003000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e7716f9/f457b061-62fc-4d11-b684-f60e06c1e445/6/NYSE-down-day-NYSE-com-600x315.jpg",
-            "domain": "sandiegosun.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "http://www.taiwansun.com/news/279446207/dow-jones-plunges-950-points-nasdaq-loses-more-than-5-percent",
-            "url_mobile": "",
-            "title": "Dow Jones plunges 950 points , Nasdaq loses more than 5 percent",
-            "seendate": "20261121T003000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e7716f9/f457b061-62fc-4d11-b684-f60e06c1e445/6/NYSE-down-day-NYSE-com-600x315.jpg",
-            "domain": "taiwansun.com",
-            "language": "English",
-            "sourcecountry": "China"
-          },
-          {
-            "url": "http://www.northkoreatimes.com/news/279446207/dow-jones-plunges-950-points-nasdaq-loses-more-than-5-percent",
-            "url_mobile": "",
-            "title": "Dow Jones plunges 950 points , Nasdaq loses more than 5 percent",
-            "seendate": "20261121T003000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e7716f9/f457b061-62fc-4d11-b684-f60e06c1e445/6/NYSE-down-day-NYSE-com-600x315.jpg",
-            "domain": "northkoreatimes.com",
-            "language": "English",
-            "sourcecountry": "North Korea"
-          },
-          {
-            "url": "http://www.iraqsun.com/news/279446207/dow-jones-plunges-950-points-nasdaq-loses-more-than-5-percent",
-            "url_mobile": "",
-            "title": "Dow Jones plunges 950 points , Nasdaq loses more than 5 percent",
-            "seendate": "20261121T003000Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/e7716f9/f457b061-62fc-4d11-b684-f60e06c1e445/6/NYSE-down-day-NYSE-com-600x315.jpg",
-            "domain": "iraqsun.com",
-            "language": "English",
-            "sourcecountry": "Iraq"
-          },
-          {
-            "url": "https://investinglive.com/central-banks/anz-pulls-first-rba-rate-cut-forward-to-june-2027-sees-three-cuts-by-early-2028/",
-            "url_mobile": "",
-            "title": "ANZ pulls first RBA rate cut forward to June 2027 , sees three cuts by early 2028",
-            "seendate": "20261124T011500Z",
-            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/anz-rba-hikes-peak-cuts-2027-vector-1200x900-featured-1795474714.jpg?&format=webp",
+            "title": "Australia CPI preview : 4 . 8 % looks like the peak , but the core print will move the RBA",
+            "seendate": "20261125T001500Z",
+            "socialimage": "https://investinglive.com/cms/media/images/MONTH%20END%20CALENDAR_id_c93f3767-19bf-4862-af70-0f88543ebff6_original.jpg?&format=webp",
             "domain": "investinglive.com",
             "language": "English",
             "sourcecountry": ""
           },
           {
-            "url": "https://www.rnz.co.nz/news/world/2757034/the-ai-bubble-hasn-t-burst-but-it-has-significantly-deflated",
+            "url": "http://www.stlouisstar.com/news/279452544/u-s-stocks-end-mixed-tuesday-dow-gains-426-points-nasdaq-drops-356",
             "url_mobile": "",
-            "title": "The AI bubble hasnt burst , but it has significantly deflated",
-            "seendate": "20261123T213000Z",
-            "socialimage": "https://media.rnztools.nz/rnz/image/upload/s--Ev4ce0I3--/t_tohu-badge-facebook/f_auto/q_auto/4JEOBNM_AFP__20261013__D36R6ZH__v1__HighRes__FranceUsTechnologyNvidiaPortrait_jpg",
-            "domain": "rnz.co.nz",
+            "title": "U . S . stocks end mixed Tuesday , Dow gains 426 points , Nasdaq drops 356",
+            "seendate": "20261124T223000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2590fdd/c339802e-e009-42c2-beb9-719bfbcfc1ec/4/US-stocks-dither-600x315.jpg",
+            "domain": "stlouisstar.com",
             "language": "English",
-            "sourcecountry": ""
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.sydneysun.com/news/279452544/u-s-stocks-end-mixed-tuesday-dow-gains-426-points-nasdaq-drops-356",
+            "url_mobile": "",
+            "title": "U . S . stocks end mixed Tuesday , Dow gains 426 points , Nasdaq drops 356",
+            "seendate": "20261124T223000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2590fdd/c339802e-e009-42c2-beb9-719bfbcfc1ec/4/US-stocks-dither-600x315.jpg",
+            "domain": "sydneysun.com",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "http://www.memphissun.com/news/279452544/u-s-stocks-end-mixed-tuesday-dow-gains-426-points-nasdaq-drops-356",
+            "url_mobile": "",
+            "title": "U . S . stocks end mixed Tuesday , Dow gains 426 points , Nasdaq drops 356",
+            "seendate": "20261124T223000Z",
+            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/2590fdd/c339802e-e009-42c2-beb9-719bfbcfc1ec/4/US-stocks-dither-600x315.jpg",
+            "domain": "memphissun.com",
+            "language": "English",
+            "sourcecountry": "United States"
           }
         ]
       }
@@ -696,12 +726,55 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-11-18T23:14:16.157271+00:00",
+      "fetched_at_utc": "2026-11-26T00:47:35.360151+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
-      "fetched_at_utc": "2026-11-19T23:20:51.834334+00:00",
-      "payload": {}
+      "fetched_at_utc": "2026-11-26T00:47:58.241567+00:00",
+      "payload": {
+        "articles": [
+          {
+            "url": "https://pakobserver.net/currency-exchange-rates-in-pakistan-today-dollars-riyal-dirham-euro-24-november-2026/",
+            "url_mobile": "",
+            "title": "Currency exchange rates in Pakistan today : Dollars , Riyal , Dirham & Euro 24 November 2026",
+            "seendate": "20261124T071500Z",
+            "socialimage": "https://pakobserver.net/wp-content/uploads/2026/10/currency-exchange-rates-in-pakistan-today-27-october-2026-pakobserver-784222.jpg",
+            "domain": "pakobserver.net",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://en.dailypakistan.com.pk/24-Nov-2026/currency-rates-today-in-pakistan-us-dollar-pound-euro-riyal-latest-updates-24-nov-2026",
+            "url_mobile": "",
+            "title": "Currency Rates Today in Pakistan : US Dollar , Pound Euro , Riyal Latest Updates",
+            "seendate": "20261124T063000Z",
+            "socialimage": "https://en.dailypakistan.com.pk/wp-content/uploads/2024/09/currency-rates-in-pakistan-rupee-to-us-dollar-euro-pound-dirham-riyal-21-september-2024-news-251016.jpg",
+            "domain": "en.dailypakistan.com.pk",
+            "language": "English",
+            "sourcecountry": "Pakistan"
+          },
+          {
+            "url": "https://hindi.moneycontrol.com/news/markets/stock-market-today-top-10-news-market-outlook-for-november-25-trends-in-the-gift-nifty-2-2474109.html",
+            "url_mobile": "https://hindi.moneycontrol.com/news/markets/stock-market-today-top-10-news-market-outlook-for-november-25-trends-in-the-gift-nifty-2-2474109.html/amp",
+            "title": "Stock Market Today : \u092c\u093e\u091c\u093e\u0930 \u092a\u0930 \u0906\u091c \u0907\u0928 \u0916\u092c\u0930\u094b\u0902 \u0915\u093e \u0926\u093f\u0916\u0947\u0917\u093e \u0905\u0938\u0930 , \u0915\u094b\u0908 \u091f\u094d\u0930\u0947\u0921 \u0932\u0947\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0907\u0928 \u092a\u0930 \u0921\u093e\u0932 \u0932\u0947\u0902 \u090f\u0915 \u0928\u091c\u0930",
+            "seendate": "20261125T033000Z",
+            "socialimage": "https://images.moneycontrol.com/static-hindinews/2026/11/first-trick-wednes-day-1600-900.jpg",
+            "domain": "hindi.moneycontrol.com",
+            "language": "Hindi",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.moneycontrol.com/news/business/stocks/first-tick-top-global-cues-to-watch-in-today-s-trade-42-14087152.html",
+            "url_mobile": "https://www.moneycontrol.com/news/business/stocks/first-tick-top-global-cues-to-watch-in-today-s-trade-42-14087152.html/amp",
+            "title": "First Tick : Top global cues to watch in today trade",
+            "seendate": "20261125T033000Z",
+            "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/11/20261107032336_stocks2.jpg",
+            "domain": "moneycontrol.com",
+            "language": "English",
+            "sourcecountry": "India"
+          }
+        ]
+      }
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
       "fetched_at_utc": "2026-11-25T01:15:44.061215+00:00",
@@ -850,46 +923,126 @@
       }
     },
     "96h|\"Reserve Bank of Australia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-24T03:11:11.944680+00:00",
+      "fetched_at_utc": "2026-11-26T00:47:17.017726+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://investinglive.com/central-banks/anz-pulls-first-rba-rate-cut-forward-to-june-2027-sees-three-cuts-by-early-2028/",
+            "url": "https://theconversation.com/inflation-jumps-to-4-9-as-fuel-prices-surge-but-the-rba-should-hold-rates-steady-297288",
             "url_mobile": "",
-            "title": "ANZ pulls first RBA rate cut forward to June 2027 , sees three cuts by early 2028",
-            "seendate": "20261124T011500Z",
-            "socialimage": "https://investinglive.com/cms/media/Processed/Categories/featured/anz-rba-hikes-peak-cuts-2027-vector-1200x900-featured-1795474714.jpg?&format=webp",
-            "domain": "investinglive.com",
+            "title": "Inflation jumps to 4 . 9 % as fuel prices surge , but the RBA should hold rates steady",
+            "seendate": "20261125T033000Z",
+            "socialimage": "https://images.theconversation.com/files/774082/original/file-20261125-62-c2j1cs.jpg?ixlib=rb-4.1.1&rect=0%2C716%2C6825%2C3412&q=45&auto=format&fit=crop",
+            "domain": "theconversation.com",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.dailymail.com/news/article-16319515/anz-bank-rates.html",
+            "url_mobile": "https://www.dailymail.com/news/article-16319515/amp/anz-bank-rates.html",
+            "title": "Finally some good news for Australians with a mortgage ? When interest rates are predicted to come down as ANZ bank issue June forecast",
+            "seendate": "20261125T011500Z",
+            "socialimage": "https://i.dailymail.com/1s/2026/11/24/22/112708221-0-image-a-7_1795559208522.jpg",
+            "domain": "dailymail.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.theadvocate.com.au/story/9397710/inflation-hits-three-year-high-as-treasurer-eyes-cuts/",
+            "url_mobile": "",
+            "title": "Inflation hits three - year high as treasurer eyes cuts",
+            "seendate": "20261125T011500Z",
+            "socialimage": "https://www.theadvocate.com.au/images/transform/v1/crop/frm/silverstone-feed-data/d17d34a4-ae7b-4d3c-a87b-e3e6a06a7754.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "theadvocate.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://english.news.cn/20261125/f1e29dcd539447618bc5cef1de82ff4b/c.html",
+            "url_mobile": "",
+            "title": "Australian inflation rises to 3 - yr high - Xinhua",
+            "seendate": "20261125T023000Z",
+            "socialimage": "",
+            "domain": "english.news.cn",
             "language": "English",
             "sourcecountry": ""
           },
           {
-            "url": "https://www.abc.net.au/news/2026-11-23/sahm-rule-recession-indicator-australia-november-2026/107408750",
+            "url": "http://www.bignewsnetwork.com/news/279452915/australian-inflation-rises-to-3-yr-high",
             "url_mobile": "",
-            "title": "Australia may be headed for recession , former Federal Reserve economist says",
-            "seendate": "20261122T213000Z",
-            "socialimage": "https://live-production.wcms.abc-cdn.net.au/d9f22e2c86cada0764677c34a3f9a166?impolicy=wcms_watermark_news&cropH=1152&cropW=2048&xPos=0&yPos=214&imformat=generic",
-            "domain": "abc.net.au",
+            "title": "Australian inflation rises to 3 - yr high",
+            "seendate": "20261125T021500Z",
+            "socialimage": "",
+            "domain": "bignewsnetwork.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://english.news.cn/asiapacific/20261125/2316db324da644df8d66f868df333c73/c.html",
+            "url_mobile": "",
+            "title": "Australian inflation rises to 3 - yr high - Xinhua",
+            "seendate": "20261125T023000Z",
+            "socialimage": "",
+            "domain": "english.news.cn",
+            "language": "English",
+            "sourcecountry": ""
+          },
+          {
+            "url": "http://www.sydneysun.com/news/279452915/australian-inflation-rises-to-3-yr-high",
+            "url_mobile": "",
+            "title": "Australian inflation rises to 3 - yr high",
+            "seendate": "20261125T033000Z",
+            "socialimage": "",
+            "domain": "sydneysun.com",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.brokernews.com.au/news/breaking-news/anz-expects-next-rate-cut-to-come-in-june-290364.aspx",
+            "url": "https://www.lithgowmercury.com.au/story/9397710/inflation-hits-three-year-high-as-treasurer-eyes-cuts/",
             "url_mobile": "",
-            "title": "ANZ expects next rate cut to come in June",
-            "seendate": "20261124T013000Z",
-            "socialimage": "https://cdn-res.keymedia.com/cms/images/ab/kell_639310710119976581.jpg",
-            "domain": "brokernews.com.au",
+            "title": "Inflation hits three - year high as treasurer eyes cuts",
+            "seendate": "20261125T011500Z",
+            "socialimage": "https://www.lithgowmercury.com.au/images/transform/v1/crop/frm/silverstone-feed-data/d17d34a4-ae7b-4d3c-a87b-e3e6a06a7754.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "lithgowmercury.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           },
           {
-            "url": "https://www.brokernews.com.au/news/breaking-news/weaker-jobs-market-may-signal-interest-rate-peak-says-ray-white-290353.aspx",
+            "url": "https://www.cessnockadvertiser.com.au/story/9397710/inflation-hits-three-year-high-as-treasurer-eyes-cuts/",
             "url_mobile": "",
-            "title": "Weaker jobs market may signal interest rate peak , says Ray White",
-            "seendate": "20261120T063000Z",
-            "socialimage": "https://cdn-res.keymedia.com/cms/images/ab/kris_639307490923900508.png",
-            "domain": "brokernews.com.au",
+            "title": "Inflation hits three - year high as treasurer eyes cuts",
+            "seendate": "20261125T011500Z",
+            "socialimage": "https://www.cessnockadvertiser.com.au/images/transform/v1/crop/frm/silverstone-feed-data/d17d34a4-ae7b-4d3c-a87b-e3e6a06a7754.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "cessnockadvertiser.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.irrigator.com.au/story/9397710/inflation-hits-three-year-high-as-treasurer-eyes-cuts/",
+            "url_mobile": "",
+            "title": "Inflation hits three - year high as treasurer eyes cuts",
+            "seendate": "20261125T011500Z",
+            "socialimage": "https://www.irrigator.com.au/images/transform/v1/crop/frm/silverstone-feed-data/d17d34a4-ae7b-4d3c-a87b-e3e6a06a7754.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "irrigator.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.narrominenewsonline.com.au/story/9397710/inflation-hits-three-year-high-as-treasurer-eyes-cuts/",
+            "url_mobile": "",
+            "title": "Inflation hits three - year high as treasurer eyes cuts",
+            "seendate": "20261125T014500Z",
+            "socialimage": "https://www.narrominenewsonline.com.au/images/transform/v1/crop/frm/silverstone-feed-data/d17d34a4-ae7b-4d3c-a87b-e3e6a06a7754.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "narrominenewsonline.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.wellingtontimes.com.au/story/9397710/inflation-hits-three-year-high-as-treasurer-eyes-cuts/",
+            "url_mobile": "",
+            "title": "Inflation hits three - year high as treasurer eyes cuts",
+            "seendate": "20261125T021500Z",
+            "socialimage": "https://www.wellingtontimes.com.au/images/transform/v1/crop/frm/silverstone-feed-data/d17d34a4-ae7b-4d3c-a87b-e3e6a06a7754.jpg/r0_90_800_510_w1200_h630_fmax.jpg",
+            "domain": "wellingtontimes.com.au",
             "language": "English",
             "sourcecountry": "Australia"
           }
@@ -1055,68 +1208,128 @@
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-20T22:52:54.663753+00:00",
+      "fetched_at_utc": "2026-11-26T00:41:34.984726+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.onvista.de/news/2026/11-20-devisen-euro-stagniert-auf-tiefstem-stand-seit-april-2025-0-10-26578994",
-            "url_mobile": "",
-            "title": "Devisen : Euro stagniert auf tiefstem Stand seit April 2025",
-            "seendate": "20261120T214500Z",
-            "socialimage": "https://www.onvista.de/og/onvista.png?v=2",
-            "domain": "onvista.de",
-            "language": "German",
-            "sourcecountry": "Germany"
-          },
-          {
-            "url": "https://www.boerse-online.de/dpa-afx/devisen-euro-stagniert-auf-tiefstem-stand-seit-april-2025-567719.html",
-            "url_mobile": "",
-            "title": "B\u00d6RSE ONLINE : B\u00f6rsennachrichten & Aktienanalysen",
-            "seendate": "20261120T214500Z",
-            "socialimage": "",
-            "domain": "boerse-online.de",
-            "language": "German",
-            "sourcecountry": "Germany"
-          },
-          {
-            "url": "https://www.tothemaonline.com/Article/479857/h-mesaia-taxh-stenahwrietai-na-zhsei-gonatizei-ta-noikokyria-h-akribeia-%E2%80%93-poy-paei-o-misthos-twn-kypriwn",
-            "url_mobile": "",
-            "title": " \u00ab \u0397 \u03bc\u03b5\u03c3\u03b1\u03af\u03b1 \u03c4\u03ac\u03be\u03b7 \u03c3\u03c4\u03b5\u03bd\u03b1\u03c7\u03c9\u03c1\u03b9\u03ad\u03c4\u03b1\u03b9 \u03bd\u03b1 \u03b6\u03ae\u03c3\u03b5\u03b9 \u00bb: \u0393\u03bf\u03bd\u03b1\u03c4\u03af\u03b6\u03b5\u03b9 \u03c4\u03b1 \u03bd\u03bf\u03b9\u03ba\u03bf\u03ba\u03c5\u03c1\u03b9\u03ac \u03b7 \u03b1\u03ba\u03c1\u03af\u03b2\u03b5\u03b9\u03b1 \u2013 \u03a0\u03bf\u03cd \u03c0\u03ac\u03b5\u03b9 \u03bf \u03bc\u03b9\u03c3\u03b8\u03cc\u03c2 \u03c4\u03c9\u03bd \u039a\u03c5\u03c0\u03c1\u03af\u03c9\u03bd ; ",
-            "seendate": "20261120T051500Z",
-            "socialimage": "https://www.tothemaonline.com/img/path/56afac49-13fd-4318-8815-e28cbb6cdb33_akrib.webp",
-            "domain": "tothemaonline.com",
+            "url": "https://www.newsit.gr/oikonomia/finance/i-ekt-synedriazei-me-to-vlemma-stis-ayksiseis-epitokion-eksetazetai-i-anatheorisi-ton-provlepseon-gia-to-2027/4831456/",
+            "url_mobile": "https://www.newsit.gr/oikonomia/finance/i-ekt-synedriazei-me-to-vlemma-stis-ayksiseis-epitokion-eksetazetai-i-anatheorisi-ton-provlepseon-gia-to-2027/4831456/amp/",
+            "title": "\u0397 \u0395\u039a\u03a4 \u03c3\u03c5\u03bd\u03b5\u03b4\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9 \u03bc\u03b5 \u03c4\u03bf \u03b2\u03bb\u03ad\u03bc\u03bc\u03b1 \u03c3\u03c4\u03b9\u03c2 \u03b1\u03c5\u03be\u03ae\u03c3\u03b5\u03b9\u03c2 \u03b5\u03c0\u03b9\u03c4\u03bf\u03ba\u03af\u03c9\u03bd - \u0395\u03be\u03b5\u03c4\u03ac\u03b6\u03b5\u03c4\u03b1\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b8\u03b5\u03ce\u03c1\u03b7\u03c3\u03b7 \u03c4\u03c9\u03bd \u03c0\u03c1\u03bf\u03b2\u03bb\u03ad\u03c8\u03b5\u03c9\u03bd \u03b3\u03b9\u03b1 \u03c4\u03bf 2027",
+            "seendate": "20261125T141500Z",
+            "socialimage": "https://www.newsit.gr/wp-content/uploads/2026/11/ecb-frankfurt-reuters-scaled-1-1-2-1200x630.jpg",
+            "domain": "newsit.gr",
             "language": "Greek",
-            "sourcecountry": "Cyprus"
+            "sourcecountry": "Greece"
           },
           {
-            "url": "https://www.24hod.sk/2026-11-20/53/dlhova-kriza/",
+            "url": "https://www.vetogate.com/5777652",
             "url_mobile": "",
-            "title": "24hod . sk - Dlhov\u00e1 kr\u00edza",
-            "seendate": "20261120T001500Z",
-            "socialimage": "https://www.24hod.sk/images/24hod-og.jpg",
-            "domain": "24hod.sk",
-            "language": "Slovak",
-            "sourcecountry": "Slovak Republic"
+            "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0630\u0647\u0628 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u0645\u0635\u0631 \u060c \u0627\u0646\u062e\u0641\u0627\u0636 \u0639\u064a\u0627\u0631\u064a 21 \u064824 \u0648\u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u0623\u0635\u0641\u0631 \u064a\u062a\u0647\u0627\u0648\u0649",
+            "seendate": "20261125T051500Z",
+            "socialimage": "",
+            "domain": "vetogate.com",
+            "language": "Arabic",
+            "sourcecountry": "Egypt"
           },
           {
-            "url": "https://thenewamerican.com/opinion/eu-central-banker-plans-to-plant-barren-ai-crops-across-the-continent/",
+            "url": "https://www.freemalaysiatoday.com/category/business/2026/11/25/dollar-takes-breather-ahead-of-us-data-on-fed-path",
             "url_mobile": "",
-            "title": "EU Central Banker Plans to Plant Barren AI Crops Across the Continent",
-            "seendate": "20261119T171500Z",
-            "socialimage": "https://thenewamerican.com/assets/sites/2/mercer_opinion-1.jpg",
-            "domain": "thenewamerican.com",
+            "title": "Dollar takes breather ahead of US data on Fed path",
+            "seendate": "20261125T031500Z",
+            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=80,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2022/11/US-dollar-frepik.jpg",
+            "domain": "freemalaysiatoday.com",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.aol.com/articles/dollar-takes-breather-ahead-us-011916000.html",
+            "url_mobile": "",
+            "title": "Dollar takes breather ahead of US data on Fed path ; Aussie jumps on CPI",
+            "seendate": "20261125T023000Z",
+            "socialimage": "https://hermes.media.transform.aol.com/71cf55439ce4fd64c2c105d347f1275550ecd07b/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/25/c1efe2c4-6655-3122-b401-6e9547718951/1b4ba2d8-0cbb-417e-86ad-6272312cf190.jpg",
+            "domain": "aol.com",
             "language": "English",
             "sourcecountry": "United States"
           },
           {
-            "url": "https://www.huffingtonpost.gr/blogs/i-technologiki-exartisi-echei-kostos-i-evropi-prepei-na-apoktisei-enallaktikes/",
+            "url": "https://punchng.com/single-digit-test-of-dropping-inflation/",
+            "url_mobile": "https://punchng.com/single-digit-test-of-dropping-inflation/?amp",
+            "title": "Single - digit inflation : Nigeria test after 14 . 06 % October",
+            "seendate": "20261123T033000Z",
+            "socialimage": "",
+            "domain": "punchng.com",
+            "language": "English",
+            "sourcecountry": "Nigeria"
+          },
+          {
+            "url": "https://akhbaregy.com/2026/11/25/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1%D8%8C-%D8%A7%D9%86%D8%AE%D9%81%D8%A7%D8%B6-%D8%B9%D9%8A%D8%A7%D8%B1%D9%8A-2/",
             "url_mobile": "",
-            "title": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03bf\u03bb\u03bf\u03b3\u03b9\u03ba\u03ae \u03b5\u03be\u03ac\u03c1\u03c4\u03b7\u03c3\u03b7 \u03ad\u03c7\u03b5\u03b9 \u03ba\u03cc\u03c3\u03c4\u03bf\u03c2 . \u0397 \u0395\u03c5\u03c1\u03ce\u03c0\u03b7 \u03c0\u03c1\u03ad\u03c0\u03b5\u03b9 \u03bd\u03b1 \u03b1\u03c0\u03bf\u03ba\u03c4\u03ae\u03c3\u03b5\u03b9 \u03b5\u03bd\u03b1\u03bb\u03bb\u03b1\u03ba\u03c4\u03b9\u03ba\u03ad\u03c2",
-            "seendate": "20261120T053000Z",
-            "socialimage": "https://www.huffingtonpost.gr/wp-content/uploads/2026/11/EU-flag-on-a-CPU-processor-European-chip-manufacturer-GPU-microchip-on-a-motherboard-1024x683.jpg",
-            "domain": "huffingtonpost.gr",
+            "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0630\u0647\u0628 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u0645\u0635\u0631 \u060c \u0627\u0646\u062e\u0641\u0627\u0636 \u0639\u064a\u0627\u0631\u064a 21 \u064824 \u0648\u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u0623\u0635\u0641\u0631 \u064a\u062a\u0647\u0627\u0648\u0649",
+            "seendate": "20261125T051500Z",
+            "socialimage": "",
+            "domain": "akhbaregy.com",
+            "language": "Arabic",
+            "sourcecountry": "Saudi Arabia"
+          },
+          {
+            "url": "https://www.in.gr/2026/11/22/economy/oikonomikes-eidiseis/eyropi-synagermos-gia-neo-kyma-energeiakou-plithorismou-fovizei-enas-kryos-xeimonas/",
+            "url_mobile": "https://www.in.gr/2026/11/22/economy/oikonomikes-eidiseis/eyropi-synagermos-gia-neo-kyma-energeiakou-plithorismou-fovizei-enas-kryos-xeimonas/amp/",
+            "title": "\u0395\u03c5\u03c1\u03ce\u03c0\u03b7 : \u03a3\u03c5\u03bd\u03b1\u03b3\u03b5\u03c1\u03bc\u03cc\u03c2 \u03b3\u03b9\u03b1 \u03bd\u03ad\u03bf \u03ba\u03cd\u03bc\u03b1 \u03b5\u03bd\u03b5\u03c1\u03b3\u03b5\u03b9\u03b1\u03ba\u03bf\u03cd \u03c0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03bf\u03cd - \u03a6\u03bf\u03b2\u03af\u03b6\u03b5\u03b9 \u03ad\u03bd\u03b1\u03c2 \u03ba\u03c1\u03cd\u03bf\u03c2 \u03c7\u03b5\u03b9\u03bc\u03ce\u03bd\u03b1\u03c2",
+            "seendate": "20261122T203000Z",
+            "socialimage": "https://www.in.gr/wp-content/uploads/2026/11/pipeline-ogimage.jpg",
+            "domain": "in.gr",
             "language": "Greek",
             "sourcecountry": "Greece"
+          },
+          {
+            "url": "https://akhbaregy.com/2026/11/24/%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%8A%D8%B3%D8%AA%D8%B9%D9%8A%D8%AF-%D8%AA%D9%88%D8%A7%D8%B2%D9%86%D9%87-%D9%88%D8%B3%D8%B7-%D8%AA%D8%B1%D9%82%D8%A8-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84/",
+            "url_mobile": "",
+            "title": "\u0627\u0644\u0630\u0647\u0628 \u064a\u0633\u062a\u0639\u064a\u062f \u062a\u0648\u0627\u0632\u0646\u0647 \u0648\u0633\u0637 \u062a\u0631\u0642\u0628 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 \u0648\u0627\u0644\u0623\u0648\u0642\u064a\u0629 \u062a\u0633\u062c\u0644 3645 . 29 \u062f\u0648\u0644\u0627\u0631",
+            "seendate": "20261124T051500Z",
+            "socialimage": "",
+            "domain": "akhbaregy.com",
+            "language": "Arabic",
+            "sourcecountry": "Saudi Arabia"
+          },
+          {
+            "url": "https://www.naturalnews.com/2026-11-23-21k-rally-paris-cost-of-living-protests-france.html",
+            "url_mobile": "",
+            "title": "21 , 500 Rally in Paris as Cost - of - Living Protests Spread Across France \u2013 NaturalNews . com",
+            "seendate": "20261123T213000Z",
+            "socialimage": "https://www.naturalnews.com/wp-content/uploads/sites/91/2026/11/cost-of-living-crisis-paris-protest-rising-living-costs-7069-88caad3d-original.jpg",
+            "domain": "naturalnews.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.moneycab.com/dossiers/blackrock-marktausblick-aktien-unter-druck-zinserwartungen-auf-dem-pruefstand/",
+            "url_mobile": "https://www.moneycab.com/dossiers/blackrock-marktausblick-aktien-unter-druck-zinserwartungen-auf-dem-pruefstand/amp/",
+            "title": "BlackRock Marktausblick : Aktien unter Druck , Zinserwartungen auf dem Pr\u00fcfstand",
+            "seendate": "20261124T213000Z",
+            "socialimage": "https://www.moneycab.com/wp-content/uploads/2023/10/231027_petersen_ann_katrin.jpg",
+            "domain": "moneycab.com",
+            "language": "German",
+            "sourcecountry": "Switzerland"
+          },
+          {
+            "url": "https://aa.com.tr/en/americas/us-stocks-end-mixed-as-nvidia-anthropic-losses-drag-nasdaq-lower/4136533",
+            "url_mobile": "",
+            "title": "US stocks end mixed as Nvidia , Anthropic losses drag Nasdaq lower",
+            "seendate": "20261125T003000Z",
+            "socialimage": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/25/thumbs_b_c_4a2678d60008205dbf6d1bbcac82580d.jpg",
+            "domain": "aa.com.tr",
+            "language": "English",
+            "sourcecountry": "Turkey"
+          },
+          {
+            "url": "https://www.24hod.sk/2026-11-24/53/dlhova-kriza/",
+            "url_mobile": "",
+            "title": "24hod . sk - Dlhov\u00e1 kr\u00edza",
+            "seendate": "20261124T031500Z",
+            "socialimage": "https://www.24hod.sk/images/24hod-og.jpg",
+            "domain": "24hod.sk",
+            "language": "Slovak",
+            "sourcecountry": "Slovak Republic"
           }
         ]
       }
@@ -1143,7 +1356,7 @@
       "payload": {}
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:financialmarkets.bnm.gov.my": {
-      "fetched_at_utc": "2026-11-24T03:15:41.498387+00:00",
+      "fetched_at_utc": "2026-11-26T00:51:11.095755+00:00",
       "payload": {}
     },
     "7d|(\"Japan inflation\" OR \"Japan wages\" OR \"Japan GDP\")": {
