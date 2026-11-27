@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-26T00:51:11.095774+00:00",
+  "updated_at_utc": "2026-11-27T00:57:39.194986+00:00",
   "entries": {
     "96h|\"US dollar\" (forex OR currency OR \"exchange rate\")": {
       "fetched_at_utc": "2026-11-19T23:10:08.071284+00:00",
@@ -29,9 +29,69 @@
       }
     },
     "7d|(\"US inflation\" OR \"US jobs\" OR \"US GDP\")": {
-      "fetched_at_utc": "2026-11-24T03:01:57.275394+00:00",
+      "fetched_at_utc": "2026-11-27T00:45:27.139030+00:00",
       "payload": {
         "articles": [
+          {
+            "url": "https://www.livemint.com/market/us-stocks-slide-as-nvidia-rally-fizzles-out-dollar-falls-11795561223195.html",
+            "url_mobile": "https://www.livemint.com/market/us-stocks-slide-as-nvidia-rally-fizzles-out-dollar-falls/amp-11795561223195.html",
+            "title": "US stocks slide as Nvidia rally fizzles out , dollar falls",
+            "seendate": "20261125T003000Z",
+            "socialimage": "https://www.livemint.com/lm-img/img/2024/12/06/600x338/market1_1733465997762_1733466008348.jpg",
+            "domain": "livemint.com",
+            "language": "English",
+            "sourcecountry": "India"
+          },
+          {
+            "url": "https://www.kommersant.ru/doc/9131716",
+            "url_mobile": "",
+            "title": "\u0418\u043c\u043f\u043e\u0440\u0442 \u043e\u0431\u043e\u0440\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u0434\u043b\u044f \u0418\u0418 \u0441\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 \u0440\u043e\u0441\u0442 \u0412\u0412\u041f \u0421\u0428\u0410",
+            "seendate": "20261126T223000Z",
+            "socialimage": "https://im2.kommersant.ru/SocialPics/9131716_49_3261360_1921188045",
+            "domain": "kommersant.ru",
+            "language": "Russian",
+            "sourcecountry": "Russia"
+          },
+          {
+            "url": "https://www.smh.com.au/business/the-economy/trump-strikes-again-even-as-america-feels-the-pain-20261126-p61hen.html",
+            "url_mobile": "",
+            "title": "Trump ramps up his trade war on the world",
+            "seendate": "20261126T011500Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.3642%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_283%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/b50b11dc35f415ca06408fcf8045b6e526d32903",
+            "domain": "smh.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.theage.com.au/business/the-economy/trump-strikes-again-even-as-america-feels-the-pain-20261126-p61hen.html",
+            "url_mobile": "",
+            "title": "Trump ramps up his trade war on the world",
+            "seendate": "20261126T021500Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.3642%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_283%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_opinion_no_age_social_wm/b50b11dc35f415ca06408fcf8045b6e526d32903",
+            "domain": "theage.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.brisbanetimes.com.au/business/the-economy/trump-strikes-again-even-as-america-feels-the-pain-20261126-p61hen.html",
+            "url_mobile": "",
+            "title": "Trump ramps up his trade war on the world",
+            "seendate": "20261126T011500Z",
+            "socialimage": "https://static.ffx.io/images/$zoom_0.3642%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_283%2C$y_0/t_crop_custom/q_86%2Cf_auto/t_metro_brisbanetimes_opinion_no_age_social_wm/b50b11dc35f415ca06408fcf8045b6e526d32903",
+            "domain": "brisbanetimes.com.au",
+            "language": "English",
+            "sourcecountry": "Australia"
+          },
+          {
+            "url": "https://www.sabah.com.tr/trend/galeri/ekonomi/son-dakika-altinda-dusus-suruyor-3-bin-500-dolar-siniri-yeniden-gundemde-iste-guncel-fiyatlar",
+            "url_mobile": "https://m.sabah.com.tr/trend/galeri/ekonomi/son-dakika-altinda-dusus-suruyor-3-bin-500-dolar-siniri-yeniden-gundemde-iste-guncel-fiyatlar/amp",
+            "title": "SON DAK\u0130KA | Alt\u0131nda d\u00fc\u015f\u00fc\u015f s\u00fcr\u00fcyor ! 3 bin 500 dolar s\u0131n\u0131r\u0131 yeniden g\u00fcndemde : \u0130\u015fte g\u00fcncel fiyatlar ... - Galeri",
+            "seendate": "20261125T054500Z",
+            "socialimage": "https://isbh.tmgrup.com.tr/sb/album/2026/11/25/son-dakika-altinda-dusus-suruyor-3-bin-500-dolar-siniri-yeniden-gundemde-iste-guncel-fiyatlar-1795580901005.jpeg",
+            "domain": "sabah.com.tr",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
           {
             "url": "https://e24.no/boers-og-finans/i/pML5zo/ny-uke-med-markedsuro-det-er-litt-oppvask-naa",
             "url_mobile": "",
@@ -41,6 +101,16 @@
             "domain": "e24.no",
             "language": "Norwegian",
             "sourcecountry": "Norway"
+          },
+          {
+            "url": "https://timesofindia.indiatimes.com/business/india-business/gold-price-prediction-today-india-where-is-gold-silver-rate-headed-on-november-25-2026-mcx-gold-futures-outlook-us-iran-war-middle-east-tensions-federal-reserve/articleshow/136150452.cms",
+            "url_mobile": "https://timesofindia.indiatimes.com/business/india-business/gold-price-prediction-today-india-where-is-gold-silver-rate-headed-on-november-25-2026-mcx-gold-futures-outlook-us-iran-war-middle-east-tensions-federal-reserve/amp_articleshow/136150452.cms",
+            "title": "Gold price prediction today : Is there any end to gold price fall ? Check November 25 , 2026 outlook",
+            "seendate": "20261125T064500Z",
+            "socialimage": "https://static.toiimg.com/thumb/msid-136150495,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "domain": "timesofindia.indiatimes.com",
+            "language": "English",
+            "sourcecountry": "India"
           },
           {
             "url": "https://economictimes.indiatimes.com/world/business/us-stock-market-prediction-for-monday-sp-500-nasdaq-dow-jones-investors-hope-for-positive-start-heres-what-to-expect/articleshow/136085659.cms",
@@ -63,6 +133,16 @@
             "sourcecountry": "United States"
           },
           {
+            "url": "https://finans.cnnturk.com/video/finans-haberler/altin/dipten-dondu-altinin-rotasi-ne-olacak-3498331",
+            "url_mobile": "",
+            "title": "Dipten d\u00f6nd\u00fc ! Alt\u0131n\u0131n rotas\u0131 ne olacak ? ",
+            "seendate": "20261126T061500Z",
+            "socialimage": "",
+            "domain": "finans.cnnturk.com",
+            "language": "Turkish",
+            "sourcecountry": "Turkey"
+          },
+          {
             "url": "https://www.moneycontrol.com/news/business/commodities/gold-prices-plunge-over-7-this-week-set-for-worst-fall-since-march-as-fed-rate-hike-fears-ai-selloff-bite-14085245.html",
             "url_mobile": "https://www.moneycontrol.com/news/business/commodities/gold-prices-plunge-over-7-this-week-set-for-worst-fall-since-march-as-fed-rate-hike-fears-ai-selloff-bite-14085245.html/amp",
             "title": "Gold prices plunge over 7 % this week , set for worst fall since March as Fed rate hike fears , AI selloff bite",
@@ -71,86 +151,6 @@
             "domain": "moneycontrol.com",
             "language": "English",
             "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.lex18.com/politics/economy/gap-lowers-outlook-as-warmer-weather-weighs-on-clothing-demand",
-            "url_mobile": "",
-            "title": "Gap lowers outlook as warmer weather weighs on clothing demand",
-            "seendate": "20261120T214500Z",
-            "socialimage": "https://ewscripps.brightspotcdn.com/5b/97/812426904bc4b39192f654b49a2f/shopping-in-mall-sbi-300819035.jpg",
-            "domain": "lex18.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.kxxv.com/politics/economy/gap-lowers-outlook-as-warmer-weather-weighs-on-clothing-demand",
-            "url_mobile": "",
-            "title": "Gap lowers outlook as warmer weather weighs on clothing demand",
-            "seendate": "20261120T214500Z",
-            "socialimage": "https://ewscripps.brightspotcdn.com/5b/97/812426904bc4b39192f654b49a2f/shopping-in-mall-sbi-300819035.jpg",
-            "domain": "kxxv.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.tribuneindia.com/news/india/president-donald-trump-cites-indias-growth-slams-us-high-interest-rates/",
-            "url_mobile": "https://www.tribuneindia.com/news/india/president-donald-trump-cites-indias-growth-slams-us-high-interest-rates/amp",
-            "title": "President Donald Trump cites India growth , slams US high interest rates",
-            "seendate": "20261121T203000Z",
-            "socialimage": "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTQwMzI2ZjIwLWU1ZTMtMTFmMS05NjM3LTViY2YwYzFjMTk4YS5qcGc=",
-            "domain": "tribuneindia.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.freemalaysiatoday.com/category/business/2026/11/20/dollar-near-19-month-peak-as-ai-jitters-sap-risk-appetite",
-            "url_mobile": "",
-            "title": "Dollar near 19 - month peak as AI jitters sap risk appetite",
-            "seendate": "20261120T024500Z",
-            "socialimage": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=80,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2024/11/e23d6875-dollar.jpg",
-            "domain": "freemalaysiatoday.com",
-            "language": "English",
-            "sourcecountry": "Malaysia"
-          },
-          {
-            "url": "https://www.aol.com/articles/dollar-near-19-month-peak-014722000.html",
-            "url_mobile": "",
-            "title": "Dollar near 19 - month peak as AI jitters sap risk appetite",
-            "seendate": "20261120T034500Z",
-            "socialimage": "https://hermes.media.transform.aol.com/4783ca1bf4b36674af94571a5a1b51746acad7d4/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/11/20/15f69508-7260-327c-b0db-7aaa90be02ae/a5fbf744-5d62-4a60-9631-ddf9080acccc.jpg",
-            "domain": "aol.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.ibtimes.co.in/look-india-trump-cites-indias-7-gdp-growth-slam-us-fed-over-high-interest-rates-908551",
-            "url_mobile": "",
-            "title": "  Look at India : Trump cites India 7 % GDP growth to slam US Fed over high interest rates",
-            "seendate": "20261121T123000Z",
-            "socialimage": "https://data1.ibtimes.co.in/en/full/841529/very-tough-man-donald-trump-praises-pm-modi-again-quad-summit-manila-says-hes-great-leader.jpg",
-            "domain": "ibtimes.co.in",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://bworldonline.com/banking-finance/2026/11/22/795691/peso-to-move-sideways-vs-dollar-as-markets-eye-key-us-economic-data/",
-            "url_mobile": "",
-            "title": "Peso to move sideways vs dollar as markets eye key US economic data",
-            "seendate": "20261122T123000Z",
-            "socialimage": "http://bworldonline.com/wp-content/uploads/2025/10/Peso-currency.jpg",
-            "domain": "bworldonline.com",
-            "language": "English",
-            "sourcecountry": "Philippines"
-          },
-          {
-            "url": "https://www.nbd.com.cn/articles/2026-11-24/4656813.html",
-            "url_mobile": "https://m.nbd.com.cn/articles/2026-11-24/4656813.html",
-            "title": "\u6e2f\u80a1\u901f\u62a5 | \u6e2f\u80a1\u8fce\u6765\u53cd\u5f39 \uff01 \u6052\u751f\u79d1\u6280\u6307\u6570\u9ad8\u5f00\u8d852 %\uff0c AI\u6982\u5ff5\u80a1\u5168\u7ebf\u5927\u6da8",
-            "seendate": "20261124T023000Z",
-            "socialimage": "",
-            "domain": "nbd.com.cn",
-            "language": "Chinese",
-            "sourcecountry": "China"
           }
         ]
       }
@@ -518,7 +518,7 @@
       }
     },
     "7d|(\"UK inflation\" OR \"UK wages\" OR \"UK GDP\")": {
-      "fetched_at_utc": "2026-11-25T01:10:11.184347+00:00",
+      "fetched_at_utc": "2026-11-27T00:52:56.535155+00:00",
       "payload": {}
     },
     "96h|\"Australian dollar\" (forex OR currency OR \"exchange rate\")": {
@@ -726,7 +726,7 @@
       }
     },
     "7d|(inflation OR \"monetary policy\" OR \"interest rate\" OR economy) domainis:rba.gov.au": {
-      "fetched_at_utc": "2026-11-26T00:47:35.360151+00:00",
+      "fetched_at_utc": "2026-11-27T00:55:55.895054+00:00",
       "payload": {}
     },
     "96h|\"Malaysian ringgit\" (forex OR currency OR \"exchange rate\")": {
@@ -777,7 +777,7 @@
       }
     },
     "96h|\"Bank Negara Malaysia\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-25T01:15:44.061215+00:00",
+      "fetched_at_utc": "2026-11-27T00:57:05.554371+00:00",
       "payload": {}
     },
     "96h|\"Swiss franc\" (forex OR currency OR \"exchange rate\")": {
@@ -1050,7 +1050,7 @@
       }
     },
     "7d|(\"Malaysia inflation\" OR \"Malaysia growth\" OR \"Malaysia GDP\")": {
-      "fetched_at_utc": "2026-11-25T01:16:20.258182+00:00",
+      "fetched_at_utc": "2026-11-27T00:57:39.194966+00:00",
       "payload": {
         "articles": [
           {
@@ -1062,6 +1062,26 @@
             "domain": "english.news.cn",
             "language": "English",
             "sourcecountry": ""
+          },
+          {
+            "url": "https://www.thestar.com.my/news/nation/2026/10/29/malaysia-us-trade-surges-despite-extra-tariffs",
+            "url_mobile": "",
+            "title": "Malaysia - US trade surges despite extra tariffs",
+            "seendate": "20261126T004500Z",
+            "socialimage": "https://apicms.thestar.com.my/uploads/images/2026/10/29/4185432.jpg",
+            "domain": "thestar.com.my",
+            "language": "English",
+            "sourcecountry": "Malaysia"
+          },
+          {
+            "url": "https://www.thefastmode.com/mobile-network-operators-m-a/51584-axiata-sells-international-edotco-businesses-to-unlock-rm2-2-billion-in-proceeds-strengthen-balance-sheet",
+            "url_mobile": "",
+            "title": "Axiata Sells International EDOTCO Businesses to Unlock RM2 . 2 Billion in Proceeds & Strengthen Balance Sheet",
+            "seendate": "20261126T044500Z",
+            "socialimage": "https://www.thefastmode.com/media/k2/items/src/c781635645b69daee6344d72ade5486e.jpg?t=20261126_013340",
+            "domain": "thefastmode.com",
+            "language": "English",
+            "sourcecountry": "India"
           },
           {
             "url": "https://organiser.org/2026/11/22/428193/world/make-in-india-roars-worldwide-exports-jump-58-in-asean-73-in-sri-lanka-40-in-japan-amid-global-competition/",
@@ -1081,38 +1101,18 @@
       "payload": {}
     },
     "96h|\"Federal Reserve\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-25T01:00:46.153687+00:00",
+      "fetched_at_utc": "2026-11-27T00:44:50.651341+00:00",
       "payload": {
         "articles": [
           {
-            "url": "https://www.ibtimes.co.in/look-india-trump-cites-indias-7-gdp-growth-slam-us-fed-over-high-interest-rates-908551",
-            "url_mobile": "",
-            "title": "  Look at India : Trump cites India 7 % GDP growth to slam US Fed over high interest rates",
-            "seendate": "20261121T123000Z",
-            "socialimage": "https://data1.ibtimes.co.in/en/full/841529/very-tough-man-donald-trump-praises-pm-modi-again-quad-summit-manila-says-hes-great-leader.jpg",
-            "domain": "ibtimes.co.in",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.oneindia.com/international/look-at-india-trump-says-us-economy-can-grow-15-20-percent-if-fed-cuts-interest-rates-8265783.html",
-            "url_mobile": "",
-            "title": "  Look At India : Trump Says US Economy Can Grow 15 - 20 % If Fed Cuts Interest Rates",
-            "seendate": "20261121T064500Z",
-            "socialimage": "https://imagesvs.oneindia.com/img/2026/11/trumponindiagdp-53041795227112.jpg",
-            "domain": "oneindia.com",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.tribuneindia.com/news/india/president-donald-trump-cites-indias-growth-slams-us-high-interest-rates/",
-            "url_mobile": "https://www.tribuneindia.com/news/india/president-donald-trump-cites-indias-growth-slams-us-high-interest-rates/amp",
-            "title": "President Donald Trump cites India growth , slams US high interest rates",
-            "seendate": "20261121T203000Z",
-            "socialimage": "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTQwMzI2ZjIwLWU1ZTMtMTFmMS05NjM3LTViY2YwYzFjMTk4YS5qcGc=",
-            "domain": "tribuneindia.com",
-            "language": "English",
-            "sourcecountry": "India"
+            "url": "https://www.koreatimes.com/article/11633000",
+            "url_mobile": "https://m.koreatimes.com/article/11633000",
+            "title": "\ubb3c\uac00 \ub6f0\ub294\ub370 \ud2b8\ub7fc\ud504 \uad00\uc138  \ubd80\ucc44\uc9c8 \u2026 \ucd5c\uc545 \uc2dc\uae30 \uacbd\uc81c\uc801 \uc790\ud574  ",
+            "seendate": "20261126T223000Z",
+            "socialimage": "https://wimg.koreatimes.com/news/cms/2026/11/26/news-a.v1.20261126.7234355e26904e379ef6801e4fc30d93_T1.jpg",
+            "domain": "koreatimes.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
             "url": "https://biz.heraldcorp.com/article/10947063",
@@ -1125,22 +1125,72 @@
             "sourcecountry": "South Korea"
           },
           {
-            "url": "https://www.livehindustan.com/business/gold-price-crash-10-pc-fall-five-major-reasons-check-all-details-201795259414989.html",
-            "url_mobile": "https://www.livehindustan.com/business/gold-price-crash-10-pc-fall-five-major-reasons-check-all-details-201795259414989.amp.html",
-            "title": "Gold Price Crash : 1 \u0939\u092b\u094d\u0924\u0947 \u092e\u0947\u0902 \u0915\u0930\u0940\u092c 10 % \u091f\u0942\u091f\u093e \u0938\u094b\u0928\u093e , 14 \u092e\u0939\u0940\u0928\u0947 \u0915\u0947 \u0928\u093f\u091a\u0932\u0947 \u0938\u094d\u0924\u0930 \u092a\u0930 \u092d\u093e\u0935 ; \u091c\u093e\u0928\u0947\u0902 \u0915 \u0905\u092d\u0940 \u0914\u0930 \u0939\u094b\u0917\u093e \u0938\u0938\u094d\u0924\u093e ?, Business Hindi News",
-            "seendate": "20261121T123000Z",
-            "socialimage": "",
-            "domain": "livehindustan.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
+            "url": "https://www.fnnews.com/news/202611270647438079",
+            "url_mobile": "",
+            "title": "\ubb3c\uac00 \ub6f0\ub294\ub370 \ud2b8\ub7fc\ud504 \uad00\uc138  \ubd80\ucc44\uc9c8 \u2026 \ucd5c\uc545 \uc2dc\uae30 \uacbd\uc81c\uc801 \uc790\ud574  ",
+            "seendate": "20261126T223000Z",
+            "socialimage": "https://image.fnnews.com/resource/media/image/2026/11/26/202611261417275995_e.jpg",
+            "domain": "fnnews.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "http://www.idahopress.com/ap_news/us/inflation-economic-growth-and-the-mood-of-us-consumers-in-focus-this-week/article_3d93bb0f-90c1-5cf1-85cc-e186d1d6df58.html",
-            "url_mobile": "https://www.idahopress.com/ap_news/us/inflation-economic-growth-and-the-mood-of-us-consumers-in-focus-this-week/article_3d93bb0f-90c1-5cf1-85cc-e186d1d6df58.amp.html",
-            "title": "Inflation , economic growth and the mood of US consumers in focus this week",
-            "seendate": "20261121T163000Z",
-            "socialimage": "https://bloximages.chicago2.vip.townnews.com/idahopress.com/content/tncms/assets/v3/editorial/f/07/f070a0e6-02c5-5837-a8d2-0243bce3d0aa/6adbe51b6accc.image.jpg?crop=1763%2C926%2C0%2C124",
-            "domain": "idahopress.com",
+            "url": "https://www.wmur.com/article/inflation-returns-to-years-highest-level-ahead-of-black-friday-president-proposes-new-tariffs/74535311",
+            "url_mobile": "",
+            "title": "Inflation returns to year highest level ahead of Black Friday ; president proposes new tariffs",
+            "seendate": "20261126T011500Z",
+            "socialimage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/shopping-carts-gettyimages-941400052-1659378212.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop",
+            "domain": "wmur.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.wtae.com/article/inflation-returns-to-years-highest-level-ahead-of-black-friday-president-proposes-new-tariffs/74535311",
+            "url_mobile": "",
+            "title": "Inflation returns to year highest level ahead of Black Friday ; president proposes new tariffs",
+            "seendate": "20261126T023000Z",
+            "socialimage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/shopping-carts-gettyimages-941400052-1659378212.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop",
+            "domain": "wtae.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.wbaltv.com/article/inflation-returns-to-years-highest-level-ahead-of-black-friday-president-proposes-new-tariffs/74535311",
+            "url_mobile": "",
+            "title": "Inflation returns to year highest level ahead of Black Friday ; president proposes new tariffs",
+            "seendate": "20261126T031500Z",
+            "socialimage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/shopping-carts-gettyimages-941400052-1659378212.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop",
+            "domain": "wbaltv.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.wesh.com/article/inflation-returns-to-years-highest-level-ahead-of-black-friday-president-proposes-new-tariffs/74535311",
+            "url_mobile": "",
+            "title": "Inflation returns to year highest level ahead of Black Friday ; president proposes new tariffs",
+            "seendate": "20261126T024500Z",
+            "socialimage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/shopping-carts-gettyimages-941400052-1659378212.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop",
+            "domain": "wesh.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.kcra.com/article/inflation-returns-to-years-highest-level-ahead-of-black-friday-president-proposes-new-tariffs/74535311",
+            "url_mobile": "",
+            "title": "Inflation returns to year highest level ahead of Black Friday ; president proposes new tariffs",
+            "seendate": "20261126T031500Z",
+            "socialimage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/shopping-carts-gettyimages-941400052-1659378212.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop",
+            "domain": "kcra.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.wgal.com/article/inflation-returns-to-years-highest-level-ahead-of-black-friday-president-proposes-new-tariffs/74535311",
+            "url_mobile": "",
+            "title": "Inflation returns to year highest level ahead of Black Friday ; president proposes new tariffs",
+            "seendate": "20261126T023000Z",
+            "socialimage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/shopping-carts-gettyimages-941400052-1659378212.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop",
+            "domain": "wgal.com",
             "language": "English",
             "sourcecountry": "United States"
           },
@@ -1155,60 +1205,30 @@
             "sourcecountry": "Syria"
           },
           {
-            "url": "http://www.akilanews.com/main-news-detail/trumps-statement-on-indias-7-gdp-growth-has-sparked",
-            "url_mobile": "",
-            "title": "\u0a9f\u0acd\u0ab0\u0aae\u0acd\u0aaa\u0aa8\u0abe \u0aad\u0abe\u0ab0\u0aa4\u0aa8\u0abe \u0aed % GDP \u0ab5\u0ac3\u0aa6\u0acd\u0aa7\u0abf\u0aa8\u0abe \u0aa8\u0abf\u0ab5\u0ac7\u0aa6\u0aa8 \u0aaa\u0ab0 \u0aa6\u0ac7\u0ab6\u0aae\u0abe\u0a82 \u0ab0\u0abe\u0a9c\u0a95\u0ac0\u0aaf \u0a97\u0ab0\u0aae\u0abe\u0ab5\u0acb :... ",
-            "seendate": "20261121T133000Z",
-            "socialimage": "https://api.akilanews.com/main_news/70390_1795266337041Untitled-17.jpg",
-            "domain": "akilanews.com",
-            "language": "Gujarati",
-            "sourcecountry": "India"
+            "url": "https://www.etoday.co.kr/news/view/2653300",
+            "url_mobile": "https://m.etoday.co.kr/news/view/2653300",
+            "title": "\u7f8e\uc5f0\uc900  \ubb3c\uac00 \uc555\ub825 \uc9c0\uc18d\u318d\uc784\uae08 \uc0c1\uc2b9\uc138 \ud655\ub300  \u22ef12\uc6d4 \uae08\ub9ac\uc778\uc0c1 \ud798 \uc2e4\ub824",
+            "seendate": "20261126T021500Z",
+            "socialimage": "https://img.etoday.co.kr/pto_db/2026/11/20261118153943_2419714_1200_800.jpg",
+            "domain": "etoday.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
-            "url": "http://www.greekherald.com/news/279451643/us-recession-fears-rise-as-falling-household-wealth-and-market-turmoil-point-to-25-risk-report",
-            "url_mobile": "",
-            "title": "US recession fears rise as falling household wealth and market turmoil point to 25 % risk : Report",
-            "seendate": "20261124T074500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8a47d88/1b122bfa-e15f-4390-ba0c-18ce6be2e96a/0/ANI-20261124055635-600x315.jpg",
-            "domain": "greekherald.com",
-            "language": "English",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "http://www.zimbabwestar.com/news/279451643/us-recession-fears-rise-as-falling-household-wealth-and-market-turmoil-point-to-25-risk-report",
-            "url_mobile": "",
-            "title": "US recession fears rise as falling household wealth and market turmoil point to 25 % risk : Report",
-            "seendate": "20261124T074500Z",
-            "socialimage": "https://chitra-api.kreatio.com/api/v1/wps/8a47d88/1b122bfa-e15f-4390-ba0c-18ce6be2e96a/0/ANI-20261124055635-600x315.jpg",
-            "domain": "zimbabwestar.com",
-            "language": "English",
-            "sourcecountry": "Zimbabwe"
-          },
-          {
-            "url": "https://www.businesstoday.in/world/story/fomc-meet-why-bill-ackman-wants-the-fed-to-abandon-its-outdated-2-inflation-target-now-568967-2026-11-23",
-            "url_mobile": "https://www.businesstoday.in/amp/world/story/fomc-meet-why-bill-ackman-wants-the-fed-to-abandon-its-outdated-2-inflation-target-now-568967-2026-11-23",
-            "title": "FOMC meet : Why Bill Ackman wants the Fed to abandon its outdated 2 % inflation target now",
-            "seendate": "20261123T033000Z",
-            "socialimage": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202611/6b03a06f8ca0b-in-a-pointed-post-on-x-formerly-twitter--ackman-argued-that-financial-conditions-have-already-tigh-230950164-16x9.jpg",
-            "domain": "businesstoday.in",
-            "language": "English",
-            "sourcecountry": "India"
-          },
-          {
-            "url": "https://www.livehindustan.com/business/silver-price-crash-gold-price-fall-reasons-global-market-check-all-details-201795378843659.html",
-            "url_mobile": "https://www.livehindustan.com/business/silver-price-crash-gold-price-fall-reasons-global-market-check-all-details-201795378843659.amp.html",
-            "title": "Silver Price Crash : \u091a\u093e\u0902\u0926\u0940 \u090f\u0915 \u0926\u093f\u0928 \u092e\u0947\u0902 4 % \u091f\u0942\u091f\u0940 , \u0938\u094b\u0928\u093e \u092d\u0940 2 . 38 % \u092b\u093f\u0938\u0932\u093e ; \u0915\u094d\u092f\u093e \u0905\u092d\u0940 \u0914\u0930 \u0917\u093f\u0930\u0947\u0917\u0940 \u0915\u0940\u092e\u0924 ? ",
-            "seendate": "20261122T223000Z",
-            "socialimage": "",
-            "domain": "livehindustan.com",
-            "language": "Hindi",
-            "sourcecountry": "India"
+            "url": "https://www.etnews.com/20261126000055",
+            "url_mobile": "https://m.etnews.com/20261126000055",
+            "title": "\ud55c\uc740 \uae08\ud1b5\uc704 , \uc624\ub298 \uae30\uc900\uae08\ub9ac \uacb0\uc815 \u2026 \uc778\uc0c1 \uc7ac\uac1c \u00b7 \uc131\uc7a5\ub960 \uc0c1\ud5a5 \uc8fc\ubaa9",
+            "seendate": "20261126T041500Z",
+            "socialimage": "https://img.etnews.com/news/article/2026/10/22/news-p.v1.20261022.1b9f95c3f5cf45afa3e83334e0583d7d_P1.jpg",
+            "domain": "etnews.com",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           }
         ]
       }
     },
     "96h|\"European Central Bank\" (rates OR inflation OR policy OR economy)": {
-      "fetched_at_utc": "2026-11-26T00:41:34.984726+00:00",
+      "fetched_at_utc": "2026-11-27T00:50:42.884582+00:00",
       "payload": {
         "articles": [
           {
@@ -1222,6 +1242,16 @@
             "sourcecountry": "Greece"
           },
           {
+            "url": "https://naslovi.net/2026-11-26/euronews/stizu-lose-vesti-za-gradjane-sa-kreditima-u-evrima-zvanicnici-evropske-centralne-banke-najavili-novi-potez-u-decembru/42655629",
+            "url_mobile": "",
+            "title": "Sti\u017eu lo\u0161e vesti za gra\u0111ane sa kreditima u evrima : Zvani\u010dnici Evropske centralne banke najavili novi potez u decembru",
+            "seendate": "20261126T061500Z",
+            "socialimage": "https://www.euronews.rs/data/images/2026-11-03/458052_jutro-cl-f-s1c3-20261103-072245-p-frame-60781_gd.jpeg",
+            "domain": "naslovi.net",
+            "language": "Serbian",
+            "sourcecountry": "Serbia"
+          },
+          {
             "url": "https://www.vetogate.com/5777652",
             "url_mobile": "",
             "title": "\u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0630\u0647\u0628 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u0645\u0635\u0631 \u060c \u0627\u0646\u062e\u0641\u0627\u0636 \u0639\u064a\u0627\u0631\u064a 21 \u064824 \u0648\u0627\u0644\u062c\u0646\u064a\u0647 \u0627\u0644\u0623\u0635\u0641\u0631 \u064a\u062a\u0647\u0627\u0648\u0649",
@@ -1230,6 +1260,36 @@
             "domain": "vetogate.com",
             "language": "Arabic",
             "sourcecountry": "Egypt"
+          },
+          {
+            "url": "https://www.clickondetroit.com/business/2026/11/26/leaders-choose-spains-former-central-bank-head-as-next-european-central-bank-president/",
+            "url_mobile": "",
+            "title": "Leaders choose Spain former central bank head as next European Central Bank president",
+            "seendate": "20261126T194500Z",
+            "socialimage": "https://bc.gmg.io/image/upload/c_thumb,q_auto,w_700,f_jpg/media/gmg/SJSZ2K5XKVGK5N5TAIHZSYIINQ.jpg?api_key=clickondetroit_06f87fefb2123598",
+            "domain": "clickondetroit.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "http://www.thegazette.com/news/world/leaders-choose-spains-former-central-bank-head-as-next-european-central-bank-president/article_f89b53fe-f343-510e-9932-c7d4389e101e.html",
+            "url_mobile": "",
+            "title": "Leaders choose Spain former central bank head as next European Central Bank president",
+            "seendate": "20261126T194500Z",
+            "socialimage": "https://bloximages.chicago2.vip.townnews.com/thegazette.com/content/tncms/assets/v3/editorial/2/9d/29d6f745-5166-5780-bf1b-4f808bbdc2b2/6b085975e7933.image.jpg?crop=5500%2C2888%2C0%2C389",
+            "domain": "thegazette.com",
+            "language": "English",
+            "sourcecountry": "United States"
+          },
+          {
+            "url": "https://www.edaily.co.kr/News/Read?newsId=01184086645649984&mediaCodeNo=257",
+            "url_mobile": "https://m.edaily.co.kr/News/Read?newsId=01184086645649984 eNo=257",
+            "title": "ECB \ucc28\uae30 \ucd1d\uc7ac\uc5d0  \ube44\ub458\uae30\ud30c  \uc2a4\ud398\uc778 \ub370\ucf54\uc2a4",
+            "seendate": "20261126T221500Z",
+            "socialimage": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26112700071.jpg",
+            "domain": "edaily.co.kr",
+            "language": "Korean",
+            "sourcecountry": "South Korea"
           },
           {
             "url": "https://www.freemalaysiatoday.com/category/business/2026/11/25/dollar-takes-breather-ahead-of-us-data-on-fed-path",
@@ -1252,6 +1312,16 @@
             "sourcecountry": "United States"
           },
           {
+            "url": "https://www.hellenicshippingnews.com/ecb-expected-to-hike-rates-by-25bps-next-month/",
+            "url_mobile": "",
+            "title": "ECB Expected to Hike Rates by 25bps Next Month | Hellenic Shipping News Worldwide",
+            "seendate": "20261126T194500Z",
+            "socialimage": "",
+            "domain": "hellenicshippingnews.com",
+            "language": "English",
+            "sourcecountry": "China"
+          },
+          {
             "url": "https://punchng.com/single-digit-test-of-dropping-inflation/",
             "url_mobile": "https://punchng.com/single-digit-test-of-dropping-inflation/?amp",
             "title": "Single - digit inflation : Nigeria test after 14 . 06 % October",
@@ -1272,64 +1342,14 @@
             "sourcecountry": "Saudi Arabia"
           },
           {
-            "url": "https://www.in.gr/2026/11/22/economy/oikonomikes-eidiseis/eyropi-synagermos-gia-neo-kyma-energeiakou-plithorismou-fovizei-enas-kryos-xeimonas/",
-            "url_mobile": "https://www.in.gr/2026/11/22/economy/oikonomikes-eidiseis/eyropi-synagermos-gia-neo-kyma-energeiakou-plithorismou-fovizei-enas-kryos-xeimonas/amp/",
-            "title": "\u0395\u03c5\u03c1\u03ce\u03c0\u03b7 : \u03a3\u03c5\u03bd\u03b1\u03b3\u03b5\u03c1\u03bc\u03cc\u03c2 \u03b3\u03b9\u03b1 \u03bd\u03ad\u03bf \u03ba\u03cd\u03bc\u03b1 \u03b5\u03bd\u03b5\u03c1\u03b3\u03b5\u03b9\u03b1\u03ba\u03bf\u03cd \u03c0\u03bb\u03b7\u03b8\u03c9\u03c1\u03b9\u03c3\u03bc\u03bf\u03cd - \u03a6\u03bf\u03b2\u03af\u03b6\u03b5\u03b9 \u03ad\u03bd\u03b1\u03c2 \u03ba\u03c1\u03cd\u03bf\u03c2 \u03c7\u03b5\u03b9\u03bc\u03ce\u03bd\u03b1\u03c2",
-            "seendate": "20261122T203000Z",
-            "socialimage": "https://www.in.gr/wp-content/uploads/2026/11/pipeline-ogimage.jpg",
-            "domain": "in.gr",
-            "language": "Greek",
-            "sourcecountry": "Greece"
-          },
-          {
-            "url": "https://akhbaregy.com/2026/11/24/%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%8A%D8%B3%D8%AA%D8%B9%D9%8A%D8%AF-%D8%AA%D9%88%D8%A7%D8%B2%D9%86%D9%87-%D9%88%D8%B3%D8%B7-%D8%AA%D8%B1%D9%82%D8%A8-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84/",
+            "url": "https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde",
             "url_mobile": "",
-            "title": "\u0627\u0644\u0630\u0647\u0628 \u064a\u0633\u062a\u0639\u064a\u062f \u062a\u0648\u0627\u0632\u0646\u0647 \u0648\u0633\u0637 \u062a\u0631\u0642\u0628 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 \u0648\u0627\u0644\u0623\u0648\u0642\u064a\u0629 \u062a\u0633\u062c\u0644 3645 . 29 \u062f\u0648\u0644\u0627\u0631",
-            "seendate": "20261124T051500Z",
-            "socialimage": "",
-            "domain": "akhbaregy.com",
-            "language": "Arabic",
-            "sourcecountry": "Saudi Arabia"
-          },
-          {
-            "url": "https://www.naturalnews.com/2026-11-23-21k-rally-paris-cost-of-living-protests-france.html",
-            "url_mobile": "",
-            "title": "21 , 500 Rally in Paris as Cost - of - Living Protests Spread Across France \u2013 NaturalNews . com",
-            "seendate": "20261123T213000Z",
-            "socialimage": "https://www.naturalnews.com/wp-content/uploads/sites/91/2026/11/cost-of-living-crisis-paris-protest-rising-living-costs-7069-88caad3d-original.jpg",
-            "domain": "naturalnews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          },
-          {
-            "url": "https://www.moneycab.com/dossiers/blackrock-marktausblick-aktien-unter-druck-zinserwartungen-auf-dem-pruefstand/",
-            "url_mobile": "https://www.moneycab.com/dossiers/blackrock-marktausblick-aktien-unter-druck-zinserwartungen-auf-dem-pruefstand/amp/",
-            "title": "BlackRock Marktausblick : Aktien unter Druck , Zinserwartungen auf dem Pr\u00fcfstand",
-            "seendate": "20261124T213000Z",
-            "socialimage": "https://www.moneycab.com/wp-content/uploads/2023/10/231027_petersen_ann_katrin.jpg",
-            "domain": "moneycab.com",
-            "language": "German",
-            "sourcecountry": "Switzerland"
-          },
-          {
-            "url": "https://aa.com.tr/en/americas/us-stocks-end-mixed-as-nvidia-anthropic-losses-drag-nasdaq-lower/4136533",
-            "url_mobile": "",
-            "title": "US stocks end mixed as Nvidia , Anthropic losses drag Nasdaq lower",
-            "seendate": "20261125T003000Z",
-            "socialimage": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/25/thumbs_b_c_4a2678d60008205dbf6d1bbcac82580d.jpg",
-            "domain": "aa.com.tr",
-            "language": "English",
-            "sourcecountry": "Turkey"
-          },
-          {
-            "url": "https://www.24hod.sk/2026-11-24/53/dlhova-kriza/",
-            "url_mobile": "",
-            "title": "24hod . sk - Dlhov\u00e1 kr\u00edza",
-            "seendate": "20261124T031500Z",
-            "socialimage": "https://www.24hod.sk/images/24hod-og.jpg",
-            "domain": "24hod.sk",
-            "language": "Slovak",
-            "sourcecountry": "Slovak Republic"
+            "title": "Zmiana warty w Europejskim Banku Centralnym . Pablo Hern\u00e1ndez de Cos ma pokierowa\u0107 EBC",
+            "seendate": "20261126T194500Z",
+            "socialimage": "https://i.gremicdn.pl/image/free/4d626dd85969307e773a30c3cc012b14/?t=crop:5380:3335:nowe:0:73,resize:fill:2000:1250&ctx=preview",
+            "domain": "rp.pl",
+            "language": "Polish",
+            "sourcecountry": "Poland"
           }
         ]
       }

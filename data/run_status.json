@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "state": "no_new_market_data",
+  "state": "updated",
   "run_context": "github_actions",
-  "using_cached_snapshot": true,
-  "last_attempt_at_utc": "2026-11-26T01:04:09.998587+00:00",
-  "completed_at_utc": "2026-11-26T01:04:11.679023+00:00",
-  "last_successful_check_at_utc": "2026-11-26T01:04:11.679038+00:00",
-  "last_model_update_at_utc": "2026-11-26T00:55:05.414075+00:00",
-  "market_date": "2026-11-25",
-  "run_url": "https://github.com/Vasanthan1276/fx-intelligence-report/actions/runs/45733142178",
+  "using_cached_snapshot": false,
+  "last_attempt_at_utc": "2026-11-27T00:43:15.881978+00:00",
+  "completed_at_utc": "2026-11-27T01:02:46.351219+00:00",
+  "last_successful_check_at_utc": "2026-11-27T01:02:46.351234+00:00",
+  "last_model_update_at_utc": "2026-11-27T01:02:44.834213+00:00",
+  "market_date": "2026-11-26",
+  "run_url": "https://github.com/Vasanthan1276/fx-intelligence-report/actions/runs/45918343331",
   "fx_fetch": {
-    "checked_at_utc": "2026-11-26T01:04:10.594271+00:00",
+    "checked_at_utc": "2026-11-27T00:43:16.646575+00:00",
     "sources": [
       {
         "name": "ECB Data Portal API",
@@ -22,7 +22,7 @@
             "status": "received"
           }
         ],
-        "latest_observation": "2026-11-25"
+        "latest_observation": "2026-11-26"
       }
     ],
     "selected_source": "ECB Data Portal API"
