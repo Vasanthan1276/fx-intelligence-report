@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-27T01:02:44.901072+00:00",
+  "generated_at_utc": "2026-11-28T00:22:34.914950+00:00",
   "model_version": "2.2-phase2c-baseline",
   "note": "Official 2026 decision dates embedded for reliable daily event-risk scoring.",
   "sources": {
@@ -76,27 +76,27 @@
   "next_events": {
     "AUD": {
       "next_policy_meeting_date": "2026-12-08",
-      "days_to_policy_meeting": 11,
+      "days_to_policy_meeting": 10,
       "event_risk_label": "Elevated",
       "policy_calendar_source": "Reserve Bank of Australia board schedule"
     },
     "EUR": {
       "next_policy_meeting_date": "2026-12-17",
-      "days_to_policy_meeting": 20,
+      "days_to_policy_meeting": 19,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "ECB Governing Council calendar"
     },
-    "GBP": {
-      "next_policy_meeting_date": "2026-12-17",
-      "days_to_policy_meeting": 20,
-      "event_risk_label": "Moderate",
-      "policy_calendar_source": "Bank of England MPC calendar"
-    },
     "JPY": {
       "next_policy_meeting_date": "2026-12-18",
-      "days_to_policy_meeting": 21,
+      "days_to_policy_meeting": 20,
       "event_risk_label": "Moderate",
       "policy_calendar_source": "Bank of Japan MPM schedule"
+    },
+    "GBP": {
+      "next_policy_meeting_date": "2026-12-17",
+      "days_to_policy_meeting": 19,
+      "event_risk_label": "Moderate",
+      "policy_calendar_source": "Bank of England MPC calendar"
     },
     "MYR": {
       "next_policy_meeting_date": null,
@@ -106,13 +106,13 @@
     },
     "CHF": {
       "next_policy_meeting_date": "2026-12-10",
-      "days_to_policy_meeting": 13,
+      "days_to_policy_meeting": 12,
       "event_risk_label": "Elevated",
       "policy_calendar_source": "Swiss National Bank monetary policy assessment schedule"
     },
     "USD": {
       "next_policy_meeting_date": "2026-12-09",
-      "days_to_policy_meeting": 12,
+      "days_to_policy_meeting": 11,
       "event_risk_label": "Elevated",
       "policy_calendar_source": "Federal Reserve FOMC calendar"
     }
